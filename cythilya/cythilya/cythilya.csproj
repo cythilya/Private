@@ -598,6 +598,21 @@
     <Content Include="Content\me\img\social\youtube.png" />
     <Content Include="Content\me\img\toggle.png" />
     <Content Include="Content\me\img\vertical.png" />
+    <Content Include="Content\me\js\css3-mediaqueries.js" />
+    <Content Include="Content\me\js\custom.js" />
+    <Content Include="Content\me\js\form-validation.js" />
+    <Content Include="Content\me\js\Jplayer.swf" />
+    <Content Include="Content\me\js\jquery.columnizer.min.js" />
+    <Content Include="Content\me\js\jquery.easing.js" />
+    <Content Include="Content\me\js\jquery.flexslider.js" />
+    <Content Include="Content\me\js\jquery.isotope.min.js" />
+    <Content Include="Content\me\js\jquery.jcarousel.min.js" />
+    <Content Include="Content\me\js\jquery.jplayer.min.js" />
+    <Content Include="Content\me\js\lof-slider.js" />
+    <Content Include="Content\me\js\modernizr.js" />
+    <Content Include="Content\me\js\moveform.js" />
+    <Content Include="Content\me\js\slider.js" />
+    <Content Include="Content\me\js\tabs.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -713,7 +728,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\" />
     <Folder Include="Content\js\" />
-    <Folder Include="Content\me\js\" />
     <Folder Include="Content\me\less\" />
     <Folder Include="Content\me\player-skin\" />
   </ItemGroup>
