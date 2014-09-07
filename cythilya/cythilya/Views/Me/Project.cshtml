@@ -1,0 +1,93 @@
+﻿@using cythilya.Models;
+@{
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Tab = "Portfolio";
+
+    MeModels.Project proj = ViewBag.ProjData as MeModels.Project;
+    ViewBag.Title = proj.Name + " | Hsin-Hao Tang";
+    ViewBag.Description = proj.Name + " | Hsin-Hao Tang";
+}
+<style>
+body.home #main {
+	padding-top: 30px;
+}    
+#portfolio-content{
+	margin-bottom: 0;
+}
+</style>
+<div id="portfolio-content" class="cf">        	
+	<div class="project-pager cf">
+		<a class="previous-project" href="/Me/Portfolio">&#8592; Go to Portfolio</a>
+		@*
+		<a class="previous-project" href="#">&#8592; Previous project</a>
+		<a class="next-project" href="#">Next project &#8594;</a>
+	    *@
+	</div>
+	<div id="project-box" class="cf" itemscope itemtype="http://schema.org/article">
+        @if (proj.Snapshot != null) 
+        {
+		<div class="project-slider">
+			<div class="flexslider">
+				<ul class="slides">
+                @foreach (var item in proj.Snapshot) 
+                { 
+				<li>
+					<img src="@(item.SnapshotURL)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
+				</li>
+                }
+				</ul>
+			</div>
+		</div>
+        }
+		<div class="info">
+            @if (!String.IsNullOrEmpty(proj.Client)) 
+            {
+                if (!String.IsNullOrEmpty(proj.ClientURL))
+                {
+                    <p><strong>Client</strong><a href="@(proj.ClientURL)" target="_blank" rel="nofollow">@(proj.Client)</a></p>
+                }
+                else 
+                { 
+                    <p><strong>Client</strong>@(proj.Client)</p>
+                } 
+            }
+        	<p><strong>Date</strong>@(!String.IsNullOrEmpty(proj.Date) ? proj.Date : "")</p>
+            @if (!String.IsNullOrEmpty(proj.LauchURL)) { 
+                <p><a href="@(proj.LauchURL)" class="launch" target="_blank">Launch Project</a></p>
+            }
+        </div>
+        <div class="entry-content">
+        	<h2 class="heading" itemprop="name">@(proj.Name)</h2>
+        	<div class="multicolumn" itemprop="description">
+        		@Html.Raw(proj.HtmlContent)
+        	</div>
+        </div>
+    </div>
+    @*
+	<div class="related-projects">
+		<h4 class="related-heading">Related projects</h4>
+		<div class="related-list cf">
+			<figure>
+				<a href="#" class="thumb"><img src="img/dummies/slides/01.jpg" alt="Alt text" /></a>
+				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
+			</figure>
+					
+			<figure>
+				<a href="#" class="thumb"><img src="img/dummies/slides/02.jpg" alt="Alt text" /></a>
+				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
+			</figure>
+					
+			<figure> 
+				<a href="#" class="thumb"><img src="img/dummies/slides/03.jpg" alt="Alt text" /></a>
+				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
+			</figure>
+					
+			<figure>
+				<a href="#" class="thumb"><img src="img/dummies/slides/04.jpg" alt="Alt text" /></a>
+				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
+			</figure>
+					
+		</div>
+	</div>
+	*@
+</div>

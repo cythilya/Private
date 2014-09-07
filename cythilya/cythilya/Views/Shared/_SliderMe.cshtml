@@ -1,0 +1,79 @@
+﻿@using cythilya.Models;
+@{
+    List<MeModels.Project> projList = ViewBag.ProjList as List<MeModels.Project>;
+    List<MeModels.Article> articleList = ViewBag.ArticleList as List<MeModels.Article>;
+}
+<div id="home-slider" class="lof-slidecontent">
+	<div class="preload"><div></div></div>
+	<div class="main-slider-content" >
+		<ul class="sliders-wrap-inner">
+        @if (projList != null)
+        {
+            foreach (var item in projList)
+            {
+                if (item.isHighlight)
+                { 
+			    <li itemscope itemtype="http://schema.org/ImageObject">
+				    <img src="@(item.PicLarge)" title="@(item.Name)" alt="@(item.Name)" itemprop="contentUrl"/>         
+				    <div class="slider-description">
+					    <h4 itemprop="name">@(item.Name)</h4>
+					    <p itemprop="description">@(item.Description)...
+						    <a class="link" href="@(item.URL)" target="_blank" title="前往 - @(item.Name)">Read more</a>
+					    </p>
+				    </div>
+			    </li>                 
+                }
+            }
+        }
+         
+        @if (articleList != null)
+        {
+            foreach (var item in articleList)
+            {
+                if (item.isHighlight)
+                { 
+ 			    <li itemscope itemtype="http://schema.org/ImageObject">
+			        <img src="@(item.PicLarge)" title="@(item.Name)" alt="@(item.Name)" itemprop="contentUrl"/>           
+			        <div class="slider-description">
+				        <h4 itemprop="name">@(item.Name)</h4>
+				        <p itemprop="description">@(item.Description)...
+					        <a class="link" href="@(item.URL)" target="_blank" title="前往 - @(item.URL)">Read more</a>
+				        </p>
+			        </div>
+			    </li>                
+                }
+            }
+        }
+		</ul>  	
+	</div>
+	<div class="navigator-content">
+		<div class="navigator-wrapper">
+			<ul class="navigator-wrap-inner">
+            @if (projList != null)
+            {
+                foreach (var item in projList)
+                {
+                    if (item.isHighlight)
+                    { 
+                        <li><img src="@(item.PicSmall)" alt="@(item.Name)" /></li>
+                    }
+                }
+            }
+            @if (articleList != null)
+            {
+                foreach (var item in articleList)
+                {
+                    if (item.isHighlight)
+                    {    
+                    <li><img src="@(item.PicSmall)" alt="@(item.Name)" /></li>
+                    }
+                }
+            }
+			</ul>
+		</div>
+		<div class="button-next">Next</div>
+		<div  class="button-previous">Previous</div>
+	</div> 
+</div> 
+
+

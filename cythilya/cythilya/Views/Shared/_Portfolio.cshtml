@@ -1,0 +1,73 @@
+﻿@using cythilya.Models;
+@{
+    List<MeModels.Article> articleList = ViewBag.ArticleList as List<MeModels.Article>;
+    List<MeModels.Project> projList = ViewBag.ProjList as List<MeModels.Project>;
+}
+<div class="home-featured">
+	<ul id="filter-buttons">
+		<li><a href="#" data-filter="*" class="selected">show all</a></li>
+		<li><a href="#" data-filter=".post">post</a></li>
+		<li><a href="#" data-filter=".project">project</a></li>
+	</ul>
+	<div id="filter-container" class="cf">
+        @if (projList != null) 
+        {
+            foreach (var item in projList)
+            { 
+ 		    <figure class="project" itemscope itemtype="http://schema.org/article">
+			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
+				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
+			    </a>
+			    <figcaption>
+				    <a href="@(item.URL)" title="@(item.Name)" itemprop="url" target="_blank">
+					    <h3 class="heading" itemprop="name">@(item.Name)</h3>
+				    </a>
+				    <span itemprop="description">@(item.Description)</span>
+			    </figcaption>
+		    </figure>
+            } 
+        }
+        
+        @if (articleList != null)
+        {
+            foreach (var item in articleList)
+            {
+		    <figure class="post" itemscope itemtype="http://schema.org/article">
+			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
+				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
+			    </a>
+			    <figcaption>
+				    <a href="@(item.URL)" title="@(item.Name)" itemprop="url" target="_blank">
+					    <h3 class="heading" itemprop="name">@(item.Name)</h3>
+				    </a>
+				    <span itemprop="description">@(item.Description)...</span>
+			    </figcaption>
+		    </figure>                 
+            }
+        }
+        @*
+		<figure class="post" itemscope itemtype="http://schema.org/article">
+			<a href="#" title="" class="thumb" itemprop="url" target="_blank">
+				<img src="img/dummies/featured/01.jpg" alt="" itemprop="image" />
+			</a>
+			<figcaption>
+				<a href="#" title="" itemprop="url" target="_blank">
+					<h3 class="heading" itemprop="name">標題</h3>
+				</a>
+				<span itemprop="description">描述</span>
+			</figcaption>
+		</figure>
+		<figure class="project" itemscope itemtype="http://schema.org/article">
+			<a href="#" title="" class="thumb" itemprop="url" target="_blank">
+				<img src="img/dummies/featured/01.jpg" alt="" itemprop="image" />
+			</a>
+			<figcaption>
+				<a href="#" title="" itemprop="url" target="_blank">
+					<h3 class="heading" itemprop="name">標題</h3>
+				</a>
+				<span itemprop="description">描述</span>
+			</figcaption>
+		</figure>				
+		*@
+	</div>
+</div>
