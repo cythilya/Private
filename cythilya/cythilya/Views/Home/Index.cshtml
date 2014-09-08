@@ -1,6 +1,28 @@
 ﻿@{
     ViewBag.Title = "首頁";
 }
+@* Ajax Helper Start *@
+<!-- Ajax Helper: Ajax超連結功能 -->
+@Ajax.ActionLink("取得目前時間", "GetTime", new AjaxOptions { UpdateTargetId = "now"})
+<div id="now"></div>
+
+<!-- Ajax Helper: Ajax表單功能 -->
+@using (Html.BeginForm(new AjaxOptions {UpdateTargetId = "nowForForm",  Url="Home/GetTime"}))
+{
+    @Html.TextBox("Name");
+    @Html.Password("Password");
+    <input type="submit" value="Sign In">
+}
+<div id="nowForForm"></div>
+
+@Ajax.ActionLink("刪除資料", "GetTime", new {controller = "Home", id = 3}, new AjaxOptions { OnSuccess = "Delete", Confirm = "確定要刪除？", HttpMethod = "POST", LoadingElementId = "ajaxLoad"})
+<script>
+    function Delete(data) {
+        alert(data);
+    }
+</script>
+@* Ajax Helper End *@
+
 @section featured {
     <section class="featured">
         <div class="content-wrapper">

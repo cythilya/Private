@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace cythilya.Controllers
 {
+    //ASP.NET MVC Exercise
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -28,5 +29,13 @@ namespace cythilya.Controllers
 
             return View();
         }
+
+        //Ajax Helper: Ajax超連結功能, 強迫瀏覽器不要快取這個網頁, 讓資料即時更新
+        [OutputCache(NoStore=true, Duration=0)]
+        public ActionResult GetTime() 
+        {
+            return Content(DateTime.Now.ToString("F"));
+        }
+
     }
 }
