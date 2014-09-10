@@ -161,6 +161,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\SEOLab\SEOLabAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -701,6 +702,38 @@
     <Content Include="Content\me\js\tweet\jquery.tweet.js" />
     <Content Include="Content\me\player-skin\jplayer-black-and-yellow.css" />
     <Content Include="Content\me\player-skin\jplayer-black-and-yellow.png" />
+    <Content Include="Content\seo_lab\css\bootstrap-theme.css" />
+    <Content Include="Content\seo_lab\css\bootstrap-theme.min.css" />
+    <Content Include="Content\seo_lab\css\bootstrap.css" />
+    <Content Include="Content\seo_lab\css\bootstrap.min.css" />
+    <Content Include="Content\seo_lab\css\default.css" />
+    <Content Include="Content\seo_lab\css\style.css" />
+    <Content Include="Content\seo_lab\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\seo_lab\img\AEO_RIBBED_CARDIGAN_top_1499.jpg" />
+    <Content Include="Content\seo_lab\img\AE_EFFORTLESSLY_CHIC_CARDIGAN_TOP_748.jpg" />
+    <Content Include="Content\seo_lab\img\AE_MESH_FRONT_TANK_449.jpg" />
+    <Content Include="Content\seo_lab\img\AE_PRINTED_SWEATSHIRT_SWEATSHIRT_1199.jpg" />
+    <Content Include="Content\seo_lab\img\AE_TEXTURED_CIRCLE_SKIRT_bottoms_1199.jpg" />
+    <Content Include="Content\seo_lab\img\AE_TRIANGLE_BIKINI_TOP_swim_748.jpg" />
+    <Content Include="Content\seo_lab\img\apple-touch-icon-114-precomposed.png" />
+    <Content Include="Content\seo_lab\img\apple-touch-icon-144-precomposed.png" />
+    <Content Include="Content\seo_lab\img\apple-touch-icon-57-precomposed.png" />
+    <Content Include="Content\seo_lab\img\apple-touch-icon-72-precomposed.png" />
+    <Content Include="Content\seo_lab\img\default.png" />
+    <Content Include="Content\seo_lab\img\favicon.png" />
+    <Content Include="Content\seo_lab\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\seo_lab\img\glyphicons-halflings.png" />
+    <Content Include="Content\seo_lab\img\icon_hot.png" />
+    <Content Include="Content\seo_lab\js\bootstrap.min.js" />
+    <Content Include="Content\seo_lab\js\html5shiv.js" />
+    <Content Include="Content\seo_lab\js\jquery.min.js" />
+    <Content Include="Content\seo_lab\js\less-1.3.3.min.js" />
+    <Content Include="Content\seo_lab\js\libs\ember-data.js" />
+    <Content Include="Content\seo_lab\js\libs\ember.js" />
+    <Content Include="Content\seo_lab\js\libs\handlebars-1.0.0.js" />
+    <Content Include="Content\seo_lab\js\libs\jquery-1.10.2.min.js" />
+    <Content Include="Content\seo_lab\js\libs\localstorage_adapter.js" />
+    <Content Include="Content\seo_lab\js\script.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -816,6 +849,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\SEOLab\Controllers\" />
+    <Folder Include="Areas\SEOLab\Models\" />
     <Folder Include="Content\css\" />
   </ItemGroup>
   <ItemGroup>
@@ -840,6 +875,8 @@
     <Content Include="Views\Shared\_FooterMe.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\SEOLab\Views\Web.config" />
+    <Content Include="Areas\SEOLab\Views\Shared\_LayoutSEOLab.cshtml" />
     <None Include="Content\me\img\mono-icons\license.rtf" />
     <Content Include="Views\Me\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Portfolio.cshtml" />
@@ -859,6 +896,49 @@
     <None Include="Content\me\less\style.less" />
     <None Include="Content\me\less\widgets.less" />
     <None Include="Content\me\player-skin\jplayer-black-and-yellow.psd" />
+    <None Include="Content\seo_lab\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Content\seo_lab\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Content\seo_lab\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Content\seo_lab\less\alerts.less" />
+    <None Include="Content\seo_lab\less\badges.less" />
+    <None Include="Content\seo_lab\less\bootstrap.less" />
+    <None Include="Content\seo_lab\less\breadcrumbs.less" />
+    <None Include="Content\seo_lab\less\button-groups.less" />
+    <None Include="Content\seo_lab\less\buttons.less" />
+    <None Include="Content\seo_lab\less\carousel.less" />
+    <None Include="Content\seo_lab\less\close.less" />
+    <None Include="Content\seo_lab\less\code.less" />
+    <None Include="Content\seo_lab\less\component-animations.less" />
+    <None Include="Content\seo_lab\less\dropdowns.less" />
+    <None Include="Content\seo_lab\less\forms.less" />
+    <None Include="Content\seo_lab\less\glyphicons.less" />
+    <None Include="Content\seo_lab\less\grid.less" />
+    <None Include="Content\seo_lab\less\input-groups.less" />
+    <None Include="Content\seo_lab\less\jumbotron.less" />
+    <None Include="Content\seo_lab\less\labels.less" />
+    <None Include="Content\seo_lab\less\list-group.less" />
+    <None Include="Content\seo_lab\less\media.less" />
+    <None Include="Content\seo_lab\less\mixins.less" />
+    <None Include="Content\seo_lab\less\modals.less" />
+    <None Include="Content\seo_lab\less\navbar.less" />
+    <None Include="Content\seo_lab\less\navs.less" />
+    <None Include="Content\seo_lab\less\normalize.less" />
+    <None Include="Content\seo_lab\less\pager.less" />
+    <None Include="Content\seo_lab\less\pagination.less" />
+    <None Include="Content\seo_lab\less\panels.less" />
+    <None Include="Content\seo_lab\less\popovers.less" />
+    <None Include="Content\seo_lab\less\print.less" />
+    <None Include="Content\seo_lab\less\progress-bars.less" />
+    <None Include="Content\seo_lab\less\responsive-utilities.less" />
+    <None Include="Content\seo_lab\less\scaffolding.less" />
+    <None Include="Content\seo_lab\less\tables.less" />
+    <None Include="Content\seo_lab\less\theme.less" />
+    <None Include="Content\seo_lab\less\thumbnails.less" />
+    <None Include="Content\seo_lab\less\tooltip.less" />
+    <None Include="Content\seo_lab\less\type.less" />
+    <None Include="Content\seo_lab\less\utilities.less" />
+    <None Include="Content\seo_lab\less\variables.less" />
+    <None Include="Content\seo_lab\less\wells.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

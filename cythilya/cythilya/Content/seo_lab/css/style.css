@@ -1,0 +1,26 @@
+#pageIndex .nav li a.active{
+    background:#eee;
+    border:1px solid #ddd;
+    outline: none;
+} 
+#pageIndex .btn{
+	margin-right:5px;
+}
+#pageIndex .btn .icon{
+	width:16px;
+	height:16px;
+	display: block;
+	float:left;
+	margin-top:3px;
+	margin-right:2px;
+}
+#pageIndex .btn{
+	display: block;
+	float:left;		
+}
+#pageIndex .badge{
+	margin-left: 5px;
+}
+#pageIndex table td{
+	vertical-align: middle;
+}

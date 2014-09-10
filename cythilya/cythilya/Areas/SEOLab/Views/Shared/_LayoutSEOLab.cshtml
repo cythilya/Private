@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ember JS & SEO </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="img/favicon.png">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+<script type="text/x-handlebars" data-template-name="productlist/index">
+	{{#each itemController="product"}}
+		<tr {{bindAttr class="status"}}>
+			<td>
+				{{#if isEditing}}
+					{{edit-product class="form-control" value=no}}
+				{{else}}
+					{{no}}
+				{{/if}}
+			</td>
+			<td>
+				{{#if isEditing}}
+					<img class="thumbnail" {{bindAttr src="cover" alt="name"}} width="80">
+					<input type="file" id="uploadFile">									
+				{{else}}
+					<img class="thumbnail" {{bindAttr src="cover" alt="name"}} width="80">	
+				{{/if}}
+			</td>
+			<td>
+				{{#if isEditing}}
+					{{edit-product class="form-control" value=name}}
+				{{else}}
+					{{{name}}}
+					{{#if isHot}}
+					     <img src="img/icon_hot.png" width="16">
+					{{/if}}								
+				{{/if}}
+			</td>
+			<td>
+				{{#if isEditing}}
+					{{edit-product class="form-control" value=category}}
+				{{else}}
+					{{category}}
+				{{/if}}
+			</td>
+	    </tr>
+	{{/each}}
+</script>	
+<script type="text/x-handlebars" data-template-name="productlist">
+<section id="productapp">
+	<div id="pageIndex" class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="page-header">
+					<h1>
+						Ember JS & SEO 
+						<!--
+						<small>
+							After page loading, render some content.
+						</small>
+						-->
+					</h1>
+				</div>
+				<p>After page loading, render some content.</p>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th class="no">編號</th>
+							<th class="cover">預覽圖</th>
+							<th class="name">名稱</th>
+							<th class="category">描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{outlet}}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<p>
+						Reference
+					</p>
+					<ul>
+						<li>
+							<a href="http://emberjs.com/">Ember.js</a>
+						</li>
+						<li>
+							<a href="http://www.ae.com/web/international/index.jsp">American Eagle Outfitters</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		-->		
+	</div>
+</section>	
+</script>
+<script src="js/libs/jquery-1.10.2.min.js"></script>
+<script src="js/libs/handlebars-1.0.0.js"></script>
+<script src="js/libs/ember.js"></script>
+<script src="js/libs/ember-data.js"></script>
+<script src="js/libs/localstorage_adapter.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
