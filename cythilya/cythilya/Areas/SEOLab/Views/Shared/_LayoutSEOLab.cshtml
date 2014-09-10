@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var currentURL = "cythilya.apphb.com" + HttpContext.Current.Request.RawUrl;
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -13,25 +16,24 @@
 <!-- Open Graph data -->
 <meta property="og:title" content="Ember JS & SEO" />
 <meta property="og:description" content="SEO Strategies for JavaScript-Heavy Single Page Applications or AJAX Sites" />
-<meta property="og:url" content="@(HttpContext.Current.Request.Url.AbsoluteUri)" />
+<meta property="og:url" content="@(currentURL)"/>
 <meta property="og:site_name" content="Hsin-Hao Tang">
 <meta property="og:type" content="article" />
 <meta property="og:image" content="/Images/twenty_800.jpg" />
 
-<link rel="Shortcut Icon" type="image/x-icon" href="/content/images/favicon.ico">
-<link href="https://plus.google.com/118430811385796992371" rel="publisher">
-<link rel="stylesheet" href="css/reset-font-min.css">
-<link rel="stylesheet" href="css/clearfix.css">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://plus.google.com/u/0/+CythilyaTang/" rel="author">
+<link rel="stylesheet" href="/Content/seo_lab/css/reset-font-min.css">
+<link rel="stylesheet" href="/Content/seo_lab/css/clearfix.css">
+<link rel="stylesheet" href="/Content/seo_lab/css/style.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="/Content/seo_lab/css/bootstrap.min.css" rel="stylesheet">
 <link href="/Content/seo_lab/css/style.css" rel="stylesheet">
 <link href="/Content/seo_lab/css/default.css" rel="stylesheet">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/img/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/img/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Content/img/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="/Content/img/apple-touch-icon-57-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/seo_lab/img/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/seo_lab/img/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Content/seo_lab/img/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="/Content/seo_lab/img/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="/Images/icon.ico">
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>

@@ -11,7 +11,7 @@
         ViewBag.SharedImage = "/Images/twenty_800.jpg";
     }
 
-    var currentURL = HttpContext.Current.Request.Url.AbsoluteUri;
+    var currentURL = "cythilya.apphb.com" + HttpContext.Current.Request.RawUrl;
     var siteName = "Hsin-Hao Tang";
     var enableSlider = ViewBag.EnableSlider;
 }
@@ -31,6 +31,7 @@
 <meta property="og:site_name" content="@(siteName)">
 <meta property="og:type" content="article">
 <meta property="og:image" content="@(ViewBag.SharedImage)">
+<link href="https://plus.google.com/u/0/+CythilyaTang/" rel="author">
 <meta name="google-site-verification" content="66HCcYwJ0Hb8f3bZX2ZO0A2IR0BSgjjj7VEXPaoThrs" />
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
