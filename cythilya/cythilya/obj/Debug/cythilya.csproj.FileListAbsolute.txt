@@ -66,3 +66,4 @@ D:\Git\Private\cythilya\cythilya\bin\zh-Hant\Microsoft.Web.WebPages.OAuth.resour
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\WebMatrix.WebData.resources.dll
 D:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.dll
 D:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.pdb
+D:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.csprojResolveAssemblyReference.cache

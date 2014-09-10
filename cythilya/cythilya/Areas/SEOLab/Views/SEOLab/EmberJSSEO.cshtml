@@ -1,0 +1,108 @@
+﻿@{
+    Layout = "~/Areas/SEOLab/Views/Shared/_LayoutSEOLab.cshtml";
+    int ID = ViewBag.TemplateID;
+}
+@if (ID == 1)
+{ 
+<script type="text/x-handlebars" data-template-name="productlist/index">
+	{{#each itemController="product"}}
+		<tr {{bindAttr class="status"}}>
+			<td>
+				{{#if isEditing}}
+					{{edit-product class="form-control" value=no}}
+				{{else}}
+					{{no}}
+				{{/if}}
+			</td>
+			<td>
+				{{#if isEditing}}
+					<img class="thumbnail" {{bindAttr src="cover" alt="name"}} width="80">
+					<input type="file" id="uploadFile">									
+				{{else}}
+					<img class="thumbnail" {{bindAttr src="cover" alt="name"}} width="80">	
+				{{/if}}
+			</td>
+			<td>
+				{{#if isEditing}}
+					{{edit-product class="form-control" value=name}}
+				{{else}}
+					{{{name}}}
+					{{#if isHot}}
+					     <img src="img/icon_hot.png" width="16">
+					{{/if}}								
+				{{/if}}
+			</td>
+			<td>
+				{{#if isEditing}}
+					{{edit-product class="form-control" value=category}}
+				{{else}}
+					{{category}}
+				{{/if}}
+			</td>
+	    </tr>
+	{{/each}}
+</script>	
+<script type="text/x-handlebars" data-template-name="productlist">
+<section id="productapp">
+	<div id="pageIndex" class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="page-header">
+					<h1>
+						Ember JS & SEO 
+						<!--
+						<small>
+							After page loading, render some content.
+						</small>
+						-->
+					</h1>
+				</div>
+				<p>After page loading, render some content.</p>
+                <p><a href="/SEOLab/SEOLab/Index" title="Back to Index - Ember JS & SEO">Back to Index</a></p>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th class="no">編號</th>
+							<th class="cover">預覽圖</th>
+							<th class="name">名稱</th>
+							<th class="category">描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{outlet}}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<p>
+						Reference
+					</p>
+					<ul>
+						<li>
+							<a href="http://emberjs.com/">Ember.js</a>
+						</li>
+						<li>
+							<a href="http://www.ae.com/web/international/index.jsp">American Eagle Outfitters</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		-->		
+	</div>
+</section>	
+</script>
+}
+else
+{
+    <div class="Msg">No Data</div>
+    <a href="/SEOLab/SEOLab/Index" title="Back to Index - Ember JS & SEO">Back to Index</a>
+}

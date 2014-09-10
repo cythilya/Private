@@ -161,6 +161,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\SEOLab\Controllers\SEOLabController.cs" />
     <Compile Include="Areas\SEOLab\SEOLabAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -849,7 +850,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\SEOLab\Controllers\" />
     <Folder Include="Areas\SEOLab\Models\" />
     <Folder Include="Content\css\" />
   </ItemGroup>
@@ -877,6 +877,8 @@
   <ItemGroup>
     <Content Include="Areas\SEOLab\Views\Web.config" />
     <Content Include="Areas\SEOLab\Views\Shared\_LayoutSEOLab.cshtml" />
+    <Content Include="Areas\SEOLab\Views\SEOLab\Index.cshtml" />
+    <Content Include="Areas\SEOLab\Views\SEOLab\EmberJSSEO.cshtml" />
     <None Include="Content\me\img\mono-icons\license.rtf" />
     <Content Include="Views\Me\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Portfolio.cshtml" />
