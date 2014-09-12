@@ -61,7 +61,7 @@ ProductList.Product.FIXTURES = [
 		no: 3556,
 		cover: "http://friendoprod.blob.core.windows.net/missionpics/images/main/bc2fae4f-dc2e-4d31-b6fd-8c9b3870aef6.jpg",
 		name: '<a href="http://www.friendo.com.tw/Mission/3556" target="_blank">少林足球隨堂考</a>',
-		category: "搜尋引擎提供使用者想要的資訊，而社群平台提供這些資訊更多露出的機會。我們希望將優質的內容提供給使用者，並利用社群的力量推廣出去。...",
+		category: "《少林足球》在全球上映的累計總票房約5000萬美元，亦是第一部在歐洲大規模上映的周星馳電影。相信各位特務們對《少林足球》這部電影都耳熟能詳，隊長就不囉嗦了，馬上出題考考大家！",
 		status: "success"
 	},
 	{
