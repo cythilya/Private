@@ -59,13 +59,17 @@
 
     ga('create', 'UA-54547347-1', 'auto');
     ga('send', 'pageview');
-
 </script>
+<style>
+body.home #main {
+    padding-top: 30px;
+}
+</style>
 </head>
 <body class="home">
 <header itemscope itemtype="http://schema.org/WPHeader">
 	<div class="wrapper cf">
-        @Html.Partial("_Header")
+        @Html.Partial("_HeaderFacebook")
 	</div>
 </header>
 <div id="main">
@@ -91,5 +95,8 @@
 <script src="/Content/me/js/jquery.jcarousel.min.js"></script>
 <script src="/Content/me/js/modernizr.js"></script>
 <script src="/Content/me/js/jquery.flexslider.js"></script>
+<script src="/Content/js/jquery.cookie.js"></script>
+<script src="/Content/social/facebook.js" data-appid=698238793579627></script>
+<script src="/Content/social/jquery.social.facebook.js"></script>
 </body>
 </html>

@@ -163,6 +163,9 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\SEOLab\Controllers\SEOLabController.cs" />
     <Compile Include="Areas\SEOLab\SEOLabAreaRegistration.cs" />
+    <Compile Include="Areas\Social\Controllers\FacebookController.cs" />
+    <Compile Include="Areas\Social\Models\Facebook.cs" />
+    <Compile Include="Areas\Social\SocialAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MeController.cs" />
@@ -176,6 +179,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\js\jquery-1.7.1.min.js" />
+    <Content Include="Content\js\jquery.cookie.js" />
+    <Content Include="Content\social\jquery.social.facebook.js" />
     <Content Include="Content\me\css\carousel.css" />
     <Content Include="Content\me\css\comments.css" />
     <Content Include="Content\me\css\elements.css" />
@@ -735,6 +740,7 @@
     <Content Include="Content\seo_lab\js\libs\jquery-1.10.2.min.js" />
     <Content Include="Content\seo_lab\js\libs\localstorage_adapter.js" />
     <Content Include="Content\seo_lab\js\script.js" />
+    <Content Include="Content\social\facebook.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -879,6 +885,10 @@
     <Content Include="Areas\SEOLab\Views\Shared\_LayoutSEOLab.cshtml" />
     <Content Include="Areas\SEOLab\Views\SEOLab\Index.cshtml" />
     <Content Include="Areas\SEOLab\Views\SEOLab\EmberJSSEO.cshtml" />
+    <Content Include="Areas\Social\Views\Web.config" />
+    <Content Include="Areas\Social\Views\Facebook\Index.cshtml" />
+    <Content Include="Areas\Social\Views\Shared\_LayoutFacebook.cshtml" />
+    <Content Include="Areas\Social\Views\Shared\_HeaderFacebook.cshtml" />
     <None Include="Content\me\img\mono-icons\license.rtf" />
     <Content Include="Views\Me\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Portfolio.cshtml" />
@@ -941,6 +951,7 @@
     <None Include="Content\seo_lab\less\utilities.less" />
     <None Include="Content\seo_lab\less\variables.less" />
     <None Include="Content\seo_lab\less\wells.less" />
+    <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
