@@ -87,6 +87,22 @@ ProductList.Product.FIXTURES = [
 		name: '<a href="http://www.friendo.com.tw/Mission/3448" target="_blank">唐伯虎點秋香大會考</a>',
 		category: "《唐伯虎點秋香》是1993年香港喜劇電影。由周星馳主演。該片為周星馳無厘頭喜劇經典之一，而這部電影也一直在電視上不斷的重複重複再重複…，相信星爺迷們一定對劇情及對白瞭若指掌，現在就來考考特務們電影裡的小知識吧！",
 		status: "active"
+	},
+	{
+	    id: 7,
+	    no: 3566,
+	    cover: "http://friendoimageserver.cloudapp.net/azure/missionpics/images/Editor/6287bca3-cb17-48da-ba10-ad47061c504f.jpg",
+	    name: '<a href="http://www.friendo.com.tw/Mission/3566" target="_blank">原味千尋 - 日常裡の質缺</a>',
+	    category: "尋常的日子裡，就需要美味的零嘴來點綴。《原味千尋》用16倍的牛奶，製出1公斤的乳酪絲，濃醇的口感沒有人可以抗拒。只要上傳你的精采試吃文，就有機會獲得【清淨蜂蜜乳酪絲】，將甜蜜的滋味分享給每一位親朋好友喔!",
+	    status: "danger"
+	},
+	{
+	    id: 8,
+	    no: 3633,
+	    cover: "http://friendoprod.blob.core.windows.net/missionpics/images/main/a9240f97-f9bf-480f-8a05-0a44f87126a5.jpg",
+	    name: '<a href="http://www.friendo.com.tw/Mission/3633" target="_blank">HAPPYGO 點點好康隨堂考</a>',
+	    category: "來自快樂星球的HAPPY GO點點，外表俏麗再加上靈活雙眼與可愛丸子頭，讓大家印象深刻，為了讓大家更進一步認識HAPPY GO點點，粉多任務特別舉辦「點點好康隨堂考」，凡通過測驗的朋友，就有機會獲得粉多紅利與HAPPY GO點點紙相機限定版（市價1,990）！這樣的好康不拿對嗎？",
+	    status: "success"
 	}		
 ];
 
