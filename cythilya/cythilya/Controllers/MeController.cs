@@ -175,6 +175,8 @@ namespace cythilya.Controllers
             
             #endregion
 
+            articleList.Reverse();
+
             ViewBag.ArticleList = articleList;
         }
 
