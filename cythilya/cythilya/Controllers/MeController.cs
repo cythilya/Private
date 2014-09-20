@@ -169,7 +169,7 @@ namespace cythilya.Controllers
             article_10.RawPic = "https://lh4.googleusercontent.com/-pBYR5ny-j04/VBGyhD93RRI/AAAAAAAACpQ/3jUuwPMTeQ4/w857-h482-no/JavaScript_SEO.jpg";
             article_10.PicSmall = "https://lh4.googleusercontent.com/-NQKoNelYrYk/VB2Kgo7AlzI/AAAAAAAACwM/9_byKkEoIAU/w188-h73-no/JavaScript_SEO_188x73.jpg";
             article_10.PicMedium = "https://lh5.googleusercontent.com/-jpsbP9Qfww8/VB2KgcI-M2I/AAAAAAAACwM/c_ZxQG3NwNc/w300-h169-no/JavaScript_SEO_300.jpg";
-            article_10.PicLarge = "https://lh3.googleusercontent.com/u2dbGdyoyHui70UPNetg5Suwju37RLzmq9F2MYrLMB4=w857-h335-no";
+            article_10.PicLarge = "https://lh6.googleusercontent.com/-h6iwrSZFxa8/VB2NdYoVfZI/AAAAAAAACw8/S_HqfAPw2lY/w857-h335-no/JavaScript_SEO_940x367.jpg";
             article_10.isHighlight = true;
             articleList.Add(article_10);
             
