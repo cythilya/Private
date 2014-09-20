@@ -180,6 +180,10 @@
   <ItemGroup>
     <Content Include="Content\js\jquery-1.7.1.min.js" />
     <Content Include="Content\js\jquery.cookie.js" />
+    <Content Include="Content\me\img\blog\JavaScript_SEO.jpg" />
+    <Content Include="Content\me\img\blog\JavaScript_SEO_188x73.jpg" />
+    <Content Include="Content\me\img\blog\JavaScript_SEO_300.jpg" />
+    <Content Include="Content\me\img\blog\JavaScript_SEO_940x367.jpg" />
     <Content Include="Content\social\jquery.social.facebook.js" />
     <Content Include="Content\me\css\carousel.css" />
     <Content Include="Content\me\css\comments.css" />
