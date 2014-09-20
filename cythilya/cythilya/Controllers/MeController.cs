@@ -160,6 +160,18 @@ namespace cythilya.Controllers
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
             article_9.isHighlight = true;
             articleList.Add(article_9);
+
+            //Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力
+            MeModels.Article article_10 = new MeModels.Article();
+            article_10.Name = "Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力";
+            article_10.Description = "Google Webmaster Central Blog在今年五月宣布 ，Google 搜尋能夠執行網頁上的 Javascript (見Understanding web pages better)﻿。而過去已知Crawler只會剖析網頁上的HTML Code，而不會(或少量)執行JavaScript。。又由於開發品質與速度的要求，使得Single Page Application (SPA) frameworks盛行(例如：Angular.js、Ember.js等)，於是了解搜尋引擎是否能夠執行並解讀JavaScript與解讀的程度便成為網站開發的其中一項需求。";
+            article_10.URL = "http://bit.ly/1unwm55";
+            article_10.RawPic = "/Content/me/img/blog/JavaScript_SEO.jpg";
+            article_10.PicSmall = "/Content/me/img/blog/JavaScript_SEO_188x73.jpg";
+            article_10.PicMedium = "/Content/me/img/blog/JavaScript_SEO_300.jpg";
+            article_10.PicLarge = "/Content/me/img/blog/JavaScript_SEO_940x367.jpg";
+            article_10.isHighlight = true;
+            articleList.Add(article_10);
             
             #endregion
 
