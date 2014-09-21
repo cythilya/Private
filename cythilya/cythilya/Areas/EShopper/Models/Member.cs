@@ -16,27 +16,23 @@ namespace cythilya.Areas.EShopper.Models
 
         //會員登入帳號
         [DisplayName("會員登入帳號")]
-        [Required]
         [Required(ErrorMessage = "會員登入帳號")]
         public string Account { get; set; }
         
         //Email
         [DisplayName("Email")]
-        [Required]
         [Required(ErrorMessage = "請輸入Email")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         
         //密碼
         [DisplayName("密碼")]
-        [Required]
         [Required(ErrorMessage = "請輸入密碼")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
         
         //姓名
         [DisplayName("姓名")]
-        [Required]
         [Required(ErrorMessage = "請輸入姓名")]
         public string Name { get; set; }
         

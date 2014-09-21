@@ -11,7 +11,7 @@ namespace cythilya.Areas.EShopper.Models
     {
         [DisplayName("商品資訊")]
         [DisplayColumn("Name")]
-        public class Product
+        public class ProductItem
         {
             //ID
             [Key]
@@ -36,25 +36,21 @@ namespace cythilya.Areas.EShopper.Models
             //商品圖片
             //主打圖片原始檔
             [DisplayName("主打圖片原始檔")]
-            [Required]
             [Required(ErrorMessage = "請輸入主打圖片原始檔")]
             public string RawPicUrl { get; set; } 
 
             //主打圖片, 大(內頁 329x380)
             [DisplayName("主打內頁大圖(329x380)")]
-            [Required]
             [Required(ErrorMessage = "請輸入主打內頁大圖(329x380)")]
             public string PicLargeUrl { get; set; } 
 
             //主打圖片, 中(首頁 255x381)
             [DisplayName("主打中圖(首頁 255x381)")]
-            [Required]
             [Required(ErrorMessage = "請輸入主打中圖(首頁 255x381)")]            
             public string PicMediumUrl { get; set; } 
 
             //主打圖片, 小(內頁 85x84)
             [DisplayName("主打內頁小圖(85x84)")]
-            [Required]
             [Required(ErrorMessage = "請輸入主打內頁小圖(85x84)")]            
             public string PicSmallUrl { get; set; } 
             
