@@ -25,12 +25,11 @@ SocialDemo.module = {
 		var dMessgae = dModule.find('.message');
 		var dShare = dModule.find('.btnShare');
 		var friendString = '';
-		
-		dMessgae.html('Loading...');
-
 		FBUtil.after(function (FB) {
 			FB.getLoginStatus(function(response) {
 				if (response.status === 'connected') {
+					dMessgae.html('Loading...');
+					
 					FB.api('/me/taggable_friends', function(res) {
 						if (res && !res.error) {
 							var friendsData = res.data;
@@ -56,7 +55,7 @@ SocialDemo.module = {
 					});	
 				}
 				else {
-					FB.login();
+					//FB.login();
 				}
 			});
 		});	
@@ -74,11 +73,29 @@ SocialDemo.module = {
 				if(dObj.attr('checked')){
 					friendArr.push(dObj.data('id'));
 				}
-				
-				
 			});
 			friendString = friendArr.join(',');
-
+			
+			//Post
+			/*
+			var params = {};
+			params['name'] = 'Facebook Graph API & Demo Example - Taggable Friends';
+			params['caption'] = 'Facebook Graph API & Demo Example - Taggable Friends';	
+			params['description'] = 'Taggable Friends';
+			params['message'] = 'Graph API是Facebook所推出的一種技術標準，它的核心概念是「物件與連結」。為什麼稱為「Graph API」呢？因為整個Facebook就是透過這些物件與連結建立而成的Social Graph。Facebook所提供存取的介面，就稱為「Graph API」。';
+			params['link'] = 'http://bit.ly/1qtutRh';
+			params['picture'] = 'https://lh4.googleusercontent.com/-nw381RE73SY/U5KlRrevDFI/AAAAAAAACMQ/FJnuqzQfnMA/w764-h509-no/twenty_800.jpg';
+			params['tags'] = friendString;
+			params['place'] = '647158178704039';//https://www.facebook.com/pages/Search-Engine-Optimization-Social-Media/647158178704039
+		
+			FB.api('/me/feed', 'post', params, function(response) {
+			  if (!response || response.error) {
+				alert('Error occured');
+			  } else {
+				alert('Post ID: ' + response.id);
+			  }
+			});
+			*/
 			FB.login(function(){
 				var params = {};
 				params['name'] = 'Facebook Graph API & Demo Example - Taggable Friends';
