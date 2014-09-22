@@ -13,10 +13,12 @@ namespace cythilya.Areas.Social.Controllers
 
         public ActionResult Index()
         {
+            /*
             if (true)
             {
                 return View("~/Views/404.cshtml");
             }
+             * */
             return View();
         }
 
