@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Areas/EShopper/Views/Shared/_LayoutEShopper.cshtml";
+    ViewBag.Title = "Category | E-Shopper";
+    ViewBag.Description = "Category | E-Shopper - Eommerce Demo";
+    ViewBag.SharedImage = "";
+    ViewBag.Tab = "Shop";
+}
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+            @Html.Partial("~/Areas/EShopper/Views/Shared/_Sidebar.cshtml")
+			</div>
+			<div class="col-sm-9 padding-right">
+            @Html.Partial("~/Areas/EShopper/Views/Shared/_SearchResult.cshtml")
+			</div>
+		</div>
+	</div>
+</section>
+
