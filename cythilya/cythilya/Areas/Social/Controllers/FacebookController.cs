@@ -13,14 +13,14 @@ namespace cythilya.Areas.Social.Controllers
 
         public ActionResult Index()
         {
-            /*
-            if (true)
-            {
-                return View("~/Views/404.cshtml");
-            }
-             * */
             return View();
         }
+
+        //taggable_friends: A list of friends that can be tagged or mentioned in stories published to Facebook.
+        public ActionResult TaggableFriends() 
+        {
+            return View();
+        } 
 
         //
         // GET: /Social/Facebook/Details/5

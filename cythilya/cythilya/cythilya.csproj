@@ -836,6 +836,8 @@
     <Content Include="Content\seo_lab\js\libs\localstorage_adapter.js" />
     <Content Include="Content\seo_lab\js\script.js" />
     <Content Include="Content\social\facebook.js" />
+    <Content Include="Content\social\script.js" />
+    <Content Include="Content\social\style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -996,6 +998,7 @@
     <Content Include="Areas\EShopper\Views\Shared\_RecommendItems.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Sidebar.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_CategoryTab.cshtml" />
+    <Content Include="Areas\Social\Views\Facebook\TaggableFriends.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
@@ -1067,6 +1070,7 @@
     <None Include="Content\seo_lab\less\wells.less" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_ga.cshtml" />
+    <None Include="Content\social\style.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

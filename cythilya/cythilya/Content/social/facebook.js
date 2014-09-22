@@ -44,9 +44,10 @@ var FBUtil = {
 };
 window.fbAsyncInit = function () {
     FB.init({
-        appId: currentScript.getAttribute("data-appid"),                        // App ID from the app dashboard
-        status: true,                                 // Check Facebook Login status
-        xfbml: true                                  // Look for social plugins on the page
+        appId: currentScript.getAttribute("data-appid"),                       
+        status: true,                                
+        xfbml: true ,                                
+        version    : 'v2.1'
     });
     FB.getLoginStatus(function (response) {
         FBUtil.init();
