@@ -1,3 +1,8 @@
+var login = function(){
+	var redirect = 'https://www.facebook.com/dialog/oauth?client_id=698238793579627&redirect_uri=http://cythilya.apphb.com:52533/Social/Facebook/TaggableFriends&scope=publish_actions';
+	location.href = redirect;
+};
+
 var SocialDemo = {};
 SocialDemo.module = {
     version: '0.1',
@@ -24,10 +29,21 @@ SocialDemo.module = {
 		var dFriendList = dModule.find('.friendList');
 		var dMessgae = dModule.find('.message');
 		var dShare = dModule.find('.btnShare');
+		var dBtnLogin = dModule.find('.btnFBLogin');
 		var friendString = '';
+		
+		dBtnLogin.click(function(e){
+			e.preventDefault();
+			login();
+		});
+
 		FBUtil.after(function (FB) {
 			FB.getLoginStatus(function(response) {
 				if (response.status === 'connected') {
+					dBtnLogin.hide();
+					dMessgae.show();
+					dShare.show();
+					dFriendList.show();
 					dMessgae.html('Loading...');
 					
 					FB.api('/me/taggable_friends', function(res) {
@@ -64,7 +80,7 @@ SocialDemo.module = {
 		dShare.click(function(e){
 			e.preventDefault();
 			
-			var dFriends = dFriendList.find('.friend')
+			var dFriends = dFriendList.find('.friend');
 			var friendArr = [];
 			
 			dFriends.each(function(index, value){
