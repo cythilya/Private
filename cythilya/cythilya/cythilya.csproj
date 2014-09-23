@@ -988,7 +988,6 @@
     <Content Include="Areas\Social\Views\Shared\_HeaderFacebook.cshtml" />
     <Content Include="Areas\EShopper\Views\Web.config" />
     <Content Include="Areas\EShopper\Views\Shared\_LayoutEShopper.cshtml" />
-    <Content Include="Areas\EShopper\Views\Home\Index.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Meta.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Script.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Style.cshtml" />
@@ -999,6 +998,9 @@
     <Content Include="Areas\EShopper\Views\Shared\_Sidebar.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_CategoryTab.cshtml" />
     <Content Include="Areas\Social\Views\Facebook\TaggableFriends.cshtml" />
+    <Content Include="Areas\EShopper\Views\Home\Index.cshtml" />
+    <Content Include="Areas\EShopper\Views\Home\Category.cshtml" />
+    <Content Include="Areas\EShopper\Views\Shared\_SearchResult.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />

@@ -1,0 +1,61 @@
+﻿@using cythilya.Areas.EShopper.Models
+@{
+    List<Product> productList = ViewBag.ProductList as List<Product>; 
+    var ajaxOption = new AjaxOptions()
+    {
+        OnSuccess = "AddToCartSuccess",
+        OnFailure = "AddToCartOnFailure",
+        HttpMethod = "Post"
+    };    
+}
+<script>
+    function AddToCartSuccess() {
+        alert('加入購物車成功');
+    }
+    function AddToCartOnFailure(xhr) {
+        alert('加入購物車失敗(HTTP狀態碼: ' + xhr.status + ')');
+    }
+</script>
+<div class="features_items">
+    <h2 class="title text-center">Searched Items</h2>
+    @foreach (var item in productList)
+    {
+        <div class="col-sm-4">
+	        <div class="product-image-wrapper">
+		        <div class="single-products">
+			        <div class="productinfo text-center">
+				        <img src="@(item.PicMediumUrl)" title="@(item.Name)" alt="@(item.Name)" />
+				        <h2>$@(item.Price)</h2>
+				        <p>@(item.Name)</p>
+				        @*<a href="#" class="btn btn-default add-to-cart" title=""><i class="fa fa-shopping-cart"></i>Add to cart</a>*@
+                        @Ajax.ActionLink("Add to cart", "Add to cart", "Cart", ajaxOption, new { @class = "btn btn-default add-to-cart" })
+			        </div>
+			        <div class="product-overlay">
+				        <div class="overlay-content">
+					        <h2>$@(item.Price)</h2>
+					        <p>@(item.Name)</p>
+                            @Ajax.ActionLink("Add to cart", "Add to cart", "Cart", ajaxOption, new { @class = "btn btn-default add-to-cart" })
+					        @*<a href="#" class="btn btn-default add-to-cart" title=""><i class="fa fa-shopping-cart"></i>Add to cart</a>*@
+				        </div>
+			        </div>
+                    @if (item.IsSale)
+                    {
+                        <img title="Sale" alt="Sale" class="new" src="/Content/eshopper/images/home/sale.png"> 
+                    }
+                    @if (item.IsHigLight)
+                    {
+                        <img title="New" alt="New" class="new" src="/Content/eshopper/images/home/new.png"> 
+                    }
+		        </div>
+		        @*
+		        <div class="choose">
+			        <ul class="nav nav-pills nav-justified">
+				        <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+				        <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
+			        </ul>
+		        </div>
+		        *@
+	        </div>
+        </div>
+    }
+</div>
