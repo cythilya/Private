@@ -126,7 +126,54 @@ namespace cythilya.Areas.EShopper.Controllers
         //商品明細
         public ActionResult Product()
         {
-            return View();
+            #region fake data - product category
+            var data = new List<ProductCategory>()
+            {
+                new ProductCategory() { ID = 1, Name = "WOMENS"},
+                new ProductCategory() { ID = 2, Name = "MENS"},
+                new ProductCategory() { ID = 3, Name = "KIDS"},
+                new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
+                new ProductCategory() { ID = 5, Name = "FASHION"},
+                new ProductCategory() { ID = 6, Name = "HOUSEHOLDS"},
+                new ProductCategory() { ID = 7, Name = "INTERIORS"},
+                new ProductCategory() { ID = 8, Name = "CLOTHING"},
+                new ProductCategory() { ID = 9, Name = "BAGS"},
+                new ProductCategory() { ID = 10, Name = "SHOES"}
+            };
+            #endregion
+
+            #region fake data - product detail
+
+            var productCategory = new ProductCategory(){ID = 1, Name = "WOMENS"};
+            
+            var tag = new Tag(){ ID = 1, Name = "New Arrival"};
+            var tagList = new List<Tag>();
+            tagList.Add(tag);
+
+            var Detail = new Product() 
+            { 
+                ID = 1,
+                Name = "Easy Polo Black Edition",
+                ProductCategory = productCategory,
+                Description = "Easy Polo Black Edition",
+                RawPicUrl = "/Content/eshopper/images/temp_329x380.png",
+                PicLargeUrl = "/Content/eshopper/images/temp_329x380.png",
+                PicMediumUrl = "/Content/eshopper/images/temp_255x381.png",
+                PicSmallUrl = "/Content/eshopper/images/temp_85x84.png",
+                PublishOn = DateTime.UtcNow,
+                Brand = "E-Shopper",
+                BrandInfo = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", 
+                Tags = tagList,
+                Price = 999,
+                Amount = 99,
+                IsSale = false,
+                IsHigLight = true 
+            };
+
+            #endregion
+
+            ViewBag.ProductDetail = Detail;
+            return View(data);
         }
 
         //404

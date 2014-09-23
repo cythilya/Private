@@ -260,6 +260,9 @@
     <Content Include="Content\eshopper\images\shop\product7.jpg" />
     <Content Include="Content\eshopper\images\shop\product8.jpg" />
     <Content Include="Content\eshopper\images\shop\product9.jpg" />
+    <Content Include="Content\eshopper\images\temp_255x381.png" />
+    <Content Include="Content\eshopper\images\temp_329x380.png" />
+    <Content Include="Content\eshopper\images\temp_85x84.png" />
     <Content Include="Content\eshopper\js\bootstrap.min.js" />
     <Content Include="Content\eshopper\js\contact.js" />
     <Content Include="Content\eshopper\js\gmaps.js" />
@@ -1004,6 +1007,7 @@
     <Content Include="Areas\EShopper\Views\Home\Index.cshtml" />
     <Content Include="Areas\EShopper\Views\Home\Category.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_SearchResult.cshtml" />
+    <Content Include="Areas\EShopper\Views\Home\Product.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
