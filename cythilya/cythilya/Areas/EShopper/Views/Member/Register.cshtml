@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Areas/EShopper/Views/Shared/_LayoutEShopper.cshtml";
+    ViewBag.Title = "E-Shopper";
+    ViewBag.Description = "E-Shopper - Eommerce Demo";
+    ViewBag.SharedImage = "";
+    ViewBag.Tab = "";    
+}
+<section id="form"><!--form-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-1">
+                @Html.Partial("~/Areas/EShopper/Views/Shared/_Login.cshtml")
+			</div>
+			<div class="col-sm-1">
+				<h2 class="or">OR</h2>
+			</div>
+			<div class="col-sm-4">
+                @Html.Partial("~/Areas/EShopper/Views/Shared/_Register.cshtml")
+			</div>
+		</div>
+	</div>
+</section><!--/form-->
+
+
+
+@*
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+*@

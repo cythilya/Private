@@ -168,6 +168,7 @@
     <Compile Include="Areas\EShopper\EShopperAreaRegistration.cs" />
     <Compile Include="Areas\EShopper\Models\Cart.cs" />
     <Compile Include="Areas\EShopper\Models\Member.cs" />
+    <Compile Include="Areas\EShopper\Models\MemberLoginViewModel.cs" />
     <Compile Include="Areas\EShopper\Models\OrderDetail.cs" />
     <Compile Include="Areas\EShopper\Models\OrderHeader.cs" />
     <Compile Include="Areas\EShopper\Models\Product.cs" />
@@ -1008,6 +1009,9 @@
     <Content Include="Areas\EShopper\Views\Home\Category.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_SearchResult.cshtml" />
     <Content Include="Areas\EShopper\Views\Home\Product.cshtml" />
+    <Content Include="Areas\EShopper\Views\Member\Register.cshtml" />
+    <Content Include="Areas\EShopper\Views\Shared\_Register.cshtml" />
+    <Content Include="Areas\EShopper\Views\Shared\_Login.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />

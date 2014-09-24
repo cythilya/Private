@@ -18,7 +18,7 @@ namespace cythilya.Areas.EShopper.Controllers
 
         //寫入會員資料
         [HttpPost]
-        public ActionResult Register(Member member)
+        public ActionResult Register([Bind(Exclude = "RegisterOn")] Member member)
         {
             return View();
         }
@@ -27,7 +27,7 @@ namespace cythilya.Areas.EShopper.Controllers
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View();
+            return View("~/Areas/EShopper/Views/Register.cshtml");
         }
 
         //執行會員登入
