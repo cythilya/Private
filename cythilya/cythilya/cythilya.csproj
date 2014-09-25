@@ -1012,6 +1012,7 @@
     <Content Include="Areas\EShopper\Views\Member\Register.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Register.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Login.cshtml" />
+    <Content Include="Areas\EShopper\Views\Member\Login.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />

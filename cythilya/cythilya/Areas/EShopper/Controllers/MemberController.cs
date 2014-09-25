@@ -24,10 +24,10 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //顯示會員登入頁面
-        public ActionResult Login(string returnUrl)
+        public ActionResult Login([Bind(Exclude = "RegisterOn")] Member member, string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
-            return View("~/Areas/EShopper/Views/Register.cshtml");
+            return View();
         }
 
         //執行會員登入
@@ -53,7 +53,8 @@ namespace cythilya.Areas.EShopper.Controllers
 
         private bool ValidateUser(string account, string password)
         {
-            throw new NotImplementedException();
+            return true;
+            //throw new NotImplementedException();
         }
 
         //執行會員登出
