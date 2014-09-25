@@ -65,7 +65,15 @@
 							-->
 							<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 							<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-							<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+							@if (User.Identity.IsAuthenticated)
+                            {
+                                <li><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
+                            }
+                            else 
+                            { 
+                                <li><a href="/EShopper/Member/Register"><i class="fa fa-lock"></i> Register</a></li>
+                                <li><a href="/EShopper/Member/Login"><i class="fa fa-lock"></i> Login</a></li>
+                            }
 						</ul>
 					</div>
 				</div>
@@ -86,7 +94,7 @@
 					</div>
 					<div class="mainmenu pull-left">
 						<ul class="nav navbar-nav collapse navbar-collapse">
-							<li><a href="index.html" title="" class="active">Home</a></li>
+							<li><a href="/EShopper/Home/Index" title="" class="active">Home</a></li>
 							<li class="dropdown"><a title="" href="#">Shop<i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
 									<li><a href="shop.html" title="">Products</a></li>
