@@ -178,10 +178,10 @@ namespace cythilya.Controllers
             article_11.Name = "Facebook Graph API - Taggable Friends";
             article_11.Description = "有鑑於IKEA做了一個好玩的活動網站來IKEA睡一晚，其中含有邀請朋友並標記、分享到Facebook上，因此也做了一個範例來玩玩。";
             article_11.URL = "http://bit.ly/1xptGc3";
-            article_11.RawPic = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_940x367.jpg";
-            article_11.PicSmall = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_188x73.jpg";
-            article_11.PicMedium = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_300.jpg";
-            article_11.PicLarge = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_940x367.jpg";
+            article_11.RawPic = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
+            article_11.PicSmall = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_188x73.jpg";
+            article_11.PicMedium = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_300.jpg";
+            article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
             article_11.isHighlight = true;
             articleList.Add(article_11);
             
