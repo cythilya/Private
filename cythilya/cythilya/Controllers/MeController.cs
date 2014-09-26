@@ -98,7 +98,7 @@ namespace cythilya.Controllers
             article_4.PicSmall = "/Content/me/img/blog/rss_188x73.jpg";
             article_4.PicMedium = "/Content/me/img/blog/rss_300.jpg";
             article_4.PicLarge = "/Content/me/img/blog/rss_940x367.jpg";
-            article_4.isHighlight = true;
+            article_4.isHighlight = false;
             articleList.Add(article_4);
 
             //Author Rank
@@ -110,7 +110,7 @@ namespace cythilya.Controllers
             article_5.PicSmall = "/Content/me/img/blog/author_rank_188x73.jpg";
             article_5.PicMedium = "/Content/me/img/blog/author_rank_300.jpg";
             article_5.PicLarge = "/Content/me/img/blog/author_rank_940x367.jpg";
-            article_5.isHighlight = true;
+            article_5.isHighlight = false;
             articleList.Add(article_5);
 
             //粉多任務 x 一品禪 - 使用Microdata標記的網頁實例
@@ -122,7 +122,7 @@ namespace cythilya.Controllers
             article_6.PicSmall = "/Content/me/img/blog/microdata_188x73.jpg";
             article_6.PicMedium = "/Content/me/img/blog/microdata_300.png";
             article_6.PicLarge = "/Content/me/img/blog/microdata_940x367.jpg";
-            article_6.isHighlight = true;
+            article_6.isHighlight = false;
             articleList.Add(article_6);
 
             //搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？
@@ -146,7 +146,7 @@ namespace cythilya.Controllers
             article_8.PicSmall = "/Content/me/img/blog/facebook_social_demo_188x73.jpg";
             article_8.PicMedium = "/Content/me/img/blog/facebook_social_demo_300.jpg";
             article_8.PicLarge = "/Content/me/img/blog/facebook_social_demo_940x367.jpg";
-            article_8.isHighlight = false;
+            article_8.isHighlight = true;
             articleList.Add(article_8);
 
             //關鍵字(Keyword)與標籤(Tag)－談選擇、聚焦與經營
@@ -172,6 +172,18 @@ namespace cythilya.Controllers
             article_10.PicLarge = "/Content/me/img/blog/JavaScript_SEO_940x367.jpg";
             article_10.isHighlight = true;
             articleList.Add(article_10);
+
+            //Facebook Graph API - Taggable Friends
+            MeModels.Article article_11 = new MeModels.Article();
+            article_11.Name = "Facebook Graph API - Taggable Friends";
+            article_11.Description = "有鑑於IKEA做了一個好玩的活動網站來IKEA睡一晚，其中含有邀請朋友並標記、分享到Facebook上，因此也做了一個範例來玩玩。";
+            article_11.URL = "http://bit.ly/1xptGc3";
+            article_11.RawPic = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_940x367.jpg";
+            article_11.PicSmall = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_188x73.jpg";
+            article_11.PicMedium = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_300.jpg";
+            article_11.PicLarge = "/Content/me/img/blog/Facebook Graph_API_Taggable_Friends_940x367.jpg";
+            article_11.isHighlight = true;
+            articleList.Add(article_11);
             
             #endregion
 
