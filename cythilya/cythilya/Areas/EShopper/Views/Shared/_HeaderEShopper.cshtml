@@ -1,23 +1,50 @@
-﻿<header id="header">
+﻿@using cythilya.Areas.EShopper.Models;
+@{
+    //social platform
+    List<Common.SocialList> socialList = new List<Common.SocialList>();
+
+    var socialItem1 = new Common.SocialList();
+    socialItem1.Name = "facebook";
+    socialItem1.Link = "https://www.facebook.com/cythilya";
+    socialList.Add(socialItem1);
+
+    var socialItem2 = new Common.SocialList();
+    socialItem2.Name = "twitter";
+    socialItem2.Link = "https://twitter.com/cythilya";
+    socialList.Add(socialItem2);
+
+    var socialItem3 = new Common.SocialList();   
+    socialItem3.Name = "google-plus";
+    socialItem3.Link = "https://plus.google.com/+CythilyaTang";
+    socialList.Add(socialItem3);
+}
+<header id="header">
 	<div class="header_top">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="contactinfo">
 						<ul class="nav nav-pills">
-							<li><a href="#" title=""><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-							<li><a href="#" title=""><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							<li><a><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+							<li><a><i class="fa fa-envelope"></i> info@domain.com</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="social-icons pull-right">
 						<ul class="nav navbar-nav">
-							<li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
+                            @foreach (var item in socialList)
+                            {
+                            <li><a href="@(item.Link)" title="@(item.Name)" target="_blank"><i class="fa fa-@(item.Name)"></i></a></li>
+                            }
+                            @*
+                                icon-class:
+                                1. fa-facebook
+                                2. fa-twitter
+                                3. fa-linkedin
+                                4. fa-dribbble
+                                5. fa-google-plus
+                            *@
 						</ul>
 					</div>
 				</div>
@@ -66,11 +93,11 @@
 							<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 							<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
 							@if (User.Identity.IsAuthenticated)
-                            {
+       {
                                 <li><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
-                            }
-                            else 
-                            { 
+       }
+       else
+       { 
                                 <li><a href="/EShopper/Member/Register"><i class="fa fa-lock"></i> Register</a></li>
                                 <li><a href="/EShopper/Member/Login"><i class="fa fa-lock"></i> Login</a></li>
                             }
