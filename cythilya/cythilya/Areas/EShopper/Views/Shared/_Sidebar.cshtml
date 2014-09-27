@@ -1,14 +1,20 @@
-﻿@model List<cythilya.Areas.EShopper.Models.ProductCategory>
+﻿@using cythilya.Areas.EShopper.Models;
+@{
+    List<ProductCategory> categoryList = ViewBag.CategoryList as List<ProductCategory>;
+}
 <div class="left-sidebar">
     <h2>Category</h2>
     <div class="panel-group category-products" id="accordian">
-        @foreach(var item in Model)
+        @if (categoryList != null)
         {
- 	    <div class="panel panel-default">
-		    <div class="panel-heading">
-			    <h4 class="panel-title"><a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)">@(item.Name)</a></h4>
-		    </div>
-	    </div>   
+            foreach (var item in categoryList)
+            {
+ 	        <div class="panel panel-default">
+		        <div class="panel-heading">
+			        <h4 class="panel-title"><a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)">@(item.Name)</a></h4>
+		        </div>
+	        </div>
+            }
         }
 	    @* 含有子類別的樣板*@
         @*
@@ -71,9 +77,10 @@
     </div>
     *@
     @* AD *@
+    @*未來希望置換為專門的廣告頁面，下有推薦商品*@
     <div class="shipping text-center">
-	    <a href="#" title="">
-		    <img src="/Content/eshopper/images/home/shipping.jpg" title="" alt="" />
+	    <a href="/EShopper/Home/Product?id=1" title="EShopper - Free Shipping"> 
+		    <img src="/Content/eshopper/images/home/shipping.jpg" title="EShopper - Free Shipping" alt="EShopper - Free Shipping" />
 	    </a>
     </div>
 </div>

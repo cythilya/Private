@@ -1004,7 +1004,7 @@
     <Content Include="Areas\EShopper\Views\Shared\_Style.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_HeaderEShopper.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_FooterEShopper.cshtml" />
-    <Content Include="Areas\EShopper\Views\Shared\_FeaturedItems.cshtml" />
+    <Content Include="Areas\EShopper\Views\Shared\_FeaturesItems.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_RecommendItems.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Sidebar.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_CategoryTab.cshtml" />

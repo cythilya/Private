@@ -1,89 +1,61 @@
-﻿<div class="recommended_items">
+﻿@using cythilya.Areas.EShopper.Models
+@{
+    //推薦商品列表,每三個商品為一組
+    List<Common.RecommendItem> recommendItemsList = ViewBag.RecommendItemsList as List<Common.RecommendItem>;
+    List<List<Common.RecommendItem>> newRecommendItemsList = new List<List<Common.RecommendItem>>();
+
+    if (recommendItemsList != null)
+    {
+        List<Common.RecommendItem> tempList = new List<Common.RecommendItem>();
+        int count = 1;
+
+        foreach (var item in recommendItemsList)
+        {
+            tempList.Add(item);
+
+            if (count % 3 == 0)
+            {
+                newRecommendItemsList.Add(tempList);
+                tempList = new List<Common.RecommendItem>();
+            }
+
+            count++;
+        }
+    }
+}
+@if (newRecommendItemsList != null && newRecommendItemsList.Count != 0)
+{ 
+<div class="recommended_items">
 	<h2 class="title text-center">recommended items</h2>
 	<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
-			<div class="item active">	
+            @foreach (var itemList in newRecommendItemsList)
+            { 
+			<div class="item @(itemList == newRecommendItemsList.First() ? "active" : "")">	
+                @foreach (var item in itemList)
+                { 
 				<div class="col-sm-4">
 					<div class="product-image-wrapper">
 						<div class="single-products">
 							<div class="productinfo text-center">
-								<img src="/Content/eshopper/images/home/recommend1.jpg" alt="" />
-								<h2>$56</h2>
-								<p>Easy Polo Black Edition</p>
-								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+								<img src="@(item.PicUrl)" title="@(item.Name)" alt="@(item.Name)" />
+								<h2>$@(item.Price)</h2>
+								<p>@(item.Name)</p>
+								<a href="#" class="btn btn-default add-to-cart" title="Add to cart - @(item.Name)"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="product-image-wrapper">
-						<div class="single-products">
-							<div class="productinfo text-center">
-								<img src="/Content/eshopper/images/home/recommend2.jpg" alt="" />
-								<h2>$56</h2>
-								<p>Easy Polo Black Edition</p>
-								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="product-image-wrapper">
-						<div class="single-products">
-							<div class="productinfo text-center">
-								<img src="/Content/eshopper/images/home/recommend3.jpg" alt="" />
-								<h2>$56</h2>
-								<p>Easy Polo Black Edition</p>
-								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="item">	
-				<div class="col-sm-4">
-					<div class="product-image-wrapper">
-						<div class="single-products">
-							<div class="productinfo text-center">
-								<img src="/Content/eshopper/images/home/recommend1.jpg" alt="" />
-								<h2>$56</h2>
-								<p>Easy Polo Black Edition</p>
-								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="product-image-wrapper">
-						<div class="single-products">
-							<div class="productinfo text-center">
-								<img src="/Content/eshopper/images/home/recommend2.jpg" alt="" />
-								<h2>$56</h2>
-								<p>Easy Polo Black Edition</p>
-								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="product-image-wrapper">
-						<div class="single-products">
-							<div class="productinfo text-center">
-								<img src="/Content/eshopper/images/home/recommend3.jpg" alt="" />
-								<h2>$56</h2>
-								<p>Easy Polo Black Edition</p>
-								<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+				</div>                
+                }
+			</div>            
+            }
 		</div>
-			<a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-			<i class="fa fa-angle-left"></i>
-			</a>
-			<a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-			<i class="fa fa-angle-right"></i>
-			</a>			
+		<a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+		<i class="fa fa-angle-left"></i>
+		</a>
+		<a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+		<i class="fa fa-angle-right"></i>
+		</a>
 	</div>
 </div>
+}

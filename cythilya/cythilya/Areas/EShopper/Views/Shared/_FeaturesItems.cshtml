@@ -1,0 +1,40 @@
+﻿@using cythilya.Areas.EShopper.Models;
+@{
+    List<Product> featuresProductList = ViewBag.FeaturesProductList as List<Product>;
+}
+<div class="features_items">
+<h2 class="title text-center">Features Items</h2>
+@if (featuresProductList != null) 
+{
+    foreach (var item in featuresProductList)
+    {
+     <div class="col-sm-4">
+	    <div class="product-image-wrapper">
+		    <div class="single-products">
+			    <div class="productinfo text-center">
+				    <img src="@(item.PicFeaturedUrl)" title="@(item.Name)" alt="@(item.Name)" />
+				    <h2>$@(item.Price)</h2>
+				    <p>@(item.Name)</p>
+				    <a href="#" class="btn btn-default add-to-cart" title="Add to cart - @(item.Name)"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+			    </div>
+			    <div class="product-overlay">
+				    <div class="overlay-content">
+					    <h2>$@(item.Price)</h2>
+					    <p>@(item.Name)</p>
+					    <a href="#" class="btn btn-default add-to-cart" title="Add to cart - @(item.Name)"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+				    </div>
+			    </div>
+		    </div>
+		    @*
+		    <div class="choose">
+			    <ul class="nav nav-pills nav-justified">
+				    <li><a href="#"><i class="fa fa-plus-square"></i>Add to wishlist</a></li>
+				    <li><a href="#"><i class="fa fa-plus-square"></i>Add to compare</a></li>
+			    </ul>
+		    </div>
+		    *@
+	    </div>
+    </div>
+    } 
+}
+</div>

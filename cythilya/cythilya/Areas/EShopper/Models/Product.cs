@@ -52,6 +52,11 @@ namespace cythilya.Areas.EShopper.Models
         [Required(ErrorMessage = "請輸入主打內頁小圖(85x84)")]
         public string PicSmallUrl { get; set; }
 
+        //特色商品(208x183)
+        [DisplayName("主打中圖(首頁 255x381)")]
+        [Required(ErrorMessage = "請輸入主打中圖(首頁 255x381)")]
+        public string PicFeaturedUrl { get; set; }
+
         //上架時間
         [DisplayName("上架時間")]
         [Description("如果不設定上架時間，則此商品永不上架")]
@@ -85,5 +90,10 @@ namespace cythilya.Areas.EShopper.Models
         //是否為特色商品
         [DisplayName("是否為特色商品")]
         public bool IsHigLight { get; set; } //是否為特色商品
+
+        //主要標籤
+        [DisplayName("主要標籤")]
+        [Required(ErrorMessage = "請輸入主要標籤")]
+        public string MainTag { get; set; }
     }
 }
