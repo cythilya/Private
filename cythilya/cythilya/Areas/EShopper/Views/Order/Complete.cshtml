@@ -6,6 +6,11 @@
     ViewBag.SharedImage = "";
     ViewBag.Tab = "Shop";
 }
+<style>
+#cart_items .shopper-informations .row{
+    height: 596px;
+}
+</style>
 <section id="cart_items">
 	<div class="container">
 		<div class="breadcrumbs">
@@ -44,20 +49,36 @@
 				<div class="col-sm-3">
 					<div class="shopper-info">
 						<p>Shopper Information</p>
-						<form>
-							<input type="text" placeholder="Account">
+						
+                        @*如果登入就帶入使用者帳號，並disabled*@
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                        <form>
 							<input type="text" placeholder="User Name">
-                            <input type="text" placeholder="Email*">
+                            <input type="text" placeholder="Email">
 							<input type="password" placeholder="Password">
-							<input type="password" placeholder="Confirm password">
-						</form>
+							<input type="password" placeholder="Confirm password">   
+                            <label><input type="checkbox"> Update My Account Setting</label>
+                        </form>
+                        }
+                        else
+                        { 
+                        <form>
+                            <input type="text" placeholder="Account" > 
+							<input type="text" placeholder="User Name">
+                            <input type="text" placeholder="Email">
+							<input type="password" placeholder="Password">
+							<input type="password" placeholder="Confirm password">   
+                            <label><input type="checkbox"> Register</label>
+                        </form>                              
+                        }
                         @*
 						<a class="btn btn-primary" href="">Get Quotes</a>
                         <a class="btn btn-primary" href="">Continue</a>
                         *@
 					</div>
 				</div>
-				<div class="col-sm-5 clearfix">
+				<div class="col-sm-9 clearfix">
 					<div class="bill-to">
 						<p>Delivery To</p>
 						<div class="shopper-info">
@@ -70,13 +91,15 @@
 						</div>
 					</div>
 				</div>
+                @*
 				<div class="col-sm-4">
 					<div class="order-message">
 						<p>Notes</p>
 						<textarea name="message"  placeholder="Notes about your order, Special Notes for Delivery" rows="16"></textarea>
-						@*<label><input type="checkbox"> Shipping to bill address</label>*@
+						<label><input type="checkbox"> Shipping to bill address</label>
 					</div>	
-				</div>					
+				</div>
+                *@					
 			</div>
 		</div>
 		@*

@@ -1,4 +1,10 @@
 ﻿@model cythilya.Areas.EShopper.Models.MemberLoginViewModel
+<style>
+#form .row 
+{   
+    min-height: 338px;
+}
+</style>
 <div class="login-form">
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
