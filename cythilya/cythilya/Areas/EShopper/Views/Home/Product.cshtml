@@ -1,12 +1,11 @@
 ﻿@using cythilya.Areas.EShopper.Models
 @{
     Layout = "~/Areas/EShopper/Views/Shared/_LayoutEShopper.cshtml";
-    ViewBag.Title = "Product | E-Shopper";
-    ViewBag.Description = "Product | E-Shopper - Eommerce Demo";
-    ViewBag.SharedImage = "";
-    ViewBag.Tab = "Shop";
-
     Product detail = ViewBag.ProductDetail as Product;
+    ViewBag.Title = detail.PicFeaturedUrl + " | E-Shopper";
+    ViewBag.Description = detail.PicFeaturedUrl + " | E-Shopper - Eommerce Demo";
+    ViewBag.SharedImage = detail.PicLargeUrl;
+    ViewBag.Tab = detail.ProductCategory; ;
 }
 <section>
 	<div class="container">
@@ -60,9 +59,7 @@
 							<h2> @(detail.Name) </h2>
 							<p>ID: @(detail.ID) </p>
                             @* Rating *@
-							@*
-                            <img src="/Content/eshopper/images/product-details/rating.png" alt="">
-							*@
+							@*<img src="/Content/eshopper/images/product-details/rating.png" alt="">*@
                             <span>
 								<span>$ @(detail.Price)</span>
 								<label>Quantity:</label>

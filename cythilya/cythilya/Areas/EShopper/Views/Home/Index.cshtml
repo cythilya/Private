@@ -3,7 +3,7 @@
     ViewBag.Title = "E-Shopper";
     ViewBag.Description = "E-Shopper - Eommerce Demo";
     ViewBag.SharedImage = "";
-    ViewBag.Tab = "Index";
+    ViewBag.Tab = "Home";
 }
 @Html.Partial("~/Areas/EShopper/Views/Shared/_Carousel.cshtml")
 <section>
@@ -13,9 +13,9 @@
             @Html.Partial("~/Areas/EShopper/Views/Shared/_Sidebar.cshtml")
             </div>
 			<div class="col-sm-9 padding-right">
-                @Html.Partial("~/Areas/EShopper/Views/Shared/_FeaturesItems.cshtml")
-                @Html.Partial("~/Areas/EShopper/Views/Shared/_CategoryTab.cshtml")
-                @Html.Partial("~/Areas/EShopper/Views/Shared/_RecommendItems.cshtml")
+            @Html.Partial("~/Areas/EShopper/Views/Shared/_FeaturesItems.cshtml")
+            @Html.Partial("~/Areas/EShopper/Views/Shared/_CategoryTab.cshtml")
+            @Html.Partial("~/Areas/EShopper/Views/Shared/_RecommendItems.cshtml")
 			</div>
 		</div>
 	</div>
