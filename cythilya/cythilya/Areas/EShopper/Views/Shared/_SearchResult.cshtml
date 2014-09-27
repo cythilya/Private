@@ -17,7 +17,7 @@
     }
 </script>
 <div class="features_items">
-    <h2 class="title text-center">Searched Items</h2>
+    <h2 class="title text-center">@(ViewBag.CategoryName)</h2>
     @foreach (var item in productList)
     {
         <div class="col-sm-4">
@@ -27,15 +27,19 @@
 				        <img src="@(item.PicMediumUrl)" title="@(item.Name)" alt="@(item.Name)" />
 				        <h2>$@(item.Price)</h2>
 				        <p>@(item.Name)</p>
-				        @*<a href="#" class="btn btn-default add-to-cart" title=""><i class="fa fa-shopping-cart"></i>Add to cart</a>*@
+				        <a href="/EShopper/Home/Product?id=@(item.ID)" class="btn btn-default add-to-cart" title="More - @(item.Name)">More</a>
+                        @*
                         @Ajax.ActionLink("Add to cart", "Add to cart", "Cart", ajaxOption, new { @class = "btn btn-default add-to-cart" })
-			        </div>
+			            *@
+                    </div>
 			        <div class="product-overlay">
 				        <div class="overlay-content">
 					        <h2>$@(item.Price)</h2>
 					        <p>@(item.Name)</p>
+                            @*
                             @Ajax.ActionLink("Add to cart", "Add to cart", "Cart", ajaxOption, new { @class = "btn btn-default add-to-cart" })
-					        @*<a href="#" class="btn btn-default add-to-cart" title=""><i class="fa fa-shopping-cart"></i>Add to cart</a>*@
+					        *@
+                            <a href="/EShopper/Home/Product?id=@(item.ID)" class="btn btn-default add-to-cart" title="More - @(item.Name)">More</a>
 				        </div>
 			        </div>
                     @if (item.IsSale)

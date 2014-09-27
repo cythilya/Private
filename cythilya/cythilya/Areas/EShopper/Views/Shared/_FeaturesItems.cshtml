@@ -15,13 +15,13 @@
 				    <img src="@(item.PicFeaturedUrl)" title="@(item.Name)" alt="@(item.Name)" />
 				    <h2>$@(item.Price)</h2>
 				    <p>@(item.Name)</p>
-				    <a href="#" class="btn btn-default add-to-cart" title="Add to cart - @(item.Name)"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+				    <a href="/EShopper/Home/Product?id=@(item.ID)" class="btn btn-default add-to-cart" title="More - @(item.Name)">More</a>
 			    </div>
 			    <div class="product-overlay">
 				    <div class="overlay-content">
 					    <h2>$@(item.Price)</h2>
 					    <p>@(item.Name)</p>
-					    <a href="#" class="btn btn-default add-to-cart" title="Add to cart - @(item.Name)"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+					    <a href="/EShopper/Home/Product?id=@(item.ID)" class="btn btn-default add-to-cart" title="More - @(item.Name)">More</a>
 				    </div>
 			    </div>
 		    </div>

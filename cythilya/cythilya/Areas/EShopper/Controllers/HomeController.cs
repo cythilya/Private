@@ -23,19 +23,22 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //商品列表
-        public ActionResult Category()
+        public ActionResult Category(int ID = 0)
         {
             GetCategotyList();//取得商品類別
-            GetCategoryProduct();//取得特定類別的商品
+            GetCategoryProduct(1);//取得特定類別的商品
 
             return View();
         }
 
         //商品明細
-        public ActionResult Product()
+        public ActionResult Product(int ID = 0)
         {
             GetCategotyList();//取得商品類別
             GetProductDetail();//取得特定商品資訊
+            GetRecommendItemsList();//取得推薦商品列表
+            GetMainTagList();//取得主要標籤列表
+            GetTaggableProduct();//取得特定標籤的商品列表
             return View();
         }
 
@@ -70,7 +73,7 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //取得特定類別的商品
-        void GetCategoryProduct()
+        void GetCategoryProduct(int ID = 0)
         {
             #region fake data - product
             var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };
@@ -210,6 +213,7 @@ namespace cythilya.Areas.EShopper.Controllers
             };
             #endregion
 
+            ViewBag.CategoryName = productCategory.Name;
             ViewBag.ProductList = ProductList;
         }
 
