@@ -26,7 +26,6 @@
         alert('Remove Fail(HTTP status code: ' + xhr.status + ')');
     }
 </script>
-<h2>Index</h2>
 <section id="cart_items">
 	<div class="container">
 		<div class="breadcrumbs">
@@ -93,7 +92,8 @@
 			<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
 		</div>
 		<div class="row">
-			<div class="col-sm-6">
+			@*
+            <div class="col-sm-6">
  				<div class="chose_area">
 					<ul class="user_option">
 						<li>
@@ -146,7 +146,8 @@
 					<a class="btn btn-default check_out" href="">Continue</a>
 				</div>
 			</div>
-			<div class="col-sm-6">
+			*@
+            <div class="col-sm-12">
 				<div class="total_area">
 					<ul>
 						<li>Cart Sub Total <span>$@(total)</span></li>
@@ -154,8 +155,9 @@
 						<li>Shipping Cost <span>Free</span></li>
 						<li>Total <span>$@(total)</span></li>
 					</ul>
-					<a class="btn btn-default update" href="">Update</a>
-					<a class="btn btn-default check_out" href="">Check Out</a>
+					@* <a class="btn btn-default update" href="">Update</a>*@
+                    <a class="btn btn-default update" href="/EShopper/Home/Index">Back to Shop</a>
+					<a class="btn btn-default check_out" href="/EShopper/Order/Complete">Check Out</a>
 				</div>
 			</div>
 		</div>
