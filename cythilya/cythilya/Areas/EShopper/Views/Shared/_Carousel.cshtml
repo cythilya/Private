@@ -1,0 +1,46 @@
+﻿@using cythilya.Areas.EShopper.Models
+@{
+    List<Common.Carousel> carouselList = ViewBag.CarouselList as List<Common.Carousel>;
+}
+@if (carouselList != null)
+{
+<section id="slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+                        @foreach (var item in carouselList)
+                        { 
+                        <li data-target="#slider-carousel" data-slide-to="0" class="@(item.IsHighlight ? "active" : "")"></li>
+                        }                        
+					</ol>
+					<div class="carousel-inner">
+                    @foreach (var item in carouselList)
+                    {
+						<div class="item @(item.IsHighlight ? "active" : "")">
+							<div class="col-sm-6">
+								<h1>@(item.Heading)</h1>
+								<h2>@(item.Caption)</h2>
+								<p>@(item.Description)</p>
+								<a href="@(item.Link)" class="btn btn-default get" title="Get it now - @(item.Heading)">Get it now</a>
+							</div>
+							<div class="col-sm-6">
+								<img src="@(item.ImageUrl)" class="girl img-responsive" title="@(item.Heading)" alt="@(item.Heading)" />
+								<img src="@(item.PriceImageUrl)" class="pricing" title="@(item.Heading)" alt="@(item.Heading)" />
+							</div>
+						</div>
+                    }
+ 					</div>
+					<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev" title="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+					<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next" title="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+}

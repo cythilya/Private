@@ -12,19 +12,9 @@ namespace cythilya.Areas.EShopper.Controllers
         //首頁
         public ActionResult Index()
         {
-            #region fake data - product category
-            var data = new List<ProductCategory>()
-            {
-                new ProductCategory() { ID = 1, Name = "WOMENS"},
-                new ProductCategory() { ID = 2, Name = "MENS"},
-                new ProductCategory() { ID = 3, Name = "KIDS"},
-                new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
-                new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
-                new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
-            };
-            #endregion
-
-            return View(data);
+            GetCategotyList();//取得商品類別
+            GetCarouselList();//取得輪播資料
+            return View();
         }
 
         //商品列表
@@ -176,6 +166,66 @@ namespace cythilya.Areas.EShopper.Controllers
         public ActionResult Contact()
         {
             return View();
+        }
+
+        //取得商品類別
+        void GetCategotyList()
+        {
+            #region fake data - product category
+            var categoryList = new List<ProductCategory>()
+            {
+                new ProductCategory() { ID = 1, Name = "WOMENS"},
+                new ProductCategory() { ID = 2, Name = "MENS"},
+                new ProductCategory() { ID = 3, Name = "KIDS"},
+                new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
+                new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
+                new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
+            };
+            #endregion
+
+            ViewBag.CategoryList = categoryList;
+        }
+
+        //取得輪播資料
+        void GetCarouselList()
+        {
+            #region Carousel List
+            var carouselList = new List<Common.Carousel>() 
+            { 
+                new Common.Carousel()
+                {
+                    Heading = "E-SHOPPER",
+                    Caption = "Free E-Commerce Template",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    Link = "/EShopper/Home/Product?id=1",
+                    ImageUrl = "/Content/eshopper/images/home/girl1.jpg",
+                    PriceImageUrl = "/Content/eshopper/images/home/pricing.png",
+                    IsHighlight = true
+                },
+                new Common.Carousel()
+                {
+                    Heading = "E-SHOPPER",
+                    Caption = "100% Responsive Design",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    Link = "/EShopper/Home/Product?id=2",
+                    ImageUrl = "/Content/eshopper/images/home/girl2.jpg",
+                    PriceImageUrl = "/Content/eshopper/images/home/pricing.png",
+                    IsHighlight = false
+                },
+                new Common.Carousel()
+                {
+                    Heading = "E-SHOPPER",
+                    Caption = "Free Ecommerce Template",
+                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    Link = "/EShopper/Home/Product?id=3",
+                    ImageUrl = "/Content/eshopper/images/home/girl3.jpg",
+                    PriceImageUrl = "/Content/eshopper/images/home/pricing.png",
+                    IsHighlight = false
+                }
+            }; 
+            #endregion
+
+            ViewBag.CarouselList = carouselList;
         }
     }
 }

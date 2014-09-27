@@ -5,71 +5,15 @@
     ViewBag.SharedImage = "";
     ViewBag.Tab = "Index";
 }
-<section id="slider">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<div id="slider-carousel" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
-						<li data-target="#slider-carousel" data-slide-to="1"></li>
-						<li data-target="#slider-carousel" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="item active">
-							<div class="col-sm-6">
-								<h1><span>E</span>-SHOPPER</h1>
-								<h2>Free E-Commerce Template</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								<a href="product-details.html" class="btn btn-default get" title="">Get it now</a>
-							</div>
-							<div class="col-sm-6">
-								<img src="/Content/eshopper/images/home/girl1.jpg" class="girl img-responsive" title="" alt="" />
-								<img src="/Content/eshopper/images/home/pricing.png"  class="pricing" title="" alt="" />
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-sm-6">
-								<h1><span>E</span>-SHOPPER</h1>
-								<h2>100% Responsive Design</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								<a href="product-details.html" class="btn btn-default get" title="">Get it now</a>
-							</div>
-							<div class="col-sm-6">
-								<img src="/Content/eshopper/images/home/girl2.jpg" class="girl img-responsive" title="" alt="" />
-								<img src="/Content/eshopper/images/home/pricing.png"  class="pricing" title="" alt="" />
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-sm-6">
-								<h1><span>E</span>-SHOPPER</h1>
-								<h2>Free Ecommerce Template</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-								<a href="product-details.html" class="btn btn-default get" title="">Get it now</a>
-							</div>
-							<div class="col-sm-6">
-								<img src="/Content/eshopper/images/home/girl3.jpg" class="girl img-responsive" title="" alt="" />
-								<img src="/Content/eshopper/images/home/pricing.png" class="pricing" title="" alt="" />
-							</div>
-						</div>
-					</div>
-					<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev" title="">
-						<i class="fa fa-angle-left"></i>
-					</a>
-					<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next" title="">
-						<i class="fa fa-angle-right"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+@Html.Partial("~/Areas/EShopper/Views/Shared/_Carousel.cshtml")
 <section>
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
+            @*
             @Html.Partial("~/Areas/EShopper/Views/Shared/_Sidebar.cshtml")
-			</div>
+			*@
+            </div>
 			<div class="col-sm-9 padding-right">
                 @Html.Partial("~/Areas/EShopper/Views/Shared/_FeaturedItems.cshtml")
                 @Html.Partial("~/Areas/EShopper/Views/Shared/_CategoryTab.cshtml")
