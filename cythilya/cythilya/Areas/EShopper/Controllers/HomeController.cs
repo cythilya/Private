@@ -19,12 +19,8 @@ namespace cythilya.Areas.EShopper.Controllers
                 new ProductCategory() { ID = 2, Name = "MENS"},
                 new ProductCategory() { ID = 3, Name = "KIDS"},
                 new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
-                new ProductCategory() { ID = 5, Name = "FASHION"},
-                new ProductCategory() { ID = 6, Name = "HOUSEHOLDS"},
-                new ProductCategory() { ID = 7, Name = "INTERIORS"},
-                new ProductCategory() { ID = 8, Name = "CLOTHING"},
-                new ProductCategory() { ID = 9, Name = "BAGS"},
-                new ProductCategory() { ID = 10, Name = "SHOES"}
+                new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
+                new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
             };
             #endregion
 
@@ -41,12 +37,9 @@ namespace cythilya.Areas.EShopper.Controllers
                 new ProductCategory() { ID = 2, Name = "MENS"},
                 new ProductCategory() { ID = 3, Name = "KIDS"},
                 new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
-                new ProductCategory() { ID = 5, Name = "FASHION"},
-                new ProductCategory() { ID = 6, Name = "HOUSEHOLDS"},
-                new ProductCategory() { ID = 7, Name = "INTERIORS"},
-                new ProductCategory() { ID = 8, Name = "CLOTHING"},
-                new ProductCategory() { ID = 9, Name = "BAGS"},
-                new ProductCategory() { ID = 10, Name = "SHOES"}
+                new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
+                new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
+
             };
             #endregion
 
@@ -120,6 +113,7 @@ namespace cythilya.Areas.EShopper.Controllers
             #endregion
 
             ViewBag.ProductList = ProductList;
+            ViewBag.Category = data;
             return View(data);
         }
 
@@ -133,12 +127,8 @@ namespace cythilya.Areas.EShopper.Controllers
                 new ProductCategory() { ID = 2, Name = "MENS"},
                 new ProductCategory() { ID = 3, Name = "KIDS"},
                 new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
-                new ProductCategory() { ID = 5, Name = "FASHION"},
-                new ProductCategory() { ID = 6, Name = "HOUSEHOLDS"},
-                new ProductCategory() { ID = 7, Name = "INTERIORS"},
-                new ProductCategory() { ID = 8, Name = "CLOTHING"},
-                new ProductCategory() { ID = 9, Name = "BAGS"},
-                new ProductCategory() { ID = 10, Name = "SHOES"}
+                new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
+                new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
             };
             #endregion
 

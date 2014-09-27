@@ -13,10 +13,22 @@
     socialItem2.Link = "https://twitter.com/cythilya";
     socialList.Add(socialItem2);
 
-    var socialItem3 = new Common.SocialList();   
+    var socialItem3 = new Common.SocialList();
     socialItem3.Name = "google-plus";
     socialItem3.Link = "https://plus.google.com/+CythilyaTang";
     socialList.Add(socialItem3);
+    
+    //Category
+    var categories = new List<ProductCategory>()
+    {
+        new ProductCategory() { ID = 1, Name = "WOMENS"},
+        new ProductCategory() { ID = 2, Name = "MENS"},
+        new ProductCategory() { ID = 3, Name = "KIDS"},
+        new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
+        new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
+        new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
+    };
+    List<ProductCategory> categoryList = categories;
 }
 <header id="header">
 	<div class="header_top">
@@ -56,10 +68,11 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="logo pull-left">
-						<a href="index.html" title=""><img src="/Content/eshopper/images/home/logo.png" title="EShopper" alt="EShopper" /></a>
+						<a href="/EShopper/Home" title="EShopper"><img src="/Content/eshopper/images/home/logo.png" title="EShopper" alt="EShopper" /></a>
 					</div>
+                    @* 匯幣轉換 *@
+                    @*
 					<div class="btn-group pull-right">
-						<!--
 						<div class="btn-group">
 							<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
 								USA
@@ -80,26 +93,26 @@
 								<li><a href="#" title="">Pound</a></li>
 							</ul>
 						</div>
-						-->
 					</div>
+                    *@
 				</div>
 				<div class="col-sm-8">
 					<div class="shop-menu pull-right">
 						<ul class="nav navbar-nav">
-							<!--
+							@*
 							<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
 							<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-							-->
-							<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
-							<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+							*@
+							<li><a href="/EShopper/Order/Complete" title="Checkout"><i class="fa fa-crosshairs"></i>Checkout</a></li>
+							<li><a href="/EShopper/Cart" title="Cart"><i class="fa fa-shopping-cart"></i>Cart</a></li>
 							@if (User.Identity.IsAuthenticated)
-       {
-                                <li><a href="#"><i class="fa fa-lock"></i> Logout</a></li>
-       }
-       else
-       { 
-                                <li><a href="/EShopper/Member/Register"><i class="fa fa-lock"></i> Register</a></li>
-                                <li><a href="/EShopper/Member/Login"><i class="fa fa-lock"></i> Login</a></li>
+                            {
+                                <li><a href="#" title="Logout"><i class="fa fa-lock"></i>Logout</a></li>
+                            }
+                            else
+                            { 
+                                <li><a href="/EShopper/Member/Register" title="Register"><i class="fa fa-lock"></i>Register</a></li>
+                                <li><a href="/EShopper/Member/Login" title="Login"><i class="fa fa-lock"></i>Login</a></li>
                             }
 						</ul>
 					</div>
@@ -121,34 +134,31 @@
 					</div>
 					<div class="mainmenu pull-left">
 						<ul class="nav navbar-nav collapse navbar-collapse">
-							<li><a href="/EShopper/Home/Index" title="" class="active">Home</a></li>
-							<li class="dropdown"><a title="" href="#">Shop<i class="fa fa-angle-down"></i></a>
-								<ul role="menu" class="sub-menu">
-									<li><a href="shop.html" title="">Products</a></li>
-									<li><a href="product-details.html" title="">Product Details</a></li> 
-									<li><a href="checkout.html" title="">Checkout</a></li> 
-									<li><a href="cart.html" title="">Cart</a></li> 
-									<li><a href="login.html" title="">Login</a></li> 
-								</ul>
-							</li> 
+							<li><a href="/EShopper/Home" title="Home" class="active">HOME</a></li>
+                            @foreach (var item in categoryList)
+                            { 
+                            <li><a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)">@(item.Name)</a></li>
+                            }
+                            @*
 							<li class="dropdown"><a href="#" title="">Blog<i class="fa fa-angle-down"></i></a>
 								<ul role="menu" class="sub-menu">
 									<li><a href="blog.html" title="">Blog List</a></li>
 									<li><a href="blog-single.html" title="">Blog Single</a></li>
 								</ul>
 							</li> 
-							<!--
 							<li><a href="404.html">404</a></li>
-							-->
 							<li><a href="contact-us.html" title="">Contact</a></li>
+                            *@
 						</ul>
 					</div>
 				</div>
+                @*
 				<div class="col-sm-3">
 					<div class="search_box pull-right">
 						<input type="text" placeholder="Search"/>
 					</div>
 				</div>
+                *@
 			</div>
 		</div>
 	</div>
