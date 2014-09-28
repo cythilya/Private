@@ -18,5 +18,6 @@ namespace cythilya.Areas.EShopper.Models
         [Required(ErrorMessage = "請輸入商品類別名稱")]
         [MaxLength(20, ErrorMessage="商品類別名稱不可超過20字")]
         public string Name { get; set; }
+        public string PicUrl { get; set; }
     }
 }

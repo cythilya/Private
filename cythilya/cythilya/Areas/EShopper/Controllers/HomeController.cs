@@ -27,7 +27,7 @@ namespace cythilya.Areas.EShopper.Controllers
         {
             GetCategotyList();//取得商品類別
             GetCategoryProduct(1);//取得特定類別的商品
-
+            GetCategoryInfo(1);//取得類別資訊
             return View();
         }
 
@@ -71,6 +71,21 @@ namespace cythilya.Areas.EShopper.Controllers
 
             ViewBag.CategoryList = categoryList;
         }
+
+        //取得類別資訊
+        void GetCategoryInfo(int ID = 0)
+        {
+            #region fake data
+            ProductCategory category = new ProductCategory();
+            category.ID = 1;
+            category.Name = "WOMEN";
+            category.PicUrl = "http://dummyimage.com/600x400/000/fff";
+            #endregion
+            
+            ViewBag.CategoryName = category.Name;
+            ViewBag.CategoryPicUrl = category.PicUrl;
+        }
+
 
         //取得特定類別的商品
         void GetCategoryProduct(int ID = 0)
@@ -212,8 +227,6 @@ namespace cythilya.Areas.EShopper.Controllers
                 }
             };
             #endregion
-
-            ViewBag.CategoryName = productCategory.Name;
             ViewBag.ProductList = ProductList;
         }
 
