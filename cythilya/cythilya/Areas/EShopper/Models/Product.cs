@@ -24,7 +24,8 @@ namespace cythilya.Areas.EShopper.Models
         //商品類別
         [DisplayName("商品類別")]
         [Required]
-        public ProductCategory ProductCategory { get; set; }
+        //public ProductCategory ProductCategory { get; set; }
+        public virtual ProductCategory ProductCategory { get; set; }
 
         //商品介紹
         [DisplayName("商品介紹")]
@@ -95,7 +96,5 @@ namespace cythilya.Areas.EShopper.Models
         [DisplayName("主要標籤")]
         [Required(ErrorMessage = "請輸入主要標籤")]
         public string MainTag { get; set; }
-
-        public virtual ProductCategory ProductCategory { get; set; }
     }
 }

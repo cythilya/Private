@@ -9,6 +9,8 @@ namespace cythilya.Areas.EShopper.Controllers
 {
     public class HomeController : Controller
     {
+        MvcShoppingContext db = new MvcShoppingContext();
+
         #region View
 
         //首頁
@@ -63,19 +65,8 @@ namespace cythilya.Areas.EShopper.Controllers
         //取得商品類別
         void GetCategotyList()
         {
-            #region fake data - product category
-            var categoryList = new List<ProductCategory>()
-            {
-                new ProductCategory() { ID = 1, Name = "WOMENS"},
-                new ProductCategory() { ID = 2, Name = "MENS"},
-                new ProductCategory() { ID = 3, Name = "KIDS"},
-                new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
-                new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
-                new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
-            };
-            #endregion
-
-            ViewBag.CategoryList = categoryList;
+            var dbData = db.ProductCategories.ToList();
+            ViewBag.CategoryList = dbData;
         }
 
         //取得類別資訊

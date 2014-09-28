@@ -170,6 +170,7 @@
     <Compile Include="Areas\EShopper\Models\Common.cs" />
     <Compile Include="Areas\EShopper\Models\Member.cs" />
     <Compile Include="Areas\EShopper\Models\MemberLoginViewModel.cs" />
+    <Compile Include="Areas\EShopper\Models\MvcShoppingContext.cs" />
     <Compile Include="Areas\EShopper\Models\OrderDetail.cs" />
     <Compile Include="Areas\EShopper\Models\OrderHeader.cs" />
     <Compile Include="Areas\EShopper\Models\Product.cs" />
