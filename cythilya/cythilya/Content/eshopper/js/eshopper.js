@@ -62,7 +62,7 @@ ESHOPPER.module = {
 				success: function (response) {
 					if(response.IsSuccess) {
 						alert('Remove successfully. Page will reload.');
-						location.href = '/EShopper/Home/Index';
+						location.reload();
 					}
 					else{
 						alert('Remove failed. Please try again later.');
@@ -75,8 +75,7 @@ ESHOPPER.module = {
 		var dModule = $(dModule);
 		var dBtnSubmit = dModule.find('.btnSubmit');
 		var dUserInfoForm = dModule.find('.userInfoForm');
-		var dDeliveryInfoForm = dModule.find('.deliveryInfo');
-		
+		var dDeliveryInfoForm = dModule.find('.deliveryInfoForm');
 		var flagUserInfoForm = false; 
 		var flagDeliveryInfo = false; 		
 		
@@ -86,33 +85,102 @@ ESHOPPER.module = {
 			flagUserInfoForm = dUserInfoForm.validationEngine('validate');
 			flagDeliveryInfo = dDeliveryInfoForm.validationEngine('validate');
 			
+			if(flagUserInfoForm && flagDeliveryInfo){
+				$.ajax({
+					url: '/EShopper/Order/Complete',
+					type: 'post',
+					data: {
+						'Account' : dUserInfoForm.find('.account').val(),
+						'Email' : dUserInfoForm.find('.email').val(),
+						'Password' : dUserInfoForm.find('.password').val(),
+						'ShipperName': dDeliveryInfoForm.find('.shipperName').val(),
+						'ShipperAddress': dDeliveryInfoForm.find('.shipperAddress').val(),
+						'ShipperMobile': dDeliveryInfoForm.find('.shipperMobile').val()
+					},
+					dataType: 'json',
+					error: function (xhr) {},
+					success: function (response) {
+						if(response.IsSuccess) {
+							alert('Order successfully. Redirect to Index.');
+							location.href = '/EShopper/Home/Index';
+						}
+						else{
+							alert('Order failed. Please try again later.');
+						}
+					}
+				});				
+			}
+		});
+	},
+	shopperDeliveryInfo: function(dModule){
+		var dModule = $(dModule);
+		var dBtnSubmit = dModule.find('.btnSubmit');
+		var dUserRegisterForm = dModule.find('.userRegisterForm');
+		var dDeliveryInfoForm = dModule.find('.deliveryInfoForm');
+		var flagUserInfoForm = false; 
+		var flagDeliveryInfo = false; 		
+		
+		dBtnSubmit.click(function(e){
+			e.preventDefault();
+			
+			flagUserInfoForm = dUserRegisterForm.validationEngine('validate');
+			flagDeliveryInfo = dDeliveryInfoForm.validationEngine('validate');
+			
+			if(flagUserInfoForm && flagDeliveryInfo){
+				$.ajax({
+					url: '/EShopper/Order/Complete',
+					type: 'post',
+					data: {
+						'Account' : dUserRegisterForm.find('.account').val(),
+						'Email' : dUserRegisterForm.find('.email').val(),
+						'Password' : dUserRegisterForm.find('.password').val(),
+						'ShipperName': dDeliveryInfoForm.find('.shipperName').val(),
+						'ShipperAddress': dDeliveryInfoForm.find('.shipperAddress').val(),
+						'ShipperMobile': dDeliveryInfoForm.find('.shipperMobile').val()
+					},
+					dataType: 'json',
+					error: function (xhr) {},
+					success: function (response) {
+						if(response.IsSuccess) {
+							alert('Order successfully. Redirect to Index.');
+							location.href = '/EShopper/Home/Index';
+						}
+						else{
+							alert('Order failed. Please try again later.');
+						}
+					}
+				});				
+			}
+		});
+	},
+	singleProductInfo: function(dModule){
+		var dModule = $(dModule);
+		var dBtnAddToCart = dModule.find('.btnAddToCart');
+		var dSelectItem = dModule.find('.selectItem');
+		
+		dBtnAddToCart.click(function(){
+			dThisBtn = $(this);
+			
 			$.ajax({
-				url: '/EShopper/Order/Complete',
+				url: '/EShopper/Cart/AddToCart',
 				type: 'post',
 				data: {
-					'Account' : dUserInfoForm.find('.account').val(),
-					'Email' : dUserInfoForm.find('.email').val(),
-					'Password' : dUserInfoForm.find('.password').val(),
-					'ShipperName': dDeliveryInfoForm.find('.shipperName').val(),
-					'ShipperAddress': dDeliveryInfoForm.find('.shipperAddress').val(),
-					'ShipperMobile': dDeliveryInfoForm.find('.shipperMobile').val()
+					'ProductID' : dThisBtn.data('productid'),
+					'Amount' : dSelectItem.find(':selected').val()
 				},
 				dataType: 'json',
 				error: function (xhr) {},
 				success: function (response) {
 					if(response.IsSuccess) {
-						alert('Order successfully. Redirect to Index.');
-						location.reload();
+						alert('Add successfully.');
 					}
 					else{
-						alert('Order failed. Please try again later.');
+						alert('Add failed. Please try again later.');
 					}
 				}
-			});	
+			});			
 		});
-	},
-	shopperDeliveryInfo: function(dModule){
-	var dModule = $(dModule);
+	
 	}
 };
 (function(){
@@ -126,4 +194,5 @@ ESHOPPER.module = {
     doWhileExist('cartList',ESHOPPER.module.cartList);
     doWhileExist('shopperDeliveryInfoIsAuthenticated',ESHOPPER.module.shopperDeliveryInfoIsAuthenticated);
 	doWhileExist('shopperDeliveryInfo',ESHOPPER.module.shopperDeliveryInfo);
+	doWhileExist('singleProductInfo',ESHOPPER.module.singleProductInfo);
 })();

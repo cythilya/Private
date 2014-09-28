@@ -7,6 +7,20 @@
     ViewBag.SharedImage = detail.PicLargeUrl;
     ViewBag.Tab = detail.ProductCategory; ;
 }
+<style>
+.selectItem
+{
+    border: 1px solid #DEDEDC;
+    color: #696763;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 35px;
+    outline: medium none;
+    text-align: center;
+    width: 60px;   
+}
+</style>
 <section>
 	<div class="container">
 		<div class="row">
@@ -49,7 +63,7 @@
                         *@
 					</div>
 					<div class="col-sm-7">
-						<div class="product-information">
+						<div id="singleProductInfo" class="product-information">
                             @if(detail.IsHigLight)
                             {
                                 <img title="New Arrival" alt="New Arrival" src="/Content/eshopper/images/product-details/new.jpg" class="newarrival">
@@ -65,8 +79,17 @@
                             <span>
 								<span>$ @(detail.Price)</span>
 								<label>Quantity:</label>
-								<input type="text" value="@(detail.Amount)">
-								<button type="button" class="btn btn-fefault cart">
+                                <select class="selectItem">
+                                    @{
+                                        for (int i = 1; i <= detail.Amount; i++) 
+                                        { 
+                                            <option value="@(i)">@(i)</option>
+                                        }
+                                        
+                                    }
+                                </select>
+								@*<input type="text" value="@(detail.Amount)">*@
+                                <button type="button" class="btn btn-fefault cart btnAddToCart" data-productid="@(detail.ID)">
 									<i class="fa fa-shopping-cart"></i>
 									Add to cart
 								</button>

@@ -58,10 +58,12 @@
                         {
                         <form class="userInfoForm" action="">
                             <input type="text" value="@(memberInfo != null && !String.IsNullOrEmpty(memberInfo.Account) ? memberInfo.Account : "" )" class="account" disabled>
-                            <input type="text" value="@(memberInfo != null && !String.IsNullOrEmpty(memberInfo.Email) ? memberInfo.Email : "" )" placeholder="Email"  class="email validate[required,custom[email]]">
-							<input type="password" placeholder="Password"  class="password validate[required]">
-							@*<input type="password" placeholder="Confirm password"  class="validate[required]">*@
+                            <input type="text" value="@(memberInfo != null && !String.IsNullOrEmpty(memberInfo.Email) ? memberInfo.Email : "" )" placeholder="Email" disabled class="email validate[required,custom[email]]">
+							@*
+                            <input type="password" placeholder="Password"  class="password validate[required]">
+                            <input type="password" placeholder="Confirm password"  class="validate[required]">
                             <label><input type="checkbox" class="syncMemberInfo"> Update My Account Setting</label>
+                            *@
                         </form>
                         }
                         else
@@ -69,9 +71,12 @@
                         <form class="userRegisterForm" action="">
                             <input type="text" placeholder="Account" class="account validate[required]"> 
                             <input type="text" placeholder="Email" class="email validate[required,custom[email]]">
-							<input type="password" placeholder="Password" class="password validate[required]">
-							@*<input type="password" placeholder="Confirm password" class="validate[required]">*@   
+                            <label>Also register to be a member.</label>
+							@*
+                            <input type="password" placeholder="Password" class="password validate[required]">
+                            <input type="password" placeholder="Confirm password" class="validate[required]">   
                             <label><input type="checkbox" class="register"> Register</label>
+                            *@
                         </form>                              
                         }
                         @*

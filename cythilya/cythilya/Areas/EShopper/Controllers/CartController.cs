@@ -84,7 +84,8 @@ namespace cythilya.Areas.EShopper.Controllers
         [HttpPost]
         public ActionResult AddToCart(int ProductID, int Amount = 1)
         {
-            return View();
+            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            return Json(jsonObject);
         }
 
         //移除購物車項目

@@ -23,7 +23,7 @@ namespace cythilya.Areas.EShopper.Controllers
 
         //將訂單資料與購物車資料寫入資料庫
         [HttpPost]
-        public ActionResult Complete(string Account, string Email, string Password, string ShipperName, string ShipperAddress, string ShipperMobile)
+        public ActionResult Complete(string Account, string Email, string ShipperName, string ShipperAddress, string ShipperMobile)
         {
             //TODO: 將訂單資料與購物車資料寫入資料庫
 
