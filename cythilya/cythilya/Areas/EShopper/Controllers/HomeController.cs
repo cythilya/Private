@@ -30,8 +30,8 @@ namespace cythilya.Areas.EShopper.Controllers
         public ActionResult Category(int ID = 0)
         {
             GetCategotyList();//取得商品類別
-            GetCategoryProduct(1);//取得特定類別的商品
-            GetCategoryInfo(1);//取得類別資訊
+            GetCategoryProduct(ID);//取得特定類別的商品
+            GetCategoryInfo(ID);//取得類別資訊
             return View();
         }
 
@@ -72,13 +72,7 @@ namespace cythilya.Areas.EShopper.Controllers
         //取得類別資訊
         void GetCategoryInfo(int ID = 0)
         {
-            #region fake data
-            ProductCategory category = new ProductCategory();
-            category.ID = 1;
-            category.Name = "WOMEN";
-            category.PicUrl = "http://dummyimage.com/600x400/000/fff";
-            #endregion
-            
+            var category = db.ProductCategories.Find(ID);
             ViewBag.CategoryName = category.Name;
             ViewBag.CategoryPicUrl = category.PicUrl;
         }
@@ -227,8 +221,20 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //取得特定商品資訊
-        void GetProductDetail() 
+        void GetProductDetail(int ID = 0) 
         {
+            /*
+            var Detail = db.Products.Find(ID);
+            ViewBag.ProductDetail = Detail;
+            return null;
+
+            //if null, return to index
+            if (Detail == null) 
+            {
+                return RedirectToAction("Index", "Home");
+            }
+             */
+
             #region fake data - product detail
 
             var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };

@@ -34,28 +34,28 @@ namespace cythilya.Areas.EShopper.Models
 
         //商品圖片
         //主打圖片原始檔
-        [DisplayName("主打圖片原始檔")]
-        [Required(ErrorMessage = "請輸入主打圖片原始檔")]
+        [DisplayName("圖片原始檔")]
+        [Required(ErrorMessage = "請輸入圖片原始檔")]
         public string RawPicUrl { get; set; }
 
-        //主打圖片, 大(內頁 329x380)
-        [DisplayName("主打內頁大圖(329x380)")]
-        [Required(ErrorMessage = "請輸入主打內頁大圖(329x380)")]
+        //主打圖片, 329x380 (內頁)
+        [DisplayName("329x380 (內頁)")]
+        [Required(ErrorMessage = "請輸入329x380 (內頁)")]
         public string PicLargeUrl { get; set; }
 
-        //主打圖片, 中(首頁 255x381)
-        [DisplayName("主打中圖(首頁 255x381)")]
-        [Required(ErrorMessage = "請輸入主打中圖(首頁 255x381)")]
+        //主打圖片, 268x249 (特定類別頁)
+        [DisplayName("268x249 (特定類別頁)")]
+        [Required(ErrorMessage = "請輸入268x249 (特定類別頁)")]
         public string PicMediumUrl { get; set; }
 
-        //主打圖片, 小(內頁 85x84)
-        [DisplayName("主打內頁小圖(85x84)")]
-        [Required(ErrorMessage = "請輸入主打內頁小圖(85x84)")]
+        //主打圖片, 255x128 (Recommended)
+        [DisplayName("255x128 (Recommended)")]
+        [Required(ErrorMessage = "請輸入255x128 (Recommended)")]
         public string PicSmallUrl { get; set; }
 
-        //特色商品(208x183)
-        [DisplayName("主打中圖(首頁 255x381)")]
-        [Required(ErrorMessage = "請輸入主打中圖(首頁 255x381)")]
+        //208x183 (首頁特色商品、標籤商品)
+        [DisplayName("208x183 (首頁特色商品、標籤商品)")]
+        [Required(ErrorMessage = "請輸入208x183 (首頁特色商品、標籤商品)")]
         public string PicFeaturedUrl { get; set; }
 
         //上架時間
