@@ -192,6 +192,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\validationEngine.jquery.css" />
     <Content Include="Content\eshopper\css\animate.css" />
     <Content Include="Content\eshopper\css\bootstrap.min.css" />
     <Content Include="Content\eshopper\css\font-awesome.min.css" />
@@ -267,6 +268,7 @@
     <Content Include="Content\eshopper\images\temp_85x84.png" />
     <Content Include="Content\eshopper\js\bootstrap.min.js" />
     <Content Include="Content\eshopper\js\contact.js" />
+    <Content Include="Content\eshopper\js\eshopper.js" />
     <Content Include="Content\eshopper\js\gmaps.js" />
     <Content Include="Content\eshopper\js\html5shiv.js" />
     <Content Include="Content\eshopper\js\jquery.js" />
@@ -276,6 +278,8 @@
     <Content Include="Content\eshopper\js\price-range.js" />
     <Content Include="Content\js\jquery-1.7.1.min.js" />
     <Content Include="Content\js\jquery.cookie.js" />
+    <Content Include="Content\js\jquery.validationEngine-en.js" />
+    <Content Include="Content\js\jquery.validationEngine.js" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_188x73.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_940x367.jpg" />
@@ -965,7 +969,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\SEOLab\Models\" />
-    <Folder Include="Content\css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

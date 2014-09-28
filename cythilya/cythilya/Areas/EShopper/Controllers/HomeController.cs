@@ -9,6 +9,8 @@ namespace cythilya.Areas.EShopper.Controllers
 {
     public class HomeController : Controller
     {
+        #region View
+
         //首頁
         public ActionResult Index()
         {
@@ -54,6 +56,10 @@ namespace cythilya.Areas.EShopper.Controllers
             return View();
         }
 
+        #endregion
+
+        #region Function
+
         //取得商品類別
         void GetCategotyList()
         {
@@ -85,7 +91,6 @@ namespace cythilya.Areas.EShopper.Controllers
             ViewBag.CategoryName = category.Name;
             ViewBag.CategoryPicUrl = category.PicUrl;
         }
-
 
         //取得特定類別的商品
         void GetCategoryProduct(int ID = 0)
@@ -510,5 +515,7 @@ namespace cythilya.Areas.EShopper.Controllers
             };
             ViewBag.RecommendItemsList = recommendItemsList;
         }
+
+        #endregion
     }
 }

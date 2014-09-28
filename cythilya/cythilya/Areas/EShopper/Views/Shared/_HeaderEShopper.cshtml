@@ -98,7 +98,7 @@
 				</div>
 				<div class="col-sm-8">
 					<div class="shop-menu pull-right">
-						<ul class="nav navbar-nav">
+						<ul id="navList" class="nav navbar-nav">
 							@*
 							<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
 							<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
@@ -107,12 +107,12 @@
 							<li><a href="/EShopper/Cart" title="Cart"><i class="fa fa-shopping-cart"></i>Cart</a></li>
 							@if (User.Identity.IsAuthenticated)
                             {
-                                <li><a href="#" title="Logout"><i class="fa fa-lock"></i>Logout</a></li>
+                            <li><a href="#" title="Logout" class="logout"><i class="fa fa-lock"></i>Logout</a></li>
                             }
                             else
                             { 
-                                <li><a href="/EShopper/Member/Register" title="Register"><i class="fa fa-lock"></i>Register</a></li>
-                                <li><a href="/EShopper/Member/Login" title="Login"><i class="fa fa-lock"></i>Login</a></li>
+                            <li><a href="/EShopper/Member/Register" title="Register" class="register"><i class="fa fa-lock"></i>Register</a></li>
+                            <li><a href="/EShopper/Member/Login" title="Login" class="login"><i class="fa fa-lock"></i>Login</a></li>
                             }
 						</ul>
 					</div>

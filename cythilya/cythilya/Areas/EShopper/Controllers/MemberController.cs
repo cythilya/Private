@@ -20,7 +20,8 @@ namespace cythilya.Areas.EShopper.Controllers
         [HttpPost]
         public ActionResult Register([Bind(Exclude = "RegisterOn")] Member member)
         {
-            return View();
+            return RedirectToAction("Index", "Home");
+            //return View();
         }
 
         //顯示會員登入頁面
@@ -58,7 +59,7 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //執行會員登出
-        public ActionResult Logout() 
+        public JsonResult Logout() 
         {
             //清除表單驗證的cookie
             FormsAuthentication.SignOut();
@@ -66,8 +67,9 @@ namespace cythilya.Areas.EShopper.Controllers
             //清除所有曾經寫入的session資料
             Session.Clear();
 
-            ///登出後回到首頁
-            return RedirectToAction("Index", "Home");
+            //登出後回到首頁
+            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            return Json(jsonObject);
         }
     }
 }

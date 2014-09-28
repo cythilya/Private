@@ -10,12 +10,14 @@
     @Html.ValidationSummary(true)
     
 	    <h2>Login to your account</h2>
+        <label>Account</label>
         @Html.EditorFor(model => model.Account)
         @Html.ValidationMessageFor(model => model.Account)
-
+        <br>
+        <label>Password</label>
         @Html.EditorFor(model => model.Password)
         @Html.ValidationMessageFor(model => model.Password)
-		    
+		<br>    
         @*
         <span>
 			<input type="checkbox" class="checkbox"> 

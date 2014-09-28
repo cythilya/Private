@@ -1,10 +1,14 @@
 ﻿@model cythilya.Areas.EShopper.Models.OrderHeader
+@using cythilya.Areas.EShopper.Models
 @{
     Layout = "~/Areas/EShopper/Views/Shared/_LayoutEShopper.cshtml";
     ViewBag.Title = "Checkout";
     ViewBag.Description = "Checkout";
     ViewBag.SharedImage = "";
-    ViewBag.Tab = "Shop";
+    ViewBag.Tab = "";
+    
+    //取得已註冊使用者的資料
+    Member memberInfo = ViewBag.MemberInfo as Member;
 }
 <style>
 #cart_items .shopper-informations .row{
@@ -44,32 +48,30 @@
 			<p>Please use Register And Checkout to easily get access to your order history, or use Checkout as Guest</p>
 		</div>
         *@
-		<div class="shopper-informations">
+		<div id="@(User.Identity.IsAuthenticated ? "shopperDeliveryInfoIsAuthenticated" : "shopperDeliveryInfo")" class="shopper-informations">
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="shopper-info">
 						<p>Shopper Information</p>
-						
                         @*如果登入就帶入使用者帳號，並disabled*@
                         @if (User.Identity.IsAuthenticated)
                         {
-                        <form>
-							<input type="text" placeholder="User Name">
-                            <input type="text" placeholder="Email">
-							<input type="password" placeholder="Password">
-							<input type="password" placeholder="Confirm password">   
-                            <label><input type="checkbox"> Update My Account Setting</label>
+                        <form class="userInfoForm" action="">
+                            <input type="text" value="@(memberInfo != null && !String.IsNullOrEmpty(memberInfo.Account) ? memberInfo.Account : "" )" class="account" disabled>
+                            <input type="text" value="@(memberInfo != null && !String.IsNullOrEmpty(memberInfo.Email) ? memberInfo.Email : "" )" placeholder="Email"  class="email validate[required,custom[email]]">
+							<input type="password" placeholder="Password"  class="password validate[required]">
+							@*<input type="password" placeholder="Confirm password"  class="validate[required]">*@
+                            <label><input type="checkbox" class="syncMemberInfo"> Update My Account Setting</label>
                         </form>
                         }
                         else
                         { 
-                        <form>
-                            <input type="text" placeholder="Account" > 
-							<input type="text" placeholder="User Name">
-                            <input type="text" placeholder="Email">
-							<input type="password" placeholder="Password">
-							<input type="password" placeholder="Confirm password">   
-                            <label><input type="checkbox"> Register</label>
+                        <form class="userRegisterForm" action="">
+                            <input type="text" placeholder="Account" class="account validate[required]"> 
+                            <input type="text" placeholder="Email" class="email validate[required,custom[email]]">
+							<input type="password" placeholder="Password" class="password validate[required]">
+							@*<input type="password" placeholder="Confirm password" class="validate[required]">*@   
+                            <label><input type="checkbox" class="register"> Register</label>
                         </form>                              
                         }
                         @*
@@ -82,12 +84,12 @@
 					<div class="bill-to">
 						<p>Delivery To</p>
 						<div class="shopper-info">
-							<form>
-								<input type="text" placeholder="Name">
-								<input type="text" placeholder="Address">
-                                <input type="text" placeholder="Mobile Phone">
+							<form class="deliveryInfoForm" action="">
+								<input type="text" placeholder="Name" class="shipperName validate[required]">
+								<input type="text" placeholder="Address" class="shipperAddress validate[required]">
+                                <input type="text" placeholder="Mobile Phone" class="shipperMobile validate[required, custom[telephone]]">
 							</form>
-                            <a class="btn btn-primary" href="">Continue</a>
+                            <a class="btn btn-primary btnSubmit" href="#">Continue</a>
 						</div>
 					</div>
 				</div>
@@ -237,81 +239,3 @@
 	    </div>
         *@
 </section>
-@*
-<h2>Complete</h2>
-@using (Html.BeginForm()) {
-    @Html.ValidationSummary(true)
-
-    <fieldset>
-        <legend>OrderHeader</legend>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Member)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Member)
-            @Html.ValidationMessageFor(model => model.Member)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.ContactName)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.ContactName)
-            @Html.ValidationMessageFor(model => model.ContactName)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.ContactPhone)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.ContactPhone)
-            @Html.ValidationMessageFor(model => model.ContactPhone)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.ContactAddress)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.ContactAddress)
-            @Html.ValidationMessageFor(model => model.ContactAddress)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.TotalPrice)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.TotalPrice)
-            @Html.ValidationMessageFor(model => model.TotalPrice)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.Memo)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.Memo)
-            @Html.ValidationMessageFor(model => model.Memo)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.BuyOn)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.BuyOn)
-            @Html.ValidationMessageFor(model => model.BuyOn)
-        </div>
-
-        <p>
-            <input type="submit" value="Create" />
-        </p>
-    </fieldset>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
-*@

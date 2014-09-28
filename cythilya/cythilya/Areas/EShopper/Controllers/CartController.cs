@@ -89,9 +89,10 @@ namespace cythilya.Areas.EShopper.Controllers
 
         //移除購物車項目
         [HttpPost]
-        public ActionResult Remove()
+        public JsonResult Remove(int ID = 0)
         {
-            return View();
+            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            return Json(jsonObject);
         }
 
         //更新購物車中特定項目的購買數量

@@ -8,6 +8,7 @@
 
     int total = 0;
 }
+@*
 @{
     var ajaxOption = new AjaxOptions()
     {
@@ -26,6 +27,7 @@
         alert('Remove Fail(HTTP status code: ' + xhr.status + ')');
     }
 </script>
+*@
 <section id="cart_items">
 	<div class="container">
 		<div class="breadcrumbs">
@@ -34,7 +36,7 @@
 				<li class="active">Shopping Cart</li>
 			</ol>
 		</div>
-		<div class="table-responsive cart_info">
+		<div id="cartList" class="table-responsive cart_info">
 			<table class="table table-condensed">
 				<thead>
 					<tr class="cart_menu">
@@ -49,7 +51,7 @@
 				<tbody>
                     @foreach (var item in Model)
                     {
-					<tr>
+					<tr class="cartItem">
 						<td class="cart_product">
 							<a href=""><img src="@(item.Product.PicSmallUrl)" alt="@(item.Product.Name)"></a>
 						</td>
@@ -74,8 +76,8 @@
 							<p class="cart_total_price">$@(item.Product.Price * item.Amount)</p>
 						</td>
 						<td class="cart_delete">
-                            @Html.ActionLink("Delete", "Remove", new { ProductID = item.Product.ID }, ajaxOption)
-							@*<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>*@
+                            @*Html.ActionLink("Delete", "Remove", new { ProductID = item.Product.ID }, ajaxOption)*@
+							<a class="cart_quantity_delete btnRemoveItem" href="" title="Remove" data-itemid="@item.Product.ID"><i class="fa fa-times"></i></a>
 						</td>
                          @{total = total + item.Amount * item.Product.Price;}
 					</tr>

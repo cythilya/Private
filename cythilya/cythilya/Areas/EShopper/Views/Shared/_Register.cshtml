@@ -11,17 +11,20 @@
         @Html.ValidationSummary(true)
 
         @* Account *@
+        <label>Account</label>
         @Html.EditorFor(model => model.Account)
         @Html.ValidationMessageFor(model => model.Account)
-		
+		<br>
         @* Email*@
+        <label>Email</label>
         @Html.EditorFor(model => model.Email)
         @Html.ValidationMessageFor(model => model.Email)        
-        
+        <br>
         @*Password*@
+        <label>Password</label>
         @Html.EditorFor(model => model.Password)
         @Html.ValidationMessageFor(model => model.Password)
-
+        <br>
         <p>
             <a href="/EShopper/Member/Login" style="float: right;">Already Registered? Please Login.</a>
 		</p>
