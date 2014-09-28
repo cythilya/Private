@@ -16,7 +16,7 @@ namespace cythilya.Areas.EShopper.Models
 
         [DisplayName("訂單主檔")]
         [Required]
-        public OrderHeader OrderHeader { get; set; }
+        public virtual OrderHeader OrderHeader { get; set; }
 
         [DisplayName("訂購商品")]
         [Required]

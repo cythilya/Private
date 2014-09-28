@@ -16,7 +16,7 @@ namespace cythilya.Areas.EShopper.Models
 
         [DisplayName("訂購會員")]
         [Required]
-        public string Member { get; set; }
+        public virtual Member Member { get; set; }
 
         [DisplayName("收件人姓名")]
         [Required(ErrorMessage = "請輸入收件人姓名")]
@@ -42,5 +42,7 @@ namespace cythilya.Areas.EShopper.Models
 
         [DisplayName("訂購時間")]
         public DateTime BuyOn { get; set; }
+
+        public virtual ICollection<OrderDetail> OrderDetailItems { get; set; }
     }
 }

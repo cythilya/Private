@@ -48,5 +48,7 @@ namespace cythilya.Areas.EShopper.Models
         //FBUID
         [DisplayName("FBUID")]
         public string FBUserID { get; set; }
+
+        public virtual ICollection<OrderHeader> Orders { get; set; }
     }
 }

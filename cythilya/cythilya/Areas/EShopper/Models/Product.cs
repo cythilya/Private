@@ -95,5 +95,7 @@ namespace cythilya.Areas.EShopper.Models
         [DisplayName("主要標籤")]
         [Required(ErrorMessage = "請輸入主要標籤")]
         public string MainTag { get; set; }
+
+        public virtual ProductCategory ProductCategory { get; set; }
     }
 }
