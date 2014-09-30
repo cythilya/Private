@@ -513,6 +513,42 @@ namespace cythilya.Areas.EShopper.Controllers
             ViewBag.RecommendItemsList = recommendItemsList;
         }
 
+        //取得所有商品
+        void GetAllProducts() 
+        {
+            /*
+            ID = 1,
+            Name = "",
+            ProductCategory = new product{ }
+            Description =
+            RawPicUrl =
+            PicLargeUrl =
+            PicMediumUrl =
+            PicSmallUrl =
+            PicFeaturedUrl =
+            PublishOn =
+            Brand =
+            BrandInfo =
+            Tags = new Tag() { ID = 1, Name = "New Arrival" };
+            Price =
+            Amount =
+            IsSale =
+            IsHigLight =
+            MainTag =
+
+                    //是否為特色商品
+                    [DisplayName("是否為特色商品")]
+                    public bool IsHigLight { get; set; } //是否為特色商品
+
+                    //主要標籤
+                    [DisplayName("主要標籤")]
+                    [Required(ErrorMessage = "請輸入主要標籤")]
+                    public string MainTag { get; set; } 
+ 
+             */
+
+        }
+
         #endregion
     }
 }
