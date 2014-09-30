@@ -288,6 +288,8 @@
     <Content Include="Content\me\img\blog\JavaScript_SEO_188x73.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_300.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_940x367.jpg" />
+    <Content Include="Content\seo_lab\css\style_anjularjs.css" />
+    <Content Include="Content\seo_lab\js\script_anjularjs.js" />
     <Content Include="Content\social\jquery.social.facebook.js" />
     <Content Include="Content\me\css\carousel.css" />
     <Content Include="Content\me\css\comments.css" />
@@ -1024,6 +1026,7 @@
     <Content Include="Areas\EShopper\Views\Cart\Index.cshtml" />
     <Content Include="Areas\EShopper\Views\Order\Complete.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Carousel.cshtml" />
+    <Content Include="Areas\SEOLab\Views\SEOLab\AngularJSSEO.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />

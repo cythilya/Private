@@ -27,6 +27,11 @@ namespace cythilya.Areas.SEOLab.Controllers
             return View("~/Areas/SEOLab/Views/SEOLab/EmberJSSEO.cshtml");
         }
 
+        public ActionResult AngularJSSEO()
+        {
+            return View("~/Areas/SEOLab/Views/SEOLab/AngularJSSEO.cshtml");
+        }
+
         // GET: /SEOLab/SEOLab/Details/5
         public ActionResult Details(int id)
         {
