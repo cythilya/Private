@@ -23,6 +23,7 @@ namespace cythilya.Areas.EShopper.Controllers
             GetMainTagList();//取得主要標籤列表
             GetTaggableProduct();//取得特定標籤的商品列表
             GetRecommendItemsList();//取得推薦商品列表
+            //GetAllProducts();//取得所有商品
             return View();
         }
 
@@ -514,39 +515,172 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //取得所有商品
-        void GetAllProducts() 
+        void GetAllProducts()
         {
+            var dbData = db.Products.ToList();
+            
+            #region fake data
             /*
-            ID = 1,
-            Name = "",
-            ProductCategory = new product{ }
-            Description =
-            RawPicUrl =
-            PicLargeUrl =
-            PicMediumUrl =
-            PicSmallUrl =
-            PicFeaturedUrl =
-            PublishOn =
-            Brand =
-            BrandInfo =
-            Tags = new Tag() { ID = 1, Name = "New Arrival" };
-            Price =
-            Amount =
-            IsSale =
-            IsHigLight =
-            MainTag =
+            if (dbData.Count == 0)
+            {
+                var productList = new List<Product>()
+                {
+                    new Product()
+                    {
+                        ID = 1, 
+                        Name = "Applique Crew Sweatshirt",
+                        ProductCategory = new ProductCategory { ID = 1, Name = "WOMENS"},
+                        Description = "Meet your new go-to sweatshirt. 60% Cotton, 40% Polyester. Soft cotton blend fleece. Ribbed crew neck. Raglan long sleeves. Shimmery signature applique. Ribbed cuffs and hem. Imported, Machine Wash.",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "American Eagle Outfitters",
+                        BrandInfo = "Shop American Eagle Outfitters for men's and women's on-trend clothes, shoes, and more. All styles are available in additional sizes only at ae.com.",
+                        //Tags = new List<Tag> { new Tag{ID = 1, Name = "sweatshirt"}},
+                        MainTag = "sweatshirt",
+                        Price = 1215,
+                        Amount = 99,
+                        IsSale = false,
+                        IsHigLight = true
+                    },
+                    new Product()
+                    {
+                        ID = 2, 
+                        Name = "Long Sleeve Oxford Shirt",
+                        ProductCategory = new ProductCategory { ID = 1, Name = "WOMENS"},
+                        Description = "The classics never go out of style.",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "American Eagle Outfitters",
+                        BrandInfo = "Shop American Eagle Outfitters for men's and women's on-trend clothes, shoes, and more. All styles are available in additional sizes only at ae.com.",
+                        //Tags = new List<Tag> { new Tag{ID = 2, Name = "shirt"}, new Tag { ID = 3, Name = "AE" }},
+                        MainTag = "shirt",
+                        Price = 1215,
+                        Amount = 50,
+                        IsSale = true,
+                        IsHigLight = true
+                    },
+                    new Product()
+                    {
+                        ID = 3, 
+                        Name = "Signature Long Sleeve T-Shirt",
+                        ProductCategory = new ProductCategory { ID = 2, Name = "MENS"},
+                        Description = "Show off your signature #AEOSTYLE.",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "American Eagle Outfitters",
+                        BrandInfo = "Shop American Eagle Outfitters for men's and women's on-trend clothes, shoes, and more. All styles are available in additional sizes only at ae.com.",
+                        //Tags = new List<Tag> { new Tag { ID = 3, Name = "AE" }, new Tag{ID = 4, Name = "t-shirt"}},
+                        MainTag = "t-shirt",
+                        Price = 606,
+                        Amount = 60,
+                        IsSale = false,
+                        IsHigLight = false
+                    },
+                    new Product()
+                    {
+                        ID = 4, 
+                        Name = "High Top Sneakers",
+                        ProductCategory = new ProductCategory { ID = 3, Name = "KIDS"},
+                        Description = "High tops with elasticized laces, a tab, and velcro fastener. Rubber soles. (Soft sole in sizes 0.5 and 1)",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "H&M",
+                        BrandInfo = "Offers clothing for men, women and children. United Kingdom.",
+                        //Tags = new List<Tag> { new Tag{ID = 5, Name = "sneaker"}, new Tag { ID = 6, Name = "H&M" }},
+                        MainTag = "sneaker",
+                        Price = 390,
+                        Amount = 20,
+                        IsSale = false,
+                        IsHigLight = true
+                    },
+                    new Product()
+                    {
+                        ID = 5, 
+                        Name = "Fleece Jacket",
+                        ProductCategory = new ProductCategory { ID = 4, Name = "SPORTSWEAR"},
+                        Description = "Jacket in fast-drying fleece. Zip at front, side pockets with zip, and hood with elasticized drawstring. Ribbed cuffs with thumbholes. Unlined.",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "H&M",
+                        BrandInfo = "Offers clothing for men, women and children. United Kingdom.",
+                        //Tags = new List<Tag> { new Tag { ID = 6, Name = "H&M" }, new Tag { ID = 7, Name = "fast-drying" }},
+                        MainTag = "fast-drying",
+                        Price = 900,
+                        Amount = 999,
+                        IsSale = false,
+                        IsHigLight = false
+                    },
+                    new Product()
+                    {
+                        ID = 6, 
+                        Name = "Therapy Faux Fur Booties",
+                        ProductCategory = new ProductCategory { ID = 5, Name = "HOUSEHOLDS"},
+                        Description = "Therapy Faux Fur booties.",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "House of Fraser",
+                        BrandInfo = "House of Fraser Catalogue - UK's Department Store of choice. Shop from a massive selection of your favourite Home, Clothing & Beauty brands this Spring 2014!",
+                        //Tags = new List<Tag> { new Tag{ID = 8, Name = "bootie"}, new Tag { ID = 9, Name = "House of Fraser" }}, 
+                        MainTag = "bootie",
+                        Price = 300,
+                        Amount = 99,
+                        IsSale = true,
+                        IsHigLight = false
+                    },
+                    new Product()
+                    {
+                        ID = 7, 
+                        Name = "Handbag",
+                        ProductCategory = new ProductCategory { ID = 6, Name = "BAGS & SHOES"},
+                        Description = "Handbag in thick, embossed imitation leather with double handles and top zip. Detachable shoulder strap, one inner compartment with zip, and studs on base. Size 10 1/2 x 13 3/4 in.",
+                        RawPicUrl = "http://goo.gl/iYWfvH",
+                        PicLargeUrl = "http://goo.gl/tT3P3q",
+                        PicMediumUrl = "http://goo.gl/r6BP6P",
+                        PicSmallUrl = "http://goo.gl/s5LACB",
+                        PicFeaturedUrl = "http://goo.gl/7A8oWr",
+                        PublishOn = DateTime.UtcNow,
+                        Brand = "H&M",
+                        BrandInfo = "Offers clothing for men, women and children. United Kingdom.",
+                        //Tags = new List<Tag> { new Tag{ID = 6, Name = "H&M"}, new Tag { ID = 10, Name = "handbag" }},
+                        MainTag = "handbag",
+                        Price = 1200,
+                        Amount = 50,
+                        IsSale = false,
+                        IsHigLight = true
+                    }
+                };
 
-                    //是否為特色商品
-                    [DisplayName("是否為特色商品")]
-                    public bool IsHigLight { get; set; } //是否為特色商品
+                db.SaveChanges();
+                dbData = db.Products.ToList();
+            }
+            */
+            #endregion
 
-                    //主要標籤
-                    [DisplayName("主要標籤")]
-                    [Required(ErrorMessage = "請輸入主要標籤")]
-                    public string MainTag { get; set; } 
- 
-             */
-
+            ViewBag.ProductList = dbData;
         }
 
         #endregion
