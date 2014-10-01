@@ -313,10 +313,22 @@ namespace cythilya.Areas.EShopper.Controllers
             ViewBag.CarouselList = carouselList;
         }
 
-        //取得特色商品列表
+        //取得特色商品列表, 目前定義 IsHighlight == true為特色商品
         void GetFeaturedProductList() 
         {
+            var dbData = db.Products.ToList();
+            var featuresProductList = new List<Product>() { };
+
+            foreach (var item in dbData)
+            {
+                if (item.IsHigLight) 
+                {
+                    featuresProductList.Add(item);
+                }
+            }
+            
             #region fake data - product
+            /*
             var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };
 
             var tag = new Tag() { ID = 1, Name = "New Arrival" };
@@ -389,8 +401,9 @@ namespace cythilya.Areas.EShopper.Controllers
                     IsHigLight = true
                 }
             };
+            */
             #endregion
-
+            
             ViewBag.FeaturesProductList = featuresProductList;
         }
 
