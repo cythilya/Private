@@ -40,7 +40,7 @@ namespace cythilya.Areas.EShopper.Controllers
         public ActionResult Product(int ID = 0)
         {
             GetCategotyList();//取得商品類別
-            GetProductDetail();//取得特定商品資訊
+            GetProductDetail(ID);//取得特定商品資訊
             GetRecommendItemsList();//取得推薦商品列表
             GetMainTagList();//取得主要標籤列表
             GetTaggableProduct();//取得特定標籤的商品列表
@@ -224,7 +224,8 @@ namespace cythilya.Areas.EShopper.Controllers
         //取得特定商品資訊
         void GetProductDetail(int ID = 0) 
         {
-            /*
+            var Detail = db.Products.Find(ID);
+             /*
             var Detail = db.Products.Find(ID);
             ViewBag.ProductDetail = Detail;
             return null;
@@ -237,7 +238,7 @@ namespace cythilya.Areas.EShopper.Controllers
              */
 
             #region fake data - product detail
-
+            /*
             var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };
 
             var tag = new Tag() { ID = 1, Name = "New Arrival" };
@@ -265,7 +266,7 @@ namespace cythilya.Areas.EShopper.Controllers
                 IsSale = false,
                 IsHigLight = true
             };
-
+            */
             #endregion
 
             ViewBag.ProductDetail = Detail; 
