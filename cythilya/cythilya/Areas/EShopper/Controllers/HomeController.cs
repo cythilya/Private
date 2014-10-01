@@ -81,161 +81,32 @@ namespace cythilya.Areas.EShopper.Controllers
         //取得特定類別的商品
         void GetCategoryProduct(int ID = 0)
         {
-            #region fake data - product
-            var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };
+            var dbData = db.Products.ToList();
+            var ProductList = new List<Product>(){};
 
-            var tag = new Tag() { ID = 1, Name = "New Arrival" };
-            var tagList = new List<Tag>();
-            tagList.Add(tag);
-
-            var ProductList = new List<Product>()
+            foreach (var item in dbData)
             {
-                new Product()
+                if (item.ProductCategory.ID == ID)
                 {
-                    ID = 1, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "http://dummyimage.com/268x249/000/fff",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "tshirt",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = true
-                },
-                new Product()
-                {
-                    ID = 2, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "http://dummyimage.com/268x249/000/fff",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "blazers",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = false
-                },
-                new Product()
-                {
-                    ID = 3, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "http://dummyimage.com/268x249/000/fff",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "sunglass",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = true,
-                    IsHigLight = false
-                },
-                new Product()
-                {
-                    ID = 4, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "http://dummyimage.com/268x249/000/fff",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "kids",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = true
-                },
-                new Product()
-                {
-                    ID = 5, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "http://dummyimage.com/268x249/000/fff",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "poloshirt",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = false
-                },
-                new Product()
-                {
-                    ID = 6, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "http://dummyimage.com/268x249/000/fff",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "poloshirt",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = true,
-                    IsHigLight = false
+                    ProductList.Add(item);
                 }
-            };
-            #endregion
+            }
+
             ViewBag.ProductList = ProductList;
         }
 
         //取得特定商品資訊
-        void GetProductDetail(int ID = 0) 
+        public ActionResult GetProductDetail(int ID = 0) 
         {
             var Detail = db.Products.Find(ID);
-             /*
-            var Detail = db.Products.Find(ID);
-            ViewBag.ProductDetail = Detail;
-            return null;
 
             //if null, return to index
             if (Detail == null) 
             {
-                return RedirectToAction("Index", "Home");
+                return View("Index");
+                //return RedirectToAction("Index", "Home");
+                //return View("~/Areas/EShopper/Views/Home/Index.cshtml");
             }
-             */
 
             #region fake data - product detail
             /*
@@ -269,7 +140,8 @@ namespace cythilya.Areas.EShopper.Controllers
             */
             #endregion
 
-            ViewBag.ProductDetail = Detail; 
+            ViewBag.ProductDetail = Detail;
+            return null;
         }
 
         //取得輪播資料

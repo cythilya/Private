@@ -8,6 +8,9 @@
     ViewBag.Tab = detail.ProductCategory; ;
 }
 <style>
+.productDetail{
+    min-height: 710px;
+}    
 .selectItem
 {
     border: 1px solid #DEDEDC;
@@ -27,7 +30,7 @@
 			<div class="col-sm-3">
             @Html.Partial("~/Areas/EShopper/Views/Shared/_Sidebar.cshtml")
 			</div>
-            <div class="col-sm-9 padding-right">
+            <div class="productDetail col-sm-9 padding-right">
 				<div class="product-details">
 					<div class="col-sm-5">
 						<div class="view-product">
@@ -103,7 +106,6 @@
 						</div>
 					</div>
 				</div>
-					
 				<div class="category-tab shop-details-tab">
 					<div class="col-sm-12">
 						<ul class="nav nav-tabs">
@@ -204,7 +206,9 @@
 						</div>
 					</div>
 				</div>
+                @*
                 @Html.Partial("~/Areas/EShopper/Views/Shared/_RecommendItems.cshtml")
+                *@
 		    </div>
 		</div>
 	</div>
