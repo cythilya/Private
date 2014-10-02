@@ -85,8 +85,11 @@ namespace cythilya.Areas.EShopper.Controllers
 
         private bool ValidateUser(string account, string password)
         {
-            return true;
-            //throw new NotImplementedException();
+            var hash_pw = FormsAuthentication.HashPasswordForStoringInConfigFile(pwSalt + password, "SHA1");
+
+            var member = (from p in db.Members where p.Account == account && p.Password == hash_pw select p).FirstOrDefault();
+
+            return (member != null);
         }
 
         //執行會員登出
