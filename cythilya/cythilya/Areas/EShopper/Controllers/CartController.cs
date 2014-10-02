@@ -9,6 +9,22 @@ namespace cythilya.Areas.EShopper.Controllers
 {
     public class CartController : Controller
     {
+        MvcShoppingContext db = new MvcShoppingContext();
+
+        List<Cart> Carts
+        {
+            get 
+            {
+                if (Session["Carts"] == null)
+                {
+                    Session["Carts"] = new List<Cart>();
+                }
+                return (Session["Session"] as List<Cart>);
+            }
+            set { Session["Carts"] = value; }
+        
+        }
+
         /*
         功能：
          * 1. 加入購物車 
@@ -84,7 +100,29 @@ namespace cythilya.Areas.EShopper.Controllers
         [HttpPost]
         public ActionResult AddToCart(int ProductID, int Amount = 1)
         {
-            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            var product = db.Products.Find(ProductID);
+            var jsonObject = new { IsSuccess = false, ErrorMessage = "", ReturnData = "" };
+
+            if (product == null)
+            {
+                //return HttpNotFound();
+                jsonObject = new { IsSuccess = false, ErrorMessage = "Product is not found.", ReturnData = "" };
+            }
+            else 
+            {
+                var existingCart = this.Carts.FirstOrDefault(p => p.Product.ID == ProductID);
+
+                if (existingCart != null)
+                {
+                    existingCart.Amount += 1;
+                }
+                else
+                {
+                    this.Carts.Add(new Cart() { Product = product, Amount = Amount });
+                }
+                jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            }
+            
             return Json(jsonObject);
         }
 
