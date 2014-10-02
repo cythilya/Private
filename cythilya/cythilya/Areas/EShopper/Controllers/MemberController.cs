@@ -10,18 +10,49 @@ namespace cythilya.Areas.EShopper.Controllers
 {
     public class MemberController : Controller
     {
+        MvcShoppingContext db = new MvcShoppingContext();
+
         //會員註冊驗頁面
         public ActionResult Register()
         {
             return View();
         }
 
+        //密碼雜湊所需的Salt亂數值
+        private string pwSalt = "AlrySqloPe2Mh784QQwG6jRAfkdPpDa90J0i";
+
         //寫入會員資料
         [HttpPost]
-        public ActionResult Register([Bind(Exclude = "RegisterOn")] Member member)
+        public ActionResult Register([Bind(Exclude = "RegisterOn, AuthCode")] Member member)
         {
-            return RedirectToAction("Index", "Home");
-            //return View();
+            //檢查會員是否存在
+            var chk_member = db.Members.Where(p => p.Account == member.Account).FirstOrDefault();
+
+            if (chk_member != null)
+            {
+                ModelState.AddModelError("Account", "This account has been registered. Please enter another one or login.");
+            }
+
+            if (ModelState.IsValid)
+            {
+                //將密碼加鹽後進行雜湊運算,以提升會員密碼的安全性
+                member.Password = FormsAuthentication.HashPasswordForStoringInConfigFile(pwSalt + member.Password, "SHA1");
+
+                //會員註冊時間
+                member.RegisterOn = DateTime.UtcNow;
+
+                //會員驗證碼,採用GUID當成驗證碼的內容,避免使用到重覆的驗證碼
+                member.AuthCode = Guid.NewGuid().ToString();
+
+                db.Members.Add(member);
+                db.SaveChanges();
+
+                return RedirectToAction("Index", "Home");
+            }
+            else 
+            {
+                return View();
+            }
         }
 
         //顯示會員登入頁面
