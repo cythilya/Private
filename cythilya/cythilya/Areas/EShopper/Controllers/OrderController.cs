@@ -29,6 +29,12 @@ namespace cythilya.Areas.EShopper.Controllers
         //顯示完成訂單的表單頁面
         public ActionResult Complete() 
         {
+            //若使用者尚未註冊,將使用者導向註冊畫面
+            if (member == null)
+            {
+                return RedirectToAction("Register", "Member");
+            }
+
             //取得已註冊使用者的資料
             if (User.Identity.IsAuthenticated)
             {
@@ -42,12 +48,6 @@ namespace cythilya.Areas.EShopper.Controllers
         public ActionResult Complete(string Account, string Email, string ShipperName, string ShipperAddress, string ShipperMobile)
         {
             var member = db.Members.Where(p => p.Account == User.Identity.Name).FirstOrDefault();
-
-            //若使用者尚未註冊,將使用者導向註冊畫面
-            if (member == null)
-            {
-                return RedirectToAction("Register", "Home");
-            }
 
             //購物車若無需要結帳的商品,將使用者導向首頁
             if (this.Carts.Count == 0) 
