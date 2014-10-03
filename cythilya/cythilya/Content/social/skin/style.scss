@@ -32,11 +32,20 @@
 	}
 
 	#loginArea{
-		min-height: 690px;
-		
 		.block{
 			margin-bottom: 30px;
 			display: block;
+		}
+		
+		.formLoginLogout{
+			tr{
+				td{
+					border: 1px solid #000;
+					padding: 10px;
+					text-align:center;
+				}
+			}
+			
 		}
 	}
 }

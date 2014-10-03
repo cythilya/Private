@@ -28,10 +28,12 @@
   word-break: break-all;
   float: left;
 }
-.socialDemo #loginArea {
-  min-height: 690px;
-}
 .socialDemo #loginArea .block {
   margin-bottom: 30px;
   display: block;
+}
+.socialDemo #loginArea .formLoginLogout tr td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
 }

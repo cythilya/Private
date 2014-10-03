@@ -4,6 +4,11 @@
     Layout = "~/Areas/Social/Views/Shared/_LayoutFacebook.cshtml";
     //ViewBag.SharedImage = ""; 
 }
+<style>
+#page-content{
+    min-height: 690px;
+}
+</style>
 <div id="page-content" class="cf">        	
 	<div id="pageIndex" class="entry-content cf">
         <div id="loginArea">
@@ -29,6 +34,32 @@
                 <br>
                 <a href="#" class="btnLogout">Logout</a>
             </div>
+            <hr>
+            <h2 class="heading">比較表</h2>
+            <table class="formLoginLogout">
+                <tr>
+                    <td></td>
+                    <td>Login - Login Button</td>
+                    <td>Login - Customed Login</td>
+                    <td>Login - FB.login()</td>
+                    <td>Logout - FB.logout()</td>
+                </tr>
+                <tr>
+                    <td>是否可要求權限</td>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>是否可指定導頁</td>
+                    <td>X</td>
+                    <td>O</td>
+                    <td>O</td>
+                    <td>O</td>
+                </tr>
+            </table>
+
         </div>
     </div>
 </div>
