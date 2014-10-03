@@ -27,5 +27,11 @@ namespace cythilya.Areas.EShopper.Models
         [Range(1, 10000000, ErrorMessage = "商品價格必須介於1~10000000之間")]
         [DataType(DataType.Currency)]
         public int Price { get; set; }
+        
+        /*
+        [DisplayName("訂購數量")]
+        [Required]
+        public int Amount { get; set; }
+        */
     }
 }
