@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using cythilya.Areas.EShopper.Models;
+using System.Net.Mail;
 
 namespace cythilya.Areas.EShopper.Controllers
 {
@@ -47,11 +48,48 @@ namespace cythilya.Areas.EShopper.Controllers
                 db.Members.Add(member);
                 db.SaveChanges();
 
+                SendAuthCodeToMember(member);
+
                 return RedirectToAction("Index", "Home");
             }
             else 
             {
                 return View();
+            }
+        }
+
+        private void SendAuthCodeToMember(Member member)
+        {
+            string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/MemberRegisterEmailTemplate.html"));
+
+            mailBody = mailBody.Replace("{{Name}}", member.Name);
+            mailBody = mailBody.Replace("{{RegisterOn}}", member.RegisterOn.ToString("F"));
+            var auth_url = new UriBuilder(Request.Url)
+            {
+                Path = Url.Action("ValidateRegister", new { id = member.AuthCode }),
+                Query = ""
+            };
+            mailBody = mailBody.Replace("{{AUTH_URL}}", auth_url.ToString());
+
+            try
+            {
+                SmtpClient SmtpServer = new SmtpClient("smpt.gmail.com");
+                SmtpServer.Port = 465;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("cythilya@gmail.com", "liardice.,1024");
+                SmtpServer.EnableSsl = true;
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("cythilya@gmail.com");
+                mail.To.Add(member.Email);
+                mail.Subject = "EShopper會員認證信";
+                mail.Body = mailBody;
+                mail.IsBodyHtml = true;
+
+                SmtpServer.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 

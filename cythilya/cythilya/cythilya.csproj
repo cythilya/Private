@@ -193,6 +193,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
     <Content Include="Content\css\validationEngine.jquery.css" />
     <Content Include="Content\eshopper\css\animate.css" />
     <Content Include="Content\eshopper\css\bootstrap.min.css" />
@@ -969,7 +970,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Areas\SEOLab\Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -29,6 +29,8 @@ namespace cythilya.Areas.EShopper.Controllers
         //顯示完成訂單的表單頁面
         public ActionResult Complete() 
         {
+            var member = db.Members.Where(p => p.Account == User.Identity.Name).FirstOrDefault();
+
             //若使用者尚未註冊,將使用者導向註冊畫面
             if (member == null)
             {
