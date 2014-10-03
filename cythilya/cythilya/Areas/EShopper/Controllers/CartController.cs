@@ -42,6 +42,7 @@ namespace cythilya.Areas.EShopper.Controllers
         public ActionResult Index()
         {
             #region fake data - product
+            /*
             var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };
 
             var tag = new Tag() { ID = 1, Name = "New Arrival" };
@@ -85,7 +86,8 @@ namespace cythilya.Areas.EShopper.Controllers
                 IsSale = false,
                 IsHigLight = false            
             };
-            #endregion
+            
+            
 
             var data = new List<Cart>() 
             { 
@@ -100,8 +102,10 @@ namespace cythilya.Areas.EShopper.Controllers
                     Amount = 1
                 }
             };
+            */
+            #endregion
 
-            return View(data);
+            return View(this.Carts);
         }
 
         //加入購物車
