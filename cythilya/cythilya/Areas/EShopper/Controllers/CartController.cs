@@ -142,7 +142,18 @@ namespace cythilya.Areas.EShopper.Controllers
         [HttpPost]
         public JsonResult Remove(int ID = 0)
         {
-            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            var existingCart = this.Carts.FirstOrDefault(p => p.Product.ID == ID);
+            var jsonObject = new { IsSuccess = false, ErrorMessage = "", ReturnData = "" };
+
+            if (existingCart != null)
+            {
+                this.Carts.Remove(existingCart);
+                jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            }
+            else 
+            {
+                jsonObject = new { IsSuccess = false, ErrorMessage = "Remove item failed.", ReturnData = "" };
+            }
             return Json(jsonObject);
         }
 
