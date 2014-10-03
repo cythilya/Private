@@ -157,11 +157,13 @@ namespace cythilya.Areas.EShopper.Controllers
             return Json(jsonObject);
         }
 
-        //更新購物車中特定項目的購買數量
+        //更新購物車中特定項目的購買數量,暫不實作
+        /*
         [HttpPost]
         public ActionResult UpdateAmount(int ProductID, int NewAmount)
         {
             return View();        
         }
+        */
     }
 }
