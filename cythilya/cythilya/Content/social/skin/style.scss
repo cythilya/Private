@@ -1,37 +1,14 @@
-#SocialDemoFB{
-	div#main {
-		min-height: 775px;
-	} 
-	
-	#taggableFriends{
-		.message{
-			display: none;
-		}
-		.control{
-			.btnFBLogin{
-				background: url(btn_login_s.png) no-repeat;
-				width: 100px;
-				height: 46px;
-				display: block;
-				text-indent: 100%;
-				white-space: nowrap;
-				overflow: hidden;
-			}
-			.btnShare{
-				display: none;
-			}
-		}
-		.friendList{
-			display: none;
-			margin-top: 30px;
-			
-			.friend {
-				border: 1px solid #666;
-				float: left;
-				width: 200px;
-				height: 50px;
-				margin: 0 20px 20px 0;
-			}
+.socialDemo{
+	.message {margin-left: 5px;}
+	.friendList {
+		margin-top: 20px;
+		
+		.friend {
+			border: 1px solid #666;
+			float: left;
+			width: 200px;
+			height: 50px;
+			margin: 0 20px 20px 0;
 			
 			img {
 				display: block;
@@ -50,9 +27,19 @@
 				word-wrap: break-word;
 				word-break: break-all;
 				float: left;
-			}			
+			}
 		}
 	}
-	
-	
+
+	#loginArea{
+		min-height: 690px;
+		
+		.block{
+			margin-bottom: 30px;
+			display: block;
+		}
+	}
 }
+
+
+

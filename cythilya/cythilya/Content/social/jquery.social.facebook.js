@@ -132,7 +132,57 @@ SocialDemo.module = {
 				});
 			}, {scope: 'publish_actions'});	
 		});		
-    }
+    },
+	loginArea: function(dModule){
+		var dModule = $(dModule);
+		var dBtnFBLogin = dModule.find('.btnFBLogin');
+		var dFacebookLogin = dModule.find('.btnFBLibraryLogin');
+		var dBtnLogout = dModule.find('.btnLogout');
+		
+		//Customed Login
+		dBtnFBLogin.click(function(e){
+			e.preventDefault();
+			var appid = '698238793579627';
+			var redirect = 'https://www.facebook.com/dialog/oauth?client_id='+appid+'&redirect_uri=http://cythilya.apphb.com/Social/Facebook/FacebookLogin';
+			location.href = redirect;
+		});
+		
+		//FB.login()
+		dFacebookLogin.click(function(e){
+			e.preventDefault();
+			
+			FB.getLoginStatus(function(response) {
+				if (response.status === 'connected') {
+					// the user is logged in and has authenticated your app,
+					// and response.authResponse supplies
+					// the user's ID, a valid access token, a signed request, 
+					// and the time the access token and signed request each expire	
+					console.log('Logged in.');
+				}
+				else if (response.status === 'not_authorized') {
+					// the user is logged in to Facebook, but has not authenticated the app
+				}					
+				else {
+					//response.status === 'unknown'
+					// the user isn't logged in to Facebook.
+					FB.login();
+				}
+			});
+		});
+		
+		//FB.logout()
+		dBtnLogout.click(function(e){
+			e.preventDefault();
+			
+			FB.getLoginStatus(function(response) {
+				if (response.status === 'connected') {
+					FB.logout(function(res){
+						location.reload();
+					});
+				}
+			});
+		});
+	}
 };
 (function(){
     var doWhileExist = function(ModuleID,objFunction){
@@ -142,4 +192,5 @@ SocialDemo.module = {
         }                
     };
     doWhileExist('taggableFriends',SocialDemo.module.taggableFriends);
+    doWhileExist('loginArea',SocialDemo.module.loginArea);
 })();

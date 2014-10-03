@@ -6,14 +6,29 @@
 }
 <div id="page-content" class="cf">        	
 	<div id="pageIndex" class="entry-content cf">
-        <h2 class="heading">Login</h2>
-        <div id="taggableFriends">
-            <p class="message"></p>
-            <div class="control">
-                <a href="#" class="btnFBLogin"></a>
-                <a href="#" class="btnShare link-button blue">Share with Taggable Friends</a>
+        <div id="loginArea">
+            <h2 class="heading">Login</h2>
+            <div class="block loginButton">
+                <h3>Login Button</h3>
+                <br>
+                <div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="true"></div>
             </div>
-            <div class="friendList clearfix"></div>
+            <div class="block customedLogin">
+                <h3>Customed Login</h3>
+                <br>
+                <a href="#" class="btnFBLogin">Click Me to Login Facebook</a>
+            </div>
+            <div class="block fbLibraryLogin">
+                <h3>FB.login()</h3>
+                <br>
+                <a href="#" class="btnFBLibraryLogin">Click Me to Login Facebook</a>
+            </div>
+            <h2 class="heading">Logout</h2>
+            <div class="block logout">
+                <h3>FB.logout()</h3>
+                <br>
+                <a href="#" class="btnLogout">Logout</a>
+            </div>
         </div>
     </div>
 </div>
