@@ -9,6 +9,14 @@ namespace cythilya.Areas.EShopper.Controllers
 {
     public class CartController : Controller
     {
+        //On*6
+        /*
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            base.OnActionExecuting(filterContext);
+        }
+         * */
+
         MvcShoppingContext db = new MvcShoppingContext();
 
         List<Cart> Carts
@@ -19,7 +27,7 @@ namespace cythilya.Areas.EShopper.Controllers
                 {
                     Session["Carts"] = new List<Cart>();
                 }
-                return (Session["Session"] as List<Cart>);
+                return (Session["Carts"] as List<Cart>);
             }
             set { Session["Carts"] = value; }
         

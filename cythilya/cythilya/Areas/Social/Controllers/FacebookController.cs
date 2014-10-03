@@ -8,9 +8,7 @@ namespace cythilya.Areas.Social.Controllers
 {
     public class FacebookController : Controller
     {
-        //
-        // GET: /Social/Facebook/
-
+        //範例功能與文章列表
         public ActionResult Index()
         {
             return View();
@@ -20,7 +18,13 @@ namespace cythilya.Areas.Social.Controllers
         public ActionResult TaggableFriends() 
         {
             return View();
-        } 
+        }
+
+        //Login Button, Customed Login, FB.Login()
+        public ActionResult FacebookLogin() 
+        {
+            return View();
+        }
 
         //
         // GET: /Social/Facebook/Details/5

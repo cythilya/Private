@@ -1027,6 +1027,7 @@
     <Content Include="Areas\EShopper\Views\Order\Complete.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_Carousel.cshtml" />
     <Content Include="Areas\SEOLab\Views\SEOLab\AngularJSSEO.cshtml" />
+    <Content Include="Areas\Social\Views\Facebook\FacebookLogin.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
