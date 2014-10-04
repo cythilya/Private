@@ -11,6 +11,10 @@
     @Html.ValidationSummary(true)
     *@
 	<h2>Login to your account</h2>
+    if (TempData["LastTempMessage"] != null)
+    {
+        <h5>@TempData["LastTempMessage"]</h5> 
+    }
     <label>Account</label>
     @Html.EditorFor(model => model.Account)
     @Html.ValidationMessageFor(model => model.Account)

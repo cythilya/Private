@@ -58,6 +58,7 @@ namespace cythilya.Areas.EShopper.Controllers
             }
         }
 
+        //發送驗證信
         private void SendAuthCodeToMember(Member member)
         {
             string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/MemberRegisterEmailTemplate.html"));
@@ -91,6 +92,29 @@ namespace cythilya.Areas.EShopper.Controllers
             {
                 throw ex;
             }
+        }
+
+        public ActionResult ValidateRegister(string id) 
+        {
+            if (String.IsNullOrEmpty(id))
+            {
+                return HttpNotFound();
+            }
+
+            var member = db.Members.Where(p => p.AuthCode == id).FirstOrDefault();
+
+            if (member != null)
+            {
+                TempData["LastTempMessage"] = "Account confirmation done. Please login.";
+                member.AuthCode = null;
+                db.SaveChanges();
+            }
+            else 
+            {
+                TempData["LastTempMessage"] = "Member not found or already confirmed(lease login).";
+            }
+
+            return RedirectToAction("Login", "Member");
         }
 
         //顯示會員登入頁面
