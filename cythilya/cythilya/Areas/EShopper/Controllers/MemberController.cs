@@ -63,7 +63,7 @@ namespace cythilya.Areas.EShopper.Controllers
             string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/MemberRegisterEmailTemplate.html"));
 
             mailBody = mailBody.Replace("{{Name}}", member.Name);
-            mailBody = mailBody.Replace("{{RegisterOn}}", member.RegisterOn.ToString("F"));
+            //mailBody = mailBody.Replace("{{RegisterOn}}", member.RegisterOn.ToString());
             var auth_url = new UriBuilder(Request.Url)
             {
                 Path = Url.Action("ValidateRegister", new { id = member.AuthCode }),
@@ -73,15 +73,15 @@ namespace cythilya.Areas.EShopper.Controllers
 
             try
             {
-                SmtpClient SmtpServer = new SmtpClient("smpt.gmail.com");
-                SmtpServer.Port = 465;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("cythilya@gmail.com", "liardice.,1024");
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("eshoppertw@gmail.com", "liardice.,1024");
                 SmtpServer.EnableSsl = true;
 
                 MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("cythilya@gmail.com");
+                mail.From = new MailAddress("eshoppertw@gmail.com");
                 mail.To.Add(member.Email);
-                mail.Subject = "EShopper會員認證信";
+                mail.Subject = "EShopper Account Confirmation";
                 mail.Body = mailBody;
                 mail.IsBodyHtml = true;
 
