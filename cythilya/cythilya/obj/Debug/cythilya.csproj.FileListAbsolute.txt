@@ -136,3 +136,7 @@ E:\private\Private\cythilya\cythilya\bin\zh-Hant\WebMatrix.WebData.resources.dll
 E:\private\Private\cythilya\cythilya\obj\Debug\cythilya.csprojResolveAssemblyReference.cache
 E:\private\Private\cythilya\cythilya\obj\Debug\cythilya.dll
 E:\private\Private\cythilya\cythilya\obj\Debug\cythilya.pdb
+D:\Git\Private\cythilya\cythilya\bin\PagedList.dll
+D:\Git\Private\cythilya\cythilya\bin\PagedList.Mvc.dll
+D:\Git\Private\cythilya\cythilya\bin\PagedList.xml
+D:\Git\Private\cythilya\cythilya\bin\PagedList.Mvc.xml

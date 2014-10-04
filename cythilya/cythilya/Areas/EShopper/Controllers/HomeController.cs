@@ -4,13 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using cythilya.Areas.EShopper.Models;
+using PagedList;
 
 namespace cythilya.Areas.EShopper.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        MvcShoppingContext db = new MvcShoppingContext();
-
         #region View
 
         //首頁
@@ -23,7 +22,7 @@ namespace cythilya.Areas.EShopper.Controllers
             GetMainTagList();//取得主要標籤列表
             GetTaggableProduct();//取得特定標籤的商品列表
             GetRecommendItemsList();//取得推薦商品列表
-            //GetAllProducts();//取得所有商品
+            GetAllProducts();//取得所有商品
             return View();
         }
 
@@ -91,7 +90,6 @@ namespace cythilya.Areas.EShopper.Controllers
                     ProductList.Add(item);
                 }
             }
-
             ViewBag.ProductList = ProductList;
         }
 

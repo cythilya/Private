@@ -10,12 +10,12 @@ namespace cythilya.Areas.EShopper.Models
     public class MemberLoginViewModel
     {
         [DisplayName("Account")]
-        [Required(ErrorMessage="Enter Account?")]
+        [Required(ErrorMessage="forget account?")]
         public string Account { get; set; }
 
         [DisplayName("Password")]
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "Enter Password?")]
+        [Required(ErrorMessage = "forget password?")]
         public string Password { get; set; }
 
     }

@@ -8,24 +8,8 @@ using cythilya.Areas.EShopper.Models;
 namespace cythilya.Areas.EShopper.Controllers
 {
     //[Authorize] //必須登入會雸才能使用訂單結帳功能
-    public class OrderController : Controller
+    public class OrderController : BaseController
     {
-        MvcShoppingContext db = new MvcShoppingContext();
-
-        List<Cart> Carts
-        {
-            get
-            {
-                if (Session["Carts"] == null)
-                {
-                    Session["Carts"] = new List<Cart>();
-                }
-                return (Session["Carts"] as List<Cart>);
-            }
-            set { Session["Carts"] = value; }
-
-        }
-
         //顯示完成訂單的表單頁面
         public ActionResult Complete() 
         {

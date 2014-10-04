@@ -36,6 +36,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -161,6 +167,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\EShopper\Controllers\BaseController.cs" />
     <Compile Include="Areas\EShopper\Controllers\CartController.cs" />
     <Compile Include="Areas\EShopper\Controllers\HomeController.cs" />
     <Compile Include="Areas\EShopper\Controllers\MemberController.cs" />
@@ -289,6 +296,7 @@
     <Content Include="Content\me\img\blog\JavaScript_SEO_188x73.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_300.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_940x367.jpg" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\seo_lab\css\style_anjularjs.css" />
     <Content Include="Content\seo_lab\js\script_anjularjs.js" />
     <Content Include="Content\social\jquery.social.facebook.js" />
@@ -1027,6 +1035,7 @@
     <Content Include="Areas\EShopper\Views\Shared\_Carousel.cshtml" />
     <Content Include="Areas\SEOLab\Views\SEOLab\AngularJSSEO.cshtml" />
     <Content Include="Areas\Social\Views\Facebook\FacebookLogin.cshtml" />
+    <Content Include="Areas\EShopper\Views\Shared\_AllProducts.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />

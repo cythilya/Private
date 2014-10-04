@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace cythilya.Areas.EShopper.Models
 {
@@ -17,6 +18,7 @@ namespace cythilya.Areas.EShopper.Models
         //會員登入帳號
         [DisplayName("會員登入帳號")]
         [Required(ErrorMessage = "Please enter account")]
+        [Remote("CheckUp", "Member", HttpMethod="POST", ErrorMessage="This account has been registered.")]
         public string Account { get; set; }
         
         //Email

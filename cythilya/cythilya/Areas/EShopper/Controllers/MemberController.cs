@@ -9,10 +9,8 @@ using System.Net.Mail;
 
 namespace cythilya.Areas.EShopper.Controllers
 {
-    public class MemberController : Controller
+    public class MemberController : BaseController
     {
-        MvcShoppingContext db = new MvcShoppingContext();
-
         //會員註冊驗頁面
         public ActionResult Register()
         {
@@ -183,6 +181,21 @@ namespace cythilya.Areas.EShopper.Controllers
             //登出後回到首頁
             var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
             return Json(jsonObject);
+        }
+
+        [HttpPost]
+        public ActionResult CheckUp(string Account) 
+        {
+            var member = db.Members.Where(p => p.Account == Account).FirstOrDefault();
+
+            if (member != null)
+            {
+                return Json(false);
+            }
+            else 
+            {
+                return Json(true);
+            }
         }
     }
 }

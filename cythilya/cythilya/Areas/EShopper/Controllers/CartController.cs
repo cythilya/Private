@@ -7,7 +7,7 @@ using cythilya.Areas.EShopper.Models;
 
 namespace cythilya.Areas.EShopper.Controllers
 {
-    public class CartController : Controller
+    public class CartController : BaseController
     {
         //On*6
         /*
@@ -16,22 +16,6 @@ namespace cythilya.Areas.EShopper.Controllers
             base.OnActionExecuting(filterContext);
         }
          * */
-
-        MvcShoppingContext db = new MvcShoppingContext();
-
-        List<Cart> Carts
-        {
-            get 
-            {
-                if (Session["Carts"] == null)
-                {
-                    Session["Carts"] = new List<Cart>();
-                }
-                return (Session["Carts"] as List<Cart>);
-            }
-            set { Session["Carts"] = value; }
-        
-        }
 
         /*
         功能：
