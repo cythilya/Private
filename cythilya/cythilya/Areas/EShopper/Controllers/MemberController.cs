@@ -94,6 +94,7 @@ namespace cythilya.Areas.EShopper.Controllers
             }
         }
 
+        //會員經由驗證信導回網站做驗證的動作
         public ActionResult ValidateRegister(string id) 
         {
             if (String.IsNullOrEmpty(id))
@@ -145,13 +146,29 @@ namespace cythilya.Areas.EShopper.Controllers
             return View();
         }
 
+        //確認會員是否通過Email驗證
         private bool ValidateUser(string account, string password)
         {
             var hash_pw = FormsAuthentication.HashPasswordForStoringInConfigFile(pwSalt + password, "SHA1");
 
             var member = (from p in db.Members where p.Account == account && p.Password == hash_pw select p).FirstOrDefault();
 
-            return (member != null);
+            if (member != null)
+            {
+                if (member.AuthCode == null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else 
+            {
+                ModelState.AddModelError("", "Incorrect account or password.");
+                return false;
+            }
         }
 
         //執行會員登出
