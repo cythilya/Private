@@ -296,6 +296,11 @@
     <Content Include="Content\me\img\blog\JavaScript_SEO_188x73.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_300.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_940x367.jpg" />
+    <Content Include="Content\me\img\project\grapeking\grapeking_about_940.png" />
+    <Content Include="Content\me\img\project\grapeking\grapeking_index.png" />
+    <Content Include="Content\me\img\project\grapeking\grapeking_index_188x73.png" />
+    <Content Include="Content\me\img\project\grapeking\grapeking_index_300.png" />
+    <Content Include="Content\me\img\project\grapeking\grapeking_index_940x367.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\seo_lab\css\style_anjularjs.css" />
     <Content Include="Content\seo_lab\js\script_anjularjs.js" />
@@ -1047,6 +1052,7 @@
     <Content Include="Views\Me\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Portfolio.cshtml" />
     <Content Include="Views\Me\Project.cshtml" />
+    <None Include="Content\me\img\project\grapeking\Thumbs.db" />
     <None Include="Content\me\js\poshytip-1.1\demo\includes\Thumbs.db" />
     <None Include="Content\me\js\prettyPhoto\images\prettyPhoto\light_rounded\Thumbs.db" />
     <None Include="Content\me\js\prettyPhoto\images\prettyPhoto\light_square\Thumbs.db" />

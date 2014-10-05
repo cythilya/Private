@@ -184,7 +184,7 @@ namespace cythilya.Controllers
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
             article_11.isHighlight = true;
             articleList.Add(article_11);
-            
+
             #endregion
 
             articleList.Reverse();
@@ -535,8 +535,43 @@ namespace cythilya.Controllers
             projList.Add(proj_7);
             #endregion 
 
+            #region 葡萄王LGG特益菌 x Friendo 粉多任務
+            MeModels.Project proj_8 = new MeModels.Project();
+            proj_8.ID = 8;
+            proj_8.Name = "葡萄王LGG特益菌 x Friendo 粉多任務";
+            proj_8.Description = "葡萄王生技與粉多任務合作的活動網站。";
+            proj_8.URL = "/Me/Project?id=8";
+            proj_8.RawPic = "/Content/me/img/project/grapeking/grapeking_index.png";
+            proj_8.PicSmall = "/Content/me/img/project/grapeking/grapeking_index_188x73.png";
+            proj_8.PicMedium = "/Content/me/img/project/grapeking/grapeking_index_300.png";
+            proj_8.PicLarge = "/Content/me/img/project/grapeking/grapeking_index_940x367.png";
+            proj_8.Order = 8;
+            proj_8.Client = "葡萄王生技";
+            proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
+            proj_8.Date = "Oct. 2014";
+            proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
+            proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。</p>";
+            proj_8.isHighlight = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_8_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_8_snap_2 = new MeModels.SnapshotInfo();
+
+            proj_8_snap_1.Name = "葡萄王LGG特益菌 - 黃金三兄弟賽運占卜";
+            proj_8_snap_1.SnapshotURL = "/Content/me/img/project/grapeking/grapeking_index_940.png";
+
+            proj_8_snap_2.Name = "葡萄王LGG特益菌 - 順暢小密技";
+            proj_8_snap_2.SnapshotURL = "/Content/me/img/project/grapeking/grapeking_about_940.png";
+
+            SnapshotList8.Add(proj_8_snap_1);
+            SnapshotList8.Add(proj_8_snap_2);
+            proj_8.Snapshot = SnapshotList8;
+
+            projList.Add(proj_8);
             #endregion
-            
+
+            #endregion
+
             ViewBag.ProjList = projList;
             return projList;
         }
