@@ -570,6 +570,36 @@ namespace cythilya.Controllers
             projList.Add(proj_8);
             #endregion
 
+            #region Hello! Mip
+            MeModels.Project proj_9 = new MeModels.Project();
+            proj_9.ID = 9;
+            proj_9.Name = "Hello! Mip x Friendo 粉多任務";
+            proj_9.Description = "Hello! Mip與粉多任務合作的活動網站。";
+            proj_9.URL = "/Me/Project?id=9";
+            proj_9.RawPic = "/Content/me/img/project/hellomip/hellomip_index.png";
+            proj_9.PicSmall = "/Content/me/img/project/hellomip/hellomip_index_188x73.png";
+            proj_9.PicMedium = "/Content/me/img/project/hellomip/hellomip_index_300.png";
+            proj_9.PicLarge = "/Content/me/img/project/hellomip/hellomip_index_940x367.png";
+            proj_9.Order = 9;
+            proj_9.Client = "";
+            proj_9.ClientURL = "";
+            proj_9.Date = "Oct. 2014";
+            proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
+            proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。</p>";
+            proj_9.isHighlight = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList9 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_9_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_9_snap_1.Name = "Hello! Mip - 3C控請入席。HELLO MiP、TAKARATOMY、兩輪式行走機器人、翹孤輪機器人。";
+            proj_9_snap_1.SnapshotURL = "/Content/me/img/project/hellomip/hellomip_index_940.png";
+
+            SnapshotList9.Add(proj_9_snap_1);
+            proj_9.Snapshot = SnapshotList9;
+
+            projList.Add(proj_9);
+            #endregion
+
             #endregion
 
             ViewBag.ProjList = projList;
