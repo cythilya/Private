@@ -87,7 +87,7 @@ ESHOPPER.module = {
 			
 			if(flagUserInfoForm && flagDeliveryInfo){
 				$.ajax({
-					url: '/EShopper/Order/Complete',
+				    url: '/EShopper/Order/CompleteOrder',
 					type: 'post',
 					data: {
 						'Account' : dUserInfoForm.find('.account').val(),
@@ -105,7 +105,8 @@ ESHOPPER.module = {
 							location.href = '/EShopper/Home/Index';
 						}
 						else{
-							alert('Order failed. Please try again later.');
+							alert(response.ErrorMessage);
+							//alert('Order failed. Please try again later.');
 						}
 					}
 				});				
@@ -128,7 +129,7 @@ ESHOPPER.module = {
 			
 			if(flagUserInfoForm && flagDeliveryInfo){
 				$.ajax({
-					url: '/EShopper/Order/Complete',
+				    url: '/EShopper/Order/CompleteOrder',
 					type: 'post',
 					data: {
 						'Account' : dUserRegisterForm.find('.account').val(),
@@ -146,7 +147,8 @@ ESHOPPER.module = {
 							location.href = '/EShopper/Home/Index';
 						}
 						else{
-							alert('Order failed. Please try again later.');
+							alert(response.ErrorMessage);
+							//alert('Order failed. Please try again later.');
 						}
 					}
 				});				

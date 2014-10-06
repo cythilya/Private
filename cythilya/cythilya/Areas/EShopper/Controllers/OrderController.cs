@@ -30,15 +30,17 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //將訂單資料與購物車資料寫入資料庫
-        [HttpPost]
-        public ActionResult Complete(string Account, string Email, string ShipperName, string ShipperAddress, string ShipperMobile)
+        public ActionResult CompleteOrder(string Account, string Email, string ShipperName, string ShipperAddress, string ShipperMobile)
         {
             var member = db.Members.Where(p => p.Account == User.Identity.Name).FirstOrDefault();
+            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
 
-            //購物車若無需要結帳的商品,將使用者導向首頁
+            //購物車若無需要結帳的商品,回傳錯誤訊息給使用者
             if (this.Carts.Count == 0) 
             {
-                return View("~/Areas/EShopper/Views/Home/Index.cshtml");
+                //訂單失敗
+                jsonObject = new { IsSuccess = false, ErrorMessage = "Cart is empty. Nothing needs to checkout.", ReturnData = "" };
+                return Json(jsonObject);
             }
 
             //將訂單資料與購物車資料寫入資料庫
@@ -81,7 +83,7 @@ namespace cythilya.Areas.EShopper.Controllers
             this.Carts.Clear();
 
             //訂單完成
-            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
             return Json(jsonObject);
         }
 
