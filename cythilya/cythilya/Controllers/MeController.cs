@@ -600,6 +600,36 @@ namespace cythilya.Controllers
             projList.Add(proj_9);
             #endregion
 
+            #region Hello! Mip
+            MeModels.Project proj_10 = new MeModels.Project();
+            proj_10.ID = 10;
+            proj_10.Name = "全家Fami霜淇淋 - 小小特務送幸福";
+            proj_10.Description = "只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福。";
+            proj_10.URL = "/Me/Project?id=10";
+            proj_10.RawPic = "/Content/me/img/project/eventfamily/fami_index.png";
+            proj_10.PicSmall = "/Content/me/img/project/eventfamily/fami_index_188x73.png";
+            proj_10.PicMedium = "/Content/me/img/project/eventfamily/fami_index_300.png";
+            proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.png";
+            proj_10.Order = 10;
+            proj_10.Client = "";
+            proj_10.ClientURL = "";
+            proj_10.Date = "Sept. 2014";
+            proj_10.LauchURL = "";
+            proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph Api)。</p>";
+            proj_10.isHighlight = false;
+
+            List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_10_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_10_snap_1.Name = "全家Fami霜淇淋 - 小小特務送幸福";
+            proj_10_snap_1.SnapshotURL = "/Content/me/img/project/eventfamily/fami_index_940.png";
+
+            SnapshotList10.Add(proj_10_snap_1);
+            proj_10.Snapshot = SnapshotList10;
+
+            projList.Add(proj_10);
+            #endregion
+
             #endregion
 
             ViewBag.ProjList = projList;
