@@ -185,6 +185,18 @@ namespace cythilya.Controllers
             article_11.isHighlight = true;
             articleList.Add(article_11);
 
+            //Facebook Product Introduction
+            MeModels.Article article_12 = new MeModels.Article();
+            article_12.Name = "Facebook Product Introduction";
+            article_12.Description = "Facebook產品總整理與功能說明(Social Plugins、Sharing、其他UI功能應用、Graph API功能應用、og相關、權限相關、成效衡量)。";
+            article_12.URL = "http://bit.ly/ZyYSYx";
+            article_12.RawPic = "/Content/me/img/blog/facebook_product_introduction_940x367.jpg";
+            article_12.PicSmall = "/Content/me/img/blog/facebook_product_introduction_188x73.jpg";
+            article_12.PicMedium = "/Content/me/img/blog/facebook_product_introduction_300.jpg";
+            article_12.PicLarge = "/Content/me/img/blog/facebook_product_introduction_940x367.jpg";
+            article_12.isHighlight = false;
+            articleList.Add(article_12);
+
             #endregion
 
             articleList.Reverse();
