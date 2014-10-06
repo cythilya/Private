@@ -289,6 +289,9 @@
     <Content Include="Content\js\jquery.cookie.js" />
     <Content Include="Content\js\jquery.validationEngine-en.js" />
     <Content Include="Content\js\jquery.validationEngine.js" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction_188x73.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction_300.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction_940x367.jpg" />	
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_188x73.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_940x367.jpg" />
