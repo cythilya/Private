@@ -200,7 +200,7 @@ namespace cythilya.Controllers
             //Facebook Product Introduction
             MeModels.Article article_13 = new MeModels.Article();
             article_13.Name = "2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名";
-            article_13.Description = "2013年的SEO Rankgin Factors著重於頁面優化、如何呈現好的內容與社群平台的散播。與2013相較，2014年最大的不同在於CTR變成SERPs排行中最重要的因子，並強調了使用者的動向(User Signals)，除了CTR還有使用者停留時間(Time on Site)、跳出率(Bounse Rate)、更全面性的評估，例如相關詞彙(Relevant Terms)、網站速度(Site Speed)。而再來便沒有太大變化(即基本功)，依然是SNS、Semantic Web、網站架構與技術等(可參考從搜尋到社群 - Semantics、Rich Snippets、Social Meta Tags)。";
+            article_13.Description = "2013年的SEO Rankgin Factors著重於頁面優化、如何呈現好的內容與社群平台的散播。與2013相較，2014年最大的不同在於CTR變成SERPs排行中最重要的因子，並強調了使用者的動向(User Signals)，除了CTR還有使用者停留時間(Time on Site)、跳出率(Bounse Rate)、更全面性的評估，例如相關詞彙(Relevant Terms)、網站速度(Site Speed)。";
             article_13.URL = "http://bit.ly/1vP70Pz";
             article_13.RawPic = "/Content/me/img/blog/seo-ranking-factors-2014.png";
             article_13.PicSmall = "/Content/me/img/blog/seo-ranking-factors-2014_188x73.png";
