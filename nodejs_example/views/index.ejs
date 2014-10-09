@@ -1,0 +1,64 @@
+<style>
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+</style>
+<div class="todos">
+	<h1>To-Do List</h1>
+    <ul class="unstyled">
+		<% todos.forEach(function(todos) { %>
+			<li>
+				<input type="checkbox" <%= if(todos.statue) == 1 {checked} %>>
+				<span class="done-<%= todos.statue %>"><%= todos.name %></span>
+				<a class="btnEdit" value="edit" href="/edit/<%= todos.name %>">edit</a>
+				<a class="btnRemove" value="remove" href="/remove/<%= todos.name %>">remove</a>		
+			</li>
+		<% }); %>	
+	</ul>
+    <form form action="/create"> 
+		<input type="text" size="30" placeholder="add new todo here">
+		<input class="add btn-primary" type="submit" value="add" >
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+/*
+(function($) {
+	$.fn.todoList = function(opts) {
+		// default configuration
+		var config = $.extend({}, {
+			opt1: null
+		}, opts);
+		// main function
+		function init(obj) {
+			var dTodoList = $(obj);
+			var dItem = dTodoList.find('.item');
+			
+			var dBtnAdd = dTodoList.find('.add');
+
+			dItem.on('click', '.btnEdit', function(){
+				console.log('edit');
+			});
+			
+			dItem.on('click', '.btnRemove', function(){
+				console.log('remove');
+			});
+
+			dTodoList.on('click', '.add', function(){
+				console.log('add');
+			});	
+        }
+		// initialize every element
+		this.each(function() {
+			init($(this));
+		});
+		return this;
+	};
+	// start
+	$(function() {
+		$('.todos').todoList();
+	});
+})(jQuery);
+*/
+</script>
