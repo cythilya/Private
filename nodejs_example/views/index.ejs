@@ -9,7 +9,11 @@
     <ul class="unstyled">
 		<% todos.forEach(function(todos) { %>
 			<li>
-				<input type="checkbox" <%= if(todos.statue) == 1 {checked} %>>
+				<% if(todos.statue == 1){ %>
+				  <input type="checkbox" checked>
+				<%} else { %>
+					<input type="checkbox">
+				<% } %>
 				<span class="done-<%= todos.statue %>"><%= todos.name %></span>
 				<a class="btnEdit" value="edit" href="/edit/<%= todos.name %>">edit</a>
 				<a class="btnRemove" value="remove" href="/remove/<%= todos.name %>">remove</a>		
