@@ -30,15 +30,17 @@ namespace cythilya.Areas.EShopper.Controllers
         }
 
         //將訂單資料與購物車資料寫入資料庫
-        [HttpPost]
-        public ActionResult Complete(string Account, string Email, string ShipperName, string ShipperAddress, string ShipperMobile)
+        public ActionResult CompleteOrder(string Account, string Email, string ShipperName, string ShipperAddress, string ShipperMobile)
         {
             var member = db.Members.Where(p => p.Account == User.Identity.Name).FirstOrDefault();
+            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
 
-            //購物車若無需要結帳的商品,將使用者導向首頁
+            //購物車若無需要結帳的商品,回傳錯誤訊息給使用者
             if (this.Carts.Count == 0) 
             {
-                return View("~/Areas/EShopper/Views/Home/Index.cshtml");
+                //訂單失敗
+                jsonObject = new { IsSuccess = false, ErrorMessage = "Cart is empty. Nothing needs to checkout.", ReturnData = "" };
+                return Json(jsonObject);
             }
 
             //將訂單資料與購物車資料寫入資料庫
@@ -50,7 +52,7 @@ namespace cythilya.Areas.EShopper.Controllers
                 ContactAddress = ShipperAddress,
                 TotalPrice = 0,
                 BuyOn = DateTime.UtcNow,
-                Memo = "已結帳",
+                Memo = "已結帳；",
                 //OrderDetailItems = new List<OrderDetail>()
             };
 
@@ -67,18 +69,21 @@ namespace cythilya.Areas.EShopper.Controllers
                 }
 
                 total_price += item.Product.Price * item.Amount;
+
+                oh.Memo = oh.Memo + "Product ID：" + item.Product.ID + "；" + "Product Name：" + item.Product.Name + "；" + "Amount：" + item.Amount + "。";
+
                 //oh.OrderDetailItems.Add(new OrderDetail() { Product = product, Price = product.Price/*, Amount = item.Amount*/ });
             }
 
             oh.TotalPrice = total_price;
-            //db.Orders.Add(oh);
+            db.Orders.Add(oh);
             db.SaveChanges();
 
             //訂單完成後清空目前購物車的資料
             this.Carts.Clear();
 
             //訂單完成
-            var jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
+            jsonObject = new { IsSuccess = true, ErrorMessage = "", ReturnData = "" };
             return Json(jsonObject);
         }
 

@@ -43,6 +43,6 @@ namespace cythilya.Areas.EShopper.Models
         [DisplayName("訂購時間")]
         public DateTime BuyOn { get; set; }
 
-        public virtual ICollection<OrderDetail> OrderDetailItems { get; set; }
+        //public virtual ICollection<OrderDetail> OrderDetailItems { get; set; }
     }
 }
