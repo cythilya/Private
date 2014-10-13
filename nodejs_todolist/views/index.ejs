@@ -1,0 +1,66 @@
+<style>
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+.itemForm{
+	display: none;
+}
+</style>
+<div class="todos">
+	<h1>To-Do List</h1>
+    <ul class="unstyled">
+		<% todos.forEach(function(todos) { %>
+			<li class="item">
+				<% if(todos.statue == 1){ %>
+				  <input type="checkbox" checked>
+				<%} else { %>
+					<input type="checkbox">
+				<% } %>
+				<span class="done-<%= todos.statue %>"><%= todos.name %></span>
+				<a class="btnEdit" value="edit" href="/edit/<%= todos.id %>" id="<%= todos.id %>">edit</a>
+				
+				<form class="itemForm" action="/edit/<%= todos.id %>" method="post">
+					<input type="text" size="30" placeholder="text here..." name="editItem">
+					<input class="editInput btn-primary" type="submit" value="save" >
+				</form>
+				
+				<a class="btnRemove" value="remove" href="/remove/<%= todos.id %>">remove</a>		
+			</li>
+		<% }); %>	
+	</ul>
+    <form action="/create" method="post"> 
+		<input type="text" size="30" placeholder="add new todo here" name="newItem">
+		<input class="add btn-primary" type="submit" value="add" >
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+(function($) {
+	$.fn.todoList = function(opts) {
+		// default configuration
+		var config = $.extend({}, {
+			opt1: null
+		}, opts);
+		// main function
+		function init(obj) {
+			var dTodoList = $(obj);
+			var dItem = dTodoList.find('.item');
+			
+			dItem.on('click', '.btnEdit', function(e){
+				e.preventDefault();
+				dThisItem = $(this).parents('.item').find('.itemForm').show();
+			});
+        }
+		// initialize every element
+		this.each(function() {
+			init($(this));
+		});
+		return this;
+	};
+	// start
+	$(function() {
+		$('.todos').todoList();
+	});
+})(jQuery);
+</script>
