@@ -1,8 +1,6 @@
-
 /**
  * Module dependencies.
  */
-
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -25,15 +23,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+	app.use(express.errorHandler());
 }
 
 //routes
 app.get('/', routes.index);
-app.get('/edit/:id', routes.edit );
-app.get('/create', routes.create );
+app.post('/create', routes.create );
 app.get('/remove/:id', routes.remove );
+app.post('/edit/:id', routes.edit );
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+	console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+
+
