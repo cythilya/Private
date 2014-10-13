@@ -1,6 +1,9 @@
 ﻿@{
+    Layout = "~/Views/Shared/_LayoutCommon.cshtml";
     ViewBag.Title = "CKEditorDemo";
-    Layout = null;
 }
-
 <h2>CKEditorDemo</h2>
+<div id="ckeditorArea">
+    <textarea id="editorTextarea" class="ckeditor"></textarea>
+    <button class="btnSave">Save</button>
+</div>
