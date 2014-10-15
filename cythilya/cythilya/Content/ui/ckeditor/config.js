@@ -20,7 +20,7 @@ CKEDITOR.editorConfig = function (config) {
                            ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
                            /*['Code']*/];
     /*config.extraPlugins = 'CodePlugin';*/
-    config.extraPlugins = 'abbr,simpleimageupload';
+    config.extraPlugins = 'abbr';
     config.allowedContent = true;
 };
 
