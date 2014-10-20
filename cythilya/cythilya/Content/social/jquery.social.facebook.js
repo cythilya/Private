@@ -119,8 +119,7 @@ SocialDemo.module = {
 		var dBtnUplodSetCover = dModule.find('.btnUplodSetCover');
 		var userID = '';
 		var auth = '';
-		//var IMAGE_SRC = 'https://lh4.googleusercontent.com/-ibiaOcg1nT8/VEOcrZjXEjI/AAAAAAAADSk/2BxtyHK18Bg/w300-h448-no/girl.jpg';
-		var IMAGE_SRC = 'http://friendoimageserver.cloudapp.net/azure/missionpics/images/Editor/6287bca3-cb17-48da-ba10-ad47061c504f.jpg';
+		var IMAGE_SRC = 'https://lh4.googleusercontent.com/-ibiaOcg1nT8/VEOcrZjXEjI/AAAAAAAADSk/2BxtyHK18Bg/w300-h448-no/girl.jpg';
 		
 		dBtnUplodSetCover.click(function(e){
 			e.preventDefault();
@@ -128,28 +127,33 @@ SocialDemo.module = {
 			FB.login(function(response) {
 				if (response.authResponse) {
 					var access_token =   FB.getAuthResponse()['accessToken'];
+					var linkTemp = '';
+					userID = FB.getAuthResponse()['userID'];
+				
 					FB.api(
 						'/me/photos?access_token=' + access_token, 
 						'post', 
 						{ 
 							url: IMAGE_SRC, 
 							access_token: access_token 
-						}, function(response) {
-						if (!response || response.error) {
-							console.log('Error occured: ' + JSON.stringify(response.error));
+						}, function(resp) {
+						if (!resp || resp.error) {
+							console.log('Error occured: ' + JSON.stringify(resp.error));
 						} 
 						else {
-							//id: response.id
-							//post_id: response.post_id
+							//id: resp.id, photo id
+							//post_id: resp.post_id
+							//a.: album id
+							var photoID = resp.id;
 							
-							var redirect_url = 'https://www.facebook.com/photo.php?pid=' +  response.post_id + '&id='+ response.id + '&makeprofile=1';
-							console.log(response.id);
-							console.log(response.post_id);
-							
-							location.replace(redirect_url);
 
-							//var redirect_url = 'https://www.facebook.com/photo.php?fbid=' + response.id + '&set=a.806281082726554.1073741826.100000340104473&type=1&makeprofile=1';
-							//location.replace('http://www.facebook.com/profile.php?preview_cover=' + response.id);//redirect tp timeline
+							FB.api(
+								'/' + photoID,
+								function (res) {
+									linkTemp = res.link + '&makeprofile=1';
+									location.replace(linkTemp);
+								}
+							);
 						}
 					});
 				} else {
