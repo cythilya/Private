@@ -119,7 +119,8 @@ SocialDemo.module = {
 		var dBtnUplodSetCover = dModule.find('.btnUplodSetCover');
 		var userID = '';
 		var auth = '';
-		var IMAGE_SRC = 'https://lh4.googleusercontent.com/-ibiaOcg1nT8/VEOcrZjXEjI/AAAAAAAADSk/2BxtyHK18Bg/w300-h448-no/girl.jpg';
+		//var IMAGE_SRC = 'https://lh4.googleusercontent.com/-ibiaOcg1nT8/VEOcrZjXEjI/AAAAAAAADSk/2BxtyHK18Bg/w300-h448-no/girl.jpg';
+		var IMAGE_SRC = 'http://friendoimageserver.cloudapp.net/azure/missionpics/images/Editor/6287bca3-cb17-48da-ba10-ad47061c504f.jpg';
 		
 		dBtnUplodSetCover.click(function(e){
 			e.preventDefault();
@@ -142,8 +143,12 @@ SocialDemo.module = {
 							//post_id: response.post_id
 							
 							var redirect_url = 'https://www.facebook.com/photo.php?pid=' +  response.post_id + '&id='+ response.id + '&makeprofile=1';
-							//var redirect_url = 'https://www.facebook.com/photo.php?fbid=' + response.id + '&set=a.806281082726554.1073741826.100000340104473&type=1&makeprofile=1';
+							console.log(response.id);
+							console.log(response.post_id);
+							
 							location.replace(redirect_url);
+
+							//var redirect_url = 'https://www.facebook.com/photo.php?fbid=' + response.id + '&set=a.806281082726554.1073741826.100000340104473&type=1&makeprofile=1';
 							//location.replace('http://www.facebook.com/profile.php?preview_cover=' + response.id);//redirect tp timeline
 						}
 					});
