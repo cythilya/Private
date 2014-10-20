@@ -81,11 +81,8 @@ E:\private\Private\cythilya\cythilya\bin\Microsoft.Web.Infrastructure.dll
 E:\private\Private\cythilya\cythilya\bin\Microsoft.Web.WebPages.OAuth.dll
 E:\private\Private\cythilya\cythilya\bin\Newtonsoft.Json.dll
 E:\private\Private\cythilya\cythilya\bin\System.Net.Http.dll
-E:\private\Private\cythilya\cythilya\bin\System.Net.Http.Formatting.dll
 E:\private\Private\cythilya\cythilya\bin\System.Net.Http.WebRequest.dll
 E:\private\Private\cythilya\cythilya\bin\System.Web.Helpers.dll
-E:\private\Private\cythilya\cythilya\bin\System.Web.Http.dll
-E:\private\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.dll
 E:\private\Private\cythilya\cythilya\bin\System.Web.Mvc.dll
 E:\private\Private\cythilya\cythilya\bin\System.Web.Optimization.dll
 E:\private\Private\cythilya\cythilya\bin\System.Web.Razor.dll
@@ -98,11 +95,8 @@ E:\private\Private\cythilya\cythilya\bin\WebMatrix.WebData.dll
 E:\private\Private\cythilya\cythilya\bin\EntityFramework.xml
 E:\private\Private\cythilya\cythilya\bin\Newtonsoft.Json.xml
 E:\private\Private\cythilya\cythilya\bin\System.Net.Http.xml
-E:\private\Private\cythilya\cythilya\bin\System.Net.Http.Formatting.xml
 E:\private\Private\cythilya\cythilya\bin\System.Net.Http.WebRequest.xml
 E:\private\Private\cythilya\cythilya\bin\System.Web.Helpers.xml
-E:\private\Private\cythilya\cythilya\bin\System.Web.Http.xml
-E:\private\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.xml
 E:\private\Private\cythilya\cythilya\bin\System.Web.Mvc.xml
 E:\private\Private\cythilya\cythilya\bin\System.Web.Razor.xml
 E:\private\Private\cythilya\cythilya\bin\System.Web.WebPages.xml
@@ -119,11 +113,8 @@ E:\private\Private\cythilya\cythilya\bin\DotNetOpenAuth.OpenId.xml
 E:\private\Private\cythilya\cythilya\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\EntityFramework.resources.dll
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.resources.dll
-E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.WebRequest.resources.dll
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Helpers.resources.dll
-E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.resources.dll
-E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Mvc.resources.dll
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Optimization.resources.dll
 E:\private\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Razor.resources.dll
