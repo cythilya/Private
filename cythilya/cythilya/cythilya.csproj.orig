@@ -1418,10 +1418,13 @@
     <Content Include="Areas\SEOLab\Views\SEOLab\AngularJSSEO.cshtml" />
     <Content Include="Areas\Social\Views\Facebook\FacebookLogin.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_AllProducts.cshtml" />
-    <Content Include="Areas\Social\Views\Facebook\UploadAndSetCover.cshtml" />
+<<<<<<< HEAD
     <Content Include="Areas\UI\Views\UI\CKEditorDemo.cshtml" />
     <Content Include="Areas\UI\Views\Web.config" />
     <Content Include="Areas\UI\Views\UI\CKEditorPreview.cshtml" />
+=======
+    <Content Include="Areas\Social\Views\Facebook\UploadAndSetCover.cshtml" />
+>>>>>>> 50e81adad0d8d93b993e11dba57ed33fdf142ca9
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />

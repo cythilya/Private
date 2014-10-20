@@ -114,6 +114,46 @@ SocialDemo.module = {
 			}, {scope: 'publish_actions'});	
 		});		
     },
+	uploadSetCoverArea: function(dModule){
+		var dModule = $(dModule);
+		var dBtnUplodSetCover = dModule.find('.btnUplodSetCover');
+		var userID = '';
+		var auth = '';
+		var IMAGE_SRC = 'https://lh4.googleusercontent.com/-ibiaOcg1nT8/VEOcrZjXEjI/AAAAAAAADSk/2BxtyHK18Bg/w300-h448-no/girl.jpg';
+		
+		dBtnUplodSetCover.click(function(e){
+			e.preventDefault();
+			
+			FB.login(function(response) {
+				if (response.authResponse) {
+					var access_token =   FB.getAuthResponse()['accessToken'];
+					FB.api(
+						'/me/photos?access_token=' + access_token, 
+						'post', 
+						{ 
+							url: IMAGE_SRC, 
+							access_token: access_token 
+						}, function(response) {
+						if (!response || response.error) {
+							console.log('Error occured: ' + JSON.stringify(response.error));
+						} 
+						else {
+							//id: response.id
+							//post_id: response.post_id
+							
+							var redirect_url = 'https://www.facebook.com/photo.php?pid=' +  response.post_id + '&id='+ response.id + '&makeprofile=1';
+							//var redirect_url = 'https://www.facebook.com/photo.php?fbid=' + response.id + '&set=a.806281082726554.1073741826.100000340104473&type=1&makeprofile=1';
+							location.replace(redirect_url);
+							//location.replace('http://www.facebook.com/profile.php?preview_cover=' + response.id);//redirect tp timeline
+						}
+					});
+				} else {
+					console.log('User cancelled login or did not fully authorize.');
+				}
+			}, {scope: 'publish_stream'});		
+		});
+	
+	},
 	loginArea: function(dModule){
 		var dModule = $(dModule);
 		var dBtnFBLogin = dModule.find('.btnFBLogin');
@@ -173,5 +213,6 @@ SocialDemo.module = {
         }                
     };
     doWhileExist('taggableFriends',SocialDemo.module.taggableFriends);
+    doWhileExist('uploadSetCoverArea',SocialDemo.module.uploadSetCoverArea);
     doWhileExist('loginArea',SocialDemo.module.loginArea);
 })();

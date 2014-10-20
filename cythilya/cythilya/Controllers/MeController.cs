@@ -209,6 +209,30 @@ namespace cythilya.Controllers
             article_13.isHighlight = false;
             articleList.Add(article_13);
 
+            //CKEditor Addons - 簡易上傳圖片、檔案(SimpleUploads)、Youtube影片搜尋(CKEditor Youtube + search feature)
+            MeModels.Article article_14 = new MeModels.Article();
+            article_14.Name = "CKEditor Addons - 簡易上傳圖片、檔案(SimpleUploads)、Youtube影片搜尋(CKEditor Youtube + search feature)";
+            article_14.Description = "CKEditor是一款「所見即所得」(WYSIWYG) 的 HTML網頁編輯器，免費、功能強大、周邊資源多。下載後經過簡單安裝便能作為前台或後台編輯工具。";
+            article_14.URL = "http://bit.ly/1vgZMVi";
+            article_14.RawPic = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/sckeditor_addons_simpleuploads_youtube_search_feature.jpg";
+            article_14.PicSmall = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_188x73.jpg";
+            article_14.PicMedium = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg";
+            article_14.PicLarge = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_940x367.jpg";
+            article_14.isHighlight = true;
+            articleList.Add(article_14);
+
+            //RWD(Responsive Web Design) 實作筆記
+            MeModels.Article article_15 = new MeModels.Article();
+            article_15.Name = "RWD(Responsive Web Design) 實作筆記";
+            article_15.Description = "RWD(Responsive Web Design)是一種設計概念，希望能讓網頁適用在不同的平台上。 而距離上一次專做RWD大約是一年前，公司最近想對產品大改版，於是又來練練RWD摟！";
+            article_15.URL = "http://bit.ly/1wgGsWx";
+            article_15.RawPic = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note.png";
+            article_15.PicSmall = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_188x73.png";
+            article_15.PicMedium = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_300.png";
+            article_15.PicLarge = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_940x367.png";
+            article_15.isHighlight = false;
+            articleList.Add(article_15);
+
             #endregion
 
             articleList.Reverse();

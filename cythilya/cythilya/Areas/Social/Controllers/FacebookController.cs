@@ -20,6 +20,11 @@ namespace cythilya.Areas.Social.Controllers
             return View();
         }
 
+        public ActionResult UploadAndSetCover() 
+        {
+            return View();
+        }
+
         //Login Button, Customed Login, FB.Login()
         public ActionResult FacebookLogin() 
         {
