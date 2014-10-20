@@ -1130,7 +1130,6 @@
     <Content Include="Content\ui\ckeditor\plugins\showblocks\images\block_h6.png" />
     <Content Include="Content\ui\ckeditor\plugins\showblocks\images\block_p.png" />
     <Content Include="Content\ui\ckeditor\plugins\showblocks\images\block_pre.png" />
-    <Content Include="Content\ui\ckeditor\plugins\simpleimageupload\plugin.js" />
     <Content Include="Content\ui\ckeditor\plugins\smiley\dialogs\smiley.js" />
     <Content Include="Content\ui\ckeditor\plugins\smiley\images\angel_smile.gif" />
     <Content Include="Content\ui\ckeditor\plugins\smiley\images\angel_smile.png" />
