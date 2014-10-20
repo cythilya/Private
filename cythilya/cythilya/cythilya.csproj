@@ -291,10 +291,6 @@
     <Content Include="Content\js\jquery.cookie.js" />
     <Content Include="Content\js\jquery.validationEngine-en.js" />
     <Content Include="Content\js\jquery.validationEngine.js" />
-    <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature.jpg" />
-    <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_188x73.jpg" />
-    <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg" />
-    <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_940x367.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_188x73.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_940x367.jpg" />
@@ -305,10 +301,6 @@
     <Content Include="Content\me\img\blog\JavaScript_SEO_188x73.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_300.jpg" />
     <Content Include="Content\me\img\blog\JavaScript_SEO_940x367.jpg" />
-    <Content Include="Content\me\img\blog\rwd_implement_note\rwd_implement_note.png" />
-    <Content Include="Content\me\img\blog\rwd_implement_note\rwd_implement_note_188x73.png" />
-    <Content Include="Content\me\img\blog\rwd_implement_note\rwd_implement_note_300.png" />
-    <Content Include="Content\me\img\blog\rwd_implement_note\rwd_implement_note_940x367.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_188x73.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_300.png" />
@@ -1418,10 +1410,10 @@
     <Content Include="Areas\SEOLab\Views\SEOLab\AngularJSSEO.cshtml" />
     <Content Include="Areas\Social\Views\Facebook\FacebookLogin.cshtml" />
     <Content Include="Areas\EShopper\Views\Shared\_AllProducts.cshtml" />
-    <Content Include="Areas\Social\Views\Facebook\UploadAndSetCover.cshtml" />
     <Content Include="Areas\UI\Views\UI\CKEditorDemo.cshtml" />
     <Content Include="Areas\UI\Views\Web.config" />
     <Content Include="Areas\UI\Views\UI\CKEditorPreview.cshtml" />
+    <Content Include="Areas\UI\Views\UI\Index.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
