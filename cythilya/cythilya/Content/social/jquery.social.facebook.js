@@ -130,27 +130,30 @@ SocialDemo.module = {
 					var linkTemp = '';
 					userID = FB.getAuthResponse()['userID'];
 				
+					//上傳圖片，在此API後必須加上access token才能運作
 					FB.api(
 						'/me/photos?access_token=' + access_token, 
 						'post', 
 						{ 
-							url: IMAGE_SRC, 
+							url: IMAGE_SRC, //上傳圖片的網址
 							access_token: access_token 
 						}, function(resp) {
 						if (!resp || resp.error) {
 							console.log('Error occured: ' + JSON.stringify(resp.error));
 						} 
 						else {
-							//id: resp.id, photo id
-							//post_id: resp.post_id
-							//a.: album id
+							//上傳成功
+							//取得photo id，準備進一步取得設定photo的網址
 							var photoID = resp.id;
 							
-
 							FB.api(
 								'/' + photoID,
 								function (res) {
-									linkTemp = res.link + '&makeprofile=1';
+									//makeprofile: 設定為profile image的參數
+									//取得照片網址後，將其append到編輯網址之後
+									linkTemp = res.link + '&makeprofile=1'; 
+
+									//轉址到Facebook網站，此照片切裁、設定profile image的頁面
 									location.replace(linkTemp);
 								}
 							);
@@ -159,7 +162,7 @@ SocialDemo.module = {
 				} else {
 					console.log('User cancelled login or did not fully authorize.');
 				}
-			}, {scope: 'publish_stream'});		
+			}, {scope: 'publish_stream, user_photos'});		
 		});
 	
 	},
