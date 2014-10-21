@@ -233,6 +233,18 @@ namespace cythilya.Controllers
             article_15.isHighlight = false;
             articleList.Add(article_15);
 
+            //使用Graph API上傳圖片到Facebook相簿、並設定為使用者大頭照
+            MeModels.Article article_16 = new MeModels.Article();
+            article_16.Name = "使用Graph API上傳圖片到Facebook相簿、並設定為使用者大頭照";
+            article_16.Description = "有不少活動都會引導使用者上傳圖片並設定為封面或是檔案頭像，例如 遮打革命 Umbrella Revolution - Support Campaign | Twibbon。";
+            article_16.URL = "http://bit.ly/1yRtaV8";
+            article_16.RawPic = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture.jpg";
+            article_16.PicSmall = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_188x73.jpg";
+            article_16.PicMedium = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_300.jpg";
+            article_16.PicLarge = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_940x367.jpg";
+            article_16.isHighlight = true;
+            articleList.Add(article_16);
+
             #endregion
 
             articleList.Reverse();
