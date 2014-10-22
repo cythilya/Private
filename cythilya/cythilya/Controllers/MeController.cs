@@ -611,7 +611,7 @@ namespace cythilya.Controllers
             proj_8.Date = "Oct. 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
             proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery。</p>";
-            proj_8.isHighlight = true;
+            proj_8.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_8_snap_1 = new MeModels.SnapshotInfo();
@@ -646,7 +646,7 @@ namespace cythilya.Controllers
             proj_9.Date = "Oct. 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
             proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery/c# backend。</p>";
-            proj_9.isHighlight = true;
+            proj_9.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList9 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_9_snap_1 = new MeModels.SnapshotInfo();
