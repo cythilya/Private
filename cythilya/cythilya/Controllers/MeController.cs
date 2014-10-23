@@ -61,7 +61,7 @@ namespace cythilya.Controllers
             article_1.PicSmall = "/Content/me/img/blog/ia_for_seo_188x73.jpg";
             article_1.PicMedium = "/Content/me/img/blog/ia_for_seo_300.jpg";
             article_1.PicLarge = "/Content/me/img/blog/ia_for_seo_940x367.jpg";
-            article_1.Tag = "SEO";
+            article_1.Tag = "seo";
             article_1.isHighlight = false;
             articleList.Add(article_1);
 
@@ -74,7 +74,7 @@ namespace cythilya.Controllers
             article_2.PicSmall = "/Content/me/img/blog/duplicate_content_188x73.jpg";
             article_2.PicMedium = "/Content/me/img/blog/duplicate_content_300.jpg";
             article_2.PicLarge = "/Content/me/img/blog/duplicate_content_940x367.jpg";
-            article_2.Tag = "SEO";
+            article_2.Tag = "seo";
             article_2.isHighlight = false;
             articleList.Add(article_2);
 
@@ -87,7 +87,7 @@ namespace cythilya.Controllers
             article_3.PicSmall = "/Content/me/img/blog/search_and_social_188x73.jpg";
             article_3.PicMedium = "/Content/me/img/blog/search_and_social_300.jpg";
             article_3.PicLarge = "/Content/me/img/blog/search_and_social_940x367.jpg";
-            article_3.Tag = "SEO";
+            article_3.Tag = "seo";
             article_3.isHighlight = true;
             articleList.Add(article_3);
 
@@ -100,7 +100,7 @@ namespace cythilya.Controllers
             article_4.PicSmall = "/Content/me/img/blog/rss_188x73.jpg";
             article_4.PicMedium = "/Content/me/img/blog/rss_300.jpg";
             article_4.PicLarge = "/Content/me/img/blog/rss_940x367.jpg";
-            article_4.Tag = "SEO";
+            article_4.Tag = "seo";
             article_4.isHighlight = false;
             articleList.Add(article_4);
 
@@ -113,7 +113,7 @@ namespace cythilya.Controllers
             article_5.PicSmall = "/Content/me/img/blog/author_rank_188x73.jpg";
             article_5.PicMedium = "/Content/me/img/blog/author_rank_300.jpg";
             article_5.PicLarge = "/Content/me/img/blog/author_rank_940x367.jpg";
-            article_5.Tag = "SEO";
+            article_5.Tag = "seo";
             article_5.isHighlight = false;
             articleList.Add(article_5);
 
@@ -126,7 +126,7 @@ namespace cythilya.Controllers
             article_6.PicSmall = "/Content/me/img/blog/microdata_188x73.jpg";
             article_6.PicMedium = "/Content/me/img/blog/microdata_300.png";
             article_6.PicLarge = "/Content/me/img/blog/microdata_940x367.jpg";
-            article_6.Tag = "SEO";
+            article_6.Tag = "seo";
             article_6.isHighlight = false;
             articleList.Add(article_6);
 
@@ -139,7 +139,7 @@ namespace cythilya.Controllers
             article_7.PicSmall = "/Content/me/img/blog/seo_guideline_188x73.jpg";
             article_7.PicMedium = "/Content/me/img/blog/seo_guideline_300.jpg";
             article_7.PicLarge = "/Content/me/img/blog/seo_guideline_940x367.jpg";
-            article_7.Tag = "SEO";
+            article_7.Tag = "seo";
             article_7.isHighlight = true;
             articleList.Add(article_7);
 
@@ -152,7 +152,7 @@ namespace cythilya.Controllers
             article_8.PicSmall = "/Content/me/img/blog/facebook_social_demo_188x73.jpg";
             article_8.PicMedium = "/Content/me/img/blog/facebook_social_demo_300.jpg";
             article_8.PicLarge = "/Content/me/img/blog/facebook_social_demo_940x367.jpg";
-            article_8.Tag = "SEO";
+            article_8.Tag = "seo";
             article_8.isHighlight = true;
             articleList.Add(article_8);
 
@@ -165,7 +165,7 @@ namespace cythilya.Controllers
             article_9.PicSmall = "/Content/me/img/blog/keyword_tag_188x73.jpg";
             article_9.PicMedium = "/Content/me/img/blog/keyword_tag_300.jpg";
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
-            article_9.Tag = "SEO";
+            article_9.Tag = "seo";
             article_9.isHighlight = true;
             articleList.Add(article_9);
 
@@ -178,7 +178,7 @@ namespace cythilya.Controllers
             article_10.PicSmall = "/Content/me/img/blog/JavaScript_SEO_188x73.jpg";
             article_10.PicMedium = "/Content/me/img/blog/JavaScript_SEO_300.jpg";
             article_10.PicLarge = "/Content/me/img/blog/JavaScript_SEO_940x367.jpg";
-            article_10.Tag = "SEO";
+            article_10.Tag = "seo";
             article_10.isHighlight = true;
             articleList.Add(article_10);
 
@@ -191,7 +191,7 @@ namespace cythilya.Controllers
             article_11.PicSmall = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_188x73.jpg";
             article_11.PicMedium = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_300.jpg";
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
-            article_11.Tag = "SEO";
+            article_11.Tag = "seo";
             article_11.isHighlight = true;
             articleList.Add(article_11);
 
@@ -204,7 +204,7 @@ namespace cythilya.Controllers
             article_12.PicSmall = "/Content/me/img/blog/facebook_product_introduction_188x73.jpg";
             article_12.PicMedium = "/Content/me/img/blog/facebook_product_introduction_300.jpg";
             article_12.PicLarge = "/Content/me/img/blog/facebook_product_introduction_940x367.jpg";
-            article_12.Tag = "SEO";
+            article_12.Tag = "seo";
             article_12.isHighlight = false;
             articleList.Add(article_12);
 
@@ -217,7 +217,7 @@ namespace cythilya.Controllers
             article_13.PicSmall = "/Content/me/img/blog/seo-ranking-factors-2014_188x73.png";
             article_13.PicMedium = "/Content/me/img/blog/seo-ranking-factors-2014_300.png";
             article_13.PicLarge = "/Content/me/img/blog/seo-ranking-factors-2014_940x367.png";
-            article_13.Tag = "SEO";
+            article_13.Tag = "seo";
             article_13.isHighlight = false;
             articleList.Add(article_13);
 
@@ -243,7 +243,7 @@ namespace cythilya.Controllers
             article_15.PicSmall = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_188x73.png";
             article_15.PicMedium = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_300.png";
             article_15.PicLarge = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_940x367.png";
-            article_15.Tag = "RWD";
+            article_15.Tag = "rwd";
             article_15.isHighlight = false;
             articleList.Add(article_15);
 
@@ -256,7 +256,7 @@ namespace cythilya.Controllers
             article_16.PicSmall = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_188x73.jpg";
             article_16.PicMedium = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_300.jpg";
             article_16.PicLarge = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_940x367.jpg";
-            article_16.Tag = "SEO";
+            article_16.Tag = "seo";
             article_16.isHighlight = false;
             articleList.Add(article_16);
 
@@ -700,7 +700,7 @@ namespace cythilya.Controllers
             proj_10.Date = "Sept. 2014";
             proj_10.LauchURL = "";
             proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph Api)。</p>";
-            proj_10.Tag = "RWD";
+            proj_10.Tag = "rwd";
             proj_10.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
@@ -721,6 +721,6 @@ namespace cythilya.Controllers
             return projList;
         }
 
-        //Tag: SEO, RWD
+        //Tag: seo, rwd
     }
 }

@@ -8,13 +8,15 @@
 		<li><a href="#" data-filter="*" class="selected">show all</a></li>
 		<li><a href="#" data-filter=".post">post</a></li>
 		<li><a href="#" data-filter=".project">project</a></li>
+        <li><a href="#" data-filter=".seo">seo</a></li>
+        <li><a href="#" data-filter=".rwd">rwd</a></li>
 	</ul>
 	<div id="filter-container" class="cf">
         @if (projList != null) 
         {
             foreach (var item in projList)
             { 
- 		    <figure class="project" itemscope itemtype="http://schema.org/article">
+ 		    <figure class="project @(item.Tag)" itemscope itemtype="http://schema.org/article">
 			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
 				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
 			    </a>
@@ -32,7 +34,7 @@
         {
             foreach (var item in articleList)
             {
-		    <figure class="post" itemscope itemtype="http://schema.org/article">
+		    <figure class="post @(item.Tag)" itemscope itemtype="http://schema.org/article">
 			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
 				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
 			    </a>
