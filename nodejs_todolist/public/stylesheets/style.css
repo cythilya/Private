@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+.itemForm{
+	display: none;
+}
