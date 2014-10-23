@@ -541,7 +541,7 @@ namespace cythilya.Controllers
             proj_6.Date = "April 2014";
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
             proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，並特別加強SEO、品牌與相關產品關鍵字經營。負責layout & UI design/html/css/jQuery。</p>";
-            proj_6.Tag = "";
+            proj_6.Tag = "seo";
             proj_6.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
