@@ -17,6 +17,7 @@ namespace cythilya.Models
             public string PicMedium { get; set; }
             public string PicLarge { get; set; }
             public bool isHight { get; set; }
+            public string Tag { get; set; }
             public bool isHighlight { get; set; }
         }
 
@@ -43,9 +44,8 @@ namespace cythilya.Models
             public string Date { get; set; }
             public string LauchURL { get; set; }
             public string HtmlContent { get; set; }
+            public string Tag { get; set; }
             public bool isHighlight { get; set; }
         }
-
-
     }
 }
