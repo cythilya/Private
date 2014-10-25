@@ -1,5 +1,6 @@
 cythilya/cythilya/bin/cythilya.dll
 cythilya/cythilya/bin/cythilya.dll
+cythilya/cythilya/bin/cythilya.dll
 cythilya/cythilya/bin/cythilya.pdb
 cythilya/cythilya/bin/cythilya.pdb
 cythilya/cythilya/obj/Debug/DesignTimeResolveAssemblyReferences.cache
@@ -11,3 +12,5 @@ cythilya/cythilya.suo
 cythilya/cythilya/cythilya.csproj.user
 cythilya/cythilya/obj/Debug/cythilya.csprojResolveAssemblyReference.cache
 cythilya/cythilya/obj/Debug/cythilya.pdb
+cythilya/cythilya/obj/Debug/ResolveAssemblyReference.cache
+cythilya/cythilya/obj/Debug/cythilya.csproj.FileListAbsolute
