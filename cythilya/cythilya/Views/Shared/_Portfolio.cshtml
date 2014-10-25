@@ -6,7 +6,7 @@
 <div class="home-featured">
 	<ul id="filter-buttons">
 		<li><a href="#" data-filter="*" class="selected">All</a></li>
-		<li><a href="#" data-filter=".Post">Post</a></li>
+		@*<li><a href="#" data-filter=".Post">Post</a></li>*@
         <li><a href="#" data-filter=".Web">Web</a></li>
         <li><a href="#" data-filter=".RWD">RWD</a></li>
         <li><a href="#" data-filter=".SEO">SEO</a></li>
@@ -30,6 +30,7 @@
 		    </figure>
             } 
         }
+        @*
         @if (articleList != null)
         {
             foreach (var item in articleList)
@@ -47,6 +48,7 @@
 		    </figure>                 
             }
         }
+        *@
         @*
 		<figure class="post" itemscope itemtype="http://schema.org/article">
 			<a href="#" title="" class="thumb" itemprop="url" target="_blank">

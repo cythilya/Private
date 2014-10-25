@@ -20,6 +20,7 @@ namespace cythilya.Models
             public bool isHight { get; set; }
             public string Tag { get; set; }
             public bool isHighlight { get; set; }
+            public string Time { get; set; }
         }
 
         public class SnapshotInfo 

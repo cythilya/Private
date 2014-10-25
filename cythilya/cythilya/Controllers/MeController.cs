@@ -9,17 +9,21 @@ namespace cythilya.Controllers
 {
     public class MeController : Controller
     {
+        //View
         //Index
         public ActionResult Index()
         {
             GetArticleList();
             getProjectList();
+            getRecentPostList();
             return View();
         }
 
         //Resume
         public ActionResult Resume() 
         {
+            GetArticleList();
+            getRecentPostList();
             return View();
         }
 
@@ -28,6 +32,7 @@ namespace cythilya.Controllers
         {
             GetArticleList();
             getProjectList();
+            getRecentPostList();
             return View();
         }
 
@@ -43,11 +48,15 @@ namespace cythilya.Controllers
             }
 
             ViewBag.ProjData = proj;
+            GetArticleList();
+            getRecentPostList();
             return View();
         }
 
+        //Function
         //Get Article List
-        public void GetArticleList() {
+        public List<MeModels.Article> GetArticleList()
+        {
             List<MeModels.Article> articleList = new List<MeModels.Article>();
 
             #region Mock
@@ -64,6 +73,7 @@ namespace cythilya.Controllers
             article_1.PicInFooter = "/Content/me/img/blog/247479_5433_54x54.jpg";
             article_1.Tag = "SEO";
             article_1.isHighlight = false;
+            article_1.Time = "Jan 1, 2014";//2014/01/04
             articleList.Add(article_1);
 
             //SEO：重複內容(Duplicate Content)
@@ -78,6 +88,7 @@ namespace cythilya.Controllers
             article_2.PicInFooter = "/Content/me/img/blog/250528_3929_54x54.jpg";
             article_2.Tag = "SEO";
             article_2.isHighlight = false;
+            article_2.Time = "Jan 22, 2014";
             articleList.Add(article_2);
 
             //從搜尋到社群 - Semantics、Rich Snippets、Social Meta Tags
@@ -91,7 +102,8 @@ namespace cythilya.Controllers
             article_3.PicLarge = "/Content/me/img/blog/search_and_social_940x367.jpg";
             article_3.PicInFooter = "/Content/me/img/blog/search_and_social_54x54.jpg";
             article_3.Tag = "SEO";
-            article_3.isHighlight = false;
+            article_3.isHighlight = true;
+            article_3.Time = "Feb 1, 2014";
             articleList.Add(article_3);
 
             //RSS：概念與實作
@@ -106,6 +118,7 @@ namespace cythilya.Controllers
             article_4.PicInFooter = "/Content/me/img/blog/rss_54x54.jpg";
             article_4.Tag = "SEO";
             article_4.isHighlight = false;
+            article_4.Time = "March 9, 2014";
             articleList.Add(article_4);
 
             //Author Rank
@@ -120,6 +133,7 @@ namespace cythilya.Controllers
             article_5.PicInFooter = "/Content/me/img/blog/author_rank_54x54.jpg";
             article_5.Tag = "SEO";
             article_5.isHighlight = false;
+            article_5.Time = "March 22, 2014";
             articleList.Add(article_5);
 
             //粉多任務 x 一品禪 - 使用Microdata標記的網頁實例
@@ -134,6 +148,7 @@ namespace cythilya.Controllers
             article_6.PicInFooter = "/Content/me/img/blog/microdata_54x54.jpg";
             article_6.Tag = "SEO";
             article_6.isHighlight = false;
+            article_6.Time = "April 21, 2014";
             articleList.Add(article_6);
 
             //搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？
@@ -147,7 +162,8 @@ namespace cythilya.Controllers
             article_7.PicLarge = "/Content/me/img/blog/seo_guideline_940x367.jpg";
             article_7.PicInFooter = "/Content/me/img/blog/seo_guideline_54x54.jpg";
             article_7.Tag = "SEO";
-            article_7.isHighlight = false;
+            article_7.isHighlight = true;
+            article_7.Time = "May 17, 2014";
             articleList.Add(article_7);
 
             //Facebook Graph API & Demo Example
@@ -162,6 +178,7 @@ namespace cythilya.Controllers
             article_8.PicInFooter = "/Content/me/img/blog/facebook_social_demo_54x54.jpg";
             article_8.Tag = "SEO";
             article_8.isHighlight = false;
+            article_8.Time = "June 7, 2014";
             articleList.Add(article_8);
 
             //關鍵字(Keyword)與標籤(Tag)－談選擇、聚焦與經營
@@ -175,7 +192,8 @@ namespace cythilya.Controllers
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
             article_9.PicInFooter = "/Content/me/img/blog/keyword_tag_54x54.jpg";
             article_9.Tag = "SEO";
-            article_9.isHighlight = false;
+            article_9.isHighlight = true;
+            article_9.Time = "Aug 16, 2014";
             articleList.Add(article_9);
 
             //Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力
@@ -190,6 +208,7 @@ namespace cythilya.Controllers
             article_10.PicInFooter = "/Content/me/img/blog/JavaScript_SEO_54x54.jpg";
             article_10.Tag = "SEO";
             article_10.isHighlight = false;
+            article_10.Time = "Sep 11, 2014";
             articleList.Add(article_10);
 
             //Facebook Graph API - Taggable Friends
@@ -201,9 +220,10 @@ namespace cythilya.Controllers
             article_11.PicSmall = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_188x73.jpg";
             article_11.PicMedium = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_300.jpg";
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
-            article_11.PicInFooter = "/Content/me/img/blog/";
+            article_11.PicInFooter = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_54x54.jpg";
             article_11.Tag = "SEO";
             article_11.isHighlight = true;
+            article_11.Time = "Sep 24, 2014";
             articleList.Add(article_11);
 
             //Facebook Product Introduction
@@ -218,6 +238,7 @@ namespace cythilya.Controllers
             article_12.PicInFooter = "/Content/me/img/blog/";
             article_12.Tag = "SEO";
             article_12.isHighlight = false;
+            article_12.Time = "Oct 3, 2014";
             articleList.Add(article_12);
 
             //2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名
@@ -232,6 +253,7 @@ namespace cythilya.Controllers
             article_13.PicInFooter = "/Content/me/img/blog/seo-ranking-factors-2014_54x54.jpg";
             article_13.Tag = "SEO";
             article_13.isHighlight = false;
+            article_13.Time = "Oct 9, 2014";
             articleList.Add(article_13);
 
             //CKEditor Addons - 簡易上傳圖片、檔案(SimpleUploads)、Youtube影片搜尋(CKEditor Youtube + search feature)
@@ -246,6 +268,7 @@ namespace cythilya.Controllers
             article_14.PicInFooter = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_54x54.jpg";
             article_14.Tag = "";
             article_14.isHighlight = false;
+            article_14.Time = "Oct 16, 2014";
             articleList.Add(article_14);
 
             //RWD(Responsive Web Design) 實作筆記
@@ -260,6 +283,7 @@ namespace cythilya.Controllers
             article_15.PicInFooter = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_54x54.jpg";
             article_15.Tag = "RWD";
             article_15.isHighlight = false;
+            article_15.Time = "Oct 19, 2014";
             articleList.Add(article_15);
 
             //使用Graph API上傳圖片到Facebook相簿、並設定為使用者大頭照
@@ -274,6 +298,7 @@ namespace cythilya.Controllers
             article_16.PicInFooter = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_54x54.jpg";
             article_16.Tag = "SEO";
             article_16.isHighlight = false;
+            article_16.Time = "Oct 20, 2014";
             articleList.Add(article_16);
 
             #endregion
@@ -281,6 +306,7 @@ namespace cythilya.Controllers
             articleList.Reverse();
 
             ViewBag.ArticleList = articleList;
+            return articleList;
         }
 
         //Get Project List
@@ -545,7 +571,7 @@ namespace cythilya.Controllers
             MeModels.Project proj_6 = new MeModels.Project();
             proj_6.ID = 6;
             proj_6.Name = "一品禪 x Friendo 粉多任務";
-            proj_6.Description = "一品禪與粉多任務合作的活動網站。";
+            proj_6.Description = "一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。";
             proj_6.URL = "/Me/Project?id=6";
             proj_6.RawPic = "/Content/me/img/project/yipinchan/yipinchan_index_940x1130.png";
             proj_6.PicSmall = "/Content/me/img/project/yipinchan/yipinchan_index_188x73.png";
@@ -556,7 +582,7 @@ namespace cythilya.Controllers
             proj_6.ClientURL = "http://www.yishentw.com";
             proj_6.Date = "April 2014";
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
-            proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，並特別加強SEO、品牌與相關產品關鍵字經營。負責layout & UI design/html/css/jQuery。</p>";
+            proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。負責Front-End Development。</p>";
             proj_6.Tag = "Web SEO";
             proj_6.isHighlight = false;
 
@@ -735,6 +761,18 @@ namespace cythilya.Controllers
 
             ViewBag.ProjList = projList;
             return projList;
+        }
+
+        //Get Recent Post
+        public void getRecentPostList(int number = 3) 
+        {
+            List<MeModels.Article> articleList = new List<MeModels.Article>();
+            List<MeModels.Article> recentArticleList = new List<MeModels.Article>();
+
+            articleList = GetArticleList();
+            articleList.Reverse();
+            recentArticleList = Enumerable.Reverse(articleList).Take(number).ToList();
+            ViewBag.RecentPostList = recentArticleList;
         }
 
         //Tag: Web, RWD, SEO, SPWA
