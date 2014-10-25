@@ -5,18 +5,19 @@
 }
 <div class="home-featured">
 	<ul id="filter-buttons">
-		<li><a href="#" data-filter="*" class="selected">all</a></li>
-		<li><a href="#" data-filter=".post">post</a></li>
-		<li><a href="#" data-filter=".project">project</a></li>
-        <li><a href="#" data-filter=".seo">seo</a></li>
-        <li><a href="#" data-filter=".rwd">rwd</a></li>
+		<li><a href="#" data-filter="*" class="selected">All</a></li>
+		<li><a href="#" data-filter=".Post">Post</a></li>
+        <li><a href="#" data-filter=".Web">Web</a></li>
+        <li><a href="#" data-filter=".RWD">RWD</a></li>
+        <li><a href="#" data-filter=".SEO">SEO</a></li>
+        @*<li><a href="#" data-filter=".SPWA">SPWA</a></li>*@
 	</ul>
 	<div id="filter-container" class="cf">
         @if (projList != null) 
         {
             foreach (var item in projList)
             { 
- 		    <figure class="project @(item.Tag)" itemscope itemtype="http://schema.org/article">
+ 		    <figure class="@(item.Tag)" itemscope itemtype="http://schema.org/article">
 			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
 				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
 			    </a>
@@ -34,7 +35,7 @@
         {
             foreach (var item in articleList)
             {
-		    <figure class="post @(item.Tag)" itemscope itemtype="http://schema.org/article">
+		    <figure class="Post @(item.Tag)" itemscope itemtype="http://schema.org/article">
 			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
 				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
 			    </a>

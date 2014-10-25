@@ -61,7 +61,7 @@ namespace cythilya.Controllers
             article_1.PicSmall = "/Content/me/img/blog/ia_for_seo_188x73.jpg";
             article_1.PicMedium = "/Content/me/img/blog/ia_for_seo_300.jpg";
             article_1.PicLarge = "/Content/me/img/blog/ia_for_seo_940x367.jpg";
-            article_1.Tag = "seo";
+            article_1.Tag = "SEO";
             article_1.isHighlight = false;
             articleList.Add(article_1);
 
@@ -74,7 +74,7 @@ namespace cythilya.Controllers
             article_2.PicSmall = "/Content/me/img/blog/duplicate_content_188x73.jpg";
             article_2.PicMedium = "/Content/me/img/blog/duplicate_content_300.jpg";
             article_2.PicLarge = "/Content/me/img/blog/duplicate_content_940x367.jpg";
-            article_2.Tag = "seo";
+            article_2.Tag = "SEO";
             article_2.isHighlight = false;
             articleList.Add(article_2);
 
@@ -87,7 +87,7 @@ namespace cythilya.Controllers
             article_3.PicSmall = "/Content/me/img/blog/search_and_social_188x73.jpg";
             article_3.PicMedium = "/Content/me/img/blog/search_and_social_300.jpg";
             article_3.PicLarge = "/Content/me/img/blog/search_and_social_940x367.jpg";
-            article_3.Tag = "seo";
+            article_3.Tag = "SEO";
             article_3.isHighlight = true;
             articleList.Add(article_3);
 
@@ -100,7 +100,7 @@ namespace cythilya.Controllers
             article_4.PicSmall = "/Content/me/img/blog/rss_188x73.jpg";
             article_4.PicMedium = "/Content/me/img/blog/rss_300.jpg";
             article_4.PicLarge = "/Content/me/img/blog/rss_940x367.jpg";
-            article_4.Tag = "seo";
+            article_4.Tag = "SEO";
             article_4.isHighlight = false;
             articleList.Add(article_4);
 
@@ -113,7 +113,7 @@ namespace cythilya.Controllers
             article_5.PicSmall = "/Content/me/img/blog/author_rank_188x73.jpg";
             article_5.PicMedium = "/Content/me/img/blog/author_rank_300.jpg";
             article_5.PicLarge = "/Content/me/img/blog/author_rank_940x367.jpg";
-            article_5.Tag = "seo";
+            article_5.Tag = "SEO";
             article_5.isHighlight = false;
             articleList.Add(article_5);
 
@@ -126,7 +126,7 @@ namespace cythilya.Controllers
             article_6.PicSmall = "/Content/me/img/blog/microdata_188x73.jpg";
             article_6.PicMedium = "/Content/me/img/blog/microdata_300.png";
             article_6.PicLarge = "/Content/me/img/blog/microdata_940x367.jpg";
-            article_6.Tag = "seo";
+            article_6.Tag = "SEO";
             article_6.isHighlight = false;
             articleList.Add(article_6);
 
@@ -139,7 +139,7 @@ namespace cythilya.Controllers
             article_7.PicSmall = "/Content/me/img/blog/seo_guideline_188x73.jpg";
             article_7.PicMedium = "/Content/me/img/blog/seo_guideline_300.jpg";
             article_7.PicLarge = "/Content/me/img/blog/seo_guideline_940x367.jpg";
-            article_7.Tag = "seo";
+            article_7.Tag = "SEO";
             article_7.isHighlight = true;
             articleList.Add(article_7);
 
@@ -152,7 +152,7 @@ namespace cythilya.Controllers
             article_8.PicSmall = "/Content/me/img/blog/facebook_social_demo_188x73.jpg";
             article_8.PicMedium = "/Content/me/img/blog/facebook_social_demo_300.jpg";
             article_8.PicLarge = "/Content/me/img/blog/facebook_social_demo_940x367.jpg";
-            article_8.Tag = "seo";
+            article_8.Tag = "SEO";
             article_8.isHighlight = true;
             articleList.Add(article_8);
 
@@ -165,7 +165,7 @@ namespace cythilya.Controllers
             article_9.PicSmall = "/Content/me/img/blog/keyword_tag_188x73.jpg";
             article_9.PicMedium = "/Content/me/img/blog/keyword_tag_300.jpg";
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
-            article_9.Tag = "seo";
+            article_9.Tag = "SEO";
             article_9.isHighlight = true;
             articleList.Add(article_9);
 
@@ -178,7 +178,7 @@ namespace cythilya.Controllers
             article_10.PicSmall = "/Content/me/img/blog/JavaScript_SEO_188x73.jpg";
             article_10.PicMedium = "/Content/me/img/blog/JavaScript_SEO_300.jpg";
             article_10.PicLarge = "/Content/me/img/blog/JavaScript_SEO_940x367.jpg";
-            article_10.Tag = "seo";
+            article_10.Tag = "SEO";
             article_10.isHighlight = true;
             articleList.Add(article_10);
 
@@ -191,7 +191,7 @@ namespace cythilya.Controllers
             article_11.PicSmall = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_188x73.jpg";
             article_11.PicMedium = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_300.jpg";
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
-            article_11.Tag = "seo";
+            article_11.Tag = "SEO";
             article_11.isHighlight = true;
             articleList.Add(article_11);
 
@@ -204,7 +204,7 @@ namespace cythilya.Controllers
             article_12.PicSmall = "/Content/me/img/blog/facebook_product_introduction_188x73.jpg";
             article_12.PicMedium = "/Content/me/img/blog/facebook_product_introduction_300.jpg";
             article_12.PicLarge = "/Content/me/img/blog/facebook_product_introduction_940x367.jpg";
-            article_12.Tag = "seo";
+            article_12.Tag = "SEO";
             article_12.isHighlight = false;
             articleList.Add(article_12);
 
@@ -217,7 +217,7 @@ namespace cythilya.Controllers
             article_13.PicSmall = "/Content/me/img/blog/seo-ranking-factors-2014_188x73.png";
             article_13.PicMedium = "/Content/me/img/blog/seo-ranking-factors-2014_300.png";
             article_13.PicLarge = "/Content/me/img/blog/seo-ranking-factors-2014_940x367.png";
-            article_13.Tag = "seo";
+            article_13.Tag = "SEO";
             article_13.isHighlight = false;
             articleList.Add(article_13);
 
@@ -243,7 +243,7 @@ namespace cythilya.Controllers
             article_15.PicSmall = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_188x73.png";
             article_15.PicMedium = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_300.png";
             article_15.PicLarge = "/Content/me/img/blog/rwd_implement_note/rwd_implement_note_940x367.png";
-            article_15.Tag = "rwd";
+            article_15.Tag = "RWD";
             article_15.isHighlight = false;
             articleList.Add(article_15);
 
@@ -256,7 +256,7 @@ namespace cythilya.Controllers
             article_16.PicSmall = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_188x73.jpg";
             article_16.PicMedium = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_300.jpg";
             article_16.PicLarge = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_940x367.jpg";
-            article_16.Tag = "seo";
+            article_16.Tag = "SEO";
             article_16.isHighlight = false;
             articleList.Add(article_16);
 
@@ -290,7 +290,7 @@ namespace cythilya.Controllers
             proj_1.Date = "Jan. 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
             proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。負責layout & UI design/html/css/jQuery。</p>";
-            proj_1.Tag = "";
+            proj_1.Tag = "Web";
             proj_1.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
@@ -341,7 +341,7 @@ namespace cythilya.Controllers
             proj_2.Date = "July 2012 - Aug 2014";
             proj_2.LauchURL = "";
             proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。負責layout & UI design/html/css/jQuery/c# backend。</p>";
-            proj_2.Tag = "";
+            proj_2.Tag = "Web";
             proj_2.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
@@ -403,7 +403,7 @@ namespace cythilya.Controllers
             proj_3.Date = "Aug. 2012";
             proj_3.LauchURL = "";
             proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。負責layout & UI design/html/css/jQuery。</p>";
-            proj_3.Tag = "";
+            proj_3.Tag = "Web";
             proj_3.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList3 = new List<MeModels.SnapshotInfo>();
@@ -439,7 +439,7 @@ namespace cythilya.Controllers
             proj_4.Date = "Oct. 2012";
             proj_4.LauchURL = "http://www.friendo.com.tw";
             proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。負責layout & UI design/html/css/jQuery/c# backend。</p>";
-            proj_4.Tag = "";
+            proj_4.Tag = "Web";
             proj_4.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
@@ -490,7 +490,7 @@ namespace cythilya.Controllers
             proj_5.Date = "July 2014";
             proj_5.LauchURL = "http://www.friendo.com.tw/daintiest";
             proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery。</p>";
-            proj_5.Tag = "";
+            proj_5.Tag = "Web";
             proj_5.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
@@ -541,7 +541,7 @@ namespace cythilya.Controllers
             proj_6.Date = "April 2014";
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
             proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，並特別加強SEO、品牌與相關產品關鍵字經營。負責layout & UI design/html/css/jQuery。</p>";
-            proj_6.Tag = "seo";
+            proj_6.Tag = "Web SEO";
             proj_6.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
@@ -587,7 +587,7 @@ namespace cythilya.Controllers
             proj_7.Date = "July 2014 - Aug 2014";
             proj_7.LauchURL = "http://fathersday.apezgo.com";
             proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。負責layout & UI design/html/css/jQuery/c# backend。</p>";
-            proj_7.Tag = "";
+            proj_7.Tag = "Web";
             proj_7.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList7 = new List<MeModels.SnapshotInfo>();
@@ -633,7 +633,7 @@ namespace cythilya.Controllers
             proj_8.Date = "Oct. 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
             proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery。</p>";
-            proj_8.Tag = "";
+            proj_8.Tag = "Web";
             proj_8.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
@@ -669,7 +669,7 @@ namespace cythilya.Controllers
             proj_9.Date = "Oct. 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
             proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery/c# backend。</p>";
-            proj_9.Tag = "";
+            proj_9.Tag = "Web";
             proj_9.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList9 = new List<MeModels.SnapshotInfo>();
@@ -700,7 +700,7 @@ namespace cythilya.Controllers
             proj_10.Date = "Sept. 2014";
             proj_10.LauchURL = "";
             proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph Api)。</p>";
-            proj_10.Tag = "rwd";
+            proj_10.Tag = "Web RWD";
             proj_10.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
