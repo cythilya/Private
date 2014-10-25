@@ -721,6 +721,6 @@ namespace cythilya.Controllers
             return projList;
         }
 
-        //Tag: seo, rwd
+        //Tag: Web, RWD, SEO, SPWA
     }
 }
