@@ -1,8 +1,7 @@
 ﻿@using cythilya.Models;
 @{
     List<MeModels.Article> recentArticleList = ViewBag.RecentPostList as List<MeModels.Article>;
-    List<MeModels.Article> articleList = ViewBag.ArticleList as List<MeModels.Article>;
-    articleList = Enumerable.Reverse(articleList).ToList();
+    List<MeModels.Article> featuredPostList = ViewBag.FeaturedPostList as List<MeModels.Article>;
 }
 <footer>
 	<div class="wrapper cf">
@@ -24,7 +23,7 @@
 			<li class="second-col">
 				<div class="widget-block">
 					<h4>FEATURED POSTS</h4>
-                    @foreach (var item in articleList)
+                    @foreach (var item in featuredPostList)
                     {
                         if (item.isHighlight)
                         {

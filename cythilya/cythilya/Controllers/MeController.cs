@@ -16,23 +16,24 @@ namespace cythilya.Controllers
             GetArticleList();
             getProjectList();
             getRecentPostList();
+            getFeaturedPostList();
             return View();
         }
 
         //Resume
         public ActionResult Resume() 
         {
-            GetArticleList();
             getRecentPostList();
+            getFeaturedPostList();
             return View();
         }
 
         //Portfolio
         public ActionResult Portfolio() 
         {
-            GetArticleList();
             getProjectList();
             getRecentPostList();
+            getFeaturedPostList();
             return View();
         }
 
@@ -48,7 +49,7 @@ namespace cythilya.Controllers
             }
 
             ViewBag.ProjData = proj;
-            GetArticleList();
+            getFeaturedPostList();
             getRecentPostList();
             return View();
         }
@@ -303,7 +304,7 @@ namespace cythilya.Controllers
 
             #endregion
 
-            articleList.Reverse();
+            //articleList.Reverse();
 
             ViewBag.ArticleList = articleList;
             return articleList;
@@ -773,6 +774,25 @@ namespace cythilya.Controllers
             articleList.Reverse();
             recentArticleList = Enumerable.Reverse(articleList).Take(number).ToList();
             ViewBag.RecentPostList = recentArticleList;
+        }
+
+        //Get Featured Post
+        public void getFeaturedPostList(int number = 4)
+        {
+            List<MeModels.Article> articleList = new List<MeModels.Article>();
+            List<MeModels.Article> featuredArticleList = new List<MeModels.Article>();
+
+            articleList = GetArticleList();
+            articleList.Reverse();
+
+            foreach (var item in articleList)
+            {
+                if (item.isHighlight)
+                { 
+                    featuredArticleList.Add(item);
+                }
+            }
+            ViewBag.FeaturedPostList = featuredArticleList;
         }
 
         //Tag: Web, RWD, SEO, SPWA
