@@ -88,7 +88,7 @@ namespace cythilya.Controllers
             article_3.PicMedium = "/Content/me/img/blog/search_and_social_300.jpg";
             article_3.PicLarge = "/Content/me/img/blog/search_and_social_940x367.jpg";
             article_3.Tag = "SEO";
-            article_3.isHighlight = true;
+            article_3.isHighlight = false;
             articleList.Add(article_3);
 
             //RSS：概念與實作
@@ -140,7 +140,7 @@ namespace cythilya.Controllers
             article_7.PicMedium = "/Content/me/img/blog/seo_guideline_300.jpg";
             article_7.PicLarge = "/Content/me/img/blog/seo_guideline_940x367.jpg";
             article_7.Tag = "SEO";
-            article_7.isHighlight = true;
+            article_7.isHighlight = false;
             articleList.Add(article_7);
 
             //Facebook Graph API & Demo Example
@@ -153,7 +153,7 @@ namespace cythilya.Controllers
             article_8.PicMedium = "/Content/me/img/blog/facebook_social_demo_300.jpg";
             article_8.PicLarge = "/Content/me/img/blog/facebook_social_demo_940x367.jpg";
             article_8.Tag = "SEO";
-            article_8.isHighlight = true;
+            article_8.isHighlight = false;
             articleList.Add(article_8);
 
             //關鍵字(Keyword)與標籤(Tag)－談選擇、聚焦與經營
@@ -166,7 +166,7 @@ namespace cythilya.Controllers
             article_9.PicMedium = "/Content/me/img/blog/keyword_tag_300.jpg";
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
             article_9.Tag = "SEO";
-            article_9.isHighlight = true;
+            article_9.isHighlight = false;
             articleList.Add(article_9);
 
             //Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力
@@ -179,7 +179,7 @@ namespace cythilya.Controllers
             article_10.PicMedium = "/Content/me/img/blog/JavaScript_SEO_300.jpg";
             article_10.PicLarge = "/Content/me/img/blog/JavaScript_SEO_940x367.jpg";
             article_10.Tag = "SEO";
-            article_10.isHighlight = true;
+            article_10.isHighlight = false;
             articleList.Add(article_10);
 
             //Facebook Graph API - Taggable Friends
@@ -208,7 +208,7 @@ namespace cythilya.Controllers
             article_12.isHighlight = false;
             articleList.Add(article_12);
 
-            //Facebook Product Introduction
+            //2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名
             MeModels.Article article_13 = new MeModels.Article();
             article_13.Name = "2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名";
             article_13.Description = "2013年的SEO Rankgin Factors著重於頁面優化、如何呈現好的內容與社群平台的散播。與2013相較，2014年最大的不同在於CTR變成SERPs排行中最重要的因子，並強調了使用者的動向(User Signals)，除了CTR還有使用者停留時間(Time on Site)、跳出率(Bounse Rate)、更全面性的評估，例如相關詞彙(Relevant Terms)、網站速度(Site Speed)。";
@@ -231,7 +231,7 @@ namespace cythilya.Controllers
             article_14.PicMedium = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg";
             article_14.PicLarge = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_940x367.jpg";
             article_14.Tag = "";
-            article_14.isHighlight = true;
+            article_14.isHighlight = false;
             articleList.Add(article_14);
 
             //RWD(Responsive Web Design) 實作筆記
@@ -283,7 +283,7 @@ namespace cythilya.Controllers
             proj_1.RawPic = "/Content/me/img/project/one_piece_z/one_piece_z_index.png";
             proj_1.PicSmall = "/Content/me/img/project/one_piece_z/one_piece_z_index_188x73.png";
             proj_1.PicMedium = "/Content/me/img/project/one_piece_z/one_piece_z_index_300.png";
-            proj_1.PicLarge = "/Content/me/img/project/one_piece_z/one_piece_z_index_940x367.png";
+            proj_1.PicLarge = "/Content/me/img/project/one_piece_z/one_piece_z_index_940x367.jpg";
             proj_1.Order = 1;
             proj_1.Client = "采昌國際多媒體";
             proj_1.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
@@ -334,7 +334,7 @@ namespace cythilya.Controllers
             proj_2.RawPic = "/Content/me/img/project/party/party_index_940x1025.png";
             proj_2.PicSmall = "/Content/me/img/project/party/party_index_188x73.png";
             proj_2.PicMedium = "/Content/me/img/project/party/party_index_300.png";
-            proj_2.PicLarge = "/Content/me/img/project/party/party_index_940x367.png";
+            proj_2.PicLarge = "/Content/me/img/project/party/party_index_940x367.jpg";
             proj_2.Order = 2;
             proj_2.Client = "";
             proj_2.ClientURL = "";
@@ -342,7 +342,7 @@ namespace cythilya.Controllers
             proj_2.LauchURL = "";
             proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。負責layout & UI design/html/css/jQuery/c# backend。</p>";
             proj_2.Tag = "Web";
-            proj_2.isHighlight = false;
+            proj_2.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
 
@@ -432,7 +432,7 @@ namespace cythilya.Controllers
             proj_4.RawPic = "/Content/me/img/project/mission/mission_index_940x812.png";
             proj_4.PicSmall = "/Content/me/img/project/mission/mission_index_188x73.png";
             proj_4.PicMedium = "/Content/me/img/project/mission/mission_index_300.png";
-            proj_4.PicLarge = "/Content/me/img/project/mission/mission_index_940x367.png";
+            proj_4.PicLarge = "/Content/me/img/project/mission/mission_index_940x367.jpg";
             proj_4.Order = 4;
             proj_4.Client = "";
             proj_4.ClientURL = "";
@@ -491,7 +491,7 @@ namespace cythilya.Controllers
             proj_5.LauchURL = "http://www.friendo.com.tw/daintiest";
             proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery。</p>";
             proj_5.Tag = "Web";
-            proj_5.isHighlight = true;
+            proj_5.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_5_snap_1 = new MeModels.SnapshotInfo();
@@ -542,7 +542,7 @@ namespace cythilya.Controllers
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
             proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，並特別加強SEO、品牌與相關產品關鍵字經營。負責layout & UI design/html/css/jQuery。</p>";
             proj_6.Tag = "Web SEO";
-            proj_6.isHighlight = true;
+            proj_6.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_6_snap_1 = new MeModels.SnapshotInfo();
@@ -580,7 +580,7 @@ namespace cythilya.Controllers
             proj_7.RawPic = "/Content/me/img/project/aphezgo/aphezgo_index.png";
             proj_7.PicSmall = "/Content/me/img/project/aphezgo/aphezgo_index_188x73.png";
             proj_7.PicMedium = "/Content/me/img/project/aphezgo/aphezgo_index_300.png";
-            proj_7.PicLarge = "/Content/me/img/project/aphezgo/aphezgo_index_940x367.png";
+            proj_7.PicLarge = "/Content/me/img/project/aphezgo/aphezgo_index_940x367.jpg";
             proj_7.Order = 7;
             proj_7.Client = "亞柏EZ購";
             proj_7.ClientURL = "http://www.apezgo.com";
@@ -693,15 +693,15 @@ namespace cythilya.Controllers
             proj_10.RawPic = "/Content/me/img/project/eventfamily/fami_index.png";
             proj_10.PicSmall = "/Content/me/img/project/eventfamily/fami_index_188x73.png";
             proj_10.PicMedium = "/Content/me/img/project/eventfamily/fami_index_300.png";
-            proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.png";
+            proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.jpg";
             proj_10.Order = 10;
             proj_10.Client = "";
             proj_10.ClientURL = "";
             proj_10.Date = "Sept. 2014";
             proj_10.LauchURL = "";
-            proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph Api)。</p>";
+            proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)。</p>";
             proj_10.Tag = "Web RWD";
-            proj_10.isHighlight = false;
+            proj_10.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_10_snap_1 = new MeModels.SnapshotInfo();
