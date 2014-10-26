@@ -19,8 +19,9 @@ namespace cythilya.Models
             public string PicInFooter { get; set; } //54x54
             public bool isHight { get; set; }
             public string Tag { get; set; }
-            public bool isHighlight { get; set; }
+            public bool isHighlight { get; set; } //appear in footer
             public string Time { get; set; }
+            public bool isBanner { get; set;  } //appear in banner
         }
 
         public class SnapshotInfo 
