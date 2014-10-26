@@ -816,6 +816,21 @@ namespace cythilya.Controllers
             ViewBag.FeaturedPostList = featuredArticleList;
         }
 
+        //Get Related Projects
+        public void getRelatedProject(int id = 0, int count = 4)
+        {
+            //get project list
+            List<MeModels.Project> projList = new List<MeModels.Project>();
+            projList = getProjectList();
+
+            //get target project
+            MeModels.Project proj = projList.Find(item => item.ID == id);
+
+            //calculate determinant
+
+            //re-order related projects by determinant
+        }
+
         //Tag: Web, RWD, SEO, SPWA
     }
 }
