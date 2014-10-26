@@ -781,7 +781,7 @@ namespace cythilya.Controllers
         }
 
         //Get Recent Post
-        public void getRecentPostList(int number = 3) 
+        public void getRecentPostList(int number = 4) 
         {
             List<MeModels.Article> articleList = new List<MeModels.Article>();
             List<MeModels.Article> recentArticleList = new List<MeModels.Article>();
