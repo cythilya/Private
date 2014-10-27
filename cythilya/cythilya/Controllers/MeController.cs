@@ -348,7 +348,7 @@ namespace cythilya.Controllers
             proj_1.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
             proj_1.Date = "Jan. 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
-            proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。負責layout & UI design/html/css/jQuery。</p>";
+            proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。負責Front-End Development。</p>";
             proj_1.Tag = "Web";
             proj_1.isHighlight = true;
 
@@ -399,7 +399,7 @@ namespace cythilya.Controllers
             proj_2.ClientURL = "";
             proj_2.Date = "July 2012 - Aug 2014";
             proj_2.LauchURL = "";
-            proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。負責layout & UI design/html/css/jQuery/c# backend。</p>";
+            proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。<br>負責Front-End Development、C# backend。</p>";
             proj_2.Tag = "Web";
             proj_2.isHighlight = true;
 
@@ -461,7 +461,7 @@ namespace cythilya.Controllers
             proj_3.ClientURL = "http://www.hlh.com.tw";
             proj_3.Date = "Aug. 2012";
             proj_3.LauchURL = "";
-            proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。負責layout & UI design/html/css/jQuery。</p>";
+            proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。<br>負責Front-End Development。</p>";
             proj_3.Tag = "Web";
             proj_3.isHighlight = false;
 
@@ -497,7 +497,7 @@ namespace cythilya.Controllers
             proj_4.ClientURL = "";
             proj_4.Date = "Oct. 2012";
             proj_4.LauchURL = "http://www.friendo.com.tw";
-            proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。負責layout & UI design/html/css/jQuery/c# backend。</p>";
+            proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。負責Front-End Development、C# backend。</p>";
             proj_4.Tag = "Web";
             proj_4.isHighlight = true;
 
@@ -548,7 +548,7 @@ namespace cythilya.Controllers
             proj_5.ClientURL = "http://www.daintiest.net";
             proj_5.Date = "July 2014";
             proj_5.LauchURL = "http://www.friendo.com.tw/daintiest";
-            proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery。</p>";
+            proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。負責Front-End Development。</p>";
             proj_5.Tag = "Web";
             proj_5.isHighlight = false;
 
@@ -645,7 +645,7 @@ namespace cythilya.Controllers
             proj_7.ClientURL = "http://www.apezgo.com";
             proj_7.Date = "July 2014 - Aug 2014";
             proj_7.LauchURL = "http://fathersday.apezgo.com";
-            proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。負責layout & UI design/html/css/jQuery/c# backend。</p>";
+            proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。負責Front-End Development、C# backend。</p>";
             proj_7.Tag = "Web";
             proj_7.isHighlight = false;
 
@@ -691,7 +691,7 @@ namespace cythilya.Controllers
             proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
             proj_8.Date = "Oct. 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
-            proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery。</p>";
+            proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責Front-End Development。</p>";
             proj_8.Tag = "Web";
             proj_8.isHighlight = false;
 
@@ -727,7 +727,7 @@ namespace cythilya.Controllers
             proj_9.ClientURL = "";
             proj_9.Date = "Oct. 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
-            proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責layout & UI design/html/css/jQuery/c# backend。</p>";
+            proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責Front-End Development。</p>";
             proj_9.Tag = "Web";
             proj_9.isHighlight = false;
 
