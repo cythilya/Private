@@ -9,7 +9,8 @@ namespace cythilya.Controllers
 {
     public class MeController : Controller
     {
-        //View
+        #region View
+        
         //Index
         public ActionResult Index()
         {
@@ -48,13 +49,18 @@ namespace cythilya.Controllers
                 return View("Portfolio");
             }
 
+            getRelatedProject(id);
+
             ViewBag.ProjData = proj;
             getFeaturedPostList();
             getRecentPostList();
             return View();
         }
+        
+        #endregion
 
-        //Function
+        #region Function
+        
         //Get Article List
         public List<MeModels.Article> GetArticleList()
         {
@@ -759,7 +765,7 @@ namespace cythilya.Controllers
             proj_10.Date = "Sept. 2014";
             proj_10.LauchURL = "";
             proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)。</p>";
-            proj_10.Tag = "Web RWD";
+            proj_10.Tag = "Web SEO RWD";
             proj_10.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
@@ -817,19 +823,86 @@ namespace cythilya.Controllers
         }
 
         //Get Related Projects
-        public void getRelatedProject(int id = 0, int count = 4)
+        public void getRelatedProject(int id = 1, int count = 4)
         {
+            //tag list
+            List<string> TagList = new List<string>();
+            TagList.Add("Web");
+            TagList.Add("SEO");
+            TagList.Add("RWD");
+            TagList.Add("SPWA");
+
             //get project list
             List<MeModels.Project> projList = new List<MeModels.Project>();
             projList = getProjectList();
 
-            //get target project
             MeModels.Project proj = projList.Find(item => item.ID == id);
 
+            //new list to calculate
+            List<MeModels.RelatedProject> relatedProjectList = new List<MeModels.RelatedProject>();
+
+            foreach (var item in projList)
+            {
+                int score = 1;
+                int total = 0;
+                MeModels.RelatedProject projectItem = new MeModels.RelatedProject();
+                string[] parts = item.Tag.Split(' ');
+
+                for(int i = 0; i < TagList.Count ; i++)
+                {
+                    var result = Array.FindAll(parts, s => s.Equals(TagList[i]));
+                    if (result.Length != 0) 
+                    {
+                        total = total + score;
+                    }
+                    score = score * 2;
+
+                };
+
+                projectItem.ID = item.ID;
+                projectItem.Name = item.Name;
+                projectItem.URL = item.URL;
+                projectItem.PicLarge = item.PicLarge;
+                projectItem.TagScore = total;
+                relatedProjectList.Add(projectItem);
+            }
+
+
+            //get target project
+            MeModels.RelatedProject targetProj = relatedProjectList.Find(item => item.ID == id);
+
+            //remove target project from related project list
+            var itemToRemove = relatedProjectList.Single(r => r.ID == id);
+            bool flag = relatedProjectList.Remove(itemToRemove);
+
             //calculate determinant
+            foreach(var item in relatedProjectList)
+            {
+                var resultScore = targetProj.TagScore & item.TagScore;
+                item.TagScore = resultScore;
+            };
 
             //re-order related projects by determinant
+            relatedProjectList = relatedProjectList.OrderByDescending(x => x.TagScore).ToList();
+
+            //get first four items in related project list
+            List<MeModels.RelatedProject> reulstRelatedProjectList = new List<MeModels.RelatedProject>();
+            int c = 0;
+            int max = 4;
+
+            foreach (var r in relatedProjectList)
+            {
+                if (c < max)
+                {
+                    reulstRelatedProjectList.Add(r);
+                    c++;
+                }
+            }
+
+            ViewBag.RelatedProjects = reulstRelatedProjectList;
         }
+
+        #endregion
 
         //Tag: Web, RWD, SEO, SPWA
     }

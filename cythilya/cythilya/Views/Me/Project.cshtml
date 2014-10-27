@@ -6,6 +6,8 @@
     MeModels.Project proj = ViewBag.ProjData as MeModels.Project;
     ViewBag.Title = proj.Name + " | Hsin-Hao Tang";
     ViewBag.Description = proj.Name + " | Hsin-Hao Tang";
+
+    List<MeModels.RelatedProject> relatedProjects = ViewBag.RelatedProjects as List<MeModels.RelatedProject>;
 }
 <style>
 body.home #main {
@@ -63,31 +65,19 @@ body.home #main {
         	</div>
         </div>
     </div>
-    @*
+    @if (relatedProjects != null)
+    { 
 	<div class="related-projects">
-		<h4 class="related-heading">Related projects</h4>
+		<h4 class="related-heading">Related Rrojects</h4>
 		<div class="related-list cf">
+            @foreach (var rItem in relatedProjects) 
+            { 
 			<figure>
-				<a href="#" class="thumb"><img src="img/dummies/slides/01.jpg" alt="Alt text" /></a>
-				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
+				<a href="@(rItem.URL)" class="thumb" title="@(rItem.Name)"><img src="@(rItem.PicLarge)" title="@(rItem.Name)" alt="@(rItem.Name)" /></a>
+				<a href="@(rItem.URL)" class="heading" title="@(rItem.Name)">@(rItem.Name)</a>
 			</figure>
-					
-			<figure>
-				<a href="#" class="thumb"><img src="img/dummies/slides/02.jpg" alt="Alt text" /></a>
-				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
-			</figure>
-					
-			<figure> 
-				<a href="#" class="thumb"><img src="img/dummies/slides/03.jpg" alt="Alt text" /></a>
-				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
-			</figure>
-					
-			<figure>
-				<a href="#" class="thumb"><img src="img/dummies/slides/04.jpg" alt="Alt text" /></a>
-				<a href="single.html" class="heading">Pellentesque habitant morbi</a>
-			</figure>
-					
+            }
 		</div>
-	</div>
-	*@
+	</div>    
+    }
 </div>
