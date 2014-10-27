@@ -555,7 +555,7 @@ namespace cythilya.Controllers
             proj_5.Date = "July 2014";
             proj_5.LauchURL = "http://www.friendo.com.tw/daintiest";
             proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。負責Front-End Development。</p>";
-            proj_5.Tag = "Web";
+            proj_5.Tag = "Web Brand";
             proj_5.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
@@ -606,7 +606,7 @@ namespace cythilya.Controllers
             proj_6.Date = "April 2014";
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
             proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。負責Front-End Development。</p>";
-            proj_6.Tag = "Web SEO";
+            proj_6.Tag = "Web Brand SEO";
             proj_6.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
@@ -698,7 +698,7 @@ namespace cythilya.Controllers
             proj_8.Date = "Oct. 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
             proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責Front-End Development。</p>";
-            proj_8.Tag = "Web";
+            proj_8.Tag = "Web Brand";
             proj_8.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
@@ -734,7 +734,7 @@ namespace cythilya.Controllers
             proj_9.Date = "Oct. 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
             proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責Front-End Development。</p>";
-            proj_9.Tag = "Web";
+            proj_9.Tag = "Web Brand";
             proj_9.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList9 = new List<MeModels.SnapshotInfo>();
@@ -828,6 +828,7 @@ namespace cythilya.Controllers
             //tag list
             List<string> TagList = new List<string>();
             TagList.Add("Web");
+            TagList.Add("Brand");
             TagList.Add("SEO");
             TagList.Add("RWD");
             TagList.Add("SPWA");
