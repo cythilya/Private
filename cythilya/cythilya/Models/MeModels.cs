@@ -67,7 +67,7 @@ namespace cythilya.Models
             public int ID { get; set; }
             public string Name { get; set; }
             public string URL { get; set; }
-            public string PicInFooter { get; set; } //940*367
+            public string PicInFooter { get; set; } //54*54
             public string Date { get; set; }
             public int TagScore { get; set; }
         }
