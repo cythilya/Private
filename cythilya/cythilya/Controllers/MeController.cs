@@ -19,6 +19,7 @@ namespace cythilya.Controllers
             getProjectList();
             getRecentPostList();
             getFeaturedPostList();
+            getRecentProject();
             return View();
         }
 
@@ -27,6 +28,7 @@ namespace cythilya.Controllers
         {
             getRecentPostList();
             getFeaturedPostList();
+            getRecentProject();
             return View();
         }
 
@@ -36,6 +38,7 @@ namespace cythilya.Controllers
             getProjectList();
             getRecentPostList();
             getFeaturedPostList();
+            getRecentProject();
             return View();
         }
 
@@ -55,6 +58,7 @@ namespace cythilya.Controllers
             ViewBag.ProjData = proj;
             getFeaturedPostList();
             getRecentPostList();
+            getRecentProject();
             return View();
         }
 
@@ -63,6 +67,7 @@ namespace cythilya.Controllers
         {
             getRecentPostList();
             getFeaturedPostList();
+            getRecentProject();
             return View();
         }
 
@@ -358,6 +363,7 @@ namespace cythilya.Controllers
             proj_1.PicSmall = "/Content/me/img/project/one_piece_z/one_piece_z_index_188x73.png";
             proj_1.PicMedium = "/Content/me/img/project/one_piece_z/one_piece_z_index_300.png";
             proj_1.PicLarge = "/Content/me/img/project/one_piece_z/one_piece_z_index_940x367.jpg";
+            proj_1.PicInFooter = "/Content/me/img/project/one_piece_z/one_piece_z_index_54x54.png";
             proj_1.Order = 1;
             proj_1.Client = "采昌國際多媒體";
             proj_1.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
@@ -409,6 +415,7 @@ namespace cythilya.Controllers
             proj_2.PicSmall = "/Content/me/img/project/party/party_index_188x73.png";
             proj_2.PicMedium = "/Content/me/img/project/party/party_index_300.png";
             proj_2.PicLarge = "/Content/me/img/project/party/party_index_940x367.jpg";
+            proj_2.PicInFooter = "/Content/me/img/project/party/party_index_54x54.png";
             proj_2.Order = 2;
             proj_2.Client = "";
             proj_2.ClientURL = "";
@@ -471,6 +478,7 @@ namespace cythilya.Controllers
             proj_3.PicSmall = "/Content/me/img/project/party_hlh/party_index_hlh_188x73.png";
             proj_3.PicMedium = "/Content/me/img/project/party_hlh/party_index_hlh_300.png";
             proj_3.PicLarge = "/Content/me/img/project/party_hlh/party_index_hlh_940x367.png";
+            proj_3.PicInFooter = "/Content/me/img/project/party_hlh/party_index_hlh_54x54.png";
             proj_3.Order = 3;
             proj_3.Client = "恆隆行";
             proj_3.ClientURL = "http://www.hlh.com.tw";
@@ -507,6 +515,7 @@ namespace cythilya.Controllers
             proj_4.PicSmall = "/Content/me/img/project/mission/mission_index_188x73.png";
             proj_4.PicMedium = "/Content/me/img/project/mission/mission_index_300.png";
             proj_4.PicLarge = "/Content/me/img/project/mission/mission_index_940x367.jpg";
+            proj_4.PicInFooter = "/Content/me/img/project/mission/mission_index_54x54.png";
             proj_4.Order = 4;
             proj_4.Client = "";
             proj_4.ClientURL = "";
@@ -558,6 +567,7 @@ namespace cythilya.Controllers
             proj_5.PicSmall = "/Content/me/img/project/daintiest/daintiest_index_188x73.png";
             proj_5.PicMedium = "/Content/me/img/project/daintiest/daintiest_index_300.png";
             proj_5.PicLarge = "/Content/me/img/project/daintiest/daintiest_index_940x367.png";
+            proj_5.PicInFooter = "/Content/me/img/project/daintiest/daintiest_index_54x54.jpg";
             proj_5.Order = 5;
             proj_5.Client = "原味千尋";
             proj_5.ClientURL = "http://www.daintiest.net";
@@ -609,6 +619,7 @@ namespace cythilya.Controllers
             proj_6.PicSmall = "/Content/me/img/project/yipinchan/yipinchan_index_188x73.png";
             proj_6.PicMedium = "/Content/me/img/project/yipinchan/yipinchan_index_300.png";
             proj_6.PicLarge = "/Content/me/img/project/yipinchan/yipinchan_index_940x367.png";
+            proj_6.PicInFooter = "/Content/me/img/project/yipinchan/yipinchan_index_54x54.png";
             proj_6.Order = 6;
             proj_6.Client = "一品禪";
             proj_6.ClientURL = "http://www.yishentw.com";
@@ -655,6 +666,7 @@ namespace cythilya.Controllers
             proj_7.PicSmall = "/Content/me/img/project/aphezgo/aphezgo_index_188x73.png";
             proj_7.PicMedium = "/Content/me/img/project/aphezgo/aphezgo_index_300.png";
             proj_7.PicLarge = "/Content/me/img/project/aphezgo/aphezgo_index_940x367.jpg";
+            proj_7.PicInFooter = "/Content/me/img/project/aphezgo/aphezgo_index_54x54.jpg";
             proj_7.Order = 7;
             proj_7.Client = "亞柏EZ購";
             proj_7.ClientURL = "http://www.apezgo.com";
@@ -700,7 +712,8 @@ namespace cythilya.Controllers
             proj_8.RawPic = "/Content/me/img/project/grapeking/grapeking_index.png";
             proj_8.PicSmall = "/Content/me/img/project/grapeking/grapeking_index_188x73.png";
             proj_8.PicMedium = "/Content/me/img/project/grapeking/grapeking_index_300.png";
-            proj_8.PicLarge = "/Content/me/img/project/grapeking/grapeking_index_940x367.png";
+            proj_8.PicInFooter = "/Content/me/img/project/grapeking/grapeking_index_940x367.png";
+            roj_8.PicLarge = "/Content/me/img/project/grapeking/grapeking_index_54x54.png";
             proj_8.Order = 8;
             proj_8.Client = "葡萄王生技";
             proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
@@ -737,6 +750,7 @@ namespace cythilya.Controllers
             proj_9.PicSmall = "/Content/me/img/project/hellomip/hellomip_index_188x73.png";
             proj_9.PicMedium = "/Content/me/img/project/hellomip/hellomip_index_300.png";
             proj_9.PicLarge = "/Content/me/img/project/hellomip/hellomip_index_940x367.png";
+            proj_9.PicInFooter = "/Content/me/img/project/hellomip/hellomip_index_54x54.png";
             proj_9.Order = 9;
             proj_9.Client = "";
             proj_9.ClientURL = "";
@@ -768,6 +782,7 @@ namespace cythilya.Controllers
             proj_10.PicSmall = "/Content/me/img/project/eventfamily/fami_index_188x73.png";
             proj_10.PicMedium = "/Content/me/img/project/eventfamily/fami_index_300.png";
             proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.jpg";
+            proj_10.PicInFooter = "/Content/me/img/project/eventfamily/fami_index _54x54.png";
             proj_10.Order = 10;
             proj_10.Client = "";
             proj_10.ClientURL = "";
@@ -910,6 +925,46 @@ namespace cythilya.Controllers
             }
 
             ViewBag.RelatedProjects = reulstRelatedProjectList;
+        }
+
+        //Get Recent Projects
+        public void getRecentProject(int number = 4)
+        {
+            //get project list
+            List<MeModels.Project> projList = new List<MeModels.Project>();
+            projList = getProjectList();
+
+            //new list to calculate
+            List<MeModels.RecentProject> recentProjects = new List<MeModels.RecentProject>();
+
+            foreach (var item in projList)
+            {
+                MeModels.RecentProject projectItem = new MeModels.RecentProject();
+                projectItem.ID = item.ID;
+                projectItem.Name = item.Name;
+                projectItem.URL = item.URL;
+                projectItem.Date = item.Date;
+                projectItem.PicInFooter = item.PicInFooter;
+                recentProjects.Add(projectItem);
+            }
+
+            //get last four items in related project list
+            List<MeModels.RecentProject> recentProjectList = new List<MeModels.RecentProject>();
+            int c = 0;
+            int max = 4;
+
+            //re-order
+            recentProjects.Reverse();
+
+            foreach (var r in recentProjects)
+            {
+                if (c < max)
+                {
+                    recentProjectList.Add(r);
+                    c++;
+                }
+            }
+            ViewBag.RecentProjectList = recentProjectList;
         }
 
         //Send Mail to Me

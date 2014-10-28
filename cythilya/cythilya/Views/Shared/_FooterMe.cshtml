@@ -2,6 +2,7 @@
 @{
     List<MeModels.Article> recentArticleList = ViewBag.RecentPostList as List<MeModels.Article>;
     List<MeModels.Article> featuredPostList = ViewBag.FeaturedPostList as List<MeModels.Article>;
+    List<MeModels.RecentProject> recentProjectList = ViewBag.RecentProjectList as List<MeModels.RecentProject>;
 }
 <footer>
 	<div class="wrapper cf">
@@ -40,6 +41,15 @@
 			<li class="third-col">
 				<div class="widget-block">
                     <h4>RECENT PROJECTS</h4>
+                    @foreach (var item in recentProjectList)
+                    {
+  					    <div class="recent-post cf">
+						    <a href="@(item.URL)" class="thumb" title="@(item.Name)"><img src="@(item.PicInFooter)" title="@(item.Name)" alt="@(item.Name)" /></a>
+						    <div class="post-head">
+							    <a href="@(item.URL)">@(item.Name)</a><span>@(item.Date)</span>
+						    </div>
+					    </div>                                
+                    }
                 </div>
 			</li>  
 			<li class="fourth-col">
