@@ -60,5 +60,12 @@ namespace cythilya.Models
             public string Date { get; set; }
             public int TagScore { get; set; }
         }
+
+        public class Visitor 
+        {
+            public string Name { get; set; }
+            public string Email { get; set; }
+            public string Message { get; set; }
+        }
     }
 }

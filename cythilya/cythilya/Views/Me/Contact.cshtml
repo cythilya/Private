@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Tab = "Contact";
+    ViewBag.Title = "Contact Hsin-Hao Tang";
+    ViewBag.Description = "Contact Hsin-Hao Tang";
+}
+<style>
+body.home #main {
+    padding-top: 0;
+}    
+</style>
+<div id="page-content" class="cf">	
+    @*
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true" /></script>
+    <script type="text/javascript">
+	    function initialize() {
+		    var latlng = new google.maps.LatLng(-34.397, 150.644);
+		    var myOptions = {
+			    zoom: 8,
+			    center: latlng,
+			    mapTypeId: google.maps.MapTypeId.ROADMAP
+		    };
+		    var map = new google.maps.Map(document.getElementById("map_canvas"),
+		    myOptions);
+	    }
+    </script>
+    <div id="map-holder">
+	    <div id="map_canvas"></div>
+	    <div id="map-content">
+		    <p><h3>LOCATION</h3></p>
+	        	
+		    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+	    </div>
+    </div>
+    *@
+    <p><h3>CONTACT FORM</h3></p>
+    <p>Use this contact form to get in touch with me.</p>
+    <form id="contactForm" action="/me/ContactMe" method="post">
+	    <fieldset>
+		    <p>
+			    <label for="name" >Name</label>
+			    <input name="Name"  id="name" type="text" class="form-poshytip" title="Enter your full name" />
+		    </p>
+		    <p>
+			    <label for="email" >Email</label>
+			    <input name="Email"  id="email" type="text" class="form-poshytip" title="Enter your email address" />
+		    </p>
+		    <p>
+			    <label for="comments">Message</label>
+			    <textarea  name="Message"  id="comments" rows="5" cols="20" class="form-poshytip" title="Enter your comments"></textarea>
+		    </p>
+            @*
+		    <!-- send mail configuration -->
+		    <input type="hidden" value="your@email.com" name="to" id="to" />
+		    <input type="hidden" value="ENter the subject here" name="subject" id="subject" />
+		    <input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+            *@
+		    <p>
+                <input type="submit" value="Send" name="submit" id="submit" />
+                <span id="error" class="warning"></span>
+            </p>
+    	</fieldset>
+    </form>
+    <p id="sent-form-msg" class="success">Form data sent. Thanks for your comments.</p>
+</div>

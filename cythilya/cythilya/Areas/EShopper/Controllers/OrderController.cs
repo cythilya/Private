@@ -92,7 +92,6 @@ namespace cythilya.Areas.EShopper.Controllers
         {
             var member = db.Members.Where(p => p.Account == User.Identity.Name).FirstOrDefault();
 
-            #region fake data
             var memberInfo = new Member()
             {
                 ID = member.ID,
@@ -100,7 +99,6 @@ namespace cythilya.Areas.EShopper.Controllers
                 Email = member.Email,
                 Name = member.Name
             };
-            #endregion
 
             ViewBag.MemberInfo = memberInfo;
         }

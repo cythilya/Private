@@ -203,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
+    <Content Include="App_Data\VisitorEmailTemplate.html" />
     <Content Include="Content\css\validationEngine.jquery.css" />
     <Content Include="Content\eshopper\css\animate.css" />
     <Content Include="Content\eshopper\css\bootstrap.min.css" />
@@ -287,6 +288,7 @@
     <Content Include="Content\eshopper\js\jquery.scrollUp.min.js" />
     <Content Include="Content\eshopper\js\main.js" />
     <Content Include="Content\eshopper\js\price-range.js" />
+    <Content Include="Content\js\form-validation.js" />
     <Content Include="Content\js\jquery-1.7.1.min.js" />
     <Content Include="Content\js\jquery.cookie.js" />
     <Content Include="Content\js\jquery.validationEngine-en.js" />
@@ -1527,6 +1529,7 @@
     <None Include="Content\ui\ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.fla" />
     <None Include="Content\ui\ckeditor\skins\moono\readme.md" />
     <Content Include="Views\Shared\_LayoutCommon.cshtml" />
+    <Content Include="Views\Me\Contact.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

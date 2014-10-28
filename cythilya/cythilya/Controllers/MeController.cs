@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using cythilya.Models;
+using System.Net.Mail;
 
 namespace cythilya.Controllers
 {
@@ -56,7 +57,15 @@ namespace cythilya.Controllers
             getRecentPostList();
             return View();
         }
-        
+
+        //Contact
+        public ActionResult Contact()
+        {
+            getRecentPostList();
+            getFeaturedPostList();
+            return View();
+        }
+
         #endregion
 
         #region Function
@@ -903,8 +912,41 @@ namespace cythilya.Controllers
             ViewBag.RelatedProjects = reulstRelatedProjectList;
         }
 
-        #endregion
+        //Send Mail to Me
+        public ActionResult ContactMe(MeModels.Visitor visitor)
+        {
+            string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/VisitorEmailTemplate.html"));
 
-        //Tag: Web, RWD, SEO, SPWA
+
+            mailBody = mailBody.Replace("{{Visitor_Name}}", visitor.Name);
+            mailBody = mailBody.Replace("{{Visitor_Email}}", visitor.Email);
+            mailBody = mailBody.Replace("{{Visitor_Messages}}", visitor.Message);
+            mailBody = mailBody.Replace("{{Visitor_Time}}", DateTime.UtcNow.ToString());
+            
+            try
+            {
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("eshoppertw@gmail.com", "liardice.,1024");
+                SmtpServer.EnableSsl = true;
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("eshoppertw@gmail.com");
+                mail.To.Add("cythilya@gmail.com");
+                mail.Subject = "Hsin-Hao Tang Personal Website";
+                mail.Body = mailBody;
+                mail.IsBodyHtml = true;
+
+                SmtpServer.Send(mail);
+
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }        
+
+        #endregion
     }
 }
