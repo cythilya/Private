@@ -367,7 +367,7 @@ namespace cythilya.Controllers
             proj_1.Order = 1;
             proj_1.Client = "采昌國際多媒體";
             proj_1.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
-            proj_1.Date = "Jan. 2013";
+            proj_1.Date = "Jan 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
             proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。負責Front-End Development。</p>";
             proj_1.Tag = "Web";
@@ -482,7 +482,7 @@ namespace cythilya.Controllers
             proj_3.Order = 3;
             proj_3.Client = "恆隆行";
             proj_3.ClientURL = "http://www.hlh.com.tw";
-            proj_3.Date = "Aug. 2012";
+            proj_3.Date = "Aug 2012";
             proj_3.LauchURL = "";
             proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。<br>負責Front-End Development。</p>";
             proj_3.Tag = "Web";
@@ -519,7 +519,7 @@ namespace cythilya.Controllers
             proj_4.Order = 4;
             proj_4.Client = "";
             proj_4.ClientURL = "";
-            proj_4.Date = "Oct. 2012";
+            proj_4.Date = "Oct 2012";
             proj_4.LauchURL = "http://www.friendo.com.tw";
             proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。負責Front-End Development、C# backend。</p>";
             proj_4.Tag = "Web";
@@ -786,7 +786,7 @@ namespace cythilya.Controllers
             proj_10.Order = 10;
             proj_10.Client = "";
             proj_10.ClientURL = "";
-            proj_10.Date = "Sept. 2014";
+            proj_10.Date = "Sept 2014";
             proj_10.LauchURL = "";
             proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)。</p>";
             proj_10.Tag = "Web SEO RWD";
