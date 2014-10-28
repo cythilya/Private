@@ -717,7 +717,7 @@ namespace cythilya.Controllers
             proj_8.Order = 8;
             proj_8.Client = "葡萄王生技";
             proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
-            proj_8.Date = "Oct. 2014";
+            proj_8.Date = "Oct 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
             proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責Front-End Development。</p>";
             proj_8.Tag = "Web Brand";
@@ -754,7 +754,7 @@ namespace cythilya.Controllers
             proj_9.Order = 9;
             proj_9.Client = "";
             proj_9.ClientURL = "";
-            proj_9.Date = "Oct. 2014";
+            proj_9.Date = "Oct 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
             proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責Front-End Development。</p>";
             proj_9.Tag = "Web Brand";
