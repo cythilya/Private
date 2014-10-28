@@ -933,7 +933,7 @@ namespace cythilya.Controllers
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress("eshoppertw@gmail.com");
                 mail.To.Add("cythilya@gmail.com");
-                mail.Subject = "Hsin-Hao Tang Personal Website";
+                mail.Subject = "Hello ~ ";
                 mail.Body = mailBody;
                 mail.IsBodyHtml = true;
 
