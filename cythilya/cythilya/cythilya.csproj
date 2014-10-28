@@ -334,7 +334,10 @@
     <Content Include="Content\me\img\blog\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_300.jpg" />
     <Content Include="Content\me\img\blog\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_54x54.jpg" />
     <Content Include="Content\me\img\blog\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_940x367.jpg" />
+    <Content Include="Content\me\img\project\aphezgo\aphezgo_index_54x54.jpg" />
     <Content Include="Content\me\img\project\aphezgo\aphezgo_index_940x367.jpg" />
+    <Content Include="Content\me\img\project\daintiest\daintiest_index_54x54.jpg" />
+    <Content Include="Content\me\img\project\eventfamily\fami_index _54x54.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index_188x73.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index_300.png" />
@@ -343,6 +346,7 @@
     <Content Include="Content\me\img\project\eventfamily\fami_index_940x367.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_about_940.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_index.png" />
+    <Content Include="Content\me\img\project\grapeking\grapeking_index_54x54.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_index_940.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_index_188x73.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_index_300.png" />
@@ -350,11 +354,17 @@
     <Content Include="Content\me\img\project\hellomip\hellomip_index.png" />
     <Content Include="Content\me\img\project\hellomip\hellomip_index_188x73.png" />
     <Content Include="Content\me\img\project\hellomip\hellomip_index_300.png" />
+    <Content Include="Content\me\img\project\hellomip\hellomip_index_54x54.png" />
     <Content Include="Content\me\img\project\hellomip\hellomip_index_940.png" />
     <Content Include="Content\me\img\project\hellomip\hellomip_index_940x367.png" />
+    <Content Include="Content\me\img\project\mission\mission_index_54x54.png" />
     <Content Include="Content\me\img\project\mission\mission_index_940x367.jpg" />
+    <Content Include="Content\me\img\project\one_piece_z\one_piece_z_index_54x54.png" />
     <Content Include="Content\me\img\project\one_piece_z\one_piece_z_index_940x367.jpg" />
+    <Content Include="Content\me\img\project\party\party_index_54x54.png" />
     <Content Include="Content\me\img\project\party\party_index_940x367.jpg" />
+    <Content Include="Content\me\img\project\party_hlh\party_index_hlh_54x54.png" />
+    <Content Include="Content\me\img\project\yipinchan\yipinchan_index_54x54.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\seo_lab\css\style_anjularjs.css" />
     <Content Include="Content\seo_lab\js\script_anjularjs.js" />
