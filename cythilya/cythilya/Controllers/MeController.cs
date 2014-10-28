@@ -933,7 +933,7 @@ namespace cythilya.Controllers
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress("eshoppertw@gmail.com");
                 mail.To.Add("cythilya@gmail.com");
-                mail.Subject = "Hello ~ ";
+                mail.Subject = "Hello ~ Email from " + visitor.Name + " at " + DateTime.UtcNow.ToString();
                 mail.Body = mailBody;
                 mail.IsBodyHtml = true;
 
