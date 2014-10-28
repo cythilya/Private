@@ -40,7 +40,7 @@ namespace cythilya.Models
             public string PicSmall { get; set; } //188*73
             public string PicMedium { get; set; } //300*n
             public string PicLarge { get; set; } //940*367
-            public string PicInFooter { get; set; } /54*54
+            public string PicInFooter { get; set; } //54*54
             public List<SnapshotInfo> Snapshot { get; set; }
             public int Order { get; set; }
             public string Client { get; set; }
