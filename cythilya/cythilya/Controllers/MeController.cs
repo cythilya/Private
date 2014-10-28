@@ -782,7 +782,7 @@ namespace cythilya.Controllers
             proj_10.PicSmall = "/Content/me/img/project/eventfamily/fami_index_188x73.png";
             proj_10.PicMedium = "/Content/me/img/project/eventfamily/fami_index_300.png";
             proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.jpg";
-            proj_10.PicInFooter = "/Content/me/img/project/eventfamily/fami_index _54x54.png";
+            proj_10.PicInFooter = "/Content/me/img/project/eventfamily/fami_index_54x54.png";
             proj_10.Order = 10;
             proj_10.Client = "";
             proj_10.ClientURL = "";
