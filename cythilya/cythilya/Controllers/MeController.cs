@@ -712,8 +712,8 @@ namespace cythilya.Controllers
             proj_8.RawPic = "/Content/me/img/project/grapeking/grapeking_index.png";
             proj_8.PicSmall = "/Content/me/img/project/grapeking/grapeking_index_188x73.png";
             proj_8.PicMedium = "/Content/me/img/project/grapeking/grapeking_index_300.png";
-            proj_8.PicInFooter = "/Content/me/img/project/grapeking/grapeking_index_940x367.png";
-            proj_8.PicLarge = "/Content/me/img/project/grapeking/grapeking_index_54x54.png";
+            proj_8.PicLarge = "/Content/me/img/project/grapeking/grapeking_index_940x367.png";
+            proj_8.PicInFooter = "/Content/me/img/project/grapeking/grapeking_index_54x54.png";
             proj_8.Order = 8;
             proj_8.Client = "葡萄王生技";
             proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
