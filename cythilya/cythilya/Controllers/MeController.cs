@@ -53,6 +53,16 @@ namespace cythilya.Controllers
             return View();
         }
 
+        public ActionResult ProjectArchieve() 
+        {
+            GetArticleList();
+            getProjectList();
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            return View(); 
+        }
+
         //Project
         public ActionResult Project(int id = 0) 
         {
@@ -986,8 +996,11 @@ namespace cythilya.Controllers
                 MeModels.RecentProject projectItem = new MeModels.RecentProject();
                 projectItem.ID = item.ID;
                 projectItem.Name = item.Name;
+                projectItem.Description = item.Description;
+                projectItem.Tag = item.Tag;
                 projectItem.URL = item.URL;
                 projectItem.Date = item.Date;
+                projectItem.PicLarge = item.PicLarge;
                 projectItem.PicInFooter = item.PicInFooter;
                 recentProjects.Add(projectItem);
             }
@@ -999,6 +1012,7 @@ namespace cythilya.Controllers
 
             //re-order
             recentProjects.Reverse();
+            ViewBag.RecentAllProjects = recentProjects;
 
             foreach (var r in recentProjects)
             {

@@ -1,0 +1,64 @@
+﻿@using cythilya.Models;
+@{
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Title = "Project Archieve";
+    ViewBag.Tab = "";
+
+    List<MeModels.RecentProject> recentAllProjects = ViewBag.RecentAllProjects as List<MeModels.RecentProject>;
+}
+<style>
+body.home #main {
+    padding-top: 30px;
+}    
+</style>
+<div id="posts-list" class="cf">
+    @if (recentAllProjects != null)
+    {
+        foreach (var item in recentAllProjects) 
+        { 
+        <article class="format-standard">
+	        <div class="feature-image">
+		        <a href="@(item.URL)" title="@(item.Name)" target="_blank">
+			        <img src="@(item.PicLarge)" title="@(item.Name)" alt="@(item.Name)" />
+		        </a>
+	        </div>
+	        <div class="box cf">
+		        @*<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>*@
+		        <div class="excerpt">
+			        <a href="@(item.URL)" title="@(item.Name)" target="_blank" class="post-heading" >@(item.Name)</a>
+			        <p>@(item.Description)</p>
+			        <p><a href="@(item.URL)" title="@(item.Name)" target="_blank" class="learnmore">View More</a></p>
+		        </div>
+		        <div class="meta">
+                    <span class="user"><a href="https://plus.google.com/+CythilyaTang" title="Hsin-Hao Tang" target="_blank">Hsin-Hao Tang</a></span>
+                    <span class="format">@(item.Date)</span>
+                    @*
+                    <span class="format">Post</span>
+			        <span class="user"><a href="#">By LuisZuno, </a></span>
+			        <span class="comments">16 comments</span>
+			        <span class="tags"><a href="#">red</a>, <a href="#">cyan</a>, <a href="#">white</a>, <a href="#">blue</a></span>
+                    *@
+		        </div>
+	        </div>
+        </article>    
+        }
+    }       	
+</div>
+<aside id="sidebar">
+    <ul>
+	    <li class="block">
+		    <h4>Archieve</h4>
+            @if (recentAllProjects != null)
+            {
+            <div class="lists-heart">
+            <ul>
+                @foreach (var item in recentAllProjects) 
+                { 
+			    <li><a href="@(item.URL)" title="@(item.Name)" target="_blank">@(item.Name)</a>&nbsp&nbsp<span class="post-counter">@(item.Date)</span></li>
+                }
+			</ul>
+            </div>  
+            }
+        </li>
+    </ul>
+</aside>
