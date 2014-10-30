@@ -93,7 +93,7 @@ namespace cythilya.Controllers
 
             #region Mock
 
-            //IA for SEO：使用IA增進從搜尋引擎來的流量
+            #region IA for SEO：使用IA增進從搜尋引擎來的流量
             MeModels.Article article_1 = new MeModels.Article();
             article_1.Name = "IA for SEO：使用IA增進從搜尋引擎來的流量";
             article_1.Description = "在達到高的「有機搜尋引擎最佳化排行」(Organic Search Engine Optimization Ranking)中，IA(Information Architecture，資訊架構)是很重要的部份。";
@@ -108,8 +108,9 @@ namespace cythilya.Controllers
             article_1.Time = "Jan 1, 2014";//2014/01/04
             article_1.isBanner = false;
             articleList.Add(article_1);
+            #endregion
 
-            //SEO：重複內容(Duplicate Content)
+            #region SEO：重複內容(Duplicate Content)
             MeModels.Article article_2 = new MeModels.Article();
             article_2.Name = "SEO：重複內容(Duplicate Content)";
             article_2.Description = "網站中或網站間存在許多重複內容，而搜尋引擎為了提供使用者最佳的搜尋結果，便會對這些內容作區別，將最原始的資料或最佳的內容排在搜尋結果的最前面。 在某些情況下，重複內容是無法避免的，而這些重複內容損害了網站或網頁的排名。 因此，我們可以對這些重複內容做處理，修正搜尋引擎對它們的解讀。 這裡的搜尋引擎是以Google為主。";
@@ -124,8 +125,9 @@ namespace cythilya.Controllers
             article_2.Time = "Jan 22, 2014";
             article_2.isBanner = false;
             articleList.Add(article_2);
+            #endregion
 
-            //從搜尋到社群 - Semantics、Rich Snippets、Social Meta Tags
+            #region 從搜尋到社群 - Semantics、Rich Snippets、Social Meta Tags
             MeModels.Article article_3 = new MeModels.Article();
             article_3.Name = "從搜尋到社群 - Semantics、Rich Snippets、Social Meta Tags";
             article_3.Description = "搜尋引擎提供使用者想要的資訊，而社群平台提供這些資訊更多露出的機會。我們希望將優質的內容提供給使用者，並利用社群的力量推廣出去。";
@@ -140,8 +142,9 @@ namespace cythilya.Controllers
             article_3.Time = "Feb 1, 2014";
             article_3.isBanner = false;
             articleList.Add(article_3);
+            #endregion
 
-            //RSS：概念與實作
+            #region RSS：概念與實作
             MeModels.Article article_4 = new MeModels.Article();
             article_4.Name = "RSS：概念與實作";
             article_4.Description = "RSS(Really Simple Syndication，簡易資訊聚合)是一種消息來源格式規範，用以聚合經常發布更新數據的網站，例如博客文章、新聞、多媒體等的摘要或最新更新訊息。其目的為把新聞標題、摘要（Feed）、內容按照使用者的要求，「送」到使用者的面前。RSS摘要可以藉由RSS閱讀器、Feed Reader等軟體來閱讀(EX：Feedly、Digg)。";
@@ -156,8 +159,9 @@ namespace cythilya.Controllers
             article_4.Time = "March 9, 2014";
             article_4.isBanner = false;
             articleList.Add(article_4);
+            #endregion
 
-            //Author Rank
+            #region Author Rank
             MeModels.Article article_5 = new MeModels.Article();
             article_5.Name = "Author Rank";
             article_5.Description = "Author Rank是評估作者影響力的指標，過去尚未被證實是否會影響搜尋結果的排名，但Matt Cutts的一則Tweet似乎證實在某些地方確實會用到，例如專門領域文章的分析。";
@@ -172,8 +176,9 @@ namespace cythilya.Controllers
             article_5.Time = "March 22, 2014";
             article_5.isBanner = false;
             articleList.Add(article_5);
+            #endregion
 
-            //粉多任務 x 一品禪 - 使用Microdata標記的網頁實例
+            #region 粉多任務 x 一品禪 - 使用Microdata標記的網頁實例
             MeModels.Article article_6 = new MeModels.Article();
             article_6.Name = "粉多任務 x 一品禪 - 使用Microdata標記的網頁實例";
             article_6.Description = "什麼是Microdata？標記符號的用途在於讓搜尋引擎有效讀懂網頁的內容，進而達到搜尋時呈現我們所提供的資料的方法。 畢竟直接告訴搜尋引擎重點在哪裡－－告訴它這是一篇文章的標題、內文、圖片和圖片說明，或告訴它這是商品區塊、這些文字是商品名稱或廠商名稱、告訴它這些數字是價錢(而非無意義的數字)，是比較有效率和精準的。而文中也說明標記如何使用和測試。";
@@ -188,8 +193,9 @@ namespace cythilya.Controllers
             article_6.Time = "April 21, 2014";
             article_6.isBanner = false;
             articleList.Add(article_6);
+            #endregion
 
-            //搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？
+            #region 搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？
             MeModels.Article article_7 = new MeModels.Article();
             article_7.Name = "搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？";
             article_7.Description = "搜尋引擎優化指南(SEO Guideline)是一套有系統的優化網站的執行準則，每個崗位執行特定的工作項目即可讓網站(或專案)有一定品質以上的效果，並且這樣的優化效果是可以被評估、回饋與持續改進的。而系統化的實行也有助於在有限資源下做最大的利用，以得到最好的效果(例如：點閱率、排名)。";
@@ -204,8 +210,9 @@ namespace cythilya.Controllers
             article_7.Time = "May 17, 2014";
             article_7.isBanner = false;
             articleList.Add(article_7);
+            #endregion
 
-            //Facebook Graph API & Demo Example
+            #region Facebook Graph API & Demo Example
             MeModels.Article article_8 = new MeModels.Article();
             article_8.Name = "Facebook Graph API & Demo Example";
             article_8.Description = "Graph API是Facebook所推出的一種技術標準，它的核心概念是「物件與連結」。 為什麼稱為「Graph API」呢？ 因為整個Facebook就是透過這些物件與連結建立而成的Social Graph。 Facebook所提供存取的介面，就稱為「Graph API」。";
@@ -220,8 +227,9 @@ namespace cythilya.Controllers
             article_8.Time = "June 7, 2014";
             article_8.isBanner = false;
             articleList.Add(article_8);
+            #endregion
 
-            //關鍵字(Keyword)與標籤(Tag)－談選擇、聚焦與經營
+            #region 關鍵字(Keyword)與標籤(Tag)－談選擇、聚焦與經營
             MeModels.Article article_9 = new MeModels.Article();
             article_9.Name = "關鍵字(Keyword)與標籤(Tag)－談選擇、聚焦與經營";
             article_9.Description = "許多網站都設置關鍵字與標籤，但網站一定需要關鍵字、標籤嗎？關鍵字和標籤有什麼差別？能夠帶給網站什麼樣的成效？";
@@ -236,8 +244,9 @@ namespace cythilya.Controllers
             article_9.Time = "Aug 16, 2014";
             article_9.isBanner = false;
             articleList.Add(article_9);
+            #endregion
 
-            //Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力
+            #region Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力
             MeModels.Article article_10 = new MeModels.Article();
             article_10.Name = "Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力";
             article_10.Description = "Google Webmaster Central Blog在今年五月宣布 ，Google 搜尋能夠執行網頁上的 Javascript (見Understanding web pages better)﻿。而過去已知Crawler只會剖析網頁上的HTML Code，而不會(或少量)執行JavaScript。。又由於開發品質與速度的要求，使得Single Page Application (SPA) frameworks盛行(例如：Angular.js、Ember.js等)，於是了解搜尋引擎是否能夠執行並解讀JavaScript與解讀的程度便成為網站開發的其中一項需求。";
@@ -252,8 +261,9 @@ namespace cythilya.Controllers
             article_10.Time = "Sep 11, 2014";
             article_10.isBanner = false;
             articleList.Add(article_10);
+            #endregion
 
-            //Facebook Graph API - Taggable Friends
+            #region Facebook Graph API - Taggable Friends
             MeModels.Article article_11 = new MeModels.Article();
             article_11.Name = "Facebook Graph API - Taggable Friends";
             article_11.Description = "有鑑於IKEA做了一個好玩的活動網站來IKEA睡一晚，其中含有邀請朋友並標記、分享到Facebook上，因此也做了一個範例來玩玩。";
@@ -268,8 +278,9 @@ namespace cythilya.Controllers
             article_11.Time = "Sep 24, 2014";
             article_11.isBanner = true;
             articleList.Add(article_11);
+            #endregion
 
-            //Facebook Product Introduction
+            #region Facebook Product Introduction
             MeModels.Article article_12 = new MeModels.Article();
             article_12.Name = "Facebook Product Introduction";
             article_12.Description = "Facebook產品總整理與功能說明(Social Plugins、Sharing、其他UI功能應用、Graph API功能應用、og相關、權限相關、成效衡量)。";
@@ -284,8 +295,9 @@ namespace cythilya.Controllers
             article_12.Time = "Oct 3, 2014";
             article_12.isBanner = false;
             articleList.Add(article_12);
+            #endregion
 
-            //2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名
+            #region 2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名
             MeModels.Article article_13 = new MeModels.Article();
             article_13.Name = "2014 SEO Ranking Factors - 點閱率CTR成為最重要的因子、利用標籤競爭SERPs排名";
             article_13.Description = "2013年的SEO Rankgin Factors著重於頁面優化、如何呈現好的內容與社群平台的散播。與2013相較，2014年最大的不同在於CTR變成SERPs排行中最重要的因子，並強調了使用者的動向(User Signals)，除了CTR還有使用者停留時間(Time on Site)、跳出率(Bounse Rate)、更全面性的評估，例如相關詞彙(Relevant Terms)、網站速度(Site Speed)。";
@@ -300,8 +312,9 @@ namespace cythilya.Controllers
             article_13.Time = "Oct 9, 2014";
             article_13.isBanner = false;
             articleList.Add(article_13);
+            #endregion
 
-            //CKEditor Addons - 簡易上傳圖片、檔案(SimpleUploads)、Youtube影片搜尋(CKEditor Youtube + search feature)
+            #region CKEditor Addons - 簡易上傳圖片、檔案(SimpleUploads)、Youtube影片搜尋(CKEditor Youtube + search feature)
             MeModels.Article article_14 = new MeModels.Article();
             article_14.Name = "CKEditor Addons - 簡易上傳圖片、檔案(SimpleUploads)、Youtube影片搜尋(CKEditor Youtube + search feature)";
             article_14.Description = "CKEditor是一款「所見即所得」(WYSIWYG) 的 HTML網頁編輯器，免費、功能強大、周邊資源多。下載後經過簡單安裝便能作為前台或後台編輯工具。";
@@ -316,8 +329,9 @@ namespace cythilya.Controllers
             article_14.Time = "Oct 16, 2014";
             article_14.isBanner = false;
             articleList.Add(article_14);
+            #endregion
 
-            //RWD(Responsive Web Design) 實作筆記
+            #region RWD(Responsive Web Design) 實作筆記
             MeModels.Article article_15 = new MeModels.Article();
             article_15.Name = "RWD(Responsive Web Design) 實作筆記";
             article_15.Description = "RWD(Responsive Web Design)是一種設計概念，希望能讓網頁適用在不同的平台上。 而距離上一次專做RWD大約是一年前，公司最近想對產品大改版，於是又來練練RWD摟！";
@@ -332,8 +346,9 @@ namespace cythilya.Controllers
             article_15.Time = "Oct 19, 2014";
             article_15.isBanner = false;
             articleList.Add(article_15);
+            #endregion
 
-            //使用Graph API上傳圖片到Facebook相簿、並設定為使用者大頭照
+            #region 使用Graph API上傳圖片到Facebook相簿、並設定為使用者大頭照
             MeModels.Article article_16 = new MeModels.Article();
             article_16.Name = "使用Graph API上傳圖片到Facebook相簿、並設定為使用者大頭照";
             article_16.Description = "有不少活動都會引導使用者上傳圖片並設定為封面或是檔案頭像，例如 遮打革命 Umbrella Revolution - Support Campaign | Twibbon。";
@@ -348,8 +363,9 @@ namespace cythilya.Controllers
             article_16.Time = "Oct 20, 2014";
             article_16.isBanner = false;
             articleList.Add(article_16);
+            #endregion
 
-            //D3.js - Bar Chart
+            #region D3.js - Bar Chart
             MeModels.Article article_17 = new MeModels.Article();
             article_17.Name = "D3.js - Bar Chart";
             article_17.Description = "D3是Data-Driven Documents，是將資料視覺化呈現的library，甚至可與使用者互動。舉凡Bar Chart、Pie Chart、Bubble Chart、Tag Cloud或更複雜有趣的圖表，都可以以之呈現。";
@@ -362,8 +378,9 @@ namespace cythilya.Controllers
             article_17.Tag = "D3.js";
             article_17.isHighlight = false;
             article_17.Time = "Oct 30, 2014";
-            article_17.isBanner = true;
+            article_17.isBanner = false;
             articleList.Add(article_17);
+            #endregion
 
             #endregion
 
