@@ -54,7 +54,7 @@ body.home #main {
             <ul>
                 @foreach (var item in articleList) 
                 { 
-			    <li><a href="@(item.URL)" title="@(item.Name)" target="_blank">@(item.Name)</a></li>
+			    <li><a href="@(item.URL)" title="@(item.Name)" target="_blank">@(item.Name)</a>&nbsp&nbsp<span class="post-counter">@(item.Time)</span></li>
                 }
 			</ul>
             </div>  
