@@ -840,7 +840,7 @@ namespace cythilya.Controllers
             proj_10.Order = 10;
             proj_10.Client = "";
             proj_10.ClientURL = "";
-            proj_10.Date = "Sept 2014";
+            proj_10.Date = "Sept - Oct, 2014";
             proj_10.LauchURL = "";
             proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)。</p>";
             proj_10.Tag = "Web SEO RWD";
