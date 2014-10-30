@@ -42,6 +42,11 @@ namespace cythilya.Areas.UI.Controllers
             return Json(jsonObject);
         }
 
+        public ActionResult d3SimpleBarChart()
+        {
+            return View();
+        }
+
         public ActionResult Index()
         {
             return View();

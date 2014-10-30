@@ -1330,6 +1330,13 @@
     <Content Include="Content\ui\ckeditor\skins\moono\images\lock.png" />
     <Content Include="Content\ui\ckeditor\skins\moono\images\refresh.png" />
     <Content Include="Content\ui\ckeditor\styles.js" />
+    <Content Include="Content\ui\d3\bar_chart.html" />
+    <Content Include="Content\css\clearfix.css" />
+    <Content Include="Content\css\reset-font-min.css" />
+    <Content Include="Content\ui\d3\css\style.css" />
+    <Content Include="Content\ui\d3\js\d3.min.js" />
+    <Content Include="Content\ui\d3\js\script.js" />
+    <Content Include="Content\ui\d3\preview\d3_bar_chart.png" />
     <Content Include="Content\ui\jquery.ui.ckeditorexample.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -1455,6 +1462,7 @@
     <Content Include="Areas\UI\Views\UI\CKEditorDemo.cshtml" />
     <Content Include="Areas\UI\Views\Web.config" />
     <Content Include="Areas\UI\Views\UI\CKEditorPreview.cshtml" />
+    <Content Include="Areas\UI\Views\UI\d3SimpleBarChart.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
@@ -1540,6 +1548,7 @@
     <None Include="Content\ui\ckeditor\skins\moono\readme.md" />
     <Content Include="Views\Shared\_LayoutCommon.cshtml" />
     <Content Include="Views\Me\Contact.cshtml" />
+    <None Include="Content\ui\d3\data\member_data.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
