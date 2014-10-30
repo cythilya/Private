@@ -13,9 +13,9 @@
                     @foreach (var item in recentArticleList)
                     {
   					<div class="recent-post cf">
-						<a href="@(item.URL)" class="thumb" title="@(item.Name)"><img src="@(item.PicInFooter)" title="@(item.Name)" alt="@(item.Name)" /></a>
+						<a href="@(item.URL)" class="thumb" title="@(item.Name)" target="_blank"><img src="@(item.PicInFooter)" title="@(item.Name)" alt="@(item.Name)" /></a>
 						<div class="post-head">
-							<a href="@(item.URL)">@(item.Name)</a><span>@(item.Time)</span>
+							<a href="@(item.URL)" title="@(item.Name)" target="_blank">@(item.Name)</a><span>@(item.Time)</span>
 						</div>
 					</div>                 
                     }
@@ -29,9 +29,9 @@
                         if (item.isHighlight)
                         {
   					    <div class="recent-post cf">
-						    <a href="@(item.URL)" class="thumb" title="@(item.Name)"><img src="@(item.PicInFooter)" title="@(item.Name)" alt="@(item.Name)" /></a>
+						    <a href="@(item.URL)" class="thumb" title="@(item.Name)" target="_blank"><img src="@(item.PicInFooter)" title="@(item.Name)" alt="@(item.Name)" /></a>
 						    <div class="post-head">
-							    <a href="@(item.URL)">@(item.Name)</a><span>@(item.Time)</span>
+							    <a href="@(item.URL)" title="@(item.Name)" target="_blank">@(item.Name)</a><span>@(item.Time)</span>
 						    </div>
 					    </div>                                
                         }
