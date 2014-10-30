@@ -55,7 +55,7 @@ namespace cythilya.Areas.UI.Controllers
 
         #endregion
 
-        #region AngularJS
+        #region AngularJS CRUD - Todo List
         public ActionResult AngularJSTodoList() 
         {
             return View();
