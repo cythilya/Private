@@ -1555,6 +1555,7 @@
     <Content Include="Views\Shared\_LayoutCommon.cshtml" />
     <Content Include="Views\Me\Contact.cshtml" />
     <None Include="Content\ui\d3\data\member_data.json" />
+    <Content Include="Views\Me\BlogArchieve.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -42,6 +42,17 @@ namespace cythilya.Controllers
             return View();
         }
 
+        //Blog
+        public ActionResult BlogArchieve()
+        {
+            GetArticleList();
+            getProjectList();
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            return View();
+        }
+
         //Project
         public ActionResult Project(int id = 0) 
         {

@@ -1,0 +1,87 @@
+﻿@using cythilya.Models;
+@{
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Title = "Blog Archieve";
+    ViewBag.Tab = "Blog";    
+    
+    List<MeModels.Article> articleList = ViewBag.ArticleList as List<MeModels.Article>;
+}
+<style>
+body.home #main {
+    padding-top: 30px;
+}    
+</style>
+<div id="posts-list" class="cf">
+    @if(articleList != null)
+    {
+        foreach (var item in articleList) 
+        { 
+        <article class="format-standard">
+	        <div class="feature-image">
+		        <a href="@(item.URL)" title="@(item.Name)" target="_blank">
+			        <img src="@(item.PicLarge)" title="@(item.Name)" alt="@(item.Name)" />
+		        </a>
+	        </div>
+	        <div class="box cf">
+		        @*<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>*@
+		        <div class="excerpt">
+			        <a href="@(item.URL)" title="@(item.Name)" target="_blank" class="post-heading" >@(item.Name)</a>
+			        <p>@(item.Description)</p>
+			        <p><a href="@(item.URL)" title="@(item.Name)" target="_blank" class="learnmore">View More</a></p>
+		        </div>
+		        <div class="meta">
+                    <span class="format">Date: @(item.Time)</span>
+                    <span class="tags">@(item.Tag)</span>
+                    @*
+                    <span class="format">Post</span>
+			        <span class="user"><a href="#">By LuisZuno, </a></span>
+			        <span class="comments">16 comments</span>
+			        <span class="tags"><a href="#">red</a>, <a href="#">cyan</a>, <a href="#">white</a>, <a href="#">blue</a></span>
+                    *@
+		        </div>
+	        </div>
+        </article>    
+        }
+    }       	
+</div>
+<aside id="sidebar">
+    <ul>
+	    <li class="block">
+		    <h4>Archieve</h4>
+            @if (articleList != null)
+            {
+            <div class="lists-heart">
+            <ul>
+                @foreach (var item in articleList) 
+                { 
+			    <li><a href="@(item.URL)" title="@(item.Name)" target="_blank">@(item.Name)</a></li>
+                }
+			</ul>
+            </div>  
+            }
+        </li>
+        @*
+	    <li class="block">
+		    <h4>Categories</h4>
+			<ul>
+				<li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
+			</ul>
+	    </li>
+	    <li class="block">
+		    <h4>Archives</h4>
+			<ul>
+				<li class="cat-item"><a href="#" title="title">January</a></li>
+				<li class="cat-item"><a href="#" title="title">February</a></li>
+				<li class="cat-item"><a href="#" title="title">March</a></li>
+			</ul>
+	    </li>
+        *@
+    </ul>
+</aside>
