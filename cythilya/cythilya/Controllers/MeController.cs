@@ -338,6 +338,22 @@ namespace cythilya.Controllers
             article_16.isBanner = false;
             articleList.Add(article_16);
 
+            //D3.js - Bar Chart
+            MeModels.Article article_17 = new MeModels.Article();
+            article_17.Name = "D3.js - Bar Chart";
+            article_17.Description = "D3是Data-Driven Documents，是將資料視覺化呈現的library，甚至可與使用者互動。舉凡Bar Chart、Pie Chart、Bubble Chart、Tag Cloud或更複雜有趣的圖表，都可以以之呈現。";
+            article_17.URL = "http://cythilya.blogspot.tw/2014/10/d3js-bar-chart.html";
+            article_17.RawPic = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart.png";
+            article_17.PicSmall = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_188x73.jpg";
+            article_17.PicMedium = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_300.jpg";
+            article_17.PicLarge = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_940x367.jpg";
+            article_17.PicInFooter = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_54x54.jpg";
+            article_17.Tag = "D3.js";
+            article_17.isHighlight = false;
+            article_17.Time = "Oct 30, 2014";
+            article_17.isBanner = true;
+            articleList.Add(article_17);
+
             #endregion
 
             articleList.Reverse();

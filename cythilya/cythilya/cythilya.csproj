@@ -301,6 +301,11 @@
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_54x54.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_940x367.jpg" />
+    <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart.png" />
+    <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_188x73.jpg" />
+    <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_300.jpg" />
+    <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_54x54.jpg" />
+    <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_940x367.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_188x73.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_54x54.jpg" />
@@ -1336,6 +1341,7 @@
     <Content Include="Content\ui\d3\css\style.css" />
     <Content Include="Content\ui\d3\js\d3.min.js" />
     <Content Include="Content\ui\d3\js\script.js" />
+    <Content Include="Content\ui\d3\preview\d3.png" />
     <Content Include="Content\ui\d3\preview\d3_bar_chart.png" />
     <Content Include="Content\ui\jquery.ui.ckeditorexample.js" />
     <Content Include="favicon.ico" />
