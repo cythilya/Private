@@ -412,6 +412,8 @@ namespace cythilya.Controllers
             proj_1.ID = 1;
             proj_1.Name = "ONE PIECE FILM Z 【航海王電影:Z】 官方網站";
             proj_1.Description = "ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。";
+            proj_1.Role = "Front-End Development";
+            proj_1.Tech = "";
             proj_1.URL = "/Me/Project?id=1";
             proj_1.RawPic = "/Content/me/img/project/one_piece_z/one_piece_z_index.png";
             proj_1.PicSmall = "/Content/me/img/project/one_piece_z/one_piece_z_index_188x73.png";
@@ -423,7 +425,7 @@ namespace cythilya.Controllers
             proj_1.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
             proj_1.Date = "Jan 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
-            proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。負責Front-End Development。</p>";
+            proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。</p>";
             proj_1.Tag = "Web";
             proj_1.isHighlight = true;
 
@@ -464,6 +466,8 @@ namespace cythilya.Controllers
             proj_2.ID = 2;
             proj_2.Name = "粉多辦桌";
             proj_2.Description = "粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。";
+            proj_2.Role = "Front-End Development and C# Backend";
+            proj_2.Tech = "Web Development with jQuery and C#";
             proj_2.URL = "/Me/Project?id=2";
             proj_2.RawPic = "/Content/me/img/project/party/party_index_940x1025.png";
             proj_2.PicSmall = "/Content/me/img/project/party/party_index_188x73.png";
@@ -471,11 +475,11 @@ namespace cythilya.Controllers
             proj_2.PicLarge = "/Content/me/img/project/party/party_index_940x367.jpg";
             proj_2.PicInFooter = "/Content/me/img/project/party/party_index_54x54.png";
             proj_2.Order = 2;
-            proj_2.Client = "";
-            proj_2.ClientURL = "";
+            proj_2.Client = "Friendo 粉多任務";
+            proj_2.ClientURL = "http://www.friendo.com.tw/About/Friendo";
             proj_2.Date = "July 2012 - Aug 2014";
             proj_2.LauchURL = "";
-            proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。<br>負責Front-End Development、C# backend。</p>";
+            proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。</p>";
             proj_2.Tag = "Web";
             proj_2.isHighlight = true;
 
@@ -527,6 +531,8 @@ namespace cythilya.Controllers
             proj_3.ID = 3;
             proj_3.Name = "粉多辦桌 x 恆隆行";
             proj_3.Description = "粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。";
+            proj_3.Role = "Front-End Development";
+            proj_3.Tech = "";
             proj_3.URL = "/Me/Project?id=3";
             proj_3.RawPic = "/Content/me/img/project/party_hlh/party_index_hlh.png";
             proj_3.PicSmall = "/Content/me/img/project/party_hlh/party_index_hlh_188x73.png";
@@ -538,7 +544,7 @@ namespace cythilya.Controllers
             proj_3.ClientURL = "http://www.hlh.com.tw";
             proj_3.Date = "Aug 2012";
             proj_3.LauchURL = "";
-            proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。<br>負責Front-End Development。</p>";
+            proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。";
             proj_3.Tag = "Web";
             proj_3.isHighlight = false;
 
@@ -564,6 +570,8 @@ namespace cythilya.Controllers
             proj_4.ID = 4;
             proj_4.Name = "Friendo 粉多任務";
             proj_4.Description = "粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。";
+            proj_4.Role = "UI Design, Front-End Development and C# Backend";
+            proj_4.Tech = "SCSS, jQuery and C#";
             proj_4.URL = "/Me/Project?id=4";
             proj_4.RawPic = "/Content/me/img/project/mission/mission_index_940x812.png";
             proj_4.PicSmall = "/Content/me/img/project/mission/mission_index_188x73.png";
@@ -571,11 +579,11 @@ namespace cythilya.Controllers
             proj_4.PicLarge = "/Content/me/img/project/mission/mission_index_940x367.jpg";
             proj_4.PicInFooter = "/Content/me/img/project/mission/mission_index_54x54.png";
             proj_4.Order = 4;
-            proj_4.Client = "";
-            proj_4.ClientURL = "";
+            proj_4.Client = "Friendo 粉多任務";
+            proj_4.ClientURL = "http://www.friendo.com.tw/About/Friendo";
             proj_4.Date = "Oct 2012";
             proj_4.LauchURL = "http://www.friendo.com.tw";
-            proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。負責Front-End Development、C# backend。</p>";
+            proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>";
             proj_4.Tag = "Web";
             proj_4.isHighlight = true;
 
@@ -616,6 +624,8 @@ namespace cythilya.Controllers
             proj_5.ID = 5;
             proj_5.Name = "原味千尋 x Friendo 粉多任務";
             proj_5.Description = "原味千尋與粉多任務合作的活動網站。";
+            proj_5.Role = "Front-End Development";
+            proj_5.Tech = "Web Development with SCSS and jQuery";
             proj_5.URL = "/Me/Project?id=5";
             proj_5.RawPic = "/Content/me/";
             proj_5.PicSmall = "/Content/me/img/project/daintiest/daintiest_index_188x73.png";
@@ -627,7 +637,7 @@ namespace cythilya.Controllers
             proj_5.ClientURL = "http://www.daintiest.net";
             proj_5.Date = "July 2014";
             proj_5.LauchURL = "http://www.friendo.com.tw/daintiest";
-            proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。負責Front-End Development。</p>";
+            proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。</p>";
             proj_5.Tag = "Web Brand";
             proj_5.isHighlight = false;
 
@@ -668,6 +678,8 @@ namespace cythilya.Controllers
             proj_6.ID = 6;
             proj_6.Name = "一品禪 x Friendo 粉多任務";
             proj_6.Description = "一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。";
+            proj_6.Role = "Front-End Development";
+            proj_6.Tech = "Web Development with SCSS and jQuery";
             proj_6.URL = "/Me/Project?id=6";
             proj_6.RawPic = "/Content/me/img/project/yipinchan/yipinchan_index_940x1130.png";
             proj_6.PicSmall = "/Content/me/img/project/yipinchan/yipinchan_index_188x73.png";
@@ -679,7 +691,7 @@ namespace cythilya.Controllers
             proj_6.ClientURL = "http://www.yishentw.com";
             proj_6.Date = "April 2014";
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
-            proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。負責Front-End Development。</p>";
+            proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。</p>";
             proj_6.Tag = "Web Brand SEO";
             proj_6.isHighlight = false;
 
@@ -715,6 +727,8 @@ namespace cythilya.Controllers
             proj_7.ID = 7;
             proj_7.Name = "票選10大爸爸最想要的父親節禮物，亞柏送給你";
             proj_7.Description = "亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。";
+            proj_7.Role = "Front-End Development and C# Backend";
+            proj_7.Tech = "SCSS, jQuery and C#";
             proj_7.URL = "/Me/Project?id=7";
             proj_7.RawPic = "/Content/me/img/project/aphezgo/aphezgo_index.png";
             proj_7.PicSmall = "/Content/me/img/project/aphezgo/aphezgo_index_188x73.png";
@@ -724,9 +738,9 @@ namespace cythilya.Controllers
             proj_7.Order = 7;
             proj_7.Client = "亞柏EZ購";
             proj_7.ClientURL = "http://www.apezgo.com";
-            proj_7.Date = "July 2014 - Aug 2014";
+            proj_7.Date = "July - Aug 2014";
             proj_7.LauchURL = "http://fathersday.apezgo.com";
-            proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。負責Front-End Development、C# backend。</p>";
+            proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。</p>";
             proj_7.Tag = "Web";
             proj_7.isHighlight = false;
 
@@ -762,6 +776,8 @@ namespace cythilya.Controllers
             proj_8.ID = 8;
             proj_8.Name = "葡萄王LGG特益菌 x Friendo 粉多任務";
             proj_8.Description = "葡萄王生技與粉多任務合作的活動網站。";
+            proj_8.Role = "Front-End Development";
+            proj_8.Tech = "Web Development with SCSS and jQuery";
             proj_8.URL = "/Me/Project?id=8";
             proj_8.RawPic = "/Content/me/img/project/grapeking/grapeking_index.png";
             proj_8.PicSmall = "/Content/me/img/project/grapeking/grapeking_index_188x73.png";
@@ -773,7 +789,7 @@ namespace cythilya.Controllers
             proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
             proj_8.Date = "Oct 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
-            proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。負責Front-End Development。</p>";
+            proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。</p>";
             proj_8.Tag = "Web Brand";
             proj_8.isHighlight = false;
 
@@ -799,6 +815,8 @@ namespace cythilya.Controllers
             proj_9.ID = 9;
             proj_9.Name = "Hello! Mip x Friendo 粉多任務";
             proj_9.Description = "Hello! Mip與粉多任務合作的活動網站。";
+            proj_9.Role = "Front-End Development";
+            proj_9.Tech = "Web Development with SCSS and jQuery ";
             proj_9.URL = "/Me/Project?id=9";
             proj_9.RawPic = "/Content/me/img/project/hellomip/hellomip_index.png";
             proj_9.PicSmall = "/Content/me/img/project/hellomip/hellomip_index_188x73.png";
@@ -810,7 +828,7 @@ namespace cythilya.Controllers
             proj_9.ClientURL = "";
             proj_9.Date = "Oct 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
-            proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。負責Front-End Development。</p>";
+            proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。</p>";
             proj_9.Tag = "Web Brand";
             proj_9.isHighlight = false;
 
@@ -831,6 +849,8 @@ namespace cythilya.Controllers
             proj_10.ID = 10;
             proj_10.Name = "全家Fami霜淇淋 - 小小特務送幸福";
             proj_10.Description = "只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福。";
+            proj_10.Role = "負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)";
+            proj_10.Tech = "SCSS, jQuery and C#";
             proj_10.URL = "/Me/Project?id=10";
             proj_10.RawPic = "/Content/me/img/project/eventfamily/fami_index.png";
             proj_10.PicSmall = "/Content/me/img/project/eventfamily/fami_index_188x73.png";
@@ -838,11 +858,11 @@ namespace cythilya.Controllers
             proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.jpg";
             proj_10.PicInFooter = "/Content/me/img/project/eventfamily/fami_index_54x54.png";
             proj_10.Order = 10;
-            proj_10.Client = "";
-            proj_10.ClientURL = "";
-            proj_10.Date = "Sept - Oct, 2014";
+            proj_10.Client = "FamilyMart 全家便利商店";
+            proj_10.ClientURL = "http://www.family.com.tw/Marketing/index.aspx";
+            proj_10.Date = "Sept - Oct 2014";
             proj_10.LauchURL = "";
-            proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。主要負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)。</p>";
+            proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。</p>";
             proj_10.Tag = "Web SEO RWD";
             proj_10.isHighlight = true;
 

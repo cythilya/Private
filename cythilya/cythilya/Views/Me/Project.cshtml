@@ -26,12 +26,12 @@ body.home #main {
 	    *@
 	</div>
 	<div id="project-box" class="cf" itemscope itemtype="http://schema.org/article">
-        @if (proj.Snapshot != null) 
+        @if (proj.Snapshot != null)
         {
 		<div class="project-slider">
 			<div class="flexslider">
 				<ul class="slides">
-                @foreach (var item in proj.Snapshot) 
+                @foreach (var item in proj.Snapshot)
                 { 
 				<li>
 					<img src="@(item.SnapshotURL)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
@@ -42,19 +42,37 @@ body.home #main {
 		</div>
         }
 		<div class="info">
-            @if (!String.IsNullOrEmpty(proj.Client)) 
+            @* Date *@
+            <p><strong>Date</strong>@(!String.IsNullOrEmpty(proj.Date) ? proj.Date : "")</p>
+            
+            @* Role *@
+            @if (!String.IsNullOrEmpty(proj.Role))
+            { 
+                <p><strong>Role</strong>@(proj.Role)</p>
+            }
+
+            @* Tech *@
+            @if (!String.IsNullOrEmpty(proj.Tech))
+            { 
+                <p><strong>Tech</strong>@(proj.Tech)</p>
+            }                
+
+            @* Client *@
+            @if (!String.IsNullOrEmpty(proj.Client))
             {
                 if (!String.IsNullOrEmpty(proj.ClientURL))
                 {
                     <p><strong>Client</strong><a href="@(proj.ClientURL)" target="_blank" rel="nofollow">@(proj.Client)</a></p>
                 }
-                else 
+                else
                 { 
                     <p><strong>Client</strong>@(proj.Client)</p>
-                } 
-            }
-        	<p><strong>Date</strong>@(!String.IsNullOrEmpty(proj.Date) ? proj.Date : "")</p>
-            @if (!String.IsNullOrEmpty(proj.LauchURL)) { 
+                }
+            }                
+                
+            @* Site *@
+            @if (!String.IsNullOrEmpty(proj.LauchURL))
+            { 
                 <p><a href="@(proj.LauchURL)" class="launch" target="_blank">Launch Project</a></p>
             }
         </div>
@@ -70,7 +88,7 @@ body.home #main {
 	<div class="related-projects">
 		<h4 class="related-heading">Related Projects</h4>
 		<div class="related-list cf">
-            @foreach (var rItem in relatedProjects) 
+            @foreach (var rItem in relatedProjects)
             { 
 			<figure>
 				<a href="@(rItem.URL)" class="thumb" title="@(rItem.Name)"><img src="@(rItem.PicLarge)" title="@(rItem.Name)" alt="@(rItem.Name)" /></a>

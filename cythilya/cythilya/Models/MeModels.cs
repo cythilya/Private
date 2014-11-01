@@ -36,6 +36,8 @@ namespace cythilya.Models
             public string Name { get; set; }
             public string Description { get; set; }
             public string URL { get; set; }
+            public string Role { get; set; }
+            public string Tech { get; set; }
             public string RawPic { get; set; }
             public string PicSmall { get; set; } //188*73
             public string PicMedium { get; set; } //300*n
