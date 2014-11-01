@@ -992,7 +992,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
-    <Content Include="Content\ui\AngularJSTodoList\AngularJSTodoList.js" />
+    <Content Include="Content\ui\AngularJSTodoList\script.js" />
     <Content Include="Content\ui\AngularJSTodoList\style.css" />
     <Content Include="Content\ui\ckeditor\adapters\jquery.js" />
     <Content Include="Content\ui\ckeditor\build-config.js" />
