@@ -895,7 +895,8 @@ namespace cythilya.Controllers
             proj_11.Client = "采昌國際多媒體";
             proj_11.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
             proj_11.Date = "Jan 2014";
-            proj_11.LauchURL = "http://bit.ly/10JcEZ9";
+            //proj_11.LauchURL = "http://bit.ly/10JcEZ9";
+            proj_11.LauchURL = "";
             proj_11.HtmlContent = "<p>SELF做自己頻道，是台灣第一個專門以服務同志族群的頻道品牌。隸屬於「采昌娛樂多媒體集團」。</p><p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_1.png" + "></p> <br> <p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_2.png" + "></p>";
             proj_11.Tag = "Web";
             proj_11.isHighlight = false;
