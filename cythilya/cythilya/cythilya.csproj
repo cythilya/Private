@@ -370,6 +370,8 @@
     <Content Include="Content\me\img\project\party\party_index_940x367.jpg" />
     <Content Include="Content\me\img\project\party_hlh\party_index_hlh_54x54.png" />
     <Content Include="Content\me\img\project\selftv\selftv_1.jpg" />
+    <Content Include="Content\me\img\project\selftv\selftv_20141102_1.png" />
+    <Content Include="Content\me\img\project\selftv\selftv_20141102_2.png" />
     <Content Include="Content\me\img\project\selftv\selftv_index.jpg" />
     <Content Include="Content\me\img\project\selftv\selftv_index_188x73.jpg" />
     <Content Include="Content\me\img\project\selftv\selftv_index_300.jpg" />
