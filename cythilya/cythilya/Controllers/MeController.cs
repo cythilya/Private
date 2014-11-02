@@ -632,7 +632,7 @@ namespace cythilya.Controllers
             proj_5.PicMedium = "/Content/me/img/project/daintiest/daintiest_index_300.png";
             proj_5.PicLarge = "/Content/me/img/project/daintiest/daintiest_index_940x367.png";
             proj_5.PicInFooter = "/Content/me/img/project/daintiest/daintiest_index_54x54.jpg";
-            proj_5.Order = 5;
+            proj_5.Order = 6;
             proj_5.Client = "原味千尋";
             proj_5.ClientURL = "http://www.daintiest.net";
             proj_5.Date = "July 2014";
@@ -686,7 +686,7 @@ namespace cythilya.Controllers
             proj_6.PicMedium = "/Content/me/img/project/yipinchan/yipinchan_index_300.png";
             proj_6.PicLarge = "/Content/me/img/project/yipinchan/yipinchan_index_940x367.png";
             proj_6.PicInFooter = "/Content/me/img/project/yipinchan/yipinchan_index_54x54.png";
-            proj_6.Order = 6;
+            proj_6.Order = 7;
             proj_6.Client = "一品禪";
             proj_6.ClientURL = "http://www.yishentw.com";
             proj_6.Date = "April 2014";
@@ -735,7 +735,7 @@ namespace cythilya.Controllers
             proj_7.PicMedium = "/Content/me/img/project/aphezgo/aphezgo_index_300.png";
             proj_7.PicLarge = "/Content/me/img/project/aphezgo/aphezgo_index_940x367.jpg";
             proj_7.PicInFooter = "/Content/me/img/project/aphezgo/aphezgo_index_54x54.jpg";
-            proj_7.Order = 7;
+            proj_7.Order = 8;
             proj_7.Client = "亞柏EZ購";
             proj_7.ClientURL = "http://www.apezgo.com";
             proj_7.Date = "July - Aug 2014";
@@ -784,7 +784,7 @@ namespace cythilya.Controllers
             proj_8.PicMedium = "/Content/me/img/project/grapeking/grapeking_index_300.png";
             proj_8.PicLarge = "/Content/me/img/project/grapeking/grapeking_index_940x367.png";
             proj_8.PicInFooter = "/Content/me/img/project/grapeking/grapeking_index_54x54.png";
-            proj_8.Order = 8;
+            proj_8.Order = 9;
             proj_8.Client = "葡萄王生技";
             proj_8.ClientURL = "http://grapeking.shop.mymall.com.tw";
             proj_8.Date = "Oct 2014";
@@ -823,7 +823,7 @@ namespace cythilya.Controllers
             proj_9.PicMedium = "/Content/me/img/project/hellomip/hellomip_index_300.png";
             proj_9.PicLarge = "/Content/me/img/project/hellomip/hellomip_index_940x367.png";
             proj_9.PicInFooter = "/Content/me/img/project/hellomip/hellomip_index_54x54.png";
-            proj_9.Order = 9;
+            proj_9.Order = 10;
             proj_9.Client = "";
             proj_9.ClientURL = "";
             proj_9.Date = "Oct 2014";
@@ -857,7 +857,7 @@ namespace cythilya.Controllers
             proj_10.PicMedium = "/Content/me/img/project/eventfamily/fami_index_300.png";
             proj_10.PicLarge = "/Content/me/img/project/eventfamily/fami_index_940x367.jpg";
             proj_10.PicInFooter = "/Content/me/img/project/eventfamily/fami_index_54x54.png";
-            proj_10.Order = 10;
+            proj_10.Order = 11;
             proj_10.Client = "FamilyMart 全家便利商店";
             proj_10.ClientURL = "http://www.family.com.tw/Marketing/index.aspx";
             proj_10.Date = "Sept - Oct 2014";
@@ -878,8 +878,44 @@ namespace cythilya.Controllers
             projList.Add(proj_10);
             #endregion
 
+            #region Self TV Prototype
+            MeModels.Project proj_11 = new MeModels.Project();
+            proj_11.ID = 11;
+            proj_11.Name = "Self TV Prototype";
+            proj_11.Description = "Self TV官網的Prototype。";
+            proj_11.Role = "UI Design and Front-End Development";
+            proj_11.Tech = "";
+            proj_11.URL = "/Me/Project?id=11";
+            proj_11.RawPic = "/Content/me/img/project/selftv/selftv_index_940x367.jpg";
+            proj_11.PicSmall = "/Content/me/img/project/selftv/selftv_index_188x73.jpg";
+            proj_11.PicMedium = "/Content/me/img/project/selftv/selftv_index_300.jpg";
+            proj_11.PicLarge = "/Content/me/img/project/selftv/selftv_index_940x367.jpg";
+            proj_11.PicInFooter = "/Content/me/img/project/selftv/selftv_index_54x54.jpg";
+            proj_11.Order = 5;
+            proj_11.Client = "采昌國際多媒體";
+            proj_11.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
+            proj_11.Date = "Jan 2014";
+            proj_11.LauchURL = "http://bit.ly/10JcEZ9";
+            proj_11.HtmlContent = "<p>SELF做自己頻道，是台灣第一個專門以服務同志族群的頻道品牌。</p><p>目前已經網羅全球上百部同志影集，電影與實境秀，將在即將成立的隨選頻道上服務大家。未來也會與台灣同志電影發行品牌「美好的一天娛樂」合作發行更多同志佳片，將更加強化台灣的同志電影版圖。</p><p>SELF TV做自己頻道 - 隸屬於「采昌娛樂多媒體集團」。</p>";
+            proj_11.Tag = "Web";
+            proj_11.isHighlight = false;
+
+            List<MeModels.SnapshotInfo> SnapshotList11 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_11_snap_1 = new MeModels.SnapshotInfo();
+            //MeModels.SnapshotInfo proj_11_snap_2 = new MeModels.SnapshotInfo();
+
+            proj_11_snap_1.Name = "Self TV";
+            proj_11_snap_1.SnapshotURL = "/Content/me/img/project/selftv/selftv_index_940x367.jpg";
+            SnapshotList11.Add(proj_11_snap_1);
+
+            proj_11.Snapshot = SnapshotList11;
+            projList.Add(proj_11);
+
             #endregion
 
+            #endregion
+
+            projList = projList.OrderBy(x => x.Order).ToList();
             ViewBag.ProjList = projList;
             return projList;
         }
@@ -1029,7 +1065,7 @@ namespace cythilya.Controllers
             //get last four items in related project list
             List<MeModels.RecentProject> recentProjectList = new List<MeModels.RecentProject>();
             int c = 0;
-            int max = 4;
+            int max = number;
 
             //re-order
             recentProjects.Reverse();

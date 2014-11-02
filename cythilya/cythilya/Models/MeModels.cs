@@ -32,7 +32,7 @@ namespace cythilya.Models
 
         public class Project 
         {
-            public int ID { get; set; }
+            public int ID { get; set; } //按新增順序編號
             public string Name { get; set; }
             public string Description { get; set; }
             public string URL { get; set; }
