@@ -902,7 +902,6 @@ namespace cythilya.Controllers
 
             List<MeModels.SnapshotInfo> SnapshotList11 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_11_snap_1 = new MeModels.SnapshotInfo();
-            //MeModels.SnapshotInfo proj_11_snap_2 = new MeModels.SnapshotInfo();
 
             proj_11_snap_1.Name = "Self TV";
             proj_11_snap_1.SnapshotURL = "/Content/me/img/project/selftv/selftv_index_940x367.jpg";
