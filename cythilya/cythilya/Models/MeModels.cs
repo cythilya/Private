@@ -44,7 +44,7 @@ namespace cythilya.Models
             public string PicLarge { get; set; } //940*367
             public string PicInFooter { get; set; } //54*54
             public List<SnapshotInfo> Snapshot { get; set; }
-            public int Order { get; set; }
+            public int Order { get; set; } //archieve order
             public string Client { get; set; }
             public string ClientURL { get; set; }
             public string Date { get; set; }
@@ -72,6 +72,7 @@ namespace cythilya.Models
             public string URL { get; set; }
             public string PicLarge { get; set; } //940*367
             public string PicInFooter { get; set; } //54*54
+            public int Order { get; set; } //archieve order
             public string Date { get; set; }
             public string Tag { get; set; }
             public int TagScore { get; set; }

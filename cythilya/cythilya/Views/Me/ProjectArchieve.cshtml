@@ -5,6 +5,7 @@
     ViewBag.Tab = "";
 
     List<MeModels.RecentProject> recentAllProjects = ViewBag.RecentAllProjects as List<MeModels.RecentProject>;
+    recentAllProjects = recentAllProjects.OrderBy(x => x.Order).Reverse().ToList();
 }
 <style>
 body.home #main {

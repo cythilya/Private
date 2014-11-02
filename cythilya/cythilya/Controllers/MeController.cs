@@ -420,7 +420,7 @@ namespace cythilya.Controllers
             proj_1.PicMedium = "/Content/me/img/project/one_piece_z/one_piece_z_index_300.png";
             proj_1.PicLarge = "/Content/me/img/project/one_piece_z/one_piece_z_index_940x367.jpg";
             proj_1.PicInFooter = "/Content/me/img/project/one_piece_z/one_piece_z_index_54x54.png";
-            proj_1.Order = 1;
+            proj_1.Order = 4;
             proj_1.Client = "采昌國際多媒體";
             proj_1.ClientURL = "http://www.ccii.com.tw/chweb/index.asp";
             proj_1.Date = "Jan 2013";
@@ -474,7 +474,7 @@ namespace cythilya.Controllers
             proj_2.PicMedium = "/Content/me/img/project/party/party_index_300.png";
             proj_2.PicLarge = "/Content/me/img/project/party/party_index_940x367.jpg";
             proj_2.PicInFooter = "/Content/me/img/project/party/party_index_54x54.png";
-            proj_2.Order = 2;
+            proj_2.Order = 1;
             proj_2.Client = "Friendo 粉多任務";
             proj_2.ClientURL = "http://www.friendo.com.tw/About/Friendo";
             proj_2.Date = "July 2012 - Aug 2014";
@@ -539,7 +539,7 @@ namespace cythilya.Controllers
             proj_3.PicMedium = "/Content/me/img/project/party_hlh/party_index_hlh_300.png";
             proj_3.PicLarge = "/Content/me/img/project/party_hlh/party_index_hlh_940x367.png";
             proj_3.PicInFooter = "/Content/me/img/project/party_hlh/party_index_hlh_54x54.png";
-            proj_3.Order = 3;
+            proj_3.Order = 2;
             proj_3.Client = "恆隆行";
             proj_3.ClientURL = "http://www.hlh.com.tw";
             proj_3.Date = "Aug 2012";
@@ -578,7 +578,7 @@ namespace cythilya.Controllers
             proj_4.PicMedium = "/Content/me/img/project/mission/mission_index_300.png";
             proj_4.PicLarge = "/Content/me/img/project/mission/mission_index_940x367.jpg";
             proj_4.PicInFooter = "/Content/me/img/project/mission/mission_index_54x54.png";
-            proj_4.Order = 4;
+            proj_4.Order = 3;
             proj_4.Client = "Friendo 粉多任務";
             proj_4.ClientURL = "http://www.friendo.com.tw/About/Friendo";
             proj_4.Date = "Oct 2012";
@@ -1022,6 +1022,7 @@ namespace cythilya.Controllers
                 projectItem.Date = item.Date;
                 projectItem.PicLarge = item.PicLarge;
                 projectItem.PicInFooter = item.PicInFooter;
+                projectItem.Order = item.Order;
                 recentProjects.Add(projectItem);
             }
 
