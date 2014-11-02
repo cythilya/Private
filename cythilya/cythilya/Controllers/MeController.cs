@@ -632,7 +632,7 @@ namespace cythilya.Controllers
             proj_5.PicMedium = "/Content/me/img/project/daintiest/daintiest_index_300.png";
             proj_5.PicLarge = "/Content/me/img/project/daintiest/daintiest_index_940x367.png";
             proj_5.PicInFooter = "/Content/me/img/project/daintiest/daintiest_index_54x54.jpg";
-            proj_5.Order = 6;
+            proj_5.Order = 7;
             proj_5.Client = "原味千尋";
             proj_5.ClientURL = "http://www.daintiest.net";
             proj_5.Date = "July 2014";
@@ -686,7 +686,7 @@ namespace cythilya.Controllers
             proj_6.PicMedium = "/Content/me/img/project/yipinchan/yipinchan_index_300.png";
             proj_6.PicLarge = "/Content/me/img/project/yipinchan/yipinchan_index_940x367.png";
             proj_6.PicInFooter = "/Content/me/img/project/yipinchan/yipinchan_index_54x54.png";
-            proj_6.Order = 7;
+            proj_6.Order = 6;
             proj_6.Client = "一品禪";
             proj_6.ClientURL = "http://www.yishentw.com";
             proj_6.Date = "April 2014";
