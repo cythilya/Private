@@ -913,6 +913,9 @@ namespace cythilya.Controllers
 
             #endregion
 
+            #region 新東陽 2014/11/20
+            #endregion
+
             #endregion
 
             projList = projList.OrderBy(x => x.Order).ToList();
