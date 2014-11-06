@@ -918,7 +918,7 @@ namespace cythilya.Controllers
             proj_12.ID = 12;
             proj_12.Name = "御奉小餐館 x Friendo 粉多任務";
             proj_12.Description = "御奉小餐館與粉多任務合作的活動網站。";
-            proj_12.Role = "Facebook Social Plugins and Graph API技術支援。";
+            proj_12.Role = "Facebook Social Plugins and Graph API技術支援";
             proj_12.Tech = "Web Development with SCSS and jQuery";
             proj_12.URL = "/Me/Project?id=12";
             proj_12.RawPic = "/Content/me/img/project/emperorlove/emperorlove.png";
