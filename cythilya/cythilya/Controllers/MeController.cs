@@ -286,7 +286,7 @@ namespace cythilya.Controllers
             article_11.Tag = "SEO";
             article_11.isHighlight = true;
             article_11.Time = "Sep 24, 2014";
-            article_11.isBanner = true;
+            article_11.isBanner = false;
             articleList.Add(article_11);
             #endregion
 
@@ -918,7 +918,7 @@ namespace cythilya.Controllers
             proj_12.ID = 12;
             proj_12.Name = "御奉小餐館 x Friendo 粉多任務";
             proj_12.Description = "御奉小餐館與粉多任務合作的活動網站。";
-            proj_12.Role = "Facebook Social Plugins and Graph API技術支援";
+            proj_12.Role = "SEO規劃、Facebook Social Plugins and Graph API技術支援";
             proj_12.Tech = "Web Development with SCSS and jQuery";
             proj_12.URL = "/Me/Project?id=12";
             proj_12.RawPic = "/Content/me/img/project/emperorlove/emperorlove.png";
@@ -931,7 +931,7 @@ namespace cythilya.Controllers
             proj_12.ClientURL = "http://www.emperorlove.com.tw";
             proj_12.Date = "Oct 2014";
             proj_12.LauchURL = "http://www.friendo.com.tw/emperorlove";
-            proj_12.HtmlContent = "<p>《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！後宮甄嬛傳不夠看，「後宮爭餅傳」才精彩！到底是什麼樣的特色美食，讓平常毫無心機的姊妹淘，也開始有心機了？且來看看御奉小餐館的心機美食，如可引起姊妹間的爭食搶奪，快邀姊妹淘來一嚐究竟，一起心機過招！參加活動即有四人同行一人我請優惠喔！</p>";
+            proj_12.HtmlContent = "《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！後宮甄嬛傳不夠看，「後宮爭餅傳」才精彩！到底是什麼樣的特色美食，讓平常毫無心機的姊妹淘，也開始有心機了？且來看看御奉小餐館的心機美食，如可引起姊妹間的爭食搶奪，快邀姊妹淘來一嚐究竟，一起心機過招！參加活動即有四人同行一人我請優惠喔！";
             proj_12.Tag = "Web Brand";
             proj_12.isHighlight = true;
 
