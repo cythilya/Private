@@ -1573,6 +1573,7 @@
     <None Include="Content\ui\d3\data\member_data.json" />
     <Content Include="Views\Me\BlogArchieve.cshtml" />
     <Content Include="Views\Me\ProjectArchieve.cshtml" />
+    <Content Include="Views\Me\About_C.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

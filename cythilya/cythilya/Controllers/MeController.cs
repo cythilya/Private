@@ -23,6 +23,15 @@ namespace cythilya.Controllers
             return View();
         }
 
+        //About
+        public ActionResult About_C() 
+        {
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            return View();
+        }
+
         //Resume
         public ActionResult Resume() 
         {
