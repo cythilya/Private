@@ -7,11 +7,11 @@
 			<span itemprop="name">HOME</span>
 		</a>
 	</li>
-	<li>
-		<a href="http://cythilya.blogspot.tw" itemprop="url" target="_blank" title="Summer。桑莫。夏天">
-		    <span itemprop="name">BLOG</span>
+	<li class="@(ViewBag.Tab == "About" ? "current-menu-item" : "")">
+		<a href="/Me/About" itemprop="url" title="About">
+			<span itemprop="name">ABOUT</span>
 		</a>
-	</li>
+	</li>	
 	<li class="@(ViewBag.Tab == "Resume" ? "current-menu-item" : "")">
 		<a href="/Me/Resume" itemprop="url" title="RESUME">
 			<span itemprop="name">RESUME</span>
@@ -20,6 +20,11 @@
 	<li class="@(ViewBag.Tab == "Portfolio" ? "current-menu-item" : "")">
 		<a href="/Me/Portfolio" itemprop="url" title="PORTFOLIO">
 			<span itemprop="name">PORTFOLIO</span>
+		</a>
+	</li>
+	<li>
+		<a href="http://cythilya.blogspot.tw" itemprop="url" target="_blank" title="Summer。桑莫。夏天">
+		    <span itemprop="name">BLOG</span>
 		</a>
 	</li>
 	<li class="@(ViewBag.Tab == "Contact" ? "current-menu-item" : "")">

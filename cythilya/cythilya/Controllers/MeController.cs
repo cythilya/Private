@@ -24,6 +24,14 @@ namespace cythilya.Controllers
         }
 
         //About
+        public ActionResult About() 
+        {
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            return View();
+        }
+        
         public ActionResult About_C() 
         {
             getRecentPostList();
