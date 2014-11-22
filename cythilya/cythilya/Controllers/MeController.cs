@@ -879,7 +879,10 @@ namespace cythilya.Controllers
             proj_10.ClientURL = "http://www.family.com.tw/Marketing/index.aspx";
             proj_10.Date = "Sept - Oct 2014";
             proj_10.LauchURL = "";
-            proj_10.HtmlContent = "<p>全家Fami霜淇淋 - 小小特務送幸福。</p>";
+
+            var demoRUL = "/Content/me/img/project/eventfamily/eventFamily.gif";
+
+            proj_10.HtmlContent = "<p> 只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p><p><img src=" + "/Content/me/img/project/eventfamily/event_family_tablet_mobile_320.png" + "></p><p>RWD(Responsive Web Design)，支援平板、手機等行動裝置瀏覽。</p><p>Demo影片如下。</p><p><a href=" + demoRUL + " target=" + "_blank" + "><img src=" + demoRUL + " width=" + 320 + "></a></p>";
             proj_10.Tag = "Web SEO RWD";
             proj_10.isHighlight = true;
 

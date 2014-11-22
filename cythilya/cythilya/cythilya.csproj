@@ -347,10 +347,14 @@
     <Content Include="Content\me\img\project\emperorlove\emperorlove_300.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove_54x54.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove_940x367.jpg" />
+    <Content Include="Content\me\img\project\eventfamily\eventFamily.gif" />
     <Content Include="Content\me\img\project\eventfamily\event_family_mobile.png" />
+    <Content Include="Content\me\img\project\eventfamily\event_family_mobile_320.png" />
     <Content Include="Content\me\img\project\eventfamily\event_family_PC.png" />
     <Content Include="Content\me\img\project\eventfamily\event_family_raw.png" />
     <Content Include="Content\me\img\project\eventfamily\event_family_tablet.png" />
+    <Content Include="Content\me\img\project\eventfamily\event_family_tablet_320.png" />
+    <Content Include="Content\me\img\project\eventfamily\event_family_tablet_mobile_320.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index_54x54.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index_188x73.png" />
