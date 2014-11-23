@@ -409,6 +409,23 @@ namespace cythilya.Controllers
             articleList.Add(article_17);
             #endregion
 
+            #region 使用Node.js + Express建構一個簡單的微博網站
+            MeModels.Article article_18 = new MeModels.Article();
+            article_18.Name = "使用Node.js + Express建構一個簡單的微博網站";
+            article_18.Description = "使用Node.js + Express建構一個簡單的微博網站。";
+            article_18.URL = "http://cythilya.blogspot.tw/2014/11/nodejs-express-microblog.html";
+            article_18.RawPic = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo.jpg";
+            article_18.PicSmall = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_188x73.jpg";
+            article_18.PicMedium = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_300.jpg";
+            article_18.PicLarge = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_940x367.jpg";
+            article_18.PicInFooter = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_54x54.jpg";
+            article_18.Tag = "Node.js, Express";
+            article_18.isHighlight = false;
+            article_18.Time = "Nov 23, 2014";
+            article_18.isBanner = true;
+            articleList.Add(article_18);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
