@@ -670,10 +670,10 @@ namespace cythilya.Controllers
             projList.Add(proj_4);
             #endregion
 
-            #region 原味千尋 Daintiest
+            #region 原味千尋 - 十六倍的堅持，只為一次的感動
             MeModels.Project proj_5 = new MeModels.Project();
             proj_5.ID = 5;
-            proj_5.Name = "原味千尋 Daintiest";
+            proj_5.Name = "原味千尋 - 十六倍的堅持，只為一次的感動";
             proj_5.Description = "原味千尋與粉多任務合作的活動網站。";
             proj_5.Role = "Front-End Development";
             proj_5.Tech = "Web Development with SCSS and jQuery";
@@ -724,10 +724,10 @@ namespace cythilya.Controllers
             projList.Add(proj_5);
             #endregion
 
-            #region 一品禪 Yipinchan
+            #region 一品禪 - 御選四季食補，全素食手工水餃
             MeModels.Project proj_6 = new MeModels.Project();
             proj_6.ID = 6;
-            proj_6.Name = "一品禪 Yipinchan";
+            proj_6.Name = "一品禪 - 御選四季食補，全素食手工水餃";
             proj_6.Description = "一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。";
             proj_6.Role = "Front-End Development";
             proj_6.Tech = "Web Development with SCSS and jQuery";
@@ -822,10 +822,10 @@ namespace cythilya.Controllers
             projList.Add(proj_7);
             #endregion 
 
-            #region 葡萄王LGG特益菌
+            #region 葡萄王LGG特益菌 - 黃金三兄弟賽運占卜
             MeModels.Project proj_8 = new MeModels.Project();
             proj_8.ID = 8;
-            proj_8.Name = "葡萄王LGG特益菌";
+            proj_8.Name = "葡萄王LGG特益菌 - 黃金三兄弟賽運占卜";
             proj_8.Description = "葡萄王生技與粉多任務合作的活動網站。";
             proj_8.Role = "Front-End Development";
             proj_8.Tech = "Web Development with SCSS and jQuery";
@@ -861,10 +861,10 @@ namespace cythilya.Controllers
             projList.Add(proj_8);
             #endregion
 
-            #region Hello! Mip
+            #region Hello Mip炫風抵台！3C控請入席
             MeModels.Project proj_9 = new MeModels.Project();
             proj_9.ID = 9;
-            proj_9.Name = "Hello! Mip";
+            proj_9.Name = "Hello Mip炫風抵台！3C控請入席";
             proj_9.Description = "Hello! Mip與粉多任務合作的活動網站。";
             proj_9.Role = "Front-End Development";
             proj_9.Tech = "Web Development with SCSS and jQuery";
@@ -967,10 +967,10 @@ namespace cythilya.Controllers
 
             #endregion
 
-            #region 御奉小餐館 Emperorlove
+            #region 御奉小餐館 Emperorlove - 後宮爭餅傳
             MeModels.Project proj_12 = new MeModels.Project();
             proj_12.ID = 12;
-            proj_12.Name = "御奉小餐館 Emperorlove";
+            proj_12.Name = "御奉小餐館 Emperorlove - 後宮爭餅傳";
             proj_12.Description = "御奉小餐館與粉多任務合作的活動網站。";
             proj_12.Role = "SEO規劃、Facebook Social Plugins and Graph API技術支援";
             proj_12.Tech = "Web Development with SCSS and jQuery";
