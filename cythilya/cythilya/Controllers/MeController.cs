@@ -653,10 +653,10 @@ namespace cythilya.Controllers
             projList.Add(proj_4);
             #endregion
 
-            #region 原味千尋 x Friendo 粉多任務
+            #region 原味千尋
             MeModels.Project proj_5 = new MeModels.Project();
             proj_5.ID = 5;
-            proj_5.Name = "原味千尋 x Friendo 粉多任務";
+            proj_5.Name = "原味千尋";
             proj_5.Description = "原味千尋與粉多任務合作的活動網站。";
             proj_5.Role = "Front-End Development";
             proj_5.Tech = "Web Development with SCSS and jQuery";
@@ -707,10 +707,10 @@ namespace cythilya.Controllers
             projList.Add(proj_5);
             #endregion
 
-            #region 一品禪 x Friendo 粉多任務
+            #region 一品禪
             MeModels.Project proj_6 = new MeModels.Project();
             proj_6.ID = 6;
-            proj_6.Name = "一品禪 x Friendo 粉多任務";
+            proj_6.Name = "一品禪";
             proj_6.Description = "一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。";
             proj_6.Role = "Front-End Development";
             proj_6.Tech = "Web Development with SCSS and jQuery";
@@ -805,10 +805,10 @@ namespace cythilya.Controllers
             projList.Add(proj_7);
             #endregion 
 
-            #region 葡萄王LGG特益菌 x Friendo 粉多任務
+            #region 葡萄王LGG特益菌
             MeModels.Project proj_8 = new MeModels.Project();
             proj_8.ID = 8;
-            proj_8.Name = "葡萄王LGG特益菌 x Friendo 粉多任務";
+            proj_8.Name = "葡萄王LGG特益菌";
             proj_8.Description = "葡萄王生技與粉多任務合作的活動網站。";
             proj_8.Role = "Front-End Development";
             proj_8.Tech = "Web Development with SCSS and jQuery";
@@ -847,7 +847,7 @@ namespace cythilya.Controllers
             #region Hello! Mip
             MeModels.Project proj_9 = new MeModels.Project();
             proj_9.ID = 9;
-            proj_9.Name = "Hello! Mip x Friendo 粉多任務";
+            proj_9.Name = "Hello! Mip";
             proj_9.Description = "Hello! Mip與粉多任務合作的活動網站。";
             proj_9.Role = "Front-End Development";
             proj_9.Tech = "Web Development with SCSS and jQuery";
@@ -877,11 +877,11 @@ namespace cythilya.Controllers
 
             projList.Add(proj_9);
             #endregion
-            
-            #region 全家Fami霜淇淋 - 小小特務送幸福
+
+            #region 全家Fami霜淇淋 小小特務送幸福
             MeModels.Project proj_10 = new MeModels.Project();
             proj_10.ID = 10;
-            proj_10.Name = "全家Fami霜淇淋 - 小小特務送幸福";
+            proj_10.Name = "全家Fami霜淇淋 小小特務送幸福";
             proj_10.Description = "只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福。";
             proj_10.Role = "負責技術與後備專案支援(HTML, CSS, JS, C#, SEO, Facebook Social Plugins and Graph API)";
             proj_10.Tech = "SCSS, jQuery and C#";
@@ -953,7 +953,7 @@ namespace cythilya.Controllers
             #region 御奉小餐館
             MeModels.Project proj_12 = new MeModels.Project();
             proj_12.ID = 12;
-            proj_12.Name = "御奉小餐館 x Friendo 粉多任務";
+            proj_12.Name = "御奉小餐館 Emperorlove";
             proj_12.Description = "御奉小餐館與粉多任務合作的活動網站。";
             proj_12.Role = "SEO規劃、Facebook Social Plugins and Graph API技術支援";
             proj_12.Tech = "Web Development with SCSS and jQuery";
@@ -964,7 +964,7 @@ namespace cythilya.Controllers
             proj_12.PicLarge = "/Content/me/img/project/emperorlove/emperorlove_940x367.jpg";
             proj_12.PicInFooter = "/Content/me/img/project/emperorlove/emperorlove_54x54.png";
             proj_12.Order = 12;
-            proj_12.Client = "御奉小餐館";
+            //proj_12.Client = "御奉小餐館";
             proj_12.ClientURL = "http://www.emperorlove.com.tw";
             proj_12.Date = "Oct 2014";
             proj_12.LauchURL = "http://www.friendo.com.tw/emperorlove";
