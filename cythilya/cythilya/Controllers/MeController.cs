@@ -130,7 +130,7 @@ namespace cythilya.Controllers
             article_1.PicMedium = "/Content/me/img/blog/ia_for_seo_300.jpg";
             article_1.PicLarge = "/Content/me/img/blog/ia_for_seo_940x367.jpg";
             article_1.PicInFooter = "/Content/me/img/blog/247479_5433_54x54.jpg";
-            article_1.Tag = "SEO";
+            article_1.Tag = "SEO, IA";
             article_1.isHighlight = false;
             article_1.Time = "Jan 1, 2014";//2014/01/04
             article_1.isBanner = false;
@@ -164,7 +164,7 @@ namespace cythilya.Controllers
             article_3.PicMedium = "/Content/me/img/blog/search_and_social_300.jpg";
             article_3.PicLarge = "/Content/me/img/blog/search_and_social_940x367.jpg";
             article_3.PicInFooter = "/Content/me/img/blog/search_and_social_54x54.jpg";
-            article_3.Tag = "SEO";
+            article_3.Tag = "SEO, Rich Snippets";
             article_3.isHighlight = true;
             article_3.Time = "Feb 1, 2014";
             article_3.isBanner = false;
@@ -198,7 +198,7 @@ namespace cythilya.Controllers
             article_5.PicMedium = "/Content/me/img/blog/author_rank_300.jpg";
             article_5.PicLarge = "/Content/me/img/blog/author_rank_940x367.jpg";
             article_5.PicInFooter = "/Content/me/img/blog/author_rank_54x54.jpg";
-            article_5.Tag = "SEO";
+            article_5.Tag = "SEO,Author Rank";
             article_5.isHighlight = false;
             article_5.Time = "March 22, 2014";
             article_5.isBanner = false;
@@ -215,7 +215,7 @@ namespace cythilya.Controllers
             article_6.PicMedium = "/Content/me/img/blog/microdata_300.png";
             article_6.PicLarge = "/Content/me/img/blog/microdata_940x367.jpg";
             article_6.PicInFooter = "/Content/me/img/blog/microdata_54x54.jpg";
-            article_6.Tag = "SEO";
+            article_6.Tag = "SEO, Rich Snippets";
             article_6.isHighlight = false;
             article_6.Time = "April 21, 2014";
             article_6.isBanner = false;
@@ -249,7 +249,7 @@ namespace cythilya.Controllers
             article_8.PicMedium = "/Content/me/img/blog/facebook_social_demo_300.jpg";
             article_8.PicLarge = "/Content/me/img/blog/facebook_social_demo_940x367.jpg";
             article_8.PicInFooter = "/Content/me/img/blog/facebook_social_demo_54x54.jpg";
-            article_8.Tag = "SEO";
+            article_8.Tag = "Graph API";
             article_8.isHighlight = false;
             article_8.Time = "June 7, 2014";
             article_8.isBanner = false;
@@ -266,7 +266,7 @@ namespace cythilya.Controllers
             article_9.PicMedium = "/Content/me/img/blog/keyword_tag_300.jpg";
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
             article_9.PicInFooter = "/Content/me/img/blog/keyword_tag_54x54.jpg";
-            article_9.Tag = "SEO";
+            article_9.Tag = "SEO, Keyword, Tag";
             article_9.isHighlight = true;
             article_9.Time = "Aug 16, 2014";
             article_9.isBanner = false;
@@ -283,7 +283,7 @@ namespace cythilya.Controllers
             article_10.PicMedium = "/Content/me/img/blog/JavaScript_SEO_300.jpg";
             article_10.PicLarge = "/Content/me/img/blog/JavaScript_SEO_940x367.jpg";
             article_10.PicInFooter = "/Content/me/img/blog/JavaScript_SEO_54x54.jpg";
-            article_10.Tag = "SEO";
+            article_10.Tag = "Ember.js, SEO";
             article_10.isHighlight = false;
             article_10.Time = "Sep 11, 2014";
             article_10.isBanner = false;
@@ -300,7 +300,7 @@ namespace cythilya.Controllers
             article_11.PicMedium = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_300.jpg";
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
             article_11.PicInFooter = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_54x54.jpg";
-            article_11.Tag = "SEO";
+            article_11.Tag = "Graph API";
             article_11.isHighlight = true;
             article_11.Time = "Sep 24, 2014";
             article_11.isBanner = false;
@@ -317,7 +317,7 @@ namespace cythilya.Controllers
             article_12.PicMedium = "/Content/me/img/blog/facebook_product_introduction_300.jpg";
             article_12.PicLarge = "/Content/me/img/blog/facebook_product_introduction_940x367.jpg";
             article_12.PicInFooter = "/Content/me/img/blog/";
-            article_12.Tag = "SEO";
+            article_12.Tag = "Graph API";
             article_12.isHighlight = false;
             article_12.Time = "Oct 3, 2014";
             article_12.isBanner = false;
@@ -334,7 +334,7 @@ namespace cythilya.Controllers
             article_13.PicMedium = "/Content/me/img/blog/seo-ranking-factors-2014_300.png";
             article_13.PicLarge = "/Content/me/img/blog/seo-ranking-factors-2014_940x367.png";
             article_13.PicInFooter = "/Content/me/img/blog/seo-ranking-factors-2014_54x54.jpg";
-            article_13.Tag = "SEO";
+            article_13.Tag = "SEO, Ranking Factor";
             article_13.isHighlight = false;
             article_13.Time = "Oct 9, 2014";
             article_13.isBanner = false;
@@ -351,7 +351,7 @@ namespace cythilya.Controllers
             article_14.PicMedium = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg";
             article_14.PicLarge = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_940x367.jpg";
             article_14.PicInFooter = "/Content/me/img/blog/ckeditor_addons_simpleuploads_youtube_search_feature/ckeditor_addons_simpleuploads_youtube_search_feature_54x54.jpg";
-            article_14.Tag = "";
+            article_14.Tag = "CKEditor";
             article_14.isHighlight = false;
             article_14.Time = "Oct 16, 2014";
             article_14.isBanner = false;
@@ -385,7 +385,7 @@ namespace cythilya.Controllers
             article_16.PicMedium = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_300.jpg";
             article_16.PicLarge = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_940x367.jpg";
             article_16.PicInFooter = "/Content/me/img/blog/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture/upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_54x54.jpg";
-            article_16.Tag = "SEO";
+            article_16.Tag = "Graph API";
             article_16.isHighlight = false;
             article_16.Time = "Oct 20, 2014";
             article_16.isBanner = false;
@@ -402,7 +402,7 @@ namespace cythilya.Controllers
             article_17.PicMedium = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_300.jpg";
             article_17.PicLarge = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_940x367.jpg";
             article_17.PicInFooter = "/Content/me/img/blog/d3_bar_chart/d3_bar_chart_54x54.jpg";
-            article_17.Tag = "D3.js";
+            article_17.Tag = "D3.js, Data Visualization";
             article_17.isHighlight = false;
             article_17.Time = "Oct 30, 2014";
             article_17.isBanner = false;
@@ -424,6 +424,23 @@ namespace cythilya.Controllers
             article_18.Time = "Nov 23, 2014";
             article_18.isBanner = true;
             articleList.Add(article_18);
+            #endregion
+
+            #region 談如何利用標籤(Tag)加強網站的近似辭彙(Relevant Terms)
+            MeModels.Article article_19 = new MeModels.Article();
+            article_19.Name = "談如何利用標籤(Tag)加強網站的近似辭彙(Relevant Terms)";
+            article_19.Description = "2014年的Ranking Factor中，Relevant Terms是一個重要因子，它代表了這個網站對於特定主題的近似字詞。而一個頁面是否能針對特定主題被搜尋到，除了佈署特定關鍵字外，搜尋引擎也會觀察這個頁面是否有其他語意接近的關鍵字。";
+            article_19.URL = "http://cythilya.blogspot.tw/2014/11/tag-relevant-terms.html";
+            article_19.RawPic = "/Content/me/img/blog/tag-relevant-terms/tag-relevant-terms.jpg";
+            article_19.PicSmall = "/Content/me/img/blog/tag-relevant-terms/tag-relevant-terms_188x73.jpg";
+            article_19.PicMedium = "/Content/me/img/blog/tag-relevant-terms/tag-relevant-terms_300.jpg";
+            article_19.PicLarge = "/Content/me/img/blog/tag-relevant-terms/tag-relevant-terms_940x367.jpg";
+            article_19.PicInFooter = "/Content/me/img/blog/tag-relevant-terms/tag-relevant-terms_54x54.jpg";
+            article_19.Tag = "SEO, Tag, Ranking Factor, Relevant Terms";
+            article_19.isHighlight = false;
+            article_19.Time = "Nov 26, 2014";
+            article_19.isBanner = false;
+            articleList.Add(article_19);
             #endregion
 
             #endregion
