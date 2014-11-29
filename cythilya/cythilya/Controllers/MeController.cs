@@ -653,10 +653,10 @@ namespace cythilya.Controllers
             projList.Add(proj_4);
             #endregion
 
-            #region 原味千尋
+            #region 原味千尋 Daintiest
             MeModels.Project proj_5 = new MeModels.Project();
             proj_5.ID = 5;
-            proj_5.Name = "原味千尋";
+            proj_5.Name = "原味千尋 Daintiest";
             proj_5.Description = "原味千尋與粉多任務合作的活動網站。";
             proj_5.Role = "Front-End Development";
             proj_5.Tech = "Web Development with SCSS and jQuery";
@@ -707,10 +707,10 @@ namespace cythilya.Controllers
             projList.Add(proj_5);
             #endregion
 
-            #region 一品禪
+            #region 一品禪 Yipinchan
             MeModels.Project proj_6 = new MeModels.Project();
             proj_6.ID = 6;
-            proj_6.Name = "一品禪";
+            proj_6.Name = "一品禪 Yipinchan";
             proj_6.Description = "一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。";
             proj_6.Role = "Front-End Development";
             proj_6.Tech = "Web Development with SCSS and jQuery";
@@ -950,7 +950,7 @@ namespace cythilya.Controllers
 
             #endregion
 
-            #region 御奉小餐館
+            #region 御奉小餐館 Emperorlove
             MeModels.Project proj_12 = new MeModels.Project();
             proj_12.ID = 12;
             proj_12.Name = "御奉小餐館 Emperorlove";
