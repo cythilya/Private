@@ -532,7 +532,7 @@ namespace cythilya.Controllers
             proj_2.LauchURL = "";
             proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。</p>";
             proj_2.Tag = "Web";
-            proj_2.isHighlight = true;
+            proj_2.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
 
@@ -992,7 +992,7 @@ namespace cythilya.Controllers
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_12_snap_1 = new MeModels.SnapshotInfo();
 
-            proj_12_snap_1.Name = "Self TV";
+            proj_12_snap_1.Name = "《御奉小餐館emperorlove》";
             proj_12_snap_1.SnapshotURL = "/Content/me/img/project/emperorlove/emperorlove.png";
             SnapshotList12.Add(proj_12_snap_1);
 
@@ -1001,12 +1001,45 @@ namespace cythilya.Controllers
 
             #endregion
 
-            #region 新東陽 2014/11/20
+            /*
+            #region 新東陽2015職場狀況劇大調查
+            MeModels.Project proj_13 = new MeModels.Project();
+            proj_13.ID = 13;
+            proj_13.Name = "新東陽2015職場狀況劇大調查";
+            proj_13.Description = "職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！";
+            proj_13.Role = "Front-End Development and C# Backend";
+            proj_13.Tech = "SCSS, jQuery and C#";
+            proj_13.URL = "/Me/Project?id=13";
+            proj_13.RawPic = "/Content/me/img/project/hty/hty.png";
+            proj_13.PicSmall = "/Content/me/img/project/hty/hty_188x73.png";
+            proj_13.PicMedium = "/Content/me/img/project/hty/hty_300.png";
+            proj_13.PicLarge = "/Content/me/img/project/hty/hty_940x367.png";
+            proj_13.PicInFooter = "/Content/me/img/project/hty/hty_54x54.png";
+            proj_13.Order = 13;
+            proj_13.Client = "HSIN TUNG YANG 新東陽";
+            proj_13.ClientURL = "http://www.hty.com.tw/";
+            proj_13.Date = "Dec 2014";
+            proj_13.LauchURL = "";
+            proj_13.HtmlContent = "職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！";
+            proj_13.Tag = "Web Brand";
+            proj_13.isHighlight = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList13 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_13_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_13_snap_1.Name = "Self TV";
+            proj_13_snap_1.SnapshotURL = "/Content/me/img/project/hty/hty.png";
+            SnapshotList13.Add(proj_13_snap_1);
+
+            proj_13.Snapshot = SnapshotList13;
+            projList.Add(proj_13);
+
             #endregion
+            */
 
             #endregion
 
-            projList = projList.OrderBy(x => x.Order).ToList();
+            projList = projList.OrderBy(x => x.Order).Reverse().ToList();
             ViewBag.ProjList = projList;
             return projList;
         }
@@ -1158,8 +1191,6 @@ namespace cythilya.Controllers
             int c = 0;
             int max = number;
 
-            //re-order
-            recentProjects.Reverse();
             ViewBag.RecentAllProjects = recentProjects;
 
             foreach (var r in recentProjects)
