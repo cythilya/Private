@@ -1001,8 +1001,8 @@ namespace cythilya.Controllers
 
             #endregion
 
-            /*
             #region 新東陽2015職場狀況劇大調查
+            /*
             MeModels.Project proj_13 = new MeModels.Project();
             proj_13.ID = 13;
             proj_13.Name = "新東陽2015職場狀況劇大調查";
@@ -1020,9 +1020,11 @@ namespace cythilya.Controllers
             proj_13.ClientURL = "http://www.hty.com.tw/";
             proj_13.Date = "Dec 2014";
             proj_13.LauchURL = "";
-            proj_13.HtmlContent = "職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！";
+
+            var demoHTYURL = "/Content/me/img/project/hty/hty_flow.gif";
+            proj_13.HtmlContent = "<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p><p><img width=" + 320 + " src=" + demoHTYURL + "></p>";
             proj_13.Tag = "Web Brand";
-            proj_13.isHighlight = true;
+            proj_13.isHighlight = true;//錄製_2014_12_05_22_00_48_818.mp4
 
             List<MeModels.SnapshotInfo> SnapshotList13 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_13_snap_1 = new MeModels.SnapshotInfo();
@@ -1033,9 +1035,9 @@ namespace cythilya.Controllers
 
             proj_13.Snapshot = SnapshotList13;
             projList.Add(proj_13);
-
-            #endregion
             */
+            #endregion
+
 
             #endregion
 
