@@ -443,6 +443,23 @@ namespace cythilya.Controllers
             articleList.Add(article_19);
             #endregion
 
+            #region App Store Optimization (ASO) Guideline
+            MeModels.Article article_20 = new MeModels.Article();
+            article_20.Name = "App Store Optimization (ASO) Guideline";
+            article_20.Description = "App Store Optimization (ASO) is the process of improving a mobile app’s visibility within mobile app stores (such as the iOS App Store and Google Play Store) by optimizing the content of the app’s store page for popular, targeted keyword phrases.";
+            article_20.URL = "http://cythilya.blogspot.tw/2014/12/aso-guideline.html";
+            article_20.RawPic = "/Content/me/img/blog/ASO_Guideline/ASO_Guideline.jpg";
+            article_20.PicSmall = "/Content/me/img/blog/ASO_Guideline/ASO_Guideline_188x73.jpg";
+            article_20.PicMedium = "/Content/me/img/blog/ASO_Guideline/ASO_Guideline_300.jpg";
+            article_20.PicLarge = "/Content/me/img/blog/ASO_Guideline/ASO_Guideline_940x367.jpg";
+            article_20.PicInFooter = "/Content/me/img/blog/ASO_Guideline/ASO_Guideline_54x54.jpg";
+            article_20.Tag = "ASO";
+            article_20.isHighlight = false;
+            article_20.Time = "Dec 22, 2014";
+            article_20.isBanner = false;
+            articleList.Add(article_20);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
