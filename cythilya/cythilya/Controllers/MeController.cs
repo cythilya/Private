@@ -1033,7 +1033,7 @@ namespace cythilya.Controllers
             proj_13.PicInFooter = "/Content/me/img/project/hty/hty_54x54.png";
             proj_13.Order = 13;
             proj_13.Client = "HSIN TUNG YANG 新東陽";
-            proj_13.ClientURL = "http://www.hty.com.tw/";
+            proj_13.ClientURL = "http://www.hty.com.tw";
             proj_13.Date = "Jan 2015";
             proj_13.LauchURL = "http://2014event.hty.com.tw";
 
@@ -1045,7 +1045,7 @@ namespace cythilya.Controllers
             List<MeModels.SnapshotInfo> SnapshotList13 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_13_snap_1 = new MeModels.SnapshotInfo();
 
-            proj_13_snap_1.Name = "Self TV";
+            proj_13_snap_1.Name = "新東陽2015職場狀況劇大調查 - 參加調查新東陽豬肉、牛肉乾送給你";
             proj_13_snap_1.SnapshotURL = "/Content/me/img/project/hty/hty.png";
             SnapshotList13.Add(proj_13_snap_1);
 
