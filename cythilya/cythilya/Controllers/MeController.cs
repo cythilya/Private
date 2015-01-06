@@ -1037,7 +1037,7 @@ namespace cythilya.Controllers
             proj_13.Date = "Jan 2015";
             proj_13.LauchURL = "http://2014event.hty.com.tw";
 
-            var demoHTYURL = "/Content/me/img/project/hty/hty_flow.gif";
+            var demoHTYURL = "https://dl.dropboxusercontent.com/u/78267129/hty_flow.gif";
             proj_13.HtmlContent = "<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p><p><img width=" + 320 + " src=" + demoHTYURL + "></p>";
             proj_13.Tag = "Web Brand";
             proj_13.isHighlight = true;//錄製_2014_12_05_22_00_48_818.mp4
