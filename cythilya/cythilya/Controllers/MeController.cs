@@ -1018,11 +1018,11 @@ namespace cythilya.Controllers
 
             #endregion
 
-            #region 新東陽2015職場狀況劇大調查 - 參加調查新東陽豬肉、牛肉乾送給你
+            #region 新東陽2015職場狀況劇大調查
             MeModels.Project proj_13 = new MeModels.Project();
             proj_13.ID = 13;
-            proj_13.Name = "新東陽2015職場狀況劇大調查 - 參加調查新東陽豬肉、牛肉乾送給你";
-            proj_13.Description = "職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！";
+            proj_13.Name = "新東陽2015職場狀況劇大調查";
+            proj_13.Description = "職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則...";
             proj_13.Role = "Front-End Development and C# Backend";
             proj_13.Tech = "SCSS, jQuery and C#";
             proj_13.URL = "/Me/Project?id=13";
@@ -1037,7 +1037,7 @@ namespace cythilya.Controllers
             proj_13.Date = "Jan 2015";
             proj_13.LauchURL = "http://2014event.hty.com.tw";
 
-            var demoHTYURL = "https://dl.dropboxusercontent.com/u/78267129/hty_flow.gif";
+            var demoHTYURL = "/Content/me/img/project/hty/hty_flow.gif";
             proj_13.HtmlContent = "<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p><p><img width=" + 320 + " src=" + demoHTYURL + "></p>";
             proj_13.Tag = "Web Brand";
             proj_13.isHighlight = true;//錄製_2014_12_05_22_00_48_818.mp4
