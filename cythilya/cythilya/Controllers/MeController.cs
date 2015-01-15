@@ -1053,7 +1053,6 @@ namespace cythilya.Controllers
             projList.Add(proj_13);
             #endregion
 
-            /*
             #region P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話
             MeModels.Project proj_14 = new MeModels.Project();
             proj_14.ID = 14;
@@ -1086,7 +1085,6 @@ namespace cythilya.Controllers
             proj_14.Snapshot = SnapshotList14;
             projList.Add(proj_14);
             #endregion
-            */
 
             #endregion
 
