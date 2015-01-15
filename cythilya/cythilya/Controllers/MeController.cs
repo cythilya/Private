@@ -1053,6 +1053,40 @@ namespace cythilya.Controllers
             projList.Add(proj_13);
             #endregion
 
+            /*
+            #region P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話
+            MeModels.Project proj_14 = new MeModels.Project();
+            proj_14.ID = 14;
+            proj_14.Name = "P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話";
+            proj_14.Description = "分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！";
+            proj_14.Role = "Team Leader, Front-End Development and C# Backend";
+            proj_14.Tech = "SCSS, jQuery and C#";
+            proj_14.URL = "/Me/Project?id=14";
+            proj_14.RawPic = "/Content/me/img/project/livingartist/livingartist.png";
+            proj_14.PicSmall = "/Content/me/img/project/livingartist/livingartist_188x73.png";
+            proj_14.PicMedium = "/Content/me/img/project/livingartist/livingartist_300.png";
+            proj_14.PicLarge = "/Content/me/img/project/livingartist/livingartist_940x367.png";
+            proj_14.PicInFooter = "/Content/me/img/project/livingartist/livingartist_54x54.png";
+            proj_14.Order = 14;
+            proj_14.Client = "P&G 生活家";
+            proj_14.ClientURL = "http://www.livingartist.com.tw/";
+            proj_14.Date = "Jan 2015";
+            proj_14.LauchURL = "http://site.friendo.com.tw/livingartist";
+            proj_14.HtmlContent = "<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>";
+            proj_14.Tag = "Web Brand";
+            proj_14.isHighlight = false;
+
+            List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_14_snap_1.Name = "P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話";
+            proj_14_snap_1.SnapshotURL = "/Content/me/img/project/livingartist/livingartist.png";
+            SnapshotList14.Add(proj_14_snap_1);
+
+            proj_14.Snapshot = SnapshotList14;
+            projList.Add(proj_14);
+            #endregion
+            */
 
             #endregion
 
