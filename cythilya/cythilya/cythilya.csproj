@@ -395,11 +395,11 @@
     <Content Include="Content\me\img\project\hty\hty_300.png" />
     <Content Include="Content\me\img\project\hty\hty_54x54.png" />
     <Content Include="Content\me\img\project\hty\hty_940x367.png" />
-    <Content Include="Content\me\img\project\hty\livingartist.png" />
-    <Content Include="Content\me\img\project\hty\livingartist_188x73.png" />
-    <Content Include="Content\me\img\project\hty\livingartist_300.png" />
-    <Content Include="Content\me\img\project\hty\livingartist_54x54.png" />
-    <Content Include="Content\me\img\project\hty\hty_940x367.png" />	
+    <Content Include="Content\me\img\project\livingartist_54x54\livingartist.png" />
+    <Content Include="Content\me\img\project\livingartist_54x54\livingartist_188x73.png" />
+    <Content Include="Content\me\img\project\livingartist_54x54\livingartist_300.png" />
+    <Content Include="Content\me\img\project\livingartist_54x54\livingartist_54x54.png" />
+    <Content Include="Content\me\img\project\livingartist_54x54\livingartist_54x54_940x367.png" />	
     <Content Include="Content\me\img\project\mission\mission_index_54x54.png" />
     <Content Include="Content\me\img\project\mission\mission_index_940x367.jpg" />
     <Content Include="Content\me\img\project\one_piece_z\one_piece_z_index_54x54.png" />
