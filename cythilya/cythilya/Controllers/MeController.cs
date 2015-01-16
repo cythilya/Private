@@ -495,7 +495,7 @@ namespace cythilya.Controllers
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
             proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。</p>";
             proj_1.Tag = "Web";
-            proj_1.isHighlight = true;
+            proj_1.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_1_snap_1 = new MeModels.SnapshotInfo();
@@ -1004,7 +1004,7 @@ namespace cythilya.Controllers
             proj_12.LauchURL = "http://www.friendo.com.tw/emperorlove";
             proj_12.HtmlContent = "《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！後宮甄嬛傳不夠看，「後宮爭餅傳」才精彩！到底是什麼樣的特色美食，讓平常毫無心機的姊妹淘，也開始有心機了？且來看看御奉小餐館的心機美食，如可引起姊妹間的爭食搶奪，快邀姊妹淘來一嚐究竟，一起心機過招！參加活動即有四人同行一人我請優惠喔！";
             proj_12.Tag = "Web Brand";
-            proj_12.isHighlight = true;
+            proj_12.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_12_snap_1 = new MeModels.SnapshotInfo();
@@ -1073,7 +1073,7 @@ namespace cythilya.Controllers
             proj_14.LauchURL = "http://site.friendo.com.tw/livingartist";
             proj_14.HtmlContent = "<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>";
             proj_14.Tag = "Web Brand";
-            proj_14.isHighlight = false;
+            proj_14.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
