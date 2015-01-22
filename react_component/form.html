@@ -73,6 +73,7 @@ var data = [
         "heading": "item 8",
         "type": "checkbox",
         "required": true,
+		"name": "checkboxGroup1",
         "options" : [
             {
                 label: "op9",
@@ -169,6 +170,33 @@ var CheckboxOption = React.createClass({
 	}
 });
 
+//radio
+var RadioList = React.createClass({
+	render: function () {
+		var radioNodes = this.props.data.map(function (item) {
+			return <RadioOption data={item.options}></RadioOption>
+		});	
+		return (
+			<div className="checkbox-item">
+				{radioNodes}
+			</div>
+		);
+	}
+});
+
+var RadioOption = React.createClass({
+	render: function(){
+		var optionNodes = this.props.data.map(function (item) {
+			return <label for="{item.value}"><input id={item.value} type="radio" value={item.value} />{item.label}</label>
+		});		
+		return (
+			<span>
+				{optionNodes}
+			</span>
+		);
+	}
+});
+
 //datepicker
 var DatepickerInput = React.createClass({
     handleDatePickerChange: function (eventArgs){
@@ -239,6 +267,13 @@ var FormBox = React.createClass({
 					}				
 					return <li><CheckboxList data={checkboxList} /></li>;
 					break;
+				case 'radio':
+					var radioList = [];
+					if(item.type == 'radio'){
+						radioList.push(item);
+					}				
+					return <li><RadioList data={radioList} /></li>;
+					break;					
 				case 'datepicker':
 					var datepickerList = [];
 					if(item.type == 'datepicker'){

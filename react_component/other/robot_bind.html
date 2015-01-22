@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>$title</title>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+var Robot = {
+	//private
+	power: 100,
+	walk: function(){
+		this.power -= 10;
+		console.log('robot walked');
+	},
+	fly: function(){
+		this.power -= 20;
+		console.log('robot flied');	
+	},
+	check: function(execute){
+		if(this.power > 0){
+			execute();
+		}
+	},
+	
+	//public
+	showoff: function(){
+		console.log('------------------');
+		console.log(this);
+		this.check(function(){
+			this.walk();
+			this.fly();
+			console.log(this);
+			console.log(this.power);
+			console.log('------------------');
+		}.bind(this));
+	}
+	
+	/*
+	當我們呼叫了 .bind() 的時候，其實它非常單純的建立了一個新的 function，
+	只不過這個 function 把 this 的值綁定進去
+	*/
+};
+
+Robot.showoff(); //power = 70
+Robot.showoff(); //power = 40
+</script>
+</body>
+</html>
