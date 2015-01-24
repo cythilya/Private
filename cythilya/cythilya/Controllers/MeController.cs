@@ -301,7 +301,7 @@ namespace cythilya.Controllers
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
             article_11.PicInFooter = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_54x54.jpg";
             article_11.Tag = "Graph API";
-            article_11.isHighlight = true;
+            article_11.isHighlight = false;
             article_11.Time = "Sep 24, 2014";
             article_11.isBanner = false;
             articleList.Add(article_11);
@@ -458,6 +458,23 @@ namespace cythilya.Controllers
             article_20.Time = "Dec 22, 2014";
             article_20.isBanner = false;
             articleList.Add(article_20);
+            #endregion
+
+            #region 電子商務網站SEO實例探討
+            MeModels.Article article_21 = new MeModels.Article();
+            article_20.Name = "電子商務網站SEO實例探討";
+            article_20.Description = "大部份會做SEO的網站不外乎是電子商務、活動網站、內容/服務平台(例如：新聞、旅遊)。而極端如Campaign Site這樣類型的網站由於存活時間短，便不需要做SEO，只要放置簡單的Meta Tag或Social Meta Tag即可。";
+            article_20.URL = "http://cythilya.blogspot.tw/2015/01/a-practice-to-seo-in-ec-website.html";
+            article_20.RawPic = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website.jpg";
+            article_20.PicSmall = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_188x73.jpg";
+            article_20.PicMedium = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_300.jpg";
+            article_20.PicLarge = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_940x367.jpg";
+            article_20.PicInFooter = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_54x54.jpg";
+            article_20.Tag = "SEO";
+            article_20.isHighlight = true;
+            article_20.Time = "Jan 24, 2015";
+            article_20.isBanner = true;
+            articleList.Add(article_21);
             #endregion
 
             #endregion
