@@ -462,18 +462,18 @@ namespace cythilya.Controllers
 
             #region 電子商務網站SEO實例探討
             MeModels.Article article_21 = new MeModels.Article();
-            article_20.Name = "電子商務網站SEO實例探討";
-            article_20.Description = "大部份會做SEO的網站不外乎是電子商務、活動網站、內容/服務平台(例如：新聞、旅遊)。而極端如Campaign Site這樣類型的網站由於存活時間短，便不需要做SEO，只要放置簡單的Meta Tag或Social Meta Tag即可。";
-            article_20.URL = "http://cythilya.blogspot.tw/2015/01/a-practice-to-seo-in-ec-website.html";
-            article_20.RawPic = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website.jpg";
-            article_20.PicSmall = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_188x73.jpg";
-            article_20.PicMedium = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_300.jpg";
-            article_20.PicLarge = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_940x367.jpg";
-            article_20.PicInFooter = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_54x54.jpg";
-            article_20.Tag = "SEO";
-            article_20.isHighlight = true;
-            article_20.Time = "Jan 24, 2015";
-            article_20.isBanner = true;
+            article_21.Name = "電子商務網站SEO實例探討";
+            article_21.Description = "大部份會做SEO的網站不外乎是電子商務、活動網站、內容/服務平台(例如：新聞、旅遊)。而極端如Campaign Site這樣類型的網站由於存活時間短，便不需要做SEO，只要放置簡單的Meta Tag或Social Meta Tag即可。";
+            article_21.URL = "http://cythilya.blogspot.tw/2015/01/a-practice-to-seo-in-ec-website.html";
+            article_21.RawPic = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website.jpg";
+            article_21.PicSmall = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_188x73.jpg";
+            article_21.PicMedium = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_300.jpg";
+            article_21.PicLarge = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_940x367.jpg";
+            article_21.PicInFooter = "/Content/me/img/blog/a_practice_to_seo_in_ec_website/a_practice_to_seo_in_ec_website_54x54.jpg";
+            article_21.Tag = "SEO";
+            article_21.isHighlight = true;
+            article_21.Time = "Jan 24, 2015";
+            article_21.isBanner = true;
             articleList.Add(article_21);
             #endregion
 
