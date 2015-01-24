@@ -301,6 +301,12 @@
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline_54x54.jpg" />
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline_940x367.jpg" />
     <Content Include="Content\me\img\blog\author_rank_54x54.jpg" />
+    <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website.jpg" />
+    <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_188x73.jpg" />
+    <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_300.jpg" />
+    <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_54x54.jpg" />
+    <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_800.jpg" />
+    <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_940x367.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_188x73.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg" />
@@ -399,7 +405,7 @@
     <Content Include="Content\me\img\project\livingartist\livingartist_188x73.png" />
     <Content Include="Content\me\img\project\livingartist\livingartist_300.png" />
     <Content Include="Content\me\img\project\livingartist\livingartist_54x54.png" />
-    <Content Include="Content\me\img\project\livingartist\livingartist_940x367.png" />	
+    <Content Include="Content\me\img\project\livingartist\livingartist_940x367.png" />
     <Content Include="Content\me\img\project\mission\mission_index_54x54.png" />
     <Content Include="Content\me\img\project\mission\mission_index_940x367.jpg" />
     <Content Include="Content\me\img\project\one_piece_z\one_piece_z_index_54x54.png" />
