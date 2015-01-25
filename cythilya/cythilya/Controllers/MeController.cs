@@ -1096,17 +1096,33 @@ namespace cythilya.Controllers
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
             MeModels.SnapshotInfo proj_14_snap_2 = new MeModels.SnapshotInfo();
             MeModels.SnapshotInfo proj_14_snap_3 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_14_snap_4 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_14_snap_5 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_14_snap_6 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_14_snap_7 = new MeModels.SnapshotInfo();
 
             proj_14_snap_1.Name = "P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話";
             proj_14_snap_1.SnapshotURL = "/Content/me/img/project/livingartist/livingartist.png";
-            proj_14_snap_2.Name = "P&G 生活家 - 姊妹淘靈魂分析儀排行榜";
-            proj_14_snap_2.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_billboard_940x469.png";
-            proj_14_snap_3.Name = "P&G 生活家 - 生活家 姊妹淘私房真心話";
-            proj_14_snap_3.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_activity_940x469.png";
+            proj_14_snap_2.Name = "P&G 生活家 - 姊妹淘靈魂分析儀分析結果";
+            proj_14_snap_2.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_result_question_940x469.png";
+            proj_14_snap_3.Name = "P&G 生活家 - 姊妹淘靈魂分析儀排行榜";
+            proj_14_snap_3.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_billboard_940x469.png";
+            proj_14_snap_4.Name = "P&G 生活家 - 姊妹淘私房真心話";
+            proj_14_snap_4.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_activity_940x469.png";
+            proj_14_snap_5.Name = "P&G 生活家 - 姊妹淘私房真心話";
+            proj_14_snap_5.SnapshotURL = "/Content/me/img/project/livingartist/llivingartist_post_940x469.png";
+            proj_14_snap_6.Name = "P&G 生活家 - HappyBox";
+            proj_14_snap_6.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_happybox_940x469.png";
+            proj_14_snap_7.Name = "P&G 生活家 - 活動辦法";
+            proj_14_snap_7.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_rule_940x469.png";
             
             SnapshotList14.Add(proj_14_snap_1);
             SnapshotList14.Add(proj_14_snap_2);
             SnapshotList14.Add(proj_14_snap_3);
+            SnapshotList14.Add(proj_14_snap_4);
+            SnapshotList14.Add(proj_14_snap_5);
+            SnapshotList14.Add(proj_14_snap_6);
+            SnapshotList14.Add(proj_14_snap_7);
 
             proj_14.Snapshot = SnapshotList14;
             projList.Add(proj_14);
