@@ -1102,6 +1102,43 @@ namespace cythilya.Controllers
             proj_14.Snapshot = SnapshotList14;
             projList.Add(proj_14);
             #endregion
+            
+            #region 喜年來 - 過年拷問神回覆
+            /*
+            MeModels.Project proj_15 = new MeModels.Project();
+            proj_15.ID = 15;
+            proj_15.Name = "喜年來 - 過年拷問神回覆";
+            proj_15.Description = "過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！";
+            proj_15.Role = "Front-End Development and C# Backend";
+            proj_15.Tech = "SCSS, jQuery and C#";
+            proj_15.URL = "/Me/Project?id=15";
+            proj_15.RawPic = "/Content/me/img/project/serena/serena.png";
+            proj_15.PicSmall = "/Content/me/img/project/serena/serena_188x73.png";
+            proj_15.PicMedium = "/Content/me/img/project/serena/serena_300.png";
+            proj_15.PicLarge = "/Content/me/img/project/serena/serena_940x367.png";
+            proj_15.PicInFooter = "/Content/me/img/project/serena/serena_54x54.png";
+            proj_15.Order = 15;
+            proj_15.Client = "喜年來";
+            proj_15.ClientURL = "http://www.serenafoods.com.tw";
+            proj_15.Date = "Jan 2015";
+            proj_15.LauchURL = "http://site.friendo.com.tw/serena";
+            proj_15.HtmlContent = "<p>過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！</p>";
+            proj_15.Tag = "Web Brand";
+            proj_15.isHighlight = false;
+
+            List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_15_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_15_snap_1.Name = "喜年來 - 過年拷問神回覆";
+            proj_15_snap_1.SnapshotURL = "/Content/me/img/project/serena/serena_940x367.png";
+            SnapshotList15.Add(proj_15_snap_1);
+
+            proj_15.Snapshot = SnapshotList15;
+            projList.Add(proj_15);
+            */
+            #endregion
+
+
 
             #endregion
 
