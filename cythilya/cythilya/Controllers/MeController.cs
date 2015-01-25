@@ -1094,10 +1094,19 @@ namespace cythilya.Controllers
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_14_snap_2 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_14_snap_3 = new MeModels.SnapshotInfo();
 
             proj_14_snap_1.Name = "P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話";
             proj_14_snap_1.SnapshotURL = "/Content/me/img/project/livingartist/livingartist.png";
+            proj_14_snap_2.Name = "P&G 生活家 - 姊妹淘靈魂分析儀排行榜";
+            proj_14_snap_2.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_billboard_940x469.png";
+            proj_14_snap_3.Name = "P&G 生活家 - 生活家 姊妹淘私房真心話";
+            proj_14_snap_3.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_activity_940x469.png";
+            
             SnapshotList14.Add(proj_14_snap_1);
+            SnapshotList14.Add(proj_14_snap_2);
+            SnapshotList14.Add(proj_14_snap_3);
 
             proj_14.Snapshot = SnapshotList14;
             projList.Add(proj_14);
