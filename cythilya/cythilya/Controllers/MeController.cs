@@ -1110,7 +1110,7 @@ namespace cythilya.Controllers
             proj_14_snap_4.Name = "P&G 生活家 - 姊妹淘私房真心話";
             proj_14_snap_4.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_activity_940x469.png";
             proj_14_snap_5.Name = "P&G 生活家 - 姊妹淘私房真心話";
-            proj_14_snap_5.SnapshotURL = "/Content/me/img/project/livingartist/llivingartist_post_940x469.png";
+            proj_14_snap_5.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_post_940x469.png";
             proj_14_snap_6.Name = "P&G 生活家 - HappyBox";
             proj_14_snap_6.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_happybox_940x469.png";
             proj_14_snap_7.Name = "P&G 生活家 - 活動辦法";
