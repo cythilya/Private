@@ -5,8 +5,22 @@
 <title>$title</title>
 </head>
 <body>
+<button id="btnIncrement" onclick="myFunction()">click</button>
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script>
+var logger = {
+  x: 0,
+  increment: function () {
+    this.x++;
+	console.log(this.x);
+  }
+}
+
+function myFunction() {
+	logger.increment();
+}
+
+/*
 var Robot = {
 	//private
 	power: 100,
@@ -39,6 +53,7 @@ var Robot = {
 
 Robot.showoff(); //power = 70
 Robot.showoff(); //power = 40
+*/
 </script>
 </body>
 </html>

@@ -422,7 +422,7 @@ namespace cythilya.Controllers
             article_18.Tag = "Node.js, Express";
             article_18.isHighlight = false;
             article_18.Time = "Nov 23, 2014";
-            article_18.isBanner = true;
+            article_18.isBanner = false;
             articleList.Add(article_18);
             #endregion
 
