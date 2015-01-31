@@ -422,7 +422,7 @@ namespace cythilya.Controllers
             article_18.Tag = "Node.js, Express";
             article_18.isHighlight = false;
             article_18.Time = "Nov 23, 2014";
-            article_18.isBanner = true;
+            article_18.isBanner = false;
             articleList.Add(article_18);
             #endregion
 
@@ -1129,7 +1129,6 @@ namespace cythilya.Controllers
             #endregion
             
             #region 喜年來 - 過年拷問神回覆
-            /*
             MeModels.Project proj_15 = new MeModels.Project();
             proj_15.ID = 15;
             proj_15.Name = "喜年來 - 過年拷問神回覆";
@@ -1160,10 +1159,8 @@ namespace cythilya.Controllers
 
             proj_15.Snapshot = SnapshotList15;
             projList.Add(proj_15);
-            */
+
             #endregion
-
-
 
             #endregion
 

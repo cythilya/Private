@@ -429,6 +429,11 @@
     <Content Include="Content\me\img\project\selftv\selftv_index_300.jpg" />
     <Content Include="Content\me\img\project\selftv\selftv_index_54x54.jpg" />
     <Content Include="Content\me\img\project\selftv\selftv_index_940x367.jpg" />
+    <Content Include="Content\me\img\project\serena\serena.png" />
+    <Content Include="Content\me\img\project\serena\serena_188x73.png" />
+    <Content Include="Content\me\img\project\serena\serena_300.png" />
+    <Content Include="Content\me\img\project\serena\serena_54x54.png" />
+    <Content Include="Content\me\img\project\serena\serena_940x367.png" />
     <Content Include="Content\me\img\project\yipinchan\yipinchan_index_54x54.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\seo_lab\css\style_anjularjs.css" />
