@@ -317,6 +317,11 @@
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_300.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_54x54.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_940x367.jpg" />
+    <Content Include="Content\me\img\blog\dotchi\dotchi.png" />
+    <Content Include="Content\me\img\blog\dotchi\dotchi_188x73.png" />
+    <Content Include="Content\me\img\blog\dotchi\dotchi_300.png" />
+    <Content Include="Content\me\img\blog\dotchi\dotchi_54x54.png" />
+    <Content Include="Content\me\img\blog\dotchi\dotchi_940x367.png" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_188x73.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_54x54.jpg" />

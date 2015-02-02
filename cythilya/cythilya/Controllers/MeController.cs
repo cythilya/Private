@@ -477,6 +477,23 @@ namespace cythilya.Controllers
             articleList.Add(article_21);
             #endregion
 
+            #region 吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)
+            MeModels.Article article_22 = new MeModels.Article();
+            article_22.Name = "吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)";
+            article_22.Description = "使用者藉由輸入簡單的字詞，例如：「台北市中山區 火鍋」，按下「尋找餐廳」後就能從列表中找到符合項目的推薦餐廳，或按下「看看朋友吃什麼」，經由Facebook授權登入後，看看朋友去過哪些地方、評價。而我們也會爬回Facebook上的資訊做處理並排序，推薦適合的餐廳給使用者。";
+            article_22.URL = "http://cythilya.blogspot.tw/2015/02/dotchi.html";
+            article_22.RawPic = "/Content/me/img/blog/dotchi/dotchi.png";
+            article_22.PicSmall = "/Content/me/img/blog/dotchi/dotchi_188x73.png";
+            article_22.PicMedium = "/Content/me/img/blog/dotchi/dotchi_300.png";
+            article_22.PicLarge = "/Content/me/img/blog/dotchi/dotchi_940x367.png";
+            article_22.PicInFooter = "/Content/me/img/blog/dotchi/dotchi_54x54.png";
+            article_22.Tag = "SEO, Tag, Relevant Terms, Hackathon";
+            article_22.isHighlight = false;
+            article_22.Time = "Feb 2, 2015";
+            article_22.isBanner = false;
+            articleList.Add(article_22);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
