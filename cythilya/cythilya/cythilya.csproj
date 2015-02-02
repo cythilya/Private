@@ -167,8 +167,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\Dotchi\Controllers\DotchiController.cs" />
-    <Compile Include="Areas\Dotchi\DotchiAreaRegistration.cs" />
     <Compile Include="Areas\EShopper\Controllers\BaseController.cs" />
     <Compile Include="Areas\EShopper\Controllers\CartController.cs" />
     <Compile Include="Areas\EShopper\Controllers\HomeController.cs" />
@@ -1471,8 +1469,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Dotchi\Models\" />
-    <Folder Include="Areas\Dotchi\Views\Shared\" />
     <Folder Include="Areas\SEOLab\Models\" />
     <Folder Include="Areas\UI\Models\" />
     <Folder Include="Areas\UI\Views\Shared\" />
@@ -1539,8 +1535,6 @@
     <Content Include="Areas\UI\Views\UI\CKEditorPreview.cshtml" />
     <Content Include="Areas\UI\Views\UI\d3SimpleBarChart.cshtml" />
     <Content Include="Areas\UI\Views\UI\AngularJSTodoList.cshtml" />
-    <Content Include="Areas\Dotchi\Views\Web.config" />
-    <Content Include="Areas\Dotchi\Views\Dotchi\Index.cshtml" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
