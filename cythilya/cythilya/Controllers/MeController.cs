@@ -707,7 +707,7 @@ namespace cythilya.Controllers
             #region 原味千尋 - 十六倍的堅持，只為一次的感動
             MeModels.Project proj_5 = new MeModels.Project();
             proj_5.ID = 5;
-            proj_5.Name = "原味千尋 - 十六倍的堅持，只為一次的感動";
+            proj_5.Name = "十六倍的堅持，只為一次的感動";
             proj_5.Description = "原味千尋與粉多任務合作的活動網站。";
             proj_5.Role = "Front-End Development";
             proj_5.Tech = "Web Development with SCSS and jQuery";
@@ -761,7 +761,7 @@ namespace cythilya.Controllers
             #region 一品禪 - 御選四季食補，全素食手工水餃
             MeModels.Project proj_6 = new MeModels.Project();
             proj_6.ID = 6;
-            proj_6.Name = "一品禪 - 御選四季食補，全素食手工水餃";
+            proj_6.Name = "御選四季食補，全素食手工水餃";
             proj_6.Description = "一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。";
             proj_6.Role = "Front-End Development";
             proj_6.Tech = "Web Development with SCSS and jQuery";
@@ -859,7 +859,7 @@ namespace cythilya.Controllers
             #region 葡萄王LGG特益菌 - 黃金三兄弟賽運占卜
             MeModels.Project proj_8 = new MeModels.Project();
             proj_8.ID = 8;
-            proj_8.Name = "葡萄王LGG特益菌 - 黃金三兄弟賽運占卜";
+            proj_8.Name = "黃金三兄弟賽運占卜";
             proj_8.Description = "葡萄王生技與粉多任務合作的活動網站。";
             proj_8.Role = "Front-End Development";
             proj_8.Tech = "Web Development with SCSS and jQuery";
@@ -1004,7 +1004,7 @@ namespace cythilya.Controllers
             #region 御奉小餐館 Emperorlove - 後宮爭餅傳
             MeModels.Project proj_12 = new MeModels.Project();
             proj_12.ID = 12;
-            proj_12.Name = "御奉小餐館 Emperorlove - 後宮爭餅傳";
+            proj_12.Name = "後宮爭餅傳 - 《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！";
             proj_12.Description = "御奉小餐館與粉多任務合作的活動網站。";
             proj_12.Role = "SEO規劃、Facebook Social Plugins and Graph API技術支援";
             proj_12.Tech = "Web Development with SCSS and jQuery";
@@ -1073,7 +1073,7 @@ namespace cythilya.Controllers
             #region P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話
             MeModels.Project proj_14 = new MeModels.Project();
             proj_14.ID = 14;
-            proj_14.Name = "P&G 生活家 - 姊妹淘心靈悄悄話，說出你的真心話";
+            proj_14.Name = "姊妹淘心靈悄悄話，說出你的真心話";
             proj_14.Description = "分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！";
             proj_14.Role = "Team Leader, Front-End Development and C# Backend";
             proj_14.Tech = "SCSS, jQuery and C#";
@@ -1131,7 +1131,7 @@ namespace cythilya.Controllers
             #region 喜年來 - 過年拷問神回覆
             MeModels.Project proj_15 = new MeModels.Project();
             proj_15.ID = 15;
-            proj_15.Name = "喜年來 - 過年拷問神回覆";
+            proj_15.Name = "過年拷問神回覆";
             proj_15.Description = "過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！";
             proj_15.Role = "Front-End Development and C# Backend";
             proj_15.Tech = "SCSS, jQuery and C#";
