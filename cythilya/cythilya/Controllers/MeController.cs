@@ -488,9 +488,9 @@ namespace cythilya.Controllers
             article_22.PicLarge = "/Content/me/img/blog/dotchi/dotchi_940x367.png";
             article_22.PicInFooter = "/Content/me/img/blog/dotchi/dotchi_54x54.png";
             article_22.Tag = "SEO, Tag, Relevant Terms, Hackathon";
-            article_22.isHighlight = true;
+            article_22.isHighlight = false;
             article_22.Time = "Feb 2, 2015";
-            article_22.isBanner = false;
+            article_22.isBanner = true;
             articleList.Add(article_22);
             #endregion
 
