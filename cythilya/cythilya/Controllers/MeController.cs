@@ -473,7 +473,7 @@ namespace cythilya.Controllers
             article_21.Tag = "SEO";
             article_21.isHighlight = true;
             article_21.Time = "Jan 24, 2015";
-            article_21.isBanner = true;
+            article_21.isBanner = false;
             articleList.Add(article_21);
             #endregion
 
@@ -488,7 +488,7 @@ namespace cythilya.Controllers
             article_22.PicLarge = "/Content/me/img/blog/dotchi/dotchi_940x367.png";
             article_22.PicInFooter = "/Content/me/img/blog/dotchi/dotchi_54x54.png";
             article_22.Tag = "SEO, Tag, Relevant Terms, Hackathon";
-            article_22.isHighlight = false;
+            article_22.isHighlight = true;
             article_22.Time = "Feb 2, 2015";
             article_22.isBanner = false;
             articleList.Add(article_22);
