@@ -326,6 +326,11 @@
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_54x54.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_940x367.jpg" />
+    <Content Include="Content\me\img\blog\facebook_login_review\facebook_login_review.png" />
+    <Content Include="Content\me\img\blog\facebook_login_review\facebook_login_review_188x73.png" />
+    <Content Include="Content\me\img\blog\facebook_login_review\facebook_login_review_300.png" />
+    <Content Include="Content\me\img\blog\facebook_login_review\facebook_login_review_54x54.png" />
+    <Content Include="Content\me\img\blog\facebook_login_review\facebook_login_review_940x367.png" />
     <Content Include="Content\me\img\blog\facebook_product_introduction_188x73.jpg" />
     <Content Include="Content\me\img\blog\facebook_product_introduction_300.jpg" />
     <Content Include="Content\me\img\blog\facebook_product_introduction_940x367.jpg" />

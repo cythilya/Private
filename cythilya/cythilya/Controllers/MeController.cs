@@ -249,7 +249,7 @@ namespace cythilya.Controllers
             article_8.PicMedium = "/Content/me/img/blog/facebook_social_demo_300.jpg";
             article_8.PicLarge = "/Content/me/img/blog/facebook_social_demo_940x367.jpg";
             article_8.PicInFooter = "/Content/me/img/blog/facebook_social_demo_54x54.jpg";
-            article_8.Tag = "Graph API";
+            article_8.Tag = "Facebook, Graph API";
             article_8.isHighlight = false;
             article_8.Time = "June 7, 2014";
             article_8.isBanner = false;
@@ -300,7 +300,7 @@ namespace cythilya.Controllers
             article_11.PicMedium = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_300.jpg";
             article_11.PicLarge = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_940x367.jpg";
             article_11.PicInFooter = "/Content/me/img/blog/Facebook_Graph_API_Taggable_Friends_54x54.jpg";
-            article_11.Tag = "Graph API";
+            article_11.Tag = "Facebook, Graph API";
             article_11.isHighlight = false;
             article_11.Time = "Sep 24, 2014";
             article_11.isBanner = false;
@@ -492,6 +492,23 @@ namespace cythilya.Controllers
             article_22.Time = "Feb 2, 2015";
             article_22.isBanner = true;
             articleList.Add(article_22);
+            #endregion
+
+            #region Facebook Login Review筆記
+            MeModels.Article article_23 = new MeModels.Article();
+            article_23.Name = "Facebook Login Review筆記";
+            article_23.Description = "由於今年的4月30日Facebook Graph API 1.0即將退休，取而代之的是2.0+，因此從年初開始，一直收到Facebook的Alert。為了避免App被break，我開始對使用1.0的App做修改來提交Review。以下是一些筆記。";
+            article_23.URL = "http://cythilya.blogspot.tw/2015/02/facebook-login-review.html";
+            article_23.RawPic = "/Content/me/img/blog/facebook_login_review/facebook_login_review.png";
+            article_23.PicSmall = "/Content/me/img/blog/facebook_login_review/facebook_login_review_188x73.png";
+            article_23.PicMedium = "/Content/me/img/blog/facebook_login_review/facebook_login_review_300.png";
+            article_23.PicLarge = "/Content/me/img/blog/facebook_login_review/facebook_login_review_940x367.png";
+            article_23.PicInFooter = "/Content/me/img/blog/facebook_login_review/facebook_login_review_54x54.png";
+            article_23.Tag = "Facebook, Graph API";
+            article_23.isHighlight = false;
+            article_23.Time = "Feb 4, 2015";
+            article_23.isBanner = false;
+            articleList.Add(article_23);
             #endregion
 
             #endregion
