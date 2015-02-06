@@ -496,7 +496,7 @@ namespace cythilya.Controllers
 
             #region Facebook Login Review筆記
             MeModels.Article article_23 = new MeModels.Article();
-            article_23.Name = "Facebook Login Review筆記";
+            article_23.Name = "Facebook Login Review筆記 Day 1 - Overview";
             article_23.Description = "由於今年的4月30日Facebook Graph API 1.0即將退休，取而代之的是2.0+，因此從年初開始，一直收到Facebook的Alert。為了避免App被break，我開始對使用1.0的App做修改來提交Review。以下是一些筆記。";
             article_23.URL = "http://cythilya.blogspot.tw/2015/02/facebook-login-review.html";
             article_23.RawPic = "/Content/me/img/blog/facebook_login_review/facebook_login_review.png";
