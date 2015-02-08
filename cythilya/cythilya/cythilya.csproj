@@ -376,6 +376,9 @@
     <Content Include="Content\me\img\project\dotchi_food\dotchi_food_index.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_food_page_1.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_food_page_2.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_index_940x580.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_page_1_940x582.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_page_2_940x580.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove_188x73.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove_300.png" />
