@@ -8,6 +8,7 @@
     ViewBag.Description = proj.Name + " | Hsin-Hao Tang";
 
     List<MeModels.RelatedProject> relatedProjects = ViewBag.RelatedProjects as List<MeModels.RelatedProject>;
+    List<MeModels.Partner> partnerList = ViewBag.PartnerList as List<MeModels.Partner>;
 }
 <style>
 body.home #main {
@@ -55,7 +56,18 @@ body.home #main {
             @if (!String.IsNullOrEmpty(proj.Tech))
             { 
                 <p><strong>Tech</strong>@(proj.Tech)</p>
-            }                
+            }     
+            
+            @* Parters *@
+            @if (partnerList != null)
+            {
+                <p><strong>Parters</strong>
+                @foreach (var item in partnerList)
+                { 
+                <a href="@(item.Website)" class="partnerItem" target="_blank">@(item.Name)</a><br>
+                }
+                </p>
+            }
 
             @* Client *@
             @if (!String.IsNullOrEmpty(proj.Client))

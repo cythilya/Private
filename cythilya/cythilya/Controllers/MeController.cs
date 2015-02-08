@@ -91,6 +91,13 @@ namespace cythilya.Controllers
                 return View("Portfolio");
             }
 
+            #region 取得合作夥伴
+            if (proj.Partners != null) 
+            {
+                GetPartnerList(proj.Partners);
+            }
+            #endregion
+
             getRelatedProject(id);
 
             ViewBag.ProjData = proj;
@@ -1234,6 +1241,8 @@ namespace cythilya.Controllers
             proj_16.HtmlContent = "<p></p><p>相關介紹請見<a href=\"http://cythilya.blogspot.tw/2015/02/dotchi.html\" target=\"_blank\">吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)</a></p>";
             proj_16.Tag = "Web, Hackathon";
             proj_16.isHighlight = true;
+            List<int> partnerList = new List<int>(new int[] { 1, 2 });
+            proj_16.Partners = partnerList;
 
             List<MeModels.SnapshotInfo> SnapshotList16 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_16_snap_1 = new MeModels.SnapshotInfo();
@@ -1306,11 +1315,11 @@ namespace cythilya.Controllers
             //tag list
             List<string> TagList = new List<string>();
             TagList.Add("Web");
-            TagList.Add("Brand");
+            TagList.Add("Hackathon");
+            TagList.Add("Brand"); //Campign Site
             TagList.Add("SEO");
             TagList.Add("RWD");
             TagList.Add("SPWA");
-            TagList.Add("Hackathon");
 
             //get project list
             List<MeModels.Project> projList = new List<MeModels.Project>();
@@ -1460,6 +1469,47 @@ namespace cythilya.Controllers
             }
         }        
 
+        //Get Partners
+        public void GetPartnerList(List<int> parters)
+        {
+            #region Mock
+            List<MeModels.Partner> partnerList = new List<MeModels.Partner>();
+
+            MeModels.Partner partner1 = new MeModels.Partner();
+            partner1.ID = 1;
+            partner1.Name = "小奎";
+            partner1.Website = "https://www.facebook.com/profile.php?id=100000189857091&fref=ts";
+            partnerList.Add(partner1);
+
+            MeModels.Partner partner2 = new MeModels.Partner();
+            partner2.ID = 2;
+            partner2.Name = "吳采洪";
+            partner2.Website = "https://www.facebook.com/profile.php?id=100000133231966&fref=ts";
+            partnerList.Add(partner2);
+
+            MeModels.Partner partner3 = new MeModels.Partner();
+            partner3.ID = 3;
+            partner3.Name = "Jim Lin";
+            partner3.Website = "http://jimlindesign.com";
+            partnerList.Add(partner3);
+
+            MeModels.Partner partner4 = new MeModels.Partner();
+            partner4.ID = 3;
+            partner4.Name = "Leah Yeh";
+            partner4.Website = "https://www.facebook.com/leahyeh?fref=ts";
+            partnerList.Add(partner4);
+            #endregion
+
+            List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
+
+            foreach (var num in parters) 
+            {
+                MeModels.Partner partnerItem = partnerList.Find(item => item.ID == num);
+                projectPartnerList.Add(partnerItem);
+            }
+
+            ViewBag.PartnerList = projectPartnerList;
+        }
         #endregion
     }
 }

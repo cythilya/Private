@@ -53,6 +53,7 @@ namespace cythilya.Models
             public string Tag { get; set; }
             public bool isHighlight { get; set; }
             public bool isHideFromIndex { get; set; } //首頁不會成展現此專案，只會在Archieve、Portfolio顯示
+            public List<int> Partners { get; set; } //合作夥伴
         }
 
         public class RelatedProject
