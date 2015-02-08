@@ -38,13 +38,13 @@ namespace cythilya.Models
             public string URL { get; set; }
             public string Role { get; set; }
             public string Tech { get; set; }
+            public int Order { get; set; } //archieve order
             public string RawPic { get; set; }
             public string PicSmall { get; set; } //188*73
             public string PicMedium { get; set; } //300*n
             public string PicLarge { get; set; } //940*367
             public string PicInFooter { get; set; } //54*54
             public List<SnapshotInfo> Snapshot { get; set; }
-            public int Order { get; set; } //archieve order
             public string Client { get; set; }
             public string ClientURL { get; set; }
             public string Date { get; set; }
@@ -52,6 +52,7 @@ namespace cythilya.Models
             public string HtmlContent { get; set; }
             public string Tag { get; set; }
             public bool isHighlight { get; set; }
+            public bool isHideFromIndex { get; set; } //首頁不會成展現此專案，只會在Archieve、Portfolio顯示
         }
 
         public class RelatedProject
@@ -83,6 +84,14 @@ namespace cythilya.Models
             public string Name { get; set; }
             public string Email { get; set; }
             public string Message { get; set; }
+        }
+
+        //合作夥伴
+        public class Partner 
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public string Website { get; set; }
         }
     }
 }
