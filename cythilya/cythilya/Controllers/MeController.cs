@@ -494,7 +494,7 @@ namespace cythilya.Controllers
             articleList.Add(article_22);
             #endregion
 
-            #region Facebook Login Review筆記
+            #region Facebook Login Review筆記 Day 1 - Overview
             MeModels.Article article_23 = new MeModels.Article();
             article_23.Name = "Facebook Login Review筆記 Day 1 - Overview";
             article_23.Description = "由於今年的4月30日Facebook Graph API 1.0即將退休，取而代之的是2.0+，因此從年初開始，一直收到Facebook的Alert。為了避免App被break，我開始對使用1.0的App做修改來提交Review。以下是一些筆記。";
@@ -509,6 +509,23 @@ namespace cythilya.Controllers
             article_23.Time = "Feb 4, 2015";
             article_23.isBanner = false;
             articleList.Add(article_23);
+            #endregion
+
+            #region Facebook Login Review筆記 Day 2 - Policies and Best Practices
+            MeModels.Article article_24 = new MeModels.Article();
+            article_24.Name = "Facebook Login Review筆記 Day 2 - Policies and Best Practices";
+            article_24.Description = "Facebook Login Review筆記 Day 2 - Policies and Best Practices";
+            article_24.URL = "http://cythilya.blogspot.tw/2015/02/facebook-login-review-day-2.html";
+            article_24.RawPic = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2.jpg";
+            article_24.PicSmall = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_188x73.jpg";
+            article_24.PicMedium = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_300.jpg";
+            article_24.PicLarge = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_940x367.jpg";
+            article_24.PicInFooter = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_54x54.jpg";
+            article_24.Tag = "Facebook, Graph API";
+            article_24.isHighlight = false;
+            article_24.Time = "Feb 4, 2015";
+            article_24.isBanner = false;
+            articleList.Add(article_24);
             #endregion
 
             #endregion
