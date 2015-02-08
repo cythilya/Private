@@ -530,7 +530,7 @@ namespace cythilya.Controllers
             article_24.PicInFooter = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_54x54.jpg";
             article_24.Tag = "Facebook, Graph API";
             article_24.isHighlight = false;
-            article_24.Time = "Feb 4, 2015";
+            article_24.Time = "Feb 5, 2015";
             article_24.isBanner = false;
             articleList.Add(article_24);
             #endregion
