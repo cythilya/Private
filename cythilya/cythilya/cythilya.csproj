@@ -378,6 +378,11 @@
     <Content Include="Content\me\img\project\aphezgo\aphezgo_index_54x54.jpg" />
     <Content Include="Content\me\img\project\aphezgo\aphezgo_index_940x367.jpg" />
     <Content Include="Content\me\img\project\daintiest\daintiest_index_54x54.jpg" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_188x73.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_300.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_54x54.png" />
+    <Content Include="Content\me\img\project\dotchi_food\dotchi_940x367.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_food_index.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_food_page_1.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_food_page_2.png" />

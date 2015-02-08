@@ -490,7 +490,7 @@ namespace cythilya.Controllers
             article_22.Tag = "SEO, Tag, Relevant Terms, Hackathon";
             article_22.isHighlight = false;
             article_22.Time = "Feb 2, 2015";
-            article_22.isBanner = true;
+            article_22.isBanner = false;
             articleList.Add(article_22);
             #endregion
 
@@ -1213,6 +1213,50 @@ namespace cythilya.Controllers
 
             #endregion
 
+            #region 吃什麼，どっち - 讓朋友幫你決定吃什麼
+            MeModels.Project proj_16 = new MeModels.Project();
+            proj_16.ID = 16;
+            proj_16.Name = "吃什麼，どっち - 讓朋友幫你決定吃什麼";
+            proj_16.Description = "使用者藉由輸入簡單的字詞，例如：「台北市中山區 火鍋」，按下「尋找餐廳」後就能從列表中找到符合項目的推薦餐廳，或按下「看看朋友吃什麼」，經由Facebook授權登入後，看看朋友去過哪些地方、評價。而我們也會爬回Facebook上的資訊做處理並排序，推薦適合的餐廳給使用者。";
+            proj_16.Role = "Front-End Development and C# Backend";
+            proj_16.Tech = "SCSS, jQuery and C#";
+            proj_16.URL = "/Me/Project?id=16";
+            proj_16.RawPic = "/Content/me/img/project/dotchi_food/dotchi.png";
+            proj_16.PicSmall = "/Content/me/img/project/dotchi_food/dotchi_188x73.png";
+            proj_16.PicMedium = "/Content/me/img/project/dotchi_food/dotchi_300.png";
+            proj_16.PicLarge = "/Content/me/img/project/dotchi_food/dotchi_940x367.png";
+            proj_16.PicInFooter = "/Content/me/img/project/dotchi_food/dotchi_54x54.png";
+            proj_16.Order = 16;
+            proj_16.Client = "";
+            proj_16.ClientURL = "";
+            proj_16.Date = "Feb 2015";
+            proj_16.LauchURL = "http://dotchi.apphb.com";
+            proj_16.HtmlContent = "<p></p><p>相關介紹請見<a href=\"http://cythilya.blogspot.tw/2015/02/dotchi.html\" target=\"_blank\">吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)</a></p>";
+            proj_16.Tag = "Web, Hackathon";
+            proj_16.isHighlight = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList16 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_16_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_16_snap_2 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_16_snap_3 = new MeModels.SnapshotInfo();
+
+            proj_16_snap_1.Name = "吃什麼，どっち - 讓朋友幫你決定吃什麼";
+            proj_16_snap_1.SnapshotURL = "/Content/me/img/project/dotchi_food/dotchi_index_940x580.png";
+            SnapshotList16.Add(proj_16_snap_1);
+
+            proj_16_snap_2.Name = "吃什麼，どっち - 讓朋友幫你決定吃什麼";
+            proj_16_snap_2.SnapshotURL = "/Content/me/img/project/dotchi_food/dotchi_page_1_940x580.png";
+            SnapshotList16.Add(proj_16_snap_2);
+
+            proj_16_snap_3.Name = "吃什麼，どっち - 讓朋友幫你決定吃什麼";
+            proj_16_snap_3.SnapshotURL = "/Content/me/img/project/dotchi_food/dotchi_page_2_940x580.png";
+            SnapshotList16.Add(proj_16_snap_3);
+
+            proj_16.Snapshot = SnapshotList16;
+            projList.Add(proj_16);
+
+            #endregion
+
             #endregion
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
@@ -1266,6 +1310,7 @@ namespace cythilya.Controllers
             TagList.Add("SEO");
             TagList.Add("RWD");
             TagList.Add("SPWA");
+            TagList.Add("Hackathon");
 
             //get project list
             List<MeModels.Project> projList = new List<MeModels.Project>();
