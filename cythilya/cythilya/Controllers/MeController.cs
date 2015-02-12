@@ -728,7 +728,7 @@ namespace cythilya.Controllers
             proj_4.LauchURL = "http://www.friendo.com.tw";
             proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>";
             proj_4.Tag = "Web";
-            proj_4.isHighlight = true;
+            proj_4.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_4_snap_1 = new MeModels.SnapshotInfo();
@@ -1266,7 +1266,39 @@ namespace cythilya.Controllers
 
             #endregion
 
-            #region 漢堡王 2015/02/12
+            #region 讓心年在一起 - 漢堡王心年賀卡
+            MeModels.Project proj_17 = new MeModels.Project();
+            proj_17.ID = 17;
+            proj_17.Name = "讓心年在一起 - 漢堡王心年賀卡";
+            proj_17.Description = "新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！";
+            proj_17.Role = "Front-End Development and C# Backend";
+            proj_17.Tech = "SCSS, jQuery and C#";
+            proj_17.URL = "/Me/Project?id=17";
+            proj_17.RawPic = "/Content/me/img/project/bbk_new_year/bbk_new_year.png";
+            proj_17.PicSmall = "/Content/me/img/project/bbk_new_year/bbk_new_year_188x73.png";
+            proj_17.PicMedium = "/Content/me/img/project/bbk_new_year/bbk_new_year_300.png";
+            proj_17.PicLarge = "/Content/me/img/project/bbk_new_year/bbk_new_year_940x367.png";
+            proj_17.PicInFooter = "/Content/me/img/project/bbk_new_year/bbk_new_year_54x54.png";
+            proj_17.Order = 17;
+            proj_17.Client = "漢堡王";
+            proj_17.ClientURL = "http://www.burgerking.com.tw/index.html";
+            proj_17.Date = "Feb 2015";
+            proj_17.LauchURL = "http://www.friendo.com.tw/Mission/3958";
+            proj_17.HtmlContent = "<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>";
+            proj_17.Tag = "Web Brand";
+            proj_17.isHighlight = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_17_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_17_snap_1.Name = "讓心年在一起 - 漢堡王心年賀卡";
+            proj_17_snap_1.SnapshotURL = "/Content/me/img/project/bbk_new_year/bbk_new_year_940x367.png";
+            SnapshotList17.Add(proj_17_snap_1);
+
+            proj_17.Snapshot = SnapshotList17;
+            projList.Add(proj_17);            
+            
+            
             #endregion
 
             #endregion
