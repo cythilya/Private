@@ -535,6 +535,23 @@ namespace cythilya.Controllers
             articleList.Add(article_24);
             #endregion
 
+            #region 使用Bootstrap建立一個RWD Template (Twitter Bootstrap in Responsive Web Design)
+            MeModels.Article article_25 = new MeModels.Article();
+            article_25.Name = "使用Bootstrap建立一個RWD Template (Twitter Bootstrap in Responsive Web Design)s";
+            article_25.Description = "使用Bootstrap建立一個RWD Template的筆記。";
+            article_25.URL = "http://cythilya.blogspot.tw/2015/02/bootstrap-rwd-template.html";
+            article_25.RawPic = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template.jpg";
+            article_25.PicSmall = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_188x73.jpg";
+            article_25.PicMedium = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_300.jpg";
+            article_25.PicLarge = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_940x367.jpg";
+            article_25.PicInFooter = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_54x54.jpg";
+            article_25.Tag = "RWD";
+            article_25.isHighlight = false;
+            article_25.Time = "Feb 27, 2015";
+            article_25.isBanner = false;
+            articleList.Add(article_25);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
