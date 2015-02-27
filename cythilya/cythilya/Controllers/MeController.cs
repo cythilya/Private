@@ -569,7 +569,7 @@ namespace cythilya.Controllers
             proj_1.Date = "Jan 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
             proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。</p>";
-            proj_1.Tag = "Web";
+            proj_1.Tag = "Web CampignSite";
             proj_1.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
@@ -781,7 +781,7 @@ namespace cythilya.Controllers
             proj_5.Date = "July 2014";
             proj_5.LauchURL = "http://www.friendo.com.tw/daintiest";
             proj_5.HtmlContent = "<p>原味千尋與粉多任務合作的活動網站。</p>";
-            proj_5.Tag = "Web Brand";
+            proj_5.Tag = "Web CampignSite";
             proj_5.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
@@ -835,7 +835,7 @@ namespace cythilya.Controllers
             proj_6.Date = "April 2014";
             proj_6.LauchURL = "http://www.friendo.com.tw/yipinchan";
             proj_6.HtmlContent = "<p>一品禪與粉多任務合作的活動網站，特別加強SEO、品牌與相關產品關鍵字經營。</p>";
-            proj_6.Tag = "Web Brand SEO";
+            proj_6.Tag = "Web CampignSite SEO";
             proj_6.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
@@ -884,7 +884,7 @@ namespace cythilya.Controllers
             proj_7.Date = "July - Aug 2014";
             proj_7.LauchURL = "http://fathersday.apezgo.com";
             proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。</p>";
-            proj_7.Tag = "Web";
+            proj_7.Tag = "Web CampignSite";
             proj_7.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList7 = new List<MeModels.SnapshotInfo>();
@@ -933,7 +933,7 @@ namespace cythilya.Controllers
             proj_8.Date = "Oct 2014";
             proj_8.LauchURL = "http://www.friendo.com.tw/grapeking";
             proj_8.HtmlContent = "<p>葡萄王生技與粉多任務合作的活動網站。</p>";
-            proj_8.Tag = "Web Brand";
+            proj_8.Tag = "Web CampignSite";
             proj_8.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
@@ -972,7 +972,7 @@ namespace cythilya.Controllers
             proj_9.Date = "Oct 2014";
             proj_9.LauchURL = "http://www.friendo.com.tw/hellomip";
             proj_9.HtmlContent = "<p>Hello! Mip與粉多任務合作的活動網站。</p>";
-            proj_9.Tag = "Web Brand";
+            proj_9.Tag = "Web CampignSite";
             proj_9.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList9 = new List<MeModels.SnapshotInfo>();
@@ -1004,12 +1004,12 @@ namespace cythilya.Controllers
             proj_10.Client = "FamilyMart 全家便利商店";
             proj_10.ClientURL = "http://www.family.com.tw/Marketing/index.aspx";
             proj_10.Date = "Sept - Oct 2014";
-            proj_10.LauchURL = "";
+            proj_10.LauchURL = "http://event.family.com.tw/ice_cream/FansMission";
 
             var demoRUL = "/Content/me/img/project/eventfamily/eventFamily.gif";
 
             proj_10.HtmlContent = "<p> 只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p><p><img src=" + "/Content/me/img/project/eventfamily/event_family_tablet_mobile_320.png" + "></p><p>RWD(Responsive Web Design)，支援平板、手機等行動裝置瀏覽。</p><p>Demo影片如下。</p><p><a href=" + demoRUL + " target=" + "_blank" + "><img src=" + demoRUL + " width=" + 320 + "></a></p>";
-            proj_10.Tag = "Web SEO RWD";
+            proj_10.Tag = "Web CampignSite RWD";
             proj_10.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
@@ -1044,7 +1044,7 @@ namespace cythilya.Controllers
             //proj_11.LauchURL = "http://bit.ly/10JcEZ9";
             proj_11.LauchURL = "";
             proj_11.HtmlContent = "<p>SELF做自己頻道，是台灣第一個專門以服務同志族群的頻道品牌。隸屬於「采昌娛樂多媒體集團」。</p><p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_1.png" + "></p> <br> <p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_2.png" + "></p>";
-            proj_11.Tag = "Web";
+            proj_11.Tag = "Web Prototype";
             proj_11.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList11 = new List<MeModels.SnapshotInfo>();
@@ -1078,7 +1078,7 @@ namespace cythilya.Controllers
             proj_12.Date = "Oct 2014";
             proj_12.LauchURL = "http://www.friendo.com.tw/emperorlove";
             proj_12.HtmlContent = "《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！後宮甄嬛傳不夠看，「後宮爭餅傳」才精彩！到底是什麼樣的特色美食，讓平常毫無心機的姊妹淘，也開始有心機了？且來看看御奉小餐館的心機美食，如可引起姊妹間的爭食搶奪，快邀姊妹淘來一嚐究竟，一起心機過招！參加活動即有四人同行一人我請優惠喔！";
-            proj_12.Tag = "Web Brand";
+            proj_12.Tag = "Web CampignSite";
             proj_12.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
@@ -1114,7 +1114,7 @@ namespace cythilya.Controllers
 
             var demoHTYURL = "https://dl.dropboxusercontent.com/u/78267129/hty_flow.gif";
             proj_13.HtmlContent = "<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p><p><img width=" + 320 + " src=" + demoHTYURL + "></p>";
-            proj_13.Tag = "Web Brand";
+            proj_13.Tag = "Web CampignSite";
             proj_13.isHighlight = true;//錄製_2014_12_05_22_00_48_818.mp4
 
             List<MeModels.SnapshotInfo> SnapshotList13 = new List<MeModels.SnapshotInfo>();
@@ -1147,7 +1147,7 @@ namespace cythilya.Controllers
             proj_14.Date = "Jan 2015";
             proj_14.LauchURL = "http://site.friendo.com.tw/livingartist";
             proj_14.HtmlContent = "<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>";
-            proj_14.Tag = "Web Brand";
+            proj_14.Tag = "Web CampignSite";
             proj_14.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
@@ -1205,7 +1205,7 @@ namespace cythilya.Controllers
             proj_15.Date = "Jan 2015";
             proj_15.LauchURL = "http://site.friendo.com.tw/serena";
             proj_15.HtmlContent = "<p>過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！</p>";
-            proj_15.Tag = "Web Brand";
+            proj_15.Tag = "Web CampignSite";
             proj_15.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
@@ -1285,7 +1285,7 @@ namespace cythilya.Controllers
             proj_17.Date = "Feb 2015";
             proj_17.LauchURL = "http://www.friendo.com.tw/Mission/3958";
             proj_17.HtmlContent = "<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>";
-            proj_17.Tag = "Web Brand";
+            proj_17.Tag = "Web CampignSite";
             proj_17.isHighlight = true;
 
             List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
@@ -1350,11 +1350,13 @@ namespace cythilya.Controllers
             //tag list
             List<string> TagList = new List<string>();
             TagList.Add("Web");
+            TagList.Add("Prototype");
             TagList.Add("Hackathon");
-            TagList.Add("Brand"); //Campign Site
+            TagList.Add("CampignSite");
             TagList.Add("SEO");
             TagList.Add("RWD");
             TagList.Add("SPWA");
+            TagList.Add("App");
 
             //get project list
             List<MeModels.Project> projList = new List<MeModels.Project>();
