@@ -627,11 +627,11 @@ namespace cythilya.Controllers
             article_29.Name = "UXHK 2015";
             article_29.Description = "年初我和小奎突然決定要參加UXHK 2015，對我來說，有自己想做的東西後，很自然的就想去看看其他產業、其他環境、其他人/職位怎麼做怎麼想、關心什麼議題。";
             article_29.URL = "http://cythilya.blogspot.tw/2015/03/uxhk-2015.html";
-            article_29.RawPic = "/Content/me/img/blog//uxhk_2015/uxhk_2015_940x367.jpg";
-            article_29.PicSmall = "/Content/me/img/blog//uxhk_2015/uxhk_2015_188x73.jpg";
-            article_29.PicMedium = "/Content/me/img/blog//uxhk_2015/uxhk_2015_300.jpg";
-            article_29.PicLarge = "/Content/me/img/blog//uxhk_2015/uxhk_2015_940x367.jpg";
-            article_29.PicInFooter = "/Content/me/img/blog//uxhk_2015/uxhk_2015_54x54.jpg";
+            article_29.RawPic = "/Content/me/img/blog/uxhk_2015/uxhk_2015_940x367.jpg";
+            article_29.PicSmall = "/Content/me/img/blog/uxhk_2015/uxhk_2015_188x73.jpg";
+            article_29.PicMedium = "/Content/me/img/blog/uxhk_2015/uxhk_2015_300.jpg";
+            article_29.PicLarge = "/Content/me/img/blog/uxhk_2015/uxhk_2015_940x367.jpg";
+            article_29.PicInFooter = "/Content/me/img/blog/uxhk_2015/uxhk_2015_54x54.jpg";
             article_29.Tag = "Hong Kong, UXHK, 香港";
             article_29.isHighlight = false;
             article_29.Time = "March 18, 2015";
