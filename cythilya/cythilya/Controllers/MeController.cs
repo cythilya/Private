@@ -552,6 +552,76 @@ namespace cythilya.Controllers
             articleList.Add(article_25);
             #endregion
 
+            /*
+            #region Upgrade Guide - Upgrading from v1.0 to v2.0
+            MeModels.Article article_26 = new MeModels.Article();
+            article_26.Name = "Upgrade Guide - Upgrading from v1.0 to v2.0";
+            article_26.Description = "Graph API升級筆記。";
+            article_26.URL = "http://cythilya.blogspot.tw/2015/03/upgrade-guide-upgrading-from-v10-to-v20.html";
+            article_26.RawPic = "/Content/me/img/blog/upgrade_guide_upgrading_from_v10_to_v20/upgrade_guide_upgrading_from_v10_to_v20.jpg";
+            article_26.PicSmall = "/Content/me/img/blog/upgrade_guide_upgrading_from_v10_to_v20/upgrade_guide_upgrading_from_v10_to_v20_188x73.jpg";
+            article_26.PicMedium = "/Content/me/img/blog/upgrade_guide_upgrading_from_v10_to_v20/upgrade_guide_upgrading_from_v10_to_v20_300.jpg";
+            article_26.PicLarge = "/Content/me/img/blog/upgrade_guide_upgrading_from_v10_to_v20/upgrade_guide_upgrading_from_v10_to_v20_940x367.jpg";
+            article_26.PicInFooter = "/Content/me/img/blog/upgrade_guide_upgrading_from_v10_to_v20/upgrade_guide_upgrading_from_v10_to_v20_54x54.jpg";
+            article_26.Tag = "Facebook, Graph API";
+            article_26.isHighlight = false;
+            article_26.Time = "March 4, 2015";
+            article_26.isBanner = false;
+            articleList.Add(article_26);
+            #endregion
+            */
+
+            #region YHA美荷樓青年旅舍 (YHA Mei Ho House Youth Hostel)
+            MeModels.Article article_27 = new MeModels.Article();
+            article_27.Name = "YHA美荷樓青年旅舍 (YHA Mei Ho House Youth Hostel)";
+            article_27.Description = "藉UXHK 2015之便，我們在香港多待了幾天。而來去香港好幾次，每次我爸都習慣訂YMCA，但無奈改建成高級酒店，像我們這樣的小資女孩是無法負擔的。同行夥伴小奎找到一間「YHA美荷樓青年旅舍 (YHA Mei Ho House Youth Hostel)」，看起來交通方便(近港鐵深水埗站)、環境漂亮又安全、價格便宜，就訂了下來。";
+            article_27.URL = "http://cythilya.blogspot.tw/2015/03/yha-mei-ho-house-youth-hostel.html";
+            article_27.RawPic = "/Content/me/img/blog/yha_mei_ho_house_youth_hostel/yha_mei_ho_house_youth_hostel_940x367.jpg";
+            article_27.PicSmall = "/Content/me/img/blog/yha_mei_ho_house_youth_hostel/yha_mei_ho_house_youth_hostel_188x73.jpg";
+            article_27.PicMedium = "/Content/me/img/blog/yha_mei_ho_house_youth_hostel/yha_mei_ho_house_youth_hostel_300.jpg";
+            article_27.PicLarge = "/Content/me/img/blog/yha_mei_ho_house_youth_hostel/yha_mei_ho_house_youth_hostel_940x367.jpg";
+            article_27.PicInFooter = "/Content/me/img/blog/yha_mei_ho_house_youth_hostel/yha_mei_ho_house_youth_hostel_54x54.jpg";
+            article_27.Tag = "Hong Kong, 住宿, 深水埗, 添好運, 港式點心, 石硤尾邨, 美荷樓, 美荷樓 呼吸冰室, 美荷樓 生活館, 美食, 貴州菜, 青年旅舍, 香港, 黔菜, 黔館";
+            article_27.isHighlight = false;
+            article_27.Time = "March 15, 2015";
+            article_27.isBanner = false;
+            articleList.Add(article_27);
+            #endregion
+
+            #region 赤柱 (Stanley) - 悠閒愜意的異國風情小鎮
+            MeModels.Article article_28 = new MeModels.Article();
+            article_28.Name = "赤柱 (Stanley) - 悠閒愜意的異國風情小鎮";
+            article_28.Description = "如果準備搭飛機離港前剛好有一小段時間不知道要幹嘛的話，可以考慮到 赤柱(Stanley) 逛逛。赤柱像是沒有商業化又比較乾淨的淡水，跟西貢比起來更有異國風情味。";
+            article_28.URL = "http://cythilya.blogspot.tw/2015/03/stanley.html";
+            article_28.RawPic = "/Content/me/img/blog/stanley/stanley_940x367.jpg";
+            article_28.PicSmall = "/Content/me/img/blog/stanley/stanley_188x73.jpg";
+            article_28.PicMedium = "/Content/me/img/blog/stanley/stanley_300.png";
+            article_28.PicLarge = "/Content/me/img/blog/stanley/stanley_940x367.jpg";
+            article_28.PicInFooter = "/Content/me/img/blog/stanley/stanley_54x54.jpg";
+            article_28.Tag = "Hong Kong, Stanley, 卜公碼頭, 赤柱, 赤柱大街, 赤柱市集, 赤柱海濱長廊, 赤柱美利樓, 香港";
+            article_28.isHighlight = false;
+            article_28.Time = "March 17, 2015";
+            article_28.isBanner = false;
+            articleList.Add(article_28);
+            #endregion
+
+            #region UXHK 2015
+            MeModels.Article article_29 = new MeModels.Article();
+            article_29.Name = "UXHK 2015";
+            article_29.Description = "年初我和小奎突然決定要參加UXHK 2015，對我來說，有自己想做的東西後，很自然的就想去看看其他產業、其他環境、其他人/職位怎麼做怎麼想、關心什麼議題。";
+            article_29.URL = "http://cythilya.blogspot.tw/2015/03/uxhk-2015.html";
+            article_29.RawPic = "/Content/me/img/blog//uxhk_2015/uxhk_2015_940x367.jpg";
+            article_29.PicSmall = "/Content/me/img/blog//uxhk_2015/uxhk_2015_188x73.jpg";
+            article_29.PicMedium = "/Content/me/img/blog//uxhk_2015/uxhk_2015_300.jpg";
+            article_29.PicLarge = "/Content/me/img/blog//uxhk_2015/uxhk_2015_940x367.jpg";
+            article_29.PicInFooter = "/Content/me/img/blog//uxhk_2015/uxhk_2015_54x54.jpg";
+            article_29.Tag = "Hong Kong, UXHK, 香港";
+            article_29.isHighlight = false;
+            article_29.Time = "March 18, 2015";
+            article_29.isBanner = false;
+            articleList.Add(article_29);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
