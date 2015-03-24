@@ -127,6 +127,23 @@ namespace cythilya.Controllers
 
             #region Mock
 
+            #region Icon Fonts Tutorial
+            MeModels.Article article_30 = new MeModels.Article();
+            article_30.Name = "Icon Fonts Tutorial";
+            article_30.Description = "什麼是Icon Fonts?以往我們都是將小圖示(icon)用切圖的方式放入網頁，而我們也可以將這些icon用CSS「畫」出來。";
+            article_30.URL = "http://cythilya-blog.logdown.com/posts/145597-icon-fonts-tutorial";
+            article_30.RawPic = "/Content/me/img/blog//icon_fonts/icon_fonts_940x367.png";
+            article_30.PicSmall = "/Content/me/img/blog//icon_fonts/icon_fonts_188x73.png";
+            article_30.PicMedium = "/Content/me/img/blog//icon_fonts/icon_fonts_300.png";
+            article_30.PicLarge = "/Content/me/img/blog//icon_fonts/icon_fonts_940x367.png";
+            article_30.PicInFooter = "/Content/me/img/blog//icon_fonts/icon_fonts_54x54.png";
+            article_30.Tag = "icon fonts";
+            article_30.isHighlight = false;
+            article_30.Time = "Oct 8, 2013";
+            article_30.isBanner = false;
+            articleList.Add(article_30);
+            #endregion
+
             #region IA for SEO：使用IA增進從搜尋引擎來的流量
             MeModels.Article article_1 = new MeModels.Article();
             article_1.Name = "IA for SEO：使用IA增進從搜尋引擎來的流量";
@@ -314,9 +331,9 @@ namespace cythilya.Controllers
             articleList.Add(article_11);
             #endregion
 
-            #region Facebook Product Introduction
+            #region Facebook Product Introduction 產品總整理與功能說明
             MeModels.Article article_12 = new MeModels.Article();
-            article_12.Name = "Facebook Product Introduction";
+            article_12.Name = "Facebook Product Introduction 產品總整理與功能說明";
             article_12.Description = "Facebook產品總整理與功能說明(Social Plugins、Sharing、其他UI功能應用、Graph API功能應用、og相關、權限相關、成效衡量)。";
             article_12.URL = "http://bit.ly/ZyYSYx";
             article_12.RawPic = "/Content/me/img/blog/facebook_product_introduction_940x367.jpg";
@@ -552,8 +569,8 @@ namespace cythilya.Controllers
             articleList.Add(article_25);
             #endregion
 
-            /*
             #region Upgrade Guide - Upgrading from v1.0 to v2.0
+            /*
             MeModels.Article article_26 = new MeModels.Article();
             article_26.Name = "Upgrade Guide - Upgrading from v1.0 to v2.0";
             article_26.Description = "Graph API升級筆記。";
@@ -568,8 +585,8 @@ namespace cythilya.Controllers
             article_26.Time = "March 4, 2015";
             article_26.isBanner = false;
             articleList.Add(article_26);
-            #endregion
             */
+            #endregion
 
             #region YHA美荷樓青年旅舍 (YHA Mei Ho House Youth Hostel)
             MeModels.Article article_27 = new MeModels.Article();
@@ -621,6 +638,8 @@ namespace cythilya.Controllers
             article_29.isBanner = false;
             articleList.Add(article_29);
             #endregion
+
+            //從31開始
 
             #endregion
 
