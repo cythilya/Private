@@ -388,6 +388,11 @@
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms_300.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms_54x54.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms_940x367.jpg" />
+    <Content Include="Content\me\img\blog\upgrade_guide_upgrading_from_v10_to_v20\upgrade_guide_upgrading_from_v10_to_v20.jpg" />
+    <Content Include="Content\me\img\blog\upgrade_guide_upgrading_from_v10_to_v20\upgrade_guide_upgrading_from_v10_to_v20_188x73.jpg" />
+    <Content Include="Content\me\img\blog\upgrade_guide_upgrading_from_v10_to_v20\upgrade_guide_upgrading_from_v10_to_v20_300.jpg" />
+    <Content Include="Content\me\img\blog\upgrade_guide_upgrading_from_v10_to_v20\upgrade_guide_upgrading_from_v10_to_v20_54x54.jpg" />
+    <Content Include="Content\me\img\blog\upgrade_guide_upgrading_from_v10_to_v20\upgrade_guide_upgrading_from_v10_to_v20_940x367.jpg" />
     <Content Include="Content\me\img\blog\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture.jpg" />
     <Content Include="Content\me\img\blog\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_188x73.jpg" />
     <Content Include="Content\me\img\blog\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture\upload_photos_to_users_profile_via_graph_api_and_change_profile_picture_300.jpg" />

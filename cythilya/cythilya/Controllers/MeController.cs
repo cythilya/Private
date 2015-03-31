@@ -570,7 +570,6 @@ namespace cythilya.Controllers
             #endregion
 
             #region Upgrade Guide - Upgrading from v1.0 to v2.0
-            /*
             MeModels.Article article_26 = new MeModels.Article();
             article_26.Name = "Upgrade Guide - Upgrading from v1.0 to v2.0";
             article_26.Description = "Graph API升級筆記。";
@@ -585,7 +584,6 @@ namespace cythilya.Controllers
             article_26.Time = "March 4, 2015";
             article_26.isBanner = false;
             articleList.Add(article_26);
-            */
             #endregion
 
             #region YHA美荷樓青年旅舍 (YHA Mei Ho House Youth Hostel)
