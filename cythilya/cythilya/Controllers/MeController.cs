@@ -620,7 +620,7 @@ namespace cythilya.Controllers
             articleList.Add(article_28);
             #endregion
 
-            #region UXHK 2015
+            #region 利用Bootstrap Grid System排版的學習筆記
             MeModels.Article article_31 = new MeModels.Article();
             article_31.Name = "利用Bootstrap Grid System排版的學習筆記";
             article_31.Description = "利用Bootstrap Grid System來排版真是一個方便的方法，最簡單的例子就是如果一個頁面上有許多小方格會隨著Device/解析度而有不同的排列方式，就很適合用Grid System來排版。";
