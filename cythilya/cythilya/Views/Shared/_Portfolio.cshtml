@@ -13,22 +13,25 @@
         @*<li><a href="#" data-filter=".SPWA">SPWA</a></li>*@
 	</ul>
 	<div id="filter-container" class="cf">
-        @if (projList != null) 
+        @if (projList != null)
         {
             foreach (var item in projList)
-            { 
- 		    <figure class="@(item.Tag)" itemscope itemtype="http://schema.org/article">
-			    <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
-				    <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
-			    </a>
-			    <figcaption>
-				    <a href="@(item.URL)" title="@(item.Name)" itemprop="url" target="_blank">
-					    <h3 class="heading" itemprop="name">@(item.Name)</h3>
-				    </a>
-				    <span itemprop="description">@(item.Description)</span>
-			    </figcaption>
-		    </figure>
-            } 
+            {
+                if (item.IsShowInPortfolio)
+                {
+ 		        <figure class="@(item.Tag)" itemscope itemtype="http://schema.org/article">
+			        <a href="@(item.URL)" title="@(item.Name)" class="thumb" itemprop="url" target="_blank">
+				        <img src="@(item.PicMedium)" title="@(item.Name)" alt="@(item.Name)" itemprop="image" />
+			        </a>
+			        <figcaption>
+				        <a href="@(item.URL)" title="@(item.Name)" itemprop="url" target="_blank">
+					        <h3 class="heading" itemprop="name">@(item.Name)</h3>
+				        </a>
+				        <span itemprop="description">@(item.Description)</span>
+			        </figcaption>
+		        </figure>
+                }
+            }
         }
         @*
         @if (articleList != null)
