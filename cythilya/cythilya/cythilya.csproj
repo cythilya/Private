@@ -307,6 +307,11 @@
     <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_54x54.jpg" />
     <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_800.jpg" />
     <Content Include="Content\me\img\blog\a_practice_to_seo_in_ec_website\a_practice_to_seo_in_ec_website_940x367.jpg" />
+    <Content Include="Content\me\img\blog\bootstrap_grid_system_in_responsive_web_design\bootstrap_grid_system_in_responsive_web_design.png" />
+    <Content Include="Content\me\img\blog\bootstrap_grid_system_in_responsive_web_design\bootstrap_grid_system_in_responsive_web_design_188x73.png" />
+    <Content Include="Content\me\img\blog\bootstrap_grid_system_in_responsive_web_design\bootstrap_grid_system_in_responsive_web_design_300.png" />
+    <Content Include="Content\me\img\blog\bootstrap_grid_system_in_responsive_web_design\bootstrap_grid_system_in_responsive_web_design_54x54.png" />
+    <Content Include="Content\me\img\blog\bootstrap_grid_system_in_responsive_web_design\bootstrap_grid_system_in_responsive_web_design_940x367.png" />
     <Content Include="Content\me\img\blog\bootstrap_rwd_template\bootstrap_rwd_template.jpg" />
     <Content Include="Content\me\img\blog\bootstrap_rwd_template\bootstrap_rwd_template_188x73.jpg" />
     <Content Include="Content\me\img\blog\bootstrap_rwd_template\bootstrap_rwd_template_300.jpg" />

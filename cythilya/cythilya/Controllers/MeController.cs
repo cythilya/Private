@@ -562,7 +562,7 @@ namespace cythilya.Controllers
             article_25.PicMedium = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_300.jpg";
             article_25.PicLarge = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_940x367.jpg";
             article_25.PicInFooter = "/Content/me/img/blog/bootstrap_rwd_template/bootstrap_rwd_template_54x54.jpg";
-            article_25.Tag = "RWD, Mobile Search";
+            article_25.Tag = "RWD, Mobile Search, Bootstrap";
             article_25.isHighlight = false;
             article_25.Time = "Feb 27, 2015";
             article_25.isBanner = false;
@@ -621,23 +621,21 @@ namespace cythilya.Controllers
             #endregion
 
             #region UXHK 2015
-            MeModels.Article article_29 = new MeModels.Article();
-            article_29.Name = "UXHK 2015";
-            article_29.Description = "年初我和小奎突然決定要參加UXHK 2015，對我來說，有自己想做的東西後，很自然的就想去看看其他產業、其他環境、其他人/職位怎麼做怎麼想、關心什麼議題。";
-            article_29.URL = "http://cythilya.blogspot.tw/2015/03/uxhk-2015.html";
-            article_29.RawPic = "/Content/me/img/blog/uxhk_2015/uxhk_2015_940x367.jpg";
-            article_29.PicSmall = "/Content/me/img/blog/uxhk_2015/uxhk_2015_188x73.jpg";
-            article_29.PicMedium = "/Content/me/img/blog/uxhk_2015/uxhk_2015_300.jpg";
-            article_29.PicLarge = "/Content/me/img/blog/uxhk_2015/uxhk_2015_940x367.jpg";
-            article_29.PicInFooter = "/Content/me/img/blog/uxhk_2015/uxhk_2015_54x54.jpg";
-            article_29.Tag = "Hong Kong, UXHK, 香港";
-            article_29.isHighlight = false;
-            article_29.Time = "March 18, 2015";
-            article_29.isBanner = false;
-            articleList.Add(article_29);
+            MeModels.Article article_31 = new MeModels.Article();
+            article_31.Name = "利用Bootstrap Grid System排版的學習筆記";
+            article_31.Description = "利用Bootstrap Grid System來排版真是一個方便的方法，最簡單的例子就是如果一個頁面上有許多小方格會隨著Device/解析度而有不同的排列方式，就很適合用Grid System來排版。";
+            article_31.URL = "http://cythilya.blogspot.tw/2015/04/bootstrap-grid-system.html";
+            article_31.RawPic = "/Content/me/img/blog/bootstrap_grid_system_in_responsive_web_design/bootstrap_grid_system_in_responsive_web_design.png";
+            article_31.PicSmall = "/Content/me/img/blog/bootstrap_grid_system_in_responsive_web_design/bootstrap_grid_system_in_responsive_web_design_188x73.png";
+            article_31.PicMedium = "/Content/me/img/blog/bootstrap_grid_system_in_responsive_web_design/bootstrap_grid_system_in_responsive_web_design_300.png";
+            article_31.PicLarge = "/Content/me/img/blog/bootstrap_grid_system_in_responsive_web_design/bootstrap_grid_system_in_responsive_web_design_940x367.png";
+            article_31.PicInFooter = "/Content/me/img/blog/bootstrap_grid_system_in_responsive_web_design/bootstrap_grid_system_in_responsive_web_design_54x54.png";
+            article_31.Tag = "RWD, Bootstrap";
+            article_31.isHighlight = false;
+            article_31.Time = "April 7, 2015";
+            article_31.isBanner = false;
+            articleList.Add(article_31);
             #endregion
-
-            //從31開始
 
             #endregion
 
