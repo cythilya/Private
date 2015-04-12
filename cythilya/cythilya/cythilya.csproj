@@ -388,6 +388,13 @@
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_300.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_54x54.jpg" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_940x367.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline_188x73.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline_300.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline_54x54.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline_640.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline_800.png" />
+    <Content Include="Content\me\img\blog\seo_guideline\seo_guideline_940x367.png" />
     <Content Include="Content\me\img\blog\stanley\stanley_188x73.jpg" />
     <Content Include="Content\me\img\blog\stanley\stanley_300.png" />
     <Content Include="Content\me\img\blog\stanley\stanley_54x54.jpg" />
