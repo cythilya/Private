@@ -353,6 +353,12 @@
     <Content Include="Content\me\img\blog\facebook_login_review_day_2\facebook_login_review_day_2_54x54.png" />
     <Content Include="Content\me\img\blog\facebook_login_review_day_2\facebook_login_review_day_2_640.png" />
     <Content Include="Content\me\img\blog\facebook_login_review_day_2\facebook_login_review_day_2_940x367.png" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction\facebook_product_introduction.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction\facebook_product_introduction_188x73.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction\facebook_product_introduction_300.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction\facebook_product_introduction_54x54.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction\facebook_product_introduction_800.jpg" />
+    <Content Include="Content\me\img\blog\facebook_product_introduction\facebook_product_introduction_940x367.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_54x54.jpg" />
     <Content Include="Content\me\img\blog\icon_fonts\icon_fonts_188x73.png" />
     <Content Include="Content\me\img\blog\icon_fonts\icon_fonts_300.png" />
@@ -382,7 +388,6 @@
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_300.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_54x54.jpg" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_940x367.png" />
-    <Content Include="Content\me\img\blog\seo_guideline_54x54.jpg" />
     <Content Include="Content\me\img\blog\stanley\stanley_188x73.jpg" />
     <Content Include="Content\me\img\blog\stanley\stanley_300.png" />
     <Content Include="Content\me\img\blog\stanley\stanley_54x54.jpg" />
@@ -558,9 +563,6 @@
     <Content Include="Content\me\img\blog\search_and_social_188x73.jpg" />
     <Content Include="Content\me\img\blog\search_and_social_300.jpg" />
     <Content Include="Content\me\img\blog\search_and_social_940x367.jpg" />
-    <Content Include="Content\me\img\blog\seo_guideline_188x73.jpg" />
-    <Content Include="Content\me\img\blog\seo_guideline_300.jpg" />
-    <Content Include="Content\me\img\blog\seo_guideline_940x367.jpg" />
     <Content Include="Content\me\img\blog\yipinchan_website.png" />
     <Content Include="Content\me\img\bullets\arrow.png" />
     <Content Include="Content\me\img\bullets\check.png" />

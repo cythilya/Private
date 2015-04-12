@@ -251,11 +251,11 @@ namespace cythilya.Controllers
             article_7.Name = "搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？";
             article_7.Description = "搜尋引擎優化指南(SEO Guideline)是一套有系統的優化網站的執行準則，每個崗位執行特定的工作項目即可讓網站(或專案)有一定品質以上的效果，並且這樣的優化效果是可以被評估、回饋與持續改進的。而系統化的實行也有助於在有限資源下做最大的利用，以得到最好的效果(例如：點閱率、排名)。";
             article_7.URL = "http://bit.ly/1tue7uA";
-            article_7.RawPic = "/Content/me/img/blog/1441781_56845462.jpg";
-            article_7.PicSmall = "/Content/me/img/blog/seo_guideline_188x73.jpg";
-            article_7.PicMedium = "/Content/me/img/blog/seo_guideline_300.jpg";
-            article_7.PicLarge = "/Content/me/img/blog/seo_guideline_940x367.jpg";
-            article_7.PicInFooter = "/Content/me/img/blog/seo_guideline_54x54.jpg";
+            article_7.RawPic = "/Content/me/img/blog/seo_guideline/seo_guideline.png";
+            article_7.PicSmall = "/Content/me/img/blog/seo_guideline/seo_guideline_188x73.png";
+            article_7.PicMedium = "/Content/me/img/blog/seo_guideline/seo_guideline_300.png";
+            article_7.PicLarge = "/Content/me/img/blog/seo_guideline/seo_guideline_940x367.png";
+            article_7.PicInFooter = "/Content/me/img/blog/seo_guideline/seo_guideline_54x54.png";
             article_7.Tag = "SEO";
             article_7.isHighlight = true;
             article_7.Time = "May 17, 2014";
