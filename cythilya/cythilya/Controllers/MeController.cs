@@ -540,11 +540,11 @@ namespace cythilya.Controllers
             article_24.Name = "Facebook Login Review筆記 Day 2 - Policies and Best Practices";
             article_24.Description = "Facebook Login Review筆記 Day 2 - Policies and Best Practices";
             article_24.URL = "http://cythilya.blogspot.tw/2015/02/facebook-login-review-day-2.html";
-            article_24.RawPic = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2.jpg";
-            article_24.PicSmall = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_188x73.jpg";
-            article_24.PicMedium = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_300.jpg";
-            article_24.PicLarge = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_940x367.jpg";
-            article_24.PicInFooter = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_54x54.jpg";
+            article_24.RawPic = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2.png";
+            article_24.PicSmall = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_188x73.png";
+            article_24.PicMedium = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_300.png";
+            article_24.PicLarge = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_940x367.png";
+            article_24.PicInFooter = "/Content/me/img/blog/facebook_login_review_day_2/facebook_login_review_day_2_54x54.png";
             article_24.Tag = "Facebook, Graph API";
             article_24.isHighlight = false;
             article_24.Time = "Feb 5, 2015";
