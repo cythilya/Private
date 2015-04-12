@@ -523,11 +523,11 @@ namespace cythilya.Controllers
             article_23.Name = "Facebook Login Review筆記 Day 1 - Overview";
             article_23.Description = "由於今年的4月30日Facebook Graph API 1.0即將退休，取而代之的是2.0+，因此從年初開始，一直收到Facebook的Alert。為了避免App被break，我開始對使用1.0的App做修改來提交Review。以下是一些筆記。";
             article_23.URL = "http://cythilya.blogspot.tw/2015/02/facebook-login-review.html";
-            article_23.RawPic = "/Content/me/img/blog/facebook_login_review/facebook_login_review.png";
-            article_23.PicSmall = "/Content/me/img/blog/facebook_login_review/facebook_login_review_188x73.png";
-            article_23.PicMedium = "/Content/me/img/blog/facebook_login_review/facebook_login_review_300.png";
-            article_23.PicLarge = "/Content/me/img/blog/facebook_login_review/facebook_login_review_940x367.png";
-            article_23.PicInFooter = "/Content/me/img/blog/facebook_login_review/facebook_login_review_54x54.png";
+            article_23.RawPic = "/Content/me/img/blog/facebook_login_review/facebook_login_review.jpg";
+            article_23.PicSmall = "/Content/me/img/blog/facebook_login_review/facebook_login_review_188x73.jpg";
+            article_23.PicMedium = "/Content/me/img/blog/facebook_login_review/facebook_login_review_300.jpg";
+            article_23.PicLarge = "/Content/me/img/blog/facebook_login_review/facebook_login_review_940x367.jpg";
+            article_23.PicInFooter = "/Content/me/img/blog/facebook_login_review/facebook_login_review_54x54.jpg";
             article_23.Tag = "Facebook, Graph API";
             article_23.isHighlight = false;
             article_23.Time = "Feb 4, 2015";
