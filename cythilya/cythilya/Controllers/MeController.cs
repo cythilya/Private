@@ -1415,9 +1415,43 @@ namespace cythilya.Controllers
             SnapshotList17.Add(proj_17_snap_1);
 
             proj_17.Snapshot = SnapshotList17;
-            projList.Add(proj_17);            
-            
-            
+            projList.Add(proj_17);
+            #endregion
+
+            #region 台灣高鐵 - 未上作品集
+            /*
+            MeModels.Project proj_18 = new MeModels.Project();
+            proj_18.ID = 18;
+            proj_18.Name = "台灣高鐵";
+            proj_18.Description = "台灣高鐵連結台灣南北主要城市，我們不只是交通運輸業，更是推動台灣­前進的服務業；我們代表的不僅只是速度，而是速度所帶來的現代生活新態度；我們以更文明的旅行體驗，成為你實現夢想的助力，台灣高鐵，實踐台灣新生活。";
+            proj_18.Role = "Front-End Development";
+            proj_18.Tech = "Web Development with SCSS and jQuery";
+            proj_18.URL = "/Me/Project?id=18";
+            proj_18.RawPic = "/Content/me/img/project/thsr/thsr.png";
+            proj_18.PicSmall = "/Content/me/img/project/thsr/thsr_188x73.png";
+            proj_18.PicMedium = "/Content/me/img/project/thsr/thsr_300.png";
+            proj_18.PicLarge = "/Content/me/img/project/thsr/thsr_940x367.png";
+            proj_18.PicInFooter = "/Content/me/img/project/thsr/thsr_54x54.png";
+            proj_18.Order = 18;
+            proj_18.Client = "台灣高速鐵路股份有限公司";
+            proj_18.ClientURL = "";
+            proj_18.Date = "April 2015";
+            proj_18.LauchURL = "http://www.thsrc.com.tw";
+            proj_18.HtmlContent = "<p>台灣高鐵連結台灣南北主要城市，我們不只是交通運輸業，更是推動台灣­前進的服務業；我們代表的不僅只是速度，而是速度所帶來的現代生活新態度；我們以更文明的旅行體驗，成為你實現夢想的助力，台灣高鐵，實踐台灣新生活。</p>";
+            proj_18.Tag = "Web RWD";
+            proj_18.isHighlight = true;
+            proj_18.IsShowInPortfolio = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList18 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_18_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_18_snap_1.Name = "台灣高鐵";
+            proj_18_snap_1.SnapshotURL = "/Content/me/img/project/thsr/thsr_940x367.png";
+            SnapshotList18.Add(proj_18_snap_1);
+
+            proj_18.Snapshot = SnapshotList18;
+            projList.Add(proj_18);
+            */
             #endregion
 
             #endregion
