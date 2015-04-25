@@ -376,6 +376,12 @@
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_300.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_54x54.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_940x367.jpg" />
+    <Content Include="Content\me\img\blog\responsive_patterns_layout\responsive_patterns_layout.jpg" />
+    <Content Include="Content\me\img\blog\responsive_patterns_layout\responsive_patterns_layout_188x73.png" />
+    <Content Include="Content\me\img\blog\responsive_patterns_layout\responsive_patterns_layout_300.jpg" />
+    <Content Include="Content\me\img\blog\responsive_patterns_layout\responsive_patterns_layout_54x54.jpg" />
+    <Content Include="Content\me\img\blog\responsive_patterns_layout\responsive_patterns_layout_800.jpg" />
+    <Content Include="Content\me\img\blog\responsive_patterns_layout\responsive_patterns_layout_940x367.png" />
     <Content Include="Content\me\img\blog\rss_54x54.jpg" />
     <Content Include="Content\me\img\blog\rwd_implement_note\rwd_implement_note.png" />
     <Content Include="Content\me\img\blog\rwd_implement_note\rwd_implement_note_188x73.png" />
