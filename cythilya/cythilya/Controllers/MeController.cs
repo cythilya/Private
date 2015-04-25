@@ -637,6 +637,23 @@ namespace cythilya.Controllers
             articleList.Add(article_31);
             #endregion
 
+            #region Responsive Patterns - Layout
+            MeModels.Article article_32 = new MeModels.Article();
+            article_32.Name = "Responsive Patterns - Layout";
+            article_32.Description = "Responsive Patterns 是一個蒐集響應式設計與實作的元件庫，舉凡Layout、Navigation、Forms、Carousel、Tabs、Accordion和Lightbox等皆有，很適合當成學習教材。先來玩玩Layout吧。我們分成幾大類：Reflowing、Equal Width、Off Canvas、Source-Order Shift、Lists、Grid Block。";
+            article_32.URL = "http://cythilya.blogspot.tw/2015/04/responsive-patterns-layout.html";
+            article_32.RawPic = "/Content/me/img/blog/responsive_patterns_layout/responsive_patterns_layout.jpg";
+            article_32.PicSmall = "/Content/me/img/blog/responsive_patterns_layout/responsive_patterns_layout_188x73.png";
+            article_32.PicMedium = "/Content/me/img/blog/responsive_patterns_layout/responsive_patterns_layout_300.jpg";
+            article_32.PicLarge = "/Content/me/img/blog/responsive_patterns_layout/responsive_patterns_layout_940x367.png";
+            article_32.PicInFooter = "/Content/me/img/blog/responsive_patterns_layout/responsive_patterns_layout_54x54.jpg";
+            article_32.Tag = "RWD";
+            article_32.isHighlight = false;
+            article_32.Time = "April 22, 2015";
+            article_32.isBanner = false;
+            articleList.Add(article_32);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
