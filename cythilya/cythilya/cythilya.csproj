@@ -1743,7 +1743,7 @@
     <Content Include="Views\Me\About_C.cshtml" />
     <Content Include="Views\Me\About.cshtml" />
     <Content Include="Views\Shared\_ContactInfo.cshtml" />
-    <Content Include="Views\Me\StructuredDataExmaple.cshtml" />
+    <Content Include="Views\Me\StructuredDataExamplePage.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

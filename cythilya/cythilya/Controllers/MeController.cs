@@ -117,7 +117,7 @@ namespace cythilya.Controllers
         }
 
         //Structured Data Exmaple
-        public ActionResult StructuredDataExmaple() 
+        public ActionResult StructuredDataExamplePage() 
         {
             return View();
         }
