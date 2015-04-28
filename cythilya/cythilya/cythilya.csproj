@@ -1094,10 +1094,10 @@
     <Content Include="Content\social\skin\btn_login_m.png" />
     <Content Include="Content\social\skin\btn_login_s.png" />
     <Content Include="Content\social\skin\style.css" />
-    <Content Include="Content\seo_lab\structuredDataExmaple\skin\clearfix.css" />
-    <Content Include="Content\seo_lab\structuredDataExmaple\skin\favicon.ico" />
-    <Content Include="Content\seo_lab\structuredDataExmaple\skin\reset-font-min.css" />
-    <Content Include="Content\seo_lab\structuredDataExmaple\skin\style.css" />
+    <Content Include="Content\seo_lab\structuredDataExample\skin\clearfix.css" />
+    <Content Include="Content\seo_lab\structuredDataExample\skin\favicon.ico" />
+    <Content Include="Content\seo_lab\structuredDataExample\skin\reset-font-min.css" />
+    <Content Include="Content\seo_lab\structuredDataExample\skin\style.css" />
     <Content Include="Content\template\bootstrap_foodsense\css\bootstrap-theme.min.css" />
     <Content Include="Content\template\bootstrap_foodsense\css\bootstrap.min.css" />
     <Content Include="Content\template\bootstrap_foodsense\css\custom.css" />
@@ -1718,8 +1718,8 @@
     <Content Include="Views\Shared\_ga.cshtml" />
     <None Include="Content\social\skin\style.scss" />
     <None Include="Content\social\style.scss" />
-    <Content Include="Content\seo_lab\structuredDataExmaple\skin\prepros.cfg" />
-    <Content Include="Content\seo_lab\structuredDataExmaple\skin\style.scss" />
+    <Content Include="Content\seo_lab\structuredDataExample\skin\prepros.cfg" />
+    <Content Include="Content\seo_lab\structuredDataExample\skin\style.scss" />
     <None Include="Content\template\bootstrap_foodsense\css\custom.scss" />
     <None Include="Content\template\bootstrap_foodsense\fonts\glyphicons-halflings-regular.eot" />
     <None Include="Content\template\bootstrap_foodsense\fonts\glyphicons-halflings-regular.svg" />
