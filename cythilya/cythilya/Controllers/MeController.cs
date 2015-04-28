@@ -116,6 +116,12 @@ namespace cythilya.Controllers
             return View();
         }
 
+        //Structured Data Exmaple
+        public ActionResult StructuredDataExmaple() 
+        {
+            return View();
+        }
+
         #endregion
 
         #region Function

@@ -1,0 +1,44 @@
+.pageStructuredData{
+	width: 1200px;
+	margin: 0 auto;
+	.area{
+		border: 1px solid #666;
+		padding: 10px;
+		margin: 10px;
+	}
+	.areaHeader{
+		padding: 10px;
+		margin: 10px;
+		.header{
+			.logo{
+				.link{}
+			}
+		}
+		.navigation{
+			.navList{
+				.navItem{
+					.navLink{
+						.navName{}
+					}
+				}
+			}
+		}
+	}
+	.activityList{
+		.activityItem{
+			.activityLink{
+				.cover{
+					width: 300px;
+					display: block;
+				}
+			}
+			.name{
+				.link{}
+			}
+			.description{}
+		}
+	}
+	.fbPage{}
+	.footer{}
+
+}
