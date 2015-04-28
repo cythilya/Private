@@ -1472,6 +1472,7 @@ namespace cythilya.Controllers
             #endregion
 
             #region 活動咖 - 未上作品集
+            /*
             MeModels.Project proj_19 = new MeModels.Project();
             proj_19.ID = 19;
             proj_19.Name = "活動咖";
@@ -1503,6 +1504,7 @@ namespace cythilya.Controllers
 
             proj_19.Snapshot = SnapshotList19;
             projList.Add(proj_19);
+             * */
             #endregion
 
             #endregion
