@@ -12,11 +12,8 @@ D:\Git\Private\cythilya\cythilya\bin\Microsoft.Web.Infrastructure.dll
 D:\Git\Private\cythilya\cythilya\bin\Microsoft.Web.WebPages.OAuth.dll
 D:\Git\Private\cythilya\cythilya\bin\Newtonsoft.Json.dll
 D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.dll
-D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.Formatting.dll
 D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.WebRequest.dll
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Helpers.dll
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.dll
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.dll
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Mvc.dll
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Optimization.dll
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Razor.dll
@@ -29,11 +26,8 @@ D:\Git\Private\cythilya\cythilya\bin\WebMatrix.WebData.dll
 D:\Git\Private\cythilya\cythilya\bin\EntityFramework.xml
 D:\Git\Private\cythilya\cythilya\bin\Newtonsoft.Json.xml
 D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.xml
-D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.Formatting.xml
 D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.WebRequest.xml
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Helpers.xml
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.xml
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.xml
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Mvc.xml
 D:\Git\Private\cythilya\cythilya\bin\System.Web.Razor.xml
 D:\Git\Private\cythilya\cythilya\bin\System.Web.WebPages.xml
@@ -50,11 +44,8 @@ D:\Git\Private\cythilya\cythilya\bin\DotNetOpenAuth.OpenId.xml
 D:\Git\Private\cythilya\cythilya\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\EntityFramework.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.resources.dll
-D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.WebRequest.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Helpers.resources.dll
-D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.resources.dll
-D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Mvc.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Optimization.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Razor.resources.dll
@@ -207,4 +198,5 @@ E:\Git\Private\cythilya\cythilya\bin\zh-Hant\WebMatrix.WebData.resources.dll
 E:\Git\Private\cythilya\cythilya\obj\Debug\ResolveAssemblyReference.cache
 E:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.dll
 E:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.pdb
-D:\Git\Private\cythilya\cythilya\obj\Debug\ResolveAssemblyReference.cache
+D:\git\Private\cythilya\cythilya\bin\cythilya.dll.config
+D:\git\Private\cythilya\cythilya\obj\Debug\cythilya.csprojResolveAssemblyReference.cache
