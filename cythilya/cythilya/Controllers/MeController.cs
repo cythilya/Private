@@ -117,10 +117,12 @@ namespace cythilya.Controllers
         }
 
         //Structured Data Exmaple
+        /*
         public ActionResult StructuredDataExamplePage() 
         {
             return View();
         }
+         * */
 
         #endregion
 
