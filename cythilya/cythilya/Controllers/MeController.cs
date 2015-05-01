@@ -662,6 +662,23 @@ namespace cythilya.Controllers
             articleList.Add(article_32);
             #endregion
 
+            #region Closure與Hoisting | JavaScript Patterns
+            MeModels.Article article_33 = new MeModels.Article();
+            article_33.Name = "Closure與Hoisting | JavaScript Patterns";
+            article_33.Description = "JavaScript Patterns 的閱讀筆記之Closure與Hoisting。";
+            article_33.URL = "http://cythilya.blogspot.tw/2015/05/javascript-patterns-closure-hoisting.html";
+            article_33.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_33.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_33.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_33.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_33.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_33.Tag = "JavaScript, JavaScript Patterns";
+            article_33.isHighlight = false;
+            article_33.Time = "May 1, 2015";
+            article_33.isBanner = false;
+            articleList.Add(article_33);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
