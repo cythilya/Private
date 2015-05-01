@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ember.js & SEO - 測試搜尋引擎對JavaScript的剖析能力</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Ember.js &amp; SEO - 測試搜尋引擎對JavaScript的剖析能力</h1>
+<p><img src="https://lh6.googleusercontent.com/-pBYR5ny-j04/VBGyhD93RRI/AAAAAAAACpQ/3jUuwPMTeQ4/w960-h540-no/JavaScript_SEO.jpg" alt="Ember.js &amp; SEO" />  </p>
+<p>Google Webmaster Central Blog在今年五月宣布 ，Google 搜尋能夠執行網頁上的 Javascript (見<a target="_blank" href="http://googlewebmastercentral.blogspot.com.es/2014/05/understanding-web-pages-better.html">Understanding web pages better</a>)﻿。而過去已知Crawler只會剖析網頁上的HTML Code，而不會(或少量)執行JavaScript。。又由於開發品質與速度的要求，使得Single Page Application (SPA) frameworks盛行(例如：Angular.js、Ember.js等)，於是了解搜尋引擎是否能夠執行並解讀JavaScript與解讀的程度便成為網站開發的其中一項需求。  </p>
+<h2>利用Ember.js製作測試案例</h2>
+<ul>
+<li>編號1頁面：<a target="_blank" href="http://cythilya.apphb.com/SEOLab/SEOLab/EmberJSSEO?id=1">畫面載入時，利用JavaScript render 列表資訊</a></li>
+<li>編號2頁面：<a target="_blank" href="http://cythilya.apphb.com/SEOLab/SEOLab/EmberJSSEO?id=2">對照組，資料直接放在HTML上</a></li>
+</ul>
+<p>如果編號1頁面可被剖析，我們還有後續的劇本可以持續測試...</p>
+<p>資料來源：<a target="_blank" href="http://www.friendo.com.tw">Friendo 粉多任務</a></p>
+<h2>探討方向</h2>
+<p>主要實驗對象是Goole搜尋，附帶Facebook。</p>
+<ul>
+<li>
+<p>Indexing  
+</p>
+<ul>
+<li>
+<p>Google Search</p>
+<ul>
+<li>
+<p>搜尋<a target="_blank" href="http://cythilya.apphb.com/SEOLab/SEOLab/EmberJSSEO?id=1">編號1頁面</a>的關鍵字 &quot;Ember.js &amp; SEO 九品芝麻官大會考&quot; </p>
+<ul>
+<li>提交後無法馬上經由搜尋特定關鍵字搜尋到[編號1頁面]</li>
+<li>約一週後可經由搜尋特定關鍵字找到該頁面，如下圖。  
+</li>
+</ul>
+<p><img src="https://lh4.googleusercontent.com/-uVA1qZyC9bM/VBekMMMp9xI/AAAAAAAACrc/HlC00CM6ZUc/w796-h239-no/ember_render_content.png" /></p>
+</li>
+<li>
+<p>搜尋編號2頁面的關鍵字 &quot;Ember.js &amp; SEO 玉泉水果酒 - 愛呆丸快樂產生器！&quot; 可在提交後馬上經由搜尋特定關鍵字找到<a target="_blank" href="http://cythilya.apphb.com/SEOLab/SEOLab/EmberJSSEO?id=2">編號2頁面</a>。</p>
+</li>
+<li>由以上兩點可知，推測會執行<a target="_blank" href="http://cythilya.apphb.com/Content/seo_lab/js/script.js">這段JavaScript Code</a>，因此但無法馬上Indexing經由執行JavaScript Code所帶入的資料，而必須過一段時間。</li>
+<li><a target="_blank" href="https://dl.dropboxusercontent.com/u/78267129/SEO_Lab/result/google_fetch_ember_1/google_fetch.txt">看Crawler得到的結果 (資料來源：Google模擬器，擷取並轉譯，如下圖)</a>  
+</li>
+</ul>
+<p><img src="https://lh6.googleusercontent.com/-qJ5USHwHXSs/VBbxwBxHpUI/AAAAAAAACq8/nvrPmrglgRQ/w538-h494-no/google_exe.png" alt="Google模擬器，擷取並轉譯" />  
+</p>
+</li>
+<li>
+Facebook Share
+<ul>
+<li>由Facebook所提供的工具可知，無法執行這段JavaScript Code和Indexing經由執行JavaScript Code所帶入的資料。</li>
+<li><a target="_blank" href="https://dl.dropboxusercontent.com/u/78267129/SEO_Lab/result/fb_fetch_emberjs_1/fb_fetch.htm">看Crawler得到的結果</a> or <a target="_blank" href="https://developers.facebook.com/tools/debug/og/echo?q=http%3A%2F%2Fcythilya.apphb.com%2FSEOLab%2FSEOLab%2FEmberJSSEO%3Fid%3D1">Original Result From Facebook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Linkability：由於無法Indexing，因此推測無Linkability(外部連結、Link Juice相關)。</li>
+</ul>
+<h2>結論</h2>
+<p>目前Google Search可剖析經由SPA帶入到頁面的資料但不即時，因此若想利用SPA來開發前台，必須思考網站是否有SEO的需求。若有，頁面重要資訊還是必須放在HTML上，或利用其他的解法(為Crawler另外提供一個頁面、<a target="_blank" href="https://prerender.io">Server Pre-rendering</a>、<a target="_blank" href="http://phantomjs.org/">PhantomJS</a> 等)。  </p>
+<p>相關實驗可見 <a target="_blank" href="http://cythilya.apphb.com/SEOLab/SEOLab">SEO Strategies for JavaScript-Heavy Single Page Applications or AJAX Sites</a> </p>
+<h3>就算使用SPA建構網站，還是可以在SERPs得到高的排名？</h3>
+<p>就排名來說，由於搜尋引擎的排名是由眾多因素集合起來的，因此若其他地方做得很好，也是可以有很好的搜尋排名。例如高品質的Inbound Links、網站效能佳、速度快、社群平台熱烈討論、On-Page SEO等。</p>
+<hr />
+<h3>參考資料</h3>
+<ul>
+<li><a target="_blank" href="http://googlewebmastercentral.blogspot.com.es/2014/05/understanding-web-pages-better.html">Understanding web pages better</a></li>
+<li><a target="_blank" href="http://www.business2community.com/seo/googles-crawler-now-understands-javascript-mean-0898263">Google’s Crawler Now Understands JavaScript: What Does This Mean For You?</a></li>
+<li><a target="_blank" href="http://searchenginewatch.com/article/2358775/SEO-Strategies-for-JavaScript-Heavy-Single-Page-Applications-or-AJAX-Sites">SEO Strategies for JavaScript-Heavy Single Page Applications or AJAX Sites</a></li>
+<li><a target="_blank" href="http://ng-learn.org/2014/05/SEO-Google-crawl-JavaScript">SEO Google crawl to execute your site JavaScript</a></li>
+<li><a target="_blank" href="https://developers.google.com/webmasters/ajax-crawling/docs/specification">Full Specification - Webmasters — Google Developers</a></li>
+<li><a target="_blank" href="http://jeffwhelpley.com/javascript-seo">JAVASCRIPT SEO</a></li>
+<li><a target="_blank" href="http://searchengineland.com/google-can-now-execute-ajax-javascript-for-indexing-99518">Google Can Now Execute AJAX &amp; JavaScript For Indexing</a></li>
+<li><a target="_blank" href="http://moz.com/ugc/can-google-really-access-content-in-javascript-really">Can Google Really Access Content in JavaScript? Really?</a></li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

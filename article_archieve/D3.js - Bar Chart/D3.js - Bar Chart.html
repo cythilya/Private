@@ -1,0 +1,79 @@
+<p><img src="https://lh4.googleusercontent.com/-7lln6VN5iFw/VFIAogR_gzI/AAAAAAAADXM/WOlrxqIjV54/w800-h320-no/d3.png" alt="D3.js" title=""></p>
+
+<p>這幾天和隔壁同事相約實踐前輩食夢黑貘的<a target="_blank" href="http://ithelp.ithome.com.tw/ironman7/app/profile/20000065">成為資料工程師最初的 28 堂課</a>計畫，看完系列文章後便著手規畫要看的書還有想要實作的東西。在資料視覺化呈現(Data Visualization)的這一塊，身為前端工程師的我除了閱讀理論外，當然要找一套工具來玩玩。由於之前專案用過<a target="_blank" href="http://www.highcharts.com">Highcharts</a>、<a target="_blank" href="http://www.fusioncharts.com">Fusioncharts</a>、<a target="_blank" href="http://jqgrid.com">jqGrid</a>，因此以上暫不考慮。東摸摸西看看之下就選了<a target="_blank" href="http://d3js.org">D3.js</a>了。  </p>
+
+<p>以下是學習筆記啦，不是什麼教學文章。</p>
+
+<h2 id="d3js是什麼">D3.js是什麼？</h2>
+
+<p>D3是Data-Driven Documents，是將資料視覺化呈現的library，甚至可與使用者互動。舉凡Bar Chart、Pie Chart、Bubble Chart、Tag Cloud或更複雜有趣的圖表，都可以以之呈現。</p>
+
+<p><a target="_blank" href="http://d3js.org">D3.js官方網站</a></p>
+
+<h2 id="入門">入門</h2>
+
+<p>找了一本極經鬆的(原文)書來入門噢！只有74頁。  </p>
+
+<p><a target="_blank" href="http://shop.oreilly.com/product/0636920025429.do">Getting Started with D3</a> <br>
+　 <br>
+<img src="http://akamaicovers.oreilly.com/images/0636920025429/cat.gif" alt="Getting Started with D3" title=""></p>
+
+
+
+<h2 id="範例-解說-bar-chart">範例 &amp; 解說 - Bar Chart</h2>
+
+<p>看完第二章剛剛好可以來做個小範例 - 一個簡單的長條圖(Bar Chart)。</p>
+
+
+
+<h3 id="html">HTML</h3>
+
+<p>“barChart”這個div是一個容器，等等我會將灌好數據的長條們一一放進去。</p>
+
+<pre><code>&lt;div class="barChart"&gt;&lt;/div&gt;
+</code></pre>
+
+<h3 id="js">JS</h3>
+
+<pre><code>    function draw(data) {
+        d3.select('.barChart') //選擇放在barChart這個div容器裡面
+        .selectAll('div') //選取".barChart"範圍內的所有的div
+        .data(data) //將資料加入div
+        .enter() //傳入資料
+        .append('div') //放到畫面上
+        .attr('class','item clearfix') //將剛剛放到畫面上的div，加上class "item"
+        .text(function(d){return d.text}) //加上文字描述，使用json檔案裡面的 "text" 欄位
+        .append('div') //加入包含資料的div，這個div是用來畫圖用的
+        .text(function (data) {
+            return data.count; //畫圖用div加上文字描述，使用json檔案裡面的 "count" 欄位
+        })          
+        .attr('class','bar') //畫圖用div加上class "bar"
+        .style('width', function(d){ //將剛剛對每個畫圖用div設定寬度，這裡將取出的count值乘以15，即為顯示在畫面上的px數
+            return (d.count*15)  + 'px'
+        });
+    };
+
+    //Mockup JSON，使用JSON Generator http://www.json-generator.com
+    //資料載入完畢後會call "draw" 這個callback function
+    d3.json('http://www.json-generator.com/api/json/get/bTGclonYia?indent=2', draw); //Mockup
+</code></pre>
+
+
+
+<h2 id="demo">Demo</h2>
+
+<p><img src="https://lh4.googleusercontent.com/-x6xD_BqJvI8/VFH6i7U2HfI/AAAAAAAADWs/ZnXV6mvEApc/w763-h314-no/d3_bar_chart.png" alt="D3.js - Bar Chart" title=""></p>
+
+<p><a target="_blank" href="http://cythilya.apphb.com/ui/ui/d3simplebarchart">D3.js - Bar Chart - Demo</a></p>
+
+<hr>
+
+
+
+<h3 id="參考資料">參考資料</h3>
+
+<ul>
+<li><a target="_blank" href="http://wcc723.github.io/d3/2014/06/24/d3-js-intro">D3 Js 介紹，入門的好文章</a></li>
+<li><a target="_blank" href="http://abgne.tw/tag/d3-js">D3.js | 男丁格爾’s 脫殼玩</a></li>
+<li><a target="_blank" href="http://www.json-generator.com">JSON Generator – Tool for generating random data</a></li>
+</ul>

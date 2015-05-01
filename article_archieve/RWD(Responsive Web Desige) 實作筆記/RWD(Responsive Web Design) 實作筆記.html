@@ -1,0 +1,71 @@
+<h1 id="rwdresponsive-web-design-實作筆記">RWD(Responsive Web Design) 實作筆記</h1>
+<p><img src="https://lh4.googleusercontent.com/AumhW1hD0nxyB06L60rRZ3QU6FLl8TBRTVaj7K6ZxHU=w800-h374-no" alt="RWD(Responsive Web Design) 實作筆記" title="RWD(Responsive Web Design) 實作筆記"></p>
+<p>RWD(Responsive Web Design)是一種設計概念，希望能讓網頁適用在不同的平台上。  而距離上一次專做RWD大約是一年前，公司最近想對產品大改版，於是又來練練RWD搂！</p>
+<h2 id="設計與實作">設計與實作</h2>
+<h3 id="第一步設計三個版面架構">第一步：設計三個版面架構</h3>
+<p>我大多會做三個版面(&lt;480、480~768、768~1024+)，由於流程與便於閱讀的優點，大致上會規劃成這個樣子… <br>
+<img src="http://webpiremarketing.com.au/wp-content/uploads/2013/10/responsivedesign.png" alt="RWD(Responsive Web Design) 實作筆記" title="RWD(Responsive Web Design) 實作筆記"></p>
+<h3 id="第二步使用media-query撰寫css">第二步：使用Media Query撰寫CSS</h3>
+
+<p>這次並不會使用Grid System，而是單純使用CSS的Media Query。而在撰寫CSS的部份，如果是共通、可以共用的，我會放在Common的區塊，而其他針對特定尺寸的指令，便分別放在單獨的區塊裡，例如：</p>
+
+<pre><code>    /*超過768px*/
+    @media screen and (min-width: 768px) {
+        ...
+    }
+
+    /*介於480px與767px之間*/
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    ...
+    }
+
+    /*未滿480px，即479px以下*/
+    @media screen and (max-width: 479px) {
+    ...
+}
+</code></pre>
+
+<h2 id="demo">Demo</h2>
+
+<p>前天剛好跟一位在做餐飲的朋友吃飯，就用”食物”來當成這次實作網站的主題吧！ <br>
+Demo網站 <a target="_blank" href="http://cythilya.ihost.tw/rwd/rwd_foodsense" title="RWD(Responsive Web Design) 實作範例 - Food Sense">Food Sense</a></p>
+
+<h3 id="pc">PC</h3>
+
+<p><img src="https://lh6.googleusercontent.com/-xFgdVw820o8/VEKhfVrMCAI/AAAAAAAADSQ/9UXsMFMeHBs/w642-h553-no/rwd_foodsense_960.png" alt="RWD(Responsive Web Design) 實作筆記" title="RWD(Responsive Web Design) 實作筆記"></p>
+
+<h3 id="tablet">Tablet</h3>
+
+<p><img src="https://lh5.googleusercontent.com/-DhE9u0w_lpE/VEKhe_HdnLI/AAAAAAAADSM/GtvTUODbKQo/w488-h553-no/tablet.png" alt="RWD(Responsive Web Design) 實作筆記" title="RWD(Responsive Web Design) 實作筆記"></p>
+
+
+<h3 id="mobile">Mobile</h3>
+
+<p><img src="https://lh5.googleusercontent.com/-1vo8LJvALBA/VEKhehEc3RI/AAAAAAAADSI/KM3QV7H0SYI/w659-h553-no/mobile.png" alt="RWD(Responsive Web Design) 實作筆記" title="RWD(Responsive Web Design) 實作筆記"></p>
+
+<h2 id="附註">附註</h2>
+
+<p>之前常有人提到，RWD是有助於SEO的，可參考 <a target="_blank" href="http://www.searchenginejournal.com/4-seo-benefits-responsive-web-design/92807" title="4 SEO Benefits of Responsive Web Design">4 SEO Benefits of Responsive Web Design</a>。一來是網址統一，不浪費Link Juice，另一方面是因為提高可閱讀性而降低網站的跳出率。但對於擁有複雜流程的網站而言，希望用一個版本的HTML再搭配不同的CSS，而能適應PC、平板、手機是困難的，因為流程與功能複雜，勢必會有流程變動或功能增減，所以可能的解法就是判斷平台或解析度，然後轉跳到不同的頁面。因此就演變成作兩個版本的HTML - PC + 行動裝置(平板與手機)。但若決定做一個以上的版本的頁面，就需要考慮維護成本了~</p>
+
+<hr>
+
+<h3 id="推薦閱讀隔壁同事已消化並整理分享的文件">推薦閱讀：隔壁同事已消化並整理、分享的文件…</h3>
+<ul>
+	<li><a target="_blank" href="http://blog.friendo.com.tw/posts/236801-mobile-phone-website-brief" title="手機版網站 - 概論整理">手機版網站 - 概論整理</a></li>
+	<li><a target="_blank" href="http://blog.friendo.com.tw/posts/236810-mobile-web-basic-knowledge" title="手機網頁技術介紹">手機網頁技術介紹</a></li>
+	<li><a target="_blank" href="http://blog.friendo.com.tw/posts/238205-responsive-web-design" title="Responsive Web Design - 概論整理重點">Responsive Web Design - 概論整理重點</a></li>
+</ul>
+
+<h3 id="好用的測試網站">好用的測試網站</h3>
+<ul>
+	<li><a target="_blank" href="http://www.studiopress.com/responsive" title="Mobile Responsive Design Testing">Mobile Responsive Design Testing</a>：可將所有狀況一次展開</li>
+	<li><a target="_blank" href="http://responsivedesignchecker.com/" title="Do You Use Responsive Web Design | Responsive Design Checker">Do You Use Responsive Web Design | Responsive Design Checker</a>：一次一種狀況</li>
+	<li><a target="_blank" href="https://www.responsinator.com" title="Responsinator">Responsinator</a>：可將所有狀況一次展開，以Apple產品為主，更為擬真</li>
+	<li><a target="_blank" href="http://www.browserstack.com/responsive" title="Responsive Design Testing across Mobile and Desktop Browsers - iOS, Android, OS X, Windows">Responsive Design Testing across Mobile and Desktop Browsers - iOS, Android, OS X, Windows</a></li>
+</ul>
+
+<h3 id="其他參考資料">其他參考資料</h3>
+<ul>
+	<li><a target="_blank" href="http://www.searchenginejournal.com/4-seo-benefits-responsive-web-design/92807" title="4 SEO Benefits of Responsive Web Design">4 SEO Benefits of Responsive Web Design</a></li>
+	<li><a target="_blank" href="http://foodsense.is" title="Food Sense">Food Sense - A unique resource for thoughtful, food-loving eaters and home cooks who have a palate for plant-based eating - for themselves or their loved ones; three days a week, or every day of the year.</a> 真正的Food Sense網站，這次練習主要參考的範例~</li>
+</ul>

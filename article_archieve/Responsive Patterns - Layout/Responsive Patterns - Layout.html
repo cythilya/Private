@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Patterns - Layout</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p><img src="https://lh5.googleusercontent.com/-AdXc8xJsVdo/VTdQaMpLITI/AAAAAAAAGYQ/U6s7eIaUH-Y/w800-h494-no/responsive_patterns_layout_800.jpg" alt="Responsive Patterns - Layout" /></p>
+<p><a target="_blank" href="http://bradfrost.github.io/this-is-responsive/patterns.html">Responsive Patterns</a> 是一個蒐集響應式設計與實作的元件庫，舉凡Layout、Navigation、Forms、Carousel、Tabs、Accordion和Lightbox等皆有，很適合當成學習教材。先來玩玩Layout吧。我們分成幾大類：<strong>Reflowing、Equal Width、Off Canvas、Source-Order Shift、Lists、Grid Block</strong>。  
+</p>
+
+<!-- more -->
+
+<h2>Reflowing Layouts</h2>
+<h3>Mostly Fluid</h3>
+<p>多欄位呈現，在大銀幕上有大的margin，依賴fluid grid(流動網格)、flexible images來按銀幕比例縮放。當遇到小銀幕時，便將原先橫擺的column垂直擺放。  
+</p>
+<p><img src="https://lh4.googleusercontent.com/-VFUOiGDFgO8/VSfkFPKI9_I/AAAAAAAAGNI/10vuPnDiFp8/w800-h288-no/mostly_fluid.png" alt="Responsive Patterns - Layout - Mostly Fluid" />  
+</p>
+<p>寫法很簡單，指定銀幕寬度大過某個範圍時，放置左右兩欄(Desktop/Tablet)；否則(銀幕寬度小於特定範圍)都只是垂直擺放一欄(Mobile)。  
+</p>
+<pre><code>//HTML
+&lt;div class=&quot;pattern&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;main&quot;&gt;
+            &lt;h2&gt;Main Content (1st)&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum odio eget mauris vestibulum feugiat. Praesent ante sapien, luctus pulvinar ultricies quis, aliquet in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum odio eget mauris vestibulum feugiat. Praesent ante sapien, luctus pulvinar ultricies quis, aliquet in mi.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;c2&quot;&gt;
+            &lt;h3&gt;Column (2nd)&lt;/h3&gt;
+            &lt;p&gt;Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;c3&quot;&gt;
+            &lt;h3&gt;Column (3rd)&lt;/h3&gt;
+            &lt;p&gt;Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+//CSS(SCSS)
+//預設垂直擺放一欄；銀幕寬度大過某個範圍時，放置左右兩欄
+@media screen and (min-width: 768px) {
+    .container {
+        .c2, .c3 {
+            float: left;
+            width: 50%;
+        }
+    }
+} 
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/NPZaZj">點此看Demo</a></h5>
+<hr />
+<h3>Column Drop</h3>
+<p>多欄位的layout，銀幕大時，3個column平行排列；銀幕較小時，左邊sidebar移到頁面底端，只剩右邊sidebar；最後銀幕更小時，3個column垂直排列。</p>
+<p><img src="https://lh3.googleusercontent.com/-njQmLLoPxn8/VSo6A0BNf7I/AAAAAAAAGOc/w2jwF1kpzm8/w800-h287-no/column_drop.png" alt="Responsive Patterns - Layout - Column Drop" />    
+</p>
+<p>使用Media Query針對不同銀幕寬度將區塊做調整。在切版的歷程中我很少使用「clear」的指令，因此還特別查了該怎麼使用 <a target="_blank" href="http://www.w3schools.com/cssref/pr_class_clear.asp">CSS clear Property</a>。　　</p>
+<pre><code>@media screen and (min-width: 768px) {
+    .container {
+        .main {
+            width: 75%;
+            float: left;
+        }
+        .c2 {
+            width: 25%;
+            float: left;
+        }
+        .c3 {
+            clear: both; /* 不允許左右兩邊有float element */
+        }
+    }
+} 
+
+@media screen and (min-width: 992px) {
+    .container {
+        .main{
+            width: 50%;
+            margin-left: 25%;
+        }
+        .c2 {
+            margin-left: -75%; /* 使用負值將c2移到左側*/
+        }
+        .c3{
+            clear: none; 
+            /*
+            允許左右兩邊皆有float element。
+            不要使用「float: right;」使c3往右靠，
+            因為container寬度不足容納三個區塊，c3會跑到右側底下。 
+            */
+        }
+    }
+}
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/bNPQXK">點此看Demo</a></h5>
+<hr />
+<h3>Layout Shifter</h3>
+<p><img src="https://lh3.googleusercontent.com/-cKYu_IbnuPY/VSo6M88Nh3I/AAAAAAAAGOw/dUQG4JWnKXI/w800-h287-no/layout_shifter.png" alt="Responsive Patterns - Layout - Layout Shifter" />  
+</p>
+<pre><code>@media screen and (min-width: 768px) {
+    .container {
+        .main {
+            width: 30%;
+            float: left;
+        }
+        .c2, .c3 {
+            width: 70%;
+            float: right;
+        }
+    }
+} 
+</code></pre>
+
+<h6><a target="_blank" href="http://codepen.io/cythilya/full/NPZerE">點此看Demo</a></h6>
+<hr />
+<h3>Tiny Tweaks</h3>
+<p>單一Column，只是隨銀幕寬度調整標題與文字的大小與間距。  
+</p>
+<p><img src="https://lh4.googleusercontent.com/-UJwJ4Du_sZA/VSpEdJQ_CHI/AAAAAAAAGPI/i0hcrew1R-U/w800-h288-no/tiny_tweaks.png" alt="Responsive Patterns - Layout - Tiny Tweaks" /></p>
+<pre><code>//HTML
+&lt;div class=&quot;pattern&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;main&quot;&gt;
+            &lt;h2&gt;Main Content (1st)&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum odio eget mauris vestibulum feugiat. Praesent ante sapien, luctus pulvinar ultricies quis, aliquet in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum odio eget mauris vestibulum feugiat. Praesent ante sapien, luctus pulvinar ultricies quis, aliquet in mi.&lt;/p&gt;
+            &lt;h3&gt;Third-Level Heading&lt;/h3&gt;
+            &lt;p&gt;Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.&lt;/p&gt;
+            &lt;h3&gt;Third-Level Heading&lt;/h3&gt;
+            &lt;p&gt;Sed sit amet molestie diam. Etiam adipiscing dictum eros, vitae feugiat augue convallis sit amet. Nunc quis massa non dolor dictum condimentum.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;  
+
+//SCSS(CSS)
+.container {
+    width: 960px;
+    margin: 0 auto;
+    .main{
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 20px;    
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        .main {
+            font-size: 120%;
+            line-height: 1.5;
+        }
+    }
+} 
+
+@media screen and (min-width: 992px) {
+    .container {
+        .main{
+            font-size: 140%; 
+            line-height: 2;
+        }
+    }
+} 
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/dPBwvR">點此看Demo</a></h5>
+<hr />
+<h3>Main Column with Sidebar</h3>
+<p>幾乎是最基本的排版方式 - 當銀幕夠寬時，側邊欄與主欄內容並排；當銀幕較小時，側邊欄在主欄之下。  
+</p>
+<p><img src="https://lh6.googleusercontent.com/-gNp9yqUtvhw/VSvTfkNtc5I/AAAAAAAAGPo/bD5lBFbah-c/w800-h286-no/main_column_with_sidebar.png" alt="Responsive Patterns - Layout - Main Column with Sidebar" /></p>
+<pre><code>@media screen and (min-width: 768px) {
+    .container {
+        .main {
+            width: 66%;
+            float: left;
+        }
+        .c2 {
+            width: 34%;
+            float: right;
+        }
+    }
+}
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/xbvxdN">點此看Demo</a></h5>
+<hr />
+<h3>3 Column</h3>
+<p>三欄式排版，中間為主要內容的區塊，左右兩邊為sidebar。</p>
+<p><img src="https://lh6.googleusercontent.com/-HfngEKNnRbA/VSza8-5wMsI/AAAAAAAAGQE/-TjwiyJJBo8/w800-h286-no/3_column.png" alt="Responsive Patterns - Layout - 3 column" /></p>
+<pre><code>@media screen and (min-width: 768px) {
+    .container {
+        .main {
+            width: 50%;
+            float: left;
+            margin-left: 25%;
+        }
+        .c2 {
+            width: 25%;
+            float: left;
+            margin-left: -75%;
+        }
+        .c3 {
+            width: 25%;
+            float: right;
+        }
+    }
+} 
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/KwOgvL">點此看Demo 1</a>，<a target="_blank" href="http://codepen.io/bradfrost/full/joIac">點此看Demo 2</a></h5>
+<hr />
+<h3>3 Columns Content Reflow</h3>
+<p>三欄式排版。  
+</p>
+<p><img src="https://lh3.googleusercontent.com/--PM4rz7yWLk/VTMttsQNEzI/AAAAAAAAGRk/HLKuLdsljPY/w800-h287-no/3_columns_content_reflow.png" alt="Responsive Patterns - Layout - 3 Columns Content Reflow" /></p>
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/Xbrewz">Demo</a>，<a target="_blank" href="http://codepen.io/cythilya/pen/Xbrewz">Source Code</a></h5>
+<hr />
+<h2>Equal Width</h2>
+<h3>2 Equal-Width Columns</h3>
+<p>當銀幕較大時，可將區塊切分成2份(或3、4、5份等)；當銀幕較小時再分區段垂直擺放。</p>
+<p><img src="https://lh3.googleusercontent.com/--LWXsoEVtnI/VTNQs8acvbI/AAAAAAAAGR8/TZyXLnWQLGE/w800-h289-no/2_equal_width_columns.png" alt="Responsive Patterns - Layout - 2 Equal-Width Columns" /></p>
+<pre><code>//當銀幕較大時，可將區塊切分成2份；當銀幕較小時再分區段垂直擺放。
+@media screen and (min-width: 44em) {
+  .col-group &gt; div {
+    float: left;
+    width: 50%;
+  }
+}
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/bradfrost/pen/tnhGv">點此看Demo</a></h5>
+<h5>Note - 3 Equal-Width Columns、4 Equal-Width Columns和5 Equal-Width Columns實作方式與以上類似</h5>
+<ul>
+<li><a target="_blank" href="http://codepen.io/bradfrost/full/orKvD">Demo - 3 Equal-Width Columns</a>  
+</li>
+<li><a target="_blank" href="http://codepen.io/bradfrost/full/pwmHf">Demo - 4 Equal-Width Columns</a>  
+</li>
+<li><a target="_blank" href="http://codepen.io/bradfrost/full/rjfta">Demo - 5 Equal-Width Columns</a>  </li>
+</ul>
+<hr />
+<h2>Off Canvas</h2>
+<h3>Top</h3>
+<p>在核心內容之上可放置導行列或其他內容，不需要的時候可以隱藏以節省空間。</p>
+<p><img src="https://lh3.googleusercontent.com/-4v4lN9foH-c/VTNtIeHeIMI/AAAAAAAAGSU/hXaMrluKd54/w659-h210-no/of_canvas_top.gif" alt="Responsive Patterns - Layout - Off Canvas - Top" />  
+</p>
+<h4>優點</h4>
+<ul>
+<li>節省空間，上方可放置更多內容(例如：Navigation、Breadcrumb)，在不需要使用時候隱藏起來。</li>
+<li>畫面動作優雅。</li>
+</ul>
+<h4>缺點</h4>
+<ul>
+<li>需要JavaScript實作區塊顯示/隱藏的效果。</li>
+<li>實作於手機平台需要注意動畫效果的效能。</li>
+</ul>
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/vOBWRE">點此看Demo</a></h5>
+<hr />
+<h3>Left</h3>
+<p>左邊有側邊欄，若銀幕夠大則顯示在畫面上；若銀幕較小則收納在左側。</p>
+<p>An off-canvas layout that tucks a left sidebar away for small screens but exposes it once enough screen space becomes available.</p>
+<p><img src="https://lh6.googleusercontent.com/-9oy2Fl8yPC4/VTOABrRS25I/AAAAAAAAGSw/C1rOwmlGtmc/w800-h286-no/off_canvas_left.png" alt="Responsive Patterns - Layout - Off Canvas - Left" />  
+</p>
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/qdWVwe">點此看Demo</a></h5>
+<hr />
+<h3>Right</h3>
+<p>與「Off Canvas - Left」類似，只是將<code>float:left;</code>換成<code>float:right;</code>或絕對位置由left改為right。</p>
+<p><img src="https://lh6.googleusercontent.com/-9oy2Fl8yPC4/VTOABrRS25I/AAAAAAAAGSw/C1rOwmlGtmc/w800-h286-no/off_canvas_left.png" alt="Responsive Patterns - Layout - Off Canvas - Right" /> </p>
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/NqKLmE">點此看Demo</a></h5>
+<hr />
+<h3>Full Screen Overlay</h3>
+<p>上方的Menu可隱藏於可視範圍之外，以適用於小尺寸的銀幕。</p>
+<p><img src="https://lh6.googleusercontent.com/-iCOIzqb9I6E/VTUN40p8Z8I/AAAAAAAAGUY/TLhjcFnXirA/w389-h309-no/off_canvas_full_screen_overlay.gif" alt="Off Canvas - Full Screen Overlay" />  
+</p>
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/JdPeKa">點此看Demo</a> - 這個範例有針對js停用的狀況做處理噢！</h5>
+<hr />
+<h5>Related Articles - Off Canvas</h5>
+<ul>
+<li><a target="_blank" href="http://www.lukew.com/ff/entry.asp?1517">Off Canvas Multi-Device Layout</a></li>
+<li><a target="_blank" href="http://www.lukew.com/ff/entry.asp?1569">Off Canvas Multi-Device Layouts</a></li>
+<li><a target="_blank" href="http://jasonweaver.name/lab/offcanvas/">A Multi-Device Web Layout Pattern</a></li>
+<li><a target="_blank" href="http://zurb.com/playground/off-canvas-layouts">Off Canvas Layouts</a></li>
+</ul>
+<hr />
+<h2>Source-Order Shift</h2>
+<h3>Table Cell</h3>
+<p>利用Table的屬性改變元素的位置。如下範例程式碼，當銀幕寬度小於640px時，將原先在底下的<code>.nav</code>區塊利用<code>display: table-caption;</code>移到畫面上方。    
+</p>
+<pre><code>@media all and (min-width: 640px){
+    .t{
+        display: table;
+        caption-side: top;
+        width: 100%;
+    }
+    .nav{
+        display: table-caption;
+        ol{
+            display: table-row;
+            li{
+                display: inline-block;;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+</code></pre>
+
+<p><img src="https://lh3.googleusercontent.com/-9hDyYsgOkK0/VTYc4thJPHI/AAAAAAAAGWA/QIaWdgO3E4Q/w800-h287-no/source_order_shift_table_cell.png" alt="Responsive Patterns - Layout - Source-Order Shift - Table Cell" />  
+</p>
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/rVBXqB">點此看Demo</a></h5>
+<hr />
+<h2>Lists</h2>
+<h3>List with Thumbnails</h3>
+<p>利用<code>&lt;table&gt;</code>的特性排列格狀物件。</p>
+<p><img src="https://lh3.googleusercontent.com/-pGNcN1Qm0l4/VTcUu40WTSI/AAAAAAAAGWY/ZCNk4rD7Tqc/w800-h287-no/list_with_thumbnails.png" alt="Responsive Patterns - List with Thumbnails" />  
+</p>
+<pre><code>//利用`&lt;table&gt;`的特性排列格狀物件
+.list_with_thumbnails{
+    .list{
+        .item{
+            background: #eee;
+            border-bottom: 1px solid #ccc;
+            display: table;
+            border-collapse: collapse;
+            .item-image{
+                display: table-cell;
+                vertical-align: middle;
+                width: 30%;
+                padding-right: 1em;
+                .thumbnail{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .item-text{
+                display: table-cell;
+                vertical-align: middle;
+                width: 70%;
+            }
+        }
+    }
+}
+
+//根據銀幕大小調整元件比例
+@media all and (min-width: 45em) {
+    .list{
+        .item{
+            float: left;
+            width: 50%;
+        }
+    }
+}
+
+@media all and (min-width: 75em) {
+    .list{
+        .item{
+            width: 33.33333%;
+        }
+    }
+}
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/doyXog">點此看Demo 1</a>，<a target="_blank" href="http://codepen.io/cythilya/full/LVYZWX">點此看Demo 2</a>，<a target="_blank" href="http://codepen.io/bradfrost/full/ykalp">點此看Demo 3(小銀幕時隱藏部份內容)</a></h5>
+<h5>Related Articles</h5>
+<ul>
+<li><a target="_blank" href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">THE MEDIA OBJECT SAVES HUNDREDS OF LINES OF CODE</a></li>
+</ul>
+<hr />
+<h2>Grid Block</h2>
+<h3>4-Up Grid Block</h3>
+<p>在銀幕寬度許可下，一列呈現四個物件；銀幕較小的狀況下，垂直排列一列放2個或1個物件。  
+</p>
+<p><img src="https://lh3.googleusercontent.com/-8kkAhqdhG_s/VTdKBXcaw-I/AAAAAAAAGW0/fDVGGD6Ws04/w800-h287-no/4_up_grid_block.png" alt="Responsive Patterns - 4-Up Grid Block" />  
+</p>
+<p>物件也可以有不同的寬度，例如物件#2。  
+</p>
+<p><img src="https://lh4.googleusercontent.com/--pVdD4UeAzY/VTdMl9HKuOI/AAAAAAAAGXU/JTHizAvySw4/w800-h497-no/4_up_grid_block_wide.png" alt="Responsive Patterns - 4-Up Grid Block - Wide" />  
+</p>
+<pre><code>//在不同銀幕大小下調整物件的寬度
+@media all and (min-width: 27em) {
+    .grid{
+        li{
+            width: 50%;
+            float: left;
+        }
+    }
+}
+
+@media all and (min-width: 40em) {
+    .grid{
+        li{
+            width: 33.3333333%;
+            &amp;.wide{
+                width: 66.666666%;  
+            }
+        }
+    }
+}
+
+@media all and (min-width: 60em) {
+    .grid{
+        li {
+            width: 25%;
+            &amp;.wide{
+                width: 50%;
+            }
+        }
+    }
+}
+</code></pre>
+
+<h5><a target="_blank" href="http://codepen.io/cythilya/full/VLwKYY">點此看Demo 1</a>,<a target="_blank" href="http://codepen.io/bradfrost/full/lpnqC">點此看Demo 2</a>，<a target="_blank" href="http://codepen.io/bradfrost/full/GrFnj">點此看Demo ３</a>，<a target="_blank" href="http://codepen.io/bradfrost/full/Dybsz">點此看Demo ４</a>，<a target="_blank" href="http://codepen.io/bradfrost/full/GFHmf">點此看Demo 5</a>，<a target="_blank" href="http://codepen.io/micahgodbolt/full/FgqLc">點此看Demo 6</a></h5>
+<hr />
+<p>看到這裡的時候剛好朋友在討論Layout Patterns何其多，為何使用Grid System排版？遇到複雜的版面的時候，使用Media Query一個區塊一個區塊調整是辛苦且不容易Debug的，如果可以有系統的規劃版面與實作真是可以節省時間和精力。</p>
+<hr />
+<h4>推薦閱讀</h4>
+<ul>
+<li><a target="_blank" href="http://bradfrost.github.io">Responsive Web Design Patterns | This Is Responsive</a></li>
+<li><a target="_blank" href="http://www.lukew.com/ff/entry.asp?1514">Multi-Device Layout Patterns</a></li>
+<li>
+Off Canvas 
+<ul>
+<li><a target="_blank" href="http://www.lukew.com/ff/entry.asp?1517">Off Canvas Multi-Device Layout</a></li>
+<li><a target="_blank" href="http://www.lukew.com/ff/entry.asp?1569">Off Canvas Multi-Device Layouts</a></li>
+<li><a target="_blank" href="http://jasonweaver.name/lab/offcanvas/">A Multi-Device Web Layout Pattern</a></li>
+<li><a target="_blank" href="http://zurb.com/playground/off-canvas-layouts">Off Canvas Layouts</a></li>
+</ul>
+</li>
+<li>
+List with Thumbnails
+<ul>
+<li><a target="_blank" href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code">THE MEDIA OBJECT SAVES HUNDREDS OF LINES OF CODE</a></li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

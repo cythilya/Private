@@ -1,0 +1,952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>ASP.NET MVC 4 - Ch6 Controller</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+  display:block;
+}
+</style>
+</head>
+<body>
+<h1>ASP.NET MVC 4 Controller相關技術 閱讀筆記</h1>
+<p>tag: ASP.NET MVC, controller</p>
+
+<div><img src="https://db.tt/6Pj5UJxd" alt="code"/></div>
+
+<h2>Outline</h2>
+<h3>Method分類</h3>
+<ul>
+<li>public method = action / action method, 可接受要求與回應請求</li>
+<li>private</li>
+<li>protected</li>
+</ul>
+<h3>Model Binding</h3>
+<h3>ActionResult</h3>
+<ul>
+<li>ViewResult -&gt; View</li>
+<li>RedirectResult</li>
+<li>ContentResult</li>
+<li>FileResult</li>
+<li>void</li>
+<li>primitive types(sting, int) -&gt;(ASP.NET MVC自動轉換) ContentResult</li>
+</ul>
+<h3>Action Filters</h3>
+<ul>
+<li>Authorization Filters</li>
+<li>Action Filters</li>
+<li>Result Filters</li>
+<li>Excetion Filters</li>
+</ul>
+<hr />
+<h2>Action Name Selector 動作名稱選取器</h2>
+<p><code>[ActionName(&quot;Default&quot;)]</code>會替代目前的action name。<br />
+即，action輸入Default才能正確執行Index() method，而此時的return View()也會去找Default.cshtml，而非Index.cshtml。<br />
+action輸入Index會被判定無法找到此方法，而執行HandleUnknownAction()。</p>
+<p>執行步驟</p>
+<ul>
+<li>網址列輸入 <strong>http://localhost:1502</strong> -&gt; 呼叫<strong>HandleUnknownAction()</strong> </li>
+<li>網址列輸入 <strong>http://localhost:1502/home</strong> -&gt; 呼叫<strong>HandleUnknownAction()</strong></li>
+<li>網址列輸入 <strong>http://localhost:1502/home/index</strong> -&gt; 呼叫<strong>HandleUnknownAction()</strong></li>
+<li>
+<p>網址列輸入 <strong>http://localhost:1502/home/default</strong> -&gt; 呼叫<strong>Index()</strong></p>
+<pre><code>[ActionName(&quot;Default&quot;)]
+public ActionResult Index()
+{
+    ViewBag.Message = &quot;Modify this template to jump-start your ASP.NET MVC application.&quot;;
+
+    return View();
+}
+
+protected override void HandleUnknownAction(string actionName)
+{
+    Response.Redirect(&quot;http://www.friendo.com.tw&quot;);
+}
+</code></pre>
+
+</li>
+</ul>
+<h2>Action Method Selector 動作方法選取器</h2>
+<h3>NonAction (= private)</h3>
+<p>用於保護action不要公開。</p>
+<pre><code>[NonAction]
+public ActionResult About()
+{
+    ViewBag.Message = &quot;Your app description page.&quot;;
+
+    return View();
+}
+</code></pre>
+
+<p>此時網址列輸入<strong>http://localhost:1502/home/about</strong>，就會呼叫<strong>HandleUnknownAction()</strong>。</p>
+<h3>HTTP動詞限定屬性</h3>
+<p>同名action，但不同動作時使用。</p>
+<h2>ActionResult 衍生類別</h2>
+<ul>
+<li>
+<p>ViewResultBase</p>
+<ul>
+<li>ViewResult - View()：可指定Layout、可傳入Model</li>
+<li>
+<p>PartialViewResult - PartialView()：無法指定Layout</p>
+<pre><code>public ActionResult Index()
+{
+
+    return View(); //Default Setting
+
+    //return new RedirectToRouteResult(new RouteValueDictionary(new { action = &quot;about&quot; })); 
+    //return RedirectToAction(&quot;about&quot;); //RedirectToRouteResult, Controller的輔助方法
+
+    //return View(&quot;about&quot;); //Redirect to &quot;About&quot; page
+    //return View(&quot;about2&quot;); //Page not found
+}
+</code></pre>
+
+<p>[Note] 可調整ViewEngine順序(WebFormViewEngine、RazorViewEngine)，縮短ASP.NET MVC搜尋View頁面的時間。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>EmptyResult = void</p>
+</li>
+<li>
+<p>ContentResult：可指定文字內容、內容類型(Content Type)、文字編碼(Encoding)。回傳內容(EX: 字串)的方法：</p>
+<pre><code>//例一：return XML
+public ActionResult Index()
+{
+    return Content(&quot;&lt;div&gt;AAA&lt;/div&gt;&quot;, &quot;text/xml&quot;, System.Text.Encoding.UTF8);
+}
+
+//例二：return HTML
+public ActionResult Index()
+{
+    string strHTML = &quot;&lt;div&gt;BBB&lt;/div&gt;&quot;;
+    return Content(strHTML);
+}
+
+//例三：return string
+public string Index()
+{
+    string strHTML = &quot;&lt;div&gt;CCC&lt;/div&gt;&quot;;
+    return strHTML;
+
+}
+</code></pre>
+
+<p>其中，例二與例三結果相同。<br />
+將回傳型別設定為string(非ActionResult的衍伸型別)，就會將回傳值自動轉成ContentResult輸出。</p>
+</li>
+<li>
+<p>FileResult</p>
+<ul>
+<li>FilePathResult：回應一個實體檔案內容。</li>
+<li>FileContentResult：回應一個byte[]內容。</li>
+<li>FileStreamResult：回應一個Stream內容。</li>
+</ul>
+<p>使用File方法自動選取不同的FileResult回應。</p>
+<pre><code>public ActionResult Index()
+{
+    byte[] fileContent = System.IO.File.ReadAllBytes(&quot;../orderedList0.png&quot;);
+
+    if (Request.Browser.Browser == &quot;IE&quot; &amp;&amp; Convert.ToInt32(Request.Browser.MajorVersion) &lt; 9)
+    {
+        //處理IE舊版相容性問題，不支援RFC2231這種HTTP Header Value的編碼格式
+        return File(fileContent, &quot;image/png&quot;, Server.UrlPathEncode(&quot;範例圖片.png&quot;));
+    }
+    else
+    {
+        return File(fileContent, &quot;image/jpeg&quot;, &quot;範例圖片.png&quot;);
+    }
+}
+</code></pre>
+
+</li>
+<li>
+<p>JavascriptResult：功能與ContentResult類似，差別在於Content-type不同(JavascriptResult的Content-Type為application/x-javascript)。透過ajax呼叫伺服器端傳回JavaScript。</p>
+<p>在Layout.cshtml載入(需載入正確的JavaScript函式庫才能正確執行Ajax輔助方法)：</p>
+<pre><code>@Scripts.Render(&quot;~/bundles/jquery&quot;)
+@Scripts.Render(&quot;~/bundles/jqueryval&quot;)
+</code></pre>
+
+<p>在view中放置：</p>
+<pre><code>@Ajax.ActionLink(&quot;Run JavaScript&quot;, &quot;JavaScript&quot;, new AjaxOptions());
+</code></pre>
+
+<p>Controller撰寫程式碼以供呼叫：</p>
+<pre><code>public ActionResult Javascript()
+{
+    return JavaScript(&quot;alert('OK')&quot;);//引號: 外雙內單
+}
+</code></pre>
+
+<p>則會alert &quot;OK&quot;。</p>
+</li>
+<li>
+<p>JsonResult：可自動將任意物件資料序列化(JavaScriptSerializer)成JSON格式回傳。若無法序列化，則會發生例外。為避免JSON Hijacking攻擊，任何以JSONResult回傳的要求都不允許HTTP GET取得JSON資料。</p>
+<pre><code>public ActionResult JSON()
+{
+    return Json( new {
+        id = 1,
+        name = &quot;Bill&quot;,
+        CreateOn = DateTime.Now
+    });
+}
+</code></pre>
+
+<p>使用POST方法呼叫，即會alert &quot;1&quot;。</p>
+<pre><code>$.ajax({
+    url: &quot;http://localhost:1502/home/json&quot;,
+    type: &quot;POST&quot;,
+    dataType: &quot;json&quot;,
+    success: function (result) {
+        alert(result.id);
+    }
+});
+</code></pre>
+
+<p>加上JsonRequestBehavior列舉參數，透過Get method取得JSON資料。</p>
+<pre><code>public ActionResult JSON()
+{
+    return Json( new {
+        id = 1,
+        name = &quot;Bill&quot;,
+        CreateOn = DateTime.Now}, JsonRequestBehavior.AllowGet);
+}
+</code></pre>
+
+</li>
+<li>
+<p>RedirectResult：分為301、302 Redirect。</p>
+<pre><code>//302 Redirect
+public ActionResult Redirect() 
+{
+    return Redirect(&quot;/Home/Index&quot;);
+}
+
+//301 Redirect
+public ActionResult Redirect301() 
+{
+    return RedirectPermanent(&quot;/Home/Index&quot;);//有助於SEO，可帶走PR、link juice
+}
+</code></pre>
+
+</li>
+<li>
+<p>RedirectToRoute  
+</p>
+<ul>
+<li>RedirectToAction(action)</li>
+<li>RedirectToActionPermanent(action, controller)</li>
+<li>RedirectToRoute(routeName)</li>
+<li>RedirectToRoutePermanent</li>
+</ul>
+</li>
+<li>
+<p>HTTPStatusCodeResult</p>
+<pre><code>//Status: 201, Created
+public ActionResult Create() 
+{
+    return new HttpStatusCodeResult(System.Net.HttpStatusCode.Created, &quot;data has been created&quot;);
+}
+</code></pre>
+
+</li>
+<li>
+<p>HttpNotFoundResult</p>
+<pre><code>//Status: 404, Not Found
+public ActionResult Create() 
+{
+    return HttpNotFound();
+}
+</code></pre>
+
+</li>
+<li>
+<p>HttpUnauthorizedResult</p>
+<pre><code>//Status: 401, Unauthorized(redirects to login action)
+public ActionResult Create() 
+{
+    return new HttpUnauthorizedResult();
+}
+</code></pre>
+
+</li>
+</ul>
+
+<p>自定義error pages - 覆寫HandleUnknownAction</p>
+<p>這不是定義404 pages的方法，而是在此controller下找不到呼叫的action時，可顯示替代頁面的方始。<br />
+EX: 輸入&quot;http://localhost:1502/Home/123456&quot;，因為在HomeController沒有此&quot;123456&quot;的action，因此轉跳到&quot;http://www.friendo.com.tw&quot;。</p>
+<pre><code>protected override void HandleUnknownAction(string actionName)
+{
+    Response.Redirect(&quot;http://www.friendo.com.tw&quot;);
+}
+</code></pre>
+
+<h2>ViewData, TempData, ViewBag</h2>
+<p>Controller協調Model與View之間資料的傳遞的方式。</p>
+<ul>
+<li>
+<p>ViewData</p>
+<ul>
+<li>
+<p>ViewData.Model</p>
+<pre><code>//controller
+public ActionResult Info()
+{
+    string data = &quot;data for test&quot;;
+    ViewData.Model = data;
+
+    return View();
+}
+
+//view
+@{
+    ViewBag.Title = &quot;Info&quot;;
+    Layout = &quot;~/Views/Shared/_Layout.cshtml&quot;;
+}
+
+&lt;h2&gt;@ViewData.Model&lt;/h2&gt;
+</code></pre>
+
+</li>
+</ul>
+</li>
+<li>ViewBag</li>
+<li>
+<p>TempData：使用Session，暫存時間為<strong>一次網頁要求</strong>。</p>
+<pre><code>public ActionResult Index()
+{
+    TempData[&quot;PostMessage&quot;] = &quot;Info&quot;;
+    return RedirectToAction(&quot;Info&quot;);
+}
+
+public ActionResult Info()
+{
+    string data = TempData[&quot;PostMessage&quot;] as string;//data = &quot;Info&quot;
+    return View(data);//找尋檔名為&quot;Info&quot;的view
+}
+</code></pre>
+
+</li>
+</ul>
+<h2>Model Binding</h2>
+<ul>
+<li>
+<p>簡單Model Binding</p>
+<pre><code>//controller
+public ActionResult Info(string Username)
+{
+    ViewData.Model = Username;
+    return View();
+}
+
+//view
+&lt;form method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Username&quot; id=&quot;Username&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Result&quot; id=&quot;Result&quot; value=&quot;@Model&quot;&gt;&lt;/inout&gt;
+    &lt;input type=&quot;submit&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>input使用&quot;name&quot;這個屬性即可對應到controller的輸入參數。<br />
+Step 1：在id=&quot;Username&quot;的input中輸入字串&quot;hi&quot;<br />
+Step 2：按&quot;submit&quot; button<br />
+Step 3：呼叫controller &quot;Info&quot;，參數Username == &quot;hi&quot;<br />
+Step 4：ViewData.Model == &quot;hi&quot;<br />
+Step 5：id=&quot;Result&quot;的input值為&quot;hi&quot;   
+</p>
+</li>
+<li>
+<p>使用FormCollection取得表單資料：設定FormCollection型別的參數，一次取得表單所有資料。</p>
+<pre><code>//controller
+public ActionResult Info(FormCollection form)
+{
+    ViewData.Model = form[&quot;Username&quot;];
+    return View();
+}
+
+//view
+&lt;form method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Username&quot; id=&quot;Username&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Result&quot; id=&quot;Result&quot; /&gt;
+    &lt;input type=&quot;submit&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>在input &quot;Username&quot;與&quot;Result&quot;輸入數值後，按下submit。controller可一次接到整份表單的資料。I</p>
+</li>
+<li>
+<p>複雜Model Binding：使用class來接整份表單的資料，欄位名稱(name)與class中的property名稱必須相同。</p>
+<pre><code>//controller
+public class UserForm 
+{
+    public string Username { get; set; }
+    public string Result { get; set; }
+}
+
+public ActionResult Info(UserForm form)
+{
+    ViewData.Model = form.Username;
+    return View();
+}
+
+//view
+&lt;form method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Username&quot; id=&quot;Username&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Result&quot; id=&quot;Result&quot; /&gt;
+    &lt;input type=&quot;submit&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+</li>
+<li>
+<p>多個複雜Model Binding：一個表單內傳送兩筆資料到action。</p>
+<pre><code>//controller
+public class UserForm 
+{
+    public string Username { get; set; }
+    public string Result { get; set; }
+}
+
+public ActionResult Info(UserForm form1, UserForm form2)
+{
+   return View();
+}
+
+//view
+&lt;form method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;form1.Username&quot; id=&quot;Username&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;form1.Result&quot; id=&quot;Result&quot; /&gt;
+
+    &lt;input type=&quot;text&quot; name=&quot;form2.Username&quot; id=&quot;Username&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;form2.Result&quot; id=&quot;Result&quot; /&gt;
+
+    &lt;input type=&quot;submit&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>form1與form2收到個別的資料。</p>
+</li>
+<li>
+<p>判斷Model Binding的驗證結果：ModelState.IsValid</p>
+<pre><code>//model
+public class UserForm
+{
+    [Required]
+    public string Username { get; set; }
+    [Required]
+    public string Result { get; set; }
+}
+
+//controller
+public ActionResult Info(UserForm form)
+{
+    if (!ModelState.IsValid)
+    {
+        return View();//驗證不通過則在原頁，在此為驗證必填欄位皆填寫
+    }
+    return RedirectToAction(&quot;Index&quot;);//驗證通過則回到首頁
+}
+
+//view
+&lt;form method=&quot;post&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Username&quot; id=&quot;Username&quot;/&gt;
+    &lt;input type=&quot;text&quot; name=&quot;Result&quot; id=&quot;Result&quot; /&gt;
+    &lt;input type=&quot;submit&quot;/&gt;
+&lt;/form&gt;
+</code></pre>
+
+</li>
+<li>
+<p>Model Binding的驗證失敗的錯誤詳細資訊</p>
+<ul>
+<li>統計被Binding的屬性：ModelState.Count</li>
+<li>取得特定屬性在Binding過程中是否出現錯誤：ModelState[&quot;Username&quot;].Errors.Count</li>
+<li>
+<p>取得特定屬性在Binding過程中出現的第一個錯誤與錯誤訊息：ModelState[&quot;Username&quot;].Errors[0]、ErrorMessage</p>
+<pre><code>public ActionResult Info(UserForm form)
+{
+    if (ModelState[&quot;Username&quot;].Errors.Count &gt; 0) 
+    {
+        ModelError error = ModelState[&quot;Username&quot;].Errors[0];//取得特定屬性在Binding過程中出現的第一個錯誤
+        var errMsg = error.ErrorMessage;//取得特定屬性在Binding過程中出現的第一個錯誤的錯誤訊息
+        var errExp = error.Exception;//取得Exception
+
+        ModelState.AddModelError(&quot;Username&quot;, &quot;請填寫使用者名稱&quot;);//顯示錯誤訊息
+
+        return View();//驗證不通過則在原頁，在此為驗證必填欄位&quot;Username&quot;必填寫
+    }
+    return RedirectToAction(&quot;Index&quot;);//驗證通過則回到首頁
+}
+</code></pre>
+
+</li>
+</ul>
+</li>
+<li>
+<p>清空Model Binding狀態，View不受Model Binding Status影響：ModelState.Clear()</p>
+</li>
+<li>
+<p>使用Bindg屬性限制可被更新的資料模型屬性</p>
+<ul>
+<li>
+<p>避免因竄改View的欄位名稱而用Model Binding的方式傳入資料：[Bind(Exclude = &quot;欄位名稱&quot;)]</p>
+<pre><code>//方法一：宣告在controller的action中
+//Result這個欄位會是null
+public ActionResult Info([Bind(Exclude = &quot;Result&quot;)] UserForm form)
+{
+    if (ModelState[&quot;Username&quot;].Errors.Count &gt; 0) 
+    {
+        ModelError error = ModelState[&quot;Username&quot;].Errors[0];//取得特定屬性在Binding過程中出現的第一個錯誤
+        var errMsg = error.ErrorMessage;//取得特定屬性在Binding過程中出現的第一個錯誤的錯誤訊息
+        var errExp = error.Exception;//取得Exception
+
+        ModelState.AddModelError(&quot;Username&quot;, &quot;請填寫使用者名稱&quot;);//顯示錯誤訊息
+        ModelState.Clear();
+
+        return View();//驗證不通過則在原頁，在此為驗證必填欄位&quot;Username&quot;必填寫
+    }
+    return RedirectToAction(&quot;Index&quot;);//驗證通過則回到首頁
+}
+
+//宣告在model中(統一宣告)
+[Bind(Exclude = &quot;Result&quot;)]
+public class UserForm
+{
+    [Required]
+    public string Username { get; set; }
+    [Required]
+    public string Result { get; set; }
+}
+</code></pre>
+
+</li>
+<li>
+<p>明確指出那些欄位需要繫結：[Bind(Include = &quot;欄位名稱&quot;)]</p>
+</li>
+</ul>
+</li>
+<li>
+<p>使用UpdateModel與TryUpdateModel：由於屬性Bing已被限制，因此要調整判斷Model Binding的驗證結果。<br />
+為避免繫結錯誤，不用UpdateModel，改用TryUpdateModel</p>
+<pre><code>public ActionResult Info(UserForm form)
+{
+    GuestForm geustform = new GuestForm();
+    TryUpdateModel&lt;GuestForm&gt;(geustform);
+
+    if (!TryUpdateModel&lt;GuestForm&gt;(geustform))
+    {
+        return View();
+    }
+    return RedirectToAction(&quot;Index&quot;);
+}
+</code></pre>
+
+</li>
+</ul>
+<h2>Action Filter</h2>
+<ul>
+<li>
+<p>Authorization Filter</p>
+<ul>
+<li>
+<p>Authorize：驗證身分</p>
+<pre><code>//判斷登入者是否為管理者，驗證失敗則導入login畫面
+[Authorize(Roles=&quot;Admin&quot;)]
+public ActionResult About()
+{
+    return View();
+}
+
+//web.config對於驗證失敗導入畫面的設定
+&lt;authentication mode=&quot;Forms&quot;&gt;
+    &lt;forms loginUrl=&quot;~/Account/Login&quot; timeout=&quot;2880&quot; /&gt;
+&lt;/authentication&gt;
+</code></pre>
+
+</li>
+<li>AllowAnonymous：不登入也可執行此action</li>
+<li>ChildActionOnly</li>
+<li>RequireHttps</li>
+<li>
+<p>ValidateInput：由於ASP.NET預設框架會檢查透過表單來的輸入資料是否有惡意程式碼或標籤，因此當網頁輸入HTML Tag時必須關掉此驗證。</p>
+<pre><code>[ValidateInput(false)]
+public ActionResult About()
+{
+    return View();
+}
+</code></pre>
+
+</li>
+<li>
+<p>ValidateAntiForgeryToken：防止跨網站造假點擊(Cross Site Request Forgery, CSRF)的攻擊。</p>
+<pre><code>//view
+@Html.AntiForgeryToken()
+
+//controller
+[ValidateAntiForgeryToken]
+public ActionResult About()
+{
+    return View();
+}
+</code></pre>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Action Filter</p>
+<ul>
+<li>AsyncTimeout：設定action期時間限制</li>
+<li>NoAsyncTimeout：設定action無逾期時間限制</li>
+</ul>
+</li>
+<li>
+<p>Result Filter</p>
+<ul>
+<li>
+<p>OutputCache</p>
+<pre><code>//將此action &quot;About&quot;的輸出結果快取60秒
+[OutputCache(Duration=60)]
+public ActionResult About()
+{
+    return View();
+}
+</code></pre>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Exception Filter</p>
+<ul>
+<li>
+HandleError
+<ul>
+<li>當錯誤發生的時候，會顯示錯誤畫面</li>
+<li>可針對特定另外狀況做處理</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>自訂動作過濾器屬性：對於重複執行的動作單獨抽出來，寫在自訂動作過濾器屬性中。</p>
+<pre><code>//controller
+public class ShoppingDataAttrubute : ActionFilterAttribute 
+{
+    //覆寫OnActionExecuting
+    public override void OnActionExecuting(ActionExecutingContext filterContext)
+    {
+        filterContext.Controller.ViewData[&quot;MyData&quot;] = &quot;my data&quot;;
+    }
+}
+
+//多個action使用同一個自訂動作過濾器屬性取資料
+[ShoppingDataAttrubute]
+public ActionResult About()
+{
+    ViewBag.Message = ViewData[&quot;MyData&quot;];
+    return View();
+}
+
+[ShoppingDataAttrubute]
+public ActionResult Contact()
+{
+    ViewBag.Message = ViewData[&quot;MyData&quot;];
+
+    return View();
+}
+</code></pre>
+
+</li>
+</ul>
+<hr />
+<p>Ref<br />
+- <a target="_blank" href="http://ianjung1974.blogspot.tw/2009/03/content-type.html">Content Type 大全</a>   </p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
