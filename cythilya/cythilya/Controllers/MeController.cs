@@ -662,10 +662,10 @@ namespace cythilya.Controllers
             articleList.Add(article_32);
             #endregion
 
-            #region Closure與Hoisting | JavaScript Patterns
+            #region JavaScript - Closure與Hoisting
             MeModels.Article article_33 = new MeModels.Article();
-            article_33.Name = "Closure與Hoisting | JavaScript Patterns";
-            article_33.Description = "JavaScript Patterns 的閱讀筆記之Closure與Hoisting。";
+            article_33.Name = "JavaScript - Closure與Hoisting";
+            article_33.Description = "分散var來宣告變數並沒有太大的意義，因為就JavaScript程式語言的特性來說，函數(Function)中未宣告而先用到的變數會被提升至區塊的第一行做宣告。先來看基本觀念Closure，再來看Hoisting。";
             article_33.URL = "http://cythilya.blogspot.tw/2015/05/javascript-patterns-closure-hoisting.html";
             article_33.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
             article_33.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
