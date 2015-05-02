@@ -672,7 +672,7 @@ namespace cythilya.Controllers
             article_33.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
             article_33.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
             article_33.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
-            article_33.Tag = "JavaScript, JavaScript Patterns";
+            article_33.Tag = "JavaScript";
             article_33.isHighlight = false;
             article_33.Time = "May 1, 2015";
             article_33.isBanner = false;
