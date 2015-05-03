@@ -679,6 +679,23 @@ namespace cythilya.Controllers
             articleList.Add(article_33);
             #endregion
 
+            #region JavaScript - Call and Apply
+            MeModels.Article article_34 = new MeModels.Article();
+            article_34.Name = "JavaScript - Call and Apply";
+            article_34.Description = "call與apply兩者皆是執行某個function，並將這個function的context(即物件)替換成第一個代入的參數。其差異在於call必須將參數一一代入，而apply除了第一個參數代入context外，其餘的參數只要包在一個陣列裡面即可。註：第二個參數不是必須的(optional)。";
+            article_34.URL = "http://cythilya.blogspot.tw/2015/05/javascript-call-and-apply.html";
+            article_34.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_34.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_34.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_34.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_34.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_34.Tag = "JavaScript, Call, Apply";
+            article_34.isHighlight = false;
+            article_34.Time = "May 3, 2015";
+            article_34.isBanner = false;
+            articleList.Add(article_34);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
