@@ -292,6 +292,10 @@
     <Content Include="Content\eshopper\js\jquery.scrollUp.min.js" />
     <Content Include="Content\eshopper\js\main.js" />
     <Content Include="Content\eshopper\js\price-range.js" />
+    <Content Include="Content\file\call_apply_example\demo.html" />
+    <Content Include="Content\file\call_apply_example\js\jquery.ajax.fake.js" />
+    <Content Include="Content\file\call_apply_example\js\script.js" />
+    <Content Include="Content\file\call_apply_example\js\webservices.fake.js" />
     <Content Include="Content\js\form-validation.js" />
     <Content Include="Content\js\jquery-1.7.1.min.js" />
     <Content Include="Content\js\jquery.cookie.js" />
