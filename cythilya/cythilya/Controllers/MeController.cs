@@ -696,6 +696,23 @@ namespace cythilya.Controllers
             articleList.Add(article_34);
             #endregion
 
+            #region JavaScript - JSON.parse and JSON.stringify
+            MeModels.Article article_35 = new MeModels.Article();
+            article_35.Name = "JavaScript - JSON.parse and JSON.stringify";
+            article_35.Description = "使用JSON做Client端與Server端資料傳遞的說明與範例。";
+            article_35.URL = "http://cythilya.blogspot.tw/2015/05/javascript-json-parse-stringify.html";
+            article_35.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_35.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_35.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_35.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_35.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_35.Tag = "JavaScript";
+            article_35.isHighlight = false;
+            article_35.Time = "May 9, 2015";
+            article_35.isBanner = false;
+            articleList.Add(article_35);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
