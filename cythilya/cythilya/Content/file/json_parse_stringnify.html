@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>$title</title>
+</head>
+<body>
+<div id="playground"></div>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://cythilya.apphb.com/Content/file/call_apply_example/js/jquery.ajax.fake.js"></script>
+<script src="http://cythilya.apphb.com/Content/file/call_apply_example/js/webservices.fake.js"></script>
+<script>
+//JSON.parse(): simple example
+var jsonStr = '{"name": "Summer"}';
+var parsedObj = JSON.parse(jsonStr);
+console.log(parsedObj.name); //Summer
+
+//JSON.parse(): objs in array - 多行分隔會出錯 "Uncaught SyntaxError: Unexpected token ILLEGAL"
+var jsonStrObjsinArray = '[ { "name": "Apple", "count": "5" }, { "name": "Orange", "count": "6" }]';
+var parsedObjinArray = JSON.parse(jsonStrObjsinArray);
+console.log(parsedObjinArray); //[Object, Object] 
+
+//print name in every obj
+//$.each(collection, function(index, value){}); : 物件或陣列，Ref: .each();
+//collection.each(function(index, value){}); : 物件，Ref: jQuery.each();
+
+$.each(parsedObjinArray, function(index, value){
+	console.log(value);
+});
+/*
+	Result: 
+	Object {name: "Apple", count: "5"}
+	Object {name: "Orange", count: "6"}
+	Object {name: "Grape", count: "1"}
+	Object {name: "Cherry", count: "0"}
+	Object {name: "Guava", count: "15"}
+	Object {Lemon: "Apple", count: "99"}
+*/
+
+//JSON.parse(): ajax response with objs in array (in json format)  
+//fake ajax
+var dataArray = [];
+$.ajax.fake.registerWebservice('/getData', function(data) {
+	return {
+		"success": true,
+		"data" : [
+				{
+				"title": "宜蘭太平山自行車挑戰",
+				"link": "http://www.google.com.tw",
+				"thumbnail": "dummy.png",
+				"date": "2015/06/06 (六)",
+				"startDate": "2015-06-06T10:00",
+				"signup": "20150525",
+				"location": "新北市政府行市民廣場",
+				"streetAddress": "光復南路102號3樓",
+				"addressLocality": "台北市",
+				"addressRegion": "台灣",
+				"latitude": 22.999,
+				"longitude": 121.555,
+				"tag": [
+					{"link": "/search?keyword=999", "text": "練跑"},
+					{"link": "/search?keyword=888", "text": "夜光路跑"},
+					{"link": "/search?keyword=777", "text": "核心肌群"},
+					{"link": "/search?keyword=666", "text": "PUMA"}
+				]
+			},
+				{
+				"title": "宜蘭太平山自行車挑戰",
+				"link": "http://www.google.com.tw",
+				"thumbnail": "dummy.png",
+				"date": "2015/06/06 (六)",
+				"startDate": "2015-06-06T10:00",
+				"signup": "20150525",
+				"location": "新北市政府行市民廣場",
+				"streetAddress": "光復南路102號3樓",
+				"addressLocality": "台北市",
+				"addressRegion": "台灣",
+				"latitude": 22.999,
+				"longitude": 121.555,
+				"tag": [
+					{"link": "/search?keyword=999", "text": "練跑"},
+					{"link": "/search?keyword=888", "text": "夜光路跑"},
+					{"link": "/search?keyword=777", "text": "核心肌群"},
+					{"link": "/search?keyword=666", "text": "PUMA"}
+				]
+			}   
+		],
+		"message": "success!"
+	}
+});    
+
+$.ajax({
+	url: '/getData',
+	type: 'post',
+	fake: true, //fake ajax
+	data: JSON.stringify({
+		"Data": dataArray
+	}),
+	dataType: 'json',
+	error: function (xhr) {
+		alert('噢噢！發生錯誤了！請重新再試一次～');
+	},
+	success: function (response) {
+		console.log(response); //Object {success: true, data: Array[2], message: "success!"}
+
+		$.each(response.data, function(index, value){
+			console.log(value);
+		}); 
+
+	   /*
+		Result: 
+		Object {title: "宜蘭太平山自行車挑戰", link: "http://www.google.com.tw", thumbnail: "dummy.png", date: "2015/06/06 (六)", startDate: "2015-06-06T10:00"…}
+		Object {title: "宜蘭太平山自行車挑戰", link: "http://www.google.com.tw", thumbnail: "dummy.png", date: "2015/06/06 (六)", startDate: "2015-06-06T10:00"…}
+		*/
+	}
+}); 
+
+//JSON.stringify()
+var dataArr = [];
+$.ajax({
+	url: '/sendData',
+	type: 'post',
+	data: JSON.stringify({
+		"Data": parsedObjinArray //{"Data":[{"name":"Apple","count":"5"},{"name":"Orange","count":"6"}]}
+	}),
+	dataType: 'json',
+	error: function (xhr) {},
+	success: function (response) {}
+});
+
+console.log(JSON.stringify({"Data": parsedObjinArray}));
+</script>
+</body>
+</html>
