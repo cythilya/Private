@@ -1606,7 +1606,7 @@ namespace cythilya.Controllers
             MeModels.Project proj_21 = new MeModels.Project();
             proj_21.ID = 21;
             proj_21.Name = "用聽的網頁‧933樂活網";
-            proj_21.Description = "933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！客服及產品訂購專線：北部/02-2567-1970　南部/05-2786-108。";
+            proj_21.Description = "933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！";
             proj_21.Role = "Front-End Development";
             proj_21.Tech = "Web Development with SCSS and jQuery";
             proj_21.URL = "/Me/Project?id=" + proj_21.ID;
@@ -1621,7 +1621,7 @@ namespace cythilya.Controllers
             proj_21.Date = "May 2015";
             proj_21.LauchURL = "http://i933.com.tw";
             string mobileSiteURL = "http://i933.com.tw/mobile";
-            proj_21.HtmlContent = "<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！客服及產品訂購專線：北部/02-2567-1970　南部/05-2786-108。</p><p>支援平板、手機等行動裝置瀏覽。<a href=" + mobileSiteURL + ">行動裝置版網站。</a></p>";
+            proj_21.HtmlContent = "<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！</p><p>支援平板、手機等行動裝置瀏覽。<a href=" + mobileSiteURL + ">行動裝置版網站。</a></p>";
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
             proj_21.IsShowInPortfolio = true;
