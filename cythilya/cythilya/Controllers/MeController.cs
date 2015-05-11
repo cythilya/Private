@@ -1603,7 +1603,6 @@ namespace cythilya.Controllers
             #endregion
 
             #region 用聽的網頁‧933樂活網
-            /*
             MeModels.Project proj_21 = new MeModels.Project();
             proj_21.ID = 21;
             proj_21.Name = "用聽的網頁‧933樂活網";
@@ -1638,7 +1637,6 @@ namespace cythilya.Controllers
 
             proj_21.Snapshot = SnapshotList21;
             projList.Add(proj_21);
-             * */
             #endregion
 
             #endregion

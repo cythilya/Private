@@ -443,6 +443,11 @@
     <Content Include="Content\me\img\blog\yha_mei_ho_house_youth_hostel\yha_mei_ho_house_youth_hostel_300.jpg" />
     <Content Include="Content\me\img\blog\yha_mei_ho_house_youth_hostel\yha_mei_ho_house_youth_hostel_54x54.jpg" />
     <Content Include="Content\me\img\blog\yha_mei_ho_house_youth_hostel\yha_mei_ho_house_youth_hostel_940x367.jpg" />
+    <Content Include="Content\me\img\project\933\933.png" />
+    <Content Include="Content\me\img\project\933\933_188x73.png" />
+    <Content Include="Content\me\img\project\933\933_300.png" />
+    <Content Include="Content\me\img\project\933\933_54x54.png" />
+    <Content Include="Content\me\img\project\933\933_940x367.png" />
     <Content Include="Content\me\img\project\aphezgo\aphezgo_index_54x54.jpg" />
     <Content Include="Content\me\img\project\aphezgo\aphezgo_index_940x367.jpg" />
     <Content Include="Content\me\img\project\bbk_new_year\bbk_new_year.png" />
