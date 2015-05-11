@@ -802,7 +802,7 @@ namespace cythilya.Controllers
             proj_2.Date = "July 2012 - Aug 2014";
             proj_2.LauchURL = "";
             proj_2.HtmlContent = "<p>粉多網路辦桌大請客，粉多為了慶祝台灣第一個雲端社群網站開站，舉辦網路辦桌活動。在活動時間內，使用Facebook登入並成為粉多會員後點選「免費請我」即可參加抽獎。</p><p>每天都有不同商品，每天能抽當天的商品。當天邀請Facebook朋友參加，此帳號當日得獎機率提升為2倍。</p>";
-            proj_2.Tag = "Web";
+            proj_2.Tag = "Web Platform";
             proj_2.isHighlight = false;
             proj_2.IsShowInPortfolio = true;
 
@@ -908,7 +908,7 @@ namespace cythilya.Controllers
             proj_4.Date = "Oct 2012 - Present";
             proj_4.LauchURL = "http://www.friendo.com.tw";
             proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>";
-            proj_4.Tag = "Web SEO";
+            proj_4.Tag = "Web SEO Platform";
             proj_4.isHighlight = false;
             proj_4.IsShowInPortfolio = true;
 
@@ -1514,7 +1514,7 @@ namespace cythilya.Controllers
             proj_18.Date = "April 2015";
             proj_18.LauchURL = "http://www.thsrc.com.tw";
             proj_18.HtmlContent = "<p>台灣高鐵連結台灣南北主要城市，我們不只是交通運輸業，更是推動台灣­前進的服務業；我們代表的不僅只是速度，而是速度所帶來的現代生活新態度；我們以更文明的旅行體驗，成為你實現夢想的助力，台灣高鐵，實踐台灣新生活。</p>";
-            proj_18.Tag = "Web RWD";
+            proj_18.Tag = "Web RWD Platform";
             proj_18.isHighlight = true;
             proj_18.IsShowInPortfolio = true;
 
@@ -1550,7 +1550,7 @@ namespace cythilya.Controllers
             proj_19.Date = "April 2015";
             proj_19.LauchURL = "eventpal.com.tw";
             proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。</p>";
-            proj_19.Tag = "Web";
+            proj_19.Tag = "Web Platform";
             proj_19.isHighlight = true;
             proj_19.IsShowInPortfolio = true;
 
@@ -1566,7 +1566,80 @@ namespace cythilya.Controllers
              * */
             #endregion
 
-            //沐頤, 933 2015/05/08
+            #region VOLVING沐頤健康概念館
+            /*
+            MeModels.Project proj_20 = new MeModels.Project();
+            proj_20.ID = 20;
+            proj_20.Name = "VOLVING沐頤健康概念館";
+            proj_20.Description = "VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。";
+            proj_20.Role = "Front-End Development";
+            proj_20.Tech = "Web Development with SCSS and jQuery";
+            proj_20.URL = "/Me/Project?id=" + proj_20.ID;
+            proj_20.RawPic = "/Content/me/img/project/volving/volving.png";
+            proj_20.PicSmall = "/Content/me/img/project/volving/volving_188x73.png";
+            proj_20.PicMedium = "/Content/me/img/project/volving/volving_300.png";
+            proj_20.PicLarge = "/Content/me/img/project/volving/volving_940x367.png";
+            proj_20.PicInFooter = "/Content/me/img/project/volving/volving_54x54.png";
+            proj_20.Order = 20;
+            proj_20.Client = "國泰健康管理";
+            proj_20.ClientURL = "http://www.cathay-hcm.com.tw/Health";
+            proj_20.Date = "May 2015";
+            proj_20.LauchURL = "http://www.volving.com.tw/index";
+            proj_20.HtmlContent = "<p>VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。</p>";
+            proj_20.Tag = "Web OfficialWebsite";
+            proj_20.isHighlight = false;
+            proj_20.IsShowInPortfolio = true;
+
+            List<MeModels.SnapshotInfo> SnapshotList20 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_20_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_20_snap_1.Name = "VOLVING沐頤健康概念館";
+            proj_20_snap_1.SnapshotURL = "/Content/me/img/project/volving/volving_940x367.png";
+            SnapshotList20.Add(proj_20_snap_1);
+
+            proj_20.Snapshot = SnapshotList20;
+            projList.Add(proj_20);
+             * */
+            #endregion
+
+            #region 用聽的網頁‧933樂活網
+            /*
+            MeModels.Project proj_21 = new MeModels.Project();
+            proj_21.ID = 21;
+            proj_21.Name = "用聽的網頁‧933樂活網";
+            proj_21.Description = "933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！客服及產品訂購專線：北部/02-2567-1970　南部/05-2786-108。";
+            proj_21.Role = "Front-End Development";
+            proj_21.Tech = "Web Development with SCSS and jQuery";
+            proj_21.URL = "/Me/Project?id=" + proj_21.ID;
+            proj_21.RawPic = "/Content/me/img/project/933/933.png";
+            proj_21.PicSmall = "/Content/me/img/project/933/933_188x73.png";
+            proj_21.PicMedium = "/Content/me/img/project/933/933_300.png";
+            proj_21.PicLarge = "/Content/me/img/project/933/933_940x367.png";
+            proj_21.PicInFooter = "/Content/me/img/project/933/933_54x54.png";
+            proj_21.Order = 21;
+            proj_21.Client = "四神湯家族";
+            proj_21.ClientURL = "https://www.facebook.com/butyhealthgo/timeline";
+            proj_21.Date = "May 2015";
+            proj_21.LauchURL = "http://i933.com.tw";
+            string mobileURL = "http://i933.com.tw/mobile";
+            proj_21.HtmlContent = "<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！客服及產品訂購專線：北部/02-2567-1970　南部/05-2786-108。</p><p>支援平板、手機等行動裝置瀏覽。<a href=" + mobileURL + ">手機版網站</a></p>";
+            proj_21.Tag = "Web RWD Platform";
+            proj_21.isHighlight = false;
+            proj_21.IsShowInPortfolio = true;
+            List<int> partnerList21 = new List<int>(new int[] { 5 });
+            proj_21.Partners = partnerList21;
+
+            List<MeModels.SnapshotInfo> SnapshotList21 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_21_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_21_snap_1.Name = "用聽的網頁‧933樂活網";
+            proj_21_snap_1.SnapshotURL = "/Content/me/img/project/933/933_940x367.png";
+            SnapshotList21.Add(proj_21_snap_1);
+
+            proj_21.Snapshot = SnapshotList21;
+            projList.Add(proj_21);
+             * */
+            #endregion
 
             #endregion
 
@@ -1620,6 +1693,8 @@ namespace cythilya.Controllers
             TagList.Add("Prototype");
             TagList.Add("Hackathon");
             TagList.Add("CampignSite");
+            TagList.Add("OfficialWebsite");
+            TagList.Add("Platform");
             TagList.Add("SEO");
             TagList.Add("RWD");
             TagList.Add("SPWA");
@@ -1798,10 +1873,16 @@ namespace cythilya.Controllers
             partnerList.Add(partner3);
 
             MeModels.Partner partner4 = new MeModels.Partner();
-            partner4.ID = 3;
+            partner4.ID = 4;
             partner4.Name = "Leah Yeh";
             partner4.Website = "https://www.facebook.com/leahyeh?fref=ts";
             partnerList.Add(partner4);
+
+            MeModels.Partner partner5 = new MeModels.Partner();
+            partner5.ID = 5;
+            partner5.Name = "I-Six Liu";
+            partner5.Website = "https://www.facebook.com/isix.liu";
+            partnerList.Add(partner5);
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
