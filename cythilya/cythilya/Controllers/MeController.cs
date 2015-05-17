@@ -713,6 +713,23 @@ namespace cythilya.Controllers
             articleList.Add(article_35);
             #endregion
 
+            #region JavaScript - Decorator
+            MeModels.Article article_36 = new MeModels.Article();
+            article_36.Name = "JavaScript - Decorator";
+            article_36.Description = "Decorator的說明與範例。";
+            article_36.URL = "http://cythilya.blogspot.tw/2015/05/javascript-decorator.html";
+            article_36.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_36.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_36.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_36.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_36.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_36.Tag = "JavaScript, Decorator";
+            article_36.isHighlight = false;
+            article_36.Time = "May 17, 2015";
+            article_36.isBanner = false;
+            articleList.Add(article_36);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
