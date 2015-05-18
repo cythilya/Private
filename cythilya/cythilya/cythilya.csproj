@@ -297,6 +297,8 @@
     <Content Include="Content\file\call_apply_example\js\script.js" />
     <Content Include="Content\file\call_apply_example\js\webservices.fake.js" />
     <Content Include="Content\file\ebook\css\ajax-loader.gif" />
+    <Content Include="Content\file\ebook\css\banner_1.jpg" />
+    <Content Include="Content\file\ebook\css\banner_2.png" />
     <Content Include="Content\file\ebook\css\clearfix.css" />
     <Content Include="Content\file\ebook\css\component.css" />
     <Content Include="Content\file\ebook\css\default.css" />
@@ -322,6 +324,7 @@
     <Content Include="Content\file\ebook\css\icon_close.png" />
     <Content Include="Content\file\ebook\css\icon_print.png" />
     <Content Include="Content\file\ebook\css\icon_toggle.png" />
+    <Content Include="Content\file\ebook\css\logo.png" />
     <Content Include="Content\file\ebook\css\mobile.css" />
     <Content Include="Content\file\ebook\css\nav-single-level-overlay.css" />
     <Content Include="Content\file\ebook\css\reset-font-min.css" />

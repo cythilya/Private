@@ -3,7 +3,8 @@
         // default configuration
         var config = $.extend({}, {
             speed: 1000,
-            start: 0       
+            start: 0,
+            adShowLimit: 50    
         }, opts);
         // main function
         function init(obj) {
@@ -12,13 +13,14 @@
                 dToggle = dObj.find('.toggle'),
                 dCloseBtn = dObj.find('.btnClose'),
                 dNav = dObj.find('.nav'),
-                dNavLink = dObj.find('.navLink'),
+                dNavLink = dObj.find('.navLink')
+                dAd =  dObj.find('.adArea'),
+                selScrollable = '.scrollable',
                 startOrder = 1,
                 imageHeight = dObj.find('.thumbnail').first().height(),
                 windowHeight = document.documentElement.clientHeight,
-                menuLeft = document.getElementById( 'cbp-spmenu-s1' );
-
-            dObj.find('.item').height(windowHeight);
+                menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                adMaxHeight = 0;
 
             dNavLink.click(function(e){
                 var nowOrder = $(this).data('order');
@@ -46,6 +48,45 @@
                     classie.toggle( showLeft, 'disabled' );
                 }
             }
+
+            //init
+            dObj.find('.item').height(windowHeight);
+            adMaxHeight = windowHeight-imageHeight;
+            if(adMaxHeight > config.adShowLimit){
+                dAd.css('max-height', adMaxHeight + 'px');
+                dAd.find('.adImg').css('max-height', adMaxHeight-20  + 'px');
+                dObj.find('.adList').slick({
+                    dots: false,
+                    adaptiveHeight: true,
+                    arrows: false,
+                    mobileFirst: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    swipe: false,
+                    autoplay: true,
+                    lazyLoad: 'progressive'          
+                });
+            } else {
+                dAd.hide();
+            }
+
+            //touch event init
+            $(document).on('touchmove',function(e){
+                e.preventDefault();
+            });
+
+            $('body').on('touchstart', selScrollable, function(e) {
+                if (e.currentTarget.scrollTop === 0) {
+                    e.currentTarget.scrollTop = 1;
+                } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
+                    e.currentTarget.scrollTop -= 1;
+                }
+            });
+
+            $('body').on('touchmove', selScrollable, function(e) {
+                e.stopPropagation();
+            });
         }
         // initialize every element
         this.each(function() {
