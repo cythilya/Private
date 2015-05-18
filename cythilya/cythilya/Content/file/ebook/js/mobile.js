@@ -18,33 +18,32 @@
                 windowHeight = document.documentElement.clientHeight,
                 menuLeft = document.getElementById( 'cbp-spmenu-s1' );
 
-                dObj.find('.item').height(windowHeight);
+            dObj.find('.item').height(windowHeight);
 
-                dNavLink.click(function(e){
-                    var nowOrder = $(this).data('order');
-                    var length = -(nowOrder - startOrder)*windowHeight;
-                    e.preventDefault();
-                    console.log(length);
-                    dFrame.animate({top: length + 'px'}, config.speed); 
-                });
+            dNavLink.click(function(e){
+                var nowOrder = $(this).data('order');
+                var length = -(nowOrder - startOrder)*windowHeight;
+                e.preventDefault();
+                dFrame.animate({top: length + 'px'}, config.speed); 
+            });
 
-                dToggle.click(function(e){
-                    e.preventDefault();
-                    classie.toggle( this, 'active' );
-                    classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                    disableOther( 'showLeft' );
-                });
+            dToggle.click(function(e){
+                e.preventDefault();
+                classie.toggle( this, 'active' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'showLeft' );
+            });
 
-                dCloseBtn.click(function(e){
-                    e.preventDefault();
-                    classie.toggle( this, 'active' );
-                    classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                    disableOther( 'showLeft' );
-                });
+            dCloseBtn.click(function(e){
+                e.preventDefault();
+                classie.toggle( this, 'active' );
+                classie.toggle( menuLeft, 'cbp-spmenu-open' );
+                disableOther( 'showLeft' );
+            });
 
-                function disableOther( button ) {
-                    if( button !== 'showLeft' ) {
-                        classie.toggle( showLeft, 'disabled' );
+            function disableOther( button ) {
+                if( button !== 'showLeft' ) {
+                    classie.toggle( showLeft, 'disabled' );
                 }
             }
         }
