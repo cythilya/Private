@@ -96,23 +96,6 @@
 
             //touch event init
             function touchInit(){
-                /*
-                $('.container').on('touchmove touchstart touchend touchcancel',function(e){
-                    if(e.type == 'touchmove'){
-                        alert('touchmove');
-                    }
-                    if(e.type == 'touchstart'){
-                        alert('touchstart');
-                    }
-                    if(e.type == 'touchend'){
-                        alert('touchend');
-                    }
-                    if(e.type == 'touchcancel'){
-                        alert('touchcancel');
-                    }                                                            
-                });
-                */
-
                 $(document).on('touchmove',function(e){
                     e.preventDefault();
                 });
@@ -137,8 +120,7 @@
                     touchInit();
                     if($(window).innerWidth()>$(window).innerHeight()){
                         //橫
-                       //dMask.show();
-                       dMask.hide(); 
+                        dMask.show();
                     }else{
                         //直
                         dMask.hide();
