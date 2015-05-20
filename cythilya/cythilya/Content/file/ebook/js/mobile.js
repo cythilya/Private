@@ -12,14 +12,16 @@
                 dFrame = dObj.find('.frame'),
                 dToggle = dObj.find('.toggle'),
                 dCloseBtn = dObj.find('.btnClose'),
+                dSlide = dObj.find('.swipe'),
                 dNav = dObj.find('.nav'),
                 dNavLink = dObj.find('.navLink')
                 dAd =  dObj.find('.adArea'),
+                dMask = dObj.find('.mask'),
                 selScrollable = '.scrollable',
-                startOrder = 1,
                 imageHeight = dObj.find('.thumbnail').first().height(),
                 windowHeight = document.documentElement.clientHeight,
                 menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+                startOrder = 1,
                 adMaxHeight = 0;
 
             dNavLink.click(function(e){
@@ -49,12 +51,12 @@
                 }
             }
 
-            //init
-            dObj.find('.item').height(windowHeight);
-            adMaxHeight = windowHeight-imageHeight;
-            if(adMaxHeight > config.adShowLimit){
-                dAd.css('max-height', adMaxHeight + 'px');
-                dAd.find('.adImg').css('max-height', adMaxHeight-20  + 'px');
+            function init(){
+                dObj.find('iframe').width($(window).innerWidth());
+                dObj.find('.swipe').width($(window).innerWidth());
+                dObj.find('.item').height(windowHeight);
+                dObj.find('.navList').height(windowHeight);
+                adMaxHeight = windowHeight-imageHeight;
                 dObj.find('.adList').slick({
                     dots: false,
                     adaptiveHeight: true,
@@ -63,29 +65,68 @@
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    swipe: false,
+                    swipe: true,
                     autoplay: true,
                     lazyLoad: 'progressive'          
                 });
-            } else {
-                dAd.hide();
+                dAd.css('max-height', adMaxHeight + 'px');
+                dAd.find('.adImg').css('max-height', adMaxHeight-20  + 'px');  
+                if(adMaxHeight > config.adShowLimit){
+                    dAd.show()
+                } 
+                else {
+                    dAd.hide();
+                }                  
+
+                dSlide.slick({
+                    dots: true,
+                    adaptiveHeight: true,
+                    arrows: false,
+                    mobileFirst: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                });  
+                dSlide.show();       
+                $(window).scrollTop(0); 
             }
 
             //touch event init
-            $(document).on('touchmove',function(e){
-                e.preventDefault();
-            });
+            function touchInit(){
+                $(document).on('touchmove',function(e){
+                    e.preventDefault();
+                });
 
-            $('body').on('touchstart', selScrollable, function(e) {
-                if (e.currentTarget.scrollTop === 0) {
-                    e.currentTarget.scrollTop = 1;
-                } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
-                    e.currentTarget.scrollTop -= 1;
-                }
-            });
+                $('body').on('touchstart', selScrollable, function(e) {
+                    if (e.currentTarget.scrollTop === 0) {
+                        e.currentTarget.scrollTop = 1;
+                    } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
+                        e.currentTarget.scrollTop -= 1;
+                    }
+                });
 
-            $('body').on('touchmove', selScrollable, function(e) {
-                e.stopPropagation();
+                $('body').on('touchmove', selScrollable, function(e) {
+                    e.stopPropagation();
+                });                 
+            }
+
+            //init
+            $(document).ready(function() {
+                $(window).resize(function(){
+                    init();
+                    touchInit();
+                    if($(window).innerWidth()>$(window).innerHeight()){
+                        //橫
+                       dMask.show();
+                        
+                    }else{
+                        //直
+                        dMask.hide();
+                    } 
+                 }).resize();
+            });    
+
+            $('.navList').on('touchmove', function (e) {
+                 e.stopPropagation();
             });
         }
         // initialize every element
