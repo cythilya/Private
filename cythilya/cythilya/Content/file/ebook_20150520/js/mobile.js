@@ -1,163 +1,106 @@
 (function($) {
-    $.fn.eBook = function(opts) {
-        // default configuration
-        var config = $.extend({}, {
-            speed: 1000,
-            start: 0,
-            adShowLimit: 50    
-        }, opts);
-        // main function
-        function init(obj) {
-            var dObj = $(obj),
-                dFrame = dObj.find('.frame'),
-                dToggle = dObj.find('.toggle'),
-                dCloseBtn = dObj.find('.btnClose'),
-                dSlide = dObj.find('.swipe'),
-                dNav = dObj.find('.nav'),
-                dMenuHeading = document.getElementById( 'menuHeading' ),
-                dNavLink = dObj.find('.navLink')
-                dAd =  dObj.find('.adArea'),
-                dMask = dObj.find('.mask'),
-                selScrollable = '.scrollable',
-                imageHeight = dObj.find('.thumbnail').first().height(),
-                windowHeight = document.documentElement.clientHeight,
-                menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-                startOrder = 1,
-                adMaxHeight = 0;
+	$.fn.ebookMobile = function(opts) {
+		// default configuration
+		var config = $.extend({}, {
+			menuOPushSpeed: 500,
+			pageSlideSpeed: 1000,
+			adShowLimitHeight: 50
+		}, opts);
+		// main function
+		function init(obj) {
+			var dObj = $(obj),
+				dToggle = dObj.find('.toggle'),
+				dMenu = dObj.find('.menu'),
+				dNavList = dMenu.find('.navList'),
+				dContainer = dObj.find('.container'),
+				dPageList = dObj.find('.pageList'),
+				dPageItem = dObj.find('.pageItem'),
+				dSlide = dObj.find('.swipe'),
+				dAd =  dObj.find('.adArea'),
+				dAdList = dObj.find('.adList'),
+				dMask = dObj.find('.mask'),
+				windowWidth = $(window).innerWidth(),
+				windowHeight = document.documentElement.clientHeight,
+				menuPushDistance = windowWidth * 0.4,
+				adMaxHeight = 0;
 
-            dNavLink.click(function(e){
-                var nowOrder = $(this).data('order');
-                var length = -(nowOrder - startOrder)*windowHeight;
-                e.preventDefault();
-                dFrame.animate({top: length + 'px'}, config.speed); 
+			dToggle.click(function(e){
+				var dThisToggle = $(this);
+				e.preventDefault();
+				if(!dThisToggle.hasClass('on')){
+					dThisToggle.addClass('on');
+					dMenu.stop().animate({'left': '0'}, config.menuOPushSpeed);
+				}
+				else{
+					dMenu.stop().animate({'left': '-' + menuPushDistance}, config.menuOPushSpeed, function(){
+						dThisToggle.removeClass('on');
+					});
+				}
+			});
+
+			dNavList.on('click', '.navLink', function(e){
+				var dThisLink = $(this);
+				var num = dThisLink.index() || 0;
+				var pos = $('.container .pageItem').eq(num).position().top;
+				e.preventDefault();
+				dPageList.stop().animate({'top': -pos}, config.pageSlideSpeed);
+			});
+
+            dAdList.slick({
+                dots: false,
+                adaptiveHeight: true,
+                arrows: false,
+                mobileFirst: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                swipe: true,
+                autoplay: true
             });
 
-            dToggle.click(function(e){
-                e.preventDefault();
-                classie.toggle( this, 'active' );
-                classie.toggle( menuHeading, 'on' );
-                classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                disableOther( 'showLeft' );
-            });
+            dSlide.slick({
+                dots: true,
+                adaptiveHeight: true,
+                arrows: false,
+                mobileFirst: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });			
+			
+			function init(){
+				dObj.find('.thumbnail').width($(window).innerWidth());
+				adMaxHeight = $(window).innerHeight() - 4/3*$(window).innerWidth(); //1024/768=4/3
+				dAd.css('max-height', adMaxHeight + 'px');
+	            dAd.find('.adImg').css('max-height', adMaxHeight-20  + 'px');
+	            if(adMaxHeight > config.adShowLimitHeight){
+	                dAd.show()
+	            } 
+	            else {
+	                dAd.hide();
+	            }
+	            dSlide.show();	 
+			}
 
-            dCloseBtn.click(function(e){
-                e.preventDefault();
-                classie.toggle( this, 'active' );
-                classie.toggle( menuLeft, 'cbp-spmenu-open' );
-                disableOther( 'showLeft' );
-            });
-
-            function disableOther( button ) {
-                if( button !== 'showLeft' ) {
-                    classie.toggle( showLeft, 'disabled' );
-                }
-            }
-
-            function init(){
-                dObj.find('iframe').width($(window).innerWidth());
-                dObj.find('.swipe').width($(window).innerWidth());
-                dObj.find('.item').height(windowHeight);
-                //dObj.find('.navList').height(windowHeight);
-                dObj.find('.dropdown .navList').css('height', 400 + 'px');
-                dObj.find('.dropdown .navList').css('max-height', 400 + 'px');
-                adMaxHeight = windowHeight-imageHeight;
-                dObj.find('.adList').slick({
-                    dots: false,
-                    adaptiveHeight: true,
-                    arrows: false,
-                    mobileFirst: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    swipe: true,
-                    autoplay: true,
-                    lazyLoad: 'progressive'          
-                });
-                dAd.css('max-height', adMaxHeight + 'px');
-                dAd.find('.adImg').css('max-height', adMaxHeight-20  + 'px');  
-                if(adMaxHeight > config.adShowLimit){
-                    dAd.show()
+			//init
+			init();
+			
+            $(window).resize(function(){
+            	init();
+                if($(window).innerWidth()>$(window).innerHeight()){
+                	dMask.show(); //橫
+                } else {
+                    dMask.hide(); //直
                 } 
-                else {
-                    dAd.hide();
-                }                  
-
-                dSlide.slick({
-                    dots: true,
-                    adaptiveHeight: true,
-                    arrows: false,
-                    mobileFirst: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                });  
-                dSlide.show();       
-                $(window).scrollTop(0); 
-            }
-
-            //touch event init
-            function touchInit(){
-                /*
-                $('.container').on('touchmove touchstart touchend touchcancel',function(e){
-                    if(e.type == 'touchmove'){
-                        alert('touchmove');
-                    }
-                    if(e.type == 'touchstart'){
-                        alert('touchstart');
-                    }
-                    if(e.type == 'touchend'){
-                        alert('touchend');
-                    }
-                    if(e.type == 'touchcancel'){
-                        alert('touchcancel');
-                    }                                                            
-                });
-                */
-
-                $(document).on('touchmove',function(e){
-                    e.preventDefault();
-                });
-
-                $('body').on('touchstart', selScrollable, function(e) {
-                    if (e.currentTarget.scrollTop === 0) {
-                        e.currentTarget.scrollTop = 1;
-                    } else if (e.currentTarget.scrollHeight === e.currentTarget.scrollTop + e.currentTarget.offsetHeight) {
-                        e.currentTarget.scrollTop -= 1;
-                    }
-                });
-
-                $('body').on('touchmove', selScrollable, function(e) {
-                    e.stopPropagation();
-                });                 
-            }
-
-            //init
-            $(document).ready(function() {
-                $(window).resize(function(){
-                    init();
-                    touchInit();
-                    if($(window).innerWidth()>$(window).innerHeight()){
-                        //橫
-                       //dMask.show();
-                       dMask.hide(); 
-                    }else{
-                        //直
-                        dMask.hide();
-                    } 
-                 }).resize();
-            });    
-
-            $('.navList').on('touchmove', function (e) {
-                 e.stopPropagation();
-            });
+             }).resize();
         }
-        // initialize every element
-        this.each(function() {
-            init($(this));
-        });
-        return this;
-    };
-    // start
-    $(function() {
-        $('.ebookMobile').eBook();
-    });
+		// initialize every element
+		this.each(function() {
+			init($(this));
+		});
+		return this;
+	};
+	// start
+	$(function() {
+		$('.ebookMobile').ebookMobile();
+	});
 })(jQuery);
