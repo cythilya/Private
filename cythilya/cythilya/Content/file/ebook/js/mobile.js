@@ -14,6 +14,7 @@
                 dCloseBtn = dObj.find('.btnClose'),
                 dSlide = dObj.find('.swipe'),
                 dNav = dObj.find('.nav'),
+                dMenuHeading = document.getElementById( 'menuHeading' ),
                 dNavLink = dObj.find('.navLink')
                 dAd =  dObj.find('.adArea'),
                 dMask = dObj.find('.mask'),
@@ -34,6 +35,7 @@
             dToggle.click(function(e){
                 e.preventDefault();
                 classie.toggle( this, 'active' );
+                classie.toggle( menuHeading, 'on' );
                 classie.toggle( menuLeft, 'cbp-spmenu-open' );
                 disableOther( 'showLeft' );
             });
@@ -55,7 +57,9 @@
                 dObj.find('iframe').width($(window).innerWidth());
                 dObj.find('.swipe').width($(window).innerWidth());
                 dObj.find('.item').height(windowHeight);
-                dObj.find('.navList').height(windowHeight);
+                //dObj.find('.navList').height(windowHeight);
+                dObj.find('.dropdown .navList').css('height', 400 + 'px');
+                dObj.find('.dropdown .navList').css('max-height', 400 + 'px');
                 adMaxHeight = windowHeight-imageHeight;
                 dObj.find('.adList').slick({
                     dots: false,
@@ -92,6 +96,23 @@
 
             //touch event init
             function touchInit(){
+                /*
+                $('.container').on('touchmove touchstart touchend touchcancel',function(e){
+                    if(e.type == 'touchmove'){
+                        alert('touchmove');
+                    }
+                    if(e.type == 'touchstart'){
+                        alert('touchstart');
+                    }
+                    if(e.type == 'touchend'){
+                        alert('touchend');
+                    }
+                    if(e.type == 'touchcancel'){
+                        alert('touchcancel');
+                    }                                                            
+                });
+                */
+
                 $(document).on('touchmove',function(e){
                     e.preventDefault();
                 });
@@ -116,8 +137,8 @@
                     touchInit();
                     if($(window).innerWidth()>$(window).innerHeight()){
                         //橫
-                       dMask.show();
-                        
+                       //dMask.show();
+                       dMask.hide(); 
                     }else{
                         //直
                         dMask.hide();
