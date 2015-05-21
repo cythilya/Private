@@ -334,6 +334,17 @@
     <Content Include="Content\file\ebook\css\slick.css" />
     <Content Include="Content\file\ebook\css\style.css" />
     <Content Include="Content\file\ebook\index.html" />
+    <Content Include="Content\file\ebook\js\ajax-loader.gif" />
+    <Content Include="Content\file\ebook\js\classie.js" />
+    <Content Include="Content\file\ebook\js\html5.js" />
+    <Content Include="Content\file\ebook\js\jquery-1.10.2.min.js" />
+    <Content Include="Content\file\ebook\js\jquery-1.8.2.min.js" />
+    <Content Include="Content\file\ebook\js\jquery.ebook.js" />
+    <Content Include="Content\file\ebook\js\jquery.mobile.nav.js" />
+    <Content Include="Content\file\ebook\js\mobile.js" />
+    <Content Include="Content\file\ebook\js\modernizr.custom.js" />
+    <Content Include="Content\file\ebook\js\script.js" />
+    <Content Include="Content\file\ebook\js\slick.min.js" />
     <Content Include="Content\file\ebook\mobile.html" />
     <Content Include="Content\file\ebook_20150520\css\ajax-loader.gif" />
     <Content Include="Content\file\ebook_20150520\css\banner_1.jpg" />
@@ -1683,7 +1694,6 @@
     <Folder Include="Areas\SEOLab\Models\" />
     <Folder Include="Areas\UI\Models\" />
     <Folder Include="Areas\UI\Views\Shared\" />
-    <Folder Include="Content\file\ebook\js\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1778,10 +1788,6 @@
     <None Include="Content\file\ebook_20150520\fonts\fontawesome.ttf" />
     <None Include="Content\file\ebook_20150520\fonts\fontawesome.woff" />
     <None Include="Content\file\ebook_20150520\fonts\readme.md" />
-    <None Include="Content\file\ebook_20150520\js\fonts\slick.eot" />
-    <None Include="Content\file\ebook_20150520\js\fonts\slick.svg" />
-    <None Include="Content\file\ebook_20150520\js\fonts\slick.ttf" />
-    <None Include="Content\file\ebook_20150520\js\fonts\slick.woff" />
     <None Include="Content\me\img\mono-icons\license.rtf" />
     <Content Include="Views\Me\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Portfolio.cshtml" />
