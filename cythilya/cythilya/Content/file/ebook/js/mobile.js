@@ -83,7 +83,6 @@
 
 			//init
 			init();
-			$('.mainNav').niceScroll();
             $(window).resize(function(){
             	init();
                 if($(window).innerWidth()>$(window).innerHeight()){
