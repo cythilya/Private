@@ -340,6 +340,7 @@
     <Content Include="Content\file\ebook\js\jquery-1.10.2.min.js" />
     <Content Include="Content\file\ebook\js\jquery-1.8.2.min.js" />
     <Content Include="Content\file\ebook\js\jquery.mobile.nav.js" />
+    <Content Include="Content\file\ebook\js\jquery.nicescroll.js" />
     <Content Include="Content\file\ebook\js\mobile.js" />
     <Content Include="Content\file\ebook\js\modernizr.custom.js" />
     <Content Include="Content\file\ebook\js\script.js" />
@@ -389,6 +390,7 @@
     <Content Include="Content\file\ebook_20150520\js\jquery-1.10.2.min.js" />
     <Content Include="Content\file\ebook_20150520\js\jquery-1.8.2.min.js" />
     <Content Include="Content\file\ebook_20150520\js\jquery.mobile.nav.js" />
+    <Content Include="Content\file\ebook_20150520\js\jquery.nicescroll.js" />
     <Content Include="Content\file\ebook_20150520\js\mobile.js" />
     <Content Include="Content\file\ebook_20150520\js\modernizr.custom.js" />
     <Content Include="Content\file\ebook_20150520\js\script.js" />
