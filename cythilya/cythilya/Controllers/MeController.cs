@@ -764,9 +764,11 @@ namespace cythilya.Controllers
             proj_1.Date = "Jan 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
             proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。</p>";
-            proj_1.Tag = "Web CampignSite";
+            proj_1.Tag = "Web";
             proj_1.isHighlight = false;
             proj_1.IsShowInPortfolio = true;
+            List<int> partnerList1 = new List<int>(new int[] { 10 });
+            proj_1.Partners = partnerList1;
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_1_snap_1 = new MeModels.SnapshotInfo();
@@ -928,6 +930,8 @@ namespace cythilya.Controllers
             proj_4.Tag = "Web SEO Platform";
             proj_4.isHighlight = false;
             proj_4.IsShowInPortfolio = true;
+            List<int> partnerList4 = new List<int>(new int[] { 10, 11 });
+            proj_4.Partners = partnerList4;
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_4_snap_1 = new MeModels.SnapshotInfo();
@@ -983,6 +987,8 @@ namespace cythilya.Controllers
             proj_5.Tag = "Web CampignSite";
             proj_5.isHighlight = false;
             proj_5.IsShowInPortfolio = true;
+            List<int> partnerList5 = new List<int>(new int[] { 3, 9 });
+            proj_5.Partners = partnerList5;
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_5_snap_1 = new MeModels.SnapshotInfo();
@@ -1038,6 +1044,8 @@ namespace cythilya.Controllers
             proj_6.Tag = "Web CampignSite SEO";
             proj_6.isHighlight = false;
             proj_6.IsShowInPortfolio = true;
+            List<int> partnerList6 = new List<int>(new int[] { 3, 9 });
+            proj_6.Partners = partnerList6;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_6_snap_1 = new MeModels.SnapshotInfo();
@@ -1088,6 +1096,8 @@ namespace cythilya.Controllers
             proj_7.Tag = "Web CampignSite";
             proj_7.isHighlight = false;
             proj_7.IsShowInPortfolio = true;
+            List<int> partnerList7 = new List<int>(new int[] { 6, 12 });
+            proj_7.Partners = partnerList7;
 
             List<MeModels.SnapshotInfo> SnapshotList7 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_7_snap_1 = new MeModels.SnapshotInfo();
@@ -1138,6 +1148,8 @@ namespace cythilya.Controllers
             proj_8.Tag = "Web CampignSite";
             proj_8.isHighlight = false;
             proj_8.IsShowInPortfolio = true;
+            List<int> partnerList8 = new List<int>(new int[] { 3, 9 });
+            proj_8.Partners = partnerList8;
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_8_snap_1 = new MeModels.SnapshotInfo();
@@ -1210,7 +1222,8 @@ namespace cythilya.Controllers
             proj_10.Date = "Sept - Oct 2014";
             proj_10.LauchURL = "http://event.family.com.tw/ice_cream/FansMission";
             proj_10.IsShowInPortfolio = true;
-
+            List<int> partnerList10 = new List<int>(new int[] { 2, 9 });
+            proj_10.Partners = partnerList10;
             var demoRUL = "/Content/me/img/project/eventfamily/eventFamily.gif";
 
             proj_10.HtmlContent = "<p> 只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p><p><img src=" + "/Content/me/img/project/eventfamily/event_family_tablet_mobile_320.png" + "></p><p>RWD(Responsive Web Design)，支援平板、手機等行動裝置瀏覽。</p><p>Demo影片如下。</p><p><a href=" + demoRUL + " target=" + "_blank" + "><img src=" + demoRUL + " width=" + 320 + "></a></p>";
@@ -1251,7 +1264,7 @@ namespace cythilya.Controllers
             proj_11.HtmlContent = "<p>SELF做自己頻道，是台灣第一個專門以服務同志族群的頻道品牌。隸屬於「采昌娛樂多媒體集團」。</p><p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_1.png" + "></p> <br> <p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_2.png" + "></p>";
             proj_11.Tag = "Web Prototype";
             proj_11.isHighlight = false;
-            proj_1.IsShowInPortfolio = false;
+            proj_11.IsShowInPortfolio = false;
 
             List<MeModels.SnapshotInfo> SnapshotList11 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_11_snap_1 = new MeModels.SnapshotInfo();
@@ -1287,6 +1300,8 @@ namespace cythilya.Controllers
             proj_12.Tag = "Web CampignSite";
             proj_12.isHighlight = false;
             proj_12.IsShowInPortfolio = true;
+            List<int> partnerList12 = new List<int>(new int[] { 2 });
+            proj_12.Partners = partnerList12;
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_12_snap_1 = new MeModels.SnapshotInfo();
@@ -1319,6 +1334,8 @@ namespace cythilya.Controllers
             proj_13.Date = "Jan 2015";
             proj_13.LauchURL = "http://2014event.hty.com.tw";
             proj_13.IsShowInPortfolio = true;
+            List<int> partnerList13 = new List<int>(new int[] { 8, 12 });
+            proj_13.Partners = partnerList13;
 
             var demoHTYURL = "https://dl.dropboxusercontent.com/u/78267129/hty_flow.gif";
             proj_13.HtmlContent = "<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p><p><img width=" + 320 + " src=" + demoHTYURL + "></p>";
@@ -1358,6 +1375,8 @@ namespace cythilya.Controllers
             proj_14.Tag = "Web CampignSite";
             proj_14.isHighlight = true;
             proj_14.IsShowInPortfolio = true;
+            List<int> partnerList14 = new List<int>(new int[] { 2 });
+            proj_14.Partners = partnerList14;
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
@@ -1417,6 +1436,8 @@ namespace cythilya.Controllers
             proj_15.Tag = "Web CampignSite";
             proj_15.isHighlight = false;
             proj_15.IsShowInPortfolio = true;
+            List<int> partnerList15 = new List<int>(new int[] { 10 });
+            proj_15.Partners = partnerList15;
 
             List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_15_snap_1 = new MeModels.SnapshotInfo();
@@ -1499,6 +1520,8 @@ namespace cythilya.Controllers
             proj_17.Tag = "Web CampignSite";
             proj_17.isHighlight = true;
             proj_17.IsShowInPortfolio = true;
+            List<int> partnerList17 = new List<int>(new int[] { 4, 9 });
+            proj_17.Partners = partnerList17;
 
             List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_17_snap_1 = new MeModels.SnapshotInfo();
@@ -1946,6 +1969,37 @@ namespace cythilya.Controllers
             partner7.Name = "林顯倫";
             partner7.Website = "https://www.facebook.com/profile.php?id=1312346571&fref=ts";
             partnerList.Add(partner7);
+
+            MeModels.Partner partner8 = new MeModels.Partner();
+            partner8.ID = 8;
+            partner8.Name = "Esther Oles";
+            partner8.Website = "https://www.facebook.com/esther.oles";
+            partnerList.Add(partner8);
+
+            MeModels.Partner partner9 = new MeModels.Partner();
+            partner9.ID = 9;
+            partner9.Name = "Joyce Lo";
+            partner9.Website = "https://www.facebook.com/joyce.lo.73";
+            partnerList.Add(partner9);
+
+            MeModels.Partner partner10= new MeModels.Partner();
+            partner10.ID = 10;
+            partner10.Name = "羅拉拉";
+            partner10.Website = "https://www.facebook.com/lala.luo0812";
+            partnerList.Add(partner10);
+
+            MeModels.Partner partner11 = new MeModels.Partner();
+            partner11.ID = 11;
+            partner11.Name = "Luki Kino";
+            partner11.Website = "https://www.facebook.com/luki.kino";
+            partnerList.Add(partner11);
+
+            MeModels.Partner partner12= new MeModels.Partner();
+            partner12.ID = 12;
+            partner12.Name = "Ryan Liang";
+            partner12.Website = "https://www.facebook.com/ryan7979";
+            partnerList.Add(partner12);
+
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
