@@ -1656,6 +1656,42 @@ namespace cythilya.Controllers
             projList.Add(proj_21);
             #endregion
 
+            #region 2015國際奧林匹克路跑電子秩序冊
+            MeModels.Project proj_22 = new MeModels.Project();
+            proj_22.ID = 22;
+            proj_22.Name = "2015國際奧林匹克路跑電子秩序冊";
+            proj_22.Description = "中華奧會傳承國際奧會組織重視環保議題，積極響應推動ISO 20121活動永續管理規範，以建立乾淨、健康的環保運動環境為目標，今年度奧會路跑首創變革，首推「無紙化」以QR CODE掃描方式下載秩序手冊電子書，大量減少紙張浪費減少對森林的砍伐，希望藉由參與活動的跑友們從自身做環保提昇更環保健康的運動環境。";
+            proj_22.Role = "Front-End Development";
+            proj_22.Tech = "Web Development with SCSS and jQuery";
+            proj_22.URL = "/Me/Project?id=" + proj_22.ID;
+            proj_22.RawPic = "/Content/me/img/project/ebook/ebook_940x367.jpg";
+            proj_22.PicSmall = "/Content/me/img/project/ebook/ebook_188x73.jpg";
+            proj_22.PicMedium = "/Content/me/img/project/ebook/ebook_300.jpg";
+            proj_22.PicLarge = "/Content/me/img/project/ebook/ebook_940x367.jpg";
+            proj_22.PicInFooter = "/Content/me/img/project/ebook/ebook_54x54.jpg";
+            proj_22.Order = 22;
+            proj_22.Client = "中華奧會";
+            proj_22.ClientURL = "http://www.tpenoc.net";
+            proj_22.Date = "May 2015";
+            proj_22.LauchURL = "https://www.eventpal.com.tw/ebook/Olympic/index.html";
+            proj_22.HtmlContent = "<p>中華奧會傳承國際奧會組織重視環保議題，積極響應推動ISO 20121活動永續管理規範，以建立乾淨、健康的環保運動環境為目標，今年度奧會路跑首創變革，首推「無紙化」以QR CODE掃描方式下載秩序手冊電子書，大量減少紙張浪費減少對森林的砍伐，希望藉由參與活動的跑友們從自身做環保提昇更環保健康的運動環境。</p><p>支援桌機與行動裝置瀏覽。</p>";
+            proj_22.Tag = "Web RWD";
+            proj_22.isHighlight = false;
+            proj_22.IsShowInPortfolio = true;
+            List<int> partnerList22 = new List<int>(new int[] { 7 });
+            proj_22.Partners = partnerList22;
+
+            List<MeModels.SnapshotInfo> SnapshotList22 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_22_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_22_snap_1.Name = "2015國際奧林匹克路跑電子秩序冊";
+            proj_22_snap_1.SnapshotURL = "/Content/me/img/project/ebook/ebook_940x367.jpg";
+            SnapshotList22.Add(proj_22_snap_1);
+
+            proj_22.Snapshot = SnapshotList22;
+            projList.Add(proj_22);
+            #endregion
+
             #endregion
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
@@ -1898,6 +1934,18 @@ namespace cythilya.Controllers
             partner5.Name = "I-Six Liu";
             partner5.Website = "https://www.facebook.com/isix.liu";
             partnerList.Add(partner5);
+
+            MeModels.Partner partner6 = new MeModels.Partner();
+            partner6.ID = 6;
+            partner6.Name = "Ho Kuang Jih";
+            partner6.Website = "https://www.facebook.com/blackbear0901";
+            partnerList.Add(partner6);
+
+            MeModels.Partner partner7 = new MeModels.Partner();
+            partner7.ID = 7;
+            partner7.Name = "林顯倫";
+            partner7.Website = "https://www.facebook.com/profile.php?id=1312346571&fref=ts";
+            partnerList.Add(partner7);
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();

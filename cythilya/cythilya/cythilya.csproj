@@ -542,6 +542,14 @@
     <Content Include="Content\me\img\project\dotchi_food\dotchi_index_940x580.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_page_1_940x580.png" />
     <Content Include="Content\me\img\project\dotchi_food\dotchi_page_2_940x580.png" />
+    <Content Include="Content\me\img\project\ebook\ebook_188x73.jpg" />
+    <Content Include="Content\me\img\project\ebook\ebook_300.jpg" />
+    <Content Include="Content\me\img\project\ebook\ebook_54x54.jpg" />
+    <Content Include="Content\me\img\project\ebook\ebook_800.jpg" />
+    <Content Include="Content\me\img\project\ebook\ebook_940x367.jpg" />
+    <Content Include="Content\me\img\project\ebook\ebook_desktop.png" />
+    <Content Include="Content\me\img\project\ebook\ebook_index.png" />
+    <Content Include="Content\me\img\project\ebook\ebook_mobile.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove_188x73.png" />
     <Content Include="Content\me\img\project\emperorlove\emperorlove_300.png" />
@@ -1751,6 +1759,9 @@
     <Content Include="Views\Me\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Portfolio.cshtml" />
     <Content Include="Views\Me\Project.cshtml" />
+    <None Include="Content\me\img\project\ebook\ebook_940x367.psd" />
+    <None Include="Content\me\img\project\ebook\ebook_desktop.psd" />
+    <None Include="Content\me\img\project\ebook\ebook_mobile.psd" />
     <None Include="Content\me\img\project\grapeking\Thumbs.db" />
     <None Include="Content\me\js\poshytip-1.1\demo\includes\Thumbs.db" />
     <None Include="Content\me\js\prettyPhoto\images\prettyPhoto\light_rounded\Thumbs.db" />
