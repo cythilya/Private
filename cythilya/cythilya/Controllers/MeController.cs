@@ -824,6 +824,8 @@ namespace cythilya.Controllers
             proj_2.Tag = "Web Platform";
             proj_2.isHighlight = false;
             proj_2.IsShowInPortfolio = true;
+            List<int> partnerList2 = new List<int>(new int[] { 13 });
+            proj_2.Partners = partnerList2;
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
 
@@ -930,7 +932,7 @@ namespace cythilya.Controllers
             proj_4.Tag = "Web SEO Platform";
             proj_4.isHighlight = false;
             proj_4.IsShowInPortfolio = true;
-            List<int> partnerList4 = new List<int>(new int[] { 10, 11 });
+            List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13 });
             proj_4.Partners = partnerList4;
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
@@ -1300,7 +1302,7 @@ namespace cythilya.Controllers
             proj_12.Tag = "Web CampignSite";
             proj_12.isHighlight = false;
             proj_12.IsShowInPortfolio = true;
-            List<int> partnerList12 = new List<int>(new int[] { 2 });
+            List<int> partnerList12 = new List<int>(new int[] { 2, 14 });
             proj_12.Partners = partnerList12;
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
@@ -1375,7 +1377,7 @@ namespace cythilya.Controllers
             proj_14.Tag = "Web CampignSite";
             proj_14.isHighlight = true;
             proj_14.IsShowInPortfolio = true;
-            List<int> partnerList14 = new List<int>(new int[] { 2 });
+            List<int> partnerList14 = new List<int>(new int[] { 2, 4 });
             proj_14.Partners = partnerList14;
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
@@ -1593,7 +1595,9 @@ namespace cythilya.Controllers
             proj_19.Tag = "Web Platform";
             proj_19.isHighlight = true;
             proj_19.IsShowInPortfolio = true;
-
+            List<int> partnerList19 = new List<int>(new int[] { 7 });
+            proj_19.Partners = partnerList19;
+            
             List<MeModels.SnapshotInfo> SnapshotList19 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_19_snap_1 = new MeModels.SnapshotInfo();
 
@@ -1629,7 +1633,9 @@ namespace cythilya.Controllers
             proj_20.Tag = "Web OfficialWebsite";
             proj_20.isHighlight = false;
             proj_20.IsShowInPortfolio = true;
-
+            List<int> partnerList20 = new List<int>(new int[] { 5 });
+            proj_20.Partners = partnerList20;
+            
             List<MeModels.SnapshotInfo> SnapshotList20 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_20_snap_1 = new MeModels.SnapshotInfo();
 
@@ -2000,6 +2006,17 @@ namespace cythilya.Controllers
             partner12.Website = "https://www.facebook.com/ryan7979";
             partnerList.Add(partner12);
 
+            MeModels.Partner partner13 = new MeModels.Partner();
+            partner13.ID = 13;
+            partner13.Name = "Tonyq Wang";
+            partner13.Website = "https://www.facebook.com/tonylovejava";
+            partnerList.Add(partner13);
+
+            MeModels.Partner partner14 = new MeModels.Partner();
+            partner14.ID = 14;
+            partner14.Name = "Abby Wang";
+            partner14.Website = "https://www.facebook.com/abby.wang.142";
+            partnerList.Add(partner14);
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
