@@ -1,10 +1,13 @@
+html{
+    background: url(bg.gif) repeat-x  center 0;
+}
 body{
-    background: #333;
     overflow-y:hidden;
 }
 .ebook{
-    width: 1536px;
-    height: 1024px;
+    background: url(bg_mix.jpg) repeat;
+    width: 1366px;
+    height: 680px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -14,8 +17,8 @@ body{
         height: 27px;
         display: block;
         position: absolute;
-        left: 30px;
-        top: 30px;
+        left: 10px;
+        top: 10px;
         z-index: 3;
     }    
     .nav{
@@ -46,30 +49,40 @@ body{
             word-wrap: break-word;
             word-break: break-all;
             width: 210px;
+            height: 597px;
+            overflow-y: auto;
             .navItem{
-                padding: 10px 24px;
                 border-bottom: 1px solid #ccc;
                 .navLink{
                     color: #5c5c5c;
                     text-decoration: none;
-                    
+                     padding: 10px 24px;
+                     display: block;
+                    &.active{
+                        background: #eee;
+                    }
                 }
             }
         }
     }
     .mainContent{
         .wrapper{
-            width: 1536px;
-            height: 1024px;
+            width: 1366px;
+            height: 680px;
             overflow: hidden;
             .frame{
                 position: absolute;
                 .item{
                     background: #dc681b;
                     position: relative;
-                    width: 1536px;
-                    height: 1024px;
+                    width: 1366px;
+                    height: 680px;
                     float: left;
+                    .inner{
+                        overflow-y: scroll;
+                        height: auto;  
+                        width: 1555px;                     
+                    }
                     .subItem{
                         float: left;
                         .swipe{
