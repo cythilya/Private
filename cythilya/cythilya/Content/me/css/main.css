@@ -1,0 +1,14 @@
+#portfolio-content {
+  margin-bottom: 0;
+}
+#portfolio-content #project-box .entry-content {
+  width: 680px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+@media all and (max-width: 960px) {
+  #portfolio-content #project-box .entry-content {
+    width: 100%;
+  }
+}

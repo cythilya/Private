@@ -208,6 +208,7 @@
   <ItemGroup>
     <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
     <Content Include="App_Data\VisitorEmailTemplate.html" />
+    <Content Include="Content\me\css\main.css" />
     <Content Include="Content\css\validationEngine.jquery.css" />
     <Content Include="Content\eshopper\css\animate.css" />
     <Content Include="Content\eshopper\css\bootstrap.min.css" />
@@ -1665,6 +1666,7 @@
     <Content Include="Areas\UI\Views\UI\CKEditorPreview.cshtml" />
     <Content Include="Areas\UI\Views\UI\d3SimpleBarChart.cshtml" />
     <Content Include="Areas\UI\Views\UI\AngularJSTodoList.cshtml" />
+    <None Include="Content\me\css\main.scss" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
