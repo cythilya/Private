@@ -17,6 +17,9 @@ body.home #main {
 #portfolio-content{
 	margin-bottom: 0;
 }
+#portfolio-content #project-box .entry-content{
+    width: 680px;
+}
 </style>
 <div id="portfolio-content" class="cf">        	
 	<div class="project-pager cf">
@@ -88,11 +91,9 @@ body.home #main {
                 <p><a href="@(proj.LauchURL)" class="launch" target="_blank">Launch Project</a></p>
             }
         </div>
-        <div class="entry-content">
+        <div class="entry-content" itemprop="description">
         	<h2 class="heading" itemprop="name">@(proj.Name)</h2>
-        	<div class="multicolumn" itemprop="description">
-        		@Html.Raw(proj.HtmlContent)
-        	</div>
+            @Html.Raw(proj.HtmlContent)
         </div>
     </div>
     @if (relatedProjects != null)
