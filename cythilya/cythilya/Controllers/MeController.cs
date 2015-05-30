@@ -1471,8 +1471,13 @@ namespace cythilya.Controllers
             proj_16.Client = "";
             proj_16.ClientURL = "";
             proj_16.Date = "Feb 2015";
-            proj_16.LauchURL = "http://dotchi.apphb.com";
-            proj_16.HtmlContent = "<p></p><p>相關介紹請見<a href=\"http://cythilya.blogspot.tw/2015/02/dotchi.html\" target=\"_blank\">吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)</a></p>";
+            proj_16.LauchURL = "http://cythilya.blogspot.tw/2015/02/dotchi.html";
+
+            StringBuilder sb16 = new StringBuilder();
+            sb16.Append("<p>相關介紹請見 <a href=\"http://cythilya.blogspot.tw/2015/02/dotchi.html\" target=\"_blank\">吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)</a></p>");
+            string str16 = sb16.ToString();
+
+            proj_16.HtmlContent = str16;
             proj_16.Tag = "Web Hackathon";
             proj_16.isHighlight = true;
             List<int> partnerList = new List<int>(new int[] { 1, 2 });
