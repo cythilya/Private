@@ -1094,7 +1094,7 @@ namespace cythilya.Controllers
             proj_7.Client = "亞柏EZ購";
             proj_7.ClientURL = "http://www.apezgo.com";
             proj_7.Date = "July - Aug 2014";
-            proj_7.LauchURL = "http://fathersday.apezgo.com";
+            proj_7.LauchURL = "http://www.friendo.com.tw/Events/Aph";
             proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。</p>";
             proj_7.Tag = "Web CampignSite";
             proj_7.isHighlight = false;
