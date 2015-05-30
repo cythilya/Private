@@ -1435,11 +1435,19 @@ namespace cythilya.Controllers
             proj_15.ClientURL = "http://www.serenafoods.com.tw";
             proj_15.Date = "Jan 2015";
             proj_15.LauchURL = "http://site.friendo.com.tw/serena";
-            proj_15.HtmlContent = "<p>過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！</p>";
+
+            StringBuilder sb15 = new StringBuilder();
+            sb15.Append("<p>過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！</p>");
+            sb15.Append("<p>此活動經由抽籤決定使用者要回答什麼問題，回答後可觀看其他網友的神回覆。</p>");
+            sb15.Append("<p><img src='/Content/me/img/project/serena/serena_2_1.png' alt='喜年來 - 過年拷問神回覆' style='max-width:100%;display:block;'></p>");
+            sb15.Append("<p><img src='/Content/me/img/project/serena/serena_3_1.png' alt='喜年來 - 過年拷問神回覆' style='max-width:100%;display:block;'></p>");
+            string str15 = sb15.ToString();
+
+            proj_15.HtmlContent = str15;
             proj_15.Tag = "Web CampignSite";
             proj_15.isHighlight = false;
             proj_15.IsShowInPortfolio = true;
-            List<int> partnerList15 = new List<int>(new int[] { 10 });
+            List<int> partnerList15 = new List<int>(new int[] { 10, 15, 16 });
             proj_15.Partners = partnerList15;
 
             List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
@@ -2047,6 +2055,19 @@ namespace cythilya.Controllers
             partner14.Name = "Abby Wang";
             partner14.Website = "https://www.facebook.com/abby.wang.142";
             partnerList.Add(partner14);
+
+            MeModels.Partner partner15 = new MeModels.Partner();
+            partner15.ID = 15;
+            partner15.Name = "Hui-Ting Tsai";
+            partner15.Website = "https://www.facebook.com/huiting.tsai.3";
+            partnerList.Add(partner15);
+
+            MeModels.Partner partner16 = new MeModels.Partner();
+            partner16.ID = 16;
+            partner16.Name = "張文燈";
+            partner16.Website = "https://www.facebook.com/wendeng.zhang";
+            partnerList.Add(partner16);
+
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
