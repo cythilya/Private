@@ -1708,7 +1708,7 @@ namespace cythilya.Controllers
             StringBuilder sb22 = new StringBuilder();
             sb22.Append("<p>中華奧會傳承國際奧會組織重視環保議題，積極響應推動ISO 20121活動永續管理規範，以建立乾淨、健康的環保運動環境為目標，今年度奧會路跑首創變革，首推「無紙化」以QR CODE掃描方式下載秩序手冊電子書，大量減少紙張浪費減少對森林的砍伐，希望藉由參與活動的跑友們從自身做環保提昇更環保健康的運動環境。</p>");
             sb22.Append("<p>活動報名網址：<a href='https://goo.gl/kCpKAn' target='_blank'>2015國際奧林匹克路跑</a><br>活動相關報導：<a href='https://goo.gl/jc85kn' target='_blank'>2015國際奧林匹克路跑全台首創依循ISO 20121 活動永續管理規範號召我是奧運選手 打造自己的夢想奧運會即日起熱烈報名中！</a></p>");
-            sb22.Append("<p>支援桌機與行動裝置瀏覽。</p>");
+            sb22.Append("<p>支援桌機與行動裝置瀏覽(RWD)。</p>");
             string str22 = sb22.ToString();
 
             proj_22.HtmlContent = str22;
