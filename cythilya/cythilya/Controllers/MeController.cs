@@ -1374,11 +1374,16 @@ namespace cythilya.Controllers
             proj_14.ClientURL = "http://www.livingartist.com.tw/";
             proj_14.Date = "Jan 2015";
             proj_14.LauchURL = "http://site.friendo.com.tw/livingartist";
-            proj_14.HtmlContent = "<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>";
+
+            StringBuilder sb14 = new StringBuilder();
+            sb14.Append("<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>");
+            string str14 = sb14.ToString();
+
+            proj_14.HtmlContent = str14;
             proj_14.Tag = "Web CampignSite";
             proj_14.isHighlight = true;
             proj_14.IsShowInPortfolio = true;
-            List<int> partnerList14 = new List<int>(new int[] { 2, 4 });
+            List<int> partnerList14 = new List<int>(new int[] { 2, 4, 15, 16 });
             proj_14.Partners = partnerList14;
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
