@@ -1519,8 +1519,16 @@ namespace cythilya.Controllers
             proj_17.ClientURL = "http://www.burgerking.com.tw/index.html";
             proj_17.Date = "Feb 2015";
             proj_17.LauchURL = "http://www.friendo.com.tw/Mission/3958";
-            proj_17.HtmlContent = "<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>";
-            proj_17.Tag = "Web CampignSite";
+
+            StringBuilder sb17 = new StringBuilder();
+            sb17.Append("<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>");
+            sb17.Append("<p>使用者上傳與朋友的合照，挑選相框合成後，即可得到漢堡王心年賀卡。</p>");
+            sb17.Append("<p><img src='/Content/me/img/project/bbk_new_year/bbk_3.jpg' alt='漢堡王心年賀卡' style='max-width:100%;display:block;'></p>");
+            sb17.Append("<p>粉多任務開發任務內頁客製化系統，可快速產出多種不同風格的任務內頁以符合廠商的行銷需求，並做適當的SEO與社群分享優化，便於搜尋和社群平台分享、導流。</p>");
+            string str17 = sb17.ToString();
+
+            proj_17.HtmlContent = str17;
+            proj_17.Tag = "Web CampignSite SEO";
             proj_17.isHighlight = true;
             proj_17.IsShowInPortfolio = true;
             List<int> partnerList17 = new List<int>(new int[] { 4, 9 });
@@ -1528,10 +1536,14 @@ namespace cythilya.Controllers
 
             List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_17_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_17_snap_2 = new MeModels.SnapshotInfo();
 
             proj_17_snap_1.Name = "讓心年在一起 - 漢堡王心年賀卡";
             proj_17_snap_1.SnapshotURL = "/Content/me/img/project/bbk_new_year/bbk_new_year_940x367.png";
             SnapshotList17.Add(proj_17_snap_1);
+            proj_17_snap_2.Name = "讓心年在一起 - 漢堡王心年賀卡";
+            proj_17_snap_2.SnapshotURL = "/Content/me/img/project/bbk_new_year/bbk_4.png";
+            SnapshotList17.Add(proj_17_snap_2);
 
             proj_17.Snapshot = SnapshotList17;
             projList.Add(proj_17);
