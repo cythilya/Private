@@ -1342,7 +1342,7 @@ namespace cythilya.Controllers
 
             StringBuilder sb13 = new StringBuilder();
             sb13.Append("<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p>");
-            sb13.Append("<p><img style='max-width:100%;' src='https://dl.dropboxusercontent.com/u/78267129/hty_flow.gif' /></p>");
+            sb13.Append("<p><img style='max-width:100%;' src='/Content/me/img/project/hty/hty_flow.gif' /></p>");
             string str13 = sb13.ToString();
 
             proj_13.HtmlContent = str13;
