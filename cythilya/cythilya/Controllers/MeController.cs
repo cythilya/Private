@@ -1524,7 +1524,7 @@ namespace cythilya.Controllers
             sb17.Append("<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>");
             sb17.Append("<p>使用者上傳與朋友的合照，挑選相框合成後，即可得到漢堡王心年賀卡。</p>");
             sb17.Append("<p><img src='/Content/me/img/project/bbk_new_year/bbk_3.jpg' alt='漢堡王心年賀卡' style='max-width:100%;display:block;'></p>");
-            sb17.Append("<p>粉多任務開發任務內頁客製化系統，可快速產出多種不同風格的任務內頁以符合廠商的行銷需求，並做適當的SEO與社群分享優化，便於搜尋和社群平台分享、導流。</p>");
+            sb17.Append("<p>粉多任務開發任務客製化系統，可快速產出多種不同風格的任務內頁以符合廠商的行銷需求，並做適當的SEO與社群分享優化，便於搜尋和社群平台分享、導流。</p>");
             string str17 = sb17.ToString();
 
             proj_17.HtmlContent = str17;
