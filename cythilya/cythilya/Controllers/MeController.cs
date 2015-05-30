@@ -929,11 +929,17 @@ namespace cythilya.Controllers
             proj_4.ClientURL = "http://www.friendo.com.tw/About/Friendo";
             proj_4.Date = "Oct 2012 - Present";
             proj_4.LauchURL = "http://www.friendo.com.tw";
-            proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>";
+
+            StringBuilder sb4 = new StringBuilder();
+            sb4.Append("<p>「Friendo 粉多任務」是整合社群、紅利回饋與購物的社交平台，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>");
+            sb4.Append("<p>「Friendo 粉多任務」經過完整的SEO優化，能為整個活動網站帶來更健全的流量、更精準的TA (閱讀 <a href='http://cythilya.blogspot.tw/2014/05/seo-guideline.html' target='_blank'>SEO Guideline</a>)。</p>");
+            string str4 = sb4.ToString();
+
+            proj_4.HtmlContent = str4;
             proj_4.Tag = "Web SEO Platform";
             proj_4.isHighlight = false;
             proj_4.IsShowInPortfolio = true;
-            List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13 });
+            List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13, 12, 16 });
             proj_4.Partners = partnerList4;
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
