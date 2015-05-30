@@ -1667,8 +1667,13 @@ namespace cythilya.Controllers
             proj_21.ClientURL = "https://www.facebook.com/butyhealthgo/timeline";
             proj_21.Date = "May 2015";
             proj_21.LauchURL = "http://i933.com.tw";
-            string mobileSiteURL = "http://i933.com.tw/mobile";
-            proj_21.HtmlContent = "<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！</p><p>支援平板、手機等行動裝置瀏覽。<a href=" + mobileSiteURL + ">行動裝置版網站。</a></p>";
+
+            StringBuilder sb21 = new StringBuilder();
+            sb21.Append("<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！</p>");
+            sb21.Append("<p>支援桌機與行動裝置瀏覽(RWD)，<a href='http://i933.com.tw' target='_blank'>桌機版網站網址</a> / <a href='http://i933.com.tw/mobile' target='_blank'>行動裝置版網站網址</a>。</p>");
+            string str21 = sb21.ToString();
+
+            proj_21.HtmlContent = str21;
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
             proj_21.IsShowInPortfolio = true;
