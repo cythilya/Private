@@ -744,7 +744,7 @@ namespace cythilya.Controllers
             article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
             article_37.isHighlight = false;
             article_37.Time = "May 31, 2015";
-            article_37.isBanner = false;
+            article_37.isBanner = true;
             articleList.Add(article_37);
             #endregion
 
@@ -954,7 +954,7 @@ namespace cythilya.Controllers
 
             proj_4.HtmlContent = str4;
             proj_4.Tag = "Web SEO Platform";
-            proj_4.isHighlight = false;
+            proj_4.isHighlight = true;
             proj_4.IsShowInPortfolio = true;
             List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13, 12, 16 });
             proj_4.Partners = partnerList4;
@@ -1530,7 +1530,7 @@ namespace cythilya.Controllers
 
             proj_16.HtmlContent = str16;
             proj_16.Tag = "Web Hackathon";
-            proj_16.isHighlight = true;
+            proj_16.isHighlight = false;
             List<int> partnerList = new List<int>(new int[] { 1, 2 });
             proj_16.Partners = partnerList;
             proj_16.IsShowInPortfolio = true;
