@@ -731,6 +731,23 @@ namespace cythilya.Controllers
             articleList.Add(article_36);
             #endregion
 
+            #region Modern Web 2015：電子商務與活動平台的SEO到底要做哪些事？
+            MeModels.Article article_37 = new MeModels.Article();
+            article_37.Name = "Modern Web 2015：電子商務與活動平台的SEO到底要做哪些事？";
+            article_37.Description = "SEO到底要做什麼？搜尋引擎對於一般人來說像是個黑盒子，網路上的文件所述影響搜尋引擎的因子又非常多，到底要從哪裡開始優化？";
+            article_37.URL = "http://cythilya.blogspot.tw/2015/05/modern-web-2015-seo.html";
+            article_37.RawPic = "/Content/me/img/blog/modern_web_seo/modern_web_seo.jpg";
+            article_37.PicSmall = "/Content/me/img/blog/modern_web_seo/modern_web_seo_188x73.jpg";
+            article_37.PicMedium = "/Content/me/img/blog/modern_web_seo/modern_web_seo_300.jpg";
+            article_37.PicLarge = "/Content/me/img/blog/modern_web_seo/modern_web_seo_940x367.jpg";
+            article_37.PicInFooter = "/Content/me/img/blog/modern_web_seo/modern_web_seo_54x54.jpg";
+            article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
+            article_37.isHighlight = false;
+            article_37.Time = "May 31, 2015";
+            article_37.isBanner = false;
+            articleList.Add(article_37);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
