@@ -1690,7 +1690,6 @@
     <None Include="Content\eshopper\images\home\Thumbs.db" />
     <None Include="Content\eshopper\images\shop\Thumbs.db" />
     <None Include="Content\eshopper\images\Thumbs.db" />
-    <Content Include="Content\file\resume\Hsin_Hao_Tang_CV.docx" />
     <Content Include="Content\file\resume\Hsin_Hao_Tang_CV.pdf" />
     <None Include="Content\me\img\mono-icons\license.rtf" />
     <Content Include="Views\Me\Portfolio.cshtml" />
