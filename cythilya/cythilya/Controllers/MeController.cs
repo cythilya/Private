@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using cythilya.Models;
 using System.Net.Mail;
+using System.Text;
 
 namespace cythilya.Controllers
 {
@@ -730,6 +731,23 @@ namespace cythilya.Controllers
             articleList.Add(article_36);
             #endregion
 
+            #region Modern Web 2015：電子商務與活動平台的SEO到底要做哪些事？
+            MeModels.Article article_37 = new MeModels.Article();
+            article_37.Name = "Modern Web 2015：電子商務與活動平台的SEO到底要做哪些事？";
+            article_37.Description = "SEO到底要做什麼？搜尋引擎對於一般人來說像是個黑盒子，網路上的文件所述影響搜尋引擎的因子又非常多，到底要從哪裡開始優化？";
+            article_37.URL = "http://cythilya.blogspot.tw/2015/05/modern-web-2015-seo.html";
+            article_37.RawPic = "/Content/me/img/blog/modern_web_seo/modern_web_seo.jpg";
+            article_37.PicSmall = "/Content/me/img/blog/modern_web_seo/modern_web_seo_188x73.jpg";
+            article_37.PicMedium = "/Content/me/img/blog/modern_web_seo/modern_web_seo_300.jpg";
+            article_37.PicLarge = "/Content/me/img/blog/modern_web_seo/modern_web_seo_940x367.jpg";
+            article_37.PicInFooter = "/Content/me/img/blog/modern_web_seo/modern_web_seo_54x54.jpg";
+            article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
+            article_37.isHighlight = false;
+            article_37.Time = "May 31, 2015";
+            article_37.isBanner = true;
+            articleList.Add(article_37);
+            #endregion
+
             #endregion
 
             articleList.Reverse();
@@ -764,9 +782,11 @@ namespace cythilya.Controllers
             proj_1.Date = "Jan 2013";
             proj_1.LauchURL = "http://www.ccii.com.tw/OPZ";
             proj_1.HtmlContent = "<p>ONE PIECE FILM Z【航海王電影:Z】官方網站1月25日決戰新世界。</p>";
-            proj_1.Tag = "Web CampignSite";
+            proj_1.Tag = "Web";
             proj_1.isHighlight = false;
             proj_1.IsShowInPortfolio = true;
+            List<int> partnerList1 = new List<int>(new int[] { 10 });
+            proj_1.Partners = partnerList1;
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_1_snap_1 = new MeModels.SnapshotInfo();
@@ -822,6 +842,8 @@ namespace cythilya.Controllers
             proj_2.Tag = "Web Platform";
             proj_2.isHighlight = false;
             proj_2.IsShowInPortfolio = true;
+            List<int> partnerList2 = new List<int>(new int[] { 13 });
+            proj_2.Partners = partnerList2;
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
 
@@ -924,10 +946,18 @@ namespace cythilya.Controllers
             proj_4.ClientURL = "http://www.friendo.com.tw/About/Friendo";
             proj_4.Date = "Oct 2012 - Present";
             proj_4.LauchURL = "http://www.friendo.com.tw";
-            proj_4.HtmlContent = "<p>粉多任務是整合社群、紅利回饋與購物的社交網站，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>";
+
+            StringBuilder sb4 = new StringBuilder();
+            sb4.Append("<p>「Friendo 粉多任務」是整合社群、紅利回饋與購物的社交平台，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>");
+            sb4.Append("<p>「Friendo 粉多任務」經過完整的SEO優化，能為整個活動網站帶來更健全的流量、更精準的TA (閱讀 <a href='http://cythilya.blogspot.tw/2014/05/seo-guideline.html' target='_blank'>SEO Guideline</a>)。</p>");
+            string str4 = sb4.ToString();
+
+            proj_4.HtmlContent = str4;
             proj_4.Tag = "Web SEO Platform";
-            proj_4.isHighlight = false;
+            proj_4.isHighlight = true;
             proj_4.IsShowInPortfolio = true;
+            List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13, 12, 16 });
+            proj_4.Partners = partnerList4;
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_4_snap_1 = new MeModels.SnapshotInfo();
@@ -983,6 +1013,8 @@ namespace cythilya.Controllers
             proj_5.Tag = "Web CampignSite";
             proj_5.isHighlight = false;
             proj_5.IsShowInPortfolio = true;
+            List<int> partnerList5 = new List<int>(new int[] { 3, 9 });
+            proj_5.Partners = partnerList5;
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_5_snap_1 = new MeModels.SnapshotInfo();
@@ -1038,6 +1070,8 @@ namespace cythilya.Controllers
             proj_6.Tag = "Web CampignSite SEO";
             proj_6.isHighlight = false;
             proj_6.IsShowInPortfolio = true;
+            List<int> partnerList6 = new List<int>(new int[] { 3, 9 });
+            proj_6.Partners = partnerList6;
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_6_snap_1 = new MeModels.SnapshotInfo();
@@ -1083,11 +1117,13 @@ namespace cythilya.Controllers
             proj_7.Client = "亞柏EZ購";
             proj_7.ClientURL = "http://www.apezgo.com";
             proj_7.Date = "July - Aug 2014";
-            proj_7.LauchURL = "http://fathersday.apezgo.com";
+            proj_7.LauchURL = "http://www.friendo.com.tw/Events/Aph";
             proj_7.HtmlContent = "<p>亞柏EZ購與粉多任務合作的活動網站，票選爸爸最想要的父親節禮物並抽獎。</p>";
             proj_7.Tag = "Web CampignSite";
             proj_7.isHighlight = false;
             proj_7.IsShowInPortfolio = true;
+            List<int> partnerList7 = new List<int>(new int[] { 6, 12 });
+            proj_7.Partners = partnerList7;
 
             List<MeModels.SnapshotInfo> SnapshotList7 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_7_snap_1 = new MeModels.SnapshotInfo();
@@ -1138,6 +1174,8 @@ namespace cythilya.Controllers
             proj_8.Tag = "Web CampignSite";
             proj_8.isHighlight = false;
             proj_8.IsShowInPortfolio = true;
+            List<int> partnerList8 = new List<int>(new int[] { 3, 9 });
+            proj_8.Partners = partnerList8;
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_8_snap_1 = new MeModels.SnapshotInfo();
@@ -1210,10 +1248,17 @@ namespace cythilya.Controllers
             proj_10.Date = "Sept - Oct 2014";
             proj_10.LauchURL = "http://event.family.com.tw/ice_cream/FansMission";
             proj_10.IsShowInPortfolio = true;
+            List<int> partnerList10 = new List<int>(new int[] { 2, 9, 16 });
+            proj_10.Partners = partnerList10;
 
-            var demoRUL = "/Content/me/img/project/eventfamily/eventFamily.gif";
+            StringBuilder sb10 = new StringBuilder();
+            sb10.Append("<p>只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p>");
+            sb10.Append("<p>支援桌機與行動裝置瀏覽(RWD)。</p>");
+            sb10.Append("<p><img src='/Content/me/img/project/eventfamily/event_family_tablet_mobile_320.png' alt='全家Fami霜淇淋 小小特務送幸福'></p>");
+            sb10.Append("<p>Demo影片如下。</p><p><img src='/Content/me/img/project/eventfamily/eventFamily.gif' alt='全家Fami霜淇淋 小小特務送幸福' style='max-width:100%;display:block;' /></p>");
+            string str10 = sb10.ToString();
 
-            proj_10.HtmlContent = "<p> 只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p><p><img src=" + "/Content/me/img/project/eventfamily/event_family_tablet_mobile_320.png" + "></p><p>RWD(Responsive Web Design)，支援平板、手機等行動裝置瀏覽。</p><p>Demo影片如下。</p><p><a href=" + demoRUL + " target=" + "_blank" + "><img src=" + demoRUL + " width=" + 320 + "></a></p>";
+            proj_10.HtmlContent = str10;
             proj_10.Tag = "Web CampignSite RWD";
             proj_10.isHighlight = true;
 
@@ -1251,7 +1296,7 @@ namespace cythilya.Controllers
             proj_11.HtmlContent = "<p>SELF做自己頻道，是台灣第一個專門以服務同志族群的頻道品牌。隸屬於「采昌娛樂多媒體集團」。</p><p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_1.png" + "></p> <br> <p><img src=" + "/Content/me/img/project/selftv/selftv_20141102_2.png" + "></p>";
             proj_11.Tag = "Web Prototype";
             proj_11.isHighlight = false;
-            proj_1.IsShowInPortfolio = false;
+            proj_11.IsShowInPortfolio = false;
 
             List<MeModels.SnapshotInfo> SnapshotList11 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_11_snap_1 = new MeModels.SnapshotInfo();
@@ -1265,10 +1310,10 @@ namespace cythilya.Controllers
 
             #endregion
 
-            #region 御奉小餐館 Emperorlove - 後宮爭餅傳
+            #region 後宮爭餅傳《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！
             MeModels.Project proj_12 = new MeModels.Project();
             proj_12.ID = 12;
-            proj_12.Name = "後宮爭餅傳 - 《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！";
+            proj_12.Name = "後宮爭餅傳《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！";
             proj_12.Description = "御奉小餐館與粉多任務合作的活動網站。";
             proj_12.Role = "SEO規劃、Facebook Social Plugins and Graph API技術支援";
             proj_12.Tech = "Web Development with SCSS and jQuery";
@@ -1279,14 +1324,21 @@ namespace cythilya.Controllers
             proj_12.PicLarge = "/Content/me/img/project/emperorlove/emperorlove_940x367.jpg";
             proj_12.PicInFooter = "/Content/me/img/project/emperorlove/emperorlove_54x54.png";
             proj_12.Order = 12;
-            //proj_12.Client = "御奉小餐館";
+            proj_12.Client = "御奉";
             proj_12.ClientURL = "http://www.emperorlove.com.tw";
             proj_12.Date = "Oct 2014";
             proj_12.LauchURL = "http://www.friendo.com.tw/emperorlove";
-            proj_12.HtmlContent = "《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！後宮甄嬛傳不夠看，「後宮爭餅傳」才精彩！到底是什麼樣的特色美食，讓平常毫無心機的姊妹淘，也開始有心機了？且來看看御奉小餐館的心機美食，如可引起姊妹間的爭食搶奪，快邀姊妹淘來一嚐究竟，一起心機過招！參加活動即有四人同行一人我請優惠喔！";
+
+            StringBuilder sb12 = new StringBuilder();
+            sb12.Append("<p>《御奉小餐館emperorlove》心機美食，挑起姊妹間的鬥爭！後宮甄嬛傳不夠看，「後宮爭餅傳」才精彩！到底是什麼樣的特色美食，讓平常毫無心機的姊妹淘，也開始有心機了？且來看看御奉小餐館的心機美食，如可引起姊妹間的爭食搶奪，快邀姊妹淘來一嚐究竟，一起心機過招！參加活動即有四人同行一人我請優惠喔！</p>");
+            string str12 = sb12.ToString();
+
+            proj_12.HtmlContent = str12;
             proj_12.Tag = "Web CampignSite";
             proj_12.isHighlight = false;
             proj_12.IsShowInPortfolio = true;
+            List<int> partnerList12 = new List<int>(new int[] { 2, 14 });
+            proj_12.Partners = partnerList12;
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_12_snap_1 = new MeModels.SnapshotInfo();
@@ -1319,9 +1371,15 @@ namespace cythilya.Controllers
             proj_13.Date = "Jan 2015";
             proj_13.LauchURL = "http://2014event.hty.com.tw";
             proj_13.IsShowInPortfolio = true;
+            List<int> partnerList13 = new List<int>(new int[] { 8, 12, 17 });
+            proj_13.Partners = partnerList13;
 
-            var demoHTYURL = "https://dl.dropboxusercontent.com/u/78267129/hty_flow.gif";
-            proj_13.HtmlContent = "<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p><p><img width=" + 320 + " src=" + demoHTYURL + "></p>";
+            StringBuilder sb13 = new StringBuilder();
+            sb13.Append("<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p>");
+            sb13.Append("<p><img style='max-width:100%;' src='/Content/me/img/project/hty/hty_flow.gif' /></p>");
+            string str13 = sb13.ToString();
+
+            proj_13.HtmlContent = str13;
             proj_13.Tag = "Web CampignSite";
             proj_13.isHighlight = true;//錄製_2014_12_05_22_00_48_818.mp4
 
@@ -1354,10 +1412,17 @@ namespace cythilya.Controllers
             proj_14.ClientURL = "http://www.livingartist.com.tw/";
             proj_14.Date = "Jan 2015";
             proj_14.LauchURL = "http://site.friendo.com.tw/livingartist";
-            proj_14.HtmlContent = "<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>";
+
+            StringBuilder sb14 = new StringBuilder();
+            sb14.Append("<p>分析你的靈魂指數，找出契合姊妹淘，玩就送 P&G 靈魂建議試用品，包括歐蕾、潘婷、飛柔、汰漬！加碼分享私房真心話，人氣最高前 8 名，還能拿千元明星商品，快邀親朋好友幫按讚！更有機會被挑選為 P&G 明星部落客，獲得 Happy Box哦！</p>");
+            string str14 = sb14.ToString();
+
+            proj_14.HtmlContent = str14;
             proj_14.Tag = "Web CampignSite";
             proj_14.isHighlight = true;
             proj_14.IsShowInPortfolio = true;
+            List<int> partnerList14 = new List<int>(new int[] { 2, 4, 15, 16 });
+            proj_14.Partners = partnerList14;
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
@@ -1413,10 +1478,20 @@ namespace cythilya.Controllers
             proj_15.ClientURL = "http://www.serenafoods.com.tw";
             proj_15.Date = "Jan 2015";
             proj_15.LauchURL = "http://site.friendo.com.tw/serena";
-            proj_15.HtmlContent = "<p>過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！</p>";
+
+            StringBuilder sb15 = new StringBuilder();
+            sb15.Append("<p>過年總陷入被親戚追問的窘境？快來 喜年來-過年拷問神回覆 活動網站上傳你的神回覆，就有機會獲得現金 5,000 元、威秀電影票、喜年來原味蛋捲禮盒、雙喜蛋捲禮盒、山藥蛋捲禮盒、咖啡蛋捲禮盒哦！送禮喜年來，歡喜跟著來！</p>");
+            sb15.Append("<p>此活動經由抽籤決定使用者要回答什麼問題，回答後可觀看其他網友的神回覆。</p>");
+            sb15.Append("<p><img src='/Content/me/img/project/serena/serena_2_1.png' alt='喜年來 - 過年拷問神回覆' style='max-width:100%;display:block;'></p>");
+            sb15.Append("<p><img src='/Content/me/img/project/serena/serena_3_1.png' alt='喜年來 - 過年拷問神回覆' style='max-width:100%;display:block;'></p>");
+            string str15 = sb15.ToString();
+
+            proj_15.HtmlContent = str15;
             proj_15.Tag = "Web CampignSite";
             proj_15.isHighlight = false;
             proj_15.IsShowInPortfolio = true;
+            List<int> partnerList15 = new List<int>(new int[] { 10, 15, 16 });
+            proj_15.Partners = partnerList15;
 
             List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_15_snap_1 = new MeModels.SnapshotInfo();
@@ -1447,10 +1522,15 @@ namespace cythilya.Controllers
             proj_16.Client = "";
             proj_16.ClientURL = "";
             proj_16.Date = "Feb 2015";
-            proj_16.LauchURL = "http://dotchi.apphb.com";
-            proj_16.HtmlContent = "<p></p><p>相關介紹請見<a href=\"http://cythilya.blogspot.tw/2015/02/dotchi.html\" target=\"_blank\">吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)</a></p>";
+            proj_16.LauchURL = "http://cythilya.blogspot.tw/2015/02/dotchi.html";
+
+            StringBuilder sb16 = new StringBuilder();
+            sb16.Append("<p>相關介紹請見 <a href=\"http://cythilya.blogspot.tw/2015/02/dotchi.html\" target=\"_blank\">吃什麼，どっち - 讓朋友幫你決定吃什麼 (ALPHA Hackathon 2015)</a></p>");
+            string str16 = sb16.ToString();
+
+            proj_16.HtmlContent = str16;
             proj_16.Tag = "Web Hackathon";
-            proj_16.isHighlight = true;
+            proj_16.isHighlight = false;
             List<int> partnerList = new List<int>(new int[] { 1, 2 });
             proj_16.Partners = partnerList;
             proj_16.IsShowInPortfolio = true;
@@ -1495,17 +1575,31 @@ namespace cythilya.Controllers
             proj_17.ClientURL = "http://www.burgerking.com.tw/index.html";
             proj_17.Date = "Feb 2015";
             proj_17.LauchURL = "http://www.friendo.com.tw/Mission/3958";
-            proj_17.HtmlContent = "<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>";
-            proj_17.Tag = "Web CampignSite";
+
+            StringBuilder sb17 = new StringBuilder();
+            sb17.Append("<p>新年是互相祝賀的節日，除了謝謝親朋好友們過去一年的照顧，同時也希望在新年每個人都能幸福快樂。現在動手製作漢堡王心年賀卡，傳遞感謝與祝福，還有機會抽美麗華電影票、可口可樂隨身碟等多項好禮！</p>");
+            sb17.Append("<p>使用者上傳與朋友的合照，挑選相框合成後，即可得到漢堡王心年賀卡。</p>");
+            sb17.Append("<p><img src='/Content/me/img/project/bbk_new_year/bbk_3.jpg' alt='漢堡王心年賀卡' style='max-width:100%;display:block;'></p>");
+            sb17.Append("<p>粉多任務開發任務客製化系統，可快速產出多種不同風格的任務內頁以符合廠商的行銷需求，並做適當的SEO與社群分享優化，便於搜尋和社群平台分享、導流。</p>");
+            string str17 = sb17.ToString();
+
+            proj_17.HtmlContent = str17;
+            proj_17.Tag = "Web CampignSite SEO";
             proj_17.isHighlight = true;
             proj_17.IsShowInPortfolio = true;
+            List<int> partnerList17 = new List<int>(new int[] { 4, 9 });
+            proj_17.Partners = partnerList17;
 
             List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_17_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_17_snap_2 = new MeModels.SnapshotInfo();
 
             proj_17_snap_1.Name = "讓心年在一起 - 漢堡王心年賀卡";
             proj_17_snap_1.SnapshotURL = "/Content/me/img/project/bbk_new_year/bbk_new_year_940x367.png";
             SnapshotList17.Add(proj_17_snap_1);
+            proj_17_snap_2.Name = "讓心年在一起 - 漢堡王心年賀卡";
+            proj_17_snap_2.SnapshotURL = "/Content/me/img/project/bbk_new_year/bbk_4.png";
+            SnapshotList17.Add(proj_17_snap_2);
 
             proj_17.Snapshot = SnapshotList17;
             projList.Add(proj_17);
@@ -1570,7 +1664,9 @@ namespace cythilya.Controllers
             proj_19.Tag = "Web Platform";
             proj_19.isHighlight = true;
             proj_19.IsShowInPortfolio = true;
-
+            List<int> partnerList19 = new List<int>(new int[] { 7 });
+            proj_19.Partners = partnerList19;
+            
             List<MeModels.SnapshotInfo> SnapshotList19 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_19_snap_1 = new MeModels.SnapshotInfo();
 
@@ -1606,7 +1702,9 @@ namespace cythilya.Controllers
             proj_20.Tag = "Web OfficialWebsite";
             proj_20.isHighlight = false;
             proj_20.IsShowInPortfolio = true;
-
+            List<int> partnerList20 = new List<int>(new int[] { 5 });
+            proj_20.Partners = partnerList20;
+            
             List<MeModels.SnapshotInfo> SnapshotList20 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_20_snap_1 = new MeModels.SnapshotInfo();
 
@@ -1637,8 +1735,13 @@ namespace cythilya.Controllers
             proj_21.ClientURL = "https://www.facebook.com/butyhealthgo/timeline";
             proj_21.Date = "May 2015";
             proj_21.LauchURL = "http://i933.com.tw";
-            string mobileSiteURL = "http://i933.com.tw/mobile";
-            proj_21.HtmlContent = "<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！</p><p>支援平板、手機等行動裝置瀏覽。<a href=" + mobileSiteURL + ">行動裝置版網站。</a></p>";
+
+            StringBuilder sb21 = new StringBuilder();
+            sb21.Append("<p>933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！</p>");
+            sb21.Append("<p>支援桌機與行動裝置瀏覽(RWD)，<a href='http://i933.com.tw' target='_blank'>桌機版網站網址</a> / <a href='http://i933.com.tw/mobile' target='_blank'>行動裝置版網站網址</a>。</p>");
+            string str21 = sb21.ToString();
+
+            proj_21.HtmlContent = str21;
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
             proj_21.IsShowInPortfolio = true;
@@ -1654,6 +1757,49 @@ namespace cythilya.Controllers
 
             proj_21.Snapshot = SnapshotList21;
             projList.Add(proj_21);
+            #endregion
+
+            #region 2015國際奧林匹克路跑電子秩序冊
+            MeModels.Project proj_22 = new MeModels.Project();
+            proj_22.ID = 22;
+            proj_22.Name = "2015國際奧林匹克路跑電子秩序冊";
+            proj_22.Description = "中華奧會傳承國際奧會組織重視環保議題，積極響應推動ISO 20121活動永續管理規範，以建立乾淨、健康的環保運動環境為目標，今年度奧會路跑首創變革，首推「無紙化」以QR CODE掃描方式下載秩序手冊電子書，大量減少紙張浪費減少對森林的砍伐，希望藉由參與活動的跑友們從自身做環保提昇更環保健康的運動環境。";
+            proj_22.Role = "Front-End Development";
+            proj_22.Tech = "Web Development with SCSS and jQuery";
+            proj_22.URL = "/Me/Project?id=" + proj_22.ID;
+            proj_22.RawPic = "/Content/me/img/project/ebook/ebook_940x367.jpg";
+            proj_22.PicSmall = "/Content/me/img/project/ebook/ebook_188x73.jpg";
+            proj_22.PicMedium = "/Content/me/img/project/ebook/ebook_300.jpg";
+            proj_22.PicLarge = "/Content/me/img/project/ebook/ebook_940x367.jpg";
+            proj_22.PicInFooter = "/Content/me/img/project/ebook/ebook_54x54.jpg";
+            proj_22.Order = 22;
+            proj_22.Client = "中華奧會";
+            proj_22.ClientURL = "http://www.tpenoc.net";
+            proj_22.Date = "May 2015";
+            proj_22.LauchURL = "https://www.eventpal.com.tw/ebook/Olympic/index.html";
+
+            StringBuilder sb22 = new StringBuilder();
+            sb22.Append("<p>中華奧會傳承國際奧會組織重視環保議題，積極響應推動ISO 20121活動永續管理規範，以建立乾淨、健康的環保運動環境為目標，今年度奧會路跑首創變革，首推「無紙化」以QR CODE掃描方式下載秩序手冊電子書，大量減少紙張浪費減少對森林的砍伐，希望藉由參與活動的跑友們從自身做環保提昇更環保健康的運動環境。</p>");
+            sb22.Append("<p>活動報名網址：<a href='https://goo.gl/kCpKAn' target='_blank'>2015國際奧林匹克路跑</a><br>活動相關報導：<a href='https://goo.gl/jc85kn' target='_blank'>2015國際奧林匹克路跑全台首創依循ISO 20121 活動永續管理規範號召我是奧運選手 打造自己的夢想奧運會即日起熱烈報名中！</a></p>");
+            sb22.Append("<p>支援桌機與行動裝置瀏覽(RWD)。</p>");
+            string str22 = sb22.ToString();
+
+            proj_22.HtmlContent = str22;
+            proj_22.Tag = "Web RWD";
+            proj_22.isHighlight = false;
+            proj_22.IsShowInPortfolio = true;
+            List<int> partnerList22 = new List<int>(new int[] { 7 });
+            proj_22.Partners = partnerList22;
+
+            List<MeModels.SnapshotInfo> SnapshotList22 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_22_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_22_snap_1.Name = "2015國際奧林匹克路跑電子秩序冊";
+            proj_22_snap_1.SnapshotURL = "/Content/me/img/project/ebook/ebook_940x367.jpg";
+            SnapshotList22.Add(proj_22_snap_1);
+
+            proj_22.Snapshot = SnapshotList22;
+            projList.Add(proj_22);
             #endregion
 
             #endregion
@@ -1898,6 +2044,79 @@ namespace cythilya.Controllers
             partner5.Name = "I-Six Liu";
             partner5.Website = "https://www.facebook.com/isix.liu";
             partnerList.Add(partner5);
+
+            MeModels.Partner partner6 = new MeModels.Partner();
+            partner6.ID = 6;
+            partner6.Name = "Ho Kuang Jih";
+            partner6.Website = "https://www.facebook.com/blackbear0901";
+            partnerList.Add(partner6);
+
+            MeModels.Partner partner7 = new MeModels.Partner();
+            partner7.ID = 7;
+            partner7.Name = "林顯倫";
+            partner7.Website = "https://www.facebook.com/profile.php?id=1312346571&fref=ts";
+            partnerList.Add(partner7);
+
+            MeModels.Partner partner8 = new MeModels.Partner();
+            partner8.ID = 8;
+            partner8.Name = "Esther Oles";
+            partner8.Website = "https://www.facebook.com/esther.oles";
+            partnerList.Add(partner8);
+
+            MeModels.Partner partner9 = new MeModels.Partner();
+            partner9.ID = 9;
+            partner9.Name = "Joyce Lo";
+            partner9.Website = "https://www.facebook.com/joyce.lo.73";
+            partnerList.Add(partner9);
+
+            MeModels.Partner partner10= new MeModels.Partner();
+            partner10.ID = 10;
+            partner10.Name = "羅拉拉";
+            partner10.Website = "https://www.facebook.com/lala.luo0812";
+            partnerList.Add(partner10);
+
+            MeModels.Partner partner11 = new MeModels.Partner();
+            partner11.ID = 11;
+            partner11.Name = "Luki Kino";
+            partner11.Website = "https://www.facebook.com/luki.kino";
+            partnerList.Add(partner11);
+
+            MeModels.Partner partner12= new MeModels.Partner();
+            partner12.ID = 12;
+            partner12.Name = "Ryan Liang";
+            partner12.Website = "https://www.facebook.com/ryan7979";
+            partnerList.Add(partner12);
+
+            MeModels.Partner partner13 = new MeModels.Partner();
+            partner13.ID = 13;
+            partner13.Name = "Tonyq Wang";
+            partner13.Website = "https://www.facebook.com/tonylovejava";
+            partnerList.Add(partner13);
+
+            MeModels.Partner partner14 = new MeModels.Partner();
+            partner14.ID = 14;
+            partner14.Name = "Abby Wang";
+            partner14.Website = "https://www.facebook.com/abby.wang.142";
+            partnerList.Add(partner14);
+
+            MeModels.Partner partner15 = new MeModels.Partner();
+            partner15.ID = 15;
+            partner15.Name = "Hui-Ting Tsai";
+            partner15.Website = "https://www.facebook.com/huiting.tsai.3";
+            partnerList.Add(partner15);
+
+            MeModels.Partner partner16 = new MeModels.Partner();
+            partner16.ID = 16;
+            partner16.Name = "張文燈";
+            partner16.Website = "https://www.facebook.com/wendeng.zhang";
+            partnerList.Add(partner16);
+
+            MeModels.Partner partner17 = new MeModels.Partner();
+            partner17.ID = 17;
+            partner17.Name = "Ho Kuang Jih";
+            partner17.Website = "https://www.facebook.com/blackbear0901";
+            partnerList.Add(partner17);
+
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
