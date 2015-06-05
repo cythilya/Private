@@ -1745,7 +1745,7 @@ namespace cythilya.Controllers
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
             proj_21.IsShowInPortfolio = true;
-            List<int> partnerList21 = new List<int>(new int[] { 5 });
+            List<int> partnerList21 = new List<int>(new int[] { 5, 18 });
             proj_21.Partners = partnerList21;
 
             List<MeModels.SnapshotInfo> SnapshotList21 = new List<MeModels.SnapshotInfo>();
@@ -2116,6 +2116,12 @@ namespace cythilya.Controllers
             partner17.Name = "Ho Kuang Jih";
             partner17.Website = "https://www.facebook.com/blackbear0901";
             partnerList.Add(partner17);
+
+            MeModels.Partner partner18 = new MeModels.Partner();
+            partner18.ID = 18;
+            partner18.Name = "Dana Lee";
+            partner18.Website = "https://www.facebook.com/dana25";
+            partnerList.Add(partner18);
 
             #endregion
 
