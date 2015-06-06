@@ -213,7 +213,15 @@
     <Content Include="Content\file\qr_code\bcard_fb_m.png" />
     <Content Include="Content\file\qr_code\bcard_fb_xl.png" />
     <Content Include="Content\file\qr_code\bcard_m.png" />
-    <Content Include="Content\file\qr_code\qr_code_list.html" />
+    <Content Include="Content\file\qr_code\qr_code_contact\qr_code_contact_100x100.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact\qr_code_contact_200x200.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact\qr_code_contact_300x300.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact\qr_code_contact_50x50.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact_simple\qr_code_contact_simple_100x100.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact_simple\qr_code_contact_simple_200x200.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact_simple\qr_code_contact_simple_300x300.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact_simple\qr_code_contact_simple_50x50.png" />
+    <Content Include="Content\file\qr_code\qr_code_contact\qr_code_contact.html" />
     <Content Include="Content\me\css\main.css" />
     <Content Include="Content\css\validationEngine.jquery.css" />
     <Content Include="Content\eshopper\css\animate.css" />
