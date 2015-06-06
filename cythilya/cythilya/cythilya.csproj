@@ -208,6 +208,12 @@
   <ItemGroup>
     <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
     <Content Include="App_Data\VisitorEmailTemplate.html" />
+    <Content Include="Content\file\qr_code\bcard.png" />
+    <Content Include="Content\file\qr_code\bcard_fb_l.png" />
+    <Content Include="Content\file\qr_code\bcard_fb_m.png" />
+    <Content Include="Content\file\qr_code\bcard_fb_xl.png" />
+    <Content Include="Content\file\qr_code\bcard_m.png" />
+    <Content Include="Content\file\qr_code\qr_code_list.html" />
     <Content Include="Content\me\css\main.css" />
     <Content Include="Content\css\validationEngine.jquery.css" />
     <Content Include="Content\eshopper\css\animate.css" />
