@@ -949,7 +949,7 @@ namespace cythilya.Controllers
 
             StringBuilder sb4 = new StringBuilder();
             sb4.Append("<p>「Friendo 粉多任務」是整合社群、紅利回饋與購物的社交平台，用Facebook臉書登入，尋找自己有興趣的任務來執行。解完任務，馬上取得購物時可以抵扣現金使用的粉多紅利。彩妝保養美食餐券3C雜貨……粉多優惠應有盡有。</p>");
-            sb4.Append("<p>「Friendo 粉多任務」經過完整的SEO優化，能為整個活動網站帶來更健全的流量、更精準的TA (閱讀 <a href='http://cythilya.blogspot.tw/2014/05/seo-guideline.html' target='_blank'>SEO Guideline</a>)。</p>");
+            sb4.Append("<p>「Friendo 粉多任務」經過完整的SEO優化，Orgnaic Search流量成長超過7倍，且在無大型行銷活動期間，仍提供網站穩定的流量來源，並能為整個活動網站帶來更健全的流量、更精準的TA (閱讀 <a href='http://cythilya.blogspot.tw/2014/05/seo-guideline.html' target='_blank'>SEO Guideline</a>)。</p>");
             string str4 = sb4.ToString();
 
             proj_4.HtmlContent = str4;
