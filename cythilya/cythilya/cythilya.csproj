@@ -317,6 +317,7 @@
     <Content Include="Content\js\jquery.cookie.js" />
     <Content Include="Content\js\jquery.validationEngine-en.js" />
     <Content Include="Content\js\jquery.validationEngine.js" />
+    <Content Include="Content\me\img\activity\activity_1\activity_1_940x367.jpg" />
     <Content Include="Content\me\img\blog\247479_5433_54x54.jpg" />
     <Content Include="Content\me\img\blog\250528_3929_54x54.jpg" />
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline.jpg" />
@@ -1801,6 +1802,8 @@
     <Content Include="Views\Me\About.cshtml" />
     <Content Include="Views\Shared\_ContactInfo.cshtml" />
     <Content Include="Views\Me\StructuredDataExamplePage.cshtml" />
+    <Content Include="Views\Me\Activity.cshtml" />
+    <Content Include="Views\Me\ActivityList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

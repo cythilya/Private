@@ -81,6 +81,54 @@ namespace cythilya.Controllers
             return View(); 
         }
 
+        public ActionResult Activity(int id = 0)
+        {
+            List<MeModels.Activity> activityList = new List<MeModels.Activity>();
+            activityList = GetActivityList();
+            MeModels.Activity activity = activityList.Find(item => item.ID == id);
+
+            if (activity == null)
+            {
+                return View("ActivityList");
+            }
+
+            #region 取得參與者
+            if (activity.Participant != null)
+            {
+                GetParticipantList(activity.Participant);
+            }
+            #endregion
+
+            #region 取得地點
+            if (activity.Location != 0)
+            {
+                GetLocation(activity.Location);
+            }
+            #endregion
+
+            #region 取得標籤
+            if (activity.Tag != null)
+            {
+                GetActivityTagList(activity.Tag);
+            }
+            #endregion
+
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            ViewBag.ActivityData = activity;
+            return View();
+        }
+        
+        public ActionResult ActivityList()
+        {
+            GetActivityList();
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            return View();
+        }
+
         //Project
         public ActionResult Project(int id = 0) 
         {
@@ -116,14 +164,6 @@ namespace cythilya.Controllers
             getRecentProject();
             return View();
         }
-
-        //Structured Data Exmaple
-        /*
-        public ActionResult StructuredDataExamplePage() 
-        {
-            return View();
-        }
-         * */
 
         #endregion
 
@@ -2134,6 +2174,124 @@ namespace cythilya.Controllers
             }
 
             ViewBag.PartnerList = projectPartnerList;
+        }
+
+        //Get Activity List
+        public List<MeModels.Activity> GetActivityList()
+        {
+            List<MeModels.Activity> activityList = new List<MeModels.Activity>();
+
+            #region Mock
+
+            #region 活動1
+            MeModels.Activity activity1 = new MeModels.Activity();
+            activity1.ID = 1;
+            activity1.Name = "活動平台行動裝置網站或App設計的現狀探討";
+            activity1.Description = "活動平台行動裝置網站或App設計的現狀探討。";
+            List<int> participant1 = new List<int>(new int[] { 1, 2 });
+            activity1.Participant = participant1;
+            activity1.StartDate = "2015-07-13T19:00";
+            activity1.Time = "July 3, 2015";
+            activity1.Month = "July";
+            activity1.Day = "3";
+            activity1.WebURL = "";
+            List<int> tagList1 = new List<int>(new int[] { 1, 2 });
+            activity1.Tag = tagList1;
+            activity1.Location = 1;
+            activity1.HTMLContent = "";
+
+            List<string> picList = new List<string>();
+            string picItem1 = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
+            picList.Add(picItem1);
+            activity1.Pic = picList;
+
+            activityList.Add(activity1);
+            #endregion
+
+            #endregion
+
+            activityList.Reverse();
+            ViewBag.ActivityList = activityList;
+            return activityList;
+
+        }
+
+        public void GetParticipantList(List<int> participantArray)
+        {
+            List<MeModels.Participant> participantList = new List<MeModels.Participant>();
+            #region Mock
+            MeModels.Participant participant1 = new MeModels.Participant();
+            participant1.ID = 1;
+            participant1.Name = "小奎";
+            participant1.Website = "https://www.facebook.com/profile.php?id=100000189857091&fref=ts";
+            participantList.Add(participant1);
+
+            MeModels.Participant participant2 = new MeModels.Participant();
+            participant2.ID = 2;
+            participant2.Name = "Esther Oles";
+            participant2.Website = "https://www.facebook.com/esther.oles";
+            participantList.Add(participant2);
+            #endregion
+
+            List<MeModels.Participant> participants = new List<MeModels.Participant>();
+
+            foreach (var num in participantArray)
+            {
+                MeModels.Participant participantItem = participantList.Find(item => item.ID == num);
+                participants.Add(participantItem);
+            }
+
+            ViewBag.ParticipantList = participants;
+        }
+
+        public void GetActivityTagList(List<int> tags)
+        {
+            List<MeModels.Tag> tagList = new List<MeModels.Tag>();
+            #region Mock
+            MeModels.Tag tag1 = new MeModels.Tag();
+            tag1.ID = 1;
+            tag1.Name = "Mobile Web";
+            tagList.Add(tag1);
+
+            MeModels.Tag tag2 = new MeModels.Tag();
+            tag2.ID = 2;
+            tag2.Name = "Mobile App";
+            tagList.Add(tag2);
+            #endregion
+
+            List<MeModels.Tag> thisTagList = new List<MeModels.Tag>();
+
+            foreach (var num in tags)
+            {
+                MeModels.Tag tagItem = tagList.Find(item => item.ID == num);
+                thisTagList.Add(tagItem);
+            }
+
+            ViewBag.TagList = thisTagList;
+        }
+
+        public void GetLocation(int location)
+        {
+            List<MeModels.Location> locationList = new List<MeModels.Location>();
+
+            #region Mock
+            MeModels.Location loc1 = new MeModels.Location();
+            loc1.ID = 1;
+            loc1.Name = "";
+            loc1.StreetAddress = ""; //光復南路102號3樓
+            loc1. AddressLocality = ""; //台北市
+            loc1.AddressRegion = ""; //台灣
+            loc1.Latitude = "";
+            loc1.Longitude = "";
+            locationList.Add(loc1);
+            #endregion
+
+            MeModels.Location thisLocationList = new MeModels.Location();
+
+            MeModels.Location locItem = locationList.Find(item => item.ID == location);
+            thisLocationList = locItem;
+
+            ViewBag.Location = thisLocationList;
         }
         #endregion
     }

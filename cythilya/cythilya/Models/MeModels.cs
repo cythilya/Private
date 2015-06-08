@@ -95,5 +95,51 @@ namespace cythilya.Models
             public string Name { get; set; }
             public string Website { get; set; }
         }
+
+        #region 活動
+        public class Activity
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public List<string> Pic { get; set; }
+            public List<int> Participant { get; set; }
+            public string StartDate { get; set; } //2015-06-06T10:00
+            public string Time { get; set; } //2015/06/06 (六)
+            public string Month { get; set; }
+            public String Day { get; set; }
+            public string WebURL { get; set; }
+            public List<int> Tag { get; set; }
+            public int Location { get; set; }
+            public string HTMLContent { get; set; }
+        }
+
+        public class Participant
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public string Website { get; set; }
+        }
+
+        public class Location
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public string StreetAddress { get; set; } //光復南路102號3樓
+            public string AddressLocality { get; set; } //台北市
+            public string AddressRegion { get; set; } //台灣
+            public string Latitude { get; set; }
+            public string Longitude { get; set; }
+        }
+        
+        public class Tag
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+        }
+
+        #endregion
+
+
     }
 }
