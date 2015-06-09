@@ -7,8 +7,8 @@
         
     Layout = "~/Views/Shared/_LayoutMe.cshtml";
     ViewBag.Tab = "";
-    ViewBag.Title = "桑莫讀書會 - " + activity.Name;
-    ViewBag.Description = "桑莫讀書會 - " + activity.Name;
+    ViewBag.Title = activity.Name + " | 桑莫讀書會";
+    ViewBag.Description = activity.Name + " | 桑莫讀書會";
     ViewBag.SharedImage = "http://cythilya.apphb.com" + activity.Pic.First();
 }
 <style>
