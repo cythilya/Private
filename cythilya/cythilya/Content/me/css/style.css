@@ -574,6 +574,12 @@ body.home #main {
 #posts-list article.format-image .format {
   background: url(../img/icon-format-image.png) no-repeat 0px 0px;
 }
+#posts-list article .box .meta .location {
+  background: url(../img/icon-location.png) no-repeat 0px 0px;
+}
+#posts-list article .box .meta .time {
+  background: url(../img/icon-time.png) no-repeat 0px 0px;
+}
 body.single #posts-list {
   width: 640px;
 }

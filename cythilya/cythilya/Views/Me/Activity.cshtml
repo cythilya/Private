@@ -10,12 +10,15 @@
     List<MeModels.Tag> tagList = ViewBag.TagList as List<MeModels.Tag>;
     MeModels.Location location = ViewBag.Location as MeModels.Location;
 }
-<style>body.home #main {padding-top: 40px;}</style>
-@*<div class="masthead cf">讀書會名稱</div>*@
+<style>
+body.home #main {padding-top: 40px;}
+.placeDetail{display:none;}
+.locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
+</style>
 <div id="posts-list" class="cf">
-    <article class="format-standard">
+    <article class="format-standard" itemscope itemtype="http://schema.org/Event">
         <div class="feature-image">
-            <img src="@(activity.Pic.First())" alt="@activity.Name" />
+            <img src="@(activity.Pic.First())" title="@activity.Name" alt="@activity.Name" itemprop="image" />
         </div>
         <div class="box cf">
             <div class="entry-date">
@@ -23,24 +26,42 @@
                 <div class="month">@activity.Month</div>
             </div>
             <div class="excerpt">
-                <div class="post-heading" >@activity.Name</div>
-                <div class="entry-content">@Html.Raw(activity.HTMLContent)</div>
+                <h2 class="post-heading" itemprop="name">@activity.Name</h2>
+                <div class="entry-content" itemprop="description">@Html.Raw(activity.HTMLContent)</div>
             </div>
             <div class="meta">
-                @*<span class="format">Post</span>*@
+                @if (!String.IsNullOrEmpty(activity.NoteURL)) 
+                {
+                    <span class="format"><a href="@(activity.NoteURL)">筆記</a></span>     
+                }
                 <span class="user">
-                @foreach (var user in participantList) 
+                @foreach (var user in participantList)
                 { 
                     <a href="@(user.Website)" target="_blank">@user.Name</a><br>
                 }
                 </span>
                 @*<span class="comments">16 comments</span>*@
                 <span class="tags">
-                @foreach (var tag in tagList) 
+                @foreach (var tag in tagList)
                 { 
                     <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
                 }
                 </span>
+                <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"></span>
+		        <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+			        <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name)</a>
+			        <div class="placeDetail">
+				        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					        <span itemprop="streetAddress">@(location.StreetAddress)</span>,
+					        <span itemprop="addressLocality">@(location.AddressLocality)</span>,
+					        <span itemprop="addressRegion">@(location.AddressRegion)</span>
+				        </div>
+				        <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+					        <meta itemprop="latitude" content="@(location.Latitude)" />
+					        <meta itemprop="longitude" content="@(location.Longitude)" />
+				        </div>	
+			        </div>
+		        </span>
             </div>
         </div>
     </article>

@@ -2188,7 +2188,7 @@ namespace cythilya.Controllers
             activity1.ID = 1;
             activity1.Name = "活動平台行動裝置網站或App設計的現狀探討";
             activity1.Description = "活動平台行動裝置網站或App設計的現狀探討。";
-            List<int> participant1 = new List<int>(new int[] { 1, 2 });
+            List<int> participant1 = new List<int>(new int[] { 1, 2, 3 });
             activity1.Participant = participant1;
             activity1.StartDate = "2015-07-13T19:00";
             activity1.Time = "July 3, 2015";
@@ -2198,12 +2198,16 @@ namespace cythilya.Controllers
             List<int> tagList1 = new List<int>(new int[] { 1, 2 });
             activity1.Tag = tagList1;
             activity1.Location = 1;
-            activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討。</p>";
+            activity1.NoteURL = "/Me/Activity?id=1";
 
+            //圖片
             List<string> picList = new List<string>();
             string picItem1 = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
             picList.Add(picItem1);
             activity1.Pic = picList;
+
+            //內容
+            activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討。</p>";
 
             activityList.Add(activity1);
             #endregion
@@ -2231,6 +2235,12 @@ namespace cythilya.Controllers
             participant2.Name = "Esther Oles";
             participant2.Website = "https://www.facebook.com/esther.oles";
             participantList.Add(participant2);
+
+            MeModels.Participant participant3 = new MeModels.Participant();
+            participant3.ID = 3;
+            participant3.Name = "Hsin-Hao Tang";
+            participant3.Website = "https://www.facebook.com/cythilya";
+            participantList.Add(participant3);
             #endregion
 
             List<MeModels.Participant> participants = new List<MeModels.Participant>();
@@ -2277,12 +2287,13 @@ namespace cythilya.Controllers
             #region Mock
             MeModels.Location loc1 = new MeModels.Location();
             loc1.ID = 1;
-            loc1.Name = "";
-            loc1.StreetAddress = ""; //光復南路102號3樓
-            loc1.AddressLocality = ""; //台北市
-            loc1.AddressRegion = ""; //台灣
-            loc1.Latitude = "";
-            loc1.Longitude = "";
+            loc1.Name = "Peekaboo Coffee 彼咖舖咖啡";
+            loc1.StreetAddress = "忠孝東路三段251巷7弄2號"; //光復南路102號3樓
+            loc1.AddressLocality = "台北市"; //台北市
+            loc1.AddressRegion = "台灣"; //台灣
+            loc1.Latitude = "25.0429298";
+            loc1.Longitude = "121.54177379999999";
+            loc1.URL = "https://www.facebook.com/PeekabooCoffee";
             locationList.Add(loc1);
             #endregion
 

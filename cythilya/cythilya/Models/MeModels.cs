@@ -112,6 +112,7 @@ namespace cythilya.Models
             public List<int> Tag { get; set; }
             public int Location { get; set; }
             public string HTMLContent { get; set; }
+            public string NoteURL { get; set; } //共筆網址
         }
 
         public class Participant
@@ -130,6 +131,7 @@ namespace cythilya.Models
             public string AddressRegion { get; set; } //台灣
             public string Latitude { get; set; }
             public string Longitude { get; set; }
+            public string URL { get; set; }
         }
         
         public class Tag
