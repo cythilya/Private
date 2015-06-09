@@ -2,8 +2,8 @@
 @{
     Layout = "~/Views/Shared/_LayoutMe.cshtml";
     ViewBag.Tab = "";
-    ViewBag.Title = "活動列表 | 讀書會";
-    ViewBag.Description = "活動列表 | 讀書會";
+    ViewBag.Title = "活動列表 | 桑莫讀書會";
+    ViewBag.Description = "活動列表 | 桑莫讀書會";
     List<MeModels.Activity> activityList = ViewBag.ActivityList as List<MeModels.Activity>;
     activityList = activityList.OrderBy(x => x.ID).Reverse().ToList();    
 }
@@ -23,7 +23,7 @@
                     <div class="month">@item.Month</div>
                 </div>
                 <div class="excerpt">
-                    <h2 class="post-heading" itemprop="name">@item.Name</h2>
+                    <h2 class="post-heading" itemprop="name">桑莫讀書會 - @item.Name</h2>
                     <div class="entry-content" itemprop="description">@Html.Raw(item.HTMLContent)</div>
                 </div>
                 <div class="meta">

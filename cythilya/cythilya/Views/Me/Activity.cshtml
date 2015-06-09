@@ -1,14 +1,14 @@
 ﻿@using cythilya.Models;
 @{
-    Layout = "~/Views/Shared/_LayoutMe.cshtml";
-    ViewBag.Tab = "";
-    ViewBag.Title = "讀書會";
-    ViewBag.Description = "讀書會";
-
     MeModels.Activity activity = ViewBag.ActivityData as MeModels.Activity;
     List<MeModels.Participant> participantList = ViewBag.ParticipantList as List<MeModels.Participant>;
     List<MeModels.Tag> tagList = ViewBag.TagList as List<MeModels.Tag>;
     MeModels.Location location = ViewBag.Location as MeModels.Location;
+        
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Tab = "";
+    ViewBag.Title = "桑莫讀書會 - " + activity.Name;
+    ViewBag.Description = "桑莫讀書會 - " + activity.Name;
 }
 <style>
 body.home #main {padding-top: 40px;}
