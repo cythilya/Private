@@ -6,6 +6,7 @@
     MeModels.Project proj = ViewBag.ProjData as MeModels.Project;
     ViewBag.Title = proj.Name + " | Hsin-Hao Tang";
     ViewBag.Description = proj.Name + " | Hsin-Hao Tang";
+    ViewBag.SharedImage = proj.PicLarge;
 
     List<MeModels.RelatedProject> relatedProjects = ViewBag.RelatedProjects as List<MeModels.RelatedProject>;
     List<MeModels.Partner> partnerList = ViewBag.PartnerList as List<MeModels.Partner>;
