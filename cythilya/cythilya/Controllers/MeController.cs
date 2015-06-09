@@ -2207,7 +2207,7 @@ namespace cythilya.Controllers
             activity1.Pic = picList;
 
             //內容
-            activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討。</p>";
+            activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討與改進。</p>";
 
             activityList.Add(activity1);
             #endregion
