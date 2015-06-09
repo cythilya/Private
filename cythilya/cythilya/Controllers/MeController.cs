@@ -2198,7 +2198,7 @@ namespace cythilya.Controllers
             List<int> tagList1 = new List<int>(new int[] { 1, 2 });
             activity1.Tag = tagList1;
             activity1.Location = 1;
-            activity1.HTMLContent = "";
+            activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討。</p>";
 
             List<string> picList = new List<string>();
             string picItem1 = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
@@ -2279,7 +2279,7 @@ namespace cythilya.Controllers
             loc1.ID = 1;
             loc1.Name = "";
             loc1.StreetAddress = ""; //光復南路102號3樓
-            loc1. AddressLocality = ""; //台北市
+            loc1.AddressLocality = ""; //台北市
             loc1.AddressRegion = ""; //台灣
             loc1.Latitude = "";
             loc1.Longitude = "";
