@@ -9,38 +9,65 @@
 }
 <style>body.home #main {padding-top: 40px;}</style>
 <div id="posts-list" class="cf">
-    @if(activityList != null)
+    @if (activityList != null)
     {
-        foreach (var item in activityList) 
+        foreach (var item in activityList)
         {
-        <article class="format-standard">
+        <article class="format-standard" itemscope itemtype="http://schema.org/Event">
             <div class="feature-image">
-                <a href="/Me/Activity?id="@item.ID target="_blank">
-                    <img src="@(item.Pic.First())" alt="@(item.Name)" />
-                </a>
+                <img src="@(item.Pic.First())" title="@item.Name" alt="@item.Name" itemprop="image" />
             </div>
             <div class="box cf">
                 <div class="entry-date">
-                    <div class="number">@(item.Day)</div>
-                    <div class="month">@(item.Month)</div>
+                    <div class="number">@item.Day</div>
+                    <div class="month">@item.Month</div>
                 </div>
                 <div class="excerpt">
-                    <a href="/Me/Activity?id="@item.ID target="_blank" class="post-heading" >@(item.Name)</a>
-                    <p>@(item.Description)</p>
-                    <p> <a href="/Me/Activity?id="@item.ID target="_blank" class="learnmore">Learn More</a></p>
+                    <h2 class="post-heading" itemprop="name">@item.Name</h2>
+                    <div class="entry-content" itemprop="description">@Html.Raw(item.HTMLContent)</div>
                 </div>
                 <div class="meta">
-                    <span class="user"><a href="https://plus.google.com/+CythilyaTang" title="Hsin-Hao Tang" target="_blank">Hsin-Hao Tang</a></span>
-                    <span class="format">@(item.Time)</span>
+                    @if (!String.IsNullOrEmpty(item.NoteURL))
+                    {
+                        <span class="format"><a href="@(item.NoteURL)">筆記</a></span>     
+                    }
                     @*
-                    <span class="format">Post</span>
-                    <span class="user"><a href="#">By LuisZuno, </a></span>
-                    <span class="comments">16 comments</span>
-                    <span class="tags"><a href="#">red</a>, <a href="#">cyan</a>, <a href="#">white</a>, <a href="#">blue</a></span>
+                    <span class="user">
+                    @foreach (var user in participantList)
+                    { 
+                        <a href="@(user.Website)" target="_blank">@user.Name</a><br>
+                    }
+                    </span>
                     *@
+                    <span class="time">@(item.Time) <meta itemprop="startDate" content="@(item.StartDate)"></span>
+                    @*
+		            <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+			            <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name)</a>
+			            <div class="placeDetail">
+				            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					            <span itemprop="streetAddress">@(location.StreetAddress)</span>,
+					            <span itemprop="addressLocality">@(location.AddressLocality)</span>,
+					            <span itemprop="addressRegion">@(location.AddressRegion)</span>
+				            </div>
+				            <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+					            <meta itemprop="latitude" content="@(location.Latitude)" />
+					            <meta itemprop="longitude" content="@(location.Longitude)" />
+				            </div>	
+			            </div>
+		            </span>
+                    *@
+                    @*
+                    <span class="tags">
+                    @foreach (var tag in tagList)
+                    { 
+                        <a href="" target="_blank">@(tag.Name)</a><br>
+                    }
+                    </span>
+                    *@
+                    @*<span class="comments">16 comments</span>*@
                 </div>
             </div>
-        </article>             
+        </article>       
         }
     }
     @*

@@ -2186,8 +2186,8 @@ namespace cythilya.Controllers
             #region 活動1
             MeModels.Activity activity1 = new MeModels.Activity();
             activity1.ID = 1;
-            activity1.Name = "活動平台行動裝置網站或App設計的現狀探討";
-            activity1.Description = "活動平台行動裝置網站或App設計的現狀探討。";
+            activity1.Name = "桑莫讀書會 - 活動平台行動裝置網站或App設計的現狀探討與改進";
+            activity1.Description = "活動平台行動裝置網站或App設計的現狀探討與改進。";
             List<int> participant1 = new List<int>(new int[] { 1, 2, 3 });
             activity1.Participant = participant1;
             activity1.StartDate = "2015-07-13T19:00";

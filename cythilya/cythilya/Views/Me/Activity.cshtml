@@ -40,13 +40,6 @@ body.home #main {padding-top: 40px;}
                     <a href="@(user.Website)" target="_blank">@user.Name</a><br>
                 }
                 </span>
-                @*<span class="comments">16 comments</span>*@
-                <span class="tags">
-                @foreach (var tag in tagList)
-                { 
-                    <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
-                }
-                </span>
                 <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"></span>
 		        <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
 			        <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name)</a>
@@ -62,10 +55,18 @@ body.home #main {padding-top: 40px;}
 				        </div>	
 			        </div>
 		        </span>
+                <span class="tags">
+                @foreach (var tag in tagList)
+                { 
+                    <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
+                }
+                </span>
+                @*<span class="comments">16 comments</span>*@
             </div>
         </div>
     </article>
 </div>
+@*
 <aside id="sidebar">
     <ul>
         <li class="block">
@@ -95,3 +96,4 @@ body.home #main {padding-top: 40px;}
         </li>
     </ul>
 </aside>
+*@
