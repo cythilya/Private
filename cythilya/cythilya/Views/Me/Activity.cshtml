@@ -31,16 +31,6 @@ body.home #main {padding-top: 40px;}
                 <div class="entry-content" itemprop="description">@Html.Raw(activity.HTMLContent)</div>
             </div>
             <div class="meta">
-                @if (!String.IsNullOrEmpty(activity.NoteURL)) 
-                {
-                    <span class="format"><a href="@(activity.NoteURL)">筆記</a></span>     
-                }
-                <span class="user">
-                @foreach (var user in participantList)
-                { 
-                    <a href="@(user.Website)" target="_blank">@user.Name</a><br>
-                }
-                </span>
                 <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"></span>
 		        <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
 			        <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name)</a>
@@ -56,11 +46,21 @@ body.home #main {padding-top: 40px;}
 				        </div>	
 			        </div>
 		        </span>
+                @if (!String.IsNullOrEmpty(activity.NoteURL))
+                {
+                    <span class="format"><a href="@(activity.NoteURL)">筆記</a></span>
+                }
                 <span class="tags">
                 @foreach (var tag in tagList)
                 { 
                     <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
                 }
+                </span>
+                <span class="user">
+                    @foreach (var user in participantList)
+                    {
+                        <a href="@(user.Website)" target="_blank">@user.Name</a><br>
+                    }
                 </span>
                 @*<span class="comments">16 comments</span>*@
             </div>
