@@ -1681,27 +1681,26 @@ namespace cythilya.Controllers
             */
             #endregion
 
-            #region 活動咖 - 未上作品集
-            /*
+            #region 活動咖
             MeModels.Project proj_19 = new MeModels.Project();
             proj_19.ID = 19;
             proj_19.Name = "活動咖";
-            proj_19.Description = "活動咖 Eventpal - 專業賽事、活動報名與購物平台";
+            proj_19.Description = "活動咖 Eventpal - 專業賽事、活動報名與購物平台。";
             proj_19.Role = "UI Design and Front-End Development";
             proj_19.Tech = "Web Development with SCSS and jQuery";
             proj_19.URL = "/Me/Project?id=19";
-            proj_19.RawPic = "/Content/me/img/project/eventpal/eventpal.png";
-            proj_19.PicSmall = "/Content/me/img/project/eventpal/eventpal_188x73.png";
-            proj_19.PicMedium = "/Content/me/img/project/eventpal/eventpal_300.png";
-            proj_19.PicLarge = "/Content/me/img/project/eventpal/eventpal_940x367.png";
-            proj_19.PicInFooter = "/Content/me/img/project/eventpal/eventpal_54x54.png";
+            proj_19.RawPic = "/Content/me/img/project/eventpal_v2/eventpal_v2.png";
+            proj_19.PicSmall = "/Content/me/img/project/eventpal_v2/eventpal_v2_188x73.png";
+            proj_19.PicMedium = "/Content/me/img/project/eventpal_v2/eventpal_v2_300.png";
+            proj_19.PicLarge = "/Content/me/img/project/eventpal_v2/eventpal_v2_940x367.png";
+            proj_19.PicInFooter = "/Content/me/img/project/eventpal_v2/eventpal_v2_54x54.png";
             proj_19.Order = 19;
             proj_19.Client = "Uni-Net 聯網國際";
             proj_19.ClientURL = "http://www.uni-net.com.tw";
-            proj_19.Date = "April 2015";
-            proj_19.LauchURL = "eventpal.com.tw";
+            proj_19.Date = "Jun 2015";
+            proj_19.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/IndexNew.action";
             proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。</p>";
-            proj_19.Tag = "Web Platform";
+            proj_19.Tag = "Web Platform SEO";
             proj_19.isHighlight = true;
             proj_19.IsShowInPortfolio = true;
             List<int> partnerList19 = new List<int>(new int[] { 7 });
@@ -1710,13 +1709,12 @@ namespace cythilya.Controllers
             List<MeModels.SnapshotInfo> SnapshotList19 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_19_snap_1 = new MeModels.SnapshotInfo();
 
-            proj_19_snap_1.Name = "活動咖";
-            proj_19_snap_1.SnapshotURL = "/Content/me/img/project/thsr/thsr_940x367.png";
+            proj_19_snap_1.Name = "活動咖 Eventpal";
+            proj_19_snap_1.SnapshotURL = "/Content/me/img/project/eventpal_v2/eventpal_v2.png";
             SnapshotList19.Add(proj_19_snap_1);
 
             proj_19.Snapshot = SnapshotList19;
             projList.Add(proj_19);
-             * */
             #endregion
 
             #region VOLVING沐頤健康概念館 - 未上作品集
