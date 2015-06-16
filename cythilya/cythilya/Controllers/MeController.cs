@@ -1681,10 +1681,10 @@ namespace cythilya.Controllers
             */
             #endregion
 
-            #region 活動咖
+            #region 活動咖 Eventpal
             MeModels.Project proj_19 = new MeModels.Project();
             proj_19.ID = 19;
-            proj_19.Name = "活動咖";
+            proj_19.Name = "活動咖 Eventpal";
             proj_19.Description = "活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。";
             proj_19.Role = "UI Design and Front-End Development";
             proj_19.Tech = "Web Development with SCSS and jQuery";
