@@ -1659,7 +1659,7 @@ namespace cythilya.Controllers
             proj_18.PicMedium = "/Content/me/img/project/thsr/thsr_300.png";
             proj_18.PicLarge = "/Content/me/img/project/thsr/thsr_940x367.png";
             proj_18.PicInFooter = "/Content/me/img/project/thsr/thsr_54x54.png";
-            proj_18.Order = 18;
+            proj_18.Order = 22;
             proj_18.Client = "台灣高速鐵路股份有限公司";
             proj_18.ClientURL = "";
             proj_18.Date = "April 2015";
@@ -1685,7 +1685,7 @@ namespace cythilya.Controllers
             MeModels.Project proj_19 = new MeModels.Project();
             proj_19.ID = 19;
             proj_19.Name = "活動咖";
-            proj_19.Description = "活動咖 Eventpal - 專業賽事、活動報名與購物平台。";
+            proj_19.Description = "活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。";
             proj_19.Role = "UI Design and Front-End Development";
             proj_19.Tech = "Web Development with SCSS and jQuery";
             proj_19.URL = "/Me/Project?id=19";
@@ -1694,16 +1694,16 @@ namespace cythilya.Controllers
             proj_19.PicMedium = "/Content/me/img/project/eventpal_v2/eventpal_v2_300.png";
             proj_19.PicLarge = "/Content/me/img/project/eventpal_v2/eventpal_v2_940x367.png";
             proj_19.PicInFooter = "/Content/me/img/project/eventpal_v2/eventpal_v2_54x54.png";
-            proj_19.Order = 19;
+            proj_19.Order = 20;
             proj_19.Client = "Uni-Net 聯網國際";
             proj_19.ClientURL = "http://www.uni-net.com.tw";
             proj_19.Date = "Jun 2015";
             proj_19.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/IndexNew.action";
-            proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。</p>";
+            proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
             proj_19.Tag = "Web Platform SEO";
-            proj_19.isHighlight = true;
+            proj_19.isHighlight = false;
             proj_19.IsShowInPortfolio = true;
-            List<int> partnerList19 = new List<int>(new int[] { 7 });
+            List<int> partnerList19 = new List<int>(new int[] { 7, 19 });
             proj_19.Partners = partnerList19;
             
             List<MeModels.SnapshotInfo> SnapshotList19 = new List<MeModels.SnapshotInfo>();
@@ -1720,7 +1720,7 @@ namespace cythilya.Controllers
             #region VOLVING沐頤健康概念館 - 未上作品集
             /*
             MeModels.Project proj_20 = new MeModels.Project();
-            proj_20.ID = 20;
+            proj_20.ID = 21;
             proj_20.Name = "VOLVING沐頤健康概念館";
             proj_20.Description = "VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。";
             proj_20.Role = "Front-End Development";
@@ -1768,7 +1768,7 @@ namespace cythilya.Controllers
             proj_21.PicMedium = "/Content/me/img/project/933/933_300.png";
             proj_21.PicLarge = "/Content/me/img/project/933/933_940x367.png";
             proj_21.PicInFooter = "/Content/me/img/project/933/933_54x54.png";
-            proj_21.Order = 21;
+            proj_21.Order = 18;
             proj_21.Client = "四神湯家族";
             proj_21.ClientURL = "https://www.facebook.com/butyhealthgo/timeline";
             proj_21.Date = "May 2015";
@@ -1810,7 +1810,7 @@ namespace cythilya.Controllers
             proj_22.PicMedium = "/Content/me/img/project/ebook/ebook_300.jpg";
             proj_22.PicLarge = "/Content/me/img/project/ebook/ebook_940x367.jpg";
             proj_22.PicInFooter = "/Content/me/img/project/ebook/ebook_54x54.jpg";
-            proj_22.Order = 22;
+            proj_22.Order = 19;
             proj_22.Client = "中華奧會";
             proj_22.ClientURL = "http://www.tpenoc.net";
             proj_22.Date = "May 2015";
@@ -2160,6 +2160,12 @@ namespace cythilya.Controllers
             partner18.Name = "Dana Lee";
             partner18.Website = "https://www.facebook.com/dana25";
             partnerList.Add(partner18);
+
+            MeModels.Partner partner19 = new MeModels.Partner();
+            partner19.ID = 19;
+            partner19.Name = "吳清霖";
+            partner19.Website = "https://www.facebook.com/fsz570";
+            partnerList.Add(partner19);
 
             #endregion
 
