@@ -526,6 +526,12 @@
     <Content Include="Content\me\img\project\eventfamily\fami_index_940.png" />
     <Content Include="Content\me\img\project\eventfamily\fami_index_940x367.jpg" />
     <Content Include="Content\me\img\project\eventfamily\fami_index_940x367.png" />
+    <Content Include="Content\me\img\project\eventpal_v2\eventpal_v2.png" />
+    <Content Include="Content\me\img\project\eventpal_v2\eventpal_v2_188x73.png" />
+    <Content Include="Content\me\img\project\eventpal_v2\eventpal_v2_300.png" />
+    <Content Include="Content\me\img\project\eventpal_v2\eventpal_v2_54x54.png" />
+    <Content Include="Content\me\img\project\eventpal_v2\eventpal_v2_800.png" />
+    <Content Include="Content\me\img\project\eventpal_v2\eventpal_v2_940x367.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_about_940.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_index.png" />
     <Content Include="Content\me\img\project\grapeking\grapeking_index_54x54.png" />
