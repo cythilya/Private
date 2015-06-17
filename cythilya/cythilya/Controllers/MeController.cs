@@ -2203,12 +2203,7 @@ namespace cythilya.Controllers
             activity1.Tag = tagList1;
             activity1.Location = 1;
             activity1.NoteURL = "/Me/Activity?id=1";
-
-            //圖片
-            List<string> picList = new List<string>();
-            string picItem1 = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
-            picList.Add(picItem1);
-            activity1.Pic = picList;
+            activity1.Pic = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
 
             //內容
             activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討與改進。</p>";

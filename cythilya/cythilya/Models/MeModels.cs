@@ -102,7 +102,7 @@ namespace cythilya.Models
             public int ID { get; set; }
             public string Name { get; set; }
             public string Description { get; set; }
-            public List<string> Pic { get; set; }
+            public string Pic { get; set; }
             public List<int> Participant { get; set; }
             public string StartDate { get; set; } //2015-06-06T10:00
             public string Time { get; set; } //2015/06/06 (六)
