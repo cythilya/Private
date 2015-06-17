@@ -1812,6 +1812,7 @@
     <Content Include="Views\Me\StructuredDataExamplePage.cshtml" />
     <Content Include="Views\Me\Activity.cshtml" />
     <Content Include="Views\Me\ActivityList.cshtml" />
+    <Content Include="Views\Me\Activity\activity_1.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

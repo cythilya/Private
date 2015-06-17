@@ -2206,7 +2206,7 @@ namespace cythilya.Controllers
 
             //圖片
             List<string> picList = new List<string>();
-            string picItem1 = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
+            string picItem1 = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
             picList.Add(picItem1);
             activity1.Pic = picList;
 

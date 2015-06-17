@@ -15,6 +15,7 @@
 body.home #main {padding-top: 40px;}
 .placeDetail{display:none;}
 .locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
+.entry-content .inner{margin-bottom: 20px;}
 </style>
 <div id="posts-list" class="cf">
     <article class="format-standard" itemscope itemtype="http://schema.org/Event">
@@ -28,7 +29,16 @@ body.home #main {padding-top: 40px;}
             </div>
             <div class="excerpt">
                 <h2 class="post-heading" itemprop="name">@activity.Name</h2>
-                <div class="entry-content" itemprop="description">@Html.Raw(activity.HTMLContent)</div>
+                <div class="entry-content" itemprop="description">
+                    <div class="inner">
+                        @Html.Partial("/Views/Me/Activity/activity_" + (activity.ID) + ".cshtml")
+                    </div>
+                    ...
+                    @if (!String.IsNullOrEmpty(activity.NoteURL))
+                    {
+                        <a href="@(activity.NoteURL)">看更多內容</a>
+                    }
+                </div>
             </div>
             <div class="meta">
                 <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"></span>
@@ -46,10 +56,6 @@ body.home #main {padding-top: 40px;}
 				        </div>	
 			        </div>
 		        </span>
-                @if (!String.IsNullOrEmpty(activity.NoteURL))
-                {
-                    <span class="format"><a href="@(activity.NoteURL)">筆記</a></span>
-                }
                 <span class="tags">
                 @foreach (var tag in tagList)
                 { 
@@ -62,6 +68,10 @@ body.home #main {padding-top: 40px;}
                         <a href="@(user.Website)" target="_blank">@user.Name</a><br>
                     }
                 </span>
+                @if (!String.IsNullOrEmpty(activity.NoteURL))
+                {
+                    <span class="format"><a href="@(activity.NoteURL)">活動內容/筆記</a></span>
+                }
                 @*<span class="comments">16 comments</span>*@
             </div>
         </div>
