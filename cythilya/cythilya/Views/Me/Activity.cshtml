@@ -18,9 +18,9 @@ body.home #main {padding-top: 40px;}
 .entry-content .inner{margin-bottom: 20px;}
 </style>
 <div id="posts-list" class="cf">
-    <article class="format-standard" itemscope itemtype="http://schema.org/Event">
+    <article class="format-standard" itemscope itemtype="http://data-vocabulary.org/Event">
         <div class="feature-image">
-            <img src="@(activity.Pic)" title="@activity.Name" alt="@activity.Name" itemprop="image" />
+            <img src="@(activity.Pic)" title="@activity.Name" alt="@activity.Name" />
         </div>
         <div class="box cf">
             <div class="entry-date">
@@ -29,6 +29,7 @@ body.home #main {padding-top: 40px;}
             </div>
             <div class="excerpt">
                 <h2 class="post-heading" itemprop="name">@activity.Name</h2>
+                <meta itemprop="summary" content="@activity.Description" />
                 <div class="entry-content" itemprop="description">
                     <div class="inner">
                         @Html.Partial("/Views/Me/Activity/activity_" + (activity.ID) + ".cshtml")
@@ -41,7 +42,10 @@ body.home #main {padding-top: 40px;}
                 </div>
             </div>
             <div class="meta">
-                <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"> <meta itemprop="endDate" content="@(activity.StartDate)"> </span>
+                <span class="time">@(activity.Time) 
+                    <meta itemprop="startDate" content="@(activity.StartDate)">
+                    <meta itemprop="endDate" content="@(activity.StartDate)">
+                </span>
                 <span class="location">
                     <a class="locationName" href="@(location.URL)" target="_blank">@(location.Name) (@location.AddressLocality @location.StreetAddress)</a>
                     <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
@@ -50,29 +54,29 @@ body.home #main {padding-top: 40px;}
                             <meta itemprop="street-address" content="@location.AddressLocality @location.StreetAddress" />
                             <meta itemprop="region" content="台灣" />
                         </span>
-                    </span>   
+                    </span>
                 </span>
                 @*
-                <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
-			        <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name) (@location.AddressLocality @location.StreetAddress)</a>
-			        <div class="placeDetail">
-				        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-					        <span itemprop="streetAddress">@(location.StreetAddress)</span>,
-					        <span itemprop="addressLocality">@(location.AddressLocality)</span>,
-					        <span itemprop="addressRegion">@(location.AddressRegion)</span>
-				        </div>
-				        <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-					        <meta itemprop="latitude" content="@(location.Latitude)" />
-					        <meta itemprop="longitude" content="@(location.Longitude)" />
-				        </div>	
-			        </div>
-		        </span>
+                    <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+                        <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name) (@location.AddressLocality @location.StreetAddress)</a>
+                        <div class="placeDetail">
+                            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                <span itemprop="streetAddress">@(location.StreetAddress)</span>,
+                                <span itemprop="addressLocality">@(location.AddressLocality)</span>,
+                                <span itemprop="addressRegion">@(location.AddressRegion)</span>
+                            </div>
+                            <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                                <meta itemprop="latitude" content="@(location.Latitude)" />
+                                <meta itemprop="longitude" content="@(location.Longitude)" />
+                            </div>
+                        </div>
+                    </span>
                 *@
                 <span class="tags">
-                @foreach (var tag in tagList)
-                { 
-                    <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
-                }
+                    @foreach (var tag in tagList)
+                    {
+                        <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
+                    }
                 </span>
                 <span class="user">
                     @foreach (var user in participantList)
