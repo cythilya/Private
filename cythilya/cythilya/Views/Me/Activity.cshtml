@@ -41,7 +41,7 @@ body.home #main {padding-top: 40px;}
                 </div>
             </div>
             <div class="meta">
-                <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"></span>
+                <span class="time">@(activity.Time) <meta itemprop="startDate" content="@(activity.StartDate)"> <meta itemprop="endDate" content="@(activity.StartDate)"> </span>
 		        <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
 			        <a class="locationName" href="@(location.URL)" target="_blank" itemprop="name">@(location.Name) (@location.AddressLocality @location.StreetAddress)</a>
 			        <div class="placeDetail">
