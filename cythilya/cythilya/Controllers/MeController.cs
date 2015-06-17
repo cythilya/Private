@@ -2194,7 +2194,7 @@ namespace cythilya.Controllers
             activity1.Description = "活動平台行動裝置網站或App設計的現狀探討與改進。";
             List<int> participant1 = new List<int>(new int[] { 1, 2, 3 });
             activity1.Participant = participant1;
-            activity1.StartDate = "2015-07-03";
+            activity1.StartDate = "2015-07-03T19:00";
             activity1.Time = "July 3, 2015";
             activity1.Month = "July";
             activity1.Day = "3";
