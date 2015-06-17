@@ -17,23 +17,25 @@ body.home #main {padding-top: 40px;}
 .locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
 .entry-content .inner{margin-bottom: 20px;}
 </style>
-<script type="application/ld+json">
-    {
-    "@@context" : "http://schema.org",
-    "@@type" : "Event",
-    "name" : "@activity.Name",
-    "startDate" : "@activity.Time",
-    "description" : "@activity.Description",
-    "url" : "@(activity.NoteURL)",
-    "location" : {
-    "@@type" : "Place",
-    "name" : "@location.Name",
-    "address" : {
-        "@@type" : "PostalAddress",
-        "addressCountry" : "@location.AddressLocality"
+@*
+    <script type="application/ld+json">
+        {
+        "@@context" : "http://schema.org",
+        "@@type" : "Event",
+        "name" : "@activity.Name",
+        "startDate" : "@activity.Time",
+        "description" : "@activity.Description",
+        "url" : "@(activity.NoteURL)",
+        "location" : {
+        "@@type" : "Place",
+        "name" : "@location.Name",
+        "address" : {
+            "@@type" : "PostalAddress",
+            "addressCountry" : "@location.AddressLocality"
+        }
     }
-}
-</script>
+    </script>
+*@
 <div id="posts-list" class="cf">
     <article class="format-standard" itemscope itemtype="http://data-vocabulary.org/Event">
         <div class="feature-image">
