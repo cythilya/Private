@@ -318,6 +318,12 @@
     <Content Include="Content\js\jquery.validationEngine-en.js" />
     <Content Include="Content\js\jquery.validationEngine.js" />
     <Content Include="Content\me\img\activity\activity_1\activity_1_940x367.jpg" />
+    <Content Include="Content\me\img\activity\activity_1\mobile_web_app.jpg" />
+    <Content Include="Content\me\img\activity\activity_1\mobile_web_app_188x73.jpg" />
+    <Content Include="Content\me\img\activity\activity_1\mobile_web_app_300.jpg" />
+    <Content Include="Content\me\img\activity\activity_1\mobile_web_app_54x54.jpg" />
+    <Content Include="Content\me\img\activity\activity_1\mobile_web_app_800.jpg" />
+    <Content Include="Content\me\img\activity\activity_1\mobile_web_app_940x367.jpg" />
     <Content Include="Content\me\img\blog\247479_5433_54x54.jpg" />
     <Content Include="Content\me\img\blog\250528_3929_54x54.jpg" />
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline.jpg" />
