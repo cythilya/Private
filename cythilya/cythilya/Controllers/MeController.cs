@@ -129,6 +129,15 @@ namespace cythilya.Controllers
             return View();
         }
 
+        public ActionResult ActivityListArchieve()
+        {
+            GetActivityList();
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject();
+            return View();
+        }
+
         //Project
         public ActionResult Project(int id = 0) 
         {
