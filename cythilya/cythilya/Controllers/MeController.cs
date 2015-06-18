@@ -129,7 +129,7 @@ namespace cythilya.Controllers
             return View();
         }
 
-        public ActionResult ActivityListArchieve()
+        public ActionResult Activities()
         {
             GetActivityList();
             getRecentPostList();
@@ -2231,6 +2231,7 @@ namespace cythilya.Controllers
             activity1.NoteURL = "/Me/Activity?id=1";
             activity1.Pic = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
             activity1.HTMLContent = "";
+            activity1.isTest = false;
             activityList.Add(activity1);
             #endregion
 
@@ -2295,6 +2296,7 @@ namespace cythilya.Controllers
                 activitySample.NoteURL = "/Me/Activity?id=" + i;
                 activitySample.Pic = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
                 activitySample.HTMLContent = "<p>桑莫讀書會 測試活動</p>";
+                activity1.isTest = true;
                 activityList.Add(activitySample);
             }
             #endregion

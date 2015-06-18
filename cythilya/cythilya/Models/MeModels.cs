@@ -113,6 +113,7 @@ namespace cythilya.Models
             public int Location { get; set; }
             public string HTMLContent { get; set; }
             public string NoteURL { get; set; } //共筆網址
+            public bool isTest { get; set; }
         }
 
         public class Participant
