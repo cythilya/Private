@@ -51,7 +51,14 @@ body.home #main {padding-top: 40px;}
                 <meta itemprop="summary" content="@activity.Description" />
                 <div class="entry-content" itemprop="description">
                     <div class="inner">
+                    @if (String.IsNullOrEmpty(activity.HTMLContent)) 
+                    { 
                         @Html.Partial("/Views/Me/Activity/activity_" + (activity.ID) + ".cshtml")
+                    }
+                    else
+                    {
+                        @Html.Raw(activity.HTMLContent)
+                    }
                     </div>
                     ...
                     @if (!String.IsNullOrEmpty(activity.NoteURL))

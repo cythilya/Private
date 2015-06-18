@@ -2204,11 +2204,73 @@ namespace cythilya.Controllers
             activity1.Location = 1;
             activity1.NoteURL = "/Me/Activity?id=1";
             activity1.Pic = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
-
-            //內容
-            activity1.HTMLContent = "<p>活動平台行動裝置網站或App設計的現狀探討與改進。</p>";
-
+            activity1.HTMLContent = "";
             activityList.Add(activity1);
+            #endregion
+
+            #region 測試活動
+            for (int i = 10000; i <= 11000; i++) {
+                MeModels.Activity activitySample = new MeModels.Activity();
+                activitySample.ID = i;
+                activitySample.Name = "桑莫讀書會 測試活動" + i;
+                activitySample.Description = "桑莫讀書會 測試活動" + i;
+                List<int> activitySampleParticipant = new List<int>(new int[] { 1, 2, 3 });
+                activitySample.Participant = participant1;
+
+                int randomMonth = i % 12 +1 ;
+                int randomDay = i % 28 + 1;
+                string monthText = "";
+
+                if (randomMonth == 1) {
+                    monthText = "Jan";
+                }
+                else if (randomMonth == 2) {
+                    monthText = "Feb";
+                }
+                else if (randomMonth == 3) {
+                    monthText = "March";
+                }
+                else if (randomMonth == 4) {
+                    monthText = "April";
+                }
+                else if (randomMonth == 5) {
+                    monthText = "May";
+                }
+                else if (randomMonth == 6) {
+                    monthText = "June";
+                }
+                else if (randomMonth == 7) {
+                    monthText = "July";
+                }
+                else if (randomMonth == 8) {
+                    monthText = "Aug";
+                }
+                else if (randomMonth == 9) {
+                    monthText = "Sept";
+                }
+                else if (randomMonth == 10) {
+                    monthText = "Oct";
+                }
+                else if (randomMonth == 11) {
+                    monthText = "Nov";
+                }
+                else if (randomMonth == 12) {
+                    monthText = "Dec";
+                }
+
+                activitySample.StartDate = "2016-" + randomMonth + "-" + randomDay + "T19:00";
+                activitySample.Time = monthText + " " + randomDay + ", 2016";
+                activitySample.Month = randomMonth.ToString();
+                activitySample.Day = randomDay.ToString();
+                activitySample.WebURL = "";
+                List<int> tagListSample = new List<int>(new int[] { 1, 2 });
+                activitySample.Tag = tagList1;
+                activitySample.Location = 1;
+                activitySample.NoteURL = "/Me/Activity?id=" + i;
+                activitySample.Pic = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
+                activitySample.HTMLContent = "<p>桑莫讀書會 測試活動</p>";
+                activityList.Add(activitySample);
+            }
             #endregion
 
             #endregion
