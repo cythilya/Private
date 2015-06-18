@@ -2260,7 +2260,7 @@ namespace cythilya.Controllers
 
                 activitySample.StartDate = "2016-" + randomMonth + "-" + randomDay + "T19:00";
                 activitySample.Time = monthText + " " + randomDay + ", 2016";
-                activitySample.Month = randomMonth.ToString();
+                activitySample.Month = monthText.ToString();
                 activitySample.Day = randomDay.ToString();
                 activitySample.WebURL = "";
                 List<int> tagListSample = new List<int>(new int[] { 1, 2 });
