@@ -448,6 +448,11 @@
     <Content Include="Content\me\img\blog\stanley\stanley_300.png" />
     <Content Include="Content\me\img\blog\stanley\stanley_54x54.jpg" />
     <Content Include="Content\me\img\blog\stanley\stanley_940x367.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_188x73.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_300.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_54x54.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_940x367.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\ag-relevant-terms_188x73.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms_300.jpg" />
