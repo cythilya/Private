@@ -2209,6 +2209,7 @@ namespace cythilya.Controllers
             #endregion
 
             #region 測試活動
+            /*
             for (int i = 10000; i <= 11000; i++) {
                 MeModels.Activity activitySample = new MeModels.Activity();
                 activitySample.ID = i;
@@ -2271,6 +2272,7 @@ namespace cythilya.Controllers
                 activitySample.HTMLContent = "<p>桑莫讀書會 測試活動</p>";
                 activityList.Add(activitySample);
             }
+            */
             #endregion
 
             #endregion
@@ -2365,6 +2367,7 @@ namespace cythilya.Controllers
 
             ViewBag.Location = thisLocationList;
         }
+
         #endregion
     }
 }
