@@ -814,21 +814,21 @@ namespace cythilya.Controllers
             articleList.Add(article_38);
             #endregion 
 
-            #region JavaScript - Module Pattern
-            MeModels.Article article_38 = new MeModels.Article();
-            article_38.Name = "JavaScript - Module Pattern";
-            article_38.Description = "Module Pattern 利用函數的「閉包(closure)」特性來避免汙染全域的問題 - 使用閉包(closure)來提供封裝的功能，將方法和變數限制在一個範圍內存取與使用。這樣的好處除了避免汙染全域外，也將實作隱藏起來，只提供公開的介面(public API)供其他地方使用，簡單易懂。";
-            article_38.URL = "http://cythilya.blogspot.tw/2015/06/javascript-module-pattern.html";
-            article_38.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
-            article_38.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
-            article_38.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
-            article_38.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
-            article_38.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
-            article_38.Tag = "JavaScript, Closure, Module Pattern";
-            article_38.isHighlight = false;
-            article_38.Time = "June 18, 2015";
-            article_38.isBanner = false;
-            articleList.Add(article_38);
+            #region 結構化資料之「活動」範例 (Part 1)
+            MeModels.Article article_39 = new MeModels.Article();
+            article_39.Name = "結構化資料之「活動」範例 (Part 1)";
+            article_39.Description = "「Promote Your Content with Structured Data Markup」，搜尋引擎愈來愈人性化，提供愈來愈多實用的資料給使用者做決策。因此，前端工程師的切版不再只是依照設計稿呈現美麗的畫面和特效而已，還要能利用結構化資料，讓網站內容在SERPs上顯示更多資訊。";
+            article_39.URL = "http://cythilya.blogspot.tw/2015/06/structured-data-event.html";
+            article_39.RawPic = "/Content/me/img/blog/structured_data_event/structured_data_event.jpg";
+            article_39.PicSmall = "/Content/me/img/blog/structured_data_event/structured_data_event_188x73.jpg";
+            article_39.PicMedium = "/Content/me/img/blog/structured_data_event/structured_data_event_300.jpg";
+            article_39.PicLarge = "/Content/me/img/blog/structured_data_event/structured_data_event_940x367.jpg";
+            article_39.PicInFooter = "/Content/me/img/blog/structured_data_event/structured_data_event_54x54.jpg";
+            article_39.Tag = "SEO, Rich Snippets, Structured Data";
+            article_39.isHighlight = false;
+            article_39.Time = "June 18, 2015";
+            article_39.isBanner = false;
+            articleList.Add(article_39);
             #endregion 
 
             #endregion
