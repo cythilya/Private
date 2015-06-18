@@ -1714,7 +1714,7 @@ namespace cythilya.Controllers
             proj_19.Order = 20;
             proj_19.Client = "Uni-Net 聯網國際";
             proj_19.ClientURL = "http://www.uni-net.com.tw";
-            proj_19.Date = "Jun 2015";
+            proj_19.Date = "June 2015";
             proj_19.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/IndexNew.action";
             proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
             proj_19.Tag = "Web Platform SEO";
