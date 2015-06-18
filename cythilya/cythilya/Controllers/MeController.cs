@@ -814,6 +814,23 @@ namespace cythilya.Controllers
             articleList.Add(article_38);
             #endregion 
 
+            #region JavaScript - Module Pattern
+            MeModels.Article article_38 = new MeModels.Article();
+            article_38.Name = "JavaScript - Module Pattern";
+            article_38.Description = "Module Pattern 利用函數的「閉包(closure)」特性來避免汙染全域的問題 - 使用閉包(closure)來提供封裝的功能，將方法和變數限制在一個範圍內存取與使用。這樣的好處除了避免汙染全域外，也將實作隱藏起來，只提供公開的介面(public API)供其他地方使用，簡單易懂。";
+            article_38.URL = "http://cythilya.blogspot.tw/2015/06/javascript-module-pattern.html";
+            article_38.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_38.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_38.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_38.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_38.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_38.Tag = "JavaScript, Closure, Module Pattern";
+            article_38.isHighlight = false;
+            article_38.Time = "June 18, 2015";
+            article_38.isBanner = false;
+            articleList.Add(article_38);
+            #endregion 
+
             #endregion
 
             articleList.Reverse();
