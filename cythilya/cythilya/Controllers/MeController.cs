@@ -1856,7 +1856,7 @@ namespace cythilya.Controllers
             proj_20.PicMedium = "/Content/me/img/project/volving/volving_300.png";
             proj_20.PicLarge = "/Content/me/img/project/volving/volving_940x367.png";
             proj_20.PicInFooter = "/Content/me/img/project/volving/volving_54x54.png";
-            proj_20.Order = 20;
+            proj_20.Order = 21;
             proj_20.Client = "國泰健康管理";
             proj_20.ClientURL = "http://www.cathay-hcm.com.tw/Health";
             proj_20.Date = "June 2015";
