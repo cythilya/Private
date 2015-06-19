@@ -18,35 +18,27 @@ namespace cythilya.Controllers
         {
             GetArticleList();
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
         //About
         public ActionResult About() 
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
         
         public ActionResult About_C() 
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
         //Resume
         public ActionResult Resume() 
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
@@ -54,9 +46,7 @@ namespace cythilya.Controllers
         public ActionResult Portfolio() 
         {
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
@@ -65,22 +55,20 @@ namespace cythilya.Controllers
         {
             GetArticleList();
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
+        //專案列表
         public ActionResult ProjectArchieve() 
         {
             GetArticleList();
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View(); 
         }
 
+        //活動
         public ActionResult Activity(int id = 0)
         {
             List<MeModels.Activity> activityList = new List<MeModels.Activity>();
@@ -113,28 +101,24 @@ namespace cythilya.Controllers
             }
             #endregion
 
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             ViewBag.ActivityData = activity;
             return View();
         }
         
+        //活動列表
         public ActionResult ActivityList()
         {
             GetActivityList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
+        //活動列表, 含測試活動
         public ActionResult Activities()
         {
             GetActivityList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
@@ -159,18 +143,14 @@ namespace cythilya.Controllers
             getRelatedProject(id);
 
             ViewBag.ProjData = proj;
-            getFeaturedPostList();
-            getRecentPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
         //Contact
         public ActionResult Contact()
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
@@ -2409,6 +2389,13 @@ namespace cythilya.Controllers
             thisLocationList = locItem;
 
             ViewBag.Location = thisLocationList;
+        }
+
+        public void GetFooterInfo() 
+        {
+            getRecentPostList();
+            getFeaturedPostList();
+            getRecentProject(); 
         }
 
         #endregion
