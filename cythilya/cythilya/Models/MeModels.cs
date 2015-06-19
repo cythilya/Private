@@ -110,7 +110,9 @@ namespace cythilya.Models
             public String Day { get; set; }
             public string WebURL { get; set; }
             public List<int> Tag { get; set; }
+            public List<Tag> TagDetail { get; set; }
             public int Location { get; set; }
+            public Location LocationDetail { get; set; }
             public string HTMLContent { get; set; }
             public string NoteURL { get; set; } //共筆網址
             public bool isTest { get; set; }
