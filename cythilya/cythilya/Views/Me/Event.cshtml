@@ -19,6 +19,7 @@ body.home #main {padding-top: 40px;}
 .locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
 .entry-content .inner{margin-bottom: 20px;}
 #posts-list{margin-top: 25px;}
+#posts-list article .box .meta .locationName{padding-left: 0;}
 #posts-list article .box .meta .locationName span{padding-left: 0;}
 </style>
 <script type="application/ld+json">
@@ -73,7 +74,7 @@ body.home #main {padding-top: 40px;}
                     <meta itemprop="startDate" content="@(activity.StartDate)">
                 </span>
                 <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Store">
-                    <a class="locationName" href="@(location.URL)" target="_blank"><span itemprop="name">@(location.Name)</span><span>(@location.AddressLocality @location.StreetAddress)</span></a>
+                    <span class="locationName"><span itemprop="name">@(location.Name)</span><span>(@location.AddressLocality @location.StreetAddress)</span></span>
                     <meta itemprop="description" content="@(location.Name)"/>
                     <div class="placeDetail">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
