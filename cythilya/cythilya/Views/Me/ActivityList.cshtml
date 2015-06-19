@@ -37,7 +37,7 @@ body.home #main {padding-top: 40px;}
                     <div class="meta">
                         <span class="time">@(item.Time) <meta itemprop="startDate" content="@(item.StartDate)"></span>
 		                <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
-			                <a class="locationName" href="@(item.LocationDetail.URL)" target="_blank" itemprop="name">@(item.LocationDetail.Name)</a>
+			                <a class="locationName" itemprop="name">@(item.LocationDetail.Name)</a>
 			                <div class="placeDetail">
 				                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 					                <span itemprop="streetAddress">@(item.LocationDetail.StreetAddress)</span>,
