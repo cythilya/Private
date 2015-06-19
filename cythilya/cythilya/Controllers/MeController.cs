@@ -2256,7 +2256,7 @@ namespace cythilya.Controllers
             activity1.Month = "July";
             activity1.Day = "3";
             activity1.WebURL = "";
-            List<int> tagList1 = new List<int>(new int[] { 1, 2 });
+            List<int> tagList1 = new List<int>(new int[] { 1, 2, 4 });
             activity1.Tag = tagList1;
             activity1.TagDetail = GetActivityTagList(activity1.Tag);
             activity1.Location = 1;
@@ -2398,6 +2398,12 @@ namespace cythilya.Controllers
             tag3.ID = 3;
             tag3.Name = "SEO";
             tagList.Add(tag3);
+
+            MeModels.Tag tag4 = new MeModels.Tag();
+            tag4.ID = 4;
+            tag4.Name = "UI/UX";
+            tagList.Add(tag4);
+
             #endregion
 
             List<MeModels.Tag> thisTagList = new List<MeModels.Tag>();
