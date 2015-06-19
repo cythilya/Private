@@ -21,7 +21,7 @@ body.home #main {padding-top: 40px;}
         {
         <article class="format-standard" itemscope itemtype="http://schema.org/Event">
             <div class="feature-image">
-                <a href="/Me/Activity?id=@(item.ID)"><img src="@(item.Pic)" title="@item.Name" alt="@item.Name" itemprop="image" /></a>
+                <a href="/Me/Event?id=@(item.ID)"><img src="@(item.Pic)" title="@item.Name" alt="@item.Name" itemprop="image" /></a>
             </div>
             <div class="box cf">
                 <div class="entry-date">
@@ -29,7 +29,7 @@ body.home #main {padding-top: 40px;}
                     <div class="month">@item.Month</div>
                 </div>
                 <div class="excerpt">
-                    <h2 class="post-heading" itemprop="name"><a href="/Me/Activity?id=@(item.ID)">@item.Name</a></h2>
+                    <h2 class="post-heading" itemprop="name"><a href="/Me/Event?id=@(item.ID)">@item.Name</a></h2>
                     <div class="entry-content" itemprop="description">@Html.Raw(item.HTMLContent)</div>
                 </div>
                 <div class="meta">
