@@ -478,6 +478,9 @@
     <Content Include="Content\me\img\blog\yha_mei_ho_house_youth_hostel\yha_mei_ho_house_youth_hostel_940x367.jpg" />
     <Content Include="Content\me\img\icon-location.png" />
     <Content Include="Content\me\img\icon-time.png" />
+    <Content Include="Content\me\img\icon_link.png" />
+    <Content Include="Content\me\img\icon_partner.png" />
+    <Content Include="Content\me\img\icon_skill.png" />
     <Content Include="Content\me\img\project\933\933.png" />
     <Content Include="Content\me\img\project\933\933_188x73.png" />
     <Content Include="Content\me\img\project\933\933_300.png" />

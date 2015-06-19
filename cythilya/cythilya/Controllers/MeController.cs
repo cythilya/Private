@@ -146,15 +146,7 @@ namespace cythilya.Controllers
                 return View("Portfolio");
             }
 
-            #region 取得合作夥伴
-            if (proj.Partners != null) 
-            {
-                GetPartnerList(proj.Partners);
-            }
-            #endregion
-
             getRelatedProject(id);
-
             ViewBag.ProjData = proj;
             GetFooterInfo();
             return View();
@@ -952,6 +944,7 @@ namespace cythilya.Controllers
             proj_1.IsShowInPortfolio = true;
             List<int> partnerList1 = new List<int>(new int[] { 10 });
             proj_1.Partners = partnerList1;
+            proj_1.PartnerDetail = GetPartnerList(proj_1.Partners);            
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_1_snap_1 = new MeModels.SnapshotInfo();
@@ -1009,6 +1002,7 @@ namespace cythilya.Controllers
             proj_2.IsShowInPortfolio = true;
             List<int> partnerList2 = new List<int>(new int[] { 13 });
             proj_2.Partners = partnerList2;
+            proj_2.PartnerDetail = GetPartnerList(proj_2.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
 
@@ -1123,6 +1117,7 @@ namespace cythilya.Controllers
             proj_4.IsShowInPortfolio = true;
             List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13, 12, 16 });
             proj_4.Partners = partnerList4;
+            proj_4.PartnerDetail = GetPartnerList(proj_4.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_4_snap_1 = new MeModels.SnapshotInfo();
@@ -1180,6 +1175,7 @@ namespace cythilya.Controllers
             proj_5.IsShowInPortfolio = true;
             List<int> partnerList5 = new List<int>(new int[] { 3, 9 });
             proj_5.Partners = partnerList5;
+            proj_5.PartnerDetail = GetPartnerList(proj_5.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_5_snap_1 = new MeModels.SnapshotInfo();
@@ -1237,6 +1233,7 @@ namespace cythilya.Controllers
             proj_6.IsShowInPortfolio = true;
             List<int> partnerList6 = new List<int>(new int[] { 3, 9 });
             proj_6.Partners = partnerList6;
+            proj_6.PartnerDetail = GetPartnerList(proj_6.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_6_snap_1 = new MeModels.SnapshotInfo();
@@ -1289,6 +1286,7 @@ namespace cythilya.Controllers
             proj_7.IsShowInPortfolio = true;
             List<int> partnerList7 = new List<int>(new int[] { 6, 12 });
             proj_7.Partners = partnerList7;
+            proj_7.PartnerDetail = GetPartnerList(proj_7.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList7 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_7_snap_1 = new MeModels.SnapshotInfo();
@@ -1341,6 +1339,7 @@ namespace cythilya.Controllers
             proj_8.IsShowInPortfolio = true;
             List<int> partnerList8 = new List<int>(new int[] { 3, 9 });
             proj_8.Partners = partnerList8;
+            proj_8.PartnerDetail = GetPartnerList(proj_8.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_8_snap_1 = new MeModels.SnapshotInfo();
@@ -1415,6 +1414,7 @@ namespace cythilya.Controllers
             proj_10.IsShowInPortfolio = true;
             List<int> partnerList10 = new List<int>(new int[] { 2, 9, 16 });
             proj_10.Partners = partnerList10;
+            proj_10.PartnerDetail = GetPartnerList(proj_10.Partners);
 
             StringBuilder sb10 = new StringBuilder();
             sb10.Append("<p>只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p>");
@@ -1504,6 +1504,7 @@ namespace cythilya.Controllers
             proj_12.IsShowInPortfolio = true;
             List<int> partnerList12 = new List<int>(new int[] { 2, 14 });
             proj_12.Partners = partnerList12;
+            proj_12.PartnerDetail = GetPartnerList(proj_12.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_12_snap_1 = new MeModels.SnapshotInfo();
@@ -1538,6 +1539,7 @@ namespace cythilya.Controllers
             proj_13.IsShowInPortfolio = true;
             List<int> partnerList13 = new List<int>(new int[] { 8, 12, 17 });
             proj_13.Partners = partnerList13;
+            proj_13.PartnerDetail = GetPartnerList(proj_13.Partners);
 
             StringBuilder sb13 = new StringBuilder();
             sb13.Append("<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p>");
@@ -1588,6 +1590,7 @@ namespace cythilya.Controllers
             proj_14.IsShowInPortfolio = true;
             List<int> partnerList14 = new List<int>(new int[] { 2, 4, 15, 16 });
             proj_14.Partners = partnerList14;
+            proj_14.PartnerDetail = GetPartnerList(proj_14.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
@@ -1657,6 +1660,7 @@ namespace cythilya.Controllers
             proj_15.IsShowInPortfolio = true;
             List<int> partnerList15 = new List<int>(new int[] { 10, 15, 16 });
             proj_15.Partners = partnerList15;
+            proj_15.PartnerDetail = GetPartnerList(proj_15.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_15_snap_1 = new MeModels.SnapshotInfo();
@@ -1698,6 +1702,7 @@ namespace cythilya.Controllers
             proj_16.isHighlight = false;
             List<int> partnerList = new List<int>(new int[] { 1, 2 });
             proj_16.Partners = partnerList;
+            proj_16.PartnerDetail = GetPartnerList(proj_16.Partners);
             proj_16.IsShowInPortfolio = true;
 
             List<MeModels.SnapshotInfo> SnapshotList16 = new List<MeModels.SnapshotInfo>();
@@ -1754,6 +1759,7 @@ namespace cythilya.Controllers
             proj_17.IsShowInPortfolio = true;
             List<int> partnerList17 = new List<int>(new int[] { 4, 9 });
             proj_17.Partners = partnerList17;
+            proj_17.PartnerDetail = GetPartnerList(proj_17.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_17_snap_1 = new MeModels.SnapshotInfo();
@@ -1794,6 +1800,7 @@ namespace cythilya.Controllers
             proj_18.isHighlight = true;
             proj_18.IsShowInPortfolio = true;
             List<int> proj_18 = new List<int>(new int[] { 5, 20 });
+            proj_18.PartnerDetail = GetPartnerList(proj_18.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList18 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_18_snap_1 = new MeModels.SnapshotInfo();
@@ -1831,6 +1838,7 @@ namespace cythilya.Controllers
             proj_19.IsShowInPortfolio = true;
             List<int> partnerList19 = new List<int>(new int[] { 7, 19 });
             proj_19.Partners = partnerList19;
+            proj_19.PartnerDetail = GetPartnerList(proj_19.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList19 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_19_snap_1 = new MeModels.SnapshotInfo();
@@ -1867,6 +1875,7 @@ namespace cythilya.Controllers
             proj_20.IsShowInPortfolio = true;
             List<int> partnerList20 = new List<int>(new int[] { 5, 20 });
             proj_20.Partners = partnerList20;
+            proj_20.PartnerDetail = GetPartnerList(proj_20.Partners);
             
             List<MeModels.SnapshotInfo> SnapshotList20 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_20_snap_1 = new MeModels.SnapshotInfo();
@@ -1909,6 +1918,7 @@ namespace cythilya.Controllers
             proj_21.IsShowInPortfolio = true;
             List<int> partnerList21 = new List<int>(new int[] { 5, 18, 21 });
             proj_21.Partners = partnerList21;
+            proj_21.PartnerDetail = GetPartnerList(proj_21.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList21 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_21_snap_1 = new MeModels.SnapshotInfo();
@@ -1952,6 +1962,7 @@ namespace cythilya.Controllers
             proj_22.IsShowInPortfolio = true;
             List<int> partnerList22 = new List<int>(new int[] { 7 });
             proj_22.Partners = partnerList22;
+            proj_22.PartnerDetail = GetPartnerList(proj_22.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList22 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_22_snap_1 = new MeModels.SnapshotInfo();
@@ -2079,6 +2090,8 @@ namespace cythilya.Controllers
                 projectItem.PicLarge = item.PicLarge;
                 projectItem.PicInFooter = item.PicInFooter;
                 projectItem.Order = item.Order;
+                projectItem.PartnerDetail = (item.PartnerDetail != null) ? item.PartnerDetail : null;
+                projectItem.Role = item.Role;
                 recentProjects.Add(projectItem);
             }
 
@@ -2101,7 +2114,7 @@ namespace cythilya.Controllers
         }
 
         //取得合作夥伴
-        public void GetPartnerList(List<int> parters)
+        public List<MeModels.Partner> GetPartnerList(List<int> parters)
         {
             #region Mock
             List<MeModels.Partner> partnerList = new List<MeModels.Partner>();
@@ -2243,6 +2256,7 @@ namespace cythilya.Controllers
             }
 
             ViewBag.PartnerList = projectPartnerList;
+            return projectPartnerList;
         }
 
         #endregion 專案相關
