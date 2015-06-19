@@ -2330,7 +2330,7 @@ namespace cythilya.Controllers
                 activitySample.LocationDetail = GetLocation(activitySample.Location);
                 activitySample.NoteURL = "/Me/Activity?id=" + i;
                 activitySample.Pic = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
-                activitySample.HTMLContent = "<p>搜尋引擎優化指南(SEO Guideline) - 如何有系統的優化網站、評估與持續改進？</p>";
+                activitySample.HTMLContent = "<p>結構化資料之「活動」範例。「Promote Your Content with Structured Data Markup」，搜尋引擎愈來愈人性化，提供愈來愈多實用的資料給使用者做決策。因此，前端工程師的切版不再只是依照設計稿呈現美麗的畫面和特效而已，還要能利用結構化資料，讓網站內容在SERPs上顯示更多資訊。拿活動來說，如下圖紅框所示，搜尋活動「資策會數據創新應用黑客松 IDEAS Tech Hackathon」，第三則結果出現了活動時間「7月25日 - 7月26日」和活動地點「TAF空總創新基地-空軍總部舊址中正堂, 台灣」。使用者不但能在SERPs知道活動標題、短描述和網址外，還能馬上知道日期(區間)、地點。</p>" + "<a href='http://cythilya.blogspot.tw/2015/06/structured-data-event.html' title='結構化資料之「活動」範例 (Part 1)' target='_blank'>閱讀文章 - 結構化資料之「活動」範例 (Part 1)</a>";
                 activity1.isTest = true;
                 activityList.Add(activitySample);
             }
