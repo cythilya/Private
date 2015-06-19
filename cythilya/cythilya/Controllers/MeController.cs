@@ -13,7 +13,7 @@ namespace cythilya.Controllers
     {
         #region View
         
-        //Index
+        //首頁
         public ActionResult Index()
         {
             GetArticleList();
@@ -22,30 +22,69 @@ namespace cythilya.Controllers
             return View();
         }
 
-        //About
-        public ActionResult About() 
+        //聯絡我
+        public ActionResult Contact()
         {
             GetFooterInfo();
             return View();
         }
-        
-        public ActionResult About_C() 
+
+        #region 履歷相關
+        //About
+        public ActionResult About()
+        {
+            GetFooterInfo();
+            return View();
+        }
+
+        //關於我
+        public ActionResult About_C()
         {
             GetFooterInfo();
             return View();
         }
 
         //Resume
-        public ActionResult Resume() 
+        public ActionResult Resume()
         {
             GetFooterInfo();
             return View();
         }
 
-        //Portfolio
-        public ActionResult Portfolio() 
+        #endregion 履歷相關
+
+        #region 作品相關 - 專案, 文章
+        //專案列表
+        public ActionResult Portfolio()
         {
             getProjectList();
+            GetFooterInfo();
+            return View();
+        }
+
+        //專案存檔
+        public ActionResult ProjectArchieve()
+        {
+            GetArticleList();
+            getProjectList();
+            GetFooterInfo();
+            return View();
+        }
+
+        //Project
+        public ActionResult Project(int id = 0)
+        {
+            List<MeModels.Project> projList = new List<MeModels.Project>();
+            projList = getProjectList();
+            MeModels.Project proj = projList.Find(item => item.ID == id);
+
+            if (proj == null)
+            {
+                return View("Portfolio");
+            }
+
+            getRelatedProject(id);
+            ViewBag.ProjData = proj;
             GetFooterInfo();
             return View();
         }
@@ -58,17 +97,11 @@ namespace cythilya.Controllers
             GetFooterInfo();
             return View();
         }
+        
+        #endregion 作品相關 - 專案, 文章
 
-        //專案列表
-        public ActionResult ProjectArchieve() 
-        {
-            GetArticleList();
-            getProjectList();
-            GetFooterInfo();
-            return View(); 
-        }
-
-        //活動
+        #region 活動相關
+        //活動頁 - data-vocabulary
         public ActionResult Activity(int id = 0)
         {
             List<MeModels.Activity> activityList = new List<MeModels.Activity>();
@@ -110,7 +143,7 @@ namespace cythilya.Controllers
             ViewBag.AllTag = AllTag;
             return View();
         }
-        
+
         //活動列表
         public ActionResult ActivityList()
         {
@@ -135,34 +168,67 @@ namespace cythilya.Controllers
             return View();
         }
 
-        //Project
-        public ActionResult Project(int id = 0) 
+        //活動頁 - mircodata / json-ld
+        public ActionResult Event(int id = 0)
         {
-            List<MeModels.Project> projList = new List<MeModels.Project>();
-            projList = getProjectList();
-            MeModels.Project proj = projList.Find(item => item.ID == id);
+            List<MeModels.Activity> activityList = new List<MeModels.Activity>();
+            activityList = GetActivityList();
+            MeModels.Activity activity = activityList.Find(item => item.ID == id);
 
-            if (proj == null) {
-                return View("Portfolio");
+            if (activity == null)
+            {
+                return View("ActivityList");
             }
 
-            getRelatedProject(id);
-            ViewBag.ProjData = proj;
+            #region 取得參與者
+            if (activity.Participant != null)
+            {
+                GetParticipantList(activity.Participant);
+            }
+            #endregion
+
+            #region 取得地點
+            if (activity.Location != 0)
+            {
+                GetLocation(activity.Location);
+            }
+            #endregion
+
+            #region 取得標籤
+            //取得活動標籤
+            if (activity.Tag != null)
+            {
+                GetActivityTagList(activity.Tag);
+            }
+
+            //取得全部標籤
+            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            #endregion
+
             GetFooterInfo();
+            ViewBag.ActivityData = activity;
+            ViewBag.AllTag = AllTag;
             return View();
         }
 
-        //Contact
-        public ActionResult Contact()
+        //活動列表, 含測試活動
+        public ActionResult Events() 
         {
+            //取得全部標籤
+            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
+
+            GetActivityList();
             GetFooterInfo();
             return View();
         }
 
-        #endregion
+        #endregion 活動相關
+
+        #endregion View
 
         #region Function
-        
+
         #region 共用
 
         //聯繫我

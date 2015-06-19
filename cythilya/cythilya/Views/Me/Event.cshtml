@@ -1,0 +1,136 @@
+﻿@using cythilya.Models;
+@{
+    MeModels.Activity activity = ViewBag.ActivityData as MeModels.Activity;
+    List<MeModels.Participant> participantList = ViewBag.ParticipantList as List<MeModels.Participant>;
+    List<MeModels.Tag> tagList = ViewBag.TagList as List<MeModels.Tag>;
+    MeModels.Location location = ViewBag.Location as MeModels.Location;
+    List<MeModels.Tag> allTagList = ViewBag.AllTag as List<MeModels.Tag>;
+        
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Tab = "";
+    ViewBag.Title = activity.Name + " | 桑莫讀書會";
+    ViewBag.Description = activity.Name + " | 桑莫讀書會";
+    ViewBag.SharedImage = "http://cythilya.apphb.com" + activity.Pic;
+}
+<style>
+body.home #main {padding-top: 40px;}
+.placeDetail{display:none;}
+.locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
+.entry-content .inner{margin-bottom: 20px;}
+#posts-list{margin-top: 25px;}
+</style>
+<script type="application/ld+json">
+{
+    "@@context": "http://schema.org",
+    "@@type" : "Event",
+    "name" : "@activity.Name",
+    "url" : "http://cythilya.apphb.com/@(activity.NoteURL)",
+    "location": {
+    "@@type" : "Place",
+    "name" : "@location.Name",
+    "address" : "@location.AddressRegion @location.AddressLocality @location.StreetAddress"
+    },
+    "startDate": "@(activity.StartDate)"
+}
+</script>
+<div class="project-pager cf">
+	<a class="previous-project" href="/Me/ActivityList">&#8592; 回到活動列表</a>
+</div>
+<div id="posts-list" class="cf">
+    <article class="format-standard" itemscope itemtype="http://schema.org/Event">
+        <div class="feature-image">
+            <img src="@(activity.Pic)" title="@activity.Name" alt="@activity.Name" />
+        </div>
+        <div class="box cf">
+            <div class="entry-date">
+                <div class="number">@activity.Day</div>
+                <div class="month">@activity.Month</div>
+            </div>
+            <div class="excerpt">
+                <h2 class="post-heading" itemprop="name">@activity.Name</h2>
+                <div class="entry-content" itemprop="description">
+                    <div class="inner">
+                    @if (String.IsNullOrEmpty(activity.HTMLContent))
+                    { 
+                        @Html.Partial("/Views/Me/Activity/activity_" + (activity.ID) + ".cshtml")
+                    }
+                    else
+                    {
+                        @Html.Raw(activity.HTMLContent)
+                    }
+                    </div>
+                    ...
+                    @if (!String.IsNullOrEmpty(activity.NoteURL))
+                    {
+                        <a href="http://cythilya.apphb.com/@(activity.NoteURL)" itemprop="url">看更多內容</a>
+                    }
+                </div>
+            </div>
+            <div class="meta">
+                <span class="time">@(activity.Time) 
+                    <meta itemprop="startDate" content="@(activity.StartDate)">
+                </span>
+                <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Store">
+                    <a class="locationName" href="@(location.URL)" target="_blank"><span itemprop="name">@(location.Name)</span><span>(@location.AddressLocality @location.StreetAddress)</span></a>
+                    <meta itemprop="description" content="@(location.Name)"/>
+                    <div class="placeDetail">
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <meta itemprop="streetAddress" content="@(location.StreetAddress)" />
+                            <meta itemprop="addressLocality" content="@(location.AddressLocality)" />
+                            <meta itemprop="addressRegion" content="@(location.AddressRegion)" />
+                        </div>
+                        <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                            <meta itemprop="latitude" content="@(location.Latitude)" />
+                            <meta itemprop="longitude" content="@(location.Longitude)" />
+                        </div>
+                    </div>
+                </span>
+                <span class="tags">
+                    @foreach (var tag in tagList)
+                    {
+                        <a @*href="" target="_blank"*@>@(tag.Name)</a><br>
+                    }
+                </span>
+                <span class="user">
+                    @foreach (var user in participantList)
+                    {
+                        <a href="@(user.Website)" target="_blank">@user.Name</a><br>
+                    }
+                </span>
+                @if (!String.IsNullOrEmpty(activity.NoteURL))
+                {
+                    <span class="format"><a href="http://cythilya.apphb.com/@(activity.NoteURL)" itemprop="url">活動內容/筆記</a></span>
+                }
+                @*<span class="comments">16 comments</span>*@
+            </div>
+        </div>
+    </article>
+</div>
+<aside id="sidebar">
+    <ul>
+        <li class="block">
+            <h4>Purpose</h4>
+            這是一個和ㄧ些志同道合的夥伴們組成的讀書會，希望能藉由定期交流、討論，擴展彼此的視野和技能。
+        </li>
+        <li class="block">
+            <h4>Categories</h4>
+            <ul itemscope itemtype="http://schema.org/WPSideBar">
+                @foreach (var tag in allTagList)
+                { 
+                    <li class="cat-item"><a title="@(tag.Name)" itemprop="name">@(tag.Name)</a></li>
+                }
+                @*<li class="cat-item"><a href="#" title="title" itemprop="url"><span itemprop="name">Habitant morbi</span><span class="post-counter"> (2)</span></a></li>*@
+            </ul>
+        </li>
+        @*
+        <li class="block">
+            <h4>Archives</h4>
+            <ul>
+                <li class="cat-item"><a href="#" title="title">January</a></li>
+                <li class="cat-item"><a href="#" title="title">February</a></li>
+                <li class="cat-item"><a href="#" title="title">March</a></li>
+            </ul>
+        </li>
+        *@
+    </ul>
+</aside>
