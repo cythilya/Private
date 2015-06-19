@@ -114,6 +114,10 @@ namespace cythilya.Controllers
         //活動列表
         public ActionResult ActivityList()
         {
+            //取得全部標籤
+            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
+
             GetActivityList();
             GetFooterInfo();
             return View();
@@ -122,6 +126,10 @@ namespace cythilya.Controllers
         //活動列表, 含測試活動
         public ActionResult Activities()
         {
+            //取得全部標籤
+            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
+
             GetActivityList();
             GetFooterInfo();
             return View();

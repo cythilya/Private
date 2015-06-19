@@ -5,7 +5,8 @@
     ViewBag.Title = "測試活動列表 | 桑莫讀書會";
     ViewBag.Description = "測試活動列表 | 桑莫讀書會";
     List<MeModels.Activity> activityList = ViewBag.ActivityList as List<MeModels.Activity>;
-    activityList = activityList.OrderBy(x => x.ID).ToList();    
+    activityList = activityList.OrderBy(x => x.ID).ToList();
+    List<MeModels.Tag> allTagList = ViewBag.AllTag as List<MeModels.Tag>;   
 }
 <style>
 body.home #main {padding-top: 40px;}
@@ -68,22 +69,20 @@ body.home #main {padding-top: 40px;}
 <aside id="sidebar">
     <ul>
         <li class="block">
-            <h4>Text Widget</h4>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+            <h4>Purpose</h4>
+            這是一個和ㄧ些志同道合的夥伴們組成的讀書會，希望能藉由定期交流、討論，擴展彼此的視野和技能。
         </li>
         <li class="block">
             <h4>Categories</h4>
-            <ul>
-                <li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
+            <ul itemscope itemtype="http://schema.org/WPSideBar">
+                @foreach (var tag in allTagList) 
+                { 
+                    <li class="cat-item"><a title="@(tag.Name)" itemprop="name">@(tag.Name)</a></li>
+                }
+                @*<li class="cat-item"><a href="#" title="title" itemprop="url"><span itemprop="name">Habitant morbi</span><span class="post-counter"> (2)</span></a></li>*@
             </ul>
         </li>
+        @*
         <li class="block">
             <h4>Archives</h4>
             <ul>
@@ -92,5 +91,6 @@ body.home #main {padding-top: 40px;}
                 <li class="cat-item"><a href="#" title="title">March</a></li>
             </ul>
         </li>
+        *@
     </ul>
 </aside>
