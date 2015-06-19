@@ -128,17 +128,17 @@ body.home #main {padding-top: 40px;}
 <aside id="sidebar">
     <ul>
         <li class="block">
-            <h4>Text Widget</h4>
-            這是一個和夥伴們一同組成的讀書會。
+            <h4>Purpose</h4>
+            這是一個和ㄧ些志同道合的夥伴們組成的讀書會，希望能藉由定期交流、討論，擴展彼此的視野和技能。
         </li>
         <li class="block">
             <h4>Categories</h4>
-            <ul>
+            <ul itemscope itemtype="http://schema.org/WPSideBar">
                 @foreach (var tag in allTagList) 
                 { 
-                    <li class="cat-item"><a title="@(tag.Name)">@(tag.Name)</a></li>
+                    <li class="cat-item"><a title="@(tag.Name)" itemprop="name">@(tag.Name)</a></li>
                 }
-                @*<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>*@
+                @*<li class="cat-item"><a href="#" title="title" itemprop="url"><span itemprop="name">Habitant morbi</span><span class="post-counter"> (2)</span></a></li>*@
             </ul>
         </li>
         @*
