@@ -4,6 +4,7 @@
     List<MeModels.Participant> participantList = ViewBag.ParticipantList as List<MeModels.Participant>;
     List<MeModels.Tag> tagList = ViewBag.TagList as List<MeModels.Tag>;
     MeModels.Location location = ViewBag.Location as MeModels.Location;
+    List<MeModels.Tag> allTagList = ViewBag.AllTag as List<MeModels.Tag>;
         
     Layout = "~/Views/Shared/_LayoutMe.cshtml";
     ViewBag.Tab = "";
@@ -123,26 +124,24 @@ body.home #main {padding-top: 40px;}
         </div>
     </article>
 </div>
-@*
+
 <aside id="sidebar">
     <ul>
         <li class="block">
             <h4>Text Widget</h4>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. 
+            這是一個和夥伴們一同組成的讀書會。
         </li>
         <li class="block">
             <h4>Categories</h4>
             <ul>
-                <li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Film and video<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Print<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Photo and lomo<span class="post-counter"> (2)</span></a></li>
-                <li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>
+                @foreach (var tag in allTagList) 
+                { 
+                    <li class="cat-item"><a title="@(tag.Name)">@(tag.Name)</a></li>
+                }
+                @*<li class="cat-item"><a href="#" title="title">Habitant morbi<span class="post-counter"> (2)</span></a></li>*@
             </ul>
         </li>
+        @*
         <li class="block">
             <h4>Archives</h4>
             <ul>
@@ -151,6 +150,6 @@ body.home #main {padding-top: 40px;}
                 <li class="cat-item"><a href="#" title="title">March</a></li>
             </ul>
         </li>
+        *@
     </ul>
 </aside>
-*@

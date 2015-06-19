@@ -95,14 +95,19 @@ namespace cythilya.Controllers
             #endregion
 
             #region 取得標籤
+            //取得活動標籤
             if (activity.Tag != null)
             {
                 GetActivityTagList(activity.Tag);
             }
+
+            //取得全部標籤
+            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             #endregion
 
             GetFooterInfo();
             ViewBag.ActivityData = activity;
+            ViewBag.AllTag = AllTag;
             return View();
         }
         
@@ -2389,12 +2394,18 @@ namespace cythilya.Controllers
 
             List<MeModels.Tag> thisTagList = new List<MeModels.Tag>();
 
-            foreach (var num in tags)
+            if (tags.First() == 0)
             {
-                MeModels.Tag tagItem = tagList.Find(item => item.ID == num);
-                thisTagList.Add(tagItem);
+                thisTagList = tagList;
             }
-
+            else 
+            {
+                foreach (var num in tags)
+                {
+                    MeModels.Tag tagItem = tagList.Find(item => item.ID == num);
+                    thisTagList.Add(tagItem);
+                }
+            }
             ViewBag.TagList = thisTagList;
             return thisTagList;
         }
