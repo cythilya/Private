@@ -1793,6 +1793,7 @@ namespace cythilya.Controllers
             proj_18.Tag = "Web RWD Platform";
             proj_18.isHighlight = true;
             proj_18.IsShowInPortfolio = true;
+            List<int> proj_18 = new List<int>(new int[] { 5, 20 });
 
             List<MeModels.SnapshotInfo> SnapshotList18 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_18_snap_1 = new MeModels.SnapshotInfo();
@@ -1842,10 +1843,9 @@ namespace cythilya.Controllers
             projList.Add(proj_19);
             #endregion
 
-            #region VOLVING沐頤健康概念館 - 未上作品集
-            /*
+            #region VOLVING沐頤健康概念館
             MeModels.Project proj_20 = new MeModels.Project();
-            proj_20.ID = 21;
+            proj_20.ID = 20;
             proj_20.Name = "VOLVING沐頤健康概念館";
             proj_20.Description = "VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。";
             proj_20.Role = "Front-End Development";
@@ -1859,13 +1859,13 @@ namespace cythilya.Controllers
             proj_20.Order = 20;
             proj_20.Client = "國泰健康管理";
             proj_20.ClientURL = "http://www.cathay-hcm.com.tw/Health";
-            proj_20.Date = "May 2015";
-            proj_20.LauchURL = "http://www.volving.com.tw/index";
+            proj_20.Date = "June 2015";
+            proj_20.LauchURL = "http://www.volving.com.tw";
             proj_20.HtmlContent = "<p>VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。</p>";
             proj_20.Tag = "Web OfficialWebsite";
             proj_20.isHighlight = false;
             proj_20.IsShowInPortfolio = true;
-            List<int> partnerList20 = new List<int>(new int[] { 5 });
+            List<int> partnerList20 = new List<int>(new int[] { 5, 20 });
             proj_20.Partners = partnerList20;
             
             List<MeModels.SnapshotInfo> SnapshotList20 = new List<MeModels.SnapshotInfo>();
@@ -1877,7 +1877,6 @@ namespace cythilya.Controllers
 
             proj_20.Snapshot = SnapshotList20;
             projList.Add(proj_20);
-             * */
             #endregion
 
             #region 用聽的網頁‧933樂活網
@@ -1908,7 +1907,7 @@ namespace cythilya.Controllers
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
             proj_21.IsShowInPortfolio = true;
-            List<int> partnerList21 = new List<int>(new int[] { 5, 18 });
+            List<int> partnerList21 = new List<int>(new int[] { 5, 18, 21 });
             proj_21.Partners = partnerList21;
 
             List<MeModels.SnapshotInfo> SnapshotList21 = new List<MeModels.SnapshotInfo>();
@@ -2221,6 +2220,18 @@ namespace cythilya.Controllers
             partner19.Website = "https://www.facebook.com/fsz570";
             partnerList.Add(partner19);
 
+            MeModels.Partner partner20 = new MeModels.Partner();
+            partner20.ID = 20;
+            partner20.Name = "蔣禛";
+            partner20.Website = "https://www.facebook.com/profile.php?id=100000257532711";
+            partnerList.Add(partner20);
+
+            MeModels.Partner partner21 = new MeModels.Partner();
+            partner21.ID = 21;
+            partner21.Name = "Kaye Harley";
+            partner21.Website = "https://www.facebook.com/kaye.harley";
+            partnerList.Add(partner21);
+            
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();

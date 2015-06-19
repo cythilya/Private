@@ -602,6 +602,11 @@
     <Content Include="Content\me\img\project\thsr\thsr_300.png" />
     <Content Include="Content\me\img\project\thsr\thsr_54x54.png" />
     <Content Include="Content\me\img\project\thsr\thsr_940x367.png" />
+    <Content Include="Content\me\img\project\volving\volving.png" />
+    <Content Include="Content\me\img\project\volving\volving_188x73.png" />
+    <Content Include="Content\me\img\project\volving\volving_300.png" />
+    <Content Include="Content\me\img\project\volving\volving_54x54.png" />
+    <Content Include="Content\me\img\project\volving\volving_940x367.png" />
     <Content Include="Content\me\img\project\yipinchan\yipinchan_index_54x54.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\seo_lab\css\style_anjularjs.css" />
