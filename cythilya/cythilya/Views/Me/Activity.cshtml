@@ -80,10 +80,7 @@ body.home #main {padding-top: 40px;}
                     <meta itemprop="endDate" content="@(activity.StartDate)">
                 </span>
                 <span class="location">
-                    <span class="locationName">
-                        <span class="shopName">@(location.Name)</span>
-                        <span class="shopInfo">( @location.AddressLocality @location.StreetAddress / <a class="shopWebsite" href="@location.URL" target="_blank">網站</a> )</span>
-                    </span>
+                    <a class="locationName" href="@(location.URL)" target="_blank">@(location.Name) (@location.AddressLocality @location.StreetAddress)</a>
                     <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
                         <meta itemprop="name" content="@(location.Name)" />
                         <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
