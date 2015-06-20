@@ -943,6 +943,23 @@ namespace cythilya.Controllers
             articleList.Add(article_39);
             #endregion
 
+            #region 結構化資料之「活動」範例 (Part 1)
+            MeModels.Article article_40 = new MeModels.Article();
+            article_40.Name = "結構化資料之「活動」範例 (Part 2) - 使用Microdata與JSON-LD";
+            article_40.Description = "在上一個範例 結構化資料之「活動」範例 (Part 1) 中使用的規範是 Data-Vocabulary.org，這次改用Microdata與JSON-LD，並記錄更多實作上的疑難雜症。";
+            article_40.URL = "http://cythilya.blogspot.tw/2015/06/structured-data-event-2.html";
+            article_40.RawPic = "/Content/me/img/blog/structured-data-event-2structured-data-event-2.jpg";
+            article_40.PicSmall = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-188x73.jpg";
+            article_40.PicMedium = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-300.jpg";
+            article_40.PicLarge = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-940x367.jpg";
+            article_40.PicInFooter = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-54x54.jpg";
+            article_40.Tag = "SEO, Rich Snippets, Structured Data";
+            article_40.isHighlight = false;
+            article_40.Time = "June 20, 2015";
+            article_40.isBanner = false;
+            articleList.Add(article_40);
+            #endregion
+
             #endregion Mock
 
             articleList.Reverse();
