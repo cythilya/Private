@@ -18,6 +18,8 @@ body.home #main {padding-top: 40px;}
 .locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
 .entry-content .inner{margin-bottom: 20px;}
 #posts-list{margin-top: 25px;}
+#posts-list article .box .meta .locationName{padding-left:0;}
+#posts-list article .box .meta .locationName span{padding-left:0;}
 </style>
 @*
     <script type="application/ld+json">
@@ -78,7 +80,10 @@ body.home #main {padding-top: 40px;}
                     <meta itemprop="endDate" content="@(activity.StartDate)">
                 </span>
                 <span class="location">
-                    <a class="locationName" href="@(location.URL)" target="_blank">@(location.Name) (@location.AddressLocality @location.StreetAddress)</a>
+                    <span class="locationName">
+                        <span class="shopName">@(location.Name)</span>
+                        <span class="shopInfo">( @location.AddressLocality @location.StreetAddress / <a class="shopWebsite" href="@location.URL" target="_blank">網站</a> )</span>
+                    </span>
                     <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
                         <meta itemprop="name" content="@(location.Name)" />
                         <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">

@@ -1835,6 +1835,7 @@
     <Content Include="Views\Me\Activities.cshtml" />
     <Content Include="Views\Me\Event.cshtml" />
     <Content Include="Views\Me\Events.cshtml" />
+    <Content Include="Views\Me\EventList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

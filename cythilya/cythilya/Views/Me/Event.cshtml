@@ -37,7 +37,7 @@ body.home #main {padding-top: 40px;}
 }
 </script>
 <div class="project-pager cf">
-	<a class="previous-project" href="/Me/Events">&#8592; 回到活動列表</a>
+	<a class="previous-project" href="/Me/EventList">&#8592; 回到活動列表</a>
 </div>
 <div id="posts-list" class="cf">
     <article class="format-standard" itemscope itemtype="http://schema.org/Event">
@@ -74,7 +74,13 @@ body.home #main {padding-top: 40px;}
                     <meta itemprop="startDate" content="@(activity.StartDate)">
                 </span>
                 <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Store">
-                    <span class="locationName"><span itemprop="name">@(location.Name)</span><span>(@location.AddressLocality @location.StreetAddress)</span></span>
+                    <span class="locationName">
+                        <span class="shopName">@(location.Name)</span>
+                        <span class="shopInfo">
+                            <a class="locationMap" href="https://www.google.com.tw/maps/place/@(location.AddressLocality)@(location.StreetAddress)" target="_blank">地圖</a> /  
+                            <a class="shopWebsite" href="@location.URL" target="_blank">網站</a>
+                        </span>
+                    </span>
                     <meta itemprop="description" content="@(location.Name)"/>
                     <div class="placeDetail">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
