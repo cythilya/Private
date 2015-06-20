@@ -13,6 +13,7 @@ body.home #main {padding-top: 40px;}
 .placeDetail{display:none;}
 .locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
 .entry-content .inner{margin-bottom: 20px;}
+#posts-list article .box .meta .location span{padding-left: 0;}
 </style>
 <div id="posts-list" class="cf">
     @if (activityList != null)
@@ -35,7 +36,13 @@ body.home #main {padding-top: 40px;}
                 <div class="meta">
                     <span class="time">@(item.Time) <meta itemprop="startDate" content="@(item.StartDate)"></span>
 		            <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
-			            <a class="locationName" itemprop="name" title="@(item.LocationDetail.Name)">@(item.LocationDetail.Name)</a>
+                        <span class="locationName">
+                            <a class="shopName" href="https://www.google.com.tw/maps/place/@(item.LocationDetail.AddressLocality)@(item.LocationDetail.StreetAddress)" target="_blank">@(item.LocationDetail.Name)</a>
+                            <span class="shopInfo">
+                                <a class="locationMap" href="https://www.google.com.tw/maps/place/@(item.LocationDetail.AddressLocality)@(item.LocationDetail.StreetAddress)" target="_blank">地圖</a> /  
+                                <a class="shopWebsite" href="@item.LocationDetail.URL" target="_blank">網站</a>
+                            </span>
+                        </span>
 			            <div class="placeDetail">
 				            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 					            <span itemprop="streetAddress">@(item.LocationDetail.StreetAddress)</span>,
