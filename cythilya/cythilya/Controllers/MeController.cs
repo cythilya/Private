@@ -2388,32 +2388,6 @@ namespace cythilya.Controllers
             activityList.Add(activity1);
             #endregion
             
-            /*
-            #region 活動2
-            MeModels.Activity activity2 = new MeModels.Activity();
-            activity2.ID = 2;
-            activity2.Name = "JavaScript Pattern";
-            activity2.Description = "JavaScript Pattern (JavaScript設計模式)。";
-            List<int> participant2 = new List<int>(new int[] { 1, 2, 3 });
-            activity2.Participant = participant2;
-            activity2.StartDate = "2015-08-07T19:00";
-            activity2.Time = "Aug 7, 2015";
-            activity2.Month = "Aug";
-            activity2.Day = "7";
-            activity2.WebURL = "";
-            List<int> tagList2 = new List<int>(new int[] { 5 });
-            activity2.Tag = tagList2;
-            activity2.TagDetail = GetActivityTagList(activity2.Tag);
-            activity2.Location = 1;
-            activity2.LocationDetail = GetLocation(activity2.Location);
-            activity2.NoteURL = "/Me/Activity?id=2";
-            activity2.Pic = "http://dummyimage.com/940x367/5F1985/ffffff&text=JavaScript+Pattern";
-            activity2.HTMLContent = "JavaScript Pattern";
-            activity2.isTest = false;
-            activityList.Add(activity2);
-            #endregion
-             * */
-
             #region 測試活動
             for (int i = 10000; i <= 11000; i++) {
                 MeModels.Activity activitySample = new MeModels.Activity();
