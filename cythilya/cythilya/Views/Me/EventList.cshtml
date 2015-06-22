@@ -6,7 +6,7 @@
     ViewBag.Description = "活動列表 | 桑莫讀書會";
     List<MeModels.Activity> activityList = ViewBag.ActivityList as List<MeModels.Activity>;
     activityList = activityList.OrderBy(x => x.ID).ToList();
-    List<MeModels.Tag> allTagList = ViewBag.AllTag as List<MeModels.Tag>;   
+    List<MeModels.ActivityTag> allTagList = ViewBag.AllTag as List<MeModels.ActivityTag>;   
 }
 <style>
 body.home #main {padding-top: 40px;}

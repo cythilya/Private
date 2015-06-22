@@ -135,7 +135,7 @@ namespace cythilya.Controllers
             }
 
             //取得全部標籤
-            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             #endregion
 
             GetFooterInfo();
@@ -148,7 +148,7 @@ namespace cythilya.Controllers
         public ActionResult ActivityList()
         {
             //取得全部標籤
-            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             ViewBag.AllTag = AllTag;
 
             GetActivityList();
@@ -160,7 +160,7 @@ namespace cythilya.Controllers
         public ActionResult Activities()
         {
             //取得全部標籤
-            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             ViewBag.AllTag = AllTag;
 
             GetActivityList();
@@ -202,7 +202,7 @@ namespace cythilya.Controllers
             }
 
             //取得全部標籤
-            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             #endregion
 
             GetFooterInfo();
@@ -215,7 +215,7 @@ namespace cythilya.Controllers
         public ActionResult EventList()
         {
             //取得全部標籤
-            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             ViewBag.AllTag = AllTag;
 
             GetActivityList();
@@ -227,7 +227,7 @@ namespace cythilya.Controllers
         public ActionResult Events() 
         {
             //取得全部標籤
-            List<MeModels.Tag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             ViewBag.AllTag = AllTag;
 
             GetActivityList();
@@ -2500,38 +2500,38 @@ namespace cythilya.Controllers
         }
 
         //取得活動標籤
-        public List<MeModels.Tag> GetActivityTagList(List<int> tags)
+        public List<MeModels.ActivityTag> GetActivityTagList(List<int> tags)
         {
-            List<MeModels.Tag> tagList = new List<MeModels.Tag>();
+            List<MeModels.ActivityTag> tagList = new List<MeModels.ActivityTag>();
             #region Mock
-            MeModels.Tag tag1 = new MeModels.Tag();
+            MeModels.ActivityTag tag1 = new MeModels.ActivityTag();
             tag1.ID = 1;
             tag1.Name = "Mobile Web";
             tagList.Add(tag1);
 
-            MeModels.Tag tag2 = new MeModels.Tag();
+            MeModels.ActivityTag tag2 = new MeModels.ActivityTag();
             tag2.ID = 2;
             tag2.Name = "Mobile App";
             tagList.Add(tag2);
 
-            MeModels.Tag tag3 = new MeModels.Tag();
+            MeModels.ActivityTag tag3 = new MeModels.ActivityTag();
             tag3.ID = 3;
             tag3.Name = "SEO";
             tagList.Add(tag3);
 
-            MeModels.Tag tag4 = new MeModels.Tag();
+            MeModels.ActivityTag tag4 = new MeModels.ActivityTag();
             tag4.ID = 4;
             tag4.Name = "UI/UX";
             tagList.Add(tag4);
 
-            MeModels.Tag tag5 = new MeModels.Tag();
+            MeModels.ActivityTag tag5 = new MeModels.ActivityTag();
             tag5.ID = 5;
             tag5.Name = "JavaScript";
             tagList.Add(tag5);
 
             #endregion
 
-            List<MeModels.Tag> thisTagList = new List<MeModels.Tag>();
+            List<MeModels.ActivityTag> thisTagList = new List<MeModels.ActivityTag>();
 
             if (tags.First() == 0)
             {
@@ -2541,7 +2541,7 @@ namespace cythilya.Controllers
             {
                 foreach (var num in tags)
                 {
-                    MeModels.Tag tagItem = tagList.Find(item => item.ID == num);
+                    MeModels.ActivityTag tagItem = tagList.Find(item => item.ID == num);
                     thisTagList.Add(tagItem);
                 }
             }

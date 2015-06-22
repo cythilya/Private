@@ -113,7 +113,7 @@ namespace cythilya.Models
             public String Day { get; set; }
             public string WebURL { get; set; }
             public List<int> Tag { get; set; }
-            public List<Tag> TagDetail { get; set; }
+            public List<ActivityTag> TagDetail { get; set; }
             public int Location { get; set; }
             public Location LocationDetail { get; set; }
             public string HTMLContent { get; set; }
@@ -140,7 +140,7 @@ namespace cythilya.Models
             public string URL { get; set; }
         }
         
-        public class Tag
+        public class ActivityTag
         {
             public int ID { get; set; }
             public string Name { get; set; }

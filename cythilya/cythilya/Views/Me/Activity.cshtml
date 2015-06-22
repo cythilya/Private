@@ -2,9 +2,9 @@
 @{
     MeModels.Activity activity = ViewBag.ActivityData as MeModels.Activity;
     List<MeModels.Participant> participantList = ViewBag.ParticipantList as List<MeModels.Participant>;
-    List<MeModels.Tag> tagList = ViewBag.TagList as List<MeModels.Tag>;
+    List<MeModels.ActivityTag> tagList = ViewBag.TagList as List<MeModels.ActivityTag>;
     MeModels.Location location = ViewBag.Location as MeModels.Location;
-    List<MeModels.Tag> allTagList = ViewBag.AllTag as List<MeModels.Tag>;
+    List<MeModels.ActivityTag> allTagList = ViewBag.AllTag as List<MeModels.ActivityTag>;
         
     Layout = "~/Views/Shared/_LayoutMe.cshtml";
     ViewBag.Tab = "";
