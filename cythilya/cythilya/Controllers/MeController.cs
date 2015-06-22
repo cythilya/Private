@@ -682,7 +682,7 @@ namespace cythilya.Controllers
             article_22.PicLarge = "/Content/me/img/blog/dotchi/dotchi_940x367.png";
             article_22.PicInFooter = "/Content/me/img/blog/dotchi/dotchi_54x54.png";
             article_22.Tag = "SEO, Tag, Relevant Terms, Hackathon";
-            article_22.isHighlight = true;
+            article_22.isHighlight = false;
             article_22.Time = "Feb 2, 2015";
             article_22.isBanner = false;
             articleList.Add(article_22);
@@ -903,7 +903,7 @@ namespace cythilya.Controllers
             article_37.PicLarge = "/Content/me/img/blog/modern_web_seo/modern_web_seo_940x367.jpg";
             article_37.PicInFooter = "/Content/me/img/blog/modern_web_seo/modern_web_seo_54x54.jpg";
             article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
-            article_37.isHighlight = false;
+            article_37.isHighlight = true;
             article_37.Time = "May 31, 2015";
             article_37.isBanner = true;
             articleList.Add(article_37);
@@ -943,7 +943,7 @@ namespace cythilya.Controllers
             articleList.Add(article_39);
             #endregion
 
-            #region 結構化資料之「活動」範例 (Part 1)
+            #region 結構化資料之「活動」範例 (Part 2) - 使用Microdata與JSON-LD
             MeModels.Article article_40 = new MeModels.Article();
             article_40.Name = "結構化資料之「活動」範例 (Part 2) - 使用Microdata與JSON-LD";
             article_40.Description = "在上一個範例 結構化資料之「活動」範例 (Part 1) 中使用的規範是 Data-Vocabulary.org，這次改用Microdata與JSON-LD，並記錄更多實作上的疑難雜症。";
@@ -956,7 +956,7 @@ namespace cythilya.Controllers
             article_40.Tag = "SEO, Rich Snippets, Structured Data";
             article_40.isHighlight = false;
             article_40.Time = "June 20, 2015";
-            article_40.isBanner = false;
+            article_40.isBanner = true;
             articleList.Add(article_40);
             #endregion
 
@@ -1681,7 +1681,7 @@ namespace cythilya.Controllers
 
             proj_14.HtmlContent = str14;
             proj_14.Tag = "Web CampignSite";
-            proj_14.isHighlight = true;
+            proj_14.isHighlight = false;
             proj_14.IsShowInPortfolio = true;
             List<int> partnerList14 = new List<int>(new int[] { 2, 4, 15, 16 });
             proj_14.Partners = partnerList14;
@@ -1850,7 +1850,7 @@ namespace cythilya.Controllers
 
             proj_17.HtmlContent = str17;
             proj_17.Tag = "Web CampignSite SEO";
-            proj_17.isHighlight = true;
+            proj_17.isHighlight = false;
             proj_17.IsShowInPortfolio = true;
             List<int> partnerList17 = new List<int>(new int[] { 4, 9 });
             proj_17.Partners = partnerList17;
