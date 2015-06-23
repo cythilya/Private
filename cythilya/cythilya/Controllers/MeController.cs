@@ -13,50 +13,79 @@ namespace cythilya.Controllers
     {
         #region View
         
-        //Index
+        //首頁
         public ActionResult Index()
         {
             GetArticleList();
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
-        //About
-        public ActionResult About() 
+        //聯絡我
+        public ActionResult Contact()
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
-        
-        public ActionResult About_C() 
+
+        #region 履歷相關
+        //About
+        public ActionResult About()
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
+            return View();
+        }
+
+        //關於我
+        public ActionResult About_C()
+        {
+            GetFooterInfo();
             return View();
         }
 
         //Resume
-        public ActionResult Resume() 
+        public ActionResult Resume()
         {
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
-        //Portfolio
-        public ActionResult Portfolio() 
+        #endregion 履歷相關
+
+        #region 作品相關 - 專案, 文章
+        //專案列表
+        public ActionResult Portfolio()
         {
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
+            return View();
+        }
+
+        //專案存檔
+        public ActionResult ProjectArchieve()
+        {
+            GetArticleList();
+            getProjectList();
+            GetFooterInfo();
+            return View();
+        }
+
+        //Project
+        public ActionResult Project(int id = 0)
+        {
+            List<MeModels.Project> projList = new List<MeModels.Project>();
+            projList = getProjectList();
+            MeModels.Project proj = projList.Find(item => item.ID == id);
+
+            if (proj == null)
+            {
+                return View("Portfolio");
+            }
+
+            getRelatedProject(id);
+            ViewBag.ProjData = proj;
+            GetFooterInfo();
             return View();
         }
 
@@ -65,22 +94,14 @@ namespace cythilya.Controllers
         {
             GetArticleList();
             getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
+        
+        #endregion 作品相關 - 專案, 文章
 
-        public ActionResult ProjectArchieve() 
-        {
-            GetArticleList();
-            getProjectList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
-            return View(); 
-        }
-
+        #region 活動相關
+        //活動頁 - data-vocabulary
         public ActionResult Activity(int id = 0)
         {
             List<MeModels.Activity> activityList = new List<MeModels.Activity>();
@@ -107,69 +128,169 @@ namespace cythilya.Controllers
             #endregion
 
             #region 取得標籤
+            //取得活動標籤
             if (activity.Tag != null)
             {
                 GetActivityTagList(activity.Tag);
             }
+
+            //取得全部標籤
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
             #endregion
 
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             ViewBag.ActivityData = activity;
+            ViewBag.AllTag = AllTag;
             return View();
         }
-        
+
+        //活動列表
         public ActionResult ActivityList()
         {
+            //取得全部標籤
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
+
             GetActivityList();
-            getRecentPostList();
-            getFeaturedPostList();
-            getRecentProject();
+            GetFooterInfo();
             return View();
         }
 
-        //Project
-        public ActionResult Project(int id = 0) 
+        //活動列表, 含測試活動
+        public ActionResult Activities()
         {
-            List<MeModels.Project> projList = new List<MeModels.Project>();
-            projList = getProjectList();
-            MeModels.Project proj = projList.Find(item => item.ID == id);
+            //取得全部標籤
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
 
-            if (proj == null) {
-                return View("Portfolio");
+            GetActivityList();
+            GetFooterInfo();
+            return View();
+        }
+
+        //活動頁 - mircodata / json-ld
+        public ActionResult Event(int id = 0)
+        {
+            List<MeModels.Activity> activityList = new List<MeModels.Activity>();
+            activityList = GetActivityList();
+            MeModels.Activity activity = activityList.Find(item => item.ID == id);
+
+            if (activity == null)
+            {
+                return View("ActivityList");
             }
 
-            #region 取得合作夥伴
-            if (proj.Partners != null) 
+            #region 取得參與者
+            if (activity.Participant != null)
             {
-                GetPartnerList(proj.Partners);
+                GetParticipantList(activity.Participant);
             }
             #endregion
 
-            getRelatedProject(id);
+            #region 取得地點
+            if (activity.Location != 0)
+            {
+                GetLocation(activity.Location);
+            }
+            #endregion
 
-            ViewBag.ProjData = proj;
-            getFeaturedPostList();
-            getRecentPostList();
-            getRecentProject();
+            #region 取得標籤
+            //取得活動標籤
+            if (activity.Tag != null)
+            {
+                GetActivityTagList(activity.Tag);
+            }
+
+            //取得全部標籤
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            #endregion
+
+            GetFooterInfo();
+            ViewBag.ActivityData = activity;
+            ViewBag.AllTag = AllTag;
             return View();
         }
 
-        //Contact
-        public ActionResult Contact()
+        //活動列表
+        public ActionResult EventList()
+        {
+            //取得全部標籤
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
+
+            GetActivityList();
+            GetFooterInfo();
+            return View();
+        }
+
+        //活動列表, 含測試活動
+        public ActionResult Events() 
+        {
+            //取得全部標籤
+            List<MeModels.ActivityTag> AllTag = GetActivityTagList(new List<int>(new int[] { 0 }));
+            ViewBag.AllTag = AllTag;
+
+            GetActivityList();
+            GetFooterInfo();
+            return View();
+        }
+
+        #endregion 活動相關
+
+        #endregion View
+
+        #region Function
+
+        #region 共用
+
+        //聯繫我
+        public ActionResult ContactMe(MeModels.Visitor visitor)
+        {
+            string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/VisitorEmailTemplate.html"));
+
+
+            mailBody = mailBody.Replace("{{Visitor_Name}}", visitor.Name);
+            mailBody = mailBody.Replace("{{Visitor_Email}}", visitor.Email);
+            mailBody = mailBody.Replace("{{Visitor_Messages}}", visitor.Message);
+            mailBody = mailBody.Replace("{{Visitor_Time}}", DateTime.UtcNow.ToString());
+
+            try
+            {
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("eshoppertw@gmail.com", "liardice.,1024");
+                SmtpServer.EnableSsl = true;
+
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("eshoppertw@gmail.com");
+                mail.To.Add("cythilya@gmail.com");
+                mail.Subject = "Hello ~ Email from " + visitor.Name + " at " + DateTime.UtcNow.ToString();
+                mail.Body = mailBody;
+                mail.IsBodyHtml = true;
+
+                SmtpServer.Send(mail);
+
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        //Footer資訊
+        public void GetFooterInfo()
         {
             getRecentPostList();
             getFeaturedPostList();
             getRecentProject();
-            return View();
         }
-
-        #endregion
-
-        #region Function
         
-        //Get Article List
+        #endregion 共用
+
+        #region 文章相關
+        
+        //取得文章列表
         public List<MeModels.Article> GetArticleList()
         {
             List<MeModels.Article> articleList = new List<MeModels.Article>();
@@ -561,7 +682,7 @@ namespace cythilya.Controllers
             article_22.PicLarge = "/Content/me/img/blog/dotchi/dotchi_940x367.png";
             article_22.PicInFooter = "/Content/me/img/blog/dotchi/dotchi_54x54.png";
             article_22.Tag = "SEO, Tag, Relevant Terms, Hackathon";
-            article_22.isHighlight = true;
+            article_22.isHighlight = false;
             article_22.Time = "Feb 2, 2015";
             article_22.isBanner = false;
             articleList.Add(article_22);
@@ -782,13 +903,64 @@ namespace cythilya.Controllers
             article_37.PicLarge = "/Content/me/img/blog/modern_web_seo/modern_web_seo_940x367.jpg";
             article_37.PicInFooter = "/Content/me/img/blog/modern_web_seo/modern_web_seo_54x54.jpg";
             article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
-            article_37.isHighlight = false;
+            article_37.isHighlight = true;
             article_37.Time = "May 31, 2015";
             article_37.isBanner = true;
             articleList.Add(article_37);
             #endregion
 
+            #region JavaScript - Module Pattern
+            MeModels.Article article_38 = new MeModels.Article();
+            article_38.Name = "JavaScript - Module Pattern";
+            article_38.Description = "Module Pattern 利用函數的「閉包(closure)」特性來避免汙染全域的問題 - 使用閉包(closure)來提供封裝的功能，將方法和變數限制在一個範圍內存取與使用。這樣的好處除了避免汙染全域外，也將實作隱藏起來，只提供公開的介面(public API)供其他地方使用，簡單易懂。";
+            article_38.URL = "http://cythilya.blogspot.tw/2015/06/javascript-module-pattern.html";
+            article_38.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_38.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_38.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_38.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_38.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_38.Tag = "JavaScript, Closure, Module Pattern";
+            article_38.isHighlight = false;
+            article_38.Time = "June 18, 2015";
+            article_38.isBanner = false;
+            articleList.Add(article_38);
             #endregion
+
+            #region 結構化資料之「活動」範例 (Part 1)
+            MeModels.Article article_39 = new MeModels.Article();
+            article_39.Name = "結構化資料之「活動」範例 (Part 1)";
+            article_39.Description = "「Promote Your Content with Structured Data Markup」，搜尋引擎愈來愈人性化，提供愈來愈多實用的資料給使用者做決策。因此，前端工程師的切版不再只是依照設計稿呈現美麗的畫面和特效而已，還要能利用結構化資料，讓網站內容在SERPs上顯示更多資訊。";
+            article_39.URL = "http://cythilya.blogspot.tw/2015/06/structured-data-event.html";
+            article_39.RawPic = "/Content/me/img/blog/structured_data_event/structured_data_event.jpg";
+            article_39.PicSmall = "/Content/me/img/blog/structured_data_event/structured_data_event_188x73.jpg";
+            article_39.PicMedium = "/Content/me/img/blog/structured_data_event/structured_data_event_300.jpg";
+            article_39.PicLarge = "/Content/me/img/blog/structured_data_event/structured_data_event_940x367.jpg";
+            article_39.PicInFooter = "/Content/me/img/blog/structured_data_event/structured_data_event_54x54.jpg";
+            article_39.Tag = "SEO, Rich Snippets, Structured Data";
+            article_39.isHighlight = false;
+            article_39.Time = "June 18, 2015";
+            article_39.isBanner = false;
+            articleList.Add(article_39);
+            #endregion
+
+            #region 結構化資料之「活動」範例 (Part 2) - 使用Microdata與JSON-LD
+            MeModels.Article article_40 = new MeModels.Article();
+            article_40.Name = "結構化資料之「活動」範例 (Part 2) - 使用Microdata與JSON-LD";
+            article_40.Description = "在上一個範例 結構化資料之「活動」範例 (Part 1) 中使用的規範是 Data-Vocabulary.org，這次改用Microdata與JSON-LD，並記錄更多實作上的疑難雜症。";
+            article_40.URL = "http://cythilya.blogspot.tw/2015/06/structured-data-event-2.html";
+            article_40.RawPic = "/Content/me/img/blog/structured-data-event-2structured-data-event-2.jpg";
+            article_40.PicSmall = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-188x73.jpg";
+            article_40.PicMedium = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-300.jpg";
+            article_40.PicLarge = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-940x367.jpg";
+            article_40.PicInFooter = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-54x54.jpg";
+            article_40.Tag = "SEO, Rich Snippets, Structured Data";
+            article_40.isHighlight = false;
+            article_40.Time = "June 20, 2015";
+            article_40.isBanner = true;
+            articleList.Add(article_40);
+            #endregion
+
+            #endregion Mock
 
             articleList.Reverse();
 
@@ -796,7 +968,47 @@ namespace cythilya.Controllers
             return articleList;
         }
 
-        //Get Project List
+        //取得最近文章
+        public void getRecentPostList(int number = 4)
+        {
+            List<MeModels.Article> articleList = new List<MeModels.Article>();
+            List<MeModels.Article> recentArticleList = new List<MeModels.Article>();
+
+            articleList = GetArticleList();
+
+            foreach (var item in articleList)
+            {
+                recentArticleList.Add(item);
+            };
+
+            recentArticleList.Reverse();
+            recentArticleList = Enumerable.Reverse(recentArticleList).Take(number).ToList();
+            ViewBag.RecentPostList = recentArticleList;
+        }
+
+        //取得特色文章
+        public void getFeaturedPostList(int number = 4)
+        {
+            List<MeModels.Article> articleList = new List<MeModels.Article>();
+            List<MeModels.Article> featuredArticleList = new List<MeModels.Article>();
+
+            articleList = GetArticleList();
+
+            foreach (var item in articleList)
+            {
+                if (item.isHighlight)
+                {
+                    featuredArticleList.Add(item);
+                }
+            }
+            ViewBag.FeaturedPostList = featuredArticleList;
+        }
+
+        #endregion 文章相關
+
+        #region 專案相關
+
+        //取得專案列表
         public List<MeModels.Project> getProjectList()
         {
             List<MeModels.Project> projList = new List<MeModels.Project>();
@@ -827,11 +1039,12 @@ namespace cythilya.Controllers
             proj_1.IsShowInPortfolio = true;
             List<int> partnerList1 = new List<int>(new int[] { 10 });
             proj_1.Partners = partnerList1;
+            proj_1.PartnerDetail = GetPartnerList(proj_1.Partners);            
 
             List<MeModels.SnapshotInfo> SnapshotList1 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_1_snap_1 = new MeModels.SnapshotInfo();
             MeModels.SnapshotInfo proj_1_snap_2 = new MeModels.SnapshotInfo();
-            MeModels.SnapshotInfo proj_1_snap_3 = new MeModels.SnapshotInfo();;
+            MeModels.SnapshotInfo proj_1_snap_3 = new MeModels.SnapshotInfo(); ;
             MeModels.SnapshotInfo proj_1_snap_4 = new MeModels.SnapshotInfo();
             MeModels.SnapshotInfo proj_1_snap_5 = new MeModels.SnapshotInfo();
 
@@ -884,15 +1097,16 @@ namespace cythilya.Controllers
             proj_2.IsShowInPortfolio = true;
             List<int> partnerList2 = new List<int>(new int[] { 13 });
             proj_2.Partners = partnerList2;
+            proj_2.PartnerDetail = GetPartnerList(proj_2.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList2 = new List<MeModels.SnapshotInfo>();
 
-            MeModels.SnapshotInfo proj_2_snap_1 = new MeModels.SnapshotInfo(); 
-            MeModels.SnapshotInfo proj_2_snap_2 = new MeModels.SnapshotInfo(); 
-            MeModels.SnapshotInfo proj_2_snap_3 = new MeModels.SnapshotInfo(); 
-            MeModels.SnapshotInfo proj_2_snap_4 = new MeModels.SnapshotInfo(); 
-            MeModels.SnapshotInfo proj_2_snap_5 = new MeModels.SnapshotInfo(); 
-            MeModels.SnapshotInfo proj_2_snap_6 = new MeModels.SnapshotInfo(); 
+            MeModels.SnapshotInfo proj_2_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_2_snap_2 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_2_snap_3 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_2_snap_4 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_2_snap_5 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_2_snap_6 = new MeModels.SnapshotInfo();
             MeModels.SnapshotInfo proj_2_snap_7 = new MeModels.SnapshotInfo();
 
             proj_2_snap_1.Name = "粉多辦桌";
@@ -915,7 +1129,7 @@ namespace cythilya.Controllers
 
             proj_2_snap_7.Name = "粉多辦桌結束";
             proj_2_snap_7.SnapshotURL = "/Content/me/img/project/party/party_index_close _940x965.png";
-            
+
             SnapshotList2.Add(proj_2_snap_1);
             SnapshotList2.Add(proj_2_snap_2);
             SnapshotList2.Add(proj_2_snap_3);
@@ -952,15 +1166,15 @@ namespace cythilya.Controllers
             proj_3.IsShowInPortfolio = true;
 
             List<MeModels.SnapshotInfo> SnapshotList3 = new List<MeModels.SnapshotInfo>();
-            MeModels.SnapshotInfo proj_3_snap_1 = new MeModels.SnapshotInfo(); 
-            MeModels.SnapshotInfo proj_3_snap_2 = new MeModels.SnapshotInfo(); 
+            MeModels.SnapshotInfo proj_3_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_3_snap_2 = new MeModels.SnapshotInfo();
 
             proj_3_snap_1.Name = "粉多辦桌 x 恆隆行";
             proj_3_snap_1.SnapshotURL = "/Content/me/img/project/party_hlh/party_index_hlh_940.png";
- 
+
             proj_3_snap_2.Name = "粉多辦桌 x 恆隆行 - 活動盛況";
             proj_3_snap_2.SnapshotURL = "/Content/me/img/project/party_hlh/party_event_hlh_940.png";
-           
+
             SnapshotList3.Add(proj_3_snap_1);
             SnapshotList3.Add(proj_3_snap_2);
             proj_3.Snapshot = SnapshotList3;
@@ -998,6 +1212,7 @@ namespace cythilya.Controllers
             proj_4.IsShowInPortfolio = true;
             List<int> partnerList4 = new List<int>(new int[] { 10, 11, 13, 12, 16 });
             proj_4.Partners = partnerList4;
+            proj_4.PartnerDetail = GetPartnerList(proj_4.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList4 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_4_snap_1 = new MeModels.SnapshotInfo();
@@ -1020,7 +1235,7 @@ namespace cythilya.Controllers
 
             proj_4_snap_5.Name = "Friendo 粉多任務 - 紅利商城";
             proj_4_snap_5.SnapshotURL = "/Content/me/img/project/mission/mission_bonus.png";
-            
+
             SnapshotList4.Add(proj_4_snap_1);
             SnapshotList4.Add(proj_4_snap_2);
             SnapshotList4.Add(proj_4_snap_3);
@@ -1055,6 +1270,7 @@ namespace cythilya.Controllers
             proj_5.IsShowInPortfolio = true;
             List<int> partnerList5 = new List<int>(new int[] { 3, 9 });
             proj_5.Partners = partnerList5;
+            proj_5.PartnerDetail = GetPartnerList(proj_5.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList5 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_5_snap_1 = new MeModels.SnapshotInfo();
@@ -1077,7 +1293,7 @@ namespace cythilya.Controllers
 
             proj_5_snap_5.Name = "原味千尋 x Friendo 粉多任務 - 跟知心好友無話不談嗎?是否有些話對朋友說不出口?讓粉多進入你的潛意識，挖掘你埋藏已久的小秘密!勇敢對朋友說出秘密，就有機會抽中最強乾杯零食 - 原味千尋炭燒辣味酪絲。原味千尋用16倍的真心，換1份乾杯的感動。";
             proj_5_snap_5.SnapshotURL = "/Content/me/img/project/daintiest/daintiest_mission_content_generator.png";
-           
+
             SnapshotList5.Add(proj_5_snap_1);
             SnapshotList5.Add(proj_5_snap_2);
             SnapshotList5.Add(proj_5_snap_3);
@@ -1112,6 +1328,7 @@ namespace cythilya.Controllers
             proj_6.IsShowInPortfolio = true;
             List<int> partnerList6 = new List<int>(new int[] { 3, 9 });
             proj_6.Partners = partnerList6;
+            proj_6.PartnerDetail = GetPartnerList(proj_6.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList6 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_6_snap_1 = new MeModels.SnapshotInfo();
@@ -1164,6 +1381,7 @@ namespace cythilya.Controllers
             proj_7.IsShowInPortfolio = true;
             List<int> partnerList7 = new List<int>(new int[] { 6, 12 });
             proj_7.Partners = partnerList7;
+            proj_7.PartnerDetail = GetPartnerList(proj_7.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList7 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_7_snap_1 = new MeModels.SnapshotInfo();
@@ -1190,7 +1408,7 @@ namespace cythilya.Controllers
 
             proj_7.Snapshot = SnapshotList7;
             projList.Add(proj_7);
-            #endregion 
+            #endregion
 
             #region 葡萄王LGG特益菌 - 黃金三兄弟賽運占卜
             MeModels.Project proj_8 = new MeModels.Project();
@@ -1216,6 +1434,7 @@ namespace cythilya.Controllers
             proj_8.IsShowInPortfolio = true;
             List<int> partnerList8 = new List<int>(new int[] { 3, 9 });
             proj_8.Partners = partnerList8;
+            proj_8.PartnerDetail = GetPartnerList(proj_8.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList8 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_8_snap_1 = new MeModels.SnapshotInfo();
@@ -1290,6 +1509,7 @@ namespace cythilya.Controllers
             proj_10.IsShowInPortfolio = true;
             List<int> partnerList10 = new List<int>(new int[] { 2, 9, 16 });
             proj_10.Partners = partnerList10;
+            proj_10.PartnerDetail = GetPartnerList(proj_10.Partners);
 
             StringBuilder sb10 = new StringBuilder();
             sb10.Append("<p>只要在2014/10/7前上傳你的全家Fami霜淇淋『幸福提案』，就有機會讓小小特務親自到『幸福現場』完成你的夢想，還有機會贏得365支Fami霜淇淋，讓你天天都幸福！</p>");
@@ -1379,6 +1599,7 @@ namespace cythilya.Controllers
             proj_12.IsShowInPortfolio = true;
             List<int> partnerList12 = new List<int>(new int[] { 2, 14 });
             proj_12.Partners = partnerList12;
+            proj_12.PartnerDetail = GetPartnerList(proj_12.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList12 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_12_snap_1 = new MeModels.SnapshotInfo();
@@ -1413,6 +1634,7 @@ namespace cythilya.Controllers
             proj_13.IsShowInPortfolio = true;
             List<int> partnerList13 = new List<int>(new int[] { 8, 12, 17 });
             proj_13.Partners = partnerList13;
+            proj_13.PartnerDetail = GetPartnerList(proj_13.Partners);
 
             StringBuilder sb13 = new StringBuilder();
             sb13.Append("<p>職場背黑鍋！假日老闆LINE不停！有些職場潛規則，你學會了沒？如果沒學會，快來參加新東陽2015職場狀況劇大調查，讓職場達人原味哥，蜜汁女，厚脆叔，黑椒女，五香弟，麻辣姊告訴你職場潛規則，還有300份新東陽人氣伴手禮，蜜汁豬肉乾與原味牛肉乾大獎，等你拿！</p>");
@@ -1459,10 +1681,11 @@ namespace cythilya.Controllers
 
             proj_14.HtmlContent = str14;
             proj_14.Tag = "Web CampignSite";
-            proj_14.isHighlight = true;
+            proj_14.isHighlight = false;
             proj_14.IsShowInPortfolio = true;
             List<int> partnerList14 = new List<int>(new int[] { 2, 4, 15, 16 });
             proj_14.Partners = partnerList14;
+            proj_14.PartnerDetail = GetPartnerList(proj_14.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList14 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_14_snap_1 = new MeModels.SnapshotInfo();
@@ -1487,7 +1710,7 @@ namespace cythilya.Controllers
             proj_14_snap_6.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_happybox_940x469.png";
             proj_14_snap_7.Name = "P&G 生活家 - 活動辦法";
             proj_14_snap_7.SnapshotURL = "/Content/me/img/project/livingartist/livingartist_rule_940x469.png";
-            
+
             SnapshotList14.Add(proj_14_snap_1);
             SnapshotList14.Add(proj_14_snap_2);
             SnapshotList14.Add(proj_14_snap_3);
@@ -1499,7 +1722,7 @@ namespace cythilya.Controllers
             proj_14.Snapshot = SnapshotList14;
             projList.Add(proj_14);
             #endregion
-            
+
             #region 喜年來 - 過年拷問神回覆
             MeModels.Project proj_15 = new MeModels.Project();
             proj_15.ID = 15;
@@ -1532,6 +1755,7 @@ namespace cythilya.Controllers
             proj_15.IsShowInPortfolio = true;
             List<int> partnerList15 = new List<int>(new int[] { 10, 15, 16 });
             proj_15.Partners = partnerList15;
+            proj_15.PartnerDetail = GetPartnerList(proj_15.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList15 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_15_snap_1 = new MeModels.SnapshotInfo();
@@ -1573,6 +1797,7 @@ namespace cythilya.Controllers
             proj_16.isHighlight = false;
             List<int> partnerList = new List<int>(new int[] { 1, 2 });
             proj_16.Partners = partnerList;
+            proj_16.PartnerDetail = GetPartnerList(proj_16.Partners);
             proj_16.IsShowInPortfolio = true;
 
             List<MeModels.SnapshotInfo> SnapshotList16 = new List<MeModels.SnapshotInfo>();
@@ -1625,10 +1850,11 @@ namespace cythilya.Controllers
 
             proj_17.HtmlContent = str17;
             proj_17.Tag = "Web CampignSite SEO";
-            proj_17.isHighlight = true;
+            proj_17.isHighlight = false;
             proj_17.IsShowInPortfolio = true;
             List<int> partnerList17 = new List<int>(new int[] { 4, 9 });
             proj_17.Partners = partnerList17;
+            proj_17.PartnerDetail = GetPartnerList(proj_17.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList17 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_17_snap_1 = new MeModels.SnapshotInfo();
@@ -1668,6 +1894,8 @@ namespace cythilya.Controllers
             proj_18.Tag = "Web RWD Platform";
             proj_18.isHighlight = true;
             proj_18.IsShowInPortfolio = true;
+            List<int> proj_18 = new List<int>(new int[] { 5, 20 });
+            proj_18.PartnerDetail = GetPartnerList(proj_18.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList18 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_18_snap_1 = new MeModels.SnapshotInfo();
@@ -1697,7 +1925,7 @@ namespace cythilya.Controllers
             proj_19.Order = 20;
             proj_19.Client = "Uni-Net 聯網國際";
             proj_19.ClientURL = "http://www.uni-net.com.tw";
-            proj_19.Date = "Jun 2015";
+            proj_19.Date = "June 2015";
             proj_19.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/IndexNew.action";
             proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
             proj_19.Tag = "Web Platform SEO";
@@ -1705,7 +1933,8 @@ namespace cythilya.Controllers
             proj_19.IsShowInPortfolio = true;
             List<int> partnerList19 = new List<int>(new int[] { 7, 19 });
             proj_19.Partners = partnerList19;
-            
+            proj_19.PartnerDetail = GetPartnerList(proj_19.Partners);
+
             List<MeModels.SnapshotInfo> SnapshotList19 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_19_snap_1 = new MeModels.SnapshotInfo();
 
@@ -1717,10 +1946,9 @@ namespace cythilya.Controllers
             projList.Add(proj_19);
             #endregion
 
-            #region VOLVING沐頤健康概念館 - 未上作品集
-            /*
+            #region VOLVING沐頤健康概念館
             MeModels.Project proj_20 = new MeModels.Project();
-            proj_20.ID = 21;
+            proj_20.ID = 20;
             proj_20.Name = "VOLVING沐頤健康概念館";
             proj_20.Description = "VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。";
             proj_20.Role = "Front-End Development";
@@ -1731,17 +1959,18 @@ namespace cythilya.Controllers
             proj_20.PicMedium = "/Content/me/img/project/volving/volving_300.png";
             proj_20.PicLarge = "/Content/me/img/project/volving/volving_940x367.png";
             proj_20.PicInFooter = "/Content/me/img/project/volving/volving_54x54.png";
-            proj_20.Order = 20;
+            proj_20.Order = 21;
             proj_20.Client = "國泰健康管理";
             proj_20.ClientURL = "http://www.cathay-hcm.com.tw/Health";
-            proj_20.Date = "May 2015";
-            proj_20.LauchURL = "http://www.volving.com.tw/index";
+            proj_20.Date = "June 2015";
+            proj_20.LauchURL = "http://www.volving.com.tw";
             proj_20.HtmlContent = "<p>VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。</p>";
             proj_20.Tag = "Web OfficialWebsite";
             proj_20.isHighlight = false;
             proj_20.IsShowInPortfolio = true;
-            List<int> partnerList20 = new List<int>(new int[] { 5 });
+            List<int> partnerList20 = new List<int>(new int[] { 5, 20 });
             proj_20.Partners = partnerList20;
+            proj_20.PartnerDetail = GetPartnerList(proj_20.Partners);
             
             List<MeModels.SnapshotInfo> SnapshotList20 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_20_snap_1 = new MeModels.SnapshotInfo();
@@ -1752,7 +1981,6 @@ namespace cythilya.Controllers
 
             proj_20.Snapshot = SnapshotList20;
             projList.Add(proj_20);
-             * */
             #endregion
 
             #region 用聽的網頁‧933樂活網
@@ -1783,8 +2011,9 @@ namespace cythilya.Controllers
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
             proj_21.IsShowInPortfolio = true;
-            List<int> partnerList21 = new List<int>(new int[] { 5, 18 });
+            List<int> partnerList21 = new List<int>(new int[] { 5, 18, 21 });
             proj_21.Partners = partnerList21;
+            proj_21.PartnerDetail = GetPartnerList(proj_21.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList21 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_21_snap_1 = new MeModels.SnapshotInfo();
@@ -1828,6 +2057,7 @@ namespace cythilya.Controllers
             proj_22.IsShowInPortfolio = true;
             List<int> partnerList22 = new List<int>(new int[] { 7 });
             proj_22.Partners = partnerList22;
+            proj_22.PartnerDetail = GetPartnerList(proj_22.Partners);
 
             List<MeModels.SnapshotInfo> SnapshotList22 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_22_snap_1 = new MeModels.SnapshotInfo();
@@ -1840,50 +2070,14 @@ namespace cythilya.Controllers
             projList.Add(proj_22);
             #endregion
 
-            #endregion
+            #endregion Mock
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
             ViewBag.ProjList = projList;
             return projList;
         }
 
-        //Get Recent Post
-        public void getRecentPostList(int number = 4) 
-        {
-            List<MeModels.Article> articleList = new List<MeModels.Article>();
-            List<MeModels.Article> recentArticleList = new List<MeModels.Article>();
-
-            articleList = GetArticleList();
-
-            foreach(var item in articleList)
-            {
-                recentArticleList.Add(item);
-            };
-
-            recentArticleList.Reverse();
-            recentArticleList = Enumerable.Reverse(recentArticleList).Take(number).ToList();
-            ViewBag.RecentPostList = recentArticleList;
-        }
-
-        //Get Featured Post
-        public void getFeaturedPostList(int number = 4)
-        {
-            List<MeModels.Article> articleList = new List<MeModels.Article>();
-            List<MeModels.Article> featuredArticleList = new List<MeModels.Article>();
-
-            articleList = GetArticleList();
-
-            foreach (var item in articleList)
-            {
-                if (item.isHighlight)
-                { 
-                    featuredArticleList.Add(item);
-                }
-            }
-            ViewBag.FeaturedPostList = featuredArticleList;
-        }
-
-        //Get Related Projects
+        //取得相關專案
         public void getRelatedProject(int id = 1, int count = 4)
         {
             //tag list
@@ -1915,10 +2109,10 @@ namespace cythilya.Controllers
                 MeModels.RelatedProject projectItem = new MeModels.RelatedProject();
                 string[] parts = item.Tag.Split(' ');
 
-                for(int i = 0; i < TagList.Count ; i++)
+                for (int i = 0; i < TagList.Count; i++)
                 {
                     var result = Array.FindAll(parts, s => s.Equals(TagList[i]));
-                    if (result.Length != 0) 
+                    if (result.Length != 0)
                     {
                         total = total + score;
                     }
@@ -1943,7 +2137,7 @@ namespace cythilya.Controllers
             bool flag = relatedProjectList.Remove(itemToRemove);
 
             //calculate determinant
-            foreach(var item in relatedProjectList)
+            foreach (var item in relatedProjectList)
             {
                 var resultScore = targetProj.TagScore & item.TagScore;
                 item.TagScore = resultScore;
@@ -1969,7 +2163,7 @@ namespace cythilya.Controllers
             ViewBag.RelatedProjects = reulstRelatedProjectList;
         }
 
-        //Get Recent Projects
+        //取得最近專案
         public void getRecentProject(int number = 4)
         {
             //get project list
@@ -1991,6 +2185,8 @@ namespace cythilya.Controllers
                 projectItem.PicLarge = item.PicLarge;
                 projectItem.PicInFooter = item.PicInFooter;
                 projectItem.Order = item.Order;
+                projectItem.PartnerDetail = (item.PartnerDetail != null) ? item.PartnerDetail : null;
+                projectItem.Role = item.Role;
                 recentProjects.Add(projectItem);
             }
 
@@ -2012,43 +2208,8 @@ namespace cythilya.Controllers
             ViewBag.RecentProjectList = recentProjectList;
         }
 
-        //Send Mail to Me
-        public ActionResult ContactMe(MeModels.Visitor visitor)
-        {
-            string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/VisitorEmailTemplate.html"));
-
-
-            mailBody = mailBody.Replace("{{Visitor_Name}}", visitor.Name);
-            mailBody = mailBody.Replace("{{Visitor_Email}}", visitor.Email);
-            mailBody = mailBody.Replace("{{Visitor_Messages}}", visitor.Message);
-            mailBody = mailBody.Replace("{{Visitor_Time}}", DateTime.UtcNow.ToString());
-            
-            try
-            {
-                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-                SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("eshoppertw@gmail.com", "liardice.,1024");
-                SmtpServer.EnableSsl = true;
-
-                MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("eshoppertw@gmail.com");
-                mail.To.Add("cythilya@gmail.com");
-                mail.Subject = "Hello ~ Email from " + visitor.Name + " at " + DateTime.UtcNow.ToString();
-                mail.Body = mailBody;
-                mail.IsBodyHtml = true;
-
-                SmtpServer.Send(mail);
-
-                return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }        
-
-        //Get Partners
-        public void GetPartnerList(List<int> parters)
+        //取得合作夥伴
+        public List<MeModels.Partner> GetPartnerList(List<int> parters)
         {
             #region Mock
             List<MeModels.Partner> partnerList = new List<MeModels.Partner>();
@@ -2107,7 +2268,7 @@ namespace cythilya.Controllers
             partner9.Website = "https://www.facebook.com/joyce.lo.73";
             partnerList.Add(partner9);
 
-            MeModels.Partner partner10= new MeModels.Partner();
+            MeModels.Partner partner10 = new MeModels.Partner();
             partner10.ID = 10;
             partner10.Name = "羅拉拉";
             partner10.Website = "https://www.facebook.com/lala.luo0812";
@@ -2119,7 +2280,7 @@ namespace cythilya.Controllers
             partner11.Website = "https://www.facebook.com/luki.kino";
             partnerList.Add(partner11);
 
-            MeModels.Partner partner12= new MeModels.Partner();
+            MeModels.Partner partner12 = new MeModels.Partner();
             partner12.ID = 12;
             partner12.Name = "Ryan Liang";
             partner12.Website = "https://www.facebook.com/ryan7979";
@@ -2167,20 +2328,36 @@ namespace cythilya.Controllers
             partner19.Website = "https://www.facebook.com/fsz570";
             partnerList.Add(partner19);
 
+            MeModels.Partner partner20 = new MeModels.Partner();
+            partner20.ID = 20;
+            partner20.Name = "蔣禛";
+            partner20.Website = "https://www.facebook.com/profile.php?id=100000257532711";
+            partnerList.Add(partner20);
+
+            MeModels.Partner partner21 = new MeModels.Partner();
+            partner21.ID = 21;
+            partner21.Name = "Kaye Harley";
+            partner21.Website = "https://www.facebook.com/kaye.harley";
+            partnerList.Add(partner21);
+            
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
 
-            foreach (var num in parters) 
+            foreach (var num in parters)
             {
                 MeModels.Partner partnerItem = partnerList.Find(item => item.ID == num);
                 projectPartnerList.Add(partnerItem);
             }
 
             ViewBag.PartnerList = projectPartnerList;
+            return projectPartnerList;
         }
 
-        //Get Activity List
+        #endregion 專案相關
+
+        #region 活動相關
+
         public List<MeModels.Activity> GetActivityList()
         {
             List<MeModels.Activity> activityList = new List<MeModels.Activity>();
@@ -2199,17 +2376,20 @@ namespace cythilya.Controllers
             activity1.Month = "July";
             activity1.Day = "3";
             activity1.WebURL = "";
-            List<int> tagList1 = new List<int>(new int[] { 1, 2 });
+            List<int> tagList1 = new List<int>(new int[] { 1, 2, 4 });
             activity1.Tag = tagList1;
+            activity1.TagDetail = GetActivityTagList(activity1.Tag);
             activity1.Location = 1;
+            activity1.LocationDetail = GetLocation(activity1.Location);
             activity1.NoteURL = "/Me/Activity?id=1";
             activity1.Pic = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
             activity1.HTMLContent = "";
+            activity1.isTest = false;
             activityList.Add(activity1);
             #endregion
-
+            
             #region 測試活動
-            for (int i = 10000; i <= 10500; i++) {
+            for (int i = 10000; i <= 11000; i++) {
                 MeModels.Activity activitySample = new MeModels.Activity();
                 activitySample.ID = i;
                 activitySample.Name = "桑莫讀書會 測試活動" + i;
@@ -2263,12 +2443,15 @@ namespace cythilya.Controllers
                 activitySample.Month = monthText.ToString();
                 activitySample.Day = randomDay.ToString();
                 activitySample.WebURL = "";
-                List<int> tagListSample = new List<int>(new int[] { 1, 2 });
-                activitySample.Tag = tagList1;
+                List<int> tagListSample = new List<int>(new int[] { 3 });
+                activitySample.Tag = tagListSample;
+                activitySample.TagDetail = GetActivityTagList(activitySample.Tag);
                 activitySample.Location = 1;
+                activitySample.LocationDetail = GetLocation(activitySample.Location);
                 activitySample.NoteURL = "/Me/Activity?id=" + i;
                 activitySample.Pic = "/Content/me/img/activity/activity_1/activity_1_940x367.jpg";
-                activitySample.HTMLContent = "<p>桑莫讀書會 測試活動</p>";
+                activitySample.HTMLContent = "<p>結構化資料之「活動」範例。「Promote Your Content with Structured Data Markup」，搜尋引擎愈來愈人性化，提供愈來愈多實用的資料給使用者做決策。因此，前端工程師的切版不再只是依照設計稿呈現美麗的畫面和特效而已，還要能利用結構化資料，讓網站內容在SERPs上顯示更多資訊。拿活動來說，如下圖紅框所示，搜尋活動「資策會數據創新應用黑客松 IDEAS Tech Hackathon」，第三則結果出現了活動時間「7月25日 - 7月26日」和活動地點「TAF空總創新基地-空軍總部舊址中正堂, 台灣」。使用者不但能在SERPs知道活動標題、短描述和網址外，還能馬上知道日期(區間)、地點。</p>" + "<a href='http://cythilya.blogspot.tw/2015/06/structured-data-event.html' title='結構化資料之「活動」範例 (Part 1)' target='_blank'>閱讀文章 - 結構化資料之「活動」範例 (Part 1)</a>";
+                activity1.isTest = true;
                 activityList.Add(activitySample);
             }
             #endregion
@@ -2281,6 +2464,7 @@ namespace cythilya.Controllers
 
         }
 
+        //取得參加活動的成員
         public void GetParticipantList(List<int> participantArray)
         {
             List<MeModels.Participant> participantList = new List<MeModels.Participant>();
@@ -2315,33 +2499,58 @@ namespace cythilya.Controllers
             ViewBag.ParticipantList = participants;
         }
 
-        public void GetActivityTagList(List<int> tags)
+        //取得活動標籤
+        public List<MeModels.ActivityTag> GetActivityTagList(List<int> tags)
         {
-            List<MeModels.Tag> tagList = new List<MeModels.Tag>();
+            List<MeModels.ActivityTag> tagList = new List<MeModels.ActivityTag>();
             #region Mock
-            MeModels.Tag tag1 = new MeModels.Tag();
+            MeModels.ActivityTag tag1 = new MeModels.ActivityTag();
             tag1.ID = 1;
             tag1.Name = "Mobile Web";
             tagList.Add(tag1);
 
-            MeModels.Tag tag2 = new MeModels.Tag();
+            MeModels.ActivityTag tag2 = new MeModels.ActivityTag();
             tag2.ID = 2;
             tag2.Name = "Mobile App";
             tagList.Add(tag2);
+
+            MeModels.ActivityTag tag3 = new MeModels.ActivityTag();
+            tag3.ID = 3;
+            tag3.Name = "SEO";
+            tagList.Add(tag3);
+
+            MeModels.ActivityTag tag4 = new MeModels.ActivityTag();
+            tag4.ID = 4;
+            tag4.Name = "UI/UX";
+            tagList.Add(tag4);
+
+            MeModels.ActivityTag tag5 = new MeModels.ActivityTag();
+            tag5.ID = 5;
+            tag5.Name = "JavaScript";
+            tagList.Add(tag5);
+
             #endregion
 
-            List<MeModels.Tag> thisTagList = new List<MeModels.Tag>();
+            List<MeModels.ActivityTag> thisTagList = new List<MeModels.ActivityTag>();
 
-            foreach (var num in tags)
+            if (tags.First() == 0)
             {
-                MeModels.Tag tagItem = tagList.Find(item => item.ID == num);
-                thisTagList.Add(tagItem);
+                thisTagList = tagList;
             }
-
+            else 
+            {
+                foreach (var num in tags)
+                {
+                    MeModels.ActivityTag tagItem = tagList.Find(item => item.ID == num);
+                    thisTagList.Add(tagItem);
+                }
+            }
             ViewBag.TagList = thisTagList;
+            return thisTagList;
         }
 
-        public void GetLocation(int location)
+        //取得活動地點
+        public MeModels.Location GetLocation(int location)
         {
             List<MeModels.Location> locationList = new List<MeModels.Location>();
 
@@ -2364,8 +2573,11 @@ namespace cythilya.Controllers
             thisLocationList = locItem;
 
             ViewBag.Location = thisLocationList;
+            return thisLocationList;
         }
 
-        #endregion
+        #endregion 活動相關
+
+        #endregion Function
     }
 }

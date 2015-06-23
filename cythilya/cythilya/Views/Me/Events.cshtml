@@ -1,0 +1,103 @@
+﻿@using cythilya.Models;
+@{
+    Layout = "~/Views/Shared/_LayoutMe.cshtml";
+    ViewBag.Tab = "";
+    ViewBag.Title = "測試活動列表 | 桑莫讀書會";
+    ViewBag.Description = "測試活動列表 | 桑莫讀書會";
+    List<MeModels.Activity> activityList = ViewBag.ActivityList as List<MeModels.Activity>;
+    activityList = activityList.OrderBy(x => x.ID).ToList();
+    List<MeModels.ActivityTag> allTagList = ViewBag.AllTag as List<MeModels.ActivityTag>;   
+}
+<style>
+body.home #main {padding-top: 40px;}
+.placeDetail{display:none;}
+.locationName{display: block;width:122px;word-wrap:break-word;word-break:break-all;}
+.entry-content .inner{margin-bottom: 20px;}
+#posts-list article .box .meta .location span{padding-left: 0;}
+</style>
+<div id="posts-list" class="cf">
+    @if (activityList != null)
+    {
+        foreach (var item in activityList)
+        {
+        <article class="format-standard" itemscope itemtype="http://schema.org/Event">
+            <div class="feature-image">
+                <a href="/Me/Event?id=@(item.ID)"><img src="@(item.Pic)" title="@item.Name" alt="@item.Name" itemprop="image" /></a>
+            </div>
+            <div class="box cf">
+                <div class="entry-date">
+                    <div class="number">@item.Day</div>
+                    <div class="month">@item.Month</div>
+                </div>
+                <div class="excerpt">
+                    <h2 class="post-heading" itemprop="name"><a href="/Me/Event?id=@(item.ID)">@item.Name</a></h2>
+                    <div class="entry-content" itemprop="description">@Html.Raw(item.HTMLContent)</div>
+                </div>
+                <div class="meta">
+                    <span class="time">@(item.Time) <meta itemprop="startDate" content="@(item.StartDate)"></span>
+		            <span class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+                        <span class="locationName">
+                            <a class="shopName" href="https://www.google.com.tw/maps/place/@(item.LocationDetail.AddressLocality)@(item.LocationDetail.StreetAddress)" target="_blank">@(item.LocationDetail.Name)</a>
+                            <span class="shopInfo">
+                                <a class="locationMap" href="https://www.google.com.tw/maps/place/@(item.LocationDetail.AddressLocality)@(item.LocationDetail.StreetAddress)" target="_blank">地圖</a> /  
+                                <a class="shopWebsite" href="@item.LocationDetail.URL" target="_blank">網站</a>
+                            </span>
+                        </span>
+			            <div class="placeDetail">
+				            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					            <span itemprop="streetAddress">@(item.LocationDetail.StreetAddress)</span>,
+					            <span itemprop="addressLocality">@(item.LocationDetail.AddressLocality)</span>,
+					            <span itemprop="addressRegion">@(item.LocationDetail.AddressRegion)</span>
+				            </div>
+				            <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+					            <meta itemprop="latitude" content="@(item.LocationDetail.Latitude)" />
+					            <meta itemprop="longitude" content="@(item.LocationDetail.Longitude)" />
+				            </div>	
+			            </div>
+		            </span>
+                    <span class="tags">
+                    @foreach (var tag in item.TagDetail)
+                    { 
+                        <a>@(tag.Name)</a><br>
+                    }
+                    </span>
+                </div>
+            </div>
+        </article>       
+        }
+    }
+    @*
+    <div class="page-navigation cf">
+        <div class="nav-next"><a href="#">&#8592; Older Entries </a></div>
+        <div class="nav-previous"><a href="#">Newer Entries &#8594;</a></div>
+    </div>
+    *@
+</div>
+<aside id="sidebar">
+    <ul>
+        <li class="block">
+            <h4>Purpose</h4>
+            這是一個和ㄧ些志同道合的夥伴們組成的讀書會，希望能藉由定期交流、討論，擴展彼此的視野和技能。
+        </li>
+        <li class="block">
+            <h4>Categories</h4>
+            <ul itemscope itemtype="http://schema.org/WPSideBar">
+                @foreach (var tag in allTagList) 
+                { 
+                <li class="cat-item"><a title="@(tag.Name)" itemprop="name">@(tag.Name)</a></li>
+                }
+                @*<li class="cat-item"><a href="#" title="title" itemprop="url"><span itemprop="name">Habitant morbi</span><span class="post-counter"> (2)</span></a></li>*@
+            </ul>
+        </li>
+        @*
+        <li class="block">
+            <h4>Archives</h4>
+            <ul>
+                <li class="cat-item"><a href="#" title="title">January</a></li>
+                <li class="cat-item"><a href="#" title="title">February</a></li>
+                <li class="cat-item"><a href="#" title="title">March</a></li>
+            </ul>
+        </li>
+        *@
+    </ul>
+</aside>

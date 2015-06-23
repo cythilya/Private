@@ -9,7 +9,6 @@
     ViewBag.SharedImage = proj.PicLarge;
 
     List<MeModels.RelatedProject> relatedProjects = ViewBag.RelatedProjects as List<MeModels.RelatedProject>;
-    List<MeModels.Partner> partnerList = ViewBag.PartnerList as List<MeModels.Partner>;
 }
 <style>
 body.home #main {
@@ -57,10 +56,10 @@ body.home #main {
             }     
             
             @* Parters *@
-            @if (partnerList != null)
+            @if (proj.PartnerDetail != null)
             {
                 <p><strong>Parters</strong>
-                @foreach (var item in partnerList)
+                @foreach (var item in proj.PartnerDetail)
                 { 
                 <a href="@(item.Website)" class="partnerItem" target="_blank">@(item.Name)</a><br>
                 }

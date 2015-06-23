@@ -580,6 +580,15 @@ body.home #main {
 #posts-list article .box .meta .time {
   background: url(../img/icon-time.png) no-repeat 0px 0px;
 }
+#posts-list article .box .meta .skill {
+  background: url(../img/icon_skill.png) no-repeat -4px -2px;
+}
+#posts-list article .box .meta .link {
+  background: url(../img/icon_link.png) no-repeat 0px 0px;
+}
+#posts-list article .box .meta .partner {
+  background: url(../img/icon_partner.png) no-repeat 0px 0px;
+}
 body.single #posts-list {
   width: 640px;
 }

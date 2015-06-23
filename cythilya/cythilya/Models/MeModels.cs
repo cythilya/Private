@@ -54,6 +54,7 @@ namespace cythilya.Models
             public bool isHighlight { get; set; }
             public bool isHideFromIndex { get; set; } //首頁不會成展現此專案，只會在Archieve、Portfolio顯示
             public List<int> Partners { get; set; } //合作夥伴
+            public List<Partner> PartnerDetail { get; set; }
             public bool IsShowInPortfolio { get; set; } //是否顯示在作品集 
         }
 
@@ -79,6 +80,8 @@ namespace cythilya.Models
             public string Date { get; set; }
             public string Tag { get; set; }
             public int TagScore { get; set; }
+            public List<Partner> PartnerDetail { get; set; }
+            public string Role { get; set; }
         }
 
         public class Visitor 
@@ -110,9 +113,12 @@ namespace cythilya.Models
             public String Day { get; set; }
             public string WebURL { get; set; }
             public List<int> Tag { get; set; }
+            public List<ActivityTag> TagDetail { get; set; }
             public int Location { get; set; }
+            public Location LocationDetail { get; set; }
             public string HTMLContent { get; set; }
             public string NoteURL { get; set; } //共筆網址
+            public bool isTest { get; set; }
         }
 
         public class Participant
@@ -134,7 +140,7 @@ namespace cythilya.Models
             public string URL { get; set; }
         }
         
-        public class Tag
+        public class ActivityTag
         {
             public int ID { get; set; }
             public string Name { get; set; }

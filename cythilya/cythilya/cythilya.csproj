@@ -449,6 +449,17 @@
     <Content Include="Content\me\img\blog\stanley\stanley_300.png" />
     <Content Include="Content\me\img\blog\stanley\stanley_54x54.jpg" />
     <Content Include="Content\me\img\blog\stanley\stanley_940x367.jpg" />
+    <Content Include="Content\me\img\blog\structured-data-event-2\structured-data-event-2-188x73.jpg" />
+    <Content Include="Content\me\img\blog\structured-data-event-2\structured-data-event-2-300.jpg" />
+    <Content Include="Content\me\img\blog\structured-data-event-2\structured-data-event-2-54x54.jpg" />
+    <Content Include="Content\me\img\blog\structured-data-event-2\structured-data-event-2-800.jpg" />
+    <Content Include="Content\me\img\blog\structured-data-event-2\structured-data-event-2-940x367.jpg" />
+    <Content Include="Content\me\img\blog\structured-data-event-2\structured-data-event-2.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_188x73.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_300.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_54x54.jpg" />
+    <Content Include="Content\me\img\blog\structured_data_event\structured_data_event_940x367.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\ag-relevant-terms_188x73.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms.jpg" />
     <Content Include="Content\me\img\blog\tag-relevant-terms\tag-relevant-terms_300.jpg" />
@@ -474,6 +485,9 @@
     <Content Include="Content\me\img\blog\yha_mei_ho_house_youth_hostel\yha_mei_ho_house_youth_hostel_940x367.jpg" />
     <Content Include="Content\me\img\icon-location.png" />
     <Content Include="Content\me\img\icon-time.png" />
+    <Content Include="Content\me\img\icon_link.png" />
+    <Content Include="Content\me\img\icon_partner.png" />
+    <Content Include="Content\me\img\icon_skill.png" />
     <Content Include="Content\me\img\project\933\933.png" />
     <Content Include="Content\me\img\project\933\933_188x73.png" />
     <Content Include="Content\me\img\project\933\933_300.png" />
@@ -598,6 +612,11 @@
     <Content Include="Content\me\img\project\thsr\thsr_300.png" />
     <Content Include="Content\me\img\project\thsr\thsr_54x54.png" />
     <Content Include="Content\me\img\project\thsr\thsr_940x367.png" />
+    <Content Include="Content\me\img\project\volving\volving.png" />
+    <Content Include="Content\me\img\project\volving\volving_188x73.png" />
+    <Content Include="Content\me\img\project\volving\volving_300.png" />
+    <Content Include="Content\me\img\project\volving\volving_54x54.png" />
+    <Content Include="Content\me\img\project\volving\volving_940x367.png" />
     <Content Include="Content\me\img\project\yipinchan\yipinchan_index_54x54.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\seo_lab\css\style_anjularjs.css" />
@@ -1820,6 +1839,10 @@
     <Content Include="Views\Me\Activity.cshtml" />
     <Content Include="Views\Me\ActivityList.cshtml" />
     <Content Include="Views\Me\Activity\activity_1.cshtml" />
+    <Content Include="Views\Me\Activities.cshtml" />
+    <Content Include="Views\Me\Event.cshtml" />
+    <Content Include="Views\Me\Events.cshtml" />
+    <Content Include="Views\Me\EventList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
