@@ -7,24 +7,7 @@
     ViewBag.SharedImage = detail.PicLargeUrl;
     ViewBag.Tab = detail.ProductCategory; ;
 }
-<style>
-.productDetail{
-    min-height: 710px;
-}    
-.selectItem
-{
-    border: 1px solid #DEDEDC;
-    color: #696763;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    height: 35px;
-    outline: medium none;
-    text-align: center;
-    width: 60px;   
-}
-</style>
-<section>
+<section class="pageProduct">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-3">
@@ -35,35 +18,7 @@
 					<div class="col-sm-5">
 						<div class="view-product">
 							<img src="@(detail.PicLargeUrl)" title="@(detail.Name)" alt="@(detail.Name)">
-							@*<h3>ZOOM</h3>*@
 						</div>
-                        @*
-						<div id="similar-product" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-								<div class="item">
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-								</div>
-								<div class="item active">
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-								</div>
-								<div class="item">
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-									<a href=""><img src="@(detail.PicSmallUrl)" title="@(detail.Name)" alt="@(detail.Name)"></a>
-								</div>
-							</div>
-							<a class="left item-control" href="#similar-product" data-slide="prev">
-							    <i class="fa fa-angle-left"></i>
-							</a>
-							<a class="right item-control" href="#similar-product" data-slide="next">
-							    <i class="fa fa-angle-right"></i>
-							</a>
-						</div>
-                        *@
 					</div>
 					<div class="col-sm-7">
 						<div id="singleProductInfo" class="product-information">
@@ -77,8 +32,7 @@
                             }
 							<h2> @(detail.Name) </h2>
 							<p>ID: @(detail.ID) </p>
-                            @* Rating *@
-							@*<img src="/Content/eshopper/images/product-details/rating.png" alt="">*@
+							<img src="/Content/eshopper/images/product-details/rating.png" alt="Rating">
                             <span>
 								<span>$ @(detail.Price)</span>
 								<label>Quantity:</label>
@@ -109,19 +63,19 @@
 				<div class="category-tab shop-details-tab">
 					<div class="col-sm-12">
 						<ul class="nav nav-tabs">
-							<li><a href="#details" data-toggle="tab">Details</a></li>
+                            <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
 							<li><a href="#companyprofile" data-toggle="tab">Company Profile</a></li>
 							@*<li><a href="#tag" data-toggle="tab">Tag</a></li>*@
-							<li class="active"><a href="#reviews" data-toggle="tab">Reviews@*(5)*@</a></li>
+							@*<li><a href="#reviews" data-toggle="tab">Reviews@*(5)</a></li>*@
 						</ul>
 					</div>
 					<div class="tab-content">
-						<div class="tab-pane fade" id="details">
-							<div class="col-sm-12">
-                            @detail.Description
-							</div>
-						</div>
-						<div class="tab-pane fade" id="companyprofile">
+                        <div class="tab-pane active" id="details">
+                            <div class="col-sm-12">
+                                @detail.Description
+                            </div>
+                        </div>
+						<div class="tab-pane" id="companyprofile">
 							<div class="col-sm-12">
                             @detail.BrandInfo
 							</div>
@@ -180,9 +134,9 @@
 						</div>
                         *@
 					    @* 改用Facebook Comments *@
+                        @*
 						<div class="tab-pane fade active in" id="reviews">
 							<div class="col-sm-12">
-                                @*
 								<ul>
 									<li><a href=""><i class="fa fa-user"></i>EUGEN</a></li>
 									<li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
@@ -201,14 +155,12 @@
 										Submit
 									</button>
 								</form>
-                                *@
 							</div>
 						</div>
+                        *@
 					</div>
 				</div>
-                @*
                 @Html.Partial("~/Areas/EShopper/Views/Shared/_RecommendItems.cshtml")
-                *@
 		    </div>
 		</div>
 	</div>
