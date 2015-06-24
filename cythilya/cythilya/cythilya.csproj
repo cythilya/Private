@@ -209,6 +209,7 @@
   <ItemGroup>
     <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
     <Content Include="App_Data\VisitorEmailTemplate.html" />
+    <Content Include="Content\eshopper\css\style.css" />
     <Content Include="Content\file\qr_code\bcard.png" />
     <Content Include="Content\file\qr_code\bcard_fb_l.png" />
     <Content Include="Content\file\qr_code\bcard_fb_m.png" />
@@ -1731,6 +1732,7 @@
     <Content Include="Areas\UI\Views\UI\CKEditorPreview.cshtml" />
     <Content Include="Areas\UI\Views\UI\d3SimpleBarChart.cshtml" />
     <Content Include="Areas\UI\Views\UI\AngularJSTodoList.cshtml" />
+    <Content Include="Content\eshopper\css\style.scss" />
     <None Include="Content\me\css\main.scss" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />

@@ -5,8 +5,62 @@
     ViewBag.Title = detail.Name;
     ViewBag.Description = detail.Description;
     ViewBag.SharedImage = detail.PicLargeUrl;
-    ViewBag.Tab = detail.ProductCategory; ;
+    ViewBag.Tab = detail.ProductCategory;
+    
+    //fake data
+    string ratingValue = "4";
+    string reviewCount = "200";
 }
+<script type="application/ld+json">
+{
+    "@@context": "http://schema.org",
+    "@@type": "Product",
+    "aggregateRating": {
+        "@@type": "AggregateRating",
+        "ratingValue": @ratingValue,
+        "reviewCount": @reviewCount
+    },
+    "description": "@detail.Description",
+    "name": "@detail.Name",
+    "offers": {
+        "@@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "price": "@detail.Price",
+        "priceCurrency": "TWD"
+    },
+    "review": 
+    [
+        {
+            "@@type": "Review",
+            "author": "Summer",
+            "datePublished": "2015-06-24",
+            "description": "Good to wear.",
+            "name": "@detail.Name",
+            "reviewRating": 
+            {
+                "@@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "4",
+                "worstRating": "1"
+            }
+        },
+        {
+            "@@type": "Review",
+            "author": "Lucas",
+            "datePublished": "2011-03-25",
+            "description": "Nice!",
+            "name": "@detail.Name",
+            "reviewRating": 
+            {
+                "@@type": "Rating",
+                "bestRating": "5",
+                "ratingValue": "4",
+                "worstRating": "1"
+            }
+        }
+    ]
+}
+</script>
 <section class="pageProduct">
 	<div class="container">
 		<div class="row">
@@ -51,10 +105,8 @@
 									Add to cart
 								</button>
 							</span>
-                            @*
 							<p><b>Availability:</b> In Stock</p>
 							<p><b>Condition:</b> New</p>
-							*@
                             <p><b>Brand:</b> @(detail.Brand)</p>
                             @*<a href=""><img src="/Content/eshopper/images/product-details/share.png" class="share img-responsive" alt=""></a>*@
 						</div>
