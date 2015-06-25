@@ -960,6 +960,23 @@ namespace cythilya.Controllers
             articleList.Add(article_40);
             #endregion
 
+            #region JavaScript - Code Reuse Patterns
+            MeModels.Article article_41 = new MeModels.Article();
+            article_41.Name = "JavaScript - Code Reuse Patterns";
+            article_41.Description = "JavaScript Pattern之Code Reuse Patterns筆記。";
+            article_41.URL = "http://cythilya.blogspot.tw/2015/06/javascript-code-reuse-patterns.html";
+            article_41.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_41.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_41.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_41.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_41.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_41.Tag = "JavaScript, Code Reuse Patterns";
+            article_41.isHighlight = false;
+            article_41.Time = "June 25, 2015";
+            article_41.isBanner = false;
+            articleList.Add(article_41);
+            #endregion
+
             #endregion Mock
 
             articleList.Reverse();
