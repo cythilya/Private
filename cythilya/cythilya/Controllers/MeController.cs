@@ -1893,7 +1893,7 @@ namespace cythilya.Controllers
             proj_18.ID = 18;
             proj_18.Name = "台灣高鐵";
             proj_18.Description = "台灣高鐵連結台灣南北主要城市，我們不只是交通運輸業，更是推動台灣­前進的服務業；我們代表的不僅只是速度，而是速度所帶來的現代生活新態度；我們以更文明的旅行體驗，成為你實現夢想的助力，台灣高鐵，實踐台灣新生活。";
-            proj_18.Role = "Front-End Development";
+            proj_18.Role = "Front-End Development (Maintenance)";
             proj_18.Tech = "Web Development with SCSS and jQuery";
             proj_18.URL = "/Me/Project?id=18";
             proj_18.RawPic = "/Content/me/img/project/thsr/thsr.png";
@@ -1967,7 +1967,7 @@ namespace cythilya.Controllers
             proj_20.ID = 20;
             proj_20.Name = "VOLVING沐頤健康概念館";
             proj_20.Description = "VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。";
-            proj_20.Role = "Front-End Development";
+            proj_20.Role = "Front-End Development (Maintenance)";
             proj_20.Tech = "Web Development with SCSS and jQuery";
             proj_20.URL = "/Me/Project?id=" + proj_20.ID;
             proj_20.RawPic = "/Content/me/img/project/volving/volving.png";
@@ -2004,7 +2004,7 @@ namespace cythilya.Controllers
             proj_21.ID = 21;
             proj_21.Name = "用聽的網頁‧933樂活網";
             proj_21.Description = "933樂活網每天24小時不打烊，期待以健康、美麗、快樂、智慧的生活訊息，以及優質輕鬆音樂，喚起聽眾朋友們愛自己、重視健康的意識，並透過各領域專業人士分享最新最實用的資訊，進而將正面的知識力傳播給大家！";
-            proj_21.Role = "Front-End Development";
+            proj_21.Role = "Front-End Development (Maintenance)";
             proj_21.Tech = "Web Development with SCSS and jQuery";
             proj_21.URL = "/Me/Project?id=" + proj_21.ID;
             proj_21.RawPic = "/Content/me/img/project/933/933.png";
@@ -2047,7 +2047,7 @@ namespace cythilya.Controllers
             proj_22.ID = 22;
             proj_22.Name = "2015國際奧林匹克路跑電子秩序冊";
             proj_22.Description = "中華奧會傳承國際奧會組織重視環保議題，積極響應推動ISO 20121活動永續管理規範，以建立乾淨、健康的環保運動環境為目標，今年度奧會路跑首創變革，首推「無紙化」以QR CODE掃描方式下載秩序手冊電子書，大量減少紙張浪費減少對森林的砍伐，希望藉由參與活動的跑友們從自身做環保提昇更環保健康的運動環境。";
-            proj_22.Role = "Front-End Development";
+            proj_22.Role = "UI Design and Front-End Development";
             proj_22.Tech = "Web Development with SCSS and jQuery";
             proj_22.URL = "/Me/Project?id=" + proj_22.ID;
             proj_22.RawPic = "/Content/me/img/project/ebook/ebook_940x367.jpg";
