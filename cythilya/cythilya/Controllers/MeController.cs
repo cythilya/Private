@@ -977,6 +977,23 @@ namespace cythilya.Controllers
             articleList.Add(article_41);
             #endregion
 
+            #region JavaScript Design Pattern - Singleton
+            MeModels.Article article_42 = new MeModels.Article();
+            article_42.Name = "JavaScript Design Pattern - Singleton";
+            article_42.Description = "JavaScript Design Pattern 「Singleton 單體模式」 筆記。";
+            article_42.URL = "http://cythilya.blogspot.tw/2015/06/javascript-design-pattern-singleton.html";
+            article_42.RawPic = "/Content/me/img/blog/javascript_design_patterns_singleton/javascript_design_patterns_singleton.jpg";
+            article_42.PicSmall = "/Content/me/img/blog/javascript_design_patterns_singleton/javascript_design_patterns_singleton_188x73.jpg";
+            article_42.PicMedium = "/Content/me/img/blog/javascript_design_patterns_singleton/javascript_design_patterns_singleton_300.jpg";
+            article_42.PicLarge = "/Content/me/img/blog/javascript_design_patterns_singleton/javascript_design_patterns_singleton_940x367.jpg";
+            article_42.PicInFooter = "/Content/me/img/blog/javascript_design_patterns_singleton/javascript_design_patterns_singleton_54x54.jpg";
+            article_42.Tag = "JavaScript, Singleton";
+            article_42.isHighlight = false;
+            article_42.Time = "June 26, 2015";
+            article_42.isBanner = false;
+            articleList.Add(article_42);
+            #endregion
+            
             #endregion Mock
 
             articleList.Reverse();
