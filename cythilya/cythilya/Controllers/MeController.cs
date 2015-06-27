@@ -977,9 +977,9 @@ namespace cythilya.Controllers
             articleList.Add(article_41);
             #endregion
 
-            #region JavaScript Design Pattern - Singleton
+            #region JavaScript Design Pattern - Singleton 單體模式
             MeModels.Article article_42 = new MeModels.Article();
-            article_42.Name = "JavaScript Design Pattern - Singleton";
+            article_42.Name = "JavaScript Design Pattern - Singleton 單體模式";
             article_42.Description = "JavaScript Design Pattern 「Singleton 單體模式」 筆記。";
             article_42.URL = "http://cythilya.blogspot.tw/2015/06/javascript-design-pattern-singleton.html";
             article_42.RawPic = "/Content/me/img/blog/javascript_design_patterns_singleton/javascript_design_patterns_singleton.jpg";
@@ -993,7 +993,24 @@ namespace cythilya.Controllers
             article_42.isBanner = false;
             articleList.Add(article_42);
             #endregion
-            
+
+            #region JavaScript Design Pattern - Factory 工廠模式
+            MeModels.Article article_43 = new MeModels.Article();
+            article_43.Name = "JavaScript Design Pattern - Factory 工廠模式";
+            article_43.Description = "JavaScript Design Pattern 「Factory 工廠模式」 筆記。";
+            article_43.URL = "http://cythilya.blogspot.tw/2015/06/javascript-design-pattern-factory.html";
+            article_43.RawPic = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory.jpg";
+            article_43.PicSmall = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_188x73.jpg";
+            article_43.PicMedium = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_300.jpg";
+            article_43.PicLarge = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_940x367.jpg";
+            article_43.PicInFooter = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_54x54.jpg";
+            article_43.Tag = "JavaScript, Factory";
+            article_43.isHighlight = false;
+            article_43.Time = "June 27, 2015";
+            article_43.isBanner = false;
+            articleList.Add(article_43);
+            #endregion            
+
             #endregion Mock
 
             articleList.Reverse();

@@ -397,6 +397,12 @@
     <Content Include="Content\me\img\blog\icon_fonts\icon_fonts_300.png" />
     <Content Include="Content\me\img\blog\icon_fonts\icon_fonts_54x54.png" />
     <Content Include="Content\me\img\blog\icon_fonts\icon_fonts_940x367.png" />
+    <Content Include="Content\me\img\blog\javascript _design_pattern_factory\javascript _design_pattern_factory.jpg" />
+    <Content Include="Content\me\img\blog\javascript _design_pattern_factory\javascript _design_pattern_factory_188x73.jpg" />
+    <Content Include="Content\me\img\blog\javascript _design_pattern_factory\javascript _design_pattern_factory_300.jpg" />
+    <Content Include="Content\me\img\blog\javascript _design_pattern_factory\javascript _design_pattern_factory_54x54.jpg" />
+    <Content Include="Content\me\img\blog\javascript _design_pattern_factory\javascript _design_pattern_factory_800.jpg" />
+    <Content Include="Content\me\img\blog\javascript _design_pattern_factory\javascript _design_pattern_factory_940x367.jpg" />
     <Content Include="Content\me\img\blog\javascript_design_patterns_singleton\javascript_design_patterns_singleton.jpg" />
     <Content Include="Content\me\img\blog\javascript_design_patterns_singleton\javascript_design_patterns_singleton_54x54.jpg" />
     <Content Include="Content\me\img\blog\javascript_design_patterns_singleton\javascript_design_patterns_singleton_188x73.jpg" />
