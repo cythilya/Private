@@ -1942,7 +1942,7 @@ namespace cythilya.Controllers
             proj_18.LauchURL = "http://www.thsrc.com.tw";
             proj_18.HtmlContent = "<p>首頁小改版。</p><p>台灣高鐵連結台灣南北主要城市，我們不只是交通運輸業，更是推動台灣­前進的服務業；我們代表的不僅只是速度，而是速度所帶來的現代生活新態度；我們以更文明的旅行體驗，成為你實現夢想的助力，台灣高鐵，實踐台灣新生活。</p>";
             proj_18.Tag = "Web RWD Platform";
-            proj_18.isHighlight = true;
+            proj_18.isHighlight = false;
             proj_18.IsShowInPortfolio = true;
             List<int> partnerList18 = new List<int>(new int[] { 5, 20 });
             proj_18.Partners = partnerList18;
