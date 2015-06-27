@@ -359,7 +359,7 @@ namespace cythilya.Controllers
             article_3.PicLarge = "/Content/me/img/blog/search_and_social_940x367.jpg";
             article_3.PicInFooter = "/Content/me/img/blog/search_and_social_54x54.jpg";
             article_3.Tag = "SEO, Rich Snippets";
-            article_3.isHighlight = true;
+            article_3.isHighlight = false;
             article_3.Time = "Feb 1, 2014";
             article_3.isBanner = false;
             articleList.Add(article_3);
@@ -954,7 +954,7 @@ namespace cythilya.Controllers
             article_40.PicLarge = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-940x367.jpg";
             article_40.PicInFooter = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-54x54.jpg";
             article_40.Tag = "SEO, Rich Snippets, Structured Data";
-            article_40.isHighlight = false;
+            article_40.isHighlight = true;
             article_40.Time = "June 20, 2015";
             article_40.isBanner = true;
             articleList.Add(article_40);
