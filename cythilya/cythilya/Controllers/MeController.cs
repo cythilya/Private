@@ -999,17 +999,34 @@ namespace cythilya.Controllers
             article_43.Name = "JavaScript Design Pattern - Factory 工廠模式";
             article_43.Description = "JavaScript Design Pattern 「Factory 工廠模式」 筆記。";
             article_43.URL = "http://cythilya.blogspot.tw/2015/06/javascript-design-pattern-factory.html";
-            article_43.RawPic = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory.jpg";
-            article_43.PicSmall = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_188x73.jpg";
-            article_43.PicMedium = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_300.jpg";
-            article_43.PicLarge = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_940x367.jpg";
-            article_43.PicInFooter = "/Content/me/img/blog/javascript _design_pattern_factory/javascript _design_pattern_factory_54x54.jpg";
+            article_43.RawPic = "/Content/me/img/blog/javascript_design_pattern_factory/javascript_design_pattern_factory.jpg";
+            article_43.PicSmall = "/Content/me/img/blog/javascript_design_pattern_factory/javascript_design_pattern_factory_188x73.jpg";
+            article_43.PicMedium = "/Content/me/img/blog/javascript_design_pattern_factory/javascript_design_pattern_factory_300.jpg";
+            article_43.PicLarge = "/Content/me/img/blog/javascript_design_pattern_factory/javascript_design_pattern_factory_940x367.jpg";
+            article_43.PicInFooter = "/Content/me/img/blog/javascript_design_pattern_factory/javascript_design_pattern_factory_54x54.jpg";
             article_43.Tag = "JavaScript, Factory";
             article_43.isHighlight = false;
             article_43.Time = "June 27, 2015";
             article_43.isBanner = false;
             articleList.Add(article_43);
-            #endregion            
+            #endregion  
+          
+            #region JavaScript Design Pattern - Iterator 迭代器模式
+            MeModels.Article article_44 = new MeModels.Article();
+            article_44.Name = "JavaScript Design Pattern - Iterator 迭代器模式";
+            article_44.Description = "JavaScript Design Pattern 「Iterator 迭代器模式」 筆記。";
+            article_44.URL = "http://cythilya.blogspot.tw/2015/06/javascript-design-pattern-iterator.html";
+            article_44.RawPic = "/Content/me/img/blog/javascript_design_pattern_iterator/javascript_design_pattern_iterator.jpg";
+            article_44.PicSmall = "/Content/me/img/blog/javascript_design_pattern_iterator/javascript_design_pattern_iterator_188x73.jpg";
+            article_44.PicMedium = "/Content/me/img/blog/javascript_design_pattern_iterator/javascript_design_pattern_iterator_300.jpg";
+            article_44.PicLarge = "/Content/me/img/blog/javascript_design_pattern_iterator/javascript_design_pattern_iterator_940x367.jpg";
+            article_44.PicInFooter = "/Content/me/img/blog/javascript_design_pattern_iterator/javascript_design_pattern_iterator_54x54.jpg";
+            article_44.Tag = "JavaScript, Iterator";
+            article_44.isHighlight = false;
+            article_44.Time = "June 28, 2015";
+            article_44.isBanner = false;
+            articleList.Add(article_44);
+            #endregion      
 
             #endregion Mock
 
