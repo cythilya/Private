@@ -1976,11 +1976,11 @@ namespace cythilya.Controllers
             projList.Add(proj_18);
             #endregion
 
-            #region 活動咖 Eventpal
+            #region 活動咖 EventPal
             MeModels.Project proj_19 = new MeModels.Project();
             proj_19.ID = 19;
-            proj_19.Name = "活動咖 Eventpal";
-            proj_19.Description = "活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。";
+            proj_19.Name = "活動咖 EventPal";
+            proj_19.Description = "活動咖 EventPal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。";
             proj_19.Role = "UI Design and Front-End Development";
             proj_19.Tech = "Web Development with SCSS and jQuery";
             proj_19.URL = "/Me/Project?id=19";
@@ -1993,8 +1993,8 @@ namespace cythilya.Controllers
             proj_19.Client = "Uni-Net 聯網國際";
             proj_19.ClientURL = "http://www.uni-net.com.tw";
             proj_19.Date = "June 2015";
-            proj_19.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/IndexNew.action";
-            proj_19.HtmlContent = "<p>活動咖 Eventpal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
+            proj_19.LauchURL = "https://www.eventpal.com.tw";
+            proj_19.HtmlContent = "<p>活動咖 EventPal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
             proj_19.Tag = "Web Platform SEO";
             proj_19.isHighlight = false;
             proj_19.IsShowInPortfolio = true;
