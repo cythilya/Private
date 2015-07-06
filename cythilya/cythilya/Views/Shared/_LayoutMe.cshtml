@@ -84,6 +84,21 @@ j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; 
 	</div>
 </div>
 @Html.Partial("_FooterMe")
+<div class="searchbox">
+    <script>
+        (function () {
+            var cx = '007637265792815840813:dlbzebk1k2k';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    <gcse:search></gcse:search>
+</div>
 <script src="/Content/js/jquery-1.7.1.min.js"></script>
 <script src="/Content/me/js/custom.js"></script>
 <script src="/Content/me/js/tabs.js"></script>
