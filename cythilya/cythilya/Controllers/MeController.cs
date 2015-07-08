@@ -1028,6 +1028,23 @@ namespace cythilya.Controllers
             articleList.Add(article_44);
             #endregion      
 
+            #region JavaScript - Event Delegation 事件委派
+            MeModels.Article article_45 = new MeModels.Article();
+            article_45.Name = "JavaScript - Event Delegation 事件委派";
+            article_45.Description = "JavaScript Pattern 「Event Delegation 事件委派」 筆記。";
+            article_45.URL = "http://cythilya.blogspot.tw/2015/07/javascript-event-delegation.html";
+            article_45.RawPic = "/Content/me/img/blog/javascript_event_delegation/javascript_event_delegation.jpg";
+            article_45.PicSmall = "/Content/me/img/blog/javascript_event_delegation/javascript_event_delegation_188x73.jpg";
+            article_45.PicMedium = "/Content/me/img/blog/javascript_event_delegation/javascript_event_delegation_300.jpg";
+            article_45.PicLarge = "/Content/me/img/blog/javascript_event_delegation/javascript_event_delegation_940x367.jpg";
+            article_45.PicInFooter = "/Content/me/img/blog/javascript_event_delegation/javascript_event_delegation_54x54.jpg";
+            article_45.Tag = "JavaScript, Event Delegation";
+            article_45.isHighlight = false;
+            article_45.Time = "July 8, 2015";
+            article_45.isBanner = false;
+            articleList.Add(article_45);
+            #endregion   
+
             #endregion Mock
 
             articleList.Reverse();
