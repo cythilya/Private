@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Workers</title>
+</head>
+<body>
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script>
+var w;
+
+function startWorker() {
+    if (typeof (Worker) !== "undefined")            //check whether the user's browser supports it
+    {
+        w = new Worker("demo_workers.js");          //creates a new web worker object and runs the code in "demo_workers.js"
+
+        //Add an "onmessage" event listener to the web worker
+        //When the web worker posts a message, the code within the event listener is executed. The data from the web worker
+        //is stored in event.data.
+        w.onmessage = function (event) { document.getElementById("result").innerHTML = event.data; };
+    }
+    else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+    }
+}
+
+function stopWorker() {
+    w.terminate();         //terminate a web worker, and free browser/computer resources
+}
+</script>
+</body>
+</html>
