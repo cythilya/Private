@@ -48,6 +48,20 @@ $headingFont: 'Roboto', sans-serif;
 	@include catecoryHeading;
 }
 
+.productinfo{
+	.productPrice{
+		color: #FE980F;
+		font-family: $headingFont;
+		font-size: 24px;
+		font-weight: 700;		
+	}
+	.productName{
+		
+	}
+
+
+}
+
 .pageProduct{
 	.productDetail{
 	    min-height: 710px;

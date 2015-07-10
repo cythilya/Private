@@ -12,8 +12,8 @@
 	    <div class="product-image-wrapper">
 		    <div class="single-products">
 			    <div class="productinfo text-center">
-				    <img src="@(item.PicFeaturedUrl)" title="@(item.Name)" alt="@(item.Name)" />
-				    <h2>$@(item.Price)</h2>
+				    <img src="@(item.PicFeaturedUrl)" alt="@(item.Name)" />
+				    <div class="productPrice">$@(item.Price)</div>
 				    <p>@(item.Name)</p>
 				    <a href="/EShopper/Home/Product?id=@(item.ID)" class="btn btn-default add-to-cart" title="More - @(item.Name)">More</a>
 			    </div>
@@ -34,6 +34,33 @@
 		    </div>
 		    *@
 	    </div>
+        <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org/",
+          "@@type": "Product",
+          "name": "@(item.Name)",
+          "image": "@(item.PicFeaturedUrl)",
+          "description": "@item.Description",
+          @*"mpn": "925872",*@
+          "brand":{
+            "@@type": "Thing",
+            "name": "@item.Brand"
+          },
+          "aggregateRating":{
+            "@@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "100"
+          },
+          "offers":{
+            "@@type": "Offer",
+            "priceCurrency": "TWD",
+            "price": "@(item.Price)",
+            "priceValidUntil": "2020-12-25",
+            "itemCondition": "http://schema.org/NewCondition",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+        </script>
     </div>
     } 
 }

@@ -70,6 +70,13 @@
   z-index: -2;
 }
 
+.productinfo .productPrice {
+  color: #FE980F;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .pageProduct .productDetail {
   min-height: 710px;
 }
