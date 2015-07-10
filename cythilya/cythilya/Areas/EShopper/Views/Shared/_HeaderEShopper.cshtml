@@ -18,7 +18,7 @@
     socialItem3.Link = "https://plus.google.com/+CythilyaTang";
     socialList.Add(socialItem3);
 }
-<header id="header">
+<header id="header" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_top">
 		<div class="container">
 			<div class="row">
@@ -55,34 +55,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="logo pull-left">
-						<a href="/EShopper/Home" title="EShopper"><img src="/Content/eshopper/images/home/logo.png" title="EShopper" alt="EShopper" /></a>
-					</div>
-                    @* 匯幣轉換 *@
-                    @*
-					<div class="btn-group pull-right">
-						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-								USA
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#" title="">Canada</a></li>
-								<li><a href="#" title="">UK</a></li>
-							</ul>
-						</div>
-						<div class="btn-group">
-							<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">
-								DOLLAR
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu">
-								<li><a href="#" title="">Canadian Dollar</a></li>
-								<li><a href="#" title="">Pound</a></li>
-							</ul>
-						</div>
-					</div>
-                    *@
+					<h1 class="logo pull-left" itemprop="name">
+						<a href="/EShopper/Home" title="拍賣桑莫的生活" itemprop="url">
+                            <img src="/Content/eshopper/images/home/logo.png" alt="拍賣桑莫的生活" />
+                        </a>
+                        @*
+                            對於連結包圖片而沒有anchor text的狀況，這個連結的意義由圖片的alt attribute取而代之。
+                            SEO benefit: anchor text > alt attribute
+                            img title attribute does not have SEO benefit.
+                        *@
+					</h1>
 				</div>
 				<div class="col-sm-8">
 					<div class="shop-menu pull-right">
@@ -120,16 +102,20 @@
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-					<div class="mainmenu pull-left">
+					<nav class="mainmenu pull-left" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<ul class="nav navbar-nav collapse navbar-collapse">
 							<li>
-                                <a href="/EShopper/Home" class="active">Home</a>
+                                <a href="/EShopper/Home" class="active" itemprop="url">
+                                    <span itemprop="name">Home</span>
+                                </a>
                             </li>
 							<li class="dropdown">
-                                <a>News</a>
+                                <a itemprop="url">
+                                    <span itemprop="name">News</span>
+                                </a>
                             </li> 
 						</ul>
-					</div>
+					</nav>
 				</div>
                 @*
 				<div class="col-sm-3">
