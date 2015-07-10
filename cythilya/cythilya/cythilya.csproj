@@ -210,6 +210,12 @@
     <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
     <Content Include="App_Data\VisitorEmailTemplate.html" />
     <Content Include="Content\eshopper\css\style.css" />
+    <Content Include="Content\eshopper\images\product\health_food\health_food.jpg" />
+    <Content Include="Content\eshopper\images\product\health_food\health_food_208x183.jpg" />
+    <Content Include="Content\eshopper\images\product\health_food\health_food_255x128.jpg" />
+    <Content Include="Content\eshopper\images\product\health_food\health_food_268x249.jpg" />
+    <Content Include="Content\eshopper\images\product\health_food\health_food_329x380.jpg" />
+    <Content Include="Content\eshopper\images\product\health_food\health_food_original.jpg" />
     <Content Include="Content\file\javascript_event_delegation.html" />
     <Content Include="Content\file\qr_code\bcard.png" />
     <Content Include="Content\file\qr_code\bcard_fb_l.png" />
