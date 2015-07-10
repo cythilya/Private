@@ -1,6 +1,6 @@
 ﻿@using cythilya.Areas.EShopper.Models;
 @{
-    //social platforms
+    //social platforms, fake data
     List<Common.SocialList> socialList = new List<Common.SocialList>();
 
     var socialItem1 = new Common.SocialList();
@@ -17,18 +17,6 @@
     socialItem3.Name = "google-plus";
     socialItem3.Link = "https://plus.google.com/+CythilyaTang";
     socialList.Add(socialItem3);
-    
-    //Category
-    var categories = new List<ProductCategory>()
-    {
-        new ProductCategory() { ID = 1, Name = "WOMENS"},
-        new ProductCategory() { ID = 2, Name = "MENS"},
-        new ProductCategory() { ID = 3, Name = "KIDS"},
-        new ProductCategory() { ID = 4, Name = "SPORTSWEAR"},
-        new ProductCategory() { ID = 5, Name = "HOUSEHOLDS"},
-        new ProductCategory() { ID = 6, Name = "BAGS & SHOES"}
-    };
-    List<ProductCategory> categoryList = categories;
 }
 <header id="header">
 	<div class="header_top">
@@ -134,21 +122,12 @@
 					</div>
 					<div class="mainmenu pull-left">
 						<ul class="nav navbar-nav collapse navbar-collapse">
-							<li><a href="/EShopper/Home" title="Home" class="active">HOME</a></li>
-                            @foreach (var item in categoryList)
-                            { 
-                            <li><a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)">@(item.Name)</a></li>
-                            }
-                            @*
-							<li class="dropdown"><a href="#" title="">Blog<i class="fa fa-angle-down"></i></a>
-								<ul role="menu" class="sub-menu">
-									<li><a href="blog.html" title="">Blog List</a></li>
-									<li><a href="blog-single.html" title="">Blog Single</a></li>
-								</ul>
-							</li> 
-							<li><a href="404.html">404</a></li>
-							<li><a href="contact-us.html" title="">Contact</a></li>
-                            *@
+							<li>
+                                <a href="/EShopper/Home" class="active">Home</a>
+                            </li>
+							<li class="dropdown">
+                                <a>News</a>
+                            </li> 
 						</ul>
 					</div>
 				</div>
