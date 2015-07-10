@@ -2,17 +2,21 @@
 @{
     List<ProductCategory> categoryList = ViewBag.CategoryList as List<ProductCategory>;
 }
-<div class="left-sidebar">
-    <h2>Category</h2>
-    <div class="panel-group category-products" id="accordian">
+<div class="sidebar left-sidebar">
+    <div class="sidebarTitle">Category</div>
+    <div id="accordian" class="panel-group category-products">
         @if (categoryList != null)
         {
             foreach (var item in categoryList)
             {
  	        <div class="panel panel-default">
-		        <div class="panel-heading">
-			        <h4 class="panel-title"><a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)">@(item.Name)</a></h4>
-		        </div>
+		        <aside class="panel-heading" itemscope itemtype="http://schema.org/WPSideBar">
+			        <div class="catecoryTitle panel-title">
+                        <a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)" itemprop="url">
+                            <span itemprop="name">@(item.Name)</span>
+                        </a>
+                    </div>
+		        </aside>
 	        </div>
             }
         }
