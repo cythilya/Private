@@ -70,7 +70,10 @@
   z-index: -2;
 }
 
-.productinfo .productPrice {
+.singleProduct {
+  height: 400px;
+}
+.singleProduct .productinfo .productPrice {
   color: #FE980F;
   font-family: "Roboto", sans-serif;
   font-size: 24px;

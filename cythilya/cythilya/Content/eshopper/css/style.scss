@@ -48,12 +48,15 @@ $headingFont: 'Roboto', sans-serif;
 	@include catecoryHeading;
 }
 
-.productinfo{
-	.productPrice{
-		color: #FE980F;
-		font-family: $headingFont;
-		font-size: 24px;
-		font-weight: 700;		
+.singleProduct{
+	height: 400px;
+	.productinfo{
+		.productPrice{
+			color: #FE980F;
+			font-family: $headingFont;
+			font-size: 24px;
+			font-weight: 700;		
+		}
 	}
 }
 

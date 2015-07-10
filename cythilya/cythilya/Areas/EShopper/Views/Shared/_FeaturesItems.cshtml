@@ -9,10 +9,10 @@
     foreach (var item in featuresProductList)
     {
      <div class="col-sm-4">
-	    <div class="product-image-wrapper">
+	    <div class="singleProduct product-image-wrapper">
 		    <div class="single-products">
 			    <div class="productinfo text-center">
-				    <img src="@(item.PicFeaturedUrl)" alt="@(item.Name)" />
+				    <img class="productImg" src="@(item.PicFeaturedUrl)" alt="@(item.Name)" />
 				    <div class="productPrice">$@(item.Price)</div>
 				    <p>@(item.Name)</p>
 				    <a href="/EShopper/Home/Product?id=@(item.ID)" class="btn btn-default add-to-cart" title="More - @(item.Name)">More</a>
