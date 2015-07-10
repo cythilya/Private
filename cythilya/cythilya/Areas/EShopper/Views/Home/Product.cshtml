@@ -8,8 +8,8 @@
     ViewBag.Tab = detail.ProductCategory;
     
     //fake data
-    string ratingValue = "4";
-    string reviewCount = "200";
+    string ratingValue = "4.5";
+    string reviewCount = "100";
 }
 <script type="application/ld+json">
 {
@@ -36,13 +36,13 @@
             "@@type": "Review",
             "author": "Summer",
             "datePublished": "2015-06-24",
-            "description": "Good to wear.",
+            "description": "Good.",
             "name": "@detail.Name",
             "reviewRating": 
             {
                 "@@type": "Rating",
                 "bestRating": "5",
-                "ratingValue": "4",
+                "ratingValue": "4.5",
                 "worstRating": "1"
             }
         },
