@@ -243,7 +243,7 @@ namespace cythilya.Controllers
 
         #region 共用
 
-        //聯繫我  
+        //聯繫我
         public ActionResult ContactMe(MeModels.Visitor visitor)
         {
             string mailBody = System.IO.File.ReadAllText(Server.MapPath("/App_Data/VisitorEmailTemplate.html"));
