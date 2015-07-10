@@ -1,37 +1,39 @@
 ﻿@{
-    //title
+    #region title
     if (String.IsNullOrEmpty(ViewBag.Title))
     {
-        ViewBag.Title = "E-Shopper | Hsin-Hao Tang";
+        ViewBag.Title = "拍賣桑莫的生活";
     }
     else
     {
-        ViewBag.Title = ViewBag.Title + " | E-Shopper | Hsin-Hao Tang";
+        ViewBag.Title = ViewBag.Title + " | 拍賣桑莫的生活";
     }
-        
-    //description
-    if(String.IsNullOrEmpty(ViewBag.Description))
+    #endregion title
+
+    #region description
+    if (String.IsNullOrEmpty(ViewBag.Description))
     {
-        ViewBag.Description = "E-Shopper | Hsin-Hao Tang";
+        ViewBag.Description = "拍賣桑莫的生活。SEO遊樂場。";
     }
     else
     {
-        ViewBag.Description = ViewBag.Description + " | E-Shopper | Hsin-Hao Tang";
+        ViewBag.Description = "拍賣桑莫的生活 - " + ViewBag.Description;
     }
-    
-    //shared image
+    #endregion description
+
+    #region shared image
     if(String.IsNullOrEmpty(ViewBag.SharedImage))
     {
         ViewBag.SharedImage = "/Content/eshopper/images/EShopper.png";
     }
+    #endregion description
     
-    var currentURL = "http://cythilya.apphb.com" + HttpContext.Current.Request.RawUrl;
-    var siteName = "Hsin-Hao Tang";
+    var currentURL = "http://cythilya.apphb.com" + HttpContext.Current.Request.RawUrl; //canonical url
+    var siteName = "Hsin-Hao Tang"; //site name
 }
 @* Usual Tags *@
 <title>@(ViewBag.Title)</title>
 <meta name="description" content="@(ViewBag.Description)" />
-<meta name="author" content="Hsin-Hao Tang">
 
 @* Schema.org markup for Google+ *@
 <meta itemprop="name" content="@(ViewBag.Title)">
@@ -49,6 +51,7 @@
 @* Others *@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Hsin-Hao Tang">
 <link rel="Shortcut Icon" type="image/x-icon" href="/Images/icon.ico">	
 <link href="https://plus.google.com/u/0/+CythilyaTang/" rel="author">
 
