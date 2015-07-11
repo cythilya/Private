@@ -197,84 +197,8 @@ namespace cythilya.Areas.EShopper.Controllers
                     featuresProductList.Add(item);
                 }
             }
-            
-            #region fake data - product
-            /*
-            var productCategory = new ProductCategory() { ID = 1, Name = "WOMENS" };
 
-            var tag = new Tag() { ID = 1, Name = "New Arrival" };
-            var tagList = new List<Tag>();
-            tagList.Add(tag);
-
-            var featuresProductList = new List<Product>()
-            {
-                new Product()
-                {
-                    ID = 1, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "/Content/eshopper/images/home/product1.jpg",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "poloshirt",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = true
-                },
-                new Product()
-                {
-                    ID = 4, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "/Content/eshopper/images/home/product1.jpg",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "poloshirt",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = true
-                },
-                new Product()
-                {
-                    ID = 7, 
-                    Name = "Easy Polo Black Edition",
-                    ProductCategory = productCategory,
-                    Description = "",
-                    RawPicUrl = "",
-                    PicLargeUrl = "",
-                    PicMediumUrl = "/Content/eshopper/images/home/product1.jpg",
-                    PicSmallUrl = "",
-                    PicFeaturedUrl = "http://dummyimage.com/208x183/000/fff",
-                    PublishOn = DateTime.UtcNow,
-                    Brand = "",
-                    BrandInfo = "",
-                    Tags = tagList,
-                    MainTag = "poloshirt",
-                    Price = 99,
-                    Amount = 99,
-                    IsSale = false,
-                    IsHigLight = true
-                }
-            };
-            */
-            #endregion
-            
+            featuresProductList.Reverse();
             ViewBag.FeaturesProductList = featuresProductList;
         }
 
