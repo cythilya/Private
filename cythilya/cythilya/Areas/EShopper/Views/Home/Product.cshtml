@@ -2,7 +2,7 @@
 @{
     Layout = "~/Areas/EShopper/Views/Shared/_LayoutEShopper.cshtml";
     Product detail = ViewBag.ProductDetail as Product;
-    ViewBag.Title = detail.Name;
+    ViewBag.Title = detail.Name + " (ID: " + detail.ID + ")";
     ViewBag.Description = detail.Description;
     ViewBag.SharedImage = detail.PicLargeUrl;
     ViewBag.Tab = detail.ProductCategory;

@@ -9,15 +9,18 @@
         {
             foreach (var item in categoryList)
             {
- 	        <div class="panel panel-default">
-		        <aside class="panel-heading" itemscope itemtype="http://schema.org/WPSideBar">
-			        <h4 class="panel-title">
-                        <a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)" itemprop="url">
-                            <span itemprop="name">@(item.Name)</span>
-                        </a>
-                    </h4>
-		        </aside>
-	        </div>
+                if (item.Products.Count != 0)
+                { 
+ 	            <div class="panel panel-default">
+		            <aside class="panel-heading" itemscope itemtype="http://schema.org/WPSideBar">
+			            <h4 class="panel-title">
+                            <a href="/EShopper/Home/Category?id=@(item.ID)" title="@(item.Name)" itemprop="url">
+                                <span itemprop="name">@(item.Name)</span>
+                            </a>
+                        </h4>
+		            </aside>
+	            </div>
+                }
             }
         }
 	    @* 含有子類別的樣板*@
