@@ -293,10 +293,10 @@ namespace cythilya.Areas.EShopper.Controllers
                 },
                 new Common.RecommendItem() 
                 { 
-                    ID = 3, 
-                    Name = "New Fashion 5 buttons Ladies...",
-                    Price = 666,
-                    PicUrl = "http://dummyimage.com/255x128/faf378/fff"
+                    ID = 30, 
+                    Name = "日式串燒 @ 山喜屋日式居酒屋",
+                    Price = 600,
+                    PicUrl = "http://cythilya.apphb.com/content/eshopper/images/product/beer_and_meat_255x128.jpg"
                 },
                 new Common.RecommendItem() 
                 { 
