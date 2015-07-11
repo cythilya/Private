@@ -279,17 +279,17 @@ namespace cythilya.Areas.EShopper.Controllers
             {
                 new Common.RecommendItem() 
                 { 
-                    ID = 1, 
-                    Name = "Chiffon fabric evening dress",
-                    Price = 1024,
-                    PicUrl = "http://dummyimage.com/255x128/000/fff"
+                    ID = 2, 
+                    Name = "健康好吃的酪梨鮪魚三明治套餐",
+                    Price = 150,
+                    PicUrl = "http://cythilya.apphb.com/content/eshopper/images/product/health_food/health_food_255x128.jpg"
                 },
                 new Common.RecommendItem() 
                 { 
-                    ID = 2, 
-                    Name = "barber work shirt",
-                    Price = 777,
-                    PicUrl = "http://dummyimage.com/255x128/666/fff"
+                    ID = 8, 
+                    Name = "令人懷念的Cathy杯杯",
+                    Price = 399,
+                    PicUrl = "http://cythilya.apphb.com/content/eshopper/images/product/cathy_cups_255x128.jpg"
                 },
                 new Common.RecommendItem() 
                 { 
@@ -300,23 +300,24 @@ namespace cythilya.Areas.EShopper.Controllers
                 },
                 new Common.RecommendItem() 
                 { 
+                    ID = 26, 
+                    Name = "烤白胖麻吉",
+                    Price = 499,
+                    PicUrl = "http://cythilya.apphb.com/content/eshopper/images/product/IMG_20150424_201916_255x128.jpg"
+                },
+                new Common.RecommendItem() 
+                { 
+                    ID = 34, 
+                    Name = "辣椒文創故事館",
+                    Price = 99999,
+                    PicUrl = "http://cythilya.apphb.com/content/eshopper/images/product/spicy_ice_cream_loc_255x128.jpg"
+                },
+                new Common.RecommendItem() 
+                { 
                     ID = 4, 
-                    Name = "Lady's seamless wholesale bandeau...",
-                    PicUrl = "http://dummyimage.com/255x128/78fabb/fff"
-                },
-                new Common.RecommendItem() 
-                { 
-                    ID = 5, 
-                    Name = "2014 high quality...",
-                    Price = 399,
-                    PicUrl = "http://dummyimage.com/255x128/666/fff"
-                },
-                new Common.RecommendItem() 
-                { 
-                    ID = 6, 
-                    Name = "Knitwear Pullover",
-                    Price = 199,
-                    PicUrl = "http://dummyimage.com/255x128/000/fff"
+                    Name = "酪梨鮮蝦握壽司",
+                    Price = 40,
+                    PicUrl = "http://cythilya.apphb.com/content/eshopper/images/product/kura_sush_255x128.jpg"
                 }
             };
             ViewBag.RecommendItemsList = recommendItemsList;
