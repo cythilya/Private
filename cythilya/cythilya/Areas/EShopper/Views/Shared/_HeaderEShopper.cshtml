@@ -17,6 +17,11 @@
     socialItem3.Name = "google-plus";
     socialItem3.Link = "https://plus.google.com/+CythilyaTang";
     socialList.Add(socialItem3);
+    
+    var socialItem4 = new Common.SocialList();
+    socialItem4.Name = "linkedin";
+    socialItem4.Link = "https://www.linkedin.com/in/cythilya";
+    socialList.Add(socialItem4);
 }
 <header id="header" itemscope itemtype="http://schema.org/WPHeader">
 	<div class="header_top">
@@ -25,8 +30,8 @@
 				<div class="col-sm-6">
 					<div class="contactinfo">
 						<ul class="nav nav-pills">
-							<li><a><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-							<li><a><i class="fa fa-envelope"></i> info@domain.com</a></li>
+							@*<li><a><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>*@ @*隱藏電話*@
+							<li><a href="mailto:cythilya@gmail.com" title="寫信給桑莫"><i class="fa fa-envelope"></i> 寫信給桑莫</a></li>
 						</ul>
 					</div>
 				</div>
@@ -56,8 +61,8 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<h1 class="logo pull-left" itemprop="name">
-						<a href="/EShopper/Home" title="拍賣桑莫的生活" itemprop="url">
-                            <img src="/Content/eshopper/images/home/logo.png" alt="拍賣桑莫的生活" />
+						<a href="/EShopper/Home" title="拍賣桑莫的生活。SEO遊樂場" itemprop="url">
+                            <img src="/Content/eshopper/images/home/logo.png" alt="拍賣桑莫的生活。SEO遊樂場" />
                         </a>
                         @*
                             對於連結包圖片而沒有anchor text的狀況，這個連結的意義由圖片的alt attribute取而代之。
@@ -73,16 +78,16 @@
 							<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
 							<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 							*@
-							<li><a href="/EShopper/Order/Complete" title="Checkout"><i class="fa fa-crosshairs"></i>Checkout</a></li>
-							<li><a href="/EShopper/Cart" title="Cart"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+							<li><a href="/EShopper/Order/Complete" title="結帳"><i class="fa fa-crosshairs"></i>結帳</a></li>
+							<li><a href="/EShopper/Cart" title="購物車"><i class="fa fa-shopping-cart"></i>購物車</a></li>
 							@if (User.Identity.IsAuthenticated)
                             {
-                            <li><a href="#" title="Logout" class="logout"><i class="fa fa-lock"></i>Logout</a></li>
+                            <li><a href="#" title="登出" class="logout"><i class="fa fa-lock"></i>登出</a></li>
                             }
                             else
                             { 
-                            <li><a href="/EShopper/Member/Register" title="Register" class="register"><i class="fa fa-lock"></i>Register</a></li>
-                            <li><a href="/EShopper/Member/Login" title="Login" class="login"><i class="fa fa-lock"></i>Login</a></li>
+                            <li><a href="/EShopper/Member/Register" title="註冊" class="register"><i class="fa fa-lock"></i>註冊</a></li>
+                            <li><a href="/EShopper/Member/Login" title="登入" class="login"><i class="fa fa-lock"></i>登入</a></li>
                             }
 						</ul>
 					</div>
@@ -106,12 +111,12 @@
 						<ul class="nav navbar-nav collapse navbar-collapse">
 							<li>
                                 <a href="/EShopper/Home" class="active" itemprop="url">
-                                    <span itemprop="name">Home</span>
+                                    <span itemprop="name">熱門商品</span>
                                 </a>
                             </li>
 							<li class="dropdown">
                                 <a itemprop="url">
-                                    <span itemprop="name">News</span>
+                                    <span itemprop="name">最新消息</span>
                                 </a>
                             </li> 
 						</ul>

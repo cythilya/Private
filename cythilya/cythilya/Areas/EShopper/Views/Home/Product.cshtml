@@ -22,6 +22,7 @@
     },
     "description": "@detail.Description",
     "name": "@detail.Name",
+    "productId": "@detail.ID",
     "offers": {
         "@@type": "Offer",
         "availability": "http://schema.org/InStock",
@@ -71,6 +72,28 @@
 			</div>
             <div class="productDetail col-sm-9 padding-right">
 				<div class="product-details">
+			        <ol class="breadcrumb clearfix" itemscope itemtype="http://schema.org/BreadcrumbList">
+			            <li class="breadcrumbItem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			                <a class="link" itemprop="item" href="/EShopper/Home">
+			        	        <span class="text" itemprop="name">拍賣桑莫的生活。SEO遊樂場</span>
+			                </a>
+			                <meta itemprop="position" content="1" />
+			            </li>
+			            <span class="divider"> ›</span>
+			            <li class="breadcrumbItem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> 
+			                <a class="link" itemprop="item" href="/EShopper/Home/Category?id=@detail.ProductCategory.ID">
+			        	        <span class="text" itemprop="name">@detail.ProductCategory.Name</span>
+			                </a>
+			                <meta itemprop="position" content="2" />
+			            </li>
+			            <span class="divider"> ›</span>
+			            <li class="breadcrumbItem" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			                <a class="link" itemprop="item" href="/EShopper/Home/Product?id=@detail.ID">
+			        	        <span class="text" itemprop="name">@detail.Name</span>
+			                </a>
+			                <meta itemprop="position" content="3" />
+			            </li>
+			        </ol>
 					<div class="col-sm-5">
 						<div class="view-product">
 							<img src="@(detail.PicLargeUrl)" title="@(detail.Name)" alt="@(detail.Name)">

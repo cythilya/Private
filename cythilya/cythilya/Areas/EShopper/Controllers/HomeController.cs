@@ -150,30 +150,30 @@ namespace cythilya.Areas.EShopper.Controllers
             { 
                 new Common.Carousel()
                 {
-                    Heading = "E-SHOPPER",
-                    Caption = "Free E-Commerce Template",
-                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    Link = "/EShopper/Home/Product?id=1",
+                    Heading = "拍賣桑莫的生活",
+                    Caption = "SEO遊樂場",
+                    Description = "桑莫在這裡建了SEO遊樂場做SEO實驗...",
+                    Link = "/EShopper/Home/Product?id=2",
                     ImageUrl = "/Content/eshopper/images/home/girl1.jpg",
                     PriceImageUrl = "/Content/eshopper/images/home/pricing.png",
                     IsHighlight = true
                 },
                 new Common.Carousel()
                 {
-                    Heading = "E-SHOPPER",
-                    Caption = "100% Responsive Design",
-                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    Link = "/EShopper/Home/Product?id=2",
+                    Heading = "拍賣桑莫的生活",
+                    Caption = "SEO遊樂場",
+                    Description = "桑莫在這裡建了SEO遊樂場做SEO實驗...",
+                    Link = "/EShopper/Home/Product?id=3",
                     ImageUrl = "/Content/eshopper/images/home/girl2.jpg",
                     PriceImageUrl = "/Content/eshopper/images/home/pricing.png",
                     IsHighlight = false
                 },
                 new Common.Carousel()
                 {
-                    Heading = "E-SHOPPER",
-                    Caption = "Free Ecommerce Template",
-                    Description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    Link = "/EShopper/Home/Product?id=3",
+                    Heading = "拍賣桑莫的生活",
+                    Caption = "SEO遊樂場",
+                    Description = "桑莫在這裡建了SEO遊樂場做SEO實驗...",
+                    Link = "/EShopper/Home/Product?id=4",
                     ImageUrl = "/Content/eshopper/images/home/girl3.jpg",
                     PriceImageUrl = "/Content/eshopper/images/home/pricing.png",
                     IsHighlight = false
