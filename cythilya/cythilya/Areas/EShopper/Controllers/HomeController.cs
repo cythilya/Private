@@ -198,7 +198,7 @@ namespace cythilya.Areas.EShopper.Controllers
                 }
             }
 
-            featuresProductList.Reverse();
+            //featuresProductList.Reverse();
             ViewBag.FeaturesProductList = featuresProductList;
         }
 

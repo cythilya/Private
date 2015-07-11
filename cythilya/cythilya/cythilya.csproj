@@ -216,6 +216,7 @@
     <Content Include="Content\eshopper\images\product\beer_and_meat_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\calendar.jpg" />
     <Content Include="Content\eshopper\images\product\cathy_cups.jpg" />
+    <Content Include="Content\eshopper\images\product\cathy_cups_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\eat_meat_my_friends.jpg" />
     <Content Include="Content\eshopper\images\product\grab_a_bite_salmon.jpg" />
     <Content Include="Content\eshopper\images\product\grab_a_bite_sausage.jpg" />
@@ -226,8 +227,10 @@
     <Content Include="Content\eshopper\images\product\health_food\health_food_329x380.jpg" />
     <Content Include="Content\eshopper\images\product\health_food\health_food_original.jpg" />
     <Content Include="Content\eshopper\images\product\IMG_20150424_201916.jpg" />
+    <Content Include="Content\eshopper\images\product\IMG_20150424_201916_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\kura_sush.jpg" />
     <Content Include="Content\eshopper\images\product\kura_sush_1.jpg" />
+    <Content Include="Content\eshopper\images\product\kura_sush_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\rite_bag_pink\rite_bag_pink_268x249.jpg" />
     <Content Include="Content\eshopper\images\product\rite_bag_pink\rite_bag_pink_329x380.jpg" />
     <Content Include="Content\eshopper\images\product\rite_bag_pink\rite_bag_pink.jpg" />
@@ -235,6 +238,7 @@
     <Content Include="Content\eshopper\images\product\rite_bag_pink\rite_bag_pink_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\spicy_ice_cream.jpg" />
     <Content Include="Content\eshopper\images\product\spicy_ice_cream_loc.jpg" />
+    <Content Include="Content\eshopper\images\product\spicy_ice_cream_loc_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\tetsuwan.jpg" />
     <Content Include="Content\file\javascript_event_delegation.html" />
     <Content Include="Content\file\qr_code\bcard.png" />
