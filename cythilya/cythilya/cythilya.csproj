@@ -1810,8 +1810,8 @@
     <Content Include="Areas\UI\Views\UI\AngularJSTodoList.cshtml" />
     <Content Include="Content\eshopper\css\style.scss" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.eot" />
-    <None Include="Content\eshopper\fonts\fontawesome-webfont.ttf" />
-    <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\eshopper\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff2" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
