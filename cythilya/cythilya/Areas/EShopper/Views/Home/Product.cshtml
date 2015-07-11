@@ -116,13 +116,12 @@
 								<span>$ @(detail.Price)</span>
 								<label>Quantity:</label>
                                 <select class="selectItem">
-                                    @{
-                                        for (int i = 1; i <= detail.Amount; i++) 
-                                        { 
-                                            <option value="@(i)">@(i)</option>
-                                        }
-                                        
+                                @{
+                                    for (int i = 1; i <= detail.Amount; i++) 
+                                    { 
+                                        <option value="@(i)">@(i)</option>
                                     }
+                                }
                                 </select>
 								@*<input type="text" value="@(detail.Amount)">*@
                                 <button type="button" class="btn btn-fefault cart btnAddToCart" data-productid="@(detail.ID)">
