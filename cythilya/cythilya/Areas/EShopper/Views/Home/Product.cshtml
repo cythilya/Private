@@ -110,11 +110,11 @@
                                 <img title="熱賣" alt="熱賣" src="/Content/eshopper/images/home/sale.png" class="new"> 
                             }
 							<h2>@(detail.Name)</h2>
-							<p>商品編號: @(detail.ID) </p>
+							<p>商品編號： @(detail.ID) </p>
 							<img src="/Content/eshopper/images/product-details/rating.png" alt="Rating">
                             <span>
 								<span>$ @(detail.Price)</span>
-								<label>數量:</label>
+								<label>數量：</label>
                                 <select class="selectItem">
                                 @{
                                     for (int i = 1; i <= detail.Amount; i++) 
@@ -129,9 +129,9 @@
 									加入購物車
 								</button>
 							</span>
-							<p><b>庫存:</b> 充裕</p>
-							<p><b>物品:</b> 全新</p>
-                            <p><b>品牌:</b> @(detail.Brand)</p>
+							<p><b>庫存：</b> 充裕</p>
+							<p><b>物品：</b> 全新</p>
+                            <p><b>品牌：</b> @(detail.Brand)</p>
                             @*<a href=""><img src="/Content/eshopper/images/product-details/share.png" class="share img-responsive" alt=""></a>*@
 						</div>
 					</div>
