@@ -1809,7 +1809,10 @@
     <Content Include="Areas\UI\Views\UI\d3SimpleBarChart.cshtml" />
     <Content Include="Areas\UI\Views\UI\AngularJSTodoList.cshtml" />
     <Content Include="Content\eshopper\css\style.scss" />
+    <None Include="Content\eshopper\fonts\fontawesome-webfont.eot" />
+    <None Include="Content\eshopper\fonts\fontawesome-webfont.ttf" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
+    <None Include="Content\eshopper\fonts\fontawesome-webfont.woff2" />
     <None Include="Content\eshopper\fonts\FontAwesome.otf" />
     <None Include="Content\eshopper\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Content\eshopper\images\blog\Thumbs.db" />
