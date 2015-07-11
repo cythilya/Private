@@ -234,6 +234,7 @@
     <Content Include="Content\eshopper\images\product\rite_bag_pink\rite_bag_pink_255x128.jpg" />
     <Content Include="Content\eshopper\images\product\spicy_ice_cream.jpg" />
     <Content Include="Content\eshopper\images\product\spicy_ice_cream_loc.jpg" />
+    <Content Include="Content\eshopper\images\product\tetsuwan.jpg" />
     <Content Include="Content\file\javascript_event_delegation.html" />
     <Content Include="Content\file\qr_code\bcard.png" />
     <Content Include="Content\file\qr_code\bcard_fb_l.png" />
