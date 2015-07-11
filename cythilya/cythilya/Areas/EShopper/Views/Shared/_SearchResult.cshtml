@@ -1,6 +1,6 @@
 ﻿@using cythilya.Areas.EShopper.Models
 @{
-    List<Product> productList = ViewBag.ProductList as List<Product>; 
+    List<Product> productList = ViewBag.ProductList as List<Product>;
     var ajaxOption = new AjaxOptions()
     {
         OnSuccess = "AddToCartSuccess",
@@ -61,5 +61,32 @@
 		        *@
 	        </div>
         </div>
+        <script type="application/ld+json">
+        {
+          "@@context": "http://schema.org/",
+          "@@type": "Product",
+          "name": "@(item.Name)",
+          "image": "@(item.PicFeaturedUrl)",
+          "description": "@item.Description",
+          "productId": "@item.ID",
+          "brand":{
+            "@@type": "Thing",
+            "name": "@item.Brand"
+          },
+          "aggregateRating":{
+            "@@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "100"
+          },
+          "offers":{
+            "@@type": "Offer",
+            "priceCurrency": "TWD",
+            "price": "@(item.Price)",
+            "priceValidUntil": "2020-12-25",
+            "itemCondition": "http://schema.org/NewCondition",
+            "availability": "http://schema.org/InStock"
+          }
+        }
+        </script>      
     }
 </div>
