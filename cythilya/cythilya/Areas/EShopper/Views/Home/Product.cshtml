@@ -103,18 +103,18 @@
 						<div id="singleProductInfo" class="product-information">
                             @if(detail.IsHigLight)
                             {
-                                <img title="New Arrival" alt="New Arrival" src="/Content/eshopper/images/product-details/new.jpg" class="newarrival">
+                                <img title="新到貨" alt="新到貨" src="/Content/eshopper/images/product-details/new.jpg" class="newarrival">
                             }
                             @if (detail.IsSale)
                             { 
-                                <img title="Sale" alt="Sale" src="/Content/eshopper/images/home/sale.png" class="new"> 
+                                <img title="熱賣" alt="熱賣" src="/Content/eshopper/images/home/sale.png" class="new"> 
                             }
-							<h2> @(detail.Name) </h2>
-							<p>ID: @(detail.ID) </p>
+							<h2>@(detail.Name)</h2>
+							<p>商品編號: @(detail.ID) </p>
 							<img src="/Content/eshopper/images/product-details/rating.png" alt="Rating">
                             <span>
 								<span>$ @(detail.Price)</span>
-								<label>Quantity:</label>
+								<label>數量:</label>
                                 <select class="selectItem">
                                 @{
                                     for (int i = 1; i <= detail.Amount; i++) 
@@ -126,12 +126,12 @@
 								@*<input type="text" value="@(detail.Amount)">*@
                                 <button type="button" class="btn btn-fefault cart btnAddToCart" data-productid="@(detail.ID)">
 									<i class="fa fa-shopping-cart"></i>
-									Add to cart
+									加入購物車
 								</button>
 							</span>
-							<p><b>Availability:</b> In Stock</p>
-							<p><b>Condition:</b> New</p>
-                            <p><b>Brand:</b> @(detail.Brand)</p>
+							<p><b>庫存狀態:</b> 充裕</p>
+							<p><b>物品狀態:</b> 全新</p>
+                            <p><b>品牌名稱:</b> @(detail.Brand)</p>
                             @*<a href=""><img src="/Content/eshopper/images/product-details/share.png" class="share img-responsive" alt=""></a>*@
 						</div>
 					</div>
