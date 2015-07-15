@@ -1045,6 +1045,23 @@ namespace cythilya.Controllers
             articleList.Add(article_45);
             #endregion   
 
+            #region JavaScript Design Pattern - Strategy 策略模式
+            MeModels.Article article_46 = new MeModels.Article();
+            article_46.Name = "JavaScript Design Pattern - Strategy 策略模式";
+            article_46.Description = "JavaScript Design Pattern 「Strategy 策略模式」 筆記。";
+            article_46.URL = "http://cythilya.blogspot.tw/2015/07/javascript-design-pattern-strategy.html";
+            article_46.RawPic = "/Content/me/img/blog/strategy/strategy.jpg";
+            article_46.PicSmall = "/Content/me/img/blog/strategy/strategyn_188x73.jpg";
+            article_46.PicMedium = "/Content/me/img/blog/strategy/strategy_300.jpg";
+            article_46.PicLarge = "/Content/me/img/blog/strategy/strategy_940x367.jpg";
+            article_46.PicInFooter = "/Content/me/img/blog/strategy/strategy_54x54.jpg";
+            article_46.Tag = "JavaScript, Strategy";
+            article_46.isHighlight = false;
+            article_46.Time = "July 15, 2015";
+            article_46.isBanner = false;
+            articleList.Add(article_46);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
