@@ -389,6 +389,12 @@
     <Content Include="Content\me\img\blog\250528_3929.jpg" />
     <Content Include="Content\me\img\blog\250528_3929_54x54.jpg" />
     <Content Include="Content\me\img\blog\505237_63345765.jpg" />
+    <Content Include="Content\me\img\blog\angularjs\angularjs.png" />
+    <Content Include="Content\me\img\blog\angularjs\angularjs_188x73.png" />
+    <Content Include="Content\me\img\blog\angularjs\angularjs_300.png" />
+    <Content Include="Content\me\img\blog\angularjs\angularjs_54x54.png" />
+    <Content Include="Content\me\img\blog\angularjs\angularjs_800.png" />
+    <Content Include="Content\me\img\blog\angularjs\angularjs_940x367.png" />
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline.jpg" />
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline_188x73.jpg" />
     <Content Include="Content\me\img\blog\ASO_Guideline\ASO_Guideline_300.jpg" />
