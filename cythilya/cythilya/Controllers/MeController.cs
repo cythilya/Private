@@ -1062,6 +1062,23 @@ namespace cythilya.Controllers
             articleList.Add(article_46);
             #endregion 
 
+            #region AngularJS - TodoList
+            MeModels.Article article_47 = new MeModels.Article();
+            article_47.Name = "AngularJS - TodoList";
+            article_47.Description = "AngularJS - TodoList。";
+            article_47.URL = "http://cythilya.blogspot.tw/2015/07/angularjs-todolist.html";
+            article_47.RawPic = "/Content/me/img/blog/angularjs/angularjs.png";
+            article_47.PicSmall = "/Content/me/img/blog/angularjs/angularjs_188x73.png";
+            article_47.PicMedium = "/Content/me/img/blog/angularjs/angularjs_300.png";
+            article_47.PicLarge = "/Content/me/img/blog/angularjs/angularjs_940x367.png";
+            article_47.PicInFooter = "/Content/me/img/blog/angularjs/angularjs_54x54.png";
+            article_47.Tag = "AngularJS";
+            article_47.isHighlight = false;
+            article_47.Time = "July 23, 2015";
+            article_47.isBanner = false;
+            articleList.Add(article_47);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
