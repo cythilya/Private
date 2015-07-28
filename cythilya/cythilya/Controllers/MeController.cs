@@ -2189,6 +2189,7 @@ namespace cythilya.Controllers
             #endregion
 
             #region 2015年台灣米倉田中馬拉松 (未上線)
+            /*
             MeModels.Project proj_23 = new MeModels.Project();
             proj_23.ID = 23;
             proj_23.Name = "2015年台灣米倉田中馬拉松";
@@ -2228,6 +2229,7 @@ namespace cythilya.Controllers
 
             proj_23.Snapshot = SnapshotList23;
             projList.Add(proj_23);
+            */
             #endregion
 
             #endregion Mock
