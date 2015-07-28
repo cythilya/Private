@@ -2047,7 +2047,7 @@ namespace cythilya.Controllers
             proj_19.LauchURL = "https://www.eventpal.com.tw";
             proj_19.HtmlContent = "<p>活動咖 EventPal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
             proj_19.Tag = "Web Platform SEO";
-            proj_19.isHighlight = false;
+            proj_19.isHighlight = true;
             proj_19.IsShowInPortfolio = true;
             List<int> partnerList19 = new List<int>(new int[] { 7, 19 });
             proj_19.Partners = partnerList19;
