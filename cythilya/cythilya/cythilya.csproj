@@ -982,6 +982,11 @@
     <Content Include="Content\me\img\project\thsr\thsr_300.png" />
     <Content Include="Content\me\img\project\thsr\thsr_54x54.png" />
     <Content Include="Content\me\img\project\thsr\thsr_940x367.png" />
+    <Content Include="Content\me\img\project\tienchun\tienchun.jpg" />
+    <Content Include="Content\me\img\project\tienchun\tienchun_188x73.jpg" />
+    <Content Include="Content\me\img\project\tienchun\tienchun_300.jpg" />
+    <Content Include="Content\me\img\project\tienchun\tienchun_54x54.jpg" />
+    <Content Include="Content\me\img\project\tienchun\tienchun_940x367.jpg" />
     <Content Include="Content\me\img\project\volving\volving.png" />
     <Content Include="Content\me\img\project\volving\volving_188x73.png" />
     <Content Include="Content\me\img\project\volving\volving_300.png" />

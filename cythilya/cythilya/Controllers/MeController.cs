@@ -2188,6 +2188,48 @@ namespace cythilya.Controllers
             projList.Add(proj_22);
             #endregion
 
+            #region 2015年台灣米倉田中馬拉松 (未上線)
+            MeModels.Project proj_23 = new MeModels.Project();
+            proj_23.ID = 23;
+            proj_23.Name = "2015年台灣米倉田中馬拉松";
+            proj_23.Description = "慶祝2015/12/01田中高鐵站通車，迎接田中雙鐵新世代，營造友善田中，熱情人文運動首都，藉由此次活動，行銷本鎮觀光特色，活化農特產品銷售商機，吸引觀光人潮，結合運動、休閒以及農業，推動發展健康經濟。";
+            proj_23.Role = "Front-End Development";
+            proj_23.Tech = "Web development with SCSS and jQuery. Wordpress template.";
+            proj_23.URL = "/Me/Project?id=" + proj_23.ID;
+            proj_23.RawPic = "/Content/me/img/project/tienchun/tienchun.jpg";
+            proj_23.PicSmall = "/Content/me/img/project/tienchun/tienchun_188x73.jpg";
+            proj_23.PicMedium = "/Content/me/img/project/tienchun/tienchun_300.jpg";
+            proj_23.PicLarge = "/Content/me/img/project/tienchun/tienchun_940x367.jpg";
+            proj_23.PicInFooter = "/Content/me/img/project/tienchun/tienchun_54x54.jpg";
+            proj_23.Order = 23;
+            proj_23.Client = "田中鎮公所";
+            proj_23.ClientURL = "http://www.tienchun.gov.tw";
+            proj_23.Date = "July 2015";
+            proj_23.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/ActivityIndex.action?showTabContent&seqno=6b8fd884-5a59-400b-9426-ffb775e4a132";
+
+            StringBuilder sb23 = new StringBuilder();
+            sb23.Append("<p>慶祝2015.12.01田中高鐵站通車，迎接田中雙鐵新世代，營造友善田中，熱情人文運動首都， 藉由此次活動，行銷本鎮觀光特色，活化農特產品銷售商機，吸引觀光人潮，結合運動、休閒以及農業，推動發展健康經濟。</p>");
+            string str23 = sb23.ToString();
+
+            proj_23.HtmlContent = str23;
+            proj_23.Tag = "Web OfficialWebsite RWD";
+            proj_23.isHighlight = false;
+            proj_23.IsShowInPortfolio = true;
+            List<int> partnerList23 = new List<int>(new int[] { 22, 23 });
+            proj_23.Partners = partnerList23;
+            proj_23.PartnerDetail = GetPartnerList(proj_23.Partners);
+
+            List<MeModels.SnapshotInfo> SnapshotList23 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_23_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_23_snap_1.Name = "2015年台灣米倉田中馬拉松";
+            proj_23_snap_1.SnapshotURL = "/Content/me/img/project/tienchun/tienchun_940x367.jpg";
+            SnapshotList23.Add(proj_23_snap_1);
+
+            proj_23.Snapshot = SnapshotList23;
+            projList.Add(proj_23);
+            #endregion
+
             #endregion Mock
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
@@ -2457,7 +2499,19 @@ namespace cythilya.Controllers
             partner21.Name = "Kaye Harley";
             partner21.Website = "https://www.facebook.com/kaye.harley";
             partnerList.Add(partner21);
-            
+
+            MeModels.Partner partner22 = new MeModels.Partner();
+            partner22.ID = 22;
+            partner22.Name = "Queena Hsu";
+            partner22.Website = "https://www.facebook.com/queena.hsu.54";
+            partnerList.Add(partner22);
+
+            MeModels.Partner partner23 = new MeModels.Partner();
+            partner23.ID = 23;
+            partner23.Name = "Penny Lai";
+            partner23.Website = "https://www.facebook.com/penny.lai.061";
+            partnerList.Add(partner23);
+
             #endregion
 
             List<MeModels.Partner> projectPartnerList = new List<MeModels.Partner>();
