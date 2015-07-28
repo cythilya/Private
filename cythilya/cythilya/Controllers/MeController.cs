@@ -2275,7 +2275,51 @@ namespace cythilya.Controllers
             projList.Add(proj_24);
             */
             #endregion
-            
+
+            #region 趨勢科技 PC-cillin (未上線)
+            /*
+            MeModels.Project proj_25 = new MeModels.Project();
+            proj_25.ID = 25;
+            proj_25.Name = "趨勢科技 PC-cillin";
+            proj_25.Description = "";
+            proj_25.Role = "Front-End Development";
+            proj_25.Tech = "Web development with SCSS and jQuery.";
+            proj_25.URL = "/Me/Project?id=" + proj_25.ID;
+            proj_25.RawPic = "/Content/me/img/project/pccillin/pccillin.jpg";
+            proj_25.PicSmall = "/Content/me/img/project/pccillin/pccillin_188x73.jpg";
+            proj_25.PicMedium = "/Content/me/img/project/pccillin/pccillin_300.jpg";
+            proj_25.PicLarge = "/Content/me/img/project/pccillin/pccillin_940x367.jpg";
+            proj_25.PicInFooter = "/Content/me/img/project/pccillin/pccillin_54x54.jpg";
+            proj_25.Order = 25;
+            proj_25.Client = "趨勢科技";
+            proj_25.ClientURL = "http://www.trendmicro.tw";
+            proj_25.Date = "July 2015";
+            proj_25.LauchURL = "";
+
+            StringBuilder sb25 = new StringBuilder();
+            sb25.Append("<p></p>");
+            string str25 = sb25.ToString();
+
+            proj_25.HtmlContent = str25;
+            proj_25.Tag = "Web CampignSite";
+            proj_25.isHighlight = false;
+            proj_25.IsShowInPortfolio = true;
+            List<int> partnerList25 = new List<int>(new int[] { 7 });
+            proj_25.Partners = partnerList25;
+            proj_25.PartnerDetail = GetPartnerList(proj_25.Partners);
+
+            List<MeModels.SnapshotInfo> SnapshotList25 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_25_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_25_snap_1.Name = "趨勢科技 PC-cillin";
+            proj_25_snap_1.SnapshotURL = "/Content/me/img/project/pccillin/pccillin_940x367.jpg";
+            SnapshotList25.Add(proj_25_snap_1);
+
+            proj_25.Snapshot = SnapshotList25;
+            projList.Add(proj_25);
+            */
+            #endregion
+
             #endregion Mock
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
