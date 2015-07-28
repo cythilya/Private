@@ -897,6 +897,12 @@
     <Content Include="Content\me\img\project\hty\hty_54x54.png" />
     <Content Include="Content\me\img\project\hty\hty_940x367.png" />
     <Content Include="Content\me\img\project\hty\hty_flow.gif" />
+    <Content Include="Content\me\img\project\index.html" />
+    <Content Include="Content\me\img\project\keystone\keystone.jpg" />
+    <Content Include="Content\me\img\project\keystone\keystone_188x73.jpg" />
+    <Content Include="Content\me\img\project\keystone\keystone_300.jpg" />
+    <Content Include="Content\me\img\project\keystone\keystone_54x54.jpg" />
+    <Content Include="Content\me\img\project\keystone\keystone_940x367.jpg" />
     <Content Include="Content\me\img\project\livingartist\livingartist.png" />
     <Content Include="Content\me\img\project\livingartist\livingartist_188x73.png" />
     <Content Include="Content\me\img\project\livingartist\livingartist_300.png" />

@@ -2232,6 +2232,50 @@ namespace cythilya.Controllers
             */
             #endregion
 
+            #region 楔石怪兵器 (未上線)
+            /*
+            MeModels.Project proj_24 = new MeModels.Project();
+            proj_24.ID = 24;
+            proj_24.Name = "楔石怪兵器";
+            proj_24.Description = "楔石攝影怪兵器 - 手機附件、攝影附件、攝影棚設備、攝錄影附件、收音設備、攝影練功房...";
+            proj_24.Role = "Front-End Development";
+            proj_24.Tech = "Web development with SCSS and jQuery.";
+            proj_24.URL = "/Me/Project?id=" + proj_24.ID;
+            proj_24.RawPic = "/Content/me/img/project/keystone/keystone.jpg";
+            proj_24.PicSmall = "/Content/me/img/project/keystone/keystone_188x73.jpg";
+            proj_24.PicMedium = "/Content/me/img/project/keystone/keystone_300.jpg";
+            proj_24.PicLarge = "/Content/me/img/project/keystone/keystone_940x367.jpg";
+            proj_24.PicInFooter = "/Content/me/img/project/keystone/keystone_54x54.jpg";
+            proj_24.Order = 24;
+            proj_24.Client = "楔石怪兵器";
+            proj_24.ClientURL = "";
+            proj_24.Date = "July 2015";
+            proj_24.LauchURL = "http://www.kphoto.com.tw";
+
+            StringBuilder sb24 = new StringBuilder();
+            sb24.Append("<p>楔石攝影怪兵器 - 手機附件、攝影附件、攝影棚設備、攝錄影附件、收音設備、攝影練功房...</p>");
+            string str24 = sb24.ToString();
+
+            proj_24.HtmlContent = str24;
+            proj_24.Tag = "Web OfficialWebsite SEO";
+            proj_24.isHighlight = false;
+            proj_24.IsShowInPortfolio = true;
+            List<int> partnerList24 = new List<int>(new int[] { 7, 18, 23 });
+            proj_24.Partners = partnerList24;
+            proj_24.PartnerDetail = GetPartnerList(proj_24.Partners);
+
+            List<MeModels.SnapshotInfo> SnapshotList24 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_24_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_24_snap_1.Name = "楔石攝影怪兵器";
+            proj_24_snap_1.SnapshotURL = "/Content/me/img/project/keystone/keystone_940x367.jpg";
+            SnapshotList24.Add(proj_24_snap_1);
+
+            proj_24.Snapshot = SnapshotList24;
+            projList.Add(proj_24);
+            */
+            #endregion
+            
             #endregion Mock
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
