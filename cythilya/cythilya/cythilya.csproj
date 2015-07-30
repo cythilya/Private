@@ -966,6 +966,11 @@
     <Content Include="Content\me\img\project\party_hlh\party_index_hlh_54x54.png" />
     <Content Include="Content\me\img\project\party_hlh\party_index_hlh_940.png" />
     <Content Include="Content\me\img\project\party_hlh\party_index_hlh_940x367.png" />
+    <Content Include="Content\me\img\project\pccillin\pccillin.png" />
+    <Content Include="Content\me\img\project\pccillin\pccillin_188x73.png" />
+    <Content Include="Content\me\img\project\pccillin\pccillin_300.png" />
+    <Content Include="Content\me\img\project\pccillin\pccillin_54x54.png" />
+    <Content Include="Content\me\img\project\pccillin\pccillin_940x367.png" />
     <Content Include="Content\me\img\project\selftv\selftv_1.jpg" />
     <Content Include="Content\me\img\project\selftv\selftv_20141102_1.png" />
     <Content Include="Content\me\img\project\selftv\selftv_20141102_2.png" />

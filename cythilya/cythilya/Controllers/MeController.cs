@@ -2202,7 +2202,7 @@ namespace cythilya.Controllers
             proj_23.PicMedium = "/Content/me/img/project/tienchun/tienchun_300.jpg";
             proj_23.PicLarge = "/Content/me/img/project/tienchun/tienchun_940x367.jpg";
             proj_23.PicInFooter = "/Content/me/img/project/tienchun/tienchun_54x54.jpg";
-            proj_23.Order = 23;
+            proj_23.Order = 24;
             proj_23.Client = "田中鎮公所";
             proj_23.ClientURL = "http://www.tienchun.gov.tw";
             proj_23.Date = "July 2015";
@@ -2246,7 +2246,7 @@ namespace cythilya.Controllers
             proj_24.PicMedium = "/Content/me/img/project/keystone/keystone_300.jpg";
             proj_24.PicLarge = "/Content/me/img/project/keystone/keystone_940x367.jpg";
             proj_24.PicInFooter = "/Content/me/img/project/keystone/keystone_54x54.jpg";
-            proj_24.Order = 24;
+            proj_24.Order = 25;
             proj_24.Client = "楔石怪兵器";
             proj_24.ClientURL = "";
             proj_24.Date = "July 2015";
@@ -2276,34 +2276,34 @@ namespace cythilya.Controllers
             */
             #endregion
 
-            #region 趨勢科技 PC-cillin (未上線)
-            /*
+            #region 趨勢科技 PC-cillin
             MeModels.Project proj_25 = new MeModels.Project();
             proj_25.ID = 25;
-            proj_25.Name = "趨勢科技 PC-cillin";
-            proj_25.Description = "";
+            proj_25.Name = "最新支援 Windows 10 - 趨勢科技: 跨平台防護PC-cillin 10 雲端版 2016年最新版上市";
+            proj_25.Description = "PC-cillin 10 雲端版 2016年最新版上市、最新支援Ｗindows10 、PC-cillin 2016雲端版超強跨平台防護, 同時支援PC, Mac及Android智慧手機與平板電腦，一組序號*可安裝在不同上網設備，讓您不管在何時、何地都能獲得跨平台的超強防護。趨勢科技揭開防毒新境界,讓您安心瀏覽Facebook、Google+、Twitter等多種超人氣社群網路，不怕隱私曝光，主動預警惡意網頁,享受安全無虞的社群網路生活。PC-cillin雲端版獨家提供社群隱私防護，防範個人資料外洩";
             proj_25.Role = "Front-End Development";
             proj_25.Tech = "Web development with SCSS and jQuery.";
             proj_25.URL = "/Me/Project?id=" + proj_25.ID;
-            proj_25.RawPic = "/Content/me/img/project/pccillin/pccillin.jpg";
-            proj_25.PicSmall = "/Content/me/img/project/pccillin/pccillin_188x73.jpg";
-            proj_25.PicMedium = "/Content/me/img/project/pccillin/pccillin_300.jpg";
-            proj_25.PicLarge = "/Content/me/img/project/pccillin/pccillin_940x367.jpg";
-            proj_25.PicInFooter = "/Content/me/img/project/pccillin/pccillin_54x54.jpg";
-            proj_25.Order = 25;
+            proj_25.RawPic = "/Content/me/img/project/pccillin/pccillin.png";
+            proj_25.PicSmall = "/Content/me/img/project/pccillin/pccillin_188x73.png";
+            proj_25.PicMedium = "/Content/me/img/project/pccillin/pccillin_300.png";
+            proj_25.PicLarge = "/Content/me/img/project/pccillin/pccillin_940x367.png";
+            proj_25.PicInFooter = "/Content/me/img/project/pccillin/pccillin_54x54.png";
+            proj_25.Order = 23;
             proj_25.Client = "趨勢科技";
             proj_25.ClientURL = "http://www.trendmicro.tw";
             proj_25.Date = "July 2015";
-            proj_25.LauchURL = "";
+            proj_25.LauchURL = "http://www.pccillin.com.tw/sem/brandlanding.html";
 
             StringBuilder sb25 = new StringBuilder();
-            sb25.Append("<p></p>");
+            sb25.Append("<p>最新支援 Windows 10 - 趨勢科技: 跨平台防護PC-cillin 10 雲端版 2016年最新版上市</p>");
+            sb25.Append("<p>PC-cillin 10 雲端版 2016年最新版上市、最新支援Ｗindows10 、PC-cillin 2016雲端版超強跨平台防護, 同時支援PC, Mac及Android智慧手機與平板電腦，一組序號*可安裝在不同上網設備，讓您不管在何時、何地都能獲得跨平台的超強防護。趨勢科技揭開防毒新境界,讓您安心瀏覽Facebook、Google+、Twitter等多種超人氣社群網路，不怕隱私曝光，主動預警惡意網頁,享受安全無虞的社群網路生活。PC-cillin雲端版獨家提供社群隱私防護，防範個人資料外洩。</p>");
             string str25 = sb25.ToString();
 
             proj_25.HtmlContent = str25;
             proj_25.Tag = "Web CampignSite";
             proj_25.isHighlight = false;
-            proj_25.IsShowInPortfolio = true;
+            proj_25.IsShowInPortfolio = false;
             List<int> partnerList25 = new List<int>(new int[] { 7 });
             proj_25.Partners = partnerList25;
             proj_25.PartnerDetail = GetPartnerList(proj_25.Partners);
@@ -2311,13 +2311,12 @@ namespace cythilya.Controllers
             List<MeModels.SnapshotInfo> SnapshotList25 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_25_snap_1 = new MeModels.SnapshotInfo();
 
-            proj_25_snap_1.Name = "趨勢科技 PC-cillin";
-            proj_25_snap_1.SnapshotURL = "/Content/me/img/project/pccillin/pccillin_940x367.jpg";
+            proj_25_snap_1.Name = "最新支援 Windows 10 - 趨勢科技: 跨平台防護PC-cillin 10 雲端版 2016年最新版上市";
+            proj_25_snap_1.SnapshotURL = "/Content/me/img/project/pccillin/pccillin_940x367.png";
             SnapshotList25.Add(proj_25_snap_1);
 
             proj_25.Snapshot = SnapshotList25;
             projList.Add(proj_25);
-            */
             #endregion
 
             #endregion Mock
