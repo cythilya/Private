@@ -1282,7 +1282,7 @@ namespace cythilya.Controllers
             proj_3.HtmlContent = "<p>粉多辦桌和恆隆行合作所特別製作的首頁與活動盛況頁面。";
             proj_3.Tag = "Web";
             proj_3.isHighlight = false;
-            proj_3.IsShowInPortfolio = true;
+            proj_3.IsShowInPortfolio = false;
 
             List<MeModels.SnapshotInfo> SnapshotList3 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_3_snap_1 = new MeModels.SnapshotInfo();
