@@ -2280,7 +2280,7 @@ namespace cythilya.Controllers
             MeModels.Project proj_25 = new MeModels.Project();
             proj_25.ID = 25;
             proj_25.Name = "最新支援 Windows 10 - 趨勢科技: 跨平台防護PC-cillin 10 雲端版 2016年最新版上市";
-            proj_25.Description = "PC-cillin 10 雲端版 2016年最新版上市、最新支援Ｗindows10 、PC-cillin 2016雲端版超強跨平台防護, 同時支援PC, Mac及Android智慧手機與平板電腦，一組序號*可安裝在不同上網設備，讓您不管在何時、何地都能獲得跨平台的超強防護。趨勢科技揭開防毒新境界,讓您安心瀏覽Facebook、Google+、Twitter等多種超人氣社群網路，不怕隱私曝光，主動預警惡意網頁,享受安全無虞的社群網路生活。PC-cillin雲端版獨家提供社群隱私防護，防範個人資料外洩";
+            proj_25.Description = "PC-cillin 10 雲端版 2016年最新版上市、最新支援Ｗindows10 、PC-cillin 2016雲端版超強跨平台防護, 同時支援PC, Mac及Android智慧手機與平板電腦，一組序號*可安裝在不同上網設備，讓您不管在何時、何地都能獲得跨平台的超強防護。趨勢科技揭開防毒新境界,讓您安心瀏覽Facebook、Google+、Twitter等多種超人氣社群網路，不怕隱私曝光，主動預警惡意網頁,享受安全無虞的社群網路生活。PC-cillin雲端版獨家提供社群隱私防護，防範個人資料外洩。";
             proj_25.Role = "Front-End Development";
             proj_25.Tech = "Web development with SCSS and jQuery.";
             proj_25.URL = "/Me/Project?id=" + proj_25.ID;
