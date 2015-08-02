@@ -4,56 +4,70 @@
     ViewBag.Title = "About Hsin-Hao Tang | Autobiography";
     ViewBag.Description = "About Hsin-Hao Tang | Autobiography";
 }
-<style>
-body.home #main {
-    padding-top: 40px;
-}
-</style>
-<div id="page-content" class="cf">	
+<style>body.home #main{padding-top: 40px;}</style>
+<div id="page-content" class="cf">
     <div class="entry-content cf">
         <h2 class="heading">Hello! I am Hsin-Hao Tang!</h2>
-
         @*前言*@
-        <p>
+        <p class="paragraph">
             I’m a front-end developer. I focus on client-side programming, specialize in SEO &amp; social media, and also do back-end work.<br>
-            Read more <a href="/Me/About_C" title="關於 Hsin-Hao Tang">關於我(中文)</a>, <a href="/Me/Resume" title="Resume | Hsin-Hao Tang">my resume</a>, <a href="http://cythilya.blogspot.tw" title="Summer。桑莫。夏天" target="_blank">blog posts</a> or view <a href="/Me/Portfolio" title="Portfolio | Hsin-Hao Tang">portfolio</a>.
+            Read more <a href="/Me/About_C" title="關於 Hsin-Hao Tang">關於我(中文)</a>, <a href="/Me/Resume" title="Resume | Hsin-Hao Tang">my resume</a>, <a href="http://cythilya.blogspot.tw" title="Summer。桑莫。夏天" target="_blank">blog posts</a> or view <a href="/Me/ProjectArchieve" title="Portfolio | Hsin-Hao Tang">portfolio</a>.
         </p>
-        <p style="max-width: 600px;">
-            <img width="100%" src="https://goo.gl/TL6tBe" title="Hsin-Hao Tang" alt="Hsin-Hao Tang">
+        <p class="paragraph preview">
+            <img class="cover" src="https://goo.gl/TL6tBe" title="Hsin-Hao Tang" alt="Hsin-Hao Tang">
         </p>
         <div class="block-divider"></div>
-
         @*求學過程*@
+        @*學校之內－專業累積、團隊合作*@
         <h3 class="heading">Education</h3>
-        <p>I graduated from Department of Computer Science and Information Engineering of <a href="http://www.ntnu.edu.tw" title="National Taiwan Normal University" target="_blank">National Taiwan Normal University</a> with a master degree and Department of Computer and Information Science of <a href="http://www.scu.edu.tw" title="Soochow University" target="_blank">Soochow University</a> with a bachelor degree. My research field was artificial intelligence. I was trained to logically solving, organizing and analyzing problems after professional courses such as advanced algorithms and bioinformatics classes. I played a role as a leader or coordinator in every team reports. I planned the reports, track the progress, and communicate with members. I attach great importance to time management, effectiveness, hitting the exact center of the target, and helping others to get work done on time. Also, I care about group benefit. When members have quarrels, I always use my wisdom to solve the problems and not to be controlled by my mood. Most important of all, I always respect the leadership and communicate with the people directly rather than by the third one.</p>
+        <p class="paragraph">
+            I graduated from Department of Computer Science and Information Engineering of National Taiwan Normal University with a master degree and Department of Computer and Information Science of Soochow University with a bachelor degree. My research field was artificial intelligence. I was trained to logically solving, organizing and analyzing problems after professional courses such as advanced algorithms and bioinformatics classes. I played a role as a leader or coordinator in every team reports. I planned the reports, track the progress, and communicate with members. I attach great importance to time management, effectiveness, hitting the exact center of the target, and helping others to get work done on time. Also, I care about group benefit. When members have quarrels, I always use my wisdom to solve the problems and not to be controlled by my mood. Most important of all, I always respect the leadership and communicate with the people directly rather than by the third one.
+        </p>
+        @*學校之外－多方學習、提高視野*@
+        <p class="paragraph">
+            I joined different extracurricular activities aggressively. I learned painting from my childhood. I joined guitar club and marching band when I was a high school student. I was a secretary of the Student Congress and a volunteer of the health center in my college life. In my graduate life, I learned graphic design in Soochow’s Extension School and industrial design in Revival Design Academy. In addition, I learned zen meditation to examine myself. These great experiences make me more thorough, more responsible, and observe things from different aspects. Today, when facing to marcom or marketing partners, I can join earlier to give advice; when facing to designers, I can implement beautiful UI rapidly; when facing to back-end developers, I can work in perfect harmony because I learned back-end techniques at school.
+        </p>
         <div class="block-divider"></div>
-        
-        <h4 class="heading">Extracurricular Activities</h4>
-        <p>I joined different extracurricular activities aggressively. I learned painting from my childhood. I joined guitar club and marching band when I was a high school student. I was a secretary of the Student Congress and a volunteer of the health center in my college life. In my graduate life, I learned graphic design in Soochow’s Extension School and industrial design in Revival Design Academy. In addition, I learned zen meditation to examine myself. These great experiences make me more thorough, more responsible, and observe things from different aspects. Today, when facing to marcom or marketing partners, I can join earlier to give advice; when facing to designers,  I can implement beautiful UI rapidly; when facing to back-end developers,  I can  work in perfect harmony because I learned back-end techniques at school.</p>
-        <div class="block-divider"></div>
-        
         @*初入社會*@
-        <h4 class="heading">Early Career</h4>
-        <p>After graduating from NTNU, I was offered a job as a front end developer in HIE in Trend Micro, and it was a rewarding experience. I was requested to deliver prototypes which are early samples to test a concept or to conduct a usability test.</p>
-        <p>During these five months, my coding ability improved a great deal. Also, I learned the skills of time-management and art of communication a lot.I was worked in a multi-culture environment. When having culture shocks, smile is the best policy. I searched the answers with positive and optimistic attitude. In the meantime, I attended some English classes to improve my communication skill. I realized that to be an outstanding engineer, except professional abilities, it is important to increase soft power.</p>
+        <h3 class="heading">Early Career</h3>
+        <p class="paragraph">
+            <p>
+                After graduating from NTNU, I was offered a job as a front end developer in Trend Micro, and it was a rewarding experience. I was requested to deliver prototypes which are early samples to test a concept or to conduct a usability test.
+            </p>
+            <p>
+                During these five months, my coding ability improved a great deal. Also, I learned the skills of time-management and art of communication a lot. I worked in a multi-culture environment. When having culture shocks, smile is the best policy. I searched the answers with positive and optimistic attitude. In the meantime, I attended some English classes to improve my language skill. I realized that to be an outstanding engineer, except professional abilities, it is important to increase soft power.
+            </p>
+        </p>
         <div class="block-divider"></div>
-        
         @*今日成果*@
         <h3 class="heading">Today</h3>
-        <p>I’m a front-end developer at Spring Trees Technologies. I focus on client-side programming, specialize in SEO & social media, and also do back-end work.</p>
-        <p>As a front-end developer, I learned ReactJS and NodeJS and apply them in our product. Besides, I do back-end work in C#. I share what I have learned via internal sharing and blog posts. Additionally, I lead a small team to deliver projects. Manage team of front-end and back-end developers to meet clients' goals and project deadlines.</p>
-        <p>As a SEO engineer, I do on-site and off-site SEO & social media research and application for our own products. For on-site SEO, including conducting keyword research , competitive analysis, devising and implementing effective SEO strategies and guideline; conducting regular optimization of on-page structure and content on various product pages, including developing and optimizing semantics search, rich snippets and social meta tags, keywords and tags plan and management; analyzing site code, providing recommendations based on SEO best practices and enhancing by myself; developing SEO standards for usability design and coding. For off-site optimization, I procuring quality inbound links from blogs, forums and other relevant, content-specific sites; developing and managing link-building campaigns; incorporating social media optimization to augment the traditional SEO activities; conducting sharings about SEO and social media for company internal training on irregular basis. Also, I do ASO(App Store Optimization). Organic Search channel increased more than sevenfold in one year.</p>
-        <p>View my <a href="/Me/Resume" title="Resume | Hsin-Hao Tang">resume</a>.</p>
+        <p class="paragraph">
+            <p>
+                I was a front-end developer at Spring Trees Technologies. I focused on client-side programming, specialized in SEO & social media, and also did back-end work.
+            </p>
+            <p>
+                As a front-end developer, I learned AngularJS, EmberJS, ReactJS and NodeJS and applied them in our product. Besides, I did back-end work in C#. I shared what I have learned via internal sharing and blog posts. Additionally, I led a small team to deliver projects. Managed team of front-end and back-end developers to meet clients' goals and project deadlines.
+            </p>
+            <p>
+                As a SEO engineer, I did on-site and off-site SEO & social media research and application for our own products. For on-site SEO, including conducting keyword research , competitive analysis, devising and implementing effective SEO strategies and guideline; conducting regular optimization of on-page structure and content on various product pages, including developing and optimizing semantics search, rich snippets and social meta tags, keywords and tags plan and management; analyzing site code, providing recommendations based on SEO best practices and enhancing by myself; developing SEO standards for usability design and coding. For off-site optimization, I procuring quality inbound links from blogs, forums and other relevant, content-specific sites; developing and managing link-building campaigns; incorporating social media optimization to augment the traditional SEO activities; conducting sharings about SEO and social media for company internal training on irregular basis. Also, I did ASO(App Store Optimization). Organic Search channel increased more than sevenfold in one year.
+            </p>
+            <p>
+                I am a front-end developer at Uni-net International, and I am responsible for responsive website development, website planning and technical training. I re-design the UI of the website “Evental” and implement the front-end part. I solve the hard-finding problem and increase advertising revenue by adding advertising position. In addition, I add some features in aspect of SEO/IA, e.g., tag system for more internal links and recommending activities to users for more users' stickiness; re-design the image size for sharing at social platforms. I refactor the code of the front-end part of this project, use structured data for better result in SERPs. I also design and implement the responsive website for better user experience when users browse by handheld devices.        
+            </p>
+            <p>
+               <a href="/Content/file/resume/Hsin_Hao_Tang_CV.pdf" title="Resume | Hsin-Hao Tang" target="_blank">View resume.</a>
+            </p>
+        </p>
         <div class="block-divider"></div>
-
         @*生涯規劃*@
         <h3 class="heading">Career Plan</h3>
-        <p>I hope I can be a front end developer who is able to keep moving and constantly achieving new breakthroughs and development. As for long term, I want to be an data scientist.</p>
-        <p>Thank my families, seniors and friends, so I can continue to break through and become a better person, more broader contributions.</p>
+        <p class="paragraph">
+            I hope I can be a front end developer who is able to keep moving and constantly achieving new breakthroughs and development. As for long term, I want to be a full stack developer and a data scientist. 
+            Thank my families, seniors and friends, so I can continue to break through and become a better person, more broader contributions.
+        </p>
         <div class="block-divider"></div>
-
         @*與我聯繫*@
-		<h3>Contact</h3>
+        <h3>Contact</h3>
         <p>
             @Html.Partial("_ContactInfo")
         </p>
