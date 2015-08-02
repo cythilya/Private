@@ -1,3 +1,13 @@
+.paragraph {
+  margin-bottom: 20px;
+}
+.paragraph.preview {
+  max-width: 600px;
+}
+.paragraph .cover {
+  width: 100%;
+}
+
 #portfolio-content {
   margin-bottom: 0;
 }

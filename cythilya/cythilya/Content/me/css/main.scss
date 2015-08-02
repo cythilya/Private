@@ -1,3 +1,12 @@
+.paragraph{
+	margin-bottom: 20px;
+	&.preview{
+		max-width: 600px;
+	}
+	.cover{
+		width: 100%;
+	}
+}
 #portfolio-content{
 	margin-bottom: 0;
 	#project-box{
