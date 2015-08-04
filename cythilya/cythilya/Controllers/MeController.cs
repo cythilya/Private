@@ -613,7 +613,7 @@ namespace cythilya.Controllers
             article_18.PicMedium = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_300.jpg";
             article_18.PicLarge = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_940x367.jpg";
             article_18.PicInFooter = "/Content/me/img/blog/nodejs-express-microblo/nodejs-express-microblo_54x54.jpg";
-            article_18.Tag = "Node.js, Express";
+            article_18.Tag = "Node.js, Express, EJS";
             article_18.isHighlight = false;
             article_18.Time = "Nov 23, 2014";
             article_18.isBanner = false;
@@ -1079,19 +1079,19 @@ namespace cythilya.Controllers
             articleList.Add(article_47);
             #endregion 
 
-            #region AngularJS - TodoList
+            #region Hello Node - 基本設定和簡單範例
             MeModels.Article article_48 = new MeModels.Article();
-            article_48.Name = "AngularJS - TodoList";
-            article_48.Description = "AngularJS - TodoList。";
-            article_48.URL = "http://cythilya.blogspot.tw/2015/07/angularjs-todolist.html";
-            article_48.RawPic = "/Content/me/img/blog/angularjs/angularjs.png";
-            article_48.PicSmall = "/Content/me/img/blog/angularjs/angularjs_188x73.png";
-            article_48.PicMedium = "/Content/me/img/blog/angularjs/angularjs_300.png";
-            article_48.PicLarge = "/Content/me/img/blog/angularjs/angularjs_940x367.png";
-            article_48.PicInFooter = "/Content/me/img/blog/angularjs/angularjs_54x54.png";
-            article_48.Tag = "AngularJS";
+            article_48.Name = "Hello Node - 基本設定和簡單範例";
+            article_48.Description = "Hello Node - 基本設定和簡單範例。";
+            article_48.URL = "http://cythilya.blogspot.tw/2015/08/hello-node.html";
+            article_48.RawPic = "/Content/me/img/blog/hello_node/hello_node.jpg";
+            article_48.PicSmall = "/Content/me/img/blog/hello_node/hello_node_188x73.jpg";
+            article_48.PicMedium = "/Content/me/img/blog/hello_node/hello_node_300.jpg";
+            article_48.PicLarge = "/Content/me/img/blog/hello_node/hello_node_940x367.jpg";
+            article_48.PicInFooter = "/Content/me/img/blog/hello_node/hello_node_54x54.jpg";
+            article_48.Tag = "Node.js, Express, EJS";
             article_48.isHighlight = false;
-            article_48.Time = "July 23, 2015";
+            article_48.Time = "Aug 4, 2015";
             article_48.isBanner = false;
             articleList.Add(article_48);
             #endregion 
