@@ -469,6 +469,12 @@
     <Content Include="Content\me\img\blog\facebook_social_demo_300.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_54x54.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_940x367.jpg" />
+    <Content Include="Content\me\img\blog\hello_node\hello_node.jpg" />
+    <Content Include="Content\me\img\blog\hello_node\hello_node_188x73.jpg" />
+    <Content Include="Content\me\img\blog\hello_node\hello_node_300.jpg" />
+    <Content Include="Content\me\img\blog\hello_node\hello_node_54x54.jpg" />
+    <Content Include="Content\me\img\blog\hello_node\hello_node_800.jpg" />
+    <Content Include="Content\me\img\blog\hello_node\hello_node_940x367.jpg" />
     <Content Include="Content\me\img\blog\ia_for_seo_188x73.jpg" />
     <Content Include="Content\me\img\blog\ia_for_seo_300.jpg" />
     <Content Include="Content\me\img\blog\ia_for_seo_940x367.jpg" />
