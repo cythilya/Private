@@ -1096,6 +1096,23 @@ namespace cythilya.Controllers
             articleList.Add(article_48);
             #endregion 
 
+            #region Node - 使用express-partials製作Partial View
+            MeModels.Article article_49 = new MeModels.Article();
+            article_49.Name = "Node - 使用express-partials製作Partial View";
+            article_49.Description = "Node - 使用express-partials製作Partial View。";
+            article_49.URL = "http://cythilya.blogspot.tw/2015/08/node-express-partials.html";
+            article_49.RawPic = "/Content/me/img/blog/node-express-partials/node-express-partials.png";
+            article_49.PicSmall = "/Content/me/img/blog/node-express-partials/node-express-partials-188x73.png";
+            article_49.PicMedium = "/Content/me/img/blog/node-express-partials/node-express-partials-300.png";
+            article_49.PicLarge = "/Content/me/img/blog/node-express-partials/node-express-partials-940x367.png";
+            article_49.PicInFooter = "/Content/me/img/blog/node-express-partials/node-express-partials-54x54.png";
+            article_49.Tag = "Node.js, Express, EJS";
+            article_49.isHighlight = false;
+            article_49.Time = "Aug 8, 2015";
+            article_49.isBanner = false;
+            articleList.Add(article_49);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
