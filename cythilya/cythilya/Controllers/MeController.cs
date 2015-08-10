@@ -1113,6 +1113,23 @@ namespace cythilya.Controllers
             articleList.Add(article_49);
             #endregion 
 
+            #region Node - 使用模版引擎 Handlebars
+            MeModels.Article article_50 = new MeModels.Article();
+            article_50.Name = "Node - 使用模版引擎 Handlebars";
+            article_50.Description = "Node - 使用模版引擎 Handlebars。";
+            article_50.URL = "http://cythilya.blogspot.tw/2015/08/node-handlebars.html";
+            article_50.RawPic = "/Content/me/img/blog/node-express-partials/node-express-partials.png";
+            article_50.PicSmall = "/Content/me/img/blog/node-express-partials/node-express-partials-188x73.png";
+            article_50.PicMedium = "/Content/me/img/blog/node-express-partials/node-express-partials-300.png";
+            article_50.PicLarge = "/Content/me/img/blog/node-express-partials/node-express-partials-940x367.png";
+            article_50.PicInFooter = "/Content/me/img/blog/node-express-partials/node-express-partials-54x54.png";
+            article_50.Tag = "Node.js, Handlebars";
+            article_50.isHighlight = false;
+            article_50.Time = "Aug 10, 2015";
+            article_50.isBanner = false;
+            articleList.Add(article_50);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
