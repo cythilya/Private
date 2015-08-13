@@ -1130,6 +1130,23 @@ namespace cythilya.Controllers
             articleList.Add(article_50);
             #endregion 
 
+            #region Node - 隱藏Response Headers資訊
+            MeModels.Article article_51 = new MeModels.Article();
+            article_51.Name = "Node - 隱藏Response Headers資訊";
+            article_51.Description = "Node - 隱藏Response Headers資訊。";
+            article_51.URL = "http://cythilya.blogspot.tw/2015/08/node-response-headers.html";
+            article_51.RawPic = "/Content/me/img/blog/node-express-partials/node-express-partials.png";
+            article_51.PicSmall = "/Content/me/img/blog/node-express-partials/node-express-partials-188x73.png";
+            article_51.PicMedium = "/Content/me/img/blog/node-express-partials/node-express-partials-300.png";
+            article_51.PicLarge = "/Content/me/img/blog/node-express-partials/node-express-partials-940x367.png";
+            article_51.PicInFooter = "/Content/me/img/blog/node-express-partials/node-express-partials-54x54.png";
+            article_51.Tag = "Node.js, Express";
+            article_51.isHighlight = false;
+            article_51.Time = "Aug 12, 2015";
+            article_51.isBanner = false;
+            articleList.Add(article_51);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
