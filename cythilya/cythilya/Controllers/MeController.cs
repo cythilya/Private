@@ -2256,8 +2256,7 @@ namespace cythilya.Controllers
             projList.Add(proj_22);
             #endregion
 
-            #region 2015年台灣米倉田中馬拉松 (未上線)
-            /*
+            #region 2015年台灣米倉田中馬拉松
             MeModels.Project proj_23 = new MeModels.Project();
             proj_23.ID = 23;
             proj_23.Name = "2015年台灣米倉田中馬拉松";
@@ -2273,8 +2272,8 @@ namespace cythilya.Controllers
             proj_23.Order = 24;
             proj_23.Client = "田中鎮公所";
             proj_23.ClientURL = "http://www.tienchun.gov.tw";
-            proj_23.Date = "July 2015";
-            proj_23.LauchURL = "https://www.eventpal.com.tw/FOAS/actions/ActivityIndex.action?showTabContent&seqno=6b8fd884-5a59-400b-9426-ffb775e4a132";
+            proj_23.Date = "Aug 2015";
+            proj_23.LauchURL = "http://211.22.108.61:195/wordpress";
 
             StringBuilder sb23 = new StringBuilder();
             sb23.Append("<p>慶祝2015.12.01田中高鐵站通車，迎接田中雙鐵新世代，營造友善田中，熱情人文運動首都， 藉由此次活動，行銷本鎮觀光特色，活化農特產品銷售商機，吸引觀光人潮，結合運動、休閒以及農業，推動發展健康經濟。</p>");
@@ -2297,7 +2296,6 @@ namespace cythilya.Controllers
 
             proj_23.Snapshot = SnapshotList23;
             projList.Add(proj_23);
-            */
             #endregion
 
             #region 楔石怪兵器 (未上線)
