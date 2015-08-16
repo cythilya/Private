@@ -2385,6 +2385,50 @@ namespace cythilya.Controllers
             projList.Add(proj_25);
             #endregion
 
+            #region 活動咖 EventPal 手機版 (未上線)
+            /*
+            MeModels.Project proj_26 = new MeModels.Project();
+            proj_26.ID = 26;
+            proj_26.Name = "活動咖 EventPal 手機版";
+            proj_26.Description = "活動咖 EventPal 手機版";
+            proj_26.Role = "Front-End Development";
+            proj_26.Tech = "Web development with SCSS and jQuery.";
+            proj_26.URL = "/Me/Project?id=" + proj_26.ID;
+            proj_26.RawPic = "/Content/me/img/project/eventpal_mobile/eventpal_mobile.png";
+            proj_26.PicSmall = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_188x73.png";
+            proj_26.PicMedium = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_300.png";
+            proj_26.PicLarge = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_940x367.png";
+            proj_26.PicInFooter = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_54x54.png";
+            proj_26.Order = 26;
+            proj_26.Client = "";
+            proj_26.ClientURL = "";
+            proj_26.Date = "Aug 2015";
+            proj_26.LauchURL = "";
+
+            StringBuilder sb26 = new StringBuilder();
+            sb26.Append("<p></p>");
+            string str26 = sb26.ToString();
+
+            proj_26.HtmlContent = str26;
+            proj_26.Tag = "Web Platform";
+            proj_26.isHighlight = false;
+            proj_26.IsShowInPortfolio = false;
+            List<int> partnerList26 = new List<int>(new int[] { 7 });
+            proj_26.Partners = partnerList26;
+            proj_26.PartnerDetail = GetPartnerList(proj_26.Partners);
+
+            List<MeModels.SnapshotInfo> SnapshotList26 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_26_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_26_snap_1.Name = "活動咖 EventPal 手機版";
+            proj_26_snap_1.SnapshotURL = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_940x367.png";
+            SnapshotList26.Add(proj_26_snap_1);
+
+            proj_26.Snapshot = SnapshotList26;
+            projList.Add(proj_26);
+            */
+            #endregion
+
             #endregion Mock
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
