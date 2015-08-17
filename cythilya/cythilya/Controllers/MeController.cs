@@ -2290,7 +2290,7 @@ namespace cythilya.Controllers
             proj_23.Client = "田中鎮公所";
             proj_23.ClientURL = "http://www.tienchun.gov.tw";
             proj_23.Date = "Aug 2015";
-            proj_23.LauchURL = "http://211.22.108.61:195/wordpress";
+            proj_23.LauchURL = "http://www.travel520.org";
 
             StringBuilder sb23 = new StringBuilder();
             sb23.Append("<p>慶祝2015.12.01田中高鐵站通車，迎接田中雙鐵新世代，營造友善田中，熱情人文運動首都， 藉由此次活動，行銷本鎮觀光特色，活化農特產品銷售商機，吸引觀光人潮，結合運動、休閒以及農業，推動發展健康經濟。</p>");
