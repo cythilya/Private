@@ -1147,6 +1147,23 @@ namespace cythilya.Controllers
             articleList.Add(article_51);
             #endregion 
 
+            #region Node - 表單處理與檔案上傳 (Form Handling and File Uploads)
+            MeModels.Article article_52 = new MeModels.Article();
+            article_52.Name = "Node - 表單處理與檔案上傳 (Form Handling and File Uploads)";
+            article_52.Description = "Node - 表單處理與檔案上傳 (Form Handling and File Uploads)。";
+            article_52.URL = "http://cythilya.blogspot.tw/2015/08/node-response-headers.html";
+            article_52.RawPic = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads.jpg";
+            article_52.PicSmall = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads_188x73.jpg";
+            article_52.PicMedium = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads_300.jpg";
+            article_52.PicLarge = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads_940x367.jpg";
+            article_52.PicInFooter = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads_54x54.jpg";
+            article_52.Tag = "Node.js, Express";
+            article_52.isHighlight = false;
+            article_52.Time = "Aug 16, 2015";
+            article_52.isBanner = false;
+            articleList.Add(article_52);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();

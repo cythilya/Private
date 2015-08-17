@@ -538,6 +538,12 @@
     <Content Include="Content\me\img\blog\node-express-partials\node-express-partials-800.png" />
     <Content Include="Content\me\img\blog\node-express-partials\node-express-partials-940x367.png" />
     <Content Include="Content\me\img\blog\node-express-partials\node-express-partials.png" />
+    <Content Include="Content\me\img\blog\node-form-handling-and-file-uploads\node-form-handling-and-file-uploads.jpg" />
+    <Content Include="Content\me\img\blog\node-form-handling-and-file-uploads\node-form-handling-and-file-uploads_188x73.jpg" />
+    <Content Include="Content\me\img\blog\node-form-handling-and-file-uploads\node-form-handling-and-file-uploads_300.jpg" />
+    <Content Include="Content\me\img\blog\node-form-handling-and-file-uploads\node-form-handling-and-file-uploads_54x54.jpg" />
+    <Content Include="Content\me\img\blog\node-form-handling-and-file-uploads\node-form-handling-and-file-uploads_800.jpg" />
+    <Content Include="Content\me\img\blog\node-form-handling-and-file-uploads\node-form-handling-and-file-uploads_940x367.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_188x73.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_300.jpg" />
