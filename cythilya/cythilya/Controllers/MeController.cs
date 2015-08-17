@@ -1151,7 +1151,7 @@ namespace cythilya.Controllers
             MeModels.Article article_52 = new MeModels.Article();
             article_52.Name = "Node - 表單處理與檔案上傳 (Form Handling and File Uploads)";
             article_52.Description = "Node - 表單處理與檔案上傳 (Form Handling and File Uploads)。";
-            article_52.URL = "http://cythilya.blogspot.tw/2015/08/node-response-headers.html";
+            article_52.URL = "http://cythilya.blogspot.tw/2015/08/node-form-handling-and-file-uploads.html";
             article_52.RawPic = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads.jpg";
             article_52.PicSmall = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads_188x73.jpg";
             article_52.PicMedium = "/Content/me/img/blog/node-form-handling-and-file-uploads/node-form-handling-and-file-uploads_300.jpg";
