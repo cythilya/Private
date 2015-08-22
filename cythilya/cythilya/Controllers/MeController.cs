@@ -1164,6 +1164,40 @@ namespace cythilya.Controllers
             articleList.Add(article_52);
             #endregion 
 
+            #region Node - Cookie and Session
+            MeModels.Article article_53 = new MeModels.Article();
+            article_53.Name = "Node - Cookie and Session";
+            article_53.Description = "Node - Cookie and Session。";
+            article_53.URL = "http://cythilya.blogspot.tw/2015/08/node-cookie-and-session.html";
+            article_53.RawPic = "/Content/me/img/blog/node-cookie-and-session/node-cookie-and-session.jpg";
+            article_53.PicSmall = "/Content/me/img/blog/node-cookie-and-session/node-cookie-and-session_188x73.jpg";
+            article_53.PicMedium = "/Content/me/img/blog/node-cookie-and-session/node-cookie-and-session_300.jpg";
+            article_53.PicLarge = "/Content/me/img/blog/node-cookie-and-session/node-cookie-and-session_940x367.jpg";
+            article_53.PicInFooter = "/Content/me/img/blog/node-cookie-and-session/node-cookie-and-session_54x54.jpg";
+            article_53.Tag = "Node.js, Express";
+            article_53.isHighlight = false;
+            article_53.Time = "Aug 18, 2015";
+            article_53.isBanner = false;
+            articleList.Add(article_53);
+            #endregion 
+
+            #region Node - 使用Nodemailer傳送Email
+            MeModels.Article article_54 = new MeModels.Article();
+            article_54.Name = "Node - 使用Nodemailer傳送Email";
+            article_54.Description = "Node - 使用Nodemailer傳送Email。";
+            article_54.URL = "http://cythilya.blogspot.tw/2015/08/node-nodemailer.html";
+            article_54.RawPic = "/Content/me/img/blog/node-email/node-email.jpg";
+            article_54.PicSmall = "/Content/me/img/blog/node-email/node-email_188x73.jpg";
+            article_54.PicMedium = "/Content/me/img/blog/node-email/node-email_300.jpg";
+            article_54.PicLarge = "/Content/me/img/blog/node-email/node-email_940x367.jpg";
+            article_54.PicInFooter = "/Content/me/img/blog/node-email/node-email_54x54.jpg";
+            article_54.Tag = "Node.js, Nodemailer";
+            article_54.isHighlight = false;
+            article_54.Time = "Aug 19, 2015";
+            article_54.isBanner = false;
+            articleList.Add(article_54);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
