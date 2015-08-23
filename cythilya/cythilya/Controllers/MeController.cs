@@ -2340,10 +2340,19 @@ namespace cythilya.Controllers
 
             List<MeModels.SnapshotInfo> SnapshotList23 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_23_snap_1 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_23_snap_2 = new MeModels.SnapshotInfo();
+            MeModels.SnapshotInfo proj_23_snap_3 = new MeModels.SnapshotInfo();
 
             proj_23_snap_1.Name = "2015年台灣米倉田中馬拉松";
             proj_23_snap_1.SnapshotURL = "/Content/me/img/project/tienchun/tienchun_940x367.jpg";
+            proj_23_snap_2.Name = "2015年台灣米倉田中馬拉松 - 首頁";
+            proj_23_snap_2.SnapshotURL = "/Content/me/img/project/tienchun/travel520_index_940x367.png";
+            proj_23_snap_3.Name = "2015年台灣米倉田中馬拉松 - 尋米小旅行";
+            proj_23_snap_3.SnapshotURL = "/Content/me/img/project/tienchun/travel520_detail_all.png";
+            
             SnapshotList23.Add(proj_23_snap_1);
+            SnapshotList23.Add(proj_23_snap_2);
+            SnapshotList23.Add(proj_23_snap_3);
 
             proj_23.Snapshot = SnapshotList23;
             projList.Add(proj_23);
