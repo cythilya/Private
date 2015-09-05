@@ -427,7 +427,7 @@ namespace cythilya.Controllers
             article_7.PicLarge = "/Content/me/img/blog/seo_guideline/seo_guideline_940x367.png";
             article_7.PicInFooter = "/Content/me/img/blog/seo_guideline/seo_guideline_54x54.png";
             article_7.Tag = "SEO";
-            article_7.isHighlight = true;
+            article_7.isHighlight = false;
             article_7.Time = "May 17, 2014";
             article_7.isBanner = false;
             articleList.Add(article_7);
@@ -1196,6 +1196,40 @@ namespace cythilya.Controllers
             article_54.Time = "Aug 19, 2015";
             article_54.isBanner = false;
             articleList.Add(article_54);
+            #endregion 
+
+            #region 活動咖手機版網站上線了 - 活動平台行動裝置網站或App設計的現狀探討與改進
+            MeModels.Article article_55 = new MeModels.Article();
+            article_55.Name = "活動咖手機版網站上線了 - 活動平台行動裝置網站或App設計的現狀探討與改進";
+            article_55.Description = "這陣子剛好在幫我們家的活動平台網站 活動咖 EventPal 設計+製作行動裝置版網頁，因此參考了不少前輩的作品 - Accupass、KKTIX、Pinkoi、friDay等。在這裡記錄一些我對這些網站的想法，還有我們家產品所遇到的問題和設計的功能、解法。";
+            article_55.URL = "http://cythilya.blogspot.tw/2015/09/eventpal-mobile-web.html";
+            article_55.RawPic = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
+            article_55.PicSmall = "/Content/me/img/activity/activity_1/mobile_web_app_188x73.jpg";
+            article_55.PicMedium = "/Content/me/img/activity/activity_1/mobile_web_app_300.jpg";
+            article_55.PicLarge = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
+            article_55.PicInFooter = "/Content/me/img/activity/activity_1/mobile_web_app_54x54.jpg";
+            article_55.Tag = "EventPal, Responsive Web Design, RWD, SEO, 活動咖, 響應式網頁";
+            article_55.isHighlight = true;
+            article_55.Time = "Sept 4, 2015";
+            article_55.isBanner = true;
+            articleList.Add(article_55);
+            #endregion 
+
+            #region 使用平台MongoLab連接MongoDB
+            MeModels.Article article_56 = new MeModels.Article();
+            article_56.Name = "使用平台MongoLab連接MongoDB";
+            article_56.Description = "在連接MongoDB的時候遇到了一些小問題，將這些問題與解法記錄在這篇文章中。使用平台MongoLab。";
+            article_56.URL = "http://cythilya.blogspot.tw/2015/09/node-mongodb-mongolab.html";
+            article_56.RawPic = "/Content/me/img/blog/node-express-partials/node-express-partials.png";
+            article_56.PicSmall = "/Content/me/img/blog/node-express-partials/node-express-partials-188x73.png";
+            article_56.PicMedium = "/Content/me/img/blog/node-express-partials/node-express-partials-300.png";
+            article_56.PicLarge = "/Content/me/img/blog/node-express-partials/node-express-partials-940x367.png";
+            article_56.PicInFooter = "/Content/me/img/blog/node-express-partials/node-express-partials-54x54.png";
+            article_56.Tag = "MongoDB, MongoLab, Node.js";
+            article_56.isHighlight = false;
+            article_56.Time = "Sept 4, 2015";
+            article_56.isBanner = false;
+            articleList.Add(article_56);
             #endregion 
 
             #endregion Mock
