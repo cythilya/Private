@@ -2840,13 +2840,13 @@ namespace cythilya.Controllers
             activity1.Time = "July 3, 2015";
             activity1.Month = "July";
             activity1.Day = "3";
-            activity1.WebURL = "";
+            activity1.WebURL = "http://cythilya.blogspot.tw/2015/09/eventpal-mobile-web.html";
             List<int> tagList1 = new List<int>(new int[] { 1, 2, 4 });
             activity1.Tag = tagList1;
             activity1.TagDetail = GetActivityTagList(activity1.Tag);
             activity1.Location = 1;
             activity1.LocationDetail = GetLocation(activity1.Location);
-            activity1.NoteURL = "/Me/Activity?id=1";
+            activity1.NoteURL = "http://cythilya.blogspot.tw/2015/09/eventpal-mobile-web.html";
             activity1.Pic = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
             activity1.HTMLContent = "";
             activity1.isTest = false;

@@ -65,7 +65,7 @@ body.home #main {padding-top: 40px;}
                     ...
                     @if (!String.IsNullOrEmpty(activity.NoteURL))
                     {
-                        <a href="@(activity.NoteURL)" itemprop="url">看更多內容</a>
+                        <a href="@(activity.NoteURL)" itemprop="url" target="_blank">看更多內容</a>
                     }
                 </div>
             </div>
@@ -108,7 +108,7 @@ body.home #main {padding-top: 40px;}
                 </span>
                 @if (!String.IsNullOrEmpty(activity.NoteURL))
                 {
-                    <span class="format"> <a href="@(activity.NoteURL)" itemprop="url">活動內容/筆記</a> </span>
+                    <span class="format"> <a href="@(activity.NoteURL)" itemprop="url" target="_blank">活動內容/筆記</a> </span>
                 }
                 @*<span class="comments">16 comments</span>*@
             </div>
