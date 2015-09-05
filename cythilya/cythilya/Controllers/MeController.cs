@@ -2164,7 +2164,7 @@ namespace cythilya.Controllers
             proj_18.HtmlContent = "<p>首頁小改版。</p><p>台灣高鐵連結台灣南北主要城市，我們不只是交通運輸業，更是推動台灣­前進的服務業；我們代表的不僅只是速度，而是速度所帶來的現代生活新態度；我們以更文明的旅行體驗，成為你實現夢想的助力，台灣高鐵，實踐台灣新生活。</p>";
             proj_18.Tag = "Web RWD Platform";
             proj_18.isHighlight = false;
-            proj_18.IsShowInPortfolio = true;
+            proj_18.IsShowInPortfolio = false;
             List<int> partnerList18 = new List<int>(new int[] { 5, 20 });
             proj_18.Partners = partnerList18;
             proj_18.PartnerDetail = GetPartnerList(proj_18.Partners);
@@ -2238,7 +2238,7 @@ namespace cythilya.Controllers
             proj_20.HtmlContent = "<p>VOLVING沐頤健康概念館為國泰健康管理推出的品牌，擁有專業的健康照護團隊，結合健康餐廳、體適能及SPA，透過健康檢查提供飲食建議，搭配體適能教練給予運動指導，享受SPA舒緩壓力，陪伴您一起練習健康新生活。服務項目：國泰台南功能醫學診所提供健康檢測、營養師諮詢、健康餐點、健身教練指導、體適能中心、登琪爾SPA紓壓。</p>";
             proj_20.Tag = "Web OfficialWebsite";
             proj_20.isHighlight = false;
-            proj_20.IsShowInPortfolio = true;
+            proj_20.IsShowInPortfolio = false;
             List<int> partnerList20 = new List<int>(new int[] { 5, 20 });
             proj_20.Partners = partnerList20;
             proj_20.PartnerDetail = GetPartnerList(proj_20.Partners);
@@ -2281,7 +2281,7 @@ namespace cythilya.Controllers
             proj_21.HtmlContent = str21;
             proj_21.Tag = "Web RWD OfficialWebsite";
             proj_21.isHighlight = false;
-            proj_21.IsShowInPortfolio = true;
+            proj_21.IsShowInPortfolio = false;
             List<int> partnerList21 = new List<int>(new int[] { 5, 18, 21 });
             proj_21.Partners = partnerList21;
             proj_21.PartnerDetail = GetPartnerList(proj_21.Partners);
