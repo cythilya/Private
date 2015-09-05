@@ -2184,7 +2184,7 @@ namespace cythilya.Controllers
             MeModels.Project proj_19 = new MeModels.Project();
             proj_19.ID = 19;
             proj_19.Name = "活動咖 EventPal";
-            proj_19.Description = "活動咖 EventPal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。";
+            proj_19.Description = "全方位的賽事、活動報名與購物平台。";
             proj_19.Role = "UI Design and Front-End Development";
             proj_19.Tech = "Web Development with SCSS and jQuery";
             proj_19.URL = "/Me/Project?id=19";
@@ -2198,7 +2198,7 @@ namespace cythilya.Controllers
             proj_19.ClientURL = "http://www.uni-net.com.tw";
             proj_19.Date = "June 2015";
             proj_19.LauchURL = "https://www.eventpal.com.tw";
-            proj_19.HtmlContent = "<p>活動咖 EventPal - 專業賽事、活動報名與購物平台。全方位的賽事、活動報名與購物平台 - 阿甘盃路跑嘉年華、Snoopy Run 史努比路跑、真愛台灣 即刻形動 全台高校環台任務。</p>";
+            proj_19.HtmlContent = "<p>全方位的賽事、活動報名與購物平台。</p>";
             proj_19.Tag = "Web Platform SEO";
             proj_19.isHighlight = true;
             proj_19.IsShowInPortfolio = true;
@@ -2479,12 +2479,11 @@ namespace cythilya.Controllers
             projList.Add(proj_25);
             #endregion
 
-            #region 活動咖 EventPal 手機版 (未上線)
-            /*
+            #region 活動咖 EventPal 手機版
             MeModels.Project proj_26 = new MeModels.Project();
             proj_26.ID = 26;
             proj_26.Name = "活動咖 EventPal 手機版";
-            proj_26.Description = "活動咖 EventPal 手機版";
+            proj_26.Description = "活動咖 EventPal 手機版 - 全方位的賽事、活動報名與購物平台。";
             proj_26.Role = "Front-End Development";
             proj_26.Tech = "Web development with SCSS and jQuery.";
             proj_26.URL = "/Me/Project?id=" + proj_26.ID;
@@ -2494,20 +2493,21 @@ namespace cythilya.Controllers
             proj_26.PicLarge = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_940x367.png";
             proj_26.PicInFooter = "/Content/me/img/project/eventpal_mobile/eventpal_mobile_54x54.png";
             proj_26.Order = 26;
-            proj_26.Client = "";
-            proj_26.ClientURL = "";
-            proj_26.Date = "Aug 2015";
-            proj_26.LauchURL = "";
+            proj_26.Client = "Uni-Net 聯網國際";
+            proj_26.ClientURL = "http://www.uni-net.com.tw";
+            proj_26.Date = "Sept 2015";
+            proj_26.LauchURL = "https://www.eventpal.com.tw";
 
             StringBuilder sb26 = new StringBuilder();
-            sb26.Append("<p></p>");
+            sb26.Append("<p>全方位的賽事、活動報名與購物平台。</p>");
+            sb26.Append("<p>相關介紹可參考：<a href='http://cythilya.blogspot.tw/2015/09/eventpal-mobile-web.html' target='_blank' title='活動咖手機版網站上線了 - 活動平台行動裝置網站或App設計的現狀探討與改進'>活動咖手機版網站上線了 - 活動平台行動裝置網站或App設計的現狀探討與改進</a>。</p>");
             string str26 = sb26.ToString();
 
             proj_26.HtmlContent = str26;
-            proj_26.Tag = "Web Platform";
-            proj_26.isHighlight = false;
-            proj_26.IsShowInPortfolio = false;
-            List<int> partnerList26 = new List<int>(new int[] { 7 });
+            proj_26.Tag = "Web Platform RWD SEO";
+            proj_26.isHighlight = true;
+            proj_26.IsShowInPortfolio = true;
+            List<int> partnerList26 = new List<int>(new int[] { 7, 19 });
             proj_26.Partners = partnerList26;
             proj_26.PartnerDetail = GetPartnerList(proj_26.Partners);
 
@@ -2520,7 +2520,6 @@ namespace cythilya.Controllers
 
             proj_26.Snapshot = SnapshotList26;
             projList.Add(proj_26);
-            */
             #endregion
 
             #endregion Mock
