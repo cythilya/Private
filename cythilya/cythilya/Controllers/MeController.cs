@@ -1232,6 +1232,23 @@ namespace cythilya.Controllers
             articleList.Add(article_56);
             #endregion 
 
+            #region 使用MongoVUE - GUI Tool for MongoDB
+            MeModels.Article article_57 = new MeModels.Article();
+            article_57.Name = "使用MongoVUE - GUI Tool for MongoDB";
+            article_57.Description = "使用MongoVUE - GUI Tool for MongoDB。";
+            article_57.URL = "http://cythilya.blogspot.tw/2015/09/mongovue-gui-tool-for-mongodb.html";
+            article_57.RawPic = "/Content/me/img/blog/mongovue/mongovue.png";
+            article_57.PicSmall = "/Content/me/img/blog/mongovue/mongovue_188x73.png";
+            article_57.PicMedium = "/Content/me/img/blog/mongovue/mongovue_300.png";
+            article_57.PicLarge = "/Content/me/img/blogmongovue/mongovue_940x367.png";
+            article_57.PicInFooter = "/Content/me/img/blog/mongovue/mongovue_54x54.png";
+            article_57.Tag = "MongoDB, MongoVUE";
+            article_57.isHighlight = false;
+            article_57.Time = "Sept 7, 2015";
+            article_57.isBanner = false;
+            articleList.Add(article_57);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
