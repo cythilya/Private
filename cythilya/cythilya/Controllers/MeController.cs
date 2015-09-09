@@ -1240,13 +1240,30 @@ namespace cythilya.Controllers
             article_57.RawPic = "/Content/me/img/blog/mongovue/mongovue.png";
             article_57.PicSmall = "/Content/me/img/blog/mongovue/mongovue_188x73.png";
             article_57.PicMedium = "/Content/me/img/blog/mongovue/mongovue_300.png";
-            article_57.PicLarge = "/Content/me/img/blogmongovue/mongovue_940x367.png";
+            article_57.PicLarge = "/Content/me/img/blog/mongovue/mongovue_940x367.png";
             article_57.PicInFooter = "/Content/me/img/blog/mongovue/mongovue_54x54.png";
             article_57.Tag = "MongoDB, MongoVUE";
             article_57.isHighlight = false;
             article_57.Time = "Sept 7, 2015";
             article_57.isBanner = false;
             articleList.Add(article_57);
+            #endregion 
+
+            #region 使用MongoVUE - GUI Tool for MongoDB
+            MeModels.Article article_58 = new MeModels.Article();
+            article_58.Name = "Node - 從MongoDB取得資料到套版";
+            article_58.Description = "經歷了前面關於Node基本安裝設定、模板引擎的熟悉，與一些基本的語法和操作，接著來到MongoDB的建置和使用，終於要把假資料換掉，使用真實世界的內容展現在畫面上啦。";
+            article_58.URL = "http://cythilya.blogspot.tw/2015/09/node-mongodb-rendering.html";
+            article_58.RawPic = "/Content/me/img/blog/rendering/rendering.jpg";
+            article_58.PicSmall = "/Content/me/img/blog/rendering/rendering_188x73.jpg";
+            article_58.PicMedium = "/Content/me/img/blog/rendering/rendering_300.jpg";
+            article_58.PicLarge = "/Content/me/img/blog/rendering/rendering_940x367.jpg";
+            article_58.PicInFooter = "/Content/me/img/blog/rendering/rendering_54x54.jpg";
+            article_58.Tag = "Handlebars, MongoDB, Mongoose, Node.js";
+            article_58.isHighlight = false;
+            article_58.Time = "Sept 9, 2015";
+            article_58.isBanner = false;
+            articleList.Add(article_58);
             #endregion 
 
             #endregion Mock
