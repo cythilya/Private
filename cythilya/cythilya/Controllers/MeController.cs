@@ -1249,7 +1249,7 @@ namespace cythilya.Controllers
             articleList.Add(article_57);
             #endregion 
 
-            #region 使用MongoVUE - GUI Tool for MongoDB
+            #region Node - 從MongoDB取得資料到套版
             MeModels.Article article_58 = new MeModels.Article();
             article_58.Name = "Node - 從MongoDB取得資料到套版";
             article_58.Description = "經歷了前面關於Node基本安裝設定、模板引擎的熟悉，與一些基本的語法和操作，接著來到MongoDB的建置和使用，終於要把假資料換掉，使用真實世界的內容展現在畫面上啦。";
