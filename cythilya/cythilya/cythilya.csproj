@@ -936,6 +936,11 @@
     <Content Include="Content\me\img\project\hellomip\hellomip_index_54x54.png" />
     <Content Include="Content\me\img\project\hellomip\hellomip_index_940.png" />
     <Content Include="Content\me\img\project\hellomip\hellomip_index_940x367.png" />
+    <Content Include="Content\me\img\project\hourmasters\hourmasters.jpg" />
+    <Content Include="Content\me\img\project\hourmasters\hourmasters_188x73.jpg" />
+    <Content Include="Content\me\img\project\hourmasters\hourmasters_300.jpg" />
+    <Content Include="Content\me\img\project\hourmasters\hourmasters_54x54.jpg" />
+    <Content Include="Content\me\img\project\hourmasters\hourmasters_940x367.jpg" />
     <Content Include="Content\me\img\project\hty\demo_2014_12_05_22_00_48_818.mp4" />
     <Content Include="Content\me\img\project\hty\hty.png" />
     <Content Include="Content\me\img\project\hty\hty_188x73.png" />
