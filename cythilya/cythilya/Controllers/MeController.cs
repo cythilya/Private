@@ -2576,15 +2576,14 @@ namespace cythilya.Controllers
             proj_27.LauchURL = "hourmasters";
 
             StringBuilder sb27 = new StringBuilder();
-            sb27.Append("<p>全方位的賽事、活動報名與購物平台。</p>");
-            sb27.Append("<p>相關介紹可參考：<a href='http://cythilya.blogspot.tw/2015/09/eventpal-mobile-web.html' target='_blank' title='活動咖手機版網站上線了 - 活動平台行動裝置網站或App設計的現狀探討與改進'>活動咖手機版網站上線了 - 活動平台行動裝置網站或App設計的現狀探討與改進</a>。</p>");
+            sb27.Append("<p>鐘點大師 Hour Masters</p>");
             string str27 = sb27.ToString();
 
             proj_27.HtmlContent = str27;
             proj_27.Tag = "Web Platform RWD SEO";
             proj_27.isHighlight = true;
             proj_27.IsShowInPortfolio = true;
-            List<int> partnerList27 = new List<int>(new int[] { 7, 19 });
+            List<int> partnerList27 = new List<int>(new int[] { 1 });
             proj_27.Partners = partnerList27;
             proj_27.PartnerDetail = GetPartnerList(proj_27.Partners);
 
@@ -2592,8 +2591,8 @@ namespace cythilya.Controllers
             MeModels.SnapshotInfo proj_27_snap_1 = new MeModels.SnapshotInfo();
 
             proj_27_snap_1.Name = "鐘點大師 Hour Masters";
-            proj_27_snap_1.SnapshotURL = "/Content/me/img/project/hourmasters/hourmasters_940x367.png";
-            SnapshotList26.Add(proj_27_snap_1);
+            proj_27_snap_1.SnapshotURL = "/Content/me/img/project/hourmasters/hourmasters_940x367.jpg";
+            SnapshotList27.Add(proj_27_snap_1);
 
             proj_27.Snapshot = SnapshotList27;
             projList.Add(proj_27);
