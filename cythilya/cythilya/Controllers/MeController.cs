@@ -2573,7 +2573,7 @@ namespace cythilya.Controllers
             proj_27.Client = "支點網路";
             proj_27.ClientURL = "";
             proj_27.Date = "Oct 2015";
-            proj_27.LauchURL = "https://dl.dropboxusercontent.com/u/78267129/demo-hourmasters/prototype/index.html";
+            proj_27.LauchURL = "https://dl.dropboxusercontent.com/u/78267129/prototype-hourmasters/prototype/index.html";
 
             StringBuilder sb27 = new StringBuilder();
             sb27.Append("<p>鐘點大師 Hour Masters</p>");
