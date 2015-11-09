@@ -209,6 +209,12 @@
   <ItemGroup>
     <Content Include="App_Data\MemberRegisterEmailTemplate.html" />
     <Content Include="App_Data\VisitorEmailTemplate.html" />
+    <Content Include="Content\demo\jquery-newsticker\css\clearfix.css" />
+    <Content Include="Content\demo\jquery-newsticker\css\reset-font-min.css" />
+    <Content Include="Content\demo\jquery-newsticker\css\style.css" />
+    <Content Include="Content\demo\jquery-newsticker\index.html" />
+    <Content Include="Content\demo\jquery-newsticker\js\jquery.min.js" />
+    <Content Include="Content\demo\jquery-newsticker\js\script.js" />
     <Content Include="Content\eshopper\css\style.css" />
     <Content Include="Content\eshopper\images\product\bear_luggage.jpg" />
     <Content Include="Content\eshopper\images\product\bear_on_hanging_seat.jpg" />
@@ -1890,6 +1896,8 @@
     <Content Include="Areas\UI\Views\UI\d3SimpleBarChart.cshtml" />
     <Content Include="Areas\UI\Views\UI\AngularJSTodoList.cshtml" />
     <Content Include="Content\eshopper\css\style.scss" />
+    <None Include="Content\demo\jquery-newsticker\css\style.scss" />
+    <None Include="Content\demo\jquery-newsticker\LICENSE" />
     <None Include="Content\eshopper\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\eshopper\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\eshopper\fonts\fontawesome-webfont.woff" />
