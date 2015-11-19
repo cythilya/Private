@@ -1266,6 +1266,23 @@ namespace cythilya.Controllers
             articleList.Add(article_58);
             #endregion 
 
+            #region Angular.js Form Example 表單練習
+            MeModels.Article article_59 = new MeModels.Article();
+            article_59.Name = "Angular.js Form Example 表單練習";
+            article_59.Description = "這個表單會展示常用表單元件、基本Directive和Controller的功能運作。由於網路上有很多大大的教學文章，因此在這裡只記錄一些我在學習/實作上遇到的重要觀念。";
+            article_59.URL = "http://cythilya.blogspot.tw/2015/11/angularjs-form-example.html";
+            article_59.RawPic = "/Content/me/img/blog/Angularjs-Form-Example/Angularjs-Form-Example.jpg";
+            article_59.PicSmall = "/Content/me/img/blog/Angularjs-Form-Example/Angularjs-Form-Example-188x73.jpg";
+            article_59.PicMedium = "/Content/me/img/blog/Angularjs-Form-Example/Angularjs-Form-Example-300.jpg";
+            article_59.PicLarge = "/Content/me/img/blog/Angularjs-Form-Example/Angularjs-Form-Example-940x367.jpg";
+            article_59.PicInFooter = "/Content/me/img/blog/Angularjs-Form-Example/Angularjs-Form-Example-54x54.jpg";
+            article_59.Tag = "AngularJS";
+            article_59.isHighlight = false;
+            article_59.Time = "Nov 19, 2015";
+            article_59.isBanner = true;
+            articleList.Add(article_59);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
@@ -2581,7 +2598,7 @@ namespace cythilya.Controllers
 
             proj_27.HtmlContent = str27;
             proj_27.Tag = "Web Platform RWD SEO";
-            proj_27.isHighlight = true;
+            proj_27.isHighlight = false;
             proj_27.IsShowInPortfolio = true;
             List<int> partnerList27 = new List<int>(new int[] { 1 });
             proj_27.Partners = partnerList27;
