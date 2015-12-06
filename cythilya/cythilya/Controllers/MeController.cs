@@ -1279,8 +1279,25 @@ namespace cythilya.Controllers
             article_59.Tag = "AngularJS";
             article_59.isHighlight = false;
             article_59.Time = "Nov 19, 2015";
-            article_59.isBanner = true;
+            article_59.isBanner = false;
             articleList.Add(article_59);
+            #endregion 
+
+            #region 語意網 - HTML5文件的段落和綱要 (Semantic Web - Sections and Outlines of an HTML5 Document)
+            MeModels.Article article_60 = new MeModels.Article();
+            article_60.Name = "語意網 - HTML5文件的段落和綱要 (Semantic Web - Sections and Outlines of an HTML5 Document)";
+            article_60.Description = "最近有個朋友做了網站優化，才調整HTML5 Outline就讓該網站被Index的頁面快速增加。一個好懂的網頁能讓搜尋引擎有效爬完讀懂，而且優化成本相對不大。如果要開始做SEO，從頁面HTML結構開始做起，是較簡單、CP值又高的好選擇。";
+            article_60.URL = "http://cythilya.blogspot.tw/2015/12/semantic-web.html";
+            article_60.RawPic = "/Content/me/img/blog/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document.jpg";
+            article_60.PicSmall = "/Content/me/img/blog/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document-188x73.jpg";
+            article_60.PicMedium = "/Content/me/img/blog/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document-300.jpg";
+            article_60.PicLarge = "/Content/me/img/blog/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document-940x367.jpg";
+            article_60.PicInFooter = "/Content/me/img/blog/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document/Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document-54x54.jpg";
+            article_60.Tag = "SEO, HTML5";
+            article_60.isHighlight = false;
+            article_60.Time = "Dec 6, 2015";
+            article_60.isBanner = true;
+            articleList.Add(article_60);
             #endregion 
 
             #endregion Mock
