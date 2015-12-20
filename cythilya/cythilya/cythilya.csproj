@@ -481,6 +481,12 @@
     <Content Include="Content\me\img\blog\facebook_social_demo_300.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_54x54.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_940x367.jpg" />
+    <Content Include="Content\me\img\blog\google-search-algorithms\seo_search.png" />
+    <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_188x73.png" />
+    <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_300.png" />
+    <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_54x54.png" />
+    <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_800.png" />
+    <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_940x367.png" />
     <Content Include="Content\me\img\blog\hello_node\hello_node.jpg" />
     <Content Include="Content\me\img\blog\hello_node\hello_node_188x73.jpg" />
     <Content Include="Content\me\img\blog\hello_node\hello_node_300.jpg" />

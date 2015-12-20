@@ -1300,6 +1300,23 @@ namespace cythilya.Controllers
             articleList.Add(article_60);
             #endregion 
 
+            #region 常見的Google搜尋演算法 (Search Algorithms)
+            MeModels.Article article_61 = new MeModels.Article();
+            article_61.Name = "常見的Google搜尋演算法 (Search Algorithms)";
+            article_61.Description = "這幾天在準備SEO Basics的slides，所以也順手整理了一下Google常見的搜尋演算法。";
+            article_61.URL = "http://cythilya.blogspot.tw/2015/12/google-search-algorithms.html";
+            article_61.RawPic = "/Content/me/img/blog/google-search-algorithms/seo_search.png";
+            article_61.PicSmall = "/Content/me/img/blog/google-search-algorithms/seo_search_188x73.png";
+            article_61.PicMedium = "/Content/me/img/blog/google-search-algorithms/seo_search_300.png";
+            article_61.PicLarge = "/Content/me/img/blog/google-search-algorithms/seo_search_940x367.png";
+            article_61.PicInFooter = "/Content/me/img/blog/google-search-algorithms/seo_search_54x54.png";
+            article_61.Tag = "SEO, Mobile Search";
+            article_61.isHighlight = false;
+            article_61.Time = "Dec 20, 2015";
+            article_61.isBanner = false;
+            articleList.Add(article_61);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
