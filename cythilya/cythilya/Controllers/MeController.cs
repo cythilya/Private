@@ -1317,6 +1317,23 @@ namespace cythilya.Controllers
             articleList.Add(article_61);
             #endregion 
 
+            #region Plugin的撰寫
+            MeModels.Article article_62 = new MeModels.Article();
+            article_62.Name = "Plugin的撰寫";
+            article_62.Description = "又重新看了jQuery: Novice to Ninja，所以做了些關於Plugin的筆記。以下使用jQuery Newsticker Plugin作為說明範例。";
+            article_62.URL = "http://cythilya.blogspot.tw/2015/12/plugin.html";
+            article_62.RawPic = "/Content/me/img/blog/plugin/seo_search.jpg";
+            article_62.PicSmall = "/Content/me/img/blog/plugin/plugin_188x73.jpg";
+            article_62.PicMedium = "/Content/me/img/blog/plugins/plugin_300.jpg";
+            article_62.PicLarge = "/Content/me/img/blog/plugin/plugin_940x367.jpg";
+            article_62.PicInFooter = "/Content/me/img/blog/plugin/plugin_54x54.jpg";
+            article_62.Tag = "JavaScript, Closure";
+            article_62.isHighlight = false;
+            article_62.Time = "Dec 27, 2015";
+            article_62.isBanner = false;
+            articleList.Add(article_62);
+            #endregion   
+            
             #endregion Mock
 
             articleList.Reverse();
