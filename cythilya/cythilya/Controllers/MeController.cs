@@ -1354,22 +1354,20 @@ namespace cythilya.Controllers
             #endregion   
            
             #region JavaScript Object Oriented Programming - Extending Natives
-            /*
             MeModels.Article article_64 = new MeModels.Article();
             article_64.Name = "JavaScript Object Oriented Programming - Extending Natives";
             article_64.Description = "Native JavaScript物件將method存在prototype中。例如：當一個新的物件被建立，內容為空，但為何可以使用toString這個method？";
             article_64.URL = "http://cythilya.blogspot.tw/2016/02/extending-natives.html";
-            article_64.RawPic = "/Content/me/img/blog/";
-            article_64.PicSmall = "/Content/me/img/blog/";
-            article_64.PicMedium = "/Content/me/img/blog/";
-            article_64.PicLarge = "/Content/me/img/blog/";
-            article_64.PicInFooter = "/Content/me/img/";
+            article_64.RawPic = "/Content/me/img/blog/extending-natives/extending-natives.jpg";
+            article_64.PicSmall = "/Content/me/img/blog/extending-natives/extending-natives-188x73.jpg";
+            article_64.PicMedium = "/Content/me/img/blog/extending-natives/extending-natives-300.jpg";
+            article_64.PicLarge = "/Content/me/img/blog/extending-natives/extending-natives-940x367.jpg";
+            article_64.PicInFooter = "/Content/me/img/blog/extending-natives/extending-nativee-54x54.jpg";
             article_64.Tag = "JavaScript, Object Oriented Programming";
             article_64.isHighlight = false;
             article_64.Time = "Feb 3, 2016";
             article_64.isBanner = false;
             articleList.Add(article_64);
-            */
             #endregion  
 
             #region JavaScript Object Oriented Programming - The "constructor" property
