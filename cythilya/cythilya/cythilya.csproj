@@ -461,6 +461,12 @@
     <Content Include="Content\me\img\blog\duplicate_content_188x73.jpg" />
     <Content Include="Content\me\img\blog\duplicate_content_300.jpg" />
     <Content Include="Content\me\img\blog\duplicate_content_940x367.jpg" />
+    <Content Include="Content\me\img\blog\extending-natives\extending-nativee-54x54.jpg" />
+    <Content Include="Content\me\img\blog\extending-natives\extending-natives-188x73.jpg" />
+    <Content Include="Content\me\img\blog\extending-natives\extending-natives-300.jpg" />
+    <Content Include="Content\me\img\blog\extending-natives\extending-natives-800.jpg" />
+    <Content Include="Content\me\img\blog\extending-natives\extending-natives-940x367.jpg" />
+    <Content Include="Content\me\img\blog\extending-natives\extending-natives.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_188x73.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_300.jpg" />
     <Content Include="Content\me\img\blog\Facebook_Graph_API_Taggable_Friends_54x54.jpg" />
@@ -602,6 +608,12 @@
     <Content Include="Content\me\img\blog\plugin\plugin_54x54.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin_800.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin_940x367.jpg" />
+    <Content Include="Content\me\img\blog\prototypal-inheritance\prototypal-inheritance-188x73.jpg" />
+    <Content Include="Content\me\img\blog\prototypal-inheritance\prototypal-inheritance-300.jpg" />
+    <Content Include="Content\me\img\blog\prototypal-inheritance\prototypal-inheritance-54x54.jpg" />
+    <Content Include="Content\me\img\blog\prototypal-inheritance\prototypal-inheritance-800.jpg" />
+    <Content Include="Content\me\img\blog\prototypal-inheritance\prototypal-inheritance-940x367.jpg" />
+    <Content Include="Content\me\img\blog\prototypal-inheritance\prototypal-inheritance.jpg" />
     <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-188x73.jpg" />
     <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-300.jpg" />
     <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-54x54.jpg" />
