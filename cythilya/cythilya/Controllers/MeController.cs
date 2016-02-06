@@ -1392,6 +1392,7 @@ namespace cythilya.Controllers
             #endregion  
 
             #region JavaScript Object Oriented Programming - The "instanceof" operator
+            /*
             MeModels.Article article_66 = new MeModels.Article();
             article_66.Name = "JavaScript Object Oriented Programming - The instanceof operator";
             article_66.Description = "instanceof 允許檢查物件是否為給定的constructor所產生的。";
@@ -1406,6 +1407,7 @@ namespace cythilya.Controllers
             article_66.Time = "Feb 5, 2016";
             article_66.isBanner = false;
             articleList.Add(article_66);
+            */
             #endregion  
 
             #region JaJavaScript Object Oriented Programming - Pseudo-Classical Pattern
