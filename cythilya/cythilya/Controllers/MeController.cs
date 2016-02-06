@@ -1370,7 +1370,7 @@ namespace cythilya.Controllers
 
             #region JavaScript Object Oriented Programming - The "constructor" property
             MeModels.Article article_65 = new MeModels.Article();
-            article_65.Name = "JavaScript Object Oriented Programming - The constructo property";
+            article_65.Name = "JavaScript Object Oriented Programming - The constructor property";
             article_65.Description = "物件有內建的屬性「constructor」，意即「參考建立此物件的function」。";
             article_65.URL = "http://cythilya.blogspot.tw/2016/02/constructor.html";
             article_65.RawPic = "/Content/me/img/blog/constructor/constructor.jpg";
