@@ -1333,7 +1333,98 @@ namespace cythilya.Controllers
             article_62.isBanner = false;
             articleList.Add(article_62);
             #endregion   
-            
+
+            #region JavaScript Object Oriented Programming - Prototypal Inheritance
+            /*
+            MeModels.Article article_63 = new MeModels.Article();
+            article_63.Name = "JavaScript Object Oriented Programming - Prototypal Inheritance";
+            article_63.Description = "對大多數的語言來說，它們擁有「Class」和「Object」，而Class繼承其它的Class。對於JavaScript來說，繼承是使用prototype來實作的，意即沒有Class，而是由物件繼承其它的物件來達成繼承。";
+            article_63.URL = "http://cythilya.blogspot.tw/2016/01/prototypal-inheritance.html";
+            article_63.RawPic = "/Content/me/img/blog/";
+            article_63.PicSmall = "/Content/me/img/blog/";
+            article_63.PicMedium = "/Content/me/img/blog/";
+            article_63.PicLarge = "/Content/me/img/blog/";
+            article_63.PicInFooter = "/Content/me/img/blog/";
+            article_63.Tag = "JavaScript, Object Oriented Programming";
+            article_63.isHighlight = false;
+            article_63.Time = "Jan 31, 2016";
+            article_63.isBanner = false;
+            articleList.Add(article_63);
+            */
+            #endregion   
+           
+            #region JavaScript Object Oriented Programming - Extending Natives
+            /*
+            MeModels.Article article_64 = new MeModels.Article();
+            article_64.Name = "JavaScript Object Oriented Programming - Extending Natives";
+            article_64.Description = "Native JavaScript物件將method存在prototype中。例如：當一個新的物件被建立，內容為空，但為何可以使用toString這個method？";
+            article_64.URL = "http://cythilya.blogspot.tw/2016/02/extending-natives.html";
+            article_64.RawPic = "/Content/me/img/blog/";
+            article_64.PicSmall = "/Content/me/img/blog/";
+            article_64.PicMedium = "/Content/me/img/blog/";
+            article_64.PicLarge = "/Content/me/img/blog/";
+            article_64.PicInFooter = "/Content/me/img/";
+            article_64.Tag = "JavaScript, Object Oriented Programming";
+            article_64.isHighlight = false;
+            article_64.Time = "Feb 3, 2016";
+            article_64.isBanner = false;
+            articleList.Add(article_64);
+            */
+            #endregion  
+
+            #region JavaScript Object Oriented Programming - The "constructor" property
+            /*
+            MeModels.Article article_65 = new MeModels.Article();
+            article_65.Name = "JavaScript Object Oriented Programming - The constructo property";
+            article_65.Description = "物件有內建的屬性「constructor」，意即「參考建立此物件的function」。";
+            article_65.URL = "http://cythilya.blogspot.tw/2016/02/constructor.html";
+            article_65.RawPic = "/Content/me/img/blog/";
+            article_65.PicSmall = "/Content/me/img/blog/";
+            article_65.PicMedium = "/Content/me/img/blog/";
+            article_65.PicLarge = "/Content/me/img/blog/";
+            article_65.PicInFooter = "/Content/me/img/blog/";
+            article_65.Tag = "JavaScript, Object Oriented Programming";
+            article_65.isHighlight = false;
+            article_65.Time = "Feb 4, 2016";
+            article_65.isBanner = false;
+            articleList.Add(article_65);
+            */
+            #endregion  
+
+            #region JavaScript Object Oriented Programming - The "instanceof" operator
+            MeModels.Article article_66 = new MeModels.Article();
+            article_66.Name = "JavaScript Object Oriented Programming - The instanceof operator";
+            article_66.Description = "instanceof 允許檢查物件是否為給定的constructor所產生的。";
+            article_66.URL = "http://cythilya.blogspot.tw/2016/02/instanceof.html";
+            article_66.RawPic = "/Content/me/img/blog/";
+            article_66.PicSmall = "/Content/me/img/blog/g";
+            article_66.PicMedium = "/Content/me/img/blog/";
+            article_66.PicLarge = "/Content/me/img/blog/";
+            article_66.PicInFooter = "/Content/me/img/";
+            article_66.Tag = "JavaScript, Object Oriented Programming";
+            article_66.isHighlight = false;
+            article_66.Time = "Feb 5, 2016";
+            article_66.isBanner = false;
+            articleList.Add(article_66);
+            #endregion  
+
+            #region JaJavaScript Object Oriented Programming - Pseudo-Classical Pattern
+            MeModels.Article article_67 = new MeModels.Article();
+            article_67.Name = "JavaScript Object Oriented Programming - Pseudo-Classical Pattern";
+            article_67.Description = "在pseudo-classical pattern中，物件是由「建構子」(constructor)這個函式所建立，並把method放到建構子的prototype中。";
+            article_67.URL = "http://cythilya.blogspot.tw/2016/02/javascript-pseudo-classical-pattern.html";
+            article_67.RawPic = "/Content/me/img/blog/pseudo-classical-pattern/pseudo-classical-pattern.jpg";
+            article_67.PicSmall = "/Content/me/img/blog/pseudo-classical-pattern/pseudo-classical-pattern-188x73.jpg";
+            article_67.PicMedium = "/Content/me/img/blog/pseudo-classical-pattern/pseudo-classical-pattern-300.jpg";
+            article_67.PicLarge = "/Content/me/img/blog/pseudo-classical-pattern/pseudo-classical-pattern-940x367.jpg";
+            article_67.PicInFooter = "/Content/me/img/blog/pseudo-classical-pattern/pseudo-classical-pattern-54x54.jpg";
+            article_67.Tag = "JavaScript, Object Oriented Programming";
+            article_67.isHighlight = false;
+            article_67.Time = "Feb 6, 2016";
+            article_67.isBanner = false;
+            articleList.Add(article_67);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();

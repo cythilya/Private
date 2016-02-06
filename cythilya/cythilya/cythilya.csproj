@@ -590,6 +590,12 @@
     <Content Include="Content\me\img\blog\plugin\plugin_54x54.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin_800.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin_940x367.jpg" />
+    <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-188x73.jpg" />
+    <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-300.jpg" />
+    <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-54x54.jpg" />
+    <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-800.jpg" />
+    <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern-940x367.jpg" />
+    <Content Include="Content\me\img\blog\pseudo-classical-pattern\pseudo-classical-pattern.jpg" />
     <Content Include="Content\me\img\blog\rendering\rendering.jpg" />
     <Content Include="Content\me\img\blog\rendering\rendering_188x73.jpg" />
     <Content Include="Content\me\img\blog\rendering\rendering_300.jpg" />
