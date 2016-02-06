@@ -1335,22 +1335,20 @@ namespace cythilya.Controllers
             #endregion   
 
             #region JavaScript Object Oriented Programming - Prototypal Inheritance
-            /*
             MeModels.Article article_63 = new MeModels.Article();
             article_63.Name = "JavaScript Object Oriented Programming - Prototypal Inheritance";
             article_63.Description = "對大多數的語言來說，它們擁有「Class」和「Object」，而Class繼承其它的Class。對於JavaScript來說，繼承是使用prototype來實作的，意即沒有Class，而是由物件繼承其它的物件來達成繼承。";
             article_63.URL = "http://cythilya.blogspot.tw/2016/01/prototypal-inheritance.html";
-            article_63.RawPic = "/Content/me/img/blog/";
-            article_63.PicSmall = "/Content/me/img/blog/";
-            article_63.PicMedium = "/Content/me/img/blog/";
-            article_63.PicLarge = "/Content/me/img/blog/";
-            article_63.PicInFooter = "/Content/me/img/blog/";
+            article_63.RawPic = "/Content/me/img/blog/prototypal-inheritance/prototypal-inheritance.jpg";
+            article_63.PicSmall = "/Content/me/img/blog/prototypal-inheritance/prototypal-inheritance-188x73.jpg";
+            article_63.PicMedium = "/Content/me/img/blog/prototypal-inheritance/prototypal-inheritance-300.jpg";
+            article_63.PicLarge = "/Content/me/img/blog/prototypal-inheritance/prototypal-inheritance-940x367.jpg";
+            article_63.PicInFooter = "/Content/me/img/blog/prototypal-inheritance/prototypal-inheritance-54x54.jpg";
             article_63.Tag = "JavaScript, Object Oriented Programming";
             article_63.isHighlight = false;
             article_63.Time = "Jan 31, 2016";
             article_63.isBanner = false;
             articleList.Add(article_63);
-            */
             #endregion   
            
             #region JavaScript Object Oriented Programming - Extending Natives
