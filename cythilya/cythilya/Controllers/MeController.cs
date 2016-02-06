@@ -1373,22 +1373,20 @@ namespace cythilya.Controllers
             #endregion  
 
             #region JavaScript Object Oriented Programming - The "constructor" property
-            /*
             MeModels.Article article_65 = new MeModels.Article();
             article_65.Name = "JavaScript Object Oriented Programming - The constructo property";
             article_65.Description = "物件有內建的屬性「constructor」，意即「參考建立此物件的function」。";
             article_65.URL = "http://cythilya.blogspot.tw/2016/02/constructor.html";
-            article_65.RawPic = "/Content/me/img/blog/";
-            article_65.PicSmall = "/Content/me/img/blog/";
-            article_65.PicMedium = "/Content/me/img/blog/";
-            article_65.PicLarge = "/Content/me/img/blog/";
-            article_65.PicInFooter = "/Content/me/img/blog/";
+            article_65.RawPic = "/Content/me/img/blog/constructor/constructor.jpg";
+            article_65.PicSmall = "/Content/me/img/blog/constructor/constructor-188x73.jpg";
+            article_65.PicMedium = "/Content/me/img/blog/constructor/constructor-300.jpg";
+            article_65.PicLarge = "/Content/me/img/blog/constructor/constructor-940x367.jpg";
+            article_65.PicInFooter = "/Content/me/img/blog/constructor/constructor-54x54.jpg";
             article_65.Tag = "JavaScript, Object Oriented Programming";
             article_65.isHighlight = false;
             article_65.Time = "Feb 4, 2016";
             article_65.isBanner = false;
             articleList.Add(article_65);
-            */
             #endregion  
 
             #region JavaScript Object Oriented Programming - The "instanceof" operator

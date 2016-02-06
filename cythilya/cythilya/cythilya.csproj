@@ -442,6 +442,12 @@
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_300.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_54x54.jpg" />
     <Content Include="Content\me\img\blog\ckeditor_addons_simpleuploads_youtube_search_feature\ckeditor_addons_simpleuploads_youtube_search_feature_940x367.jpg" />
+    <Content Include="Content\me\img\blog\constructor\constructor-188x73.jpg" />
+    <Content Include="Content\me\img\blog\constructor\constructor-300.jpg" />
+    <Content Include="Content\me\img\blog\constructor\constructor-54x54.jpg" />
+    <Content Include="Content\me\img\blog\constructor\constructor-800.jpg" />
+    <Content Include="Content\me\img\blog\constructor\constructor-940x367.jpg" />
+    <Content Include="Content\me\img\blog\constructor\constructor.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart.png" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_188x73.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_300.jpg" />
