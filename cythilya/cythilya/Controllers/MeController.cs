@@ -1419,7 +1419,7 @@ namespace cythilya.Controllers
             articleList.Add(article_67);
             #endregion 
 
-            #region JaJavaScript Object Oriented Programming - Pseudo-Classical Pattern
+            #region JavaScript Object Oriented Programming - All-in-one Constructor Pattern
             MeModels.Article article_68 = new MeModels.Article();
             article_68.Name = "JavaScript Object Oriented Programming - All-in-one Constructor Pattern";
             article_68.Description = "所有的method和property都放在consctructor中，而不使用prototype。";
