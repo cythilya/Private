@@ -395,6 +395,12 @@
     <Content Include="Content\me\img\blog\250528_3929.jpg" />
     <Content Include="Content\me\img\blog\250528_3929_54x54.jpg" />
     <Content Include="Content\me\img\blog\505237_63345765.jpg" />
+    <Content Include="Content\me\img\blog\all-in-one-constructor-pattern\all-in-one-constructor-pattern-188x73.jpg" />
+    <Content Include="Content\me\img\blog\all-in-one-constructor-pattern\all-in-one-constructor-pattern-300.jpg" />
+    <Content Include="Content\me\img\blog\all-in-one-constructor-pattern\all-in-one-constructor-pattern-54x54.jpg" />
+    <Content Include="Content\me\img\blog\all-in-one-constructor-pattern\all-in-one-constructor-pattern-800.jpg" />
+    <Content Include="Content\me\img\blog\all-in-one-constructor-pattern\all-in-one-constructor-pattern-940x367.jpg" />
+    <Content Include="Content\me\img\blog\all-in-one-constructor-pattern\all-in-one-constructor-pattern.jpg" />
     <Content Include="Content\me\img\blog\Angularjs-Form-Example\Angularjs-Form-Example-188x73.jpg" />
     <Content Include="Content\me\img\blog\Angularjs-Form-Example\Angularjs-Form-Example-300.jpg" />
     <Content Include="Content\me\img\blog\Angularjs-Form-Example\Angularjs-Form-Example-54x54.jpg" />

@@ -1419,6 +1419,23 @@ namespace cythilya.Controllers
             articleList.Add(article_67);
             #endregion 
 
+            #region JaJavaScript Object Oriented Programming - Pseudo-Classical Pattern
+            MeModels.Article article_68 = new MeModels.Article();
+            article_68.Name = "JavaScript Object Oriented Programming - All-in-one Constructor Pattern";
+            article_68.Description = "所有的method和property都放在consctructor中，而不使用prototype。";
+            article_68.URL = "http://cythilya.blogspot.tw/2016/02/all-in-one-constructor-pattern.html";
+            article_68.RawPic = "/Content/me/img/blog/all-in-one-constructor-pattern/all-in-one-constructor-pattern.jpg";
+            article_68.PicSmall = "/Content/me/img/blog/all-in-one-constructor-pattern/all-in-one-constructor-pattern-188x73.jpg";
+            article_68.PicMedium = "/Content/me/img/blog/all-in-one-constructor-pattern/all-in-one-constructor-pattern-300.jpg";
+            article_68.PicLarge = "/Content/me/img/blog/all-in-one-constructor-pattern/all-in-one-constructor-pattern-940x367.jpg";
+            article_68.PicInFooter = "/Content/me/img/blog/all-in-one-constructor-pattern/all-in-one-constructor-pattern-54x54.jpg";
+            article_68.Tag = "JavaScript, Object Oriented Programming";
+            article_68.isHighlight = false;
+            article_68.Time = "Feb 7, 2016";
+            article_68.isBanner = false;
+            articleList.Add(article_68);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
