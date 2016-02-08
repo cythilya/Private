@@ -499,6 +499,12 @@
     <Content Include="Content\me\img\blog\facebook_social_demo_300.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_54x54.jpg" />
     <Content Include="Content\me\img\blog\facebook_social_demo_940x367.jpg" />
+    <Content Include="Content\me\img\blog\factory-constructor-pattern\factory-constructor-pattern-188x73.jpg" />
+    <Content Include="Content\me\img\blog\factory-constructor-pattern\factory-constructor-pattern-300.jpg" />
+    <Content Include="Content\me\img\blog\factory-constructor-pattern\factory-constructor-pattern-54x54.jpg" />
+    <Content Include="Content\me\img\blog\factory-constructor-pattern\factory-constructor-pattern-800.jpg" />
+    <Content Include="Content\me\img\blog\factory-constructor-pattern\factory-constructor-pattern-940x367.jpg" />
+    <Content Include="Content\me\img\blog\factory-constructor-pattern\factory-constructor-pattern.jpg" />
     <Content Include="Content\me\img\blog\google-search-algorithms\seo_search.png" />
     <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_188x73.png" />
     <Content Include="Content\me\img\blog\google-search-algorithms\seo_search_300.png" />

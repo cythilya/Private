@@ -1436,6 +1436,23 @@ namespace cythilya.Controllers
             articleList.Add(article_68);
             #endregion 
 
+            #region JavaScript Object Oriented Programming - Factory Constructor Pattern
+            MeModels.Article article_69 = new MeModels.Article();
+            article_69.Name = "JavaScript Object Oriented Programming - Factory Constructor Pattern";
+            article_69.Description = "「Factory Constructor Pattern」不使用new來宣告新物件，新物件用function call來建立。";
+            article_69.URL = "http://cythilya.blogspot.tw/2016/02/factory-constructor-pattern.html";
+            article_69.RawPic = "/Content/me/img/blog/factory-constructor-pattern/factory-constructor-pattern.jpg";
+            article_69.PicSmall = "/Content/me/img/blog/factory-constructor-pattern/factory-constructor-pattern-188x73.jpg";
+            article_69.PicMedium = "/Content/me/img/blog/factory-constructor-pattern/factory-constructor-pattern-300.jpg";
+            article_69.PicLarge = "/Content/me/img/blog/factory-constructor-pattern/factory-constructor-pattern-940x367.jpg";
+            article_69.PicInFooter = "/Content/me/img/blog/factory-constructor-pattern/factory-constructor-pattern-54x54.jpg";
+            article_69.Tag = "JavaScript, Object Oriented Programming";
+            article_69.isHighlight = false;
+            article_69.Time = "Feb 8, 2016";
+            article_69.isBanner = false;
+            articleList.Add(article_69);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
