@@ -1453,6 +1453,23 @@ namespace cythilya.Controllers
             articleList.Add(article_69);
             #endregion 
 
+            #region JavaScript Object Oriented Programming - Exceptions
+            MeModels.Article article_70 = new MeModels.Article();
+            article_70.Name = "JavaScript Object Oriented Programming - Exceptions";
+            article_70.Description = "「例外(Exceptions)」是一個特別且重要的處理錯誤的方法。";
+            article_70.URL = "http://cythilya.blogspot.tw/2016/02/exceptions.html";
+            article_70.RawPic = "/Content/me/img/blog/exceptions/exceptions.jpg";
+            article_70.PicSmall = "/Content/me/img/blog/exceptions/exceptions-188x73.jpg";
+            article_70.PicMedium = "/Content/me/img/blog/exceptions/exceptions-300.jpg";
+            article_70.PicLarge = "/Content/me/img/blog/exceptions/exceptions-940x367.jpg";
+            article_70.PicInFooter = "/Content/me/img/blog/exceptions/exceptions-54x54.jpg";
+            article_70.Tag = "JavaScript, Object Oriented Programming";
+            article_70.isHighlight = false;
+            article_70.Time = "Feb 9, 2016";
+            article_70.isBanner = false;
+            articleList.Add(article_70);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();

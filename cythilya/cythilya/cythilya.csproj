@@ -467,6 +467,12 @@
     <Content Include="Content\me\img\blog\duplicate_content_188x73.jpg" />
     <Content Include="Content\me\img\blog\duplicate_content_300.jpg" />
     <Content Include="Content\me\img\blog\duplicate_content_940x367.jpg" />
+    <Content Include="Content\me\img\blog\exceptions\exceptions-188x73.jpg" />
+    <Content Include="Content\me\img\blog\exceptions\exceptions-300.jpg" />
+    <Content Include="Content\me\img\blog\exceptions\exceptions-54x54.jpg" />
+    <Content Include="Content\me\img\blog\exceptions\exceptions-800.jpg" />
+    <Content Include="Content\me\img\blog\exceptions\exceptions-940x367.jpg" />
+    <Content Include="Content\me\img\blog\exceptions\exceptions.jpg" />
     <Content Include="Content\me\img\blog\extending-natives\extending-nativee-54x54.jpg" />
     <Content Include="Content\me\img\blog\extending-natives\extending-natives-188x73.jpg" />
     <Content Include="Content\me\img\blog\extending-natives\extending-natives-300.jpg" />
