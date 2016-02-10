@@ -467,6 +467,12 @@
     <Content Include="Content\me\img\blog\duplicate_content_188x73.jpg" />
     <Content Include="Content\me\img\blog\duplicate_content_300.jpg" />
     <Content Include="Content\me\img\blog\duplicate_content_940x367.jpg" />
+    <Content Include="Content\me\img\blog\early-and-late-binding\early-and-late-binding-188x73.jpg" />
+    <Content Include="Content\me\img\blog\early-and-late-binding\early-and-late-binding-300.jpg" />
+    <Content Include="Content\me\img\blog\early-and-late-binding\early-and-late-binding-54.jpg" />
+    <Content Include="Content\me\img\blog\early-and-late-binding\early-and-late-binding-800.jpg" />
+    <Content Include="Content\me\img\blog\early-and-late-binding\early-and-late-binding-940x367.jpg" />
+    <Content Include="Content\me\img\blog\early-and-late-binding\early-and-late-binding.jpg" />
     <Content Include="Content\me\img\blog\exceptions\exceptions-188x73.jpg" />
     <Content Include="Content\me\img\blog\exceptions\exceptions-300.jpg" />
     <Content Include="Content\me\img\blog\exceptions\exceptions-54x54.jpg" />

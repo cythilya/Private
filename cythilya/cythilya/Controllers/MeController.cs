@@ -1470,6 +1470,23 @@ namespace cythilya.Controllers
             articleList.Add(article_70);
             #endregion 
 
+            #region JavaScript Object Oriented Programming - Early and Late Binding
+            MeModels.Article article_71 = new MeModels.Article();
+            article_71.Name = "JavaScript Object Oriented Programming - Early and Late Binding";
+            article_71.Description = "JavaScript在呼叫的時候設定this的值，而這個this的值有可能不是我們預期的結果。";
+            article_71.URL = "http://cythilya.blogspot.tw/2016/02/early-and-late-binding.html";
+            article_71.RawPic = "/Content/me/img/blog/early-and-late-binding/early-and-late-binding.jpg";
+            article_71.PicSmall = "/Content/me/img/blog/early-and-late-binding/early-and-late-binding-188x73.jpg";
+            article_71.PicMedium = "/Content/me/img/blog/early-and-late-binding/early-and-late-binding-300.jpg";
+            article_71.PicLarge = "/Content/me/img/blog/early-and-late-binding/early-and-late-binding-940x367.jpg";
+            article_71.PicInFooter = "/Content/me/img/blog/early-and-late-binding/early-and-late-binding-54.jpg";
+            article_71.Tag = "JavaScript, Object Oriented Programming";
+            article_71.isHighlight = false;
+            article_71.Time = "Feb 10, 2016";
+            article_71.isBanner = false;
+            articleList.Add(article_71);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
