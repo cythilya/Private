@@ -542,6 +542,12 @@
     <Content Include="Content\me\img\blog\instanceof\instanceof-800.jpg" />
     <Content Include="Content\me\img\blog\instanceof\instanceof-940x367.jpg" />
     <Content Include="Content\me\img\blog\instanceof\instanceof.jpg" />
+    <Content Include="Content\me\img\blog\javascript-object-oriented-programming\javascript-object-oriented-programming-188x73.jpg" />
+    <Content Include="Content\me\img\blog\javascript-object-oriented-programming\javascript-object-oriented-programming-300.jpg" />
+    <Content Include="Content\me\img\blog\javascript-object-oriented-programming\javascript-object-oriented-programming-54.jpg" />
+    <Content Include="Content\me\img\blog\javascript-object-oriented-programming\javascript-object-oriented-programming-800.jpg" />
+    <Content Include="Content\me\img\blog\javascript-object-oriented-programming\javascript-object-oriented-programming-940x367.jpg" />
+    <Content Include="Content\me\img\blog\javascript-object-oriented-programming\javascript-object-oriented-programming.jpg" />
     <Content Include="Content\me\img\blog\javascript_design_patterns_singleton\javascript_design_patterns_singleton.jpg" />
     <Content Include="Content\me\img\blog\javascript_design_patterns_singleton\javascript_design_patterns_singleton_188x73.jpg" />
     <Content Include="Content\me\img\blog\javascript_design_patterns_singleton\javascript_design_patterns_singleton_300.jpg" />

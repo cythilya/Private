@@ -1485,6 +1485,23 @@ namespace cythilya.Controllers
             article_71.Time = "Feb 10, 2016";
             article_71.isBanner = false;
             articleList.Add(article_71);
+            #endregion
+
+            #region JavaScript Object Oriented Programming
+            MeModels.Article article_72 = new MeModels.Article();
+            article_72.Name = "JavaScript Object Oriented Programming";
+            article_72.Description = "會寫這一系列的文章是因為希望自己的JavaScript程式碼能更物件導向、更模組化。這一系列的文章有以下的內容...";
+            article_72.URL = "http://cythilya.blogspot.tw/2016/02/javascript-object-oriented-programming.html";
+            article_72.RawPic = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming.jpg";
+            article_72.PicSmall = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-188x73.jpg";
+            article_72.PicMedium = "/Content/me/img/javascript-object-oriented-programming/javascript-object-oriented-programming-300.jpg";
+            article_72.PicLarge = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-940x367.jpg";
+            article_72.PicInFooter = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-54.jpg";
+            article_72.Tag = "JavaScript, Object Oriented Programming";
+            article_72.isHighlight = false;
+            article_72.Time = "Feb 11, 2016";
+            article_72.isBanner = false;
+            articleList.Add(article_72);
             #endregion 
 
             #endregion Mock
