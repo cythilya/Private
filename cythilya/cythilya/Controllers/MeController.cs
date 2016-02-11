@@ -461,7 +461,7 @@ namespace cythilya.Controllers
             article_9.PicLarge = "/Content/me/img/blog/keyword_tag_940x367.jpg";
             article_9.PicInFooter = "/Content/me/img/blog/keyword_tag_54x54.jpg";
             article_9.Tag = "SEO, Keyword, Tag";
-            article_9.isHighlight = true;
+            article_9.isHighlight = false;
             article_9.Time = "Aug 16, 2014";
             article_9.isBanner = false;
             articleList.Add(article_9);
@@ -1296,7 +1296,7 @@ namespace cythilya.Controllers
             article_60.Tag = "SEO, HTML5";
             article_60.isHighlight = false;
             article_60.Time = "Dec 6, 2015";
-            article_60.isBanner = true;
+            article_60.isBanner = false;
             articleList.Add(article_60);
             #endregion 
 
@@ -1498,9 +1498,9 @@ namespace cythilya.Controllers
             article_72.PicLarge = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-940x367.jpg";
             article_72.PicInFooter = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-54.jpg";
             article_72.Tag = "JavaScript, Object Oriented Programming";
-            article_72.isHighlight = false;
+            article_72.isHighlight = true;
             article_72.Time = "Feb 11, 2016";
-            article_72.isBanner = false;
+            article_72.isBanner = true;
             articleList.Add(article_72);
             #endregion 
 
