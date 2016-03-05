@@ -454,6 +454,12 @@
     <Content Include="Content\me\img\blog\constructor\constructor-800.jpg" />
     <Content Include="Content\me\img\blog\constructor\constructor-940x367.jpg" />
     <Content Include="Content\me\img\blog\constructor\constructor.jpg" />
+    <Content Include="Content\me\img\blog\css3-animation\css3-animation-188x73.jpg" />
+    <Content Include="Content\me\img\blog\css3-animation\css3-animation-300.jpg" />
+    <Content Include="Content\me\img\blog\css3-animation\css3-animation-54.jpg" />
+    <Content Include="Content\me\img\blog\css3-animation\css3-animation-800.jpg" />
+    <Content Include="Content\me\img\blog\css3-animation\css3-animation-940x367.jpg" />
+    <Content Include="Content\me\img\blog\css3-animation\css3-animation.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart.png" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_188x73.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_300.jpg" />

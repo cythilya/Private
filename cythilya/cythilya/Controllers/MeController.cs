@@ -1504,6 +1504,23 @@ namespace cythilya.Controllers
             articleList.Add(article_72);
             #endregion 
 
+            #region 三天內學會CSS3 Animation
+            MeModels.Article article_73 = new MeModels.Article();
+            article_73.Name = "三天內學會CSS3 Animation";
+            article_73.Description = "一直以來我對CSS3 Animation這件事情並沒有特別專注研究(如果需要也是用javascript完成XD)，直到最近因為工作需要才開始練習。以下紀錄一些我在這三天內看的資料和做的小練習(不是教學文)。";
+            article_73.URL = "http://cythilya.blogspot.tw/2016/03/css3-animation.html";
+            article_73.RawPic = "/Content/me/img/blog/css3-animation/css3-animation.jpg";
+            article_73.PicSmall = "/Content/me/img/blog/css3-animation/css3-animation-188x73.jpg";
+            article_73.PicMedium = "/Content/me/img/css3-animation/css3-animation-300.jpg";
+            article_73.PicLarge = "/Content/me/img/blog/css3-animation/css3-animation-940x367.jpg";
+            article_73.PicInFooter = "/Content/me/img/blog/css3-animation/css3-animation-54.jpg";
+            article_73.Tag = "CSS3, Animatio";
+            article_73.isHighlight = false;
+            article_73.Time = "March 5, 2016";
+            article_73.isBanner = false;
+            articleList.Add(article_73);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
