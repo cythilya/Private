@@ -1521,6 +1521,23 @@ namespace cythilya.Controllers
             articleList.Add(article_73);
             #endregion 
 
+            #region jQuery的陣列操作：$.map()與$.grep()
+            MeModels.Article article_74 = new MeModels.Article();
+            article_74.Name = "jQuery的陣列操作：$.map()與$.grep()";
+            article_74.Description = "這陣子在整理系統內的程式碼，發現自己曾經使用一些過時的方法(例如：native javascript操作陣列)，而非使用jQuery提供的API來撰寫。以下整理並比較這兩種方法的差異。";
+            article_74.URL = "http://cythilya.blogspot.tw/2016/03/jquery-map-grep.html";
+            article_74.RawPic = "/Content/me/img/blog/javascript_patterns/javascript_patterns.jpg";
+            article_74.PicSmall = "/Content/me/img/blog/javascript_patterns/javascript_patterns_188x73.jpg";
+            article_74.PicMedium = "/Content/me/img/blog/javascript_patterns/javascript_patterns_300.jpg";
+            article_74.PicLarge = "/Content/me/img/blog/javascript_patterns/javascript_patterns_940x367.jpg";
+            article_74.PicInFooter = "/Content/me/img/blog/javascript_patterns/javascript_patterns_54x54.jpg";
+            article_74.Tag = "JavaScript, jQuery";
+            article_74.isHighlight = false;
+            article_74.Time = "March 13, 2016";
+            article_74.isBanner = false;
+            articleList.Add(article_74);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();
