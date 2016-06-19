@@ -903,7 +903,7 @@ namespace cythilya.Controllers
             article_37.PicLarge = "/Content/me/img/blog/modern_web_seo/modern_web_seo_940x367.jpg";
             article_37.PicInFooter = "/Content/me/img/blog/modern_web_seo/modern_web_seo_54x54.jpg";
             article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
-            article_37.isHighlight = true;
+            article_37.isHighlight = false;
             article_37.Time = "May 31, 2015";
             article_37.isBanner = true;
             articleList.Add(article_37);
@@ -1500,7 +1500,7 @@ namespace cythilya.Controllers
             article_72.Tag = "JavaScript, Object Oriented Programming";
             article_72.isHighlight = true;
             article_72.Time = "Feb 11, 2016";
-            article_72.isBanner = true;
+            article_72.isBanner = false;
             articleList.Add(article_72);
             #endregion 
 
@@ -1536,6 +1536,23 @@ namespace cythilya.Controllers
             article_74.Time = "March 13, 2016";
             article_74.isBanner = false;
             articleList.Add(article_74);
+            #endregion 
+
+            #region 結構化資料之「商品」範例 - 使用JSON-LD
+            MeModels.Article article_75 = new MeModels.Article();
+            article_75.Name = "結構化資料之「商品」範例 - 使用JSON-LD";
+            article_75.Description = "假設想在搜尋結果頁(SERPs)上對 單一商品 呈現更為吸引人的Rich Snippet效果，例如出現星等、評論數(如下圖)，就需要利用結構化資料(Structured Data)來達成。";
+            article_75.URL = "http://cythilya.blogspot.tw/2016/05/rich-snippet-product-jsonld.html";
+            article_75.RawPic = "/Content/me/img/blog/rich-snippet-product/rich-snippet.jpg";
+            article_75.PicSmall = "/Content/me/img/blog/rich-snippet-product/rich-snippet-188x73.jpg";
+            article_75.PicMedium = "/Content/me/img/blog/rich-snippet-product/rich-snippet-product-300.jpg";
+            article_75.PicLarge = "/Content/me/img/blog/rich-snippet-product/rich-snippet-product-940x367.jpg";
+            article_75.PicInFooter = "/Content/me/img/blog/rich-snippet-product/rich-snippet-product-54x54.jpg";
+            article_75.Tag = "SEO, Rich Snippets, Structured Data, JSON-LD";
+            article_75.isHighlight = true;
+            article_75.Time = "May 17, 2016";
+            article_75.isBanner = true;
+            articleList.Add(article_75);
             #endregion 
 
             #endregion Mock
