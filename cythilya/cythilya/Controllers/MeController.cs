@@ -1555,6 +1555,23 @@ namespace cythilya.Controllers
             articleList.Add(article_75);
             #endregion 
 
+            #region DNS Prefetching - 預先做DNS解析，幫助網頁載入速度更快
+            MeModels.Article article_76 = new MeModels.Article();
+            article_76.Name = "DNS Prefetching - 預先做DNS解析，幫助網頁載入速度更快";
+            article_76.Description = "在研究淘寶SEO策略時有略略看到頁面上出現這樣的設定，但對於網站效能提升這一塊比較陌生的我，並沒有做太多的研究(只知道是做什麼用的)，剛好藉這次機會來看看相關資料並做整理。";
+            article_76.URL = "http://cythilya.blogspot.tw/2016/06/dns-prefetching.html";
+            article_76.RawPic = "/Content/me/img/blog/dns-prefetch/dns-prefetch.png";
+            article_76.PicSmall = "/Content/me/img/blog/dns-prefetch/dns-prefetch-188x73.png";
+            article_76.PicMedium = "/Content/me/img/blog/dns-prefetch/dns-prefetch-300.png";
+            article_76.PicLarge = "/Content/me/img/blog/dns-prefetch/dns-prefetch-940x367.png";
+            article_76.PicInFooter = "/Content/me/img/blog/dns-prefetch/dns-prefetch-54x54.png";
+            article_76.Tag = "DNS Prefetching, DNS預先擷取, HTML";
+            article_76.isHighlight = false;
+            article_76.Time = "June 25, 2016";
+            article_76.isBanner = false;
+            articleList.Add(article_76);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();

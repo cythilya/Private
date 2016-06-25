@@ -465,6 +465,12 @@
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_300.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_54x54.jpg" />
     <Content Include="Content\me\img\blog\d3_bar_chart\d3_bar_chart_940x367.jpg" />
+    <Content Include="Content\me\img\blog\dns-prefetch\dns-prefetch-188x73.png" />
+    <Content Include="Content\me\img\blog\dns-prefetch\dns-prefetch-300.png" />
+    <Content Include="Content\me\img\blog\dns-prefetch\dns-prefetch-54x54.png" />
+    <Content Include="Content\me\img\blog\dns-prefetch\dns-prefetch-800.png" />
+    <Content Include="Content\me\img\blog\dns-prefetch\dns-prefetch-940x367.png" />
+    <Content Include="Content\me\img\blog\dns-prefetch\dns-prefetch.png" />
     <Content Include="Content\me\img\blog\dotchi\dotchi.png" />
     <Content Include="Content\me\img\blog\dotchi\dotchi_188x73.png" />
     <Content Include="Content\me\img\blog\dotchi\dotchi_300.png" />
