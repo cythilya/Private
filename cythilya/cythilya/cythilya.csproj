@@ -548,6 +548,12 @@
     <Content Include="Content\me\img\blog\hello_node\hello_node_54x54.jpg" />
     <Content Include="Content\me\img\blog\hello_node\hello_node_800.jpg" />
     <Content Include="Content\me\img\blog\hello_node\hello_node_940x367.jpg" />
+    <Content Include="Content\me\img\blog\hubotxslack\hubotxslack-188x73.png" />
+    <Content Include="Content\me\img\blog\hubotxslack\hubotxslack-300.png" />
+    <Content Include="Content\me\img\blog\hubotxslack\hubotxslack-54.png" />
+    <Content Include="Content\me\img\blog\hubotxslack\hubotxslack-600.png" />
+    <Content Include="Content\me\img\blog\hubotxslack\hubotxslack-940x367.png" />
+    <Content Include="Content\me\img\blog\hubotxslack\hubotxslack.png" />
     <Content Include="Content\me\img\blog\ia_for_seo_188x73.jpg" />
     <Content Include="Content\me\img\blog\ia_for_seo_300.jpg" />
     <Content Include="Content\me\img\blog\ia_for_seo_940x367.jpg" />
