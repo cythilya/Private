@@ -2953,6 +2953,48 @@ namespace cythilya.Controllers
             projList.Add(proj_27);
             #endregion
 
+            #region 露天拍賣-台灣NO.1 拍賣網站
+            MeModels.Project proj_28 = new MeModels.Project();
+            proj_28.ID = 28;
+            proj_28.Name = "露天拍賣-台灣NO.1 拍賣網站";
+            proj_28.Description = "台灣NO.1 最大拍賣網站，2015 年全年交易額達1439 億元，全站超過1 億1 千萬件商品數，是世界第四大拍賣平台，每月超過10 億次瀏覽量。";
+            proj_28.Role = "Front-End Development";
+            proj_28.Tech = "PHP, jQuery, Less, Gulp.";
+            proj_28.URL = "/Me/Project?id=" + proj_28.ID;
+            proj_28.RawPic = "/Content/me/img/project/ruten/ruten.png";
+            proj_28.PicSmall = "/Content/me/img/project/ruten/ruten-188x73.png";
+            proj_28.PicMedium = "/Content/me/img/project/ruten/ruten-300.png";
+            proj_28.PicLarge = "/Content/me/img/project/ruten/ruten-940x367.png";
+            proj_28.PicInFooter = "/Content/me/img/project/ruten/ruten-54.png";
+            proj_28.Order = 28;
+            proj_28.Client = "露天市集國際資訊股份有限公司";
+            proj_28.ClientURL = "http://pub.ruten.com.tw/about/about_us.html";
+            proj_28.Date = "Nov 2016";
+            proj_28.LauchURL = "http://www.ruten.com.tw/";
+
+            StringBuilder sb28 = new StringBuilder();
+            sb28.Append("<p>台灣NO.1 最大拍賣網站，2015 年全年交易額達1439 億元，全站超過1 億1 千萬件商品數，是世界第四大拍賣平台，每月超過10 億次瀏覽量。</p>");
+            string str28 = sb28.ToString();
+
+            proj_28.HtmlContent = str28;
+            proj_28.Tag = "Web Platform RWD SEO";
+            proj_28.isHighlight = true;
+            proj_28.IsShowInPortfolio = true;
+            //List<int> partnerList28 = new List<int>(new int[] { 1 });
+            //proj_28.Partners = partnerList28;
+            //proj_28.PartnerDetail = GetPartnerList(proj_28.Partners);
+
+            List<MeModels.SnapshotInfo> SnapshotList28 = new List<MeModels.SnapshotInfo>();
+            MeModels.SnapshotInfo proj_28_snap_1 = new MeModels.SnapshotInfo();
+
+            proj_28_snap_1.Name = "露天拍賣-台灣NO.1 拍賣網站";
+            proj_28_snap_1.SnapshotURL = "/Content/me/img/project/ruten/ruten-940x367.png";
+            SnapshotList28.Add(proj_28_snap_1);
+
+            proj_28.Snapshot = SnapshotList28;
+            projList.Add(proj_28);
+            #endregion
+
             #endregion Mock
 
             projList = projList.OrderBy(x => x.Order).Reverse().ToList();
