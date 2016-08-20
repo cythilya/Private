@@ -2783,8 +2783,7 @@ namespace cythilya.Controllers
             projList.Add(proj_23);
             #endregion
 
-            #region 楔石怪兵器 (未上線)
-            /*
+            #region 楔石怪兵器
             MeModels.Project proj_24 = new MeModels.Project();
             proj_24.ID = 24;
             proj_24.Name = "楔石怪兵器";
@@ -2792,14 +2791,14 @@ namespace cythilya.Controllers
             proj_24.Role = "Front-End Development";
             proj_24.Tech = "Web development with SCSS and jQuery.";
             proj_24.URL = "/Me/Project?id=" + proj_24.ID;
-            proj_24.RawPic = "/Content/me/img/project/keystone/keystone.jpg";
-            proj_24.PicSmall = "/Content/me/img/project/keystone/keystone_188x73.jpg";
-            proj_24.PicMedium = "/Content/me/img/project/keystone/keystone_300.jpg";
-            proj_24.PicLarge = "/Content/me/img/project/keystone/keystone_940x367.jpg";
-            proj_24.PicInFooter = "/Content/me/img/project/keystone/keystone_54x54.jpg";
+            proj_24.RawPic = "/Content/me/img/project/keystone/keystone.png";
+            proj_24.PicSmall = "/Content/me/img/project/keystone/keystone-188x73.png";
+            proj_24.PicMedium = "/Content/me/img/project/keystone/keystone-300.png";
+            proj_24.PicLarge = "/Content/me/img/project/keystone/keystone-940x367.png";
+            proj_24.PicInFooter = "/Content/me/img/project/keystone/keystone-54.png";
             proj_24.Order = 25;
             proj_24.Client = "楔石怪兵器";
-            proj_24.ClientURL = "";
+            proj_24.ClientURL = "http://www.kphoto.com.tw";
             proj_24.Date = "July 2015";
             proj_24.LauchURL = "http://www.kphoto.com.tw";
 
@@ -2819,12 +2818,11 @@ namespace cythilya.Controllers
             MeModels.SnapshotInfo proj_24_snap_1 = new MeModels.SnapshotInfo();
 
             proj_24_snap_1.Name = "楔石攝影怪兵器";
-            proj_24_snap_1.SnapshotURL = "/Content/me/img/project/keystone/keystone_940x367.jpg";
+            proj_24_snap_1.SnapshotURL = "/Content/me/img/project/keystone/keystone-940x367.png";
             SnapshotList24.Add(proj_24_snap_1);
 
             proj_24.Snapshot = SnapshotList24;
             projList.Add(proj_24);
-            */
             #endregion
 
             #region 趨勢科技 PC-cillin
