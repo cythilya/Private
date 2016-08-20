@@ -905,7 +905,7 @@ namespace cythilya.Controllers
             article_37.Tag = "SEO, Rich Snippets, Keyword, Tag";
             article_37.isHighlight = false;
             article_37.Time = "May 31, 2015";
-            article_37.isBanner = true;
+            article_37.isBanner = false;
             articleList.Add(article_37);
             #endregion
 
@@ -956,7 +956,7 @@ namespace cythilya.Controllers
             article_40.Tag = "SEO, Rich Snippets, Structured Data";
             article_40.isHighlight = true;
             article_40.Time = "June 20, 2015";
-            article_40.isBanner = true;
+            article_40.isBanner = false;
             articleList.Add(article_40);
             #endregion
 
@@ -1498,7 +1498,7 @@ namespace cythilya.Controllers
             article_72.PicLarge = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-940x367.jpg";
             article_72.PicInFooter = "/Content/me/img/blog/javascript-object-oriented-programming/javascript-object-oriented-programming-54.jpg";
             article_72.Tag = "JavaScript, Object Oriented Programming";
-            article_72.isHighlight = true;
+            article_72.isHighlight = false;
             article_72.Time = "Feb 11, 2016";
             article_72.isBanner = false;
             articleList.Add(article_72);
@@ -1551,7 +1551,7 @@ namespace cythilya.Controllers
             article_75.Tag = "SEO, Rich Snippets, Structured Data, JSON-LD";
             article_75.isHighlight = true;
             article_75.Time = "May 17, 2016";
-            article_75.isBanner = true;
+            article_75.isBanner = false;
             articleList.Add(article_75);
             #endregion 
 
@@ -1583,7 +1583,7 @@ namespace cythilya.Controllers
             article_77.PicLarge = "/Content/me/img/blog/hubotxslack/hubotxslack-940x367.png";
             article_77.PicInFooter = "/Content/me/img/blog/hubotxslack/hubotxslack-54.png";
             article_77.Tag = "hubot, slack, robot";
-            article_77.isHighlight = false;
+            article_77.isHighlight = true;
             article_77.Time = "July 6, 2016";
             article_77.isBanner = false;
             articleList.Add(article_77);
@@ -2183,7 +2183,7 @@ namespace cythilya.Controllers
 
             proj_10.HtmlContent = str10;
             proj_10.Tag = "Web CampignSite RWD";
-            proj_10.isHighlight = true;
+            proj_10.isHighlight = false;
 
             List<MeModels.SnapshotInfo> SnapshotList10 = new List<MeModels.SnapshotInfo>();
             MeModels.SnapshotInfo proj_10_snap_1 = new MeModels.SnapshotInfo();
