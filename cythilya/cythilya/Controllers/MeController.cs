@@ -2969,7 +2969,7 @@ namespace cythilya.Controllers
             proj_28.Order = 28;
             proj_28.Client = "露天市集國際資訊股份有限公司";
             proj_28.ClientURL = "http://pub.ruten.com.tw/about/about_us.html";
-            proj_28.Date = "Nov 2016";
+            proj_28.Date = "Nov 2015";
             proj_28.LauchURL = "http://www.ruten.com.tw/";
 
             StringBuilder sb28 = new StringBuilder();
