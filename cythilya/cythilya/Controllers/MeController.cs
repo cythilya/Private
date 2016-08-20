@@ -1211,7 +1211,7 @@ namespace cythilya.Controllers
             article_55.Tag = "EventPal, Responsive Web Design, RWD, SEO, 活動咖, 響應式網頁";
             article_55.isHighlight = true;
             article_55.Time = "Sept 4, 2015";
-            article_55.isBanner = true;
+            article_55.isBanner = false;
             articleList.Add(article_55);
             #endregion 
 
