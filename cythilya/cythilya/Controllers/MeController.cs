@@ -1572,6 +1572,57 @@ namespace cythilya.Controllers
             articleList.Add(article_76);
             #endregion 
 
+            #region Hubot x Slack，製作自動回話與工作的機器人
+            MeModels.Article article_77 = new MeModels.Article();
+            article_77.Name = "Hubot x Slack，製作自動回話與工作的機器人";
+            article_77.Description = "Hubot x Slack 串接紀錄。";
+            article_77.URL = "http://cythilya.blogspot.tw/2016/07/robot-hubot-slack.html";
+            article_77.RawPic = "/Content/me/img/blog/hubotxslack/hubotxslack.png";
+            article_77.PicSmall = "/Content/me/img/blog/hubotxslack/hubotxslack-188x73.png";
+            article_77.PicMedium = "/Content/me/img/blog/hubotxslack/dhubotxslack-300.png";
+            article_77.PicLarge = "/Content/me/img/blog/hubotxslack/hubotxslack-940x367.png";
+            article_77.PicInFooter = "/Content/me/img/blog/hubotxslack/hubotxslack-54.png";
+            article_77.Tag = "hubot, slack, robot";
+            article_77.isHighlight = false;
+            article_77.Time = "July 6, 2016";
+            article_77.isBanner = false;
+            articleList.Add(article_77);
+            #endregion 
+
+            #region T3 - 構建大型網站的JavaScript框架
+            MeModels.Article article_78 = new MeModels.Article();
+            article_78.Name = "T3 - 構建大型網站的JavaScript框架";
+            article_78.Description = "T3是一個JavaScript UI Framework，主要的功能是讓程式碼更結構化。如果網站內的程式碼很雜亂的話，很適合用來整理散落在各處的程式碼(尤其是針對年紀大需要翻新的大型網站)。而整理方式就是將程式碼分成幾個部份：Application、Module、Serveice、Behavior等來處理。頁面UI整理成Module，Module彼此共用的方法或事件整理成Behavior，而非UI邏輯且多個Module會共用的部份(例如：與Server端溝通取資料)則抽出來成為Service。";
+            article_78.URL = "http://cythilya.blogspot.tw/2016/08/t3.html";
+            article_78.RawPic = "/Content/me/img/blog/t3/t3.png";
+            article_78.PicSmall = "/Content/me/img/blog/t3/t3-188x73.png";
+            article_78.PicMedium = "/Content/me/img/blog/t3/t3-300.png";
+            article_78.PicLarge = "/Content/me/img/blog/t3/t3-940x367.png";
+            article_78.PicInFooter = "/Content/me/img/blog/t3/t3-54.png";
+            article_78.Tag = "JavaScript, t3";
+            article_78.isHighlight = false;
+            article_78.Time = "Aug 15, 2016";
+            article_78.isBanner = false;
+            articleList.Add(article_78);
+            #endregion 
+
+            #region Gulp筆記：安裝、撰寫Task、監看、例外錯誤處理和套件使用
+            MeModels.Article article_79 = new MeModels.Article();
+            article_79.Name = "Gulp筆記：安裝、撰寫Task、監看、例外錯誤處理和套件使用";
+            article_79.Description = "Gulp是一套任務管理工具，讓前端的工作能自動化處理，例如：js/css最小化、瀏覽器檢視、通知、檔名變更、加入版號等等。這裡做一些簡單筆記。";
+            article_79.URL = "http://cythilya.blogspot.tw/2016/08/gulp.html";
+            article_79.RawPic = "/Content/me/img/blog/gulp/gulp.png";
+            article_79.PicSmall = "/Content/me/img/blog/gulp/gulp-188x73.png";
+            article_79.PicMedium = "/Content/me/img/blog/gulp/gulp-300.png";
+            article_79.PicLarge = "/Content/me/img/blog/gulp/gulp-940x367.png";
+            article_79.PicInFooter = "/Content/me/img/blog/gulp/gulp-54.png";
+            article_79.Tag = "Node.js, gulp";
+            article_79.isHighlight = false;
+            article_79.Time = "Aug 20, 2016";
+            article_79.isBanner = false;
+            articleList.Add(article_79);
+            #endregion 
+
             #endregion Mock
 
             articleList.Reverse();

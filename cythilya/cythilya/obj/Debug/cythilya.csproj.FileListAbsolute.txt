@@ -207,4 +207,4 @@ D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.xml
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.resources.dll
 D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
-D:\Git\Private\cythilya\cythilya\obj\Debug\ResolveAssemblyReference.cache
+D:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.csprojResolveAssemblyReference.cache
