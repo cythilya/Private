@@ -954,7 +954,7 @@ namespace cythilya.Controllers
             article_40.PicLarge = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-940x367.jpg";
             article_40.PicInFooter = "/Content/me/img/blog/structured-data-event-2/structured-data-event-2-54x54.jpg";
             article_40.Tag = "SEO, Rich Snippets, Structured Data";
-            article_40.isHighlight = true;
+            article_40.isHighlight = false;
             article_40.Time = "June 20, 2015";
             article_40.isBanner = false;
             articleList.Add(article_40);
@@ -1621,6 +1621,23 @@ namespace cythilya.Controllers
             article_79.Time = "Aug 20, 2016";
             article_79.isBanner = false;
             articleList.Add(article_79);
+            #endregion 
+
+            #region 加速行動版網頁(AMP, Accelerated Mobile Pages)
+            MeModels.Article article_80 = new MeModels.Article();
+            article_80.Name = "加速行動版網頁(AMP, Accelerated Mobile Pages)";
+            article_80.Description = "加速行動版網頁(AMP, Accelerated Mobile Pages)是Google推出的一套框架，用來使行動裝置網頁能快速載入。 在Search Console上會看到提示建議Webmaster使用與提交這樣的頁面。";
+            article_80.URL = "http://cythilya.blogspot.tw/2016/08/amp_21.html";
+            article_80.RawPic = "/Content/me/img/blog/amp/amp.png";
+            article_80.PicSmall = "/Content/me/img/blog/amp/amp-188x73.png";
+            article_80.PicMedium = "/Content/me/img/blog/amp/amp-300.png";
+            article_80.PicLarge = "/Content/me/img/blog/amp/amp-940x367.png";
+            article_80.PicInFooter = "/Content/me/img/blog/amp/amp-54.png";
+            article_80.Tag = "SEO, AMP";
+            article_80.isHighlight = true;
+            article_80.Time = "Aug 21, 2016";
+            article_80.isBanner = true;
+            articleList.Add(article_80);
             #endregion 
 
             #endregion Mock
