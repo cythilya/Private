@@ -664,6 +664,13 @@
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_300.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_54x54.jpg" />
     <Content Include="Content\me\img\blog\nodejs-express-microblo\nodejs-express-microblo_940x367.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo_188x73.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo_300.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo_54.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo_600.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo_800.jpg" />
+    <Content Include="Content\me\img\blog\phantomjs_and_seo\phantomjs_and_seo_940x367.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin_188x73.jpg" />
     <Content Include="Content\me\img\blog\plugin\plugin_300.jpg" />
@@ -715,6 +722,11 @@
     <Content Include="Content\me\img\blog\Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document\Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document-800.jpg" />
     <Content Include="Content\me\img\blog\Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document\Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document-940x367.jpg" />
     <Content Include="Content\me\img\blog\Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document\Semantic-Web-Sections-and-Outlines-of-an-HTML5-Document.jpg" />
+    <Content Include="Content\me\img\blog\seo-prerender-node\seo-prerender-node-188x73.jpg" />
+    <Content Include="Content\me\img\blog\seo-prerender-node\seo-prerender-node-300.jpg" />
+    <Content Include="Content\me\img\blog\seo-prerender-node\seo-prerender-node-54.jpg" />
+    <Content Include="Content\me\img\blog\seo-prerender-node\seo-prerender-node-940x367.jpg" />
+    <Content Include="Content\me\img\blog\seo-prerender-node\seo-prerender-node.jpg" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_188x73.png" />
     <Content Include="Content\me\img\blog\seo-ranking-factors-2014_300.png" />

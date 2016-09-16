@@ -1209,7 +1209,7 @@ namespace cythilya.Controllers
             article_55.PicLarge = "/Content/me/img/activity/activity_1/mobile_web_app_940x367.jpg";
             article_55.PicInFooter = "/Content/me/img/activity/activity_1/mobile_web_app_54x54.jpg";
             article_55.Tag = "EventPal, Responsive Web Design, RWD, SEO, 活動咖, 響應式網頁";
-            article_55.isHighlight = true;
+            article_55.isHighlight = false;
             article_55.Time = "Sept 4, 2015";
             article_55.isBanner = false;
             articleList.Add(article_55);
@@ -1638,6 +1638,57 @@ namespace cythilya.Controllers
             article_80.Time = "Aug 21, 2016";
             article_80.isBanner = true;
             articleList.Add(article_80);
+            #endregion 
+
+            #region Node.js 中使用 Promise Q
+            MeModels.Article article_81 = new MeModels.Article();
+            article_81.Name = "Node.js 中使用 Promise Q";
+            article_81.Description = "假設我們今天要執行一項工作task 3，但執行task 3之前要先依序完成工作task 2與task 1。 如果沒有使用promise，而用callback的方式完成，程式碼大概會是這樣...";
+            article_81.URL = "http://cythilya.blogspot.tw/2016/08/node-promise-q.html";
+            article_81.RawPic = "https://dummyimage.com/940x367/000/ffffff.png&text=Node.js+%E4%B8%AD%E4%BD%BF%E7%94%A8+Promise+Q";
+            article_81.PicSmall = "https://dummyimage.com/188x73/000/ffffff.png&text=Node.js+%E4%B8%AD%E4%BD%BF%E7%94%A8+Promise+Q";
+            article_81.PicMedium = "https://dummyimage.com/300x200/000/ffffff.png&text=Node.js+%E4%B8%AD%E4%BD%BF%E7%94%A8+Promise+Q";
+            article_81.PicLarge = "https://dummyimage.com/940x367/000/ffffff.png&text=Node.js+%E4%B8%AD%E4%BD%BF%E7%94%A8+Promise+Q";
+            article_81.PicInFooter = "https://dummyimage.com/54/000/ffffff.png&text=Promise+Q";
+            article_81.Tag = "Node.js, PromiseQ";
+            article_81.isHighlight = false;
+            article_81.Time = "Aug 27, 2016";
+            article_81.isBanner = false;
+            articleList.Add(article_81);
+            #endregion 
+
+            #region 利用PhantomJS為SPA做SEO
+            MeModels.Article article_82 = new MeModels.Article();
+            article_82.Name = "利用PhantomJS為SPA做SEO";
+            article_82.Description = "隨著前端技術的不斷更新，使用前端框架(React、Vue等)來建構網站是普遍現象。但目前搜尋引擎無法有效讀取使用JavaScript render出來的頁面，且使用AJAX Crawling的解法只適用於Google又此法已被廢棄，因此另一解法就是使用PhantomJS。";
+            article_82.URL = "http://cythilya.blogspot.tw/2016/09/phantomjsandseo.html";
+            article_82.RawPic = "/Content/me/img/blog/phantomjs_and_seo/phantomjs_and_seo.jpg";
+            article_82.PicSmall = "/Content/me/img/blog/phantomjs_and_seo/phantomjs_and_seo_188x73.jpg";
+            article_82.PicMedium = "/Content/me/img/blog/phantomjs_and_seo/phantomjs_and_seo_300.jpg";
+            article_82.PicLarge = "/Content/me/img/blog/phantomjs_and_seo/phantomjs_and_seo_940x367.jpg";
+            article_82.PicInFooter = "/Content/me/img/blog/phantomjs_and_seo/phantomjs_and_seo_54.jpg";
+            article_82.Tag = "SEO, PhantomJS, SPA";
+            article_82.isHighlight = false;
+            article_82.Time = "Sept 22, 2016";
+            article_82.isBanner = false;
+            articleList.Add(article_82);
+            #endregion 
+
+            #region 利用Prerender Node為SPA做SEO
+            MeModels.Article article_83 = new MeModels.Article();
+            article_83.Name = "利用Prerender Node為SPA做SEO";
+            article_83.Description = "繼利用PhantomJS為SPA做SEO又來一個為SPA解決SEO問題的解法。";
+            article_83.URL = "http://cythilya.blogspot.tw/2016/09/seo-prerender-node.html";
+            article_83.RawPic = "/Content/me/img/blog/seo-prerender-node/seo-prerender-node.jpg";
+            article_83.PicSmall = "/Content/me/img/blog/seo-prerender-node/seo-prerender-node-188x73.jpg";
+            article_83.PicMedium = "/Content/me/img/blog/seo-prerender-node/seo-prerender-node-300.jpg";
+            article_83.PicLarge = "/Content/me/img/blog/seo-prerender-node/seo-prerender-node-940x367.jpg";
+            article_83.PicInFooter = "/Content/me/img/blog/seo-prerender-node/seo-prerender-node-54.jpg";
+            article_83.Tag = "SEO, PhantomJS, SPA";
+            article_83.isHighlight = true;
+            article_83.Time = "Sept 16, 2016";
+            article_83.isBanner = true;
+            articleList.Add(article_83);
             #endregion 
 
             #endregion Mock
