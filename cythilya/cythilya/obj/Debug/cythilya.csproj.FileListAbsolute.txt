@@ -198,13 +198,4 @@ E:\Git\Private\cythilya\cythilya\bin\zh-Hant\WebMatrix.WebData.resources.dll
 E:\Git\Private\cythilya\cythilya\obj\Debug\ResolveAssemblyReference.cache
 E:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.dll
 E:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.pdb
-D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.Formatting.dll
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.dll
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.dll
-D:\Git\Private\cythilya\cythilya\bin\System.Net.Http.Formatting.xml
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.xml
-D:\Git\Private\cythilya\cythilya\bin\System.Web.Http.WebHost.xml
-D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
-D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.resources.dll
-D:\Git\Private\cythilya\cythilya\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
 D:\Git\Private\cythilya\cythilya\obj\Debug\cythilya.csprojResolveAssemblyReference.cache
